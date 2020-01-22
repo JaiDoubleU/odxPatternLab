@@ -1,0 +1,210 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+ <title>Invoice Workflow Rules</title>
+
+ <link rel="stylesheet" href="../../../OpenInvoiceForBuyers_master.css" type="text/css" />
+
+
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style>
+ <meta name="generator" content="Adobe FrameMaker 2017" />
+<script type="text/javascript" src="../../../template/scripts/rh.min.js"></script>
+<script type="text/javascript" src="../../../template/scripts/common.min.js"></script>
+<script type="text/javascript" src="../../../template/scripts/topic.min.js"></script>
+<script type="text/javascript" src="../../../template/scripts/constants.js"></script>
+<script type="text/javascript" src="../../../template/scripts/utils.js"></script>
+<script type="text/javascript" src="../../../template/scripts/mhutils.js"></script>
+<script type="text/javascript" src="../../../template/scripts/mhlang.js"></script>
+<script type="text/javascript" src="../../../template/scripts/mhver.js"></script>
+<script type="text/javascript" src="../../../template/scripts/settings.js"></script>
+<script type="text/javascript" src="../../../template/scripts/XmlJsReader.js"></script>
+<script type="text/javascript" src="../../../template/scripts/loadparentdata.js"></script>
+<script type="text/javascript" src="../../../template/scripts/loadscreen.js"></script>
+<script type="text/javascript" src="../../../template/scripts/loadprojdata.js"></script>
+<script type="text/javascript" src="../../../template/scripts/mhtopic.js"></script>
+ <link rel="stylesheet" type="text/css" href="../../../template/styles/topic.min.css">
+<script type="text/javascript" >
+gRootRelPath = "../../..";
+gCommonRootRelPath = "../../..";
+gTopicId = "";
+</script>
+ <meta name="brsprev" value="OpenInvoiceForBuyers_master/Configuration/InvoiceWorkflowConfig/Automatic_Financial_Approval.htm">
+ <meta name="brsnext" value="OpenInvoiceForBuyers_master/Configuration/InvoiceWorkflowConfig/Dispute_Management.htm">
+ <meta name="topic-breadcrumbs" content="Administrator & User Guide for Buyers > Invoice Workflow Configuration" />
+</head>
+
+<body dir="ltr">
+<script type="text/javascript" src="../../../ehlpdhtm.js"></script>
+<div dir="ltr">
+  <p dir="ltr" class="FM_ADP_TG_Heading_1"><a name="TOC_Invoice_Workflow_Rules"></a><a name="XREF_58564_Invoice_Workflow"></a>Invoice Workflow Rules</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Body_Style">Invoice workflow rules determine how an invoice will be processed. Newly submitted and resubmitted invoices will be routed for processing in the <span data-name="ADP_Software_Name" data-val="OpenInvoice Platform" data-showval="TRUE" data-format="ADP_Software_Name">OpenInvoice Platform</span>, routed for processing in your back office, or automatically disputed (rejected). In addition, the rules determine whether invoices routed for processing in <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>&#160;will be automatically code verified and/or automatically approved.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Body_Style">The configured rules apply to detail and image invoices including invoices submitted via integration and the <span data-name="ADP_Software_Name" data-val="OpenInvoice Platform" data-showval="TRUE" data-format="ADP_Software_Name">OpenInvoice Platform</span>. If necessary, a user with the Invoice Admin permission can manually reroute an invoice being processed in the <span data-name="ADP_Software_Name" data-val="OpenInvoice Platform" data-showval="TRUE" data-format="ADP_Software_Name">OpenInvoice Platform</span>&#160;to your ERP; conversely, an invoice routed to your ERP can be unlocked so that it can be processed in the <span data-name="ADP_Software_Name" data-val="OpenInvoice Platform" data-showval="TRUE" data-format="ADP_Software_Name">OpenInvoice Platform</span>.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Heading_2">Components of an Invoice Workflow Rule</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Body_Style">Workflow rules are configured using a TSV file. Each rule specified in the file consists of two components: the criteria considered to select the appropriate rule and the action to take. </p>
+
+  <p dir="ltr" class="FM_ADP_TG_Body_Style">Criteria to be considered may include the supplier type, cost objects, cost object validation, price book presence, price book alert, ticket presence, ticket alert, PO presence, PO alert, routing flag, and amount threshold. For a description of each workflow rule column, refer to <a href="../../Appendix/Appendix/Appendix.htm#XREF_35995_Invoice_Workflow">Invoice Workflow Rules Template</a>.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Body_Style">The action component of the rules allow you to specify how invoices will be processed and the error message that will appear if invoices are rejected. Action options include:</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Export (Client Workflow):</span>&#160;the invoice is routed for processing in your company’s ERP and is included in the Submitted Invoice Export. The invoice is read-only in the <span data-name="ADP_Software_Name" data-val="OpenInvoice Platform" data-showval="TRUE" data-format="ADP_Software_Name">OpenInvoice Platform</span>. Messages can be added and suppliers can comment on the invoice, but an <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>&#160;action (Forward, Code, Approve, etc.) cannot be performed.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Internal (OpenInvoice Workflow): </span>the invoice is routed to the OpenInvoice platform for processing. The invoice is submitted to the Remit To site and Department as defined by the supplier and may be routed to a different recipient if invoice recipient routing rules are configured. On resubmit, the invoice is submitted to the owner who previously disputed the invoice. </p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Reject (Auto-Dispute): </span>direct entry, LIDO, Image OBO, and Image Scan invoices cannot be submitted if the platform rejects them based on the configured rules. B2B and Image Post invoices will be imported and submitted, but are then auto-disputed on your behalf. Your defined error message will be displayed in the application for direct entry, LIDO, Image OBO, or Image Scan invoices and is listed as a warning in the DOResponse document and dispute comment for B2B and Image Post invoices. </p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1" style="font-weight : bold;"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>Code Verify (Auto-Code Verification): the invoice will be automatically code verified if the invoice passes all coding business rules. If you are using the Code then Approve workflow the code verify rules are considered on invoice submission, the invoice is submitted to the Remit To site and Department as defined by the supplier and may be routed to a different recipient if invoice recipient routing rules are configured. If using the Approve then Code workflow the code verify rules are considered when the invoice receives final financial approval. The code verify action does not apply for the Approve Only workflow</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1" style="font-weight : bold;"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>Approve (Auto-Approve):&#160;the invoice will be automatically financially approved if the invoice passes all validation business rules. If you are using the Code then Approve workflow the approve rules are considered when the invoice is code verified. If you are using the Approve Only or Approve then Code workflow processes the approve rules are considered on invoice submission, the invoice is submitted to the Remit To site and Department as defined by the supplier, and may be routed to a different recipient if invoice recipient routing rules are configured.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Heading_2">Things to Consider when Configuring Invoice Workflow Rules</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>Invoices must match a configured rule exactly for the invoice to be processed by the rule’s action.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>Invoices match a rule with an <span style="font-weight : bold; ">Amount Threshold</span>&#160;if the total invoice amount including taxes is less than or equal to the specified value. If the invoice is a credit, the absolute value of the invoice total must be less than or equal to the specified value. </p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>Rules entered as text in the TSV file are case-sensitive.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>The rules are evaluated sequentially from top to bottom. The first matching rule will determine the action and subsequent rules will not be evaluated. Therefore, the rules at the top of the file must be more specific than the rules at the bottom of the file.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>Each set of rules must include a default action (internal, export, or reject) to cover all conditions and ensure that all invoices are routed to the appropriate system for processing. This must be the last row in the file. For example, a final row with no conditions and<span style="font-weight : bold; "> Internal</span>&#160;in the <span style="font-weight : bold; ">Action</span>&#160;column will route all invoices not already routed to the <span data-name="ADP_Software_Name" data-val="OpenInvoice Platform" data-showval="TRUE" data-format="ADP_Software_Name">OpenInvoice Platform</span>&#160;using the preceding rules. The absolute minimum configuration is one row with an entry in the <span style="font-weight : bold; ">Action</span> column.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>The invoice’s status and the sequence of processing of steps is determined by the workflow sequence being used.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Heading_2">Sample Invoice Workflow Rules</p>
+
+  <div align="center"><img alt="InvoiceWorkflowConfig_sampleworkflowrules.png" id="image140" src="../../../assets/InvoiceWorkflowConfig_sampleworkflowrules.png" style="max-width: 100% ;height: auto" />
+  </div>
+  <p dir="ltr" class="FM_ADP_TG_Screenshot_Anchor">&nbsp;</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Heading_3">Assumptions</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>Purchase order (PO) suppliers are “trusted” spend.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>All purchase orders submitted to <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span> are fully coded.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Heading_3">Results</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>Automatically dispute invoices from PO suppliers that do not reference a purchase order.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>Automatically dispute invoices from PO suppliers with a red PO alert.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>Automatically code verify invoices from PO suppliers with a green or yellow PO alert.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>Automatically approve invoices from PO suppliers with a green PO alert and a total invoice amount of $1000 or less.</p>
+
+  <p dir="ltr" class="FM_Heading_2_HowTo">How to Configure Invoice Workflow Rules</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Permission___Start"><span class="FM_Bold">Permission:<span style="padding-left: 18pt;" class="FMAutoNumber_1"></span></span>Corporate View to view rules</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Permission___Next"><span class="FM_Bold"><span style="padding-left: 72pt;" class="FMAutoNumber_1"></span></span>Corporate Admin to configure rules</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Note___Start"><span class="FM_Bold">Note:<span style="padding-left: 12pt;" class="FMAutoNumber_1"></span></span>Existing rules will be replaced whenever a set of rules is imported. Any previous rule not included in a new import file will be deleted.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Steps"><span class="FM_Bold">Steps:<span style="padding-left: 6pt;" class="FMAutoNumber_1"></span></span></p>
+
+  <ol dir="ltr" start="1">
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Start">Select <span style="font-weight : bold; ">Corporate &gt; Workflow Configuration</span>.</p>
+</li>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Click <span style="font-weight : bold; ">Configure Invoice Workflow Rules</span>. </p>
+</li>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Click <span style="font-weight : bold; ">Export</span> to download and save the currently configured rules.</p>
+</li>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">In the file, enter the new workflow rules. Save the file in TSV format. For more information about the column headings, refer to <a href="../../Appendix/Appendix/Appendix.htm#XREF_35995_Invoice_Workflow">Invoice Workflow Rules Template</a>.</p>
+</li>
+   <p dir="ltr" class="FM_ADP_TG_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 12pt;" class="FMAutoNumber_2"></span></span>To disable the workflow rules, enter a single rule with <span style="font-weight : bold; ">Internal </span>in the <span style="font-weight : bold; ">Action</span>&#160;column and no other values. </p>
+
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">In <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>, click <span style="font-weight : bold; ">Import</span>.</p>
+</li>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Do one of the following:</p>
+</li>
+   <p dir="ltr" class="FM_ADP_TG_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 12pt;" class="FMAutoNumber_1"></span></span>To upload a file saved on your desktop, select <span style="font-weight : bold; ">File </span>as the import method, click <span style="font-weight : bold; ">Choose File</span>, navigate to the file on your computer, and click <span style="font-weight : bold; ">Open</span>.</p>
+
+   <p dir="ltr" class="FM_ADP_TG_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 12pt;" class="FMAutoNumber_1"></span></span>To copy the contents of a spreadsheet, select <span style="font-weight : bold; ">Copy/Paste</span>&#160;as the import method, copy the information in your file, and paste it into the box.</p>
+
+<div width="100%" align="left">
+   <table border-spacing="0" dir="ltr" class="table48" border-collapse="collapse" style="max-width: 100% ;height: auto">
+    <tr class="tr49">
+    <td class="td50">
+    <p dir="ltr" class="FM_CellBody" style="display:inline"><img alt="InvoiceWorkflowConfig_importworkflowrules.png" id="image141" src="../../../assets/InvoiceWorkflowConfig_importworkflowrules.png" style="max-width: 100% ;height: auto" />&nbsp;</p>
+</td>
+</tr>
+   </table>
+</div>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Click<span style="font-weight : bold; "> Upload</span>.</p>
+</li>
+  </ol>
+  <p dir="ltr" class="FM_Heading_2_HowTo">How to Change the Workflow for Individual Invoices</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Permission___Start"><span class="FM_Bold">Permission:<span style="padding-left: 18pt;" class="FMAutoNumber_1"></span></span>Invoice Admin</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Steps"><span class="FM_Bold">Steps:<span style="padding-left: 6pt;" class="FMAutoNumber_1"></span></span></p>
+
+  <ol dir="ltr" start="1">
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Start">Do one of the following:</p>
+</li>
+   <p dir="ltr" class="FM_ADP_TG_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 12pt;" class="FMAutoNumber_1"></span></span>Select <span style="font-weight : bold; ">Invoice &gt; Dashboard</span>&#160;and click a counter in the <span style="font-weight : bold; ">Invoices</span> portlet.</p>
+
+   <p dir="ltr" class="FM_ADP_TG_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 12pt;" class="FMAutoNumber_1"></span></span>Select <span style="font-weight : bold; ">Invoice</span>&#160;&gt; <span style="font-weight : bold; ">Dashboard</span>&#160;and click the <span style="font-weight : bold; ">Invoice #</span>&#160;in the <span style="font-weight : bold; ">My Ready to Approve</span> portlet.</p>
+
+   <p dir="ltr" class="FM_ADP_TG_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 12pt;" class="FMAutoNumber_1"></span></span>Perform a search by <span style="font-weight : bold; ">Invoice #</span>&#160;using the <span style="font-weight : bold; ">Global Search</span> field in the main navigation bar.</p>
+
+   <p dir="ltr" class="FM_ADP_TG_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 12pt;" class="FMAutoNumber_1"></span></span>Perform a search with multiple criteria by going to <span style="font-weight : bold; ">Invoice</span>&#160;&gt; <span style="font-weight : bold; ">Invoice Search</span>.</p>
+
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Click the <span style="font-weight : bold; ">Invoice #</span>.</p>
+</li>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">On the invoice toolbar, do one of the following:</p>
+</li>
+  </ol>
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 12pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Unlock</span>&#160;to allow users to process the invoice in the <span data-name="ADP_Software_Name" data-val="OpenInvoice Platform" data-showval="TRUE" data-format="ADP_Software_Name">OpenInvoice Platform</span>.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Note_Indent2___Start"><span class="FM_Bold"><span style="padding-left: 36pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 12pt;" class="FMAutoNumber_2"></span></span>If the invoice is pending export when it is unlocked, it will be removed from the Submitted Invoice Export job. </p>
+
+  <p dir="ltr" class="FM_ADP_TG_Note_Indent2___Next"><span class="FM_Bold"><span style="padding-left: 72pt;" class="FMAutoNumber_1"></span></span>The invoice will remain in your ERP and must be manually deleted or otherwise resolved. </p>
+
+  <p dir="ltr" class="FM_ADP_TG_Note_Indent2___Next"><span class="FM_Bold"><span style="padding-left: 72pt;" class="FMAutoNumber_1"></span></span>Changes made to the invoice in the ERP will not be reflected in the <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>&#160;version of the invoice. </p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 12pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Export</span>&#160;to make the invoice read-only in <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>&#160;and have the invoice sent to your ERP for processing.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Note_Indent2___Start"><span class="FM_Bold"><span style="padding-left: 36pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 12pt;" class="FMAutoNumber_2"></span></span>The invoice will be exported to your ERP the next time the Submitted Invoice Export scheduled job is run. The <span style="font-weight : bold; ">Export</span>&#160;button is only available if the job has been scheduled. </p>
+  </div>
+</body>
+</html>

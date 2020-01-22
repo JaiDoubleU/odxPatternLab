@@ -1,0 +1,1155 @@
+<link href="../../css/00-navbar-alternate.css" rel="alternate stylesheet" type="text/css" title="alternate">
+<nav  id="defaultNavbar" role="navigation" class="navbar navbar-default navbar-fixed-top">
+    <div id="message"></div>
+    <div class="container-fluid">
+        <div class="navbar-header navbar-left pull-left">
+            <button type="button" data-toggle="collapse" data-target=".navbar-collapse" class="btn btn-default btn-sm navbar-btn pull-left">
+                Menu
+            </button>
+            <div class="navbar-brand hidden-xs hidden-sm">
+                <a class="logo-navbar"></a>
+            </div>
+        </div>
+        <div class="navbar-header navbar-right pull-right">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="hidden visible-xs pull-left">
+                    <a class="label-success navbar-link">
+                        <i class="fas fa-sack-dollar fa-fw"></i>
+                        <div class="pull-right" style="width: 60px; white-space: normal;float:right;line-height: 1;font-size: 13px; text-align: center;">Get Paid Faster! </div>
+                    </a>
+                </li>
+                <li class="hidden visible-xs visible-sm dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fas fa-search fa-fw"></i></a>
+                    <ul class="dropdown-menu dropdown-menu-right" style="padding: 15px;min-width: 250px;">
+                        <li>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <form>
+                                        <div class="input-group input-group-sm ">
+                                            <span class="input-group-addon dropdown-toggle" data-toggle="dropdown"
+                                                aria-haspopup="true" aria-expanded="false">
+                                                <span class="caret"></span>
+                                            </span>
+                                            <ul class="dropdown-menu dropdown-menu-left">
+                                                <li onclick="setGlobalSearchPlaceholder($(this).first().text());"><a>Invoice #</a></li>
+                                                <li onclick="setGlobalSearchPlaceholder($(this).first().text());"><a href="#">Pricebook #</a></li>
+                                                <li onclick="setGlobalSearchPlaceholder($(this).first().text());"><a href="#">Field Ticket #</a></li>
+                                                <li onclick="setGlobalSearchPlaceholder($(this).first().text());"><a href="#">Purchase Order #</a></li>
+                                            </ul>
+
+                                            <input class="form-control" id="globalSearch" placeholder="Invoice #">
+
+                                            <span class="input-group-btn">
+                                                <button class="btn btn-default"><i class="fas fa-search fa-fw"></i></button>
+                                            </span>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a title="Message Centre" class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <span class="badge badge-xs">49</span>
+                        <i class="fas fa-bell fa-fw"></i>
+                        <!-- <span class="hidden-xs hide">Messages</span> -->
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-right">
+                        <li>
+                            <a title="Message Centre" href="#">
+                                <span class="fa-fw">
+                                    <i class="fas fa-envelope"></i>
+                                    Messages
+                                </span>
+                                <sup class="badge" style="background:#BE3A34">41</sup>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="fa-fw">
+                                    <i class="fas fa-file-alt"></i>
+                                    Completed Reports
+                                </span>
+                                <sup class="badge" style="background:#BE3A34">8</sup>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a title="Help Center" class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fas fa-question-circle fa-fw"></i> <span class="hidden-xs hide">Help</span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-right">
+                        <li><a href="#"><i class="fas fa-life-ring fa-fw"></i> Contact Support</a></li>
+                        <li><a href="#"><i class="fas fa-book fa-fw"></i> Resource Center</a></li>
+                        <li><a href="#"><i class="fas fa-comment fa-fw"></i> Feedback</a></li>
+                        <li><a href="#"><i class="fas fa-users fa-fw"></i> About</a></li>
+                        <li><a href="#"><i class="fas fa-user-secret fa-fw"></i> Privacy</a></li>
+                        <li><a href="#"><i class="fas fa-gavel fa-fw"></i> Terms</a></li>
+                        <li><a href="#"><i class="fas fa-globe fa-fw"></i> Browsers</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a title="My Profile" class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fas fa-user fa-fw"></i> <span class="hidden-xs hide">Profile</span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-right">
+                        <li><a href="#"><i class="fas fa-user fa-fw"></i> Christopher Schwartzenberg</a></li>
+                        <li><a href="#"><i class="fas fa-cog fa-fw"></i> Preferences</a></li>
+                        <li><a href="#"><i class="fas fa-font fa-fw"></i> Font Size</a></li>
+                    </ul>
+                </li>
+                <li><a title="Sign Out" href="#"><i class="fas fa-sign-out fa-fw"></i></a></li>
+            </ul>
+        </div>
+        <ul class="nav navbar-nav navbar-left">
+            <li class="pull-left">
+                <p class="navbar-text hide-overflow small hidden-sm hidden-xs" style="max-width: 225px;">Tetratrex
+                    Oilfield Services Incorporated Ltd.
+                </p>
+            </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right visible-sm visible-md visible-lg hidden-xs">
+            <li class="pull-left">
+                <a class="label-success navbar-link">
+                    <i class="fas fa-sack-dollar fa-fw"></i>
+                    <div class="pull-right" style="width: 60px; white-space: normal;float:right;line-height: 1;font-size: 13px; text-align: center;">Get Paid Faster! </div>
+                </a>
+            </li>
+            <li>
+                <form class="navbar-form navbar-right">
+                    <div class="form-group">
+                        <div class="input-group">
+                            <span class="input-group-addon dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">
+                                <span class="caret"></span>
+                            </span>
+                            <ul class="dropdown-menu dropdown-menu-left">
+                                <li onclick="setGlobalSearchPlaceholder($(this).first().text());"><a href="#">Invoice #</a></li>
+                                <li onclick="setGlobalSearchPlaceholder($(this).first().text());"><a href="#">Pricebook #</a></li>
+                                <li onclick="setGlobalSearchPlaceholder($(this).first().text());"><a href="#">Field Ticket #</a></li>
+                                <li onclick="setGlobalSearchPlaceholder($(this).first().text());"><a href="#">Purchase Order #</a></li>
+                            </ul>
+
+                            <input class="form-control" id="globalSearch" placeholder="Invoice #">
+
+                            <span class="input-group-btn">
+                                <button class="btn btn-default"><i class="fas fa-search fa-fw"></i></button>
+                            </span>
+                        </div>
+                    </div>
+                </form>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<nav id="secondaryNavbar" class="navbar-default animated navbar-fixed-top " style="z-index: 1030">
+    <div class="container-fluid">
+        <div class="row">
+                <div class="col-xs-4">
+                        <div class="btn-group  pull-left">
+                            <button class="btn btn-link text-nowrap dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                <i class="fas fa-arrow-left fa-fw"></i> Back <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Supplier On-Ramping</a></li>
+                                <li><a href="#">Suppliers</a></li>
+                                <li><a href="#">Dashboard</a></li>
+                            </ul>
+                        </div>
+                </div>
+                <div class="col-xs-4 text-center hide-overflow">
+                    <div class="form-control-static">
+                        Contract 123456
+                    </div>
+                </div>
+                <div class="col-xs-4 text-right text-nowrap">
+                        <div class="btn-group  pull-right" style="display:flex;">
+                            <button type="button" class="btn btn-link" data-toggle="tooltip" data-placement="bottom" title="Previous in List"><span class="hidden-xs">Prev </span><i class="fas fa-arrow-up fa-fw"></i></button>
+                            <button type="button" class="btn btn-link" data-toggle="tooltip" data-placement="bottom" title="Next in List"><span class="hidden-xs">Next</span> <i class="fas fa-arrow-down fa-fw"></i></button>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+
+
+<div class="container-fluid page-top-padding">
+    <div class="form-group">
+        <div id="contractWorkspaceAlert" class="alert alert-success center-block hide fade in out slide-out-top" role="alert">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <div><strong>Success!</strong> <span id="contractWorkspaceAlertMessage"></span></div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="form-group">
+                 <ul class="nav nav-pills nav-wizard text-nowrap">
+    <li id="draft" class="hide-overflow stage current">
+      <a data-toggle="tab">Draft</a>
+      <div class="nav-arrow"></div>
+    </li>
+    <li id="internalReview" class="hide-overflow stage">
+      <div class="nav-wedge"></div>
+      <a data-toggle="tab">Internal Review</a>
+      <div class="nav-arrow"></div>
+    </li>
+    <li id="supplierReview" class="hide-overflow stage">
+      <div class="nav-wedge"></div>
+      <a data-toggle="tab">Supplier Review</a>
+      <div class="nav-arrow"></div>
+    </li>
+    <li id="Approve" class="hide-overflow stage">
+      <div class="nav-wedge"></div>
+      <a href="#" data-toggle="tab">Approve</a>
+      <div class="nav-arrow"></div>
+    </li>
+    <li id="execute" class="hide-overflow stage">
+      <div class="nav-wedge"></div>
+      <a href="#" data-toggle="tab">Execute</a>
+      <div class="nav-arrow"></div>
+    </li>
+    <li class="pull-right">
+      <a id="markAsBtn" class="btn btn-success" >Mark Stage Complete</a>
+    </li>
+  </ul>
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="row">
+            <div id="left" class="col-sm-6">
+                <style>
+                    #saveMetaDataAlert {
+                        top: 5px;
+                        position: absolute;
+                        width: 87.5%;
+                        margin: 0 auto;
+                        padding: 10px 15px;
+                    }
+                </style>
+                <!-- Contract Meta Data Panel -->
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <div class="panel-title">
+                            Contract Header
+                            <div class="btn-group btn-group-sm pull-right">
+                                <button id="editMetaDataBtn" class="btn btn-default btn-sm" style="margin: 0;" onclick=" $('#metaDataForm').attr('disabled', !$('#metaDataForm').attr('disabled')); $('#metaDataSaveBtn').toggleClass('hide'); $('#metaDataCancelBtn').toggleClass('hide'); $(this).toggleClass('hide');">Edit</button>
+                                <button id="metaDataSaveBtn" class="btn btn-success hide" onclick=" $('#editMetaDataBtn').toggleClass('hide'); $('#metaDataCancelBtn').toggleClass('hide'); $(this).toggleClass('hide'); $('#metaDataForm').attr('disabled', !$('#metaDataForm').attr('disabled')); showAlertDialog('success','Success!  Your changes have been saved.', true); ">Save</button>
+                                <button id="metaDataCancelBtn" class="btn btn-default hide" onclick=" $('#editMetaDataBtn').toggleClass('hide'); $('#metaDataSaveBtn').toggleClass('hide'); $(this).toggleClass('hide'); $('#metaDataForm').attr('disabled', !$('#metaDataForm').attr('disabled')); ">Cancel</button>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                    <div class="panel-body">
+                        <div id="saveMetaDataAlert" class="alert alert-success center-block hide fade in out slide-out-top" role="alert">
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <strong>Success!</strong> The contract meta data <strong id="newPricebookName"></strong> was saved
+                            successfully!
+                        </div>
+                        <fieldset id="metaDataForm" disabled>
+                            <div class="row">
+                                <div class="col-xs-6">
+                                    <div class="form-group">
+                                        <label class="control-label">Contract Name <span class='text-danger'> * </span>
+
+</label>
+                                        <input type="text" class="form-control" value="Contract 123456">
+                                    </div>
+                                </div>
+                                <div class="col-xs-6">
+                                    <div class="form-group">
+                                        <label class="control-label">Contract Number <span class='text-danger'> * </span>
+
+</label>
+                                        <input type="text" class="form-control" value="123456">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-xs-6">
+                                    <div class="form-group">
+                                        <label class="control-label">Contract Status</label>
+                                        <select class="form-control" id="select" disabled="">
+                                            <option>Draft</option>
+                                            <option selected>Internal Review</option>
+                                            <option>Supplier Review</option>
+                                            <option>Approved</option>
+                                            <option>Executed</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-xs-6">
+                                    <div class="form-group">
+                                        <label class="control-label">Parent Contract </label>
+                                        <input id="parentContractFld" value="Contract 123" type="text" placeholder="Type to search by contract name..."
+                                            class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="control-label">Supplier Name<span class='text-danger'> * </span>
+
+</label>
+                                <input id="supplierNameFld" value="Acme Oilfield Services" type="text" class="form-control">
+                            </div>
+
+                            <div class="form-group">
+                                <label class="control-label">Description</label>
+                                <textarea rows="1" class="form-control">Contract for drilling & completions services provided by Acme Oilfield Services</textarea>
+                            </div>
+
+
+                            <div class="row">
+                                <div class="col-xs-6">
+                                    <div class="form-group">
+                                        <label class="control-label">Location</label>
+                                        <input type="text" class="form-control" value="6378137 298.257222">
+                                    </div>
+                                </div>
+                                <div class="col-xs-6">
+                                    <div class="form-group">
+                                        <label class="control-label">Department <span class='text-danger'> * </span>
+
+</label>
+                                        <input type="text" class="form-control" value="Field Services">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-xs-6">
+                                    <div class="form-group">
+                                        <label class="control-label">Amount</label>
+                                        <input type="text" class="form-control" value="35,000,000.00">
+                                    </div>
+                                </div>
+                                <div class="col-xs-6">
+                                    <div class="form-group">
+                                        <label class="control-label">Budgeted Amount <span class='text-danger'> * </span>
+
+</label>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-xs-6">
+                                    <div class="form-group">
+                                        <label class="control-label">Spend Category <span class='text-danger'> * </span>
+
+</label>
+                                        <input type="text" class="form-control" value="Drilling Operations">
+                                    </div>
+                                </div>
+                                <div class="col-xs-6">
+                                    <div class="form-group">
+                                        <label class="control-label">Currency <span class='text-danger'> * </span>
+
+</label>
+<div class="btn-group btn-block">
+    <a href="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+        <span class="currencyCodeDisplay"> CAD </span>
+        <span class="caret"> </span>
+    </a>
+    <ul class="molecules-currency-dropdown-menu dropdown-menu"></ul>
+</div>
+<script>
+    $(".molecules-currency-dropdown-menu").ready(function() {
+        $.ajax({
+            url: "../../styleguide/data/currencies.json",
+            type: "GET",
+            success: function(response) {
+                var responseData = response;
+                $.each(responseData , function(i,obj) {
+                    var menuItem = '<li onclick="$(\'.currencyCodeDisplay\').html(\' ' +obj.code +' \')"><a id="' +obj.number +' href="#nogo">' +obj.code +'   <small class="text-muted">(' +obj.name +')</small></a></li>';
+                    $(menuItem).appendTo('.molecules-currency-dropdown-menu ');
+                });
+            }
+        });
+    });
+</script>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-xs-6">
+                                    <div class="form-group">
+                                        <label class="control-label">Start Date <span class='text-danger'> * </span>
+
+</label>
+                                        <input type="text" class="form-control" value="01/01/2018">
+                                    </div>
+                                </div>
+                                <div class="col-xs-6">
+                                    <div class="form-group">
+                                        <label class="control-label">End Date</label>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+
+                            </div>
+                        </fieldset>
+                    </div>
+                </div>
+
+                <!-- Comments Panel -->
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <div class="panel-title">
+                            Comments
+                            <div class="btn-group btn-group-sm pull-right">
+                                <button class="btn btn-default btn-sm" onclick="openAddCommentModal();">Add a Comment</button>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                    <div class="panel-body">
+                        <div class="media">
+    <div class="media-left">
+        <i class="fas fa-comment fa-fw text-muted"></i>
+    </div>
+    <div class="media-body">
+      	<p class="media-heading"><strong>Stewart Troutman</strong> <small>12/21/2017 18:23</small></p>
+        <i>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et elit at quam finibus lobortis."</i>
+    </div>
+</div>
+
+<div class="media">
+    <div class="media-left ">
+        <i class="fas fa-comment fa-fw text-muted"></i>
+    </div>
+    <div class="media-body">
+      	<p class="media-heading"><strong>Ollie Springfield</strong> <small>12/21/2017 11:23</small></p>
+        <i>"Lorem ipsum dolor sit amet, consectetur adipiscing."</i>
+    </div>
+</div>
+
+<div class="media">
+    <div class="media-left ">
+        <i class="fas fa-comment fa-fw text-muted"></i>
+    </div>
+    <div class="media-body">
+      	<p class="media-heading"><strong>Tom Elkman </strong><small>12/12/2017 9:23</small></p>
+        <i>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et elit at quam finibus lobortis."</i>
+    </div>
+</div>
+
+
+                    </div>
+                </div>
+
+                <!-- Document Journal Panel -->
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <div class="panel-title">Document Journal</div>
+                    </div>
+                    <div class="panel-body">
+                        <ul class="media-list">
+    <li class="media flexbox-container">
+        <div class="media-left" >
+            <i class="fas fa-check-circle fa-fw text-success"></i>
+        </div>
+        <div class="media-body">
+            <p class="media-heading"><strong>Submitted</strong> <small>12/21/2017 8:23 by Thomas Erikson</small></p>
+            <i>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et elit at quam finibus lobortis."</i>
+        </div>
+    </li>
+
+    <li class="media">
+        <div class="media-left">
+            <i class="fas fa-check-circle fa-fw text-success"></i>
+        </div>
+        <div class="media-body">
+            <p class="media-heading"><strong>Verified</strong> <small>12/21/2017 14:03 by Pat Redmond</small></p>
+        </div>
+    </li>
+
+    <li class="media">
+        <div class="media-left">
+            <i class="fas fa-check-circle fa-fw text-success"></i>
+        </div>
+        <div class="media-body">
+            <p class="media-heading"><strong>Approved </strong><small>12/12/2017 19:23 by Johnathan Goodwin </small></p>
+        </div>
+    </li>
+</ul>
+
+                    </div>
+                </div>
+
+                <!-- Team Panel -->
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <div class="panel-title">
+                            Team
+                            <div class="btn-group btn-group-sm pull-right">
+                                <button class="btn btn-default" onclick="openTeamModal();">Manage Team</button>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                    <div class="panel-body">
+                        <div class="form-group">
+                            <div class="table-responsive">
+                                <table id="teamList" class="table table-bordered table-responsive table-condensed">
+                                    <thead>
+                                        <tr class="text-nowrap">
+                                            <th>Name</th>
+                                            <th>Role</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="text-nowrap">
+                                            <td>Greg Wilson</td>
+                                            <td>Reviewer, Modifier</td>
+                                        </tr>
+                                        <tr class="text-nowrap">
+                                            <td>Harold Winters</td>
+                                            <td>Reviewer, Modifier</td>
+                                        </tr>
+                                        <tr class="text-nowrap">
+                                            <td>Tina Smithers</td>
+                                            <td>Reviewer, Modifier</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="right" class="col-sm-6">
+                <!-- Contract Panel -->
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <div class="panel-title">
+                            Contract
+                            <div class="btn-group btn-group-sm pull-right">
+                                <button class="btn btn-default btn-sm" onclick="showFileUploadDialog();">Upload New Version</button>
+                                <button class="btn btn-default btn-sm">Download Current Version</button>
+                            </div>
+                            <script>
+                                function showFileUploadDialog() {
+                                    var x = document.createElement("INPUT");
+                                    x.setAttribute("type", "file");
+                                    x.setAttribute("id","fileUploadDialog")
+                                    x.style.display = "none";
+                                    document.body.appendChild(x);
+                                    x.click();
+
+                                    $("#fileUploadDialog").change(function(){
+                                            showNavbarFeedback('success', "Success!  The new version of the contract was successfully uploaded.");
+                                    });
+                                }
+                            </script>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                    <div class="panel-body">
+                        <div class="scrollable-panel-body panel-resizable">
+                            <iframe src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/317356/sampleContractTemplate.png" style="width:100%; border-color: #333;" height="880px" frameborder="0"></iframe>
+                        </div>
+                    </div>
+                </div>
+                <!-- Attachments Panel -->
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <div class="panel-title">
+                            Attachments
+
+                            <div class="btn-group btn-group-sm pull-right">
+                                <button class="btn btn-sm btn-default" onclick="showFileUploadDialog();">Add an Attachment</button>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                    <div class="panel-body">
+                        <table id="assignedPricebooksList" width="100%" class="table table-bordered table-striped">
+                            <thead>
+                                <tr class="text-nowrap">
+                                    <th class="text-nowrap">File Name</th>
+                                    <th class="text-center" width="36">Remove</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="text-nowrap">Attachment1.pdf</td>
+                                    <td class="text-center" width="36">
+                                        <a class="btn btn-block"><i class="fas fa-minus-circle"></i></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-nowrap">Attachment2.png</td>
+                                    <td class="text-center" width="36">
+                                        <a class="btn btn-block"><i class="fas fa-minus-circle"></i></a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Price Books Panel -->
+                <style>
+                    #pricebookFeedback {
+                        width: 90%;
+                        margin: 0 auto;
+                        padding: 10px 15px;
+                        position: absolute;
+                        z-index: 1;
+                    }
+                </style>
+                <div class="panel panel-default">
+                    <div id="pricebookFeedback" class="alert alert-success hide fade in out slide-out-top ">
+                        <a href="#" class="close" onclick="$('#pricebookFeedback').toggleClass('slide-out-top');" aria-label="close">&times;</a>
+                        <span class="alertMessageContent"> </span>
+                    </div>
+                    <div class="panel-heading">
+                        <div class="panel-title">
+                            Price Books
+
+                            <div class="btn-group btn-group-sm pull-right">
+                                <button class="btn btn-sm btn-default" onclick="if($('#supplierNameFld').val()){ $('#associatePricebookSupplierName').text(' for ' +$('#supplierNameFld').val())}; openAssociatePriceBookModal();">Add Existing Price Book</button>
+                                <button class="btn btn-sm btn-default" onclick="if($('#supplierNameFld').val()){ $('#createPricebookSupplierName').text(' for ' +$('#supplierNameFld').val())}; openCreatePriceBookModal();">Create New Price Book</button>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                    <div class="panel-body scrollable-panel-body">
+
+                        <!--div class="form-group">
+                            <label class="control-label">Price Book Search</label>
+                            <div class="input-group">
+                                <input id="pricebookMetaDataField" type="text" class="form-control" placeholder="Type to search for an existing price book...">
+                                <span class="input-group-btn">
+                                    <button class="btn btn-default" onclick="if($('#supplierNameFld').val()){ $('#createPricebookSupplierName').text(' for ' +$('#supplierNameFld').val())}; openCreatePriceBookModal();"><i class="fas fa-plus-circle text-success"></i> Create New Price Book</button>
+                                </span>
+                            </div>
+                        </div-->
+
+                        <table id="assignedPricebooksList" class="table table-bordered table-striped">
+                            <caption>Assigned Price Books</caption>
+                            <thead>
+                                <tr class="text-nowrap">
+                                    <th class="text-nowrap">Price Book Name</th>
+                                    <th>Description</th>
+                                    <th>Value</th>
+                                    <th>Min Value</th>
+                                    <th>Max Value</th>
+                                    <th class="text-center">Remove</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="text-nowrap">PB-2018-Compl-CAN</td>
+                                    <td>2018 D&C Canadian Pricing</td>
+                                    <td><small>CAD</small> 250,000</td>
+                                    <td><small>CAD</small> 20,000</td>
+                                    <td><small>CAD</small> 250,000</td>
+                                    <td class="text-center">
+                                        <a class="btn btn-block"><i class="fas fa-minus-circle"></i></a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div id="new-pricebook-modal" class="modal fade in">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h4 id="contract-workspace-modal-title" class="modal-title">Create Price Book <strong id="createPricebookSupplierName"></strong></h4>
+            </div>
+            <div  id="contract-workspace-modal-body" class="modal-body">
+                <div class="form-group">
+                    <label class="control-label">Price Book Name <span class='text-danger'> * </span>
+
+</label>
+                    <input id="contractWorkspaceNewPricebookName" type="text" class="form-control" placeholder="">
+                    <script>
+                        function getPricebookName() { var now= new Date(); return 'PB-' +now.getFullYear() +'-' +now.getMonth() +'-' +now.getDate() +'-' +now.getSeconds();  }
+                        //$('#contractWorkspaceNewPricebookName').val(getPricebookName());
+                    </script>
+                </div>
+                <div class="form-group">
+                    <label class="control-label">Price Book Description <span class='text-danger'> * </span>
+
+</label>
+                    <input type="text" class="form-control" placeholder="" >
+                </div>
+                <div class="form-group">
+                    <label class="control-label">Currency <span class='text-danger'> * </span>
+
+</label>
+<div class="btn-group btn-block">
+    <a href="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+        <span class="currencyCodeDisplay"> USD </span>
+        <span class="caret"> </span>
+    </a>
+    <ul class="molecules-currency-dropdown-menu dropdown-menu"></ul>
+</div>
+<script>
+    $(".molecules-currency-dropdown-menu").ready(function() {
+        $.ajax({
+            url: "../../styleguide/data/currencies.json",
+            type: "GET",
+            success: function(response) {
+                var responseData = response;
+                $.each(responseData , function(i,obj) {
+                    var menuItem = '<li onclick="$(\'.currencyCodeDisplay\').html(\' ' +obj.code +' \')"><a id="' +obj.number +' href="#nogo">' +obj.code +'   <small class="text-muted">(' +obj.name +')</small></a></li>';
+                    $(menuItem).appendTo('.molecules-currency-dropdown-menu ');
+                });
+            }
+        });
+    });
+</script>
+
+                </div>
+                 <div class="form-group">
+                    <label class="control-label">Price Book Value <span class='text-danger'> * </span>
+
+</label>
+                    <input type="text" class="form-control" placeholder="" >
+                </div>
+                <div class="form-group">
+                    <label class="control-label">Minimum Value <span class='text-danger'> * </span>
+
+</label>
+                    <input type="text" class="form-control" placeholder="" >
+                </div>
+                <div class="form-group">
+                    <label class="control-label">Maximum Value <span class='text-danger'> * </span>
+
+</label>
+                    <input type="text" class="form-control" placeholder="" >
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default " data-dismiss="modal" aria-hidden="true">Cancel</button>
+                <button type="button" class="btn btn-success pull-right" data-dismiss="modal" aria-hidden="true" onclick=" $('#newPricebookName').html($('#contractWorkspaceNewPricebookName').val()); showAlertDialog('success','<strong>Success!</strong> The price book was added successfully.', true);">Save and Add Price Book</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="associate-pricebook-modal" class="modal fade in">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h4 id="contract-workspace-modal-title" class="modal-title">Add Existing Price Book <strong id="associatePricebookSupplierName"></strong></h4>
+            </div>
+            <div  id="contract-workspace-modal-body" class="modal-body">
+                <div class="form-group">
+                    <label class="control-label">Price Book Search </label>
+                    <input id="contractWorkspaceNewPricebookName" type="text" class="form-control" placeholder="Search by price book name, number, or supper name...">
+                </div>
+
+                <div class="form-group">
+                    <button id="searchPricebooksBtn" class="btn btn-default">Search</button>
+                </div>
+
+                <div class="form-group">
+                    <div class="table-responsive">
+                        <table id="priceBookSearchResults" class="table">
+                            <thead>
+                                <tr class="text-nowrap">
+                                    <th>Select</th>
+                                    <th class="text-nowrap">Price Book Name</th>
+                                    <th>Description</th>
+                                    <th>Value</th>
+                                    <th>Min Value</th>
+                                    <th>Max Value</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default " data-dismiss="modal" aria-hidden="true">Cancel</button>
+                <button type="button" class="btn btn-success pull-right" data-dismiss="modal" aria-hidden="true" onclick="showAlertDialog('success','<strong>Success!</strong> The price book was added successfully.', true);">Add Selected</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="add-comment-modal" class="modal fade in">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h4 class="modal-title">Add a Comment</h4>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label class="control-label">Comment <span class='text-danger'> * </span>
+
+</label>
+                    <textarea rows="5" class="form-control"></textarea>
+                </div>
+            </div>
+            <div class="modal-footer text-right">
+                <button type="button" class="btn btn-default" data-dismiss="modal" aria-hidden="true">Cancel</button>
+                <button type="button" class="btn btn-success pull-right" data-dismiss="modal" aria-hidden="true" >Save</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="contract-workspace-modal" class="modal fade in">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <h4 id="contract-workspace-modal-title" class="modal-title">Manage Team</h4>
+            </div>
+            <div  id="contract-workspace-modal-body" class="modal-body">
+                <div class="form-group">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Type to search for a user or department..." >
+                        <span class="input-group-addon">
+                            Add to Team
+                        </span>
+                    </div>
+                </div>
+                <hr/>
+
+                <div class="">
+                    <table id="editTeamList" class="table table-bordered table-striped table-condensed">
+                        <thead>
+                            <tr class="text-nowrap">
+                                <th>Name</th>
+                                <th width="35">Role</th>
+                                <th class="text-center" width="15">Delete</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="text-nowrap">
+                                <td>Greg Wilson</td>
+                                <td>
+                                    
+<div class="select-list btn-group">
+    <button type="button" class="title btn btn-default dropdown-toggle" data-toggle="dropdown" >
+        Reviewer, Modifier &nbsp; <span class="caret"></span>
+    </button>
+    <ul class="list-group dropdown-menu select-options" style="padding:0;">
+                    <li class="option list-group-item  text-nowrap">
+                        <label>
+                            <input type="checkbox" name="options" /> Owner
+                        </label>
+                    </li>
+                    <li class="option list-group-item  text-nowrap">
+                        <label>
+                            <input type="checkbox" name="options" checked/> Reviewer
+                        </label>
+                    </li>
+                    <li class="option list-group-item  text-nowrap">
+                        <label>
+                            <input type="checkbox" name="options" checked/> Modifier
+                        </label>
+                    </li>
+    </ul>
+</div>
+
+<script type="text/javascript">
+    (function($){
+        $.fn.multiselect = function() {
+
+            var selector = this;
+            var options = $.extend({
+                onChange: function() {}
+            }, arguments[0] || {});
+
+            activate();
+
+            /////////
+
+            function activate() {
+
+            //events
+            $(selector).find('.title').on('click', function(e) {
+                $(this).parent().find('.select-options').toggle();
+            });
+
+            $(selector).find('input[type="checkbox"]').change(function(e){
+                options.onChange.call(this);
+            });
+
+            }
+        };
+
+}(jQuery));
+
+$(document).ready(function() {
+  $('.select-list').multiselect({
+    onChange: updateTable
+  });
+});
+
+function updateTable() {
+  var checkboxValue = $(this).val();
+  var isChecked = $(this).is(':checked');
+}
+</script>
+
+                                </td>
+                                <td class="text-center">
+                                    <button class="btn btn-block"><i class="fas fa-trash-alt"></i></button>
+                                </td>
+                            </tr>
+                            <tr class="text-nowrap">
+                                <td>Harold Winters</td>
+                                <td>
+                                    
+<div class="select-list btn-group">
+    <button type="button" class="title btn btn-default dropdown-toggle" data-toggle="dropdown" >
+        Reviewer, Modifier &nbsp; <span class="caret"></span>
+    </button>
+    <ul class="list-group dropdown-menu select-options" style="padding:0;">
+                    <li class="option list-group-item  text-nowrap">
+                        <label>
+                            <input type="checkbox" name="options" /> Owner
+                        </label>
+                    </li>
+                    <li class="option list-group-item  text-nowrap">
+                        <label>
+                            <input type="checkbox" name="options" checked/> Reviewer
+                        </label>
+                    </li>
+                    <li class="option list-group-item  text-nowrap">
+                        <label>
+                            <input type="checkbox" name="options" checked/> Modifier
+                        </label>
+                    </li>
+    </ul>
+</div>
+
+<script type="text/javascript">
+    (function($){
+        $.fn.multiselect = function() {
+
+            var selector = this;
+            var options = $.extend({
+                onChange: function() {}
+            }, arguments[0] || {});
+
+            activate();
+
+            /////////
+
+            function activate() {
+
+            //events
+            $(selector).find('.title').on('click', function(e) {
+                $(this).parent().find('.select-options').toggle();
+            });
+
+            $(selector).find('input[type="checkbox"]').change(function(e){
+                options.onChange.call(this);
+            });
+
+            }
+        };
+
+}(jQuery));
+
+$(document).ready(function() {
+  $('.select-list').multiselect({
+    onChange: updateTable
+  });
+});
+
+function updateTable() {
+  var checkboxValue = $(this).val();
+  var isChecked = $(this).is(':checked');
+}
+</script>
+
+                                </td>
+                                <td class="text-center">
+                                    <button class="btn btn-block"><i class="fas fa-trash-alt"></i></button>
+                                </td>
+                            </tr>
+                            <tr class="text-nowrap">
+                                <td>Tina Smithers</td>
+                                <td>
+                                    
+<div class="select-list btn-group">
+    <button type="button" class="title btn btn-default dropdown-toggle" data-toggle="dropdown" >
+        Reviewer, Modifier &nbsp; <span class="caret"></span>
+    </button>
+    <ul class="list-group dropdown-menu select-options" style="padding:0;">
+                    <li class="option list-group-item  text-nowrap">
+                        <label>
+                            <input type="checkbox" name="options" /> Owner
+                        </label>
+                    </li>
+                    <li class="option list-group-item  text-nowrap">
+                        <label>
+                            <input type="checkbox" name="options" checked/> Reviewer
+                        </label>
+                    </li>
+                    <li class="option list-group-item  text-nowrap">
+                        <label>
+                            <input type="checkbox" name="options" checked/> Modifier
+                        </label>
+                    </li>
+    </ul>
+</div>
+
+<script type="text/javascript">
+    (function($){
+        $.fn.multiselect = function() {
+
+            var selector = this;
+            var options = $.extend({
+                onChange: function() {}
+            }, arguments[0] || {});
+
+            activate();
+
+            /////////
+
+            function activate() {
+
+            //events
+            $(selector).find('.title').on('click', function(e) {
+                $(this).parent().find('.select-options').toggle();
+            });
+
+            $(selector).find('input[type="checkbox"]').change(function(e){
+                options.onChange.call(this);
+            });
+
+            }
+        };
+
+}(jQuery));
+
+$(document).ready(function() {
+  $('.select-list').multiselect({
+    onChange: updateTable
+  });
+});
+
+function updateTable() {
+  var checkboxValue = $(this).val();
+  var isChecked = $(this).is(':checked');
+}
+</script>
+
+                                </td>
+                                <td class="text-center">
+                                    <button class="btn btn-block"><i class="fas fa-trash-alt"></i></button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <span class="pull-right">
+                    <button type="button" class="btn btn-default" data-dismiss="modal" aria-hidden="true">Cancel</button>
+                    <button type="button" class="btn btn-success" data-dismiss="modal" aria-hidden="true" onclick="showAlertDialog('success','<strong>Success!</strong> The team was successfully updated.', true);">Save</button>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    dragula([document.getElementById('left'), document.getElementById('right')]);
+
+    var dataSet = [
+        [ "Acme-2018-D&C-CAN", "2018 D&C Canadian Pricing", "Acme 2018 Canadian Drilling & Completions Pricing", "CAD 500,000.00", "CAD 50,000.00", "CAD 750,000.00" ],
+        [ "Acme-2018-Drill-US", "2018 Drilling US Pricing", "Acme 2018 US Drilling Services Pricing", "USD 750,000.00", "USD 125,000.00", "CAD 850,000.00" ],
+        [ "Acme-2018-Haul-US", "2018 Water Hauling US Pricing", "Acme 2018 US Water Hauling Pricing", "USD 75,000.00", "USD 10,000.00", "CAD 80,000.00" ],
+        [ "Acme-2019-D&C-US", "2019 D&C US Pricing", "Acme 2019 US Drilling & Completions Pricing", "USD 950,000.00", "USD 65,000.00", "CAD 129,000.00" ]
+    ];
+
+
+    $('#searchPricebooksBtn').on('click', function() {
+        $('#priceBookSearchResults').DataTable( {
+            oLanguage: defaultDataTablesOLanguage,
+            data: dataSet,
+            columns: [
+                 {
+                    render: function ( data, type, row ) {
+                        if ( type === 'display' ) {
+                            return '<div class="checkbox"><label><input type="checkbox"></label></div>';
+                        }
+                        return data;
+                    },
+                    className: "dt-body-center"
+                },
+                { title: "Price Book Name" },
+                { title: "Description" },
+                { title: "Value" },
+                { title: "Min Value" },
+                { title: "Max Value" }
+            ]
+        } );
+    } );
+
+    $("#contWorkspaceCurrencyDropdownMenu").ready(function() {
+        $.ajax({
+            url: "../../styleguide/data/currencies.json",
+            type: "GET",
+            success: function(response) {
+                var responseData = response;
+                $.each(responseData , function(i,obj) {
+                    var menuItem = '<li onclick="$(\'#currencyCodeDisplay\').html(\' ' +obj.code +' \')"><a id="' +obj.number +' href="#nogo">' +obj.code +'   <small class="text-muted">(' +obj.name +')</small></a></li>';
+                    $(menuItem).appendTo('#contWorkspaceCurrencyDropdownMenu');
+                });
+            }
+        });
+    });
+
+    function openTeamModal() {
+        $('#contract-workspace-modal-title').html("Manage Team");
+        $('#contract-workspace-modal').modal();
+        $('[data-toggle="popover"]').popover();
+    }
+
+    function openAssociatePriceBookModal() {
+        $('#associate-pricebook-modal').modal();
+    }
+
+    function openCreatePriceBookModal() {
+        $('#new-pricebook-modal').modal();
+    }
+
+    function openAddCommentModal() {
+        $('#add-comment-modal').modal();
+    }
+
+    $('body').addClass('page-bg');
+</script>

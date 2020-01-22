@@ -1,0 +1,13 @@
+.btn-toolbar-centered {
+    text-align: center;
+}
+
+.btn-toolbar-centered .btn-group {
+    float: none !important;
+}
+
+.btn-toolbar-centered .btn-group .btn {
+    min-width: 75px;
+    padding-top: 0.5rem;
+    max-height: 50px;
+}

@@ -1,0 +1,33 @@
+<nav class="navbar navbar-inverse {{extraClass}}" style="border-top: 1px solid #ccc;">
+    <div class="container-fluid">
+        <div class="btn-toolbar btn-toolbar-centered" role="toolbar">
+            <div class="btn-group" role="group">
+                {{#customToolbarItems}}
+                        <button class="btn btn-default">
+                            <div class="{{{class}}}">
+                                <i class="{{{icon}}}"></i>
+                            </div>
+                            <div class="{{{class}}}">
+                                {{{ text }}}
+                            </div>
+                        </button>
+                {{/customToolbarItems}}
+
+                {{^customToolbarItems}}
+                    {{#navToolbarItems}}
+                        <button class="btn btn-default">
+                            <div class="{{{class}}}">
+                                <i class="{{{icon}}}"></i>
+                            </div>
+                            <div class="{{{class}}}">
+                                {{{ text }}}
+                            </div>
+                        </button>
+                    {{/navToolbarItems}}
+                {{/customToolbarItems}}
+
+
+            </div>
+        </div>
+    </div>
+</nav>

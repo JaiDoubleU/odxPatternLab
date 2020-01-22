@@ -1,0 +1,100 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+ <title>IntegrationImports_DocumentStatusUpdate_PSI</title>
+
+ <link rel="stylesheet" href="../../../../OpenInvoiceForBuyers_master.css" type="text/css" />
+
+
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style>
+ <meta name="generator" content="Adobe FrameMaker 2017" />
+<script type="text/javascript" src="../../../../template/scripts/rh.min.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/common.min.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/topic.min.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/constants.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/utils.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/mhutils.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/mhlang.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/mhver.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/settings.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/XmlJsReader.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/loadparentdata.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/loadscreen.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/loadprojdata.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/mhtopic.js"></script>
+ <link rel="stylesheet" type="text/css" href="../../../../template/styles/topic.min.css">
+<script type="text/javascript" >
+gRootRelPath = "../../../..";
+gCommonRootRelPath = "../../../..";
+gTopicId = "";
+</script>
+ <meta name="brsprev" value="OpenInvoiceForBuyers_master/Integrations/Integration_Imports/IntegrationImports_InvoiceResponse/IntegrationImports_InvoiceResponse.htm">
+ <meta name="brsnext" value="OpenInvoiceForBuyers_master/Integrations/Integration_Imports/IntegrationImports_FieldTicketUpdate/IntegrationImports_FieldTicketUpdate.htm">
+ <meta name="topic-breadcrumbs" content="Administrator & User Guide for Buyers > Integration Imports" />
+</head>
+
+<body dir="ltr">
+<script type="text/javascript" src="../../../../ehlpdhtm.js"></script>
+
+ <div dir="ltr">
+  
+  <p dir="ltr" class="FM_ADP_TG_Heading_1"><a name="TOC_Document_Status_Update"></a><a name="XREF_92089_Document_Status"></a>Document Status Update Import (PSI)</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Body_Style">The Document Status Update Import allows buyers to update invoice statuses based on the actions performed in their back office. Multiple invoices can be updated in each Document Status Update file. The file contains the invoice identifier for each invoice and the action that has been taken on the invoice.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Body_Style">Document Status Updates are transmitted in multi-part MIME format.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Body_Style">The invoice can be marked with the following actions. With the exception of the comment action, an action can only be taken once on an invoice. If multiple actions are posted for an invoice, the actions will be applied to the invoice ordered by the TransactionDatetime value.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>Post</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>Pay </p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>Post Cancel</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>Pay Cancel</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>Comment</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>ReleaseForPayment </p>
+
+  <p dir="ltr" class="FM_ADP_TG_Body_Style">These attributes associated with the Pay and Post actions can also be included.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>Whether the buyer has realized an early pay discount.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>The total amount the buyer has paid on an invoice. This tag does not need to be specified if the buyer does not use the <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>&#160;interface. The invoice will be treated as short paid if the remit total is less than invoice amount. </p>
+
+  <p dir="ltr" class="FM_ADP_TG_Body_Style"><span style="font-weight : bold; ">Schema:</span> DocumentStatusUpdateBatch.xsd</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Body_Style"><span style="font-weight : bold; ">See also: </span>DocStatusUpdate_IG.pdf and DocStatusUpdate_TRP.pdf</p>
+  <p dir="ltr" class="FM_ADP_TG_Body_Style">&nbsp;</p>
+ </div>
+</body>
+
+</html>
+

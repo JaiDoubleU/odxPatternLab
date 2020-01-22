@@ -1,0 +1,43 @@
+.bg-gradient {
+    background-image: linear-gradient(to bottom, #03252f, #0d313c, #183d49, #234957, #2e5665);
+    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+}
+
+.login-panel {
+    width: 650px;
+    min-height: 500px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: 75px auto 0;
+    max-width: 100%;
+    max-height: 100%;
+    overflow: auto;
+    border: none;
+    display: table;
+}
+
+.login-panel>.panel-heading {
+    background-color: #fff;
+    border-bottom: none;
+    color: #13322b;
+    font-weight: 300;
+    font-size: 1.75em;
+    padding: 9px 15px 6px 15px;
+}
+
+.login-footer {
+    background-color: #ffffff;
+    padding-bottom: 0;
+}
+
+div.content {
+    /*   display: table-cell;
+  vertical-align: middle; */
+}

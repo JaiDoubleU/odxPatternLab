@@ -1,0 +1,60 @@
+<svg version="1.1" id="Layer_1" class="enverus-svg-loader" data-name="Enverus SVG Loader" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 168.25 128.19" xml:space="preserve">
+  <style type="text/css">
+    .main{enable-background:new 0 0 168.25 128.19;}	
+    .main.white{background-color:white}
+    .st0{fill:#A0EF6E;}  
+    .st1{fill:#56BC2F;}
+    .black .st2{fill:#ffffff;}
+    .white .st2{fill:#ffffff;}
+  </style>
+  
+  <rect x="79.17" y="11.35" class="st2" width="69.82" height="21.64" style="fill:stroke-width:0">
+     <animate id="s0" begin="0;e4.end+0.4" attributeName="width" from="0" to="10" dur="0.1s"></animate> 
+    <animate id="s5" begin="s1.end" attributeName="width" from="10" to="59.82" dur="0.2s"></animate>
+    <animate id="frz5" begin="s5.end" attributeName="width" from="69.82" to="69.82" dur="2s"></animate>
+    <animate begin="e1.end" attributeName="width" from="69.82" to="0" dur="0.25s" fill="freeze"></animate>
+    <animate begin="e1.end" attributeName="x" from="79.17" to="148.99" dur="0.25s"></animate>
+  </rect>
+
+  <rect x="79.17" y="31.99" class="st2" width="22.32" height="64.38" style="fill:stroke-width:0">
+    <animate id="s6" begin="s1.end" attributeName="width" from="0" to="22.32" dur="0.2s"></animate>
+    <animate id="frz6" begin="s6.end" attributeName="width" from="22.32" to="22.32" dur="2s"></animate>
+    <animate id="e6" begin="e1.end" attributeName="width" from="22.32" to="0" dur="0.25s" fill="freeze"></animate>
+    <animate begin="e1.end" attributeName="x" from="79.17" to="101.49" dur="0.25s"></animate>
+  </rect>
+
+  <rect x="79.17" y="71.74" class="st2" width="22.32" height="25.08" style="fill:stroke-width:0">
+    <animate id="s7" begin="s1.end" attributeName="width" from="0" to="22.32" dur="0.2s"></animate>
+    <animate id="frz7" begin="s7.end" attributeName="width" from="22.32" to="22.32" dur="2s"></animate>
+    <animate begin="e1.end" attributeName="width" from="22.32" to="0" dur="0.25s" fill="freeze"></animate>
+    <animate begin="e1.end" attributeName="x" from="79.17" to="101.49" dur="0.25s"></animate>
+  </rect> 
+  
+  <rect x="101.49" y="96.81" class="st2" width="49.34" height="18.09">
+    <animate id="s4" begin="0.1s;e4.end+0.5" attributeName="width" from="0" to="49.34" dur="0.4s"></animate>
+    <animate id="frz4" begin="s4.end" attributeName="width" from="49.34" to="49.34" dur="2s"></animate>
+    <animate id="e4" begin="e1.end" attributeName="width" from="49.34" to="0" dur="0.1s" fill="freeze"></animate>
+    <animate begin="e1.end" attributeName="x" from="101.49" to="150.83" dur="0.1s"></animate>
+  </rect>
+  
+  <rect x="17.42" y="53.63" class="st0" width="22.32" height="18.1" style="fill:stroke-width:0">
+    <animate id="s1" begin="0;e4.end+0.5" attributeName="width" from="0" to="22.32" dur="0.3s" fill="freeze"></animate>
+    <animate id="frz1" begin="s1.end" attributeName="width" from="22.32" to="22.32" dur="1.15s" fill="freeze"></animate>
+    <animate id="e1" begin="frz1.end" attributeName="width" from="22.32" to="0" dur="0.3s" fill="freeze"></animate>
+    <animate begin="frz1.end" attributeName="x" from="17.42" to="39.74" dur="0.3s"></animate>
+  </rect>
+
+  <rect x="54.47" y="53.63" class="st1" width="92.14" height="18.1">
+    <animate id="s2" begin="0.1s;e4.end+0.5" attributeName="width" from="0" to="92.14" dur="0.4s"></animate>
+    <animate id="frz2" begin="s2.end" attributeName="width" from="92.14" to="92.14" dur="2s"></animate>
+    <animate id="e2" begin="e6.end" attributeName="width" from="92.14" to="0" dur="0.25s" fill="freeze"></animate>
+    <animate begin="e6.end" attributeName="x" from="54.74" to="146.61" dur="0.25s"></animate>	
+  </rect>
+
+  <rect x="45.41" y="96.82" class="st0" width="33.75" height="18.1">	
+    <animate id="s3" begin="0.1s;e4.end+0.5" attributeName="width" from="0" to="33.75" dur="0.2s"></animate>
+    <animate id="frz3" begin="s3.end" attributeName="width" from="33.75" to="33.75" dur="2s"></animate>
+    <animate id="e3" begin="e1.end" attributeName="width" from="33.75" to="0" dur="0.25s" fill="freeze"></animate>
+    <animate begin="e1.end" attributeName="x" from="45.41" to="79.16" dur="0.25s"></animate>
+  </rect>
+</svg>

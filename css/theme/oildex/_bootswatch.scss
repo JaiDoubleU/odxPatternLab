@@ -1,0 +1,464 @@
+// Oildex 3.3.7
+// Bootswatch
+// -----------------------------------------------------
+
+// Setting all <a> elements with cursor pointer to avoid href usage
+a {
+    cursor: pointer;
+}
+
+// Utility Classes  ===========================================================
+.hide-overflow {
+  @include text-overflow();
+}
+
+// Navbar =====================================================================
+.navbar {
+    border-width:0;
+    border-bottom-width: 1px;
+}
+
+// Dashboard Cards  ===========================================================
+
+// Custom classes for displaying icons on dashboard cards
+.dashboard-card {
+    @include text-overflow();
+}
+@mixin dashboard-card-icon-variant($color, $lighten-percentage, $desaturate-percentage){
+    color: lighten(desaturate($color, $desaturate-percentage), $lighten-percentage);
+    font-size: 9.3em;
+    left: -34px;
+    position: absolute;
+    top: -36px;
+}
+
+.dashboard-card-lg-text {
+    font-size: $font-size-x-large;
+    font-weight: 300;
+}
+
+.fa-dashboard-icon-success {
+  @include dashboard-card-icon-variant ($brand-success, 60%, 70%);
+}
+
+.fa-dashboard-icon-info {
+  @include dashboard-card-icon-variant ($brand-info, 70%, 70%);
+}
+
+.fa-dashboard-icon-primary {
+  @include dashboard-card-icon-variant ($brand-primary, 50%, 50%);
+}
+
+.fa-dashboard-icon-danger {
+  @include dashboard-card-icon-variant ($brand-danger, 40%, 35%);
+}
+
+.fa-dashboard-icon-warning {
+  @include dashboard-card-icon-variant ($brand-warning, 20%, 20%);
+}
+
+
+// Buttons ====================================================================
+// Only standalone buttons are rounded, so all other buttons have the default border-radius so they appear similar to input fields
+
+.btn {
+    border-color: transparent;
+    transition: background-color 0.15s ease-in-out, border 0.15s ease-in-out;
+    @include transition(all 0.4s);
+    @include ripple();
+
+
+    &:not[class^="btn-outline"] {
+        &.disabled,
+        &[disabled],
+        fieldset[disabled] & {
+            @include opacity(0.45);
+        }
+    }
+
+
+     &,
+     &:active,
+     &.active {
+         &:focus,
+         &.focus {
+             outline: none;
+         }
+     }
+
+    @include disabled-buttons();
+}
+
+// disabled button styles
+@mixin disabled-buttons(){
+    &.disabled,
+    &[disabled],
+    &.disabled.hover,
+    &[disabled]:hover,
+    &.disabled.focus,
+    &[disabled]:focus,
+    fieldset[disabled] & {
+        @include box-shadow(none);
+
+        background-color: $btn-disabled-bg;
+        border-color: $btn-default-border;
+        cursor: $cursor-disabled;
+        color: $btn-disabled-color;
+
+        // removes the background and border on disabled link buttons
+        &.btn-link, &.btn-outline-link {
+            background: transparent;
+            border: none;
+        }
+    }
+}
+
+.btn-outline-primary {
+    @include button-variant($btn-primary-bg; $btn-primary-color; $btn-primary-border);
+}
+.btn-outline-default {
+    @include button-variant($btn-default-color; #fff; $btn-default-border);
+}
+.btn-outline-info {
+    @include button-variant($btn-info-bg; $btn-info-color; $btn-info-border);
+}
+.btn-outline-success {
+    @include button-variant($btn-success-bg; $btn-success-color; $btn-success-border);
+}
+.btn-outline-warning {
+    @include button-variant($brand-warning-bg; $btn-outline-btn-bg; $btn-warning-border);
+}
+.btn-outline-danger {
+    @include button-variant($btn-danger-bg; $btn-outline-btn-bg; $btn-danger-border);
+}
+
+.btn-transparent-white {
+    @include button-variant($white; transparent; $white);
+}
+
+// Block button
+.btn-block {
+  @include border-right-radius($input-border-radius);
+  @include border-left-radius($input-border-radius);
+}
+
+// Set corners individual because sometimes a single button can be in a .btn-group and we need :first-child and :last-child to both match
+.btn-group > .btn:first-child {
+    &:not(:last-child):not(.dropdown-toggle) {
+        @include border-right-radius($input-border-radius);
+    }
+}
+
+
+.btn-default {
+    @include button-variant($btn-default-color; $btn-default-bg; $btn-default-border);
+    @include disabled-buttons();
+}
+.btn-primary {
+    @include button-variant($btn-primary-color; $btn-primary-bg; $btn-primary-border);
+    @include disabled-buttons();
+}
+// Success appears as green
+.btn-success {
+    @include button-variant($btn-success-color; $btn-success-bg; $btn-success-border);
+    @include disabled-buttons();
+}
+// Info appears as blue-green
+.btn-info {
+    @include button-variant($btn-info-color; $btn-info-bg; $btn-info-border);
+    @include disabled-buttons();
+}
+// Warning appears as orange
+.btn-warning {
+    @include button-variant($btn-warning-color; $btn-warning-bg; $btn-warning-border);
+    @include disabled-buttons();
+}
+// Danger and error appear as red
+.btn-danger {
+    @include button-variant($btn-danger-color; $btn-danger-bg; $btn-danger-border);
+    @include disabled-buttons();
+}
+
+//============
+//== Dropdown
+//============
+//## Customizations to Dropdowns
+// Add animations to dropdown & cog
+.dropdown > .fa-cog {
+    transition: transform 0.15s ease-in-out;
+    transform: rotate(0deg);
+}
+
+// Need .dropdown-toggle since :last-child doesn't apply, given that a .dropdown-menu is used immediately after it
+.btn-group-vertical > .btn:first-child:not(:last-child),
+.btn-group-vertical > .btn:last-child:not(:first-child),
+.btn-group > .btn,
+.btn-group > .dropdown-toggle,
+.navbar .btn {
+    @include border-top-radius($input-border-radius);
+    @include border-bottom-radius($input-border-radius);
+}
+
+.input-group-addon,
+.input-group-btn > .btn {
+    @include border-right-radius($input-border-radius);
+    @include border-left-radius($input-border-radius);
+}
+
+// Typography =================================================================
+
+.help-block {
+    color: #707070;
+}
+
+// Within heading, strip any `h*` tag of its default margins for spacing.
+.panel-title {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+// Tables =====================================================================
+
+// Forms ======================================================================
+
+// Navs =======================================================================
+.nav-tabs {
+  > li {
+
+    // Actual tabs (as links)
+    > a {
+      &:hover {
+        background-color: $nav-tabs-active-link-bg-color;
+        color: $nav-tabs-active-link-hover-color;
+        border: 1px solid $nav-tabs-active-link-hover-border-color;
+        border-bottom-color: transparent;
+      }
+    }
+
+    // Active state, and its :hover to override normal :hover
+    &.active > a {
+        background-color: $nav-tabs-active-link-bg-color;
+        color: $nav-tabs-active-link-hover-color;
+        border: 1px solid $nav-tabs-active-link-hover-border-color;
+        border-bottom-color: transparent;
+        &:hover, &:focus {
+            background-color: $nav-tabs-active-link-bg-color;
+        }
+    }
+  }
+}
+
+.tab-content {
+    background-color: $nav-tabs-active-link-bg-color;
+    padding: $padding-base-vertical $padding-base-horizontal;
+    border: 1px solid $nav-tabs-active-link-hover-border-color;
+    border-top-color: transparent;
+}
+
+// Indicators =================================================================
+
+// Progress bars ==============================================================
+
+// Containers =================================================================
+
+@mixin blockquote-variant($border){
+  border-color: $border;
+}
+
+.blockquote-primary {
+  @include blockquote-variant($blockquote-primary-border);
+}
+
+// Alerts
+.close {
+  float: right;
+  font-size: ($font-size-base * 1.5);
+  font-weight: $close-font-weight;
+  line-height: 1;
+  color: $close-color;
+  text-shadow: $close-text-shadow;
+  @include opacity(.85);
+
+  &:hover,
+  &:focus {
+    color: $close-color;
+    text-decoration: none;
+    cursor: pointer;
+    @include opacity(.5);
+  }
+
+  // Additional properties for button version
+  // iOS requires the button element instead of an anchor tag.
+  // If you want the anchor version, it requires `href="#"`.
+  // See https://developer.mozilla.org/en-US/docs/Web/Events/click#Safari_Mobile
+  button& {
+    padding: 0;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    -webkit-appearance: none;
+  }
+}
+
+// Logo =======================================================================
+
+.logo {
+    display: inline-block;
+    background: data-uri("../assets/img/oildex-logo.svg") center / cover no-repeat;
+    @include text-hide();
+    height: $line-height-computed;
+    width: $line-height-computed * (95/22); // The image has a native resolution of 95 by 22
+    vertical-align: bottom;
+}
+
+.logo-md-2x {
+    @media (min-width: $screen-md-min) {
+        height: $line-height-computed * 2;
+        width: $line-height-computed * 2 * (95/22); // The image has a native resolution of 95 by 22
+    }
+}
+
+.logo-navbar {
+    @include logo();
+    background-size: contain;
+    display: block;
+    width: 120px;
+    height: 100%;
+
+    @media (max-width: 767px) {
+        margin: auto;
+    }
+}
+
+// Animations  =================================================================
+
+@mixin ripple(){
+    position: relative;
+
+    &:after {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        @include gradient-radial(#000 10%, transparent 5.01%);
+
+        background-size: 100% 100%;
+        background-position: 50%;
+        opacity: 0;
+        pointer-events: none;
+        transition: background .4s, opacity 1s;
+    }
+
+    &:active:after {
+        background-size: 0% 0%;
+        opacity: .1;
+        transition: 0s;
+    }
+}
+
+// Custom Helpers  =================================================================
+.border-left {
+    border-left: $border-2px-gray-light;
+}
+
+.border-right {
+    border-right: $border-2px-gray-light;
+}
+
+.border-bottom {
+    border-bottom: $border-2px-gray-light;
+}
+
+.border-top {
+    border-top: $border-2px-gray-light;
+}
+
+// Custom On/Off Switch ============================================================
+input[switch] {
+    display: none;
+    font-size: 100%;
+    opacity: 0;
+    
+    + label {
+        background-color: $gray-lighter;
+        background-image: none;
+        border-radius: 2em;
+        box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2) inset;
+        cursor: pointer;
+        display: block;
+        font-family: inherit;
+        font-size: 1rem;
+        font-weight: 500;
+        line-height: 1.4;
+        height: 2.5rem;
+        margin: 0;
+        padding: 0;
+        position: relative;
+        text-align: right;
+        width: 5rem;
+        -webkit-transition: all 0.1s ease-in-out;
+        -moz-transition: all 0.1s ease-in-out;
+        transition: all 0.1s ease-in-out;
+    
+        &:before {
+            /* Label */
+            overflow-x: hidden;
+            color: $gray-light;
+            content: attr(data-off-label);
+            display: block;
+            font-family: inherit;
+            font-size: 0.85rem;
+            line-height: 2rem;
+            overflow: hidden;
+            padding: 0.3rem 0.6rem;
+            position: absolute;
+            text-align: right;
+            text-transform: uppercase;
+            width: 100%;
+            -webkit-transition: all 0.1s ease-in-out;
+            -moz-transition: all 0.1s ease-in-out;
+            transition: all 0.1s ease-in-out;
+        }
+        
+        &:after {
+            /* Slider */
+            background-color: $gray-lighter;
+            box-shadow: none;
+            border-radius: 2rem;
+            content: '';
+            height: 2rem;
+            left: 0.25rem; 
+            position: absolute;
+            top: 0.2rem;
+            width: 2rem;
+            -webkit-transition: all 0.1s ease-in-out;
+            -moz-transition: all 0.1s ease-in-out;
+            transition: all 0.1s ease-in-out;
+        }
+    }
+    &:checked {
+        + label {
+            background-color: $brand-primary;
+            background-image: linear-gradient(rgba(255, 255, 255, 0.15), rgba(0, 0, 0, 0.2));
+            box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3) inset;
+            
+            &:before {
+                overflow-x: hidden;
+                color: $white;
+                content: attr(data-on-label);
+                text-align: left;
+            }
+            
+            &:after {
+                background-color: $gray-lighter;
+                box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, 0.3);
+                left: 2.7rem;
+                height: 2rem;
+                width: 2rem;
+            }
+        }
+    }
+}

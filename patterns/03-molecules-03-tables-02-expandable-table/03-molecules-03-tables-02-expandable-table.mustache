@@ -1,0 +1,55 @@
+
+{{# table-multi-row-header}}
+<div class="table-responsive multi-row-header">
+    <table class="table table-bordered">
+        {{# thead }}
+        <thead>
+            <tr>
+                <th width="15">&nbsp;</th>
+                {{# th1 }}
+                <th colspan=2>{{ title }}</th>
+                {{/ th1 }}
+            </tr>
+            <tr>
+                 <th width="15">&nbsp;</th>
+                {{# th2 }}
+                <th>{{ title }}</th>
+                {{/ th2 }}
+            </tr>
+        </thead>
+        {{/ thead }}
+        {{# tbody }}
+        <tbody>
+              <tr data-toggle="collapse" data-target="#toggle1" class="accordion-toggle">
+                <td width="15">
+                    <a class="btn btn-default btn-xs fas fa-chevron-down" onmouseup="$(this).toggleClass('fa-chevron-down'); $(this).addClass('fa-chevron-up');"></a>
+                </td>
+                {{# td1 }}
+                <td colspan=2>{{ value }}</td>
+                {{/ td1 }}
+            </tr>
+            <tr class="accordian-body collapse out" id="toggle1">
+                <td></td>
+                {{# td2 }}
+                <td>{{ value }}</td>
+                {{/ td2 }}
+            </tr>
+        </tbody>
+        <tbody>
+              <tr data-toggle="collapse" data-target="#toggle2" class="accordion-toggle">
+                <td width="15"><a class="btn btn-default btn-xs fas fa-chevron-down" onmouseup="$(this).toggleClass('fa-chevron-down'); $(this).addClass('fa-chevron-up');"></a></td>
+                {{# td3 }}
+                <td colspan=2>{{ value }}</td>
+                {{/ td3 }}
+            </tr>
+              <tr  class="accordian-body collapse out" id="toggle2">
+                <td></td>
+                {{# td4 }}
+                <td>{{ value }}</td>
+                {{/ td4 }}
+            </tr>
+        </tbody>
+        {{/ tbody }}
+    </table>
+</div>
+{{/ table-multi-row-header }}

@@ -1,0 +1,17 @@
+<div class="panel {{panelClass}}">
+    {{# panelHeading }}
+        <div class="panel-heading">{{ headingText }}</div>
+    {{/ panelHeading }}
+    <div class="panel-body">
+        {{#panelContent}}
+            {{ panelContent }}
+        {{/panelContent}}
+
+        {{^panelContent}}
+            {{ loremIpsumMed }}
+        {{/panelContent}}
+    </div>
+    {{# panelFooter }}
+        <div class="panel-footer">{{ footerText }}</div>
+    {{/ panelFooter }}
+</div>

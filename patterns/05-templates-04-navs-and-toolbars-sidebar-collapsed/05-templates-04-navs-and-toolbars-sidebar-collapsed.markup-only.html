@@ -1,0 +1,90 @@
+<style>
+    .popover-content, .popover { padding: 0; }
+    ul.left-menu { margin:0; }
+    ul.left-menu  .dropdown-header { background-color: #f5f5f5; border-color: #ddd; font-size: 1rem; border-radius: 0; }
+    ul.left-menu > li { padding:0; vertical-align: top; min-width: 220px; }
+    ul.left-menu ul { margin:0; }
+    ul.left-menu li:not(:first-child) ul.list-group { margin-left: -4px; }
+    .sidebar-condensed .sidebarMenuItemText { display: none;}
+</style>
+
+<!-- Sidebar -->
+<nav class="navbar navbar-inverse" role="navigation">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <div class="btn-group navbar-btn">
+                <button class="btn btn-default" onmousedown="$('.leftSidebarItem').popover('destroy'); $('.sidebar').toggleClass('sidebar-condensed');">Menu</button>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<div id="popover-content" class="dropdown-menu ">
+    <ul class="list-inline list-unstyled left-menu">
+        <li>
+            <!-- add a negative margin to have the left border of the second list overlap the right border of the first -->
+            <ul class="list-group">
+                <li class="list-group-item dropdown-header">Manage Contracts</li>
+                <li class="list-group-item text-nowrap"><a>Dashboard</a></li>
+                <li class="list-group-item text-nowrap"><a>Create Contract</a></li>
+                <li class="list-group-item text-nowrap"><a>Search Contracts</a></li>
+            </ul>
+        </li>
+        <li>
+            <ul class="list-group">
+                <li class="list-group-item dropdown-header">Manage Pricebooks</li>
+                <li class="list-group-item text-nowrap"><a>PriceBook Search</a> </li>
+                <li class="list-group-item text-nowrap"><a>Units of Measure</a></li>
+                <li class="list-group-item text-nowrap"><a>Supplier Catalogs</a></li>
+                <li class="list-group-item text-nowrap"><a>Purchase Category Coding</a></li>
+                <li class="list-group-item text-nowrap"><a>Create Pricebook</a></li>
+            </ul>
+        </li>
+    </ul>
+</div>
+
+<div id="sidebar-condensed">
+    <ul style="display: inline-block" class="list-group sidebar sidebar-condensed">
+        <li class="list-group-item leftSidebarItem">
+            <span><i class="fas fa-home fa-fw"></i></span>
+            <span class="sidebarMenuItemText fade in out ">
+                    Dashboard
+            </span>
+            <span class="pull-right"><i class="fal fa-angle-right fa-fw " ></i></span>
+        </li>
+        <li class='list-group-item leftSidebarItem'>
+            <span><i class="fas fa-file  fa-fw"></i></span>
+            <span class="sidebarMenuItemText fade in out ">
+                    Invoice
+            </span>
+            <span class="pull-right"><i class="fal fa-angle-right fa-fw " ></i></span>
+        </li>
+        <li class='list-group-item leftSidebarItem'>
+            <span><i class="fas fa-ticket-alt  fa-fw" style="transform: rotate(135deg);"></i></span>
+            <span class="sidebarMenuItemText fade in out ">
+                    Ticket
+            </span>
+            <span class="pull-right"><i class="fal fa-angle-right fa-fw " ></i></span>
+        </li>
+    </ul>
+</div>
+<script>
+        $('body').popover({
+            placement: 'right',
+            container: '#sidebar',
+            html: true,
+            selector: ".leftSidebarItem",
+            trigger: 'hover',
+            container: 'body',
+            animation: false,
+            content: function () {
+                return $('#popover-content').html();
+            }
+        }).on('hide.bs.popover', function () {
+            if ($(".popover:hover").length) {
+                return false;
+            }
+        }).on('mouseleaves', '.popover', function () {
+            $('.popover').popover('hide');
+        });
+</script>

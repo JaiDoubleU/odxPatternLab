@@ -1,0 +1,105 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+ <title>Payment Dashboard</title>
+
+ <link rel="stylesheet" href="../../../OpenInvoiceForBuyers_master.css" type="text/css" />
+
+
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style>
+ <meta name="generator" content="Adobe FrameMaker 2017" />
+<script type="text/javascript" src="../../../template/scripts/rh.min.js"></script>
+<script type="text/javascript" src="../../../template/scripts/common.min.js"></script>
+<script type="text/javascript" src="../../../template/scripts/topic.min.js"></script>
+<script type="text/javascript" src="../../../template/scripts/constants.js"></script>
+<script type="text/javascript" src="../../../template/scripts/utils.js"></script>
+<script type="text/javascript" src="../../../template/scripts/mhutils.js"></script>
+<script type="text/javascript" src="../../../template/scripts/mhlang.js"></script>
+<script type="text/javascript" src="../../../template/scripts/mhver.js"></script>
+<script type="text/javascript" src="../../../template/scripts/settings.js"></script>
+<script type="text/javascript" src="../../../template/scripts/XmlJsReader.js"></script>
+<script type="text/javascript" src="../../../template/scripts/loadparentdata.js"></script>
+<script type="text/javascript" src="../../../template/scripts/loadscreen.js"></script>
+<script type="text/javascript" src="../../../template/scripts/loadprojdata.js"></script>
+<script type="text/javascript" src="../../../template/scripts/mhtopic.js"></script>
+ <link rel="stylesheet" type="text/css" href="../../../template/styles/topic.min.css">
+<script type="text/javascript" >
+gRootRelPath = "../../..";
+gCommonRootRelPath = "../../..";
+gTopicId = "";
+</script>
+ <meta name="brsprev" value="OpenInvoiceForBuyers_master/Payments/PaymentOverview_Introduction/PaymentOverview_Introduction.htm">
+ <meta name="brsnext" value="OpenInvoiceForBuyers_master/Payments/PaymentOverview_Introduction/Payment_Search.htm">
+ <meta name="topic-breadcrumbs" content="Administrator & User Guide for Buyers > Payment Overview" />
+</head>
+
+<body dir="ltr">
+<script type="text/javascript" src="../../../ehlpdhtm.js"></script>
+<div dir="ltr">
+  <p dir="ltr" class="FM_ADP_TG_Heading_1"><a name="TOC_Payment_Dashboard"></a><span class="FM_ADP_TG__Link"></span><a name="XREF_20164_Payment_Dashboard"></a>Payment Dashboard</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Body_Style">The Payment Dashboard is accessed by going to <span style="font-weight : bold; ">Payment</span>&#160;&gt; <span style="font-weight : bold; ">Dashboard</span> and consists of two portlets:</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 12pt;" class="FMAutoNumber_1"></span></span>The <span style="font-weight : bold; ">Payment Alerts</span>&#160;portlet displays payments requiring supplier setup, payments requiring attention, and available credit.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 12pt;" class="FMAutoNumber_1"></span></span>The <span style="font-weight : bold; ">Upcoming Payments</span>&#160;portlet summarizes the next 15 scheduled payment impounds (starting on the current date).</p>
+
+  <div align="center"><img alt="PaymentGuides_paymentdashboard.png" id="image344" src="../../../assets/PaymentGuides_paymentdashboard.png" style="max-width: 100% ;height: auto" />
+  </div>
+  <p dir="ltr" class="FM_ADP_TG_Screenshot_Anchor">&nbsp;</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Heading_2">Payment Alerts Portlet</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Body_Style">This portlet alerts you to suppliers who require configuration for payments, payments requiring attention, and credits available to be applied against payments.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1" style="font-weight : bold;"><span class="FM_Bullet1">·<span style="padding-left: 12pt;" class="FMAutoNumber_1"></span></span>Requiring Supplier Setup</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_2" style="font-weight : bold;"><span class="FM_Bullet2">§<span style="padding-left: 12pt;" class="FMAutoNumber_1"></span></span>Not Configured for Payments:&#160;the number of enabled supplier sites that have not been configured to receive payments through <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 12pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Incorrect Configuration:</span>&#160;the number of enabled supplier sites that require attention due to configuration errors.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1" style="font-weight : bold;"><span class="FM_Bullet1">·<span style="padding-left: 12pt;" class="FMAutoNumber_1"></span></span>Requiring Attention</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 12pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Held:</span>&#160;the number and total value of payments that have been put on hold. Click the value for the list of corresponding payments.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 12pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Cancelled:</span>&#160;the number and total value of payments that have been cancelled. Click the value for the list of corresponding payments.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 12pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Void / Stopped:</span>&#160;the number and total value of check payments that have been voided or stopped. This only applies to payments with a payment method of <span style="font-weight : bold; ">Check</span>. Payments with a status of <span style="font-weight : bold; ">Check Stop Requested </span>are not included in this count.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 12pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Available Credit:</span>&#160;the number and total remaining value of approved credit invoices. For example, if there is a single credit invoice of $1000 of which $750 has been applied to debit invoices the value displayed is $250.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Heading_2">Upcoming Payments Portlet</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Body_Style">The <span style="font-weight : bold; ">Upcoming Payments</span>&#160;portlet is sorted by financing date (impound date). The payment amount reflects the total amount to be transferred from your bank account to <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>&#160;on each financing date. </p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 12pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Show All </span>to see the expanded view that includes all scheduled payment impounds.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 12pt;" class="FMAutoNumber_1"></span></span>Click a counter in the <span style="font-weight : bold; ">Payments</span>&#160;column to view a list of payments included in the scheduled payment impound. The resulting list will be grouped by supplier. You can expand the supplier grouping to view individual payment details, including information from the invoice.</p>
+  </div>
+</body>
+</html>

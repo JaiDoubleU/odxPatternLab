@@ -1,0 +1,154 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+ <title>Units of Measure</title>
+
+ <link rel="stylesheet" href="../../../OpenInvoiceForBuyers_master.css" type="text/css" />
+
+
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style>
+ <meta name="generator" content="Adobe FrameMaker 2017" />
+<script type="text/javascript" src="../../../template/scripts/rh.min.js"></script>
+<script type="text/javascript" src="../../../template/scripts/common.min.js"></script>
+<script type="text/javascript" src="../../../template/scripts/topic.min.js"></script>
+<script type="text/javascript" src="../../../template/scripts/constants.js"></script>
+<script type="text/javascript" src="../../../template/scripts/utils.js"></script>
+<script type="text/javascript" src="../../../template/scripts/mhutils.js"></script>
+<script type="text/javascript" src="../../../template/scripts/mhlang.js"></script>
+<script type="text/javascript" src="../../../template/scripts/mhver.js"></script>
+<script type="text/javascript" src="../../../template/scripts/settings.js"></script>
+<script type="text/javascript" src="../../../template/scripts/XmlJsReader.js"></script>
+<script type="text/javascript" src="../../../template/scripts/loadparentdata.js"></script>
+<script type="text/javascript" src="../../../template/scripts/loadscreen.js"></script>
+<script type="text/javascript" src="../../../template/scripts/loadprojdata.js"></script>
+<script type="text/javascript" src="../../../template/scripts/mhtopic.js"></script>
+ <link rel="stylesheet" type="text/css" href="../../../template/styles/topic.min.css">
+<script type="text/javascript" >
+gRootRelPath = "../../..";
+gCommonRootRelPath = "../../..";
+gTopicId = "";
+</script>
+ <meta name="brsprev" value="OpenInvoiceForBuyers_master/Configuration/InvoiceContentConfig/Work_Order_Number.htm">
+ <meta name="brsnext" value="OpenInvoiceForBuyers_master/Configuration/InvoiceContentConfig/Service_Date.htm">
+ <meta name="topic-breadcrumbs" content="Administrator & User Guide for Buyers > Invoice Content Configuration" />
+</head>
+
+<body dir="ltr">
+<script type="text/javascript" src="../../../ehlpdhtm.js"></script>
+<div dir="ltr">
+  <p dir="ltr" class="FM_ADP_TG_Heading_1"><a name="TOC_Units_of_Measure"></a><a name="XREF_81667_Units_of_Measure"></a>Units of Measure</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Body_Style">Units of measure are codes used to enforce compliance between the units entered on an invoice and other documents such as purchase orders and price books. The codes are case-sensitive. </p>
+
+  <p dir="ltr" class="FM_ADP_TG_Note___Start"><span class="FM_Bold">Note:<span style="padding-left: 12pt;" class="FMAutoNumber_1"></span></span>When manually creating an invoice, suppliers must select a unit of measure from your predefined list. Invoices submitted from B2B suppliers will be disputed automatically if one of the invoice lines does not include a valid unit of measure value.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Heading_2">Relevant Company Preferences</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Enable Units of Measure Compliance</span></p>
+
+  <p dir="ltr" style="margin-top  : 9.000pt; margin-bottom : 3.000pt; font-family : Arial; font-weight : bold; font-size  : 14.0pt; color   : #015db8;">How to Make Units of Measure a Required Field</p>
+  <p dir="ltr" class="FM_ADP_TG_Body_Style">These procedures require the Corporate Admin permissions. </p>
+
+  <p dir="ltr" class="FM_ADP_TG_Heading_3">Enable Units of Measure Compliance</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Steps"><span class="FM_Bold">Steps:<span style="padding-left: 6pt;" class="FMAutoNumber_1"></span></span></p>
+
+  <ol dir="ltr" start="1">
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Start">Select <span style="font-weight : bold; ">Corporate &gt; Company Preferences</span>. </p>
+</li>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Click <span style="font-weight : bold; ">Enable Units of Measure Compliance</span> under the General section.</p>
+</li>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Select the <span style="font-weight : bold; ">Active</span>&#160;checkbox. </p>
+</li>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Click <span style="font-weight : bold; ">Submit</span>. </p>
+</li>
+  </ol>
+  <p dir="ltr" style="margin-top  : 9.000pt; margin-bottom : 3.000pt; font-family : Arial; font-weight : bold; font-size  : 14.0pt; color   : #015db8;">How to Add a Units of Measure Code</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Steps"><span class="FM_Bold">Steps:<span style="padding-left: 6pt;" class="FMAutoNumber_1"></span></span></p>
+
+  <ol dir="ltr" start="1">
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Start">Select <span style="font-weight : bold; ">Corporate &gt; Reference Data</span>.</p>
+</li>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Click <span style="font-weight : bold; ">Units of Measure</span>. </p>
+</li>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Click <span style="font-weight : bold; ">Add Record</span>. </p>
+</li>
+   <div align="center"><img alt="InvoiceContentConfig_AddUOM.jpg" id="image137" src="../../../assets/InvoiceContentConfig_AddUOM.jpg" style="max-width: 100% ;height: auto" />
+   </div>
+   <p dir="ltr" class="FM_ADP_TG_Screenshot_Anchor">&nbsp;</p>
+
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Enter the Unit of Measure information. </p>
+</li>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Click <span style="font-weight : bold; ">Submit</span>. </p>
+</li>
+  </ol>
+  <p dir="ltr" style="margin-top  : 9.000pt; margin-bottom : 3.000pt; font-family : Arial; font-weight : bold; font-size  : 14.0pt; color   : #015db8;">How to Upload a Predefined List for Units of Measure</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Steps"><span class="FM_Bold">Steps:<span style="padding-left: 6pt;" class="FMAutoNumber_1"></span></span></p>
+
+  <ol dir="ltr" start="1">
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Start">Select <span style="font-weight : bold; ">Corporate &gt; Reference Data</span>.</p>
+</li>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Click <span style="font-weight : bold; ">Units of Measure</span>. </p>
+</li>
+   <div align="center"><img alt="InvoiceContentConfig_UOM.jpg" id="image138" src="../../../assets/InvoiceContentConfig_UOM.jpg" style="max-width: 100% ;height: auto" />
+   </div>
+   <p dir="ltr" class="FM_ADP_TG_Screenshot_Anchor">&nbsp;</p>
+
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Click <span style="font-weight : bold; ">Import</span>. </p>
+</li>
+   <div align="center"><img alt="InvoiceContentConfig_ImportUOM.jpg" id="image139" src="../../../assets/InvoiceContentConfig_ImportUOM.jpg" style="max-width: 100% ;height: auto" />
+   </div>
+   <p dir="ltr" class="FM_ADP_TG_Screenshot_Anchor">&nbsp;</p>
+
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Click <span style="font-weight : bold; ">Choose File</span>&#160;to find the file. </p>
+</li>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Select the filename. </p>
+</li>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Click <span style="font-weight : bold; ">Upload</span>. </p>
+</li>
+  </ol>
+  </div>
+</body>
+</html>

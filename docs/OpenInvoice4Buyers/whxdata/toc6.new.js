@@ -1,0 +1,4 @@
+(function() {
+var toc =  [{"type":"item","name":"Configuring Payment Accounts","url":"OpenInvoiceForBuyers_master/Configuration/PaymentConfiguration_Introduction/Configuring_Payment_Accounts.htm"},{"type":"item","name":"Configuring Unregistered Suppliers","url":"OpenInvoiceForBuyers_master/Configuration/PaymentConfiguration_Introduction/Configuring_Unregistered_Suppliers.htm"},{"type":"item","name":"Configuring Payment Terms","url":"OpenInvoiceForBuyers_master/Configuration/PaymentConfiguration_Introduction/Configuring_Payment_Terms.htm#TOC_Configuring_Payment_Terms"},{"type":"item","name":"Payment Scheduling","url":"OpenInvoiceForBuyers_master/Configuration/PaymentConfiguration_Introduction/Payment_Scheduling.htm#TOC_Payment_Scheduling"}];
+window.rh.model.publish(rh.consts('KEY_TEMP_DATA'), toc, { sync:true });
+})();

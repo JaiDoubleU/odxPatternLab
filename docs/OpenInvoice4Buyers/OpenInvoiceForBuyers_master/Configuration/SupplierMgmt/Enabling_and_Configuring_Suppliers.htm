@@ -1,0 +1,484 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+ <title>Enabling and Configuring Suppliers</title>
+
+ <link rel="stylesheet" href="../../../OpenInvoiceForBuyers_master.css" type="text/css" />
+
+
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style>
+ <meta name="generator" content="Adobe FrameMaker 2017" />
+<script type="text/javascript" src="../../../template/scripts/rh.min.js"></script>
+<script type="text/javascript" src="../../../template/scripts/common.min.js"></script>
+<script type="text/javascript" src="../../../template/scripts/topic.min.js"></script>
+<script type="text/javascript" src="../../../template/scripts/constants.js"></script>
+<script type="text/javascript" src="../../../template/scripts/utils.js"></script>
+<script type="text/javascript" src="../../../template/scripts/mhutils.js"></script>
+<script type="text/javascript" src="../../../template/scripts/mhlang.js"></script>
+<script type="text/javascript" src="../../../template/scripts/mhver.js"></script>
+<script type="text/javascript" src="../../../template/scripts/settings.js"></script>
+<script type="text/javascript" src="../../../template/scripts/XmlJsReader.js"></script>
+<script type="text/javascript" src="../../../template/scripts/loadparentdata.js"></script>
+<script type="text/javascript" src="../../../template/scripts/loadscreen.js"></script>
+<script type="text/javascript" src="../../../template/scripts/loadprojdata.js"></script>
+<script type="text/javascript" src="../../../template/scripts/mhtopic.js"></script>
+ <link rel="stylesheet" type="text/css" href="../../../template/styles/topic.min.css">
+<script type="text/javascript" >
+gRootRelPath = "../../..";
+gCommonRootRelPath = "../../..";
+gTopicId = "1.0_11";
+</script>
+ <meta name="brsprev" value="OpenInvoiceForBuyers_master/Configuration/SupplierMgmt/Inviting_the_Supplier_to_Register.htm">
+ <meta name="brsnext" value="OpenInvoiceForBuyers_master/Configuration/SupplierMgmt/Configuring_Purchase_Order_References.htm">
+ <meta name="topic-breadcrumbs" content="Administrator & User Guide for Buyers" />
+</head>
+
+<body dir="ltr">
+<script type="text/javascript" src="../../../ehlpdhtm.js"></script>
+<div dir="ltr">
+  <p dir="ltr" class="FM_ADP_TG_Heading_1"><a name="XREF_78156_Enabling_and"></a>Enabling and Configuring Suppliers</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Note___Start"><span class="FM_Bold">Note:<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Supplier sites can be auto enabled for transactions. To use this feature, a supplier number must be entered at the time of submitting an on-ramping request.</p>
+
+  <p dir="ltr" class="FM_ADP_TG__How_to__Heading_2">How to <a name="XREF_71226_How_to_Enable"></a>Enable a Registered Supplier for the First Time</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Permission___Start"><span class="FM_Bold">Permission:<span style="padding-left: 21pt;" class="FMAutoNumber_1"></span></span>Corporate Partnership</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Note___Start"><span class="FM_Bold">Note:<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>If enabling a registered supplier site with a supplier number combination that already exists for an unregistered supplier site, you will be prompted to merge the supplier profiles. </p>
+  <p dir="ltr" class="FM_ADP_TG_Note___Next"><span class="FM_Bold"><span style="padding-left: 36pt;" class="FMAutoNumber_1"></span></span>If viewing a supplier site that is eligible to be merged based on a matching supplier number combination, a message will direct you to the Merge Supplier Wizard to merge the supplier profiles. </p>
+
+  <p dir="ltr" class="FM_ADP_TG_Note___Next"><span class="FM_Bold"><span style="padding-left: 36pt;" class="FMAutoNumber_1"></span></span>For more information about merging supplier profiles, refer to <a href="Managing_Unregistered_Suppliers_in_OpenInvoice.htm#XREF_52182_How_to_Merge">Merge Registered and Unregistered Supplier Records</a>.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Steps"><span class="FM_Bold">Steps:<span style="padding-left: 8pt;" class="FMAutoNumber_1"></span></span></p>
+
+  <ol dir="ltr" start="1">
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Start">Select <span style="font-weight : bold; ">Corporate &gt; Suppliers.</span></p>
+</li>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">In the <span style="font-weight : bold; ">Tasks</span> section, click<span style="font-weight : bold; "> Enable Supplier</span>.</p>
+</li>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Perform a search for the supplier.</p>
+</li>
+   <p dir="ltr" class="FM_ADP_TG_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 13pt;" class="FMAutoNumber_2"></span></span>If criteria is unknown, type an asterisk (*) into one of the fields to return a complete list.</p>
+
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Select the radio button next to the supplier you want to enable for transactions.</p>
+</li>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Scroll down to the bottom of the page and click <span style="font-weight : bold; ">Submit.</span><span style="font-weight : bold; "></span></p>
+</li>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Select the invoice submission method(s).</p>
+</li>
+   <p dir="ltr" class="FM_ADP_TG_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 13pt;" class="FMAutoNumber_2"></span></span>To select all invoice methods, select the <span style="font-weight : bold; ">Transactions Enabled</span> checkbox.</p>
+
+   <p dir="ltr" class="FM_ADP_TG_Note_Indent___Next"><span class="FM_Bold"><span style="padding-left: 54pt;" class="FMAutoNumber_1"></span></span>You can also configure and apply other supplier settings at this time.</p>
+
+   <p dir="ltr" class="FM_ADP_TG_Note_Indent___Next"><span class="FM_Bold"><span style="padding-left: 54pt;" class="FMAutoNumber_1"></span></span>If more than one site exists for the company, check the other supplier site(s) you wish to enable for transactions.</p>
+   <div align="center"><img alt="SupplierMgmt_transactionsenabled.png" id="image99" src="../../../assets/SupplierMgmt_transactionsenabled.png" style="max-width: 100% ;height: auto" />
+   </div>
+   <p dir="ltr" class="FM_ADP_TG_Screenshot_Anchor">&nbsp;</p>
+
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Click <span style="font-weight : bold; ">Submit</span>&#160;or <span style="font-weight : bold; ">Apply to Selected</span>.</p>
+</li>
+  </ol>
+  <p dir="ltr" class="FM_ADP_TG_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 13pt;" class="FMAutoNumber_2"></span></span>Registered suppliers will receive an email informing them that they have been enabled and can begin transacting with your company. Enabling a supplier for invoice automatically enables the supplier for field ticket as well.</p>
+
+  <p dir="ltr" class="FM_ADP_TG__How_to__Heading_2">How to Modify Configuration Settings for Enabled Suppliers OR Enable an Additional Supplier Site</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Permission___Start"><span class="FM_Bold">Permission:<span style="padding-left: 21pt;" class="FMAutoNumber_1"></span></span>Corporate Partnership</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Note___Start"><span class="FM_Bold">Note:<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>If enabling a registered supplier site with a supplier number combination that already exists for an unregistered supplier site, you will be prompted to merge the supplier profiles. </p>
+  <p dir="ltr" class="FM_ADP_TG_Note___Next"><span class="FM_Bold"><span style="padding-left: 36pt;" class="FMAutoNumber_1"></span></span>If viewing a supplier site that is eligible to be merged based on a matching supplier number combination, a message will direct you to the Merge Supplier Wizard to merge the supplier profiles. </p>
+
+  <p dir="ltr" class="FM_ADP_TG_Note___Next"><span class="FM_Bold"><span style="padding-left: 36pt;" class="FMAutoNumber_1"></span></span>For more information about merging supplier profiles, refer to <a href="Managing_Unregistered_Suppliers_in_OpenInvoice.htm#XREF_52182_How_to_Merge">Merge Registered and Unregistered Supplier Records</a>.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Steps"><span class="FM_Bold">Steps:<span style="padding-left: 8pt;" class="FMAutoNumber_1"></span></span></p>
+
+  <ol dir="ltr" start="1">
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Start">Select <span style="font-weight : bold; ">Corporate &gt; Suppliers.</span></p>
+</li>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Do one of the following:</p>
+</li>
+   <p dir="ltr" class="FM_ADP_TG_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>In the <span style="font-weight : bold; ">Tasks</span>&#160;section, click <span style="font-weight : bold; ">Search Suppliers</span>.</p>
+
+   <p dir="ltr" class="FM_ADP_TG_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>In the <span style="font-weight : bold; ">Supplier</span> section, click a counter.</p>
+
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">If necessary, apply a filter to narrow the list.</p>
+</li>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Click the <span style="font-weight : bold; ">Supplier Site</span>.</p>
+</li>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">On the <span style="font-weight : bold; ">Supplier Configuration</span>&#160;page, click <span style="font-weight : bold; ">Edit</span>&#160;below the <span style="font-weight : bold; ">Settings</span>&#160;and <span style="font-weight : bold; ">Early Pay Programs </span>sections.</p>
+</li>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Select the invoice submission method(s).</p>
+</li>
+   <p dir="ltr" class="FM_ADP_TG_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 13pt;" class="FMAutoNumber_2"></span></span>To select all invoice methods, select the <span style="font-weight : bold; ">Transactions Enabled</span> checkbox.</p>
+
+   <p dir="ltr" class="FM_ADP_TG_Note_Indent___Next"><span class="FM_Bold"><span style="padding-left: 54pt;" class="FMAutoNumber_1"></span></span>You can also configure and apply other supplier settings at this time.</p>
+
+   <p dir="ltr" class="FM_ADP_TG_Note_Indent___Next"><span class="FM_Bold"><span style="padding-left: 54pt;" class="FMAutoNumber_1"></span></span>If more than one site exists for the company, check the other supplier site(s) you wish to enable for transactions.</p>
+
+   <div align="center"><img alt="SupplierMgmt_transactionsenabled.png" id="image100" src="../../../assets/SupplierMgmt_transactionsenabled.png" style="max-width: 100% ;height: auto" />
+   </div>
+   <p dir="ltr" class="FM_Screenshot_Anchor">&nbsp;</p>
+
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Click <span style="font-weight : bold; ">Submit</span>&#160;or <span style="font-weight : bold; ">Apply to Selected</span>.</p>
+</li>
+  </ol>
+  <p dir="ltr" class="FM_ADP_TG_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 13pt;" class="FMAutoNumber_2"></span></span>Registered suppliers will receive an email informing them that they have been enabled and can begin transacting with your company. Enabling a supplier for invoice automatically enables the supplier for field ticket as well.</p>
+
+  <p dir="ltr" class="FM_ADP_TG__How_to__Heading_2">How to Modify Supplier Payment Terms</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Permission___Start"><span class="FM_Bold">Permission:<span style="padding-left: 21pt;" class="FMAutoNumber_1"></span></span>Corporate Partnership</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Steps"><span class="FM_Bold">Steps:<span style="padding-left: 8pt;" class="FMAutoNumber_1"></span></span></p>
+
+  <ol dir="ltr" start="1">
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Start">Select <span style="font-weight : bold; ">Corporate &gt; Suppliers</span>.</p>
+</li>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">In the <span style="font-weight : bold; ">Tasks</span>&#160;section, click <span style="font-weight : bold; ">Search Suppliers</span>. </p>
+</li>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Enter search criteria.</p>
+</li>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Click <span style="font-weight : bold; ">Apply Filter</span>. </p>
+</li>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Select a <span style="font-weight : bold; ">Supplier Site</span>&#160;from the search results. </p>
+</li>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Click the <span style="font-weight : bold; ">Edit</span>&#160;button under the Early Pay Programs section. </p>
+</li>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Select the <span style="font-weight : bold; ">Custom</span>&#160;option for <span style="font-weight : bold; ">Invoice Due Date</span>&#160;and enter the number of days after the Invoice Submission Date.</p>
+</li>
+   <div align="center"><img alt="SupplierMgmt_ModifyPaymentTerms.jpg" id="image101" src="../../../assets/SupplierMgmt_ModifyPaymentTerms.jpg" style="max-width: 100% ;height: auto" />
+   </div>
+   <p dir="ltr" class="FM_ADP_TG_Screenshot_Anchor">&nbsp;</p>
+
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Select the checkbox next to the site(s) for which this change will apply.</p>
+</li>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Click <span style="font-weight : bold; ">Done</span>. </p>
+</li>
+  </ol>
+  <p dir="ltr" class="FM_ADP_TG__How_to__Heading_2">How to Copy Configuration Settings From an Existing Supplier Company</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Permission___Start"><span class="FM_Bold">Permission:<span style="padding-left: 21pt;" class="FMAutoNumber_1"></span></span>Corporate Partnership</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Note___Start"><span class="FM_Bold">Note:<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Settings for Priority Pay, Allow Future Billing, Allow Supplier Coding, Allow External Field Ticket Approval, Enable Smart Coding, Allow External PO, Selected Early Pay Programs, and Invoices Require Early Pay Program will be copied. Settings can be modified after copying. </p>
+
+  <p dir="ltr" class="FM_ADP_TG_Steps"><span class="FM_Bold">Steps:<span style="padding-left: 8pt;" class="FMAutoNumber_1"></span></span></p>
+
+  <ol dir="ltr" start="1">
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Start">Select <span style="font-weight : bold; ">Corporate</span>&#160;&gt; <span style="font-weight : bold; ">Suppliers</span>.</p>
+</li>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Do one of the following:</p>
+</li>
+   <p dir="ltr" class="FM_ADP_TG_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>If the supplier is enabled, click the <span style="font-weight : bold; ">Enabled</span>&#160;counter in the <span style="font-weight : bold; ">Suppliers</span> section.</p>
+
+   <p dir="ltr" class="FM_ADP_TG_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>In the <span style="font-weight : bold; ">Tasks </span>section, click <span style="font-weight : bold; ">Search Suppliers</span>.</p>
+
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">If necessary, apply a filter to narrow the list.</p>
+</li>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Click the supplier site.</p>
+</li>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">On the <span style="font-weight : bold; ">Supplier Configuration</span>&#160;page, click <span style="font-weight : bold; ">Edit</span>&#160;below the <span style="font-weight : bold; ">Settings</span>&#160;and <span style="font-weight : bold; ">Early Pay Programs </span>sections.</p>
+</li>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Enter the supplier number and secondary supplier number of the company you wish to copy configuration settings from.</p>
+</li>
+<div width="100%" align="left">
+   <table border-spacing="0" dir="ltr" class="table14" border-collapse="collapse" style="max-width: 100% ;height: auto">
+    <tr class="tr15">
+    <td class="td16">
+    <p dir="ltr" class="FM_CellBody" style="display:inline"><img alt="SupplierMgmt_loadconfiguration.png" id="image102" src="../../../assets/SupplierMgmt_loadconfiguration.png" style="max-width: 100% ;height: auto" />&nbsp;</p>
+</td>
+</tr>
+   </table>
+</div>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Click outside the <span style="font-weight : bold; ">Supplier Number</span>&#160;(or <span style="font-weight : bold; ">Secondary Supplier Number</span>) field and the <span style="font-weight : bold; ">Load Configuration</span>&#160;button will be enabled.</p>
+</li>
+   <p dir="ltr" class="FM_ADP_TG_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 13pt;" class="FMAutoNumber_2"></span></span>In order for the <span style="font-weight : bold; ">Load Configuration</span>&#160;button to be enabled, all suppliers with the entered supplier number and secondary supplier number must have the same configuration. If the supplier number and secondary supplier number refer to two (or more) sites that have different configurations, the <span style="font-weight : bold; ">Load Configuration</span> button will remain grayed out.</p>
+
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Click <span style="font-weight : bold; ">Load Configuration</span> to copy settings.</p>
+</li>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">If necessary, modify the copied settings.</p>
+</li>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Click <span style="font-weight : bold; ">Submit</span>.</p>
+</li>
+  </ol>
+  <p dir="ltr" class="FM_ADP_TG__How_to__Heading_2">How to <a name="XREF_73936_How_to_Delete"></a>Delete Unregistered Supplier Sites</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Permission___Start"><span class="FM_Bold">Permission:<span style="padding-left: 21pt;" class="FMAutoNumber_1"></span></span>Corporate Partnership</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Prerequisite___Start"><span class="FM_Bold">Prerequisite:<span style="padding-left: 18pt;" class="FMAutoNumber_1"></span></span>A user with the Invoice Modify (IM) permission must modify the supplier on all invoices associated with the site you want to delete.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Note___Start"><span class="FM_Bold">Note:<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>To delete unregistered supplier sites via file upload, refer to <a href="Managing_Unregistered_Suppliers_in_OpenInvoice.htm#XREF_68366_How_to_Manage">Manage Unregistered Supplier Sites via File Upload</a>. </p>
+
+  <p dir="ltr" class="FM_ADP_TG_Note___Next"><span class="FM_Bold"><span style="padding-left: 36pt;" class="FMAutoNumber_1"></span></span>If you are deleting a supplier site that you have created in error, all invoices associated with the site must be corrected and moved to another supplier site.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Steps"><span class="FM_Bold">Steps:<span style="padding-left: 8pt;" class="FMAutoNumber_1"></span></span></p>
+
+  <ol dir="ltr" start="1">
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Start">Select <span style="font-weight : bold; ">Corporate</span>&#160;&gt; <span style="font-weight : bold; ">Suppliers</span>.</p>
+</li>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">In the <span style="font-weight : bold; ">Tasks</span>&#160;section, click <span style="font-weight : bold; ">Search Suppliers</span>.</p>
+</li>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">In the <span style="font-weight : bold; ">Company Type</span>&#160;drop-down, select <span style="font-weight : bold; ">Unregistered</span>.</p>
+</li>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Click <span style="font-weight : bold; ">Apply Filter</span>.</p>
+</li>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Click the <span style="font-weight : bold; ">Supplier Site</span> name.</p>
+</li>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Under the <span style="font-weight : bold; ">Supplier Site Details</span>&#160;section, click <span style="font-weight : bold; ">Delete</span>.</p>
+</li>
+   <div align="center"><img alt="SupplierMgmt_deleteunregisteredsite.png" id="image103" src="../../../assets/SupplierMgmt_deleteunregisteredsite.png" style="max-width: 100% ;height: auto" />
+   </div>
+   <p dir="ltr" class="FM_Screenshot_Anchor">&nbsp;</p>
+
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Click <span style="font-weight : bold; ">Yes</span> to confirm.</p>
+</li>
+  </ol>
+  <p dir="ltr" class="FM_ADP_TG__How_to__Heading_2">How to Assign Early Pay Programs to a Single Supplier</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Permission___Start"><span class="FM_Bold">Permission:<span style="padding-left: 21pt;" class="FMAutoNumber_1"></span></span>Corporate Partnership</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Prerequisite___Start"><span class="FM_Bold">Prerequisite:<span style="padding-left: 18pt;" class="FMAutoNumber_1"></span></span>The supplier is registered and enabled.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Prerequisite___Next"><span class="FM_Bold"><span style="padding-left: 72pt;" class="FMAutoNumber_1"></span></span>There is at least one active Early Pay program.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Note___Start"><span class="FM_Bold">Note:<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>You can assign Early Pay programs to a supplier during the enablement process.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Steps"><span class="FM_Bold">Steps:<span style="padding-left: 8pt;" class="FMAutoNumber_1"></span></span></p>
+
+  <ol dir="ltr" start="1">
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Start">Do one of the following:</p>
+</li>
+   <p dir="ltr" class="FM_ADP_TG_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>In the <span style="font-weight : bold; ">Tasks </span>section, click <span style="font-weight : bold; ">Search Suppliers</span> and perform a search for enabled suppliers.</p>
+
+   <p dir="ltr" class="FM_ADP_TG_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>In the <span style="font-weight : bold; ">Suppliers</span>&#160;section, click the <span style="font-weight : bold; ">Enabled</span> counter.</p>
+
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">If necessary, apply a filter to narrow the list.</p>
+</li>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Click the supplier site.</p>
+</li>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">On the <span style="font-weight : bold; ">Supplier Configuration</span>&#160;page, click <span style="font-weight : bold; ">Edit</span>&#160;in the <span style="font-weight : bold; ">Early Pay Programs</span> section.</p>
+</li>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Select one or more Early Pay programs from the <span style="font-weight : bold; ">Available Programs</span> box.</p>
+</li>
+   <p dir="ltr" class="FM_ADP_TG_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 13pt;" class="FMAutoNumber_2"></span></span>To select multiple items at once, hold the <span style="font-weight : bold; ">Ctrl</span>&#160;key and select the programs. Alternatively, hold the <span style="font-weight : bold; ">Shift</span> key to select a range of programs.</p>
+
+   <p dir="ltr" class="FM_ADP_TG_Note_Indent___Next"><span class="FM_Bold"><span style="padding-left: 54pt;" class="FMAutoNumber_1"></span></span>Each program assigned to must have a different discount percentage.</p>
+
+   <div align="center"><img alt="CorporateConfig_assignEPprograms.png" id="image104" src="../../../assets/CorporateConfig_assignEPprograms.png" style="max-width: 100% ;height: auto" />
+   </div>
+   <p dir="ltr" class="FM_Screenshot_Anchor">&nbsp;</p>
+
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Click <span style="font-weight : bold; ">Add</span>&#160;to move the program(s) into the <span style="font-weight : bold; ">Selected Programs</span> box.</p>
+</li>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Select the <span style="font-weight : bold; ">Invoices Require Early Pay Program</span>&#160;checkbox if you require the supplier to specify an Early Pay program on all of the site’s invoices.</p>
+</li>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Do one of the following:</p>
+</li>
+  </ol>
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>If the supplier has just one site, click <span style="font-weight : bold; ">Submit</span>.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>If the supplier has multiple sites, select the checkbox next to each site you want to assign the programs and click <span style="font-weight : bold; ">Apply to Selected</span>&#160;and then click <span style="font-weight : bold; ">Done</span>.</p>
+
+  <p dir="ltr" class="FM_ADP_TG__How_to__Heading_2">How to Assign Early Pay Programs to Multiple Suppliers</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Permission___Start"><span class="FM_Bold">Permission:<span style="padding-left: 21pt;" class="FMAutoNumber_1"></span></span>Corporate Partnership</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Prerequisite___Start"><span class="FM_Bold">Prerequisite:<span style="padding-left: 18pt;" class="FMAutoNumber_1"></span></span>The supplier is registered and enabled.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Prerequisite___Next"><span class="FM_Bold"><span style="padding-left: 72pt;" class="FMAutoNumber_1"></span></span>There is at least one active Early Pay program.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Note___Start"><span class="FM_Bold">Note:<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>You can assign Early Pay programs to a supplier during the enablement process.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Steps"><span class="FM_Bold">Steps:<span style="padding-left: 8pt;" class="FMAutoNumber_1"></span></span></p>
+
+  <ol dir="ltr" start="1">
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Start">Do one of the following:</p>
+</li>
+   <p dir="ltr" class="FM_ADP_TG_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>In the <span style="font-weight : bold; ">Tasks </span>section, click <span style="font-weight : bold; ">Search Suppliers</span> and perform a search for enabled suppliers.</p>
+
+   <p dir="ltr" class="FM_ADP_TG_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>In the <span style="font-weight : bold; ">Suppliers</span>&#160;section, click the <span style="font-weight : bold; ">Enabled</span> counter.</p>
+
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">If necessary, apply a filter to narrow the list.</p>
+</li>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Select the checkbox next to the supplier sites that will be assigned the Early Pay program(s).</p>
+</li>
+   <p dir="ltr" class="FM_ADP_TG_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 13pt;" class="FMAutoNumber_2"></span></span>To select all supplier sites, select the checkbox in the header.</p>
+
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Only the registered supplier sites visible on the current page will be updated.</p>
+</li>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Click the down arrow on the <span style="font-weight : bold; ">Select an Action</span>&#160;button and select <span style="font-weight : bold; ">Assign Early Pay Programs</span>.</p>
+</li>
+   <div align="center"><img alt="SupplierMgmt_batchassignEPP.png" id="image105" src="../../../assets/SupplierMgmt_batchassignEPP.png" style="max-width: 100% ;height: auto" />
+   </div>
+   <p dir="ltr" class="FM_Screenshot_Anchor">&nbsp;</p>
+
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Select one or more Early Pay programs from the <span style="font-weight : bold; ">Available Programs</span> box.</p>
+</li>
+   <p dir="ltr" class="FM_ADP_TG_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 13pt;" class="FMAutoNumber_2"></span></span>To select multiple items at once, hold the <span style="font-weight : bold; ">Ctrl</span>&#160;key and select the programs. Alternatively, hold the <span style="font-weight : bold; ">Shift</span> key to select a range of programs.</p>
+
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Click <span style="font-weight : bold; ">Add</span>&#160;to move the program(s) into the <span style="font-weight : bold; ">Selected Programs</span> box.</p>
+</li>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Select the <span style="font-weight : bold; ">Invoices Require Early Pay Program</span>&#160;checkbox if you require the suppliers to specify an Early Pay program on all of their invoices.</p>
+</li>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Click <span style="font-weight : bold; ">Assign Selected Programs</span>. </p>
+</li>
+  </ol>
+  <p dir="ltr" class="FM_ADP_TG_Heading_2">Supplier Configuration Details</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Body_Style">Users with the Corporate Partnership permission can configure supplier site details, Remit To information, and general settings on-behalf of your unregistered suppliers. Users with both the Corporate Partnership and Payment Admin permission can configure payment information on behalf of your unregistered suppliers.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Supplier Site Details:</span>&#160;company name and site name can be modified for an unregistered supplier. The site can be deleted if there are no invoices associated with the site.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1" style="font-weight : bold;"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>First and Last Submit Date: view the first and last submit date for direct entry invoices and field tickets.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Banking Details:</span>&#160;account number, type, and payment method can be entered and/or modified for an unregistered supplier</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Remit To Address </span>and <span style="font-weight : bold; ">Remit To Contact:</span>&#160;</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Validate for Payment:</span>&#160;</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_3"><span class="FM_Bullet3">-<span style="padding-left: 15pt;" class="FMAutoNumber_1"></span></span>For registered suppliers, this field displays <span style="font-weight : bold; ">Yes</span>&#160;if the company’s banking information has been entered, is validated, or is in the process of being validated. If <span style="font-weight : bold; ">No</span>&#160;is displayed, the company has not entered their banking information, has not asked for the information to be validated, or the validation failed. </p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_3"><span class="FM_Bullet3">-<span style="padding-left: 15pt;" class="FMAutoNumber_1"></span></span>For unregistered suppliers, this field is a checkbox that you will select when the supplier is ready to be validated for payment. The <span style="font-weight : bold; ">Pay-To Name</span>&#160;and <span style="font-weight : bold; ">Remit To Address</span>&#160;fields must be completed and the supplier must be enabled for transactions.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Payment Terms:</span> specific payment schedule for this supplier</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Company Default: </span>payments to the supplier will be scheduled using the settings specified in <span style="font-weight : bold; ">Payment</span>&#160;&gt; <span style="font-weight : bold; ">Payment Terms</span>.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Never: </span>payments to the supplier will not be scheduled in OpenInvoice.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Custom:</span>&#160;payments to the supplier will be scheduled the specified number of days after either the invoice submission date or the invoice date</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1" style="font-weight : bold;"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>Settings:</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Supplier Number: </span>required if the <span style="font-weight : bold; ">Transactions Enabled</span>&#160;checkbox is selected. </p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Secondary Supplier Number: </span>optional number that may group a set of sites </p>
+
+  <p dir="ltr" class="FM_ADP_TG_Note_Indent2___Start"><span class="FM_Bold"><span style="padding-left: 36pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 13pt;" class="FMAutoNumber_2"></span></span>The combination of supplier number and secondary supplier number must be unique to the supplier company. More than one site within the supplier company can share the same combination.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Note_Indent2___Next"><span class="FM_Bold"><span style="padding-left: 72pt;" class="FMAutoNumber_1"></span></span>The supplier number and secondary supplier number combination cannot be modified if the site is part of a new or in-progress supplier merge request.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Supplier Type: </span>only appears if the company preference <span style="font-weight : bold; ">Enable Supplier Categorization</span>&#160;is enabled. </p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Transactions Enabled:</span> selected once you are ready to start transacting with the supplier.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_3" style="font-weight : bold;"><span class="FM_Bullet3">-<span style="padding-left: 15pt;" class="FMAutoNumber_1"></span></span>Enable Details and B2B Invoices:&#160;allows a registered supplier to create and submit detailed invoices using direct entry, LIDO, or integration (B2B).</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_3" style="font-weight : bold;"><span class="FM_Bullet3">-<span style="padding-left: 15pt;" class="FMAutoNumber_1"></span></span>Enable Buyer Scanned Invoices: allows users from your company to create and submit invoices on behalf of the supplier (Image OBO).</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_3"><span class="FM_Bullet3">-<span style="padding-left: 15pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Send Invoice Processing Summary:</span>&#160;automatically sends the supplier an email notification every time a user from your company has created and submitted an invoice on their behalf. The email includes a summary of the invoice as well as an invitation to register with <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_3" style="font-weight : bold;"><span class="FM_Bullet3">-<span style="padding-left: 15pt;" class="FMAutoNumber_1"></span></span>Enable Supplier Scanned Invoices:&#160;allows a registered supplier to create and submit invoices from a scanned image that is uploaded into <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span> (Image Scan).</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Priority Pay:</span>&#160;also known as Quick Pay, marks supplier invoices with a QP alert and prioritizes these invoice to the top of an invoice list page. Priority Pay agreements are made outside of the <span data-name="ADP_Software_Name" data-val="OpenInvoice Platform" data-showval="TRUE" data-format="ADP_Software_Name">OpenInvoice Platform</span>&#160;and, as such, remit amounts calculated in <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span> are not adjusted.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Note_Indent2___Start"><span class="FM_Bold"><span style="padding-left: 36pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 13pt;" class="FMAutoNumber_2"></span></span>Priority Pay is different from Early Pay price books which are documented in <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>. Early Pay discounts are calculated by <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>&#160;and the number of days until the discount period expires is displayed in the interface.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Allow Future Billing:</span>&#160;By default, the invoice line <span style="font-weight : bold; ">Service Date</span>&#160;(or <span style="font-weight : bold; ">Service Date From</span>&#160;if using a range) value must be on or before the invoice date. If this is selected, the invoice line <span style="font-weight : bold; ">Service Date</span>&#160;(or <span style="font-weight : bold; ">Service Date From</span> if using a range) value can be later than the invoice date.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Allow Supplier Coding:</span>&#160;applies to registered suppliers only. If selected, the supplier will have three additional fields when entering invoices in the platform where the supplier can enter your company’s major, minor, and subcodes. </p>
+
+  <p dir="ltr" class="FM_ADP_TG_Note_Indent2___Start"><span class="FM_Bold"><span style="padding-left: 36pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 13pt;" class="FMAutoNumber_2"></span></span>You must provide the supplier with your general ledger codes. </p>
+
+  <p dir="ltr" class="FM_ADP_TG_Note_Indent2___Next"><span class="FM_Bold"><span style="padding-left: 72pt;" class="FMAutoNumber_1"></span></span>If an integrated supplier imports an invoice with coding and the <span style="font-weight : bold; ">Allow Supplier Coding</span>&#160;setting is not enabled, the coding will be removed before the invoice is submitted.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Allow External Field Ticket Approval:</span>&#160;allows a registered supplier, using PIDX field ticket creation, to have their OIR charges automatically approved when an approver name, approval date, and other required fields are submitted with OIR charges. This setting is obsolete as of August 2016.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Note_Indent2___Start"><span class="FM_Bold"><span style="padding-left: 36pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 13pt;" class="FMAutoNumber_2"></span></span>The company preference <span style="font-weight : bold; ">2 Step Approval Workflow </span>must be enabled.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Enable Smart Coding: </span>automatically applies coding based on past approved or code verified invoices based on your company preference on how you populate smart coding on an invoice. Smart Coding can be used if the coding is not being applied by a supplier or from another document.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Allow External PO:</span>&#160;By default, if valid purchase orders exist in <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>&#160;for the supplier, the referenced purchase order must be one of the purchase orders in platform. If this is selected, the supplier is able to enter any value in the purchase order field. </p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1" style="font-weight : bold;"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>Early Pay Programs</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 13pt;" class="FMAutoNumber_2"></span></span>Early Pay programs can be assigned to multiple supplier sites from the <span style="font-weight : bold; ">Supplier Search</span>&#160;list page. For instructions on how to create Early Pay programs, refer to <a href="../CorporateConfig/CorporateConfig.htm#XREF_40513_Configuring_Early">Configuring Early Pay Programs</a>.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Available Programs:</span> Early Pay programs that are active but not assigned to the supplier site.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Selected Programs:</span> Early Pay programs assigned to the supplier site.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Invoices Require Early Pay Program:</span>&#160;select if you want to require the supplier to apply an Early Pay program on every invoice submitted from this site.</p>
+  </div>
+</body>
+</html>

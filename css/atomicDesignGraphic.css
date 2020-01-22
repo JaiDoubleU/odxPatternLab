@@ -1,0 +1,142 @@
+/* CSS for Home Page Atomic Design graphic */
+
+#atomic {
+    width      : auto;
+    margin     : 25px auto;
+    white-space: nowrap;
+    position   : relative;
+  }
+  #atomic {
+    position  : relative; left: 0;
+    transition: left 1s;
+  }
+  #atomic i.fa-long-arrow-right {
+      height: 8rem;
+      margin-top: 3rem;
+  }
+
+  #atomic > a {
+    position      : relative;
+    display       : inline-block;
+    width         : 50px;
+    height        : 50px;
+    margin        : 30px 35px 85px 35px;
+    vertical-align: top;
+  }
+  #atomic > a:before {
+    position   : absolute;
+    color      : #005CB8;
+    font-weight: 500;
+    font-family: 'Proxima Nova', sans-serif;
+    top        : 95px;
+    left       : -30px;
+    width      : 110px;
+    text-align : center;
+    animation  : text 2s linear infinite;
+  }
+
+  .atoms {
+    position     : relative;
+    display      : inline-block;
+    border       : 1px solid black;
+    width        : 49px;
+    height       : 49px;
+    box-shadow   : 0 0 0 12px #f5f4dc, 0 0 0 22px black;
+    border-radius: 50%;
+    background   : #d9edf7;
+  }
+  #atomic > .atoms:before {
+    content: "ATOM";
+  }
+  .atoms:after {
+    content: "";
+    display         : block;
+    width           : 20px;
+    height          : 20px;
+    border-radius   : 50%;
+    border          : 1px solid black;
+    background      : #d6e9c6;                   /* #d97e34; */
+    position        : absolute;
+    top             : -28px;
+    left            : calc(50% - 10px);
+    animation       : orbit 2s linear infinite;
+    transform-origin: 50% 260%;
+  }
+  @keyframes orbit {
+    0%   { transform: rotate(  0deg) }
+    100% { transform: rotate(360deg) }
+  }
+  .molecules:before {
+    content: "MOLECULE";
+  }
+  .molecules > .atoms {
+    position : absolute;
+    transform: scale(0.5);
+  }
+  .molecules > .atoms:nth-child(1) {
+    top : -15px;
+    left: 0;
+  }
+  .molecules > .atoms:nth-child(2) {
+    top : 25px;
+    left: 23px;
+  }
+  .molecules > .atoms:nth-child(3) {
+    top : 25px;
+    left: -23px;
+  }
+  #atomic > .organisms {
+    width : 80px;
+    height: 70px;
+    margin: 10px 20px 85px 20px;
+  }
+  #atomic > .organisms:before {
+    content: "ORGANISM";
+    left   : -15px; top: 115px;
+  }
+  .organisms > .atoms {
+    float    : left;
+    transform: scale(0.22);
+    margin   : -15px;
+  }
+  #atomic > .templates {
+    border: 6px dotted black;
+    height: 78px; width: 60px;
+    margin: 20px 30px 55px 18px;
+  }
+  #atomic > .templates:before {
+    content: "TEMPLATE";
+    left   : -20px; top: 99px;
+  }
+  #atomic > .templates:after {
+    content     : "";
+    border-right: 6px dotted black;
+    border-top  : 6px dotted black;
+    height      : 82px;
+    width       : 58px;
+    position    : absolute;
+    top         : -18px;
+    left        : 10px;
+  }
+  #atomic > .pages {
+    border    : 6px solid black;
+    height    : 78px;
+    width     : 60px;
+    background: #f5f4dc;
+    margin    : 20px 30px 55px 24px;
+  }
+  #atomic > .pages:before {
+    content: "PAGE";
+    left   : -30px;
+    top    : 99px;
+  }
+  #atomic > .pages:after {
+    z-index : -9;
+    content : "";
+    border  : 6px solid black;
+    height  : 78px;
+    width   : 60px;
+    position: absolute;
+    top     : -18px;
+    left    : 12px;
+  }

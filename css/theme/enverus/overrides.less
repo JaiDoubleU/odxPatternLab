@@ -1,0 +1,98 @@
+// Global over-rides
+// ----------------------------------------
+
+body {
+    padding-top:100px;
+}
+
+
+html, body {
+    height:100%
+}
+
+// TODO: fix this in the ticket and dashboard apps
+// secondary navbar styles
+#secondaryNavbar.navbar-secondary, #newCrumbTrail,
+.navbar-secondary, .banner-row {
+    background-color: @navbar-default-bg !important;
+    color: @navbar-default-color  !important;
+    margin-top: 0;
+    top: 51px !important;
+    position: fixed;
+    width: 100%;
+}
+
+#newCrumbTrail #currentPage div.text-primary,
+#secondaryNavbar.navbar-secondary .text-primary,
+#secondaryNavbar.navbar-secondary .btn-link,
+.navbar-default.banner-row .form-control-static,
+.navbar-default.banner-row .btn-link {
+    background-color: @navbar-default-bg !important;
+    color: @navbar-default-color  !important;
+    margin-top: 0;
+}
+
+// OpenInvoice over-rides
+// ----------------------------------------
+
+.list-group-item .nav-header  {
+    background-color:@gray-lighter;
+    color: @text-color;
+}
+
+// Fix to reset the styles that are over-riding bootstrap's default in OpenInvoice
+#navbar-container {
+    .navbar-fixed-top {
+        position: fixed !important;
+        height: auto !important;
+        right: 0;
+        left: 0;
+        z-index: 1030;
+    }
+    .navbar {
+        margin: auto !important;
+        height: auto !important;
+
+        #navbar-menu-items ul.navbar-menus {
+            .menuItems.open {
+                background-color: @gray5;
+                color: @white;
+
+                a {
+                    background-color: @white;
+                    color: @gray5;
+                }
+            }
+        }
+    }
+}
+
+// Remove this class in the Dashboard app
+.configure-dashboard {
+    padding-bottom: 0px !important;
+}
+
+// Remove this class in the Dashboard app
+#editDashboardBtn, #saveDashboardBtn {
+    margin-top: -3px;
+}
+
+// Remove this class in the Dashboard app
+#dashboard-body {
+    padding-top: inherit !important;
+}
+
+// TODO: remove this class this in the Dashboard app
+#primaryNavBar {
+    border-bottom: none !important;
+}
+
+// TODO: remove this class in the Dashboard app
+.app-background {
+    position: static !important;
+}
+
+// TODO: remove navbar border specified in the Dashboard app
+nav.navbar-fixed-top {
+    border-color: transparent;
+}

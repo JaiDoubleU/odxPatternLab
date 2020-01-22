@@ -1,0 +1,94 @@
+.btn-breadcrumb {
+    width: 100%;
+    border-radius: 2px;
+    border: solid 1px #ccc;
+}
+
+.btn-breadcrumb .btn:not(:last-child) {
+    border: none;
+    margin-left:6px;
+    padding-left: 6px;
+    padding-right: 6px;
+}
+.btn-breadcrumb > .btn:not(:last-child) {
+    border-width: 1px;
+}
+
+.btn-breadcrumb>.btn.active,
+.btn-breadcrumb>.btn:active {
+    text-decoration: none;
+    outline: 0;
+    background-image: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.btn-breadcrumb .btn.active,
+.btn-breadcrumb .btn:active {
+    color: #000;
+    font-weight: 600;
+}
+
+.btn-breadcrumb .btn > span.badge {
+    background-color: #fff;
+    border: 1px solid #999;
+    border-radius: 50%;
+    color: #666;
+    display: inline-block;
+    height: 1.5rem !important;
+    line-height: 1.2rem;
+    width: 1.5rem !important;
+    padding-left: 0;
+    padding-right:0;
+}
+
+.btn-breadcrumb .btn.active > span.badge,
+.btn-breadcrumb .btn:active > span.badge {
+    color: #fff !important;
+    background-color: #028726 !important;
+    border-color: #026e1f !important;
+}
+
+.btn-breadcrumb .btn:last-child:after {
+    margin-left: -2px;
+}
+
+.btn-breadcrumb>.btn:last-child {
+    margin-left: -1px;
+}
+
+.btn-breadcrumb>.btn:last-child:before {
+    border: none;
+}
+
+.btn-breadcrumb>.btn:last-child:after {
+    content: " ";
+    display: block;
+    width: 0;
+    height: 0;
+    border: none;
+    position: absolute;
+    top: 50%;
+    margin-top: -14px;
+    margin-left: 0px;
+    left: 0;
+    z-index: 3;
+}
+
+/* styles for the caret separating each crumb */
+
+.btn-breadcrumb .btn.btn-link:before {
+    content: " ";
+    display: block;
+    border-top: 6px solid transparent;
+    border-bottom: 6px solid transparent;
+    border-left: 6px solid #666;
+    float: left;
+    margin-top: 0.2rem;
+    margin-right: 1rem;
+}
+
+.btn-breadcrumb .btn:first-child:before {
+    border-top: none !important;
+    border-bottom: none !important;
+}

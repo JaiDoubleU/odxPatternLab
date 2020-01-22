@@ -1,0 +1,362 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+ <title>PriceBookOverview</title>
+
+ <link rel="stylesheet" href="../../../OpenInvoiceForBuyers_master.css" type="text/css" />
+
+
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style>
+ <meta name="generator" content="Adobe FrameMaker 2017" />
+<script type="text/javascript" src="../../../template/scripts/rh.min.js"></script>
+<script type="text/javascript" src="../../../template/scripts/common.min.js"></script>
+<script type="text/javascript" src="../../../template/scripts/topic.min.js"></script>
+<script type="text/javascript" src="../../../template/scripts/constants.js"></script>
+<script type="text/javascript" src="../../../template/scripts/utils.js"></script>
+<script type="text/javascript" src="../../../template/scripts/mhutils.js"></script>
+<script type="text/javascript" src="../../../template/scripts/mhlang.js"></script>
+<script type="text/javascript" src="../../../template/scripts/mhver.js"></script>
+<script type="text/javascript" src="../../../template/scripts/settings.js"></script>
+<script type="text/javascript" src="../../../template/scripts/XmlJsReader.js"></script>
+<script type="text/javascript" src="../../../template/scripts/loadparentdata.js"></script>
+<script type="text/javascript" src="../../../template/scripts/loadscreen.js"></script>
+<script type="text/javascript" src="../../../template/scripts/loadprojdata.js"></script>
+<script type="text/javascript" src="../../../template/scripts/mhtopic.js"></script>
+ <link rel="stylesheet" type="text/css" href="../../../template/styles/topic.min.css">
+<script type="text/javascript" >
+gRootRelPath = "../../..";
+gCommonRootRelPath = "../../..";
+gTopicId = "1.6_1";
+</script>
+ <meta name="brsprev" value="OpenInvoiceForBuyers_master/User_Management/UserMgmt/Unlocking_Users.htm">
+ <meta name="brsnext" value="OpenInvoiceForBuyers_master/Price_Books/PriceBook/PriceBook.htm">
+ <meta name="topic-breadcrumbs" content="Administrator & User Guide for Buyers" />
+</head>
+
+<body dir="ltr">
+<script type="text/javascript" src="../../../ehlpdhtm.js"></script>
+
+ <div dir="ltr">
+  <p dir="ltr" class="FM_Chapter_Title">Price Books</p>
+  <p dir="ltr" class="FM_Body_Style">Price books are negotiated between buyers and suppliers outside of the <span data-name="ADP_Software_Name" data-val="OpenInvoice Platform" data-showval="TRUE" data-format="ADP_Software_Name">OpenInvoice Platform</span>, and the price book document is created by the buyer and then the pricing is uploaded by the buyer (or supplier if <span style="font-weight : bold; ">Supplier Collaboration</span>&#160;is turned on).This section provides an overview of how to view and use price books in <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>. </p>
+  <p dir="ltr" class="FM_Note___Start"><span class="FM_Bold">Note:<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Buyers have the ability to allow their suppliers collaboration access to their price books. Suppliers can view all price books without collaboration access. </p>
+  <p dir="ltr" class="FM_Body_Style">Price books provide:</p>
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>consistent descriptions on products and services</p>
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>control and tracking of negotiated and expired rates</p>
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>compliance alerts that advise buyers and suppliers when an invoice is or is not in compliance</p>
+  <p dir="ltr" class="FM_Body_Style">Price books created by a buyer are only accessible to that specific buyer and their suppliers. Other companies cannot see or access the price book. </p>
+  <p dir="ltr" class="FM_Heading_1">Price Book Collaboration</p>
+  <p dir="ltr" class="FM_Body_Style">Buyers can easily collaborate with their suppliers on Price Books by allowing suppliers the ability to edit the price book in OpenInvoice. When a price book is being reviewed and in Requested for Edit mode, by either the buyer or supplier, the price book is locked to all other users and a message displays indicating the price book is locked. </p>
+  <p dir="ltr" class="FM_Heading_1"><a name="XREF_79965_Price_Books"></a>Price Book Dashboard</p>
+
+  <p dir="ltr" class="FM_Body_Style">The Price Book Dashboard is accessed by going to <span style="font-weight : bold; ">Price Book &gt; Dashboard</span>. The dashboard consists of two portlets:</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>The <span style="font-weight : bold; ">Price Books Requiring My Actions</span>&#160;portlet displays counts and provides direct access to the price books you are responsible for processing.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>The <span style="font-weight : bold; ">Price Books</span>&#160;portlet displays counts and provides direct access to the price books you have been granted permission to view.</p>
+
+  <div align="center"><img alt="PriceBookOverview_pricebookdashboard.png" id="image182" src="../../../assets/PriceBookOverview_pricebookdashboard.png" style="max-width: 100% ;height: auto" />
+  </div>
+  <p dir="ltr" class="FM_Screenshot_Anchor">&nbsp;</p>
+
+  <p dir="ltr" class="FM_Heading_2">Price Books Requiring My Actions Portlet</p>
+
+  <p dir="ltr" class="FM_Body_Style">This portlet only includes the price books that the user is able to process based on their assigned permissions and the price book status.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Pending Change – Requested:</span>&#160;price books with a working status of Requested for which the user has the Price Book Modify permission.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Pending Change – Disputed:</span>&#160;price books with a working status of Disputed for which the user has the Price Book Modify permission.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Pending Approval – Submitted:</span>&#160;price books with a working status of Submitted for which the user has the Price Book Approve permission.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Pending Approval – Re-submitted:</span>&#160;price books with a working status of Resubmitted for which the user has the Price Book Approve permission.</p>
+
+  <p dir="ltr" class="FM_Heading_2">Price Book Portlet</p>
+
+  <p dir="ltr" class="FM_Body_Style">Each row in this portlet represents a price book status. The portlet only includes price books that the user is able to view. </p>
+
+  <p dir="ltr" class="FM_Note___Start"><span class="FM_Bold">Note:<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>It is possible for a price book to be included in more than one category.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Active</span>: price books that have been approved at least once and the current date is between the price book’s active and expiry dates.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Approved</span>: price books that have been approved at least once and the current date is before the price book’s active date.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">In Progress (new price books):</span>&#160;price books that have never been approved and have a working status of New, Requested, Submitted, Disputed, or Resubmitted.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">In Progress (amendments):</span>&#160;price books that have been approved at least once and have a working status of Requested, Submitted, Disputed, or Resubmitted for which the user has view permission.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Inactive:</span> price books that are in a Cancelled, Terminated or Expired status.</p>
+
+  <p dir="ltr" class="FM_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 13pt;" class="FMAutoNumber_2"></span></span>Price books will be automatically removed from this category after the time period defined by the preference <span style="font-weight : bold; ">Days to Display Inactive/Expired Price Books</span>.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Expiring in </span><span style="font-style : italic; ">X</span><span style="font-weight : bold; "> Days</span>: price books that are active and the price book’s expiry date is within the number of days specified in the company preference <span style="font-weight : bold; ">Days to Notify in Advance of Price Book Expiry</span>.</p>
+
+  <p dir="ltr" class="FM_Heading_1"><a name="XREF_11050_Price_Book"></a><a name="XREF_51366_Price_Book_Search"></a>Price Book Search</p>
+  <p dir="ltr" class="FM_Body_Style">Price book searches are performed by specifying multiple search criteria&#160;or by entering the price book name into the <span style="font-weight : bold; ">Global Search</span> field. The resulting list displays the price books based on current amendments. Price book search results display the approved version of the pricing. If the price book is being amended, only the last approved prices are available for invoices or field tickets.</p>
+
+  <p dir="ltr" class="FM_Heading_2_HowTo">How to Search Using Global Search</p>
+
+  <p dir="ltr" class="FM_Permission___Start"><span class="FM_Bold">Permission:<span style="padding-left: 21pt;" class="FMAutoNumber_1"></span></span>Price Book View</p>
+
+  <p dir="ltr" class="FM_Steps"><span class="FM_Bold">Steps:<span style="padding-left: 8pt;" class="FMAutoNumber_1"></span></span></p>
+
+  <p dir="ltr" class="FM_Number_List_1___Start"><span class="FM_Bullet4">1.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>In the main navigation bar, click the down arrow in the <span style="font-weight : bold; ">Global Search</span>&#160;field and select <span style="font-weight : bold; ">Price Book Name</span>.</p>
+
+  <div align="center"><img alt="PriceBookOverview_PBNameSearch.jpg" id="image183" src="../../../assets/PriceBookOverview_PBNameSearch.jpg" style="max-width: 100% ;height: auto" />
+  </div>
+  <p dir="ltr" class="FM_Screenshot_Anchor">&nbsp;</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">2.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Enter all or part of the <span style="font-weight : bold; ">Price Book Name</span>.</p>
+
+  <p dir="ltr" class="FM_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 13pt;" class="FMAutoNumber_2"></span></span>If only part of the price book name is known, an asterisk (*) must be used to denote the unknown part of the price book name. </p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">3.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click the <span style="font-weight : bold; ">Search</span> icon</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">4.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Select a <span style="font-weight : bold; ">Price Book Name</span> from the list.</p>
+
+  <p dir="ltr" class="FM_Heading_2_HowTo">How to Search Using Price Book Search</p>
+  <p dir="ltr" class="FM_Permission___Start"><span class="FM_Bold">Permission:<span style="padding-left: 21pt;" class="FMAutoNumber_1"></span></span>Price Book View</p>
+  <p dir="ltr" class="FM_Steps"><span class="FM_Bold">Steps:<span style="padding-left: 8pt;" class="FMAutoNumber_1"></span></span></p>
+  <p dir="ltr" class="FM_Number_List_1___Start"><span class="FM_Bullet4">1.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Select <span style="font-weight : bold; ">Price Book &gt; Search</span>. </p>
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">2.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Enter your search criteria.</p>
+  <p dir="ltr" class="FM_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 13pt;" class="FMAutoNumber_2"></span></span>If only part of the <span style="font-weight : bold; ">Supplier</span><span style="font-weight : bold; "> Name</span>&#160;or <span style="font-weight : bold; ">User </span>are known, an asterisk (*) must be used to denote the unknown part of the name. Click the <span style="font-weight : bold; ">Search </span>icon, select a supplier or user, and click <span style="font-weight : bold; ">Submit</span>. Alternatively, leave the fields blank and click <span style="font-weight : bold; ">Submit</span> to return a list of all price books.</p>
+  <p dir="ltr" class="FM_Note_Indent___Next"><span class="FM_Bold"><span style="padding-left: 54pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Reset</span> to clear all search fields.</p>
+
+  <div align="center"><img alt="PriceBookOverview_pricebooksearch.png" id="image184" src="../../../assets/PriceBookOverview_pricebooksearch.png" style="max-width: 100% ;height: auto" />
+  </div>
+  <p dir="ltr" class="FM_Screenshot_Anchor">&nbsp;</p>
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">3.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span><span style="font-size  : 5.0pt; "></span>Click <span style="font-weight : bold; ">Submit</span>.</p>
+  <p dir="ltr" class="FM_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 13pt;" class="FMAutoNumber_2"></span></span>By default, price books are sorted by <span style="font-weight : bold; ">Price Book Name</span>. Sort by clicking any column header.</p>
+
+  <div align="center"><img alt="PriceBookOverview_searchresults.jpg" id="image185" src="../../../assets/PriceBookOverview_searchresults.jpg" style="max-width: 100% ;height: auto" />
+  </div>
+  <p dir="ltr" class="FM_Screenshot_Anchor">&nbsp;</p>
+  <p dir="ltr" class="FM_Screenshot_Anchor">&nbsp;</p>
+  <p dir="ltr" class="FM_Note___Start"><span class="FM_Bold">Note:<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>If the Supplier Collaboration setting is “No,” then the supplier will have view-only access to the price books.</p>
+  <p dir="ltr" class="FM_Heading_1"><a name="XREF_84503_Price_Book"></a>Price Book Structure</p>
+  <p dir="ltr" class="FM_Body_Style">A price book consists of the Summary,&#160;Price Entries, Contacts, and Documents.</p>
+
+  <p dir="ltr" class="FM_Note___Start"><span class="FM_Bold">Note:<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>The price book contacts and documents sections are optional. </p>
+
+  <div align="center"><img alt="PriceBookOverview_pricebookstructure.jpg" id="image186" src="../../../assets/PriceBookOverview_pricebookstructure.jpg" style="max-width: 100% ;height: auto" />
+  </div>
+  <p dir="ltr" class="FM_Screenshot_Anchor">&nbsp;</p>
+  <p dir="ltr" class="FM_Heading_2"><span style="font-weight : normal; font-size  : 5.0pt; color   : #000000; "></span>Supplementary Information</p>
+  <p dir="ltr" class="FM_Body_Style">Expanding this section will display the Price Book Journal and messages related to the price book. The Price Book Journal displays historical workflow actions that have been performed against the price book as well as any comments that have been entered. Comments are restricted to your company by default. The journal entries are displayed with the most recent entry at the top and the oldest at the bottom.</p>
+  <p dir="ltr" class="FM_Note___Start"><span class="FM_Bold">Note:<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Approved</span>&#160;to open a read-only historical version of the price book. To return to the current price book, click <span style="font-weight : bold; ">View Current Version</span> at the top of the Price Book Journal.</p>
+  <p dir="ltr" class="FM_Note___Next"><span class="FM_Bold"><span style="padding-left: 36pt;" class="FMAutoNumber_1"></span></span>Expand the <span style="font-weight : bold; ">Approved</span> line to display the workflow actions leading up to the approval.</p>
+  <p dir="ltr" class="FM_Heading_2">Summary </p>
+  <p dir="ltr" class="FM_Body_Style">This tab displays the price book header information, including the price book name, agreement number, associated supplier&#160;name, price book status, currency, price book description, project information, and Price Book values. </p>
+
+  <p dir="ltr" class="FM_Body_Style">From this tab, you can also configure the sites (buyer and supplier) that are applicable to the price book.</p>
+
+  <p dir="ltr" class="FM_Heading_2">Price Entries </p>
+  <p dir="ltr" class="FM_Body_Style">This tab displays the product and service pricing agreed upon between the buyer and supplier. </p>
+
+  <div align="center"><img alt="PriceBookOverview_PBpriceentries.jpg" id="image187" src="../../../assets/PriceBookOverview_PBpriceentries.jpg" style="max-width: 100% ;height: auto" />
+  </div>
+  <p dir="ltr" class="FM_Screenshot_Anchor">&nbsp;</p>
+
+  <p dir="ltr" class="FM_Body_Style"><span style="font-size  : 5.0pt; "></span>From this tab, you can make changes to your pricing records and/or the price book.</p>
+
+  <p dir="ltr" class="FM_Heading_2">Early Pay </p>
+
+  <p dir="ltr" class="FM_Body_Style">The Early Pay tab is read-only and displays any existing Early Pay terms that were configured prior to the release of OpenInvoice 14.2. </p>
+
+  <p dir="ltr" class="FM_Body_Style">Early Pay programs are replacing the existing Early Pay terms configured in price books. Existing Early Pay price books with a supplier will continue to be used until you assign an Early Pay program to that supplier. Once an Early Pay program is assigned to a supplier all price books with that supplier that include Early Pay terms are disabled.</p>
+
+  <div align="center"><img alt="PriceBookOverview_EarlyPay.jpg" id="image188" src="../../../assets/PriceBookOverview_EarlyPay.jpg" style="max-width: 100% ;height: auto" />
+  </div>
+  <p dir="ltr" class="FM_Screenshot_Anchor">&#160;</p>
+
+  <p dir="ltr" class="FM_Heading_2">Reporting </p>
+
+  <p dir="ltr" class="FM_Body_Style">Available reports for the price book are listed on this tab. The reports are displayed by name and description.</p>
+
+  <p dir="ltr" class="FM_Heading_2">Documents </p>
+
+  <p dir="ltr" class="FM_Body_Style">Comments and attached documents applicable to the price book are displayed.</p>
+
+  <p dir="ltr" class="FM_Heading_2">Contacts </p>
+
+  <p dir="ltr" class="FM_Body_Style">Contacts from your company, the supplier company, and/or a third-party are listed in this tab. The buyer and supplier contacts can be registered or unregistered <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>&#160;users. Third-party contacts are unregistered. </p>
+
+  <p dir="ltr" class="FM_Heading_2">Administration </p>
+
+  <p dir="ltr" class="FM_Body_Style">You can assign roles and permissions for this price book in this tab. </p>
+
+  <p dir="ltr" class="FM_Heading_1">Price Book Notifications</p>
+
+  <p dir="ltr" class="FM_Body_Style">There are two types of notifications, Subscribed Notifications and Standard Notifications.</p>
+
+  <p dir="ltr" class="FM_Heading_2">Subscribed Notifications</p>
+
+  <p dir="ltr" class="FM_Note___Start"><span class="FM_Bold">Note:<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>If a user has access to multiple price books and the same notification condition occurs on other price books, the user will only receive one email notification for all price books.</p>
+
+  <p dir="ltr" class="FM_Note___Next"><span class="FM_Bold"><span style="padding-left: 36pt;" class="FMAutoNumber_1"></span></span>By default, notifications are disabled.</p>
+
+  <p dir="ltr" class="FM_Body_Style">All users assigned to the selected role will receive notifications if the role is subscribed to any of the following:</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Action Required: </span>notifies users in real-time when they are required to act on their assigned price books. Notifications are sent to price book modifiers when the price book working status becomes Requested or Disputed. Notifications are sent to price book approvers when the price book working status becomes Submitted or Resubmitted. </p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Major Event:</span>&#160;notifies users, based on a defined schedule, when their assigned price books are disputed, approved, activated, expired, cancelled, or terminated. </p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Price Book Change: </span>notifies users, based on a defined schedule, if the price book is activated or modified when the price book working status is Requested. </p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Spend Threshold:</span>&#160;notifies users, based on a defined schedule, when the total spend for an Active or Expired price book exceeds 85% of the Estimated Price Book Value.</p>
+
+  <p dir="ltr" class="FM_Heading_2">Standard Notifications </p>
+
+  <p dir="ltr" class="FM_Body_Style">All users within roles that are assigned to the price book will receive the following standard notifications. These notifications are not listed in the Notifications section for a price book. A role cannot unsubscribe from these notifications. </p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Price Book Expiry: </span>notifies price book administrators when a price book is about to expire. The notification will be sent twice. One notification is sent based on the company preference <span style="font-weight : bold; ">Days to Notify In Advance of Price Book Expiry</span> and the other notification is sent one day prior to the price book expiry date.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Supplier Product/Service Catalog Change: </span>notifies price book administrators and modifiers when a product/service description in the price book is modified in the supplier’s catalog. </p>
+
+  <p dir="ltr" class="FM_Heading_1"><span style="font-weight : normal; font-size  : 10.0pt; "></span><a name="XREF_86621_Price_Book"></a>Price Book Compliance Alerts</p>
+  <p dir="ltr" class="FM_Body_Style">Price Book compliance alerts notify the buyer and supplier when an invoice or ticket is not in compliance with the price book it references. Alerts are categorized by severity: red, yellow, or blue. By default, red is the most severe, blue is the second most severe, and yellow is the least severe. The buyer has the option to enable an <span data-name="ADP_Company_Name" data-val="Oildex" data-showval="TRUE" data-format="ADP_Company_Name">Oildex</span>-controlled preference that will modify alert severity so that yellow takes priority over blue; if the preference is enabled, red is most severe, yellow is second most severe, and blue is least severe. An invoice/ticket that is compliant with the referenced price book will have a green alert. Click the alert icon to display a message with details about the alert condition.</p>
+  <p dir="ltr" class="FM_Screenshot_Anchor">.</p>
+<div width="100%" align="left">
+  <table border-spacing="0" dir="ltr" class="table118" border-collapse="collapse" style="max-width: 100% ;height: auto">
+   <tr class="tr119">
+   <td class="td120">
+   <p dir="ltr" class="FM_CellHeading">Alert Name </p>
+</td>
+   <td class="td121">
+   <p dir="ltr" class="FM_CellHeading">Alert </p>
+</td>
+   <td class="td122">
+   <p dir="ltr" class="FM_CellHeading">Description </p>
+</td>
+</tr>
+   <tr class="tr123">
+   <td class="td124">
+   <p dir="ltr" class="FM_Table_Text">On Price Book</p>
+</td>
+   <td class="td125">
+   <div align="center"><img alt="alert_GreenPriceBookIcon.jpg" id="image189" src="../../../assets/alert_GreenPriceBookIcon.jpg" style="max-width: 100% ;height: auto" />
+   </div>
+   <p dir="ltr" class="FM_Screenshot_Anchor">&nbsp;</p>
+</td>
+   <td class="td126">
+   <p dir="ltr" class="FM_Table_Text">The invoice or ticket refers to a price book and all of the details on the invoice/ticket match the details on the price book.</p>
+</td>
+</tr>
+   <tr class="tr127">
+   <td class="td124">
+   <p dir="ltr" class="FM_Table_Text">Currency Mismatch </p>
+</td>
+   <td class="td125">
+   <div align="center"><img alt="alert_RedPriceBookIcon.jpg" id="image190" src="../../../assets/alert_RedPriceBookIcon.jpg" style="max-width: 100% ;height: auto" />
+   </div>
+   <p dir="ltr" class="FM_Screenshot_Anchor">&nbsp;</p>
+</td>
+   <td class="td126">
+   <p dir="ltr" class="FM_Table_Text">The currency of a detail invoice line or ticket is different than the currency of the referenced price book.</p>
+</td>
+</tr>
+   <tr class="tr128">
+   <td class="td124">
+   <p dir="ltr" class="FM_Table_Text">Above Price Book</p>
+</td>
+   <td class="td125">
+   <div align="center"><img alt="alert_RedPriceBookIcon.jpg" id="image191" src="../../../assets/alert_RedPriceBookIcon.jpg" style="max-width: 100% ;height: auto" />
+   </div>
+   <p dir="ltr" class="FM_Screenshot_Anchor">&nbsp;</p>
+</td>
+   <td class="td126">
+   <p dir="ltr" class="FM_Table_Text">The adjusted rate (calculated as rate less discount) of a detail invoice line or ticket is greater than the maximum adjusted rate specified on the qualifying price record.</p>
+</td>
+</tr>
+   <tr class="tr128">
+   <td class="td124">
+   <p dir="ltr" class="FM_Table_Text">Below Price Book</p>
+</td>
+   <td class="td125">
+   <div align="center"><img alt="alert_BluePriceBookIcon.jpg" id="image192" src="../../../assets/alert_BluePriceBookIcon.jpg" style="max-width: 100% ;height: auto" />
+   </div>
+   <p dir="ltr" class="FM_Screenshot_Anchor">&nbsp;</p>
+</td>
+   <td class="td126">
+   <p dir="ltr" class="FM_Table_Text">The adjusted rate (calculated as rate less discount) of a detail invoice line or ticket is less than the minimum adjusted rate specified on the qualifying price record. </p>
+</td>
+</tr>
+   <tr class="tr127">
+   <td class="td124">
+   <p dir="ltr" class="FM_Table_Text">No Price </p>
+</td>
+   <td class="td125">
+   <div align="center"><img alt="alert_BluePriceBookIcon.jpg" id="image193" src="../../../assets/alert_BluePriceBookIcon.jpg" style="max-width: 100% ;height: auto" />
+   </div>
+   <p dir="ltr" class="FM_Screenshot_Anchor">&nbsp;</p>
+</td>
+   <td class="td126">
+   <p dir="ltr" class="FM_Table_Text">The qualifying price record does not have any rates specified.</p>
+</td>
+</tr>
+   <tr class="tr129">
+   <td class="td124">
+   <p dir="ltr" class="FM_Table_Text">Off Price Book </p>
+</td>
+   <td class="td125">
+   <div align="center"><img alt="alert_YellowPriceBookIcon.jpg" id="image194" src="../../../assets/alert_YellowPriceBookIcon.jpg" style="max-width: 100% ;height: auto" />
+   </div>
+   <p dir="ltr" class="FM_Screenshot_Anchor">&nbsp;</p>
+</td>
+   <td class="td126">
+   <p dir="ltr" class="FM_Table_Text">The referenced price book does not have a qualifying price record.</p>
+</td>
+</tr>
+  </table>
+</div>
+  <p dir="ltr" class="FM_Heading_2">Determining Compliance</p>
+
+  <p dir="ltr" class="FM_Body_Style"><span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>&#160;compares the information entered on a ticket or invoice’s line items to find the correct pricing record in the price book. </p>
+
+  <p dir="ltr" class="FM_Note___Start"><span class="FM_Bold">Note:<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>The preferred unit of measure is used for price book reconciliation. The invoice’s unit of measure is translated to the preferred unit of measure. If the invoice’s unit of measure does not exactly match the unit of measure in the price book, then a “Off Price Book” alert displays. </p>
+
+  <p dir="ltr" class="FM_Body_Style">Price records may be referenced on a ticket or invoice lines if: </p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>The <span style="font-weight : bold; ">Service Date</span>&#160;(or <span style="font-weight : bold; ">Service Date From</span>&#160;if using a range) overlaps the price record’s <span style="font-weight : bold; ">Date From</span> range.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>The &#160;<span style="font-weight : bold; ">Quantity</span>&#160;or the total <span style="font-weight : bold; ">Quantity</span>&#160;is greater than or equal to the price record’s quantity threshold. </p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>The <span style="font-weight : bold; ">Unit</span>&#160;matches the price record’s unit of measure, or the price record does not have a unit of measure specified. </p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>The <span style="font-weight : bold; ">Qualifier</span>&#160;matches the price record’s qualifier. </p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>The <span style="font-weight : bold; ">Adjusted Rate</span>&#160;in the pricing record matches the <span style="font-weight : bold; ">Adjusted Rate</span>. To calculate the <span style="font-weight : bold; ">Adjusted Rate</span>, subtract the discount from the rate. For a price range, the ticket or invoice line’s <span style="font-weight : bold; ">Adjusted Rate</span>&#160;must be between the <span style="font-weight : bold; ">Min Adjusted Rate</span>&#160;and <span style="font-weight : bold; ">Max Adjusted Rate</span>.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>The preferred unit of measure is used for price book reconciliation. If the invoice’s unit of measure does not match the preferred unit of measure, the invoice’s unit of measure will be used for price book reconciliation.</p>
+
+  <p dir="ltr" class="FM_Body_Style">&nbsp;</p>
+ </div>
+</body>
+
+</html>
+

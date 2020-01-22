@@ -1,0 +1,336 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+ <title>Supplier Number and Secondary Supplier Number</title>
+
+ <link rel="stylesheet" href="../../../OpenInvoiceForBuyers_master.css" type="text/css" />
+
+
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style>
+ <meta name="generator" content="Adobe FrameMaker 2017" />
+<script type="text/javascript" src="../../../template/scripts/rh.min.js"></script>
+<script type="text/javascript" src="../../../template/scripts/common.min.js"></script>
+<script type="text/javascript" src="../../../template/scripts/topic.min.js"></script>
+<script type="text/javascript" src="../../../template/scripts/constants.js"></script>
+<script type="text/javascript" src="../../../template/scripts/utils.js"></script>
+<script type="text/javascript" src="../../../template/scripts/mhutils.js"></script>
+<script type="text/javascript" src="../../../template/scripts/mhlang.js"></script>
+<script type="text/javascript" src="../../../template/scripts/mhver.js"></script>
+<script type="text/javascript" src="../../../template/scripts/settings.js"></script>
+<script type="text/javascript" src="../../../template/scripts/XmlJsReader.js"></script>
+<script type="text/javascript" src="../../../template/scripts/loadparentdata.js"></script>
+<script type="text/javascript" src="../../../template/scripts/loadscreen.js"></script>
+<script type="text/javascript" src="../../../template/scripts/loadprojdata.js"></script>
+<script type="text/javascript" src="../../../template/scripts/mhtopic.js"></script>
+ <link rel="stylesheet" type="text/css" href="../../../template/styles/topic.min.css">
+<script type="text/javascript" >
+gRootRelPath = "../../..";
+gCommonRootRelPath = "../../..";
+gTopicId = "";
+</script>
+ <meta name="brsprev" value="OpenInvoiceForBuyers_master/Configuration/SupplierMgmt/Sending_a_Message_to_Suppliers.htm">
+ <meta name="brsnext" value="OpenInvoiceForBuyers_master/Configuration/FieldTicket_Configuration/FieldTicket_Configuration.htm">
+ <meta name="topic-breadcrumbs" content="Administrator & User Guide for Buyers" />
+</head>
+
+<body dir="ltr">
+<script type="text/javascript" src="../../../ehlpdhtm.js"></script>
+<div dir="ltr">
+  <p dir="ltr" class="FM_ADP_TG_Heading_1"><a name="TOC_Supplier_Number_and"></a><a name="XREF_90408_Supplier_Number"></a>Supplier Number and Secondary Supplier Number</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Body_Style">As the buyer company, you assign supplier numbers and secondary supplier numbers in your back office system based on how you transact with supplier companies. These numbers are used to identify both the supplier company and the specific supplier sites in all document transfers between your company and <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>&#160;(purchase orders you submit to <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>, invoice exports from <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span> to you, etc.).</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Body_Style">To enable a supplier, a supplier number is required and a secondary supplier number is optional. The numbers can be assigned to multiple sites and may span multiple companies; however, the combination of supplier number and secondary supplier number must uniquely identify the supplier company. </p>
+
+  <p dir="ltr" class="FM_ADP_TG_Note___Start"><span class="FM_Bold">Note:<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>A registered and unregistered supplier company can share the same combination of supplier number and secondary supplier number. If this happens, the registered supplier will take precedence for all document imports.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Body_Style"><span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>&#160;only uses the supplier number when performing a duplicate invoice check. If a supplier number is shared between two supplier companies and the companies are distinguished using the secondary supplier number, the two companies cannot submit the same invoice number.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Body_Style">The purchase order import file only allows one number to be specified—either the supplier number or the secondary supplier number. During the import process, the system will attempt to match the number provided in the purchase order with a supplier number that you have entered in <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>. If multiple suppliers or no supplier companies are a match, the number provided in the purchase order is then compared to the secondary supplier numbers you have entered in <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>. </p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>If the specified number matches a single supplier company, the purchase order is associated to all sites with the matching number.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>If the specified number matches multiple supplier companies, the purchase order import will fail.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>If the specified number does not match any supplier companies in <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>, a new unregistered supplier company will be created in OpenInvoice.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Note___Start"><span class="FM_Bold">Note:<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>If you are using supplier numbers to configure Invoice Workflow Rules refer to <a href="../InvoiceWorkflowConfig/Invoice_Workflow_Rules.htm#XREF_58564_Invoice_Workflow">Invoice Workflow Rules</a>.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Heading_2"><a name="XREF_84130_Valid_Supplier"></a>Valid Supplier Number and Secondary Supplier Number Combinations</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Screenshot_Anchor"><span style="font-size: small;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+
+<div width="100%" align="left">
+  <table border-spacing="0" dir="ltr" class="table25" border-collapse="collapse" style="max-width: 100% ;height: auto">
+   <tr class="tr26">
+   <th class="td27">
+   <p dir="ltr" class="FM_ADP_TG_CellHeading">Supplier Company</p>
+</th>
+   <th class="td28">
+   <p dir="ltr" class="FM_ADP_TG_CellHeading">Supplier Site</p>
+</th>
+   <th class="td29">
+   <p dir="ltr" class="FM_ADP_TG_CellHeading">Supplier Number</p>
+</th>
+   <th class="td30">
+   <p dir="ltr" class="FM_ADP_TG_CellHeading">Secondary Supplier Number</p>
+</th>
+   <th class="td31">
+   <p dir="ltr" class="FM_ADP_TG_CellHeading">Result</p>
+</th>
+</tr>
+   <tr class="tr32">
+   <td class="td33" rowspan="2">
+   <p dir="ltr" class="FM_ADP_TG_Table_Text">Rolham Equipment Services</p>
+</td>
+   <td class="td34">
+   <p dir="ltr" class="FM_ADP_TG_Table_Text">Newark</p>
+</td>
+   <td class="td35">
+   <p dir="ltr" class="FM_ADP_TG_Table_Text">4702</p>
+</td>
+   <td class="td36">
+   <p dir="ltr" class="FM_ADP_TG_Table_Text">&nbsp;</p>
+</td>
+   <td class="td37" rowspan="2">
+   <p dir="ltr" class="FM_ADP_TG_Table_Text">Sites within a supplier company can share the same supplier number. </p>
+   <p dir="ltr" class="FM_ADP_TG_Table_Text">&nbsp;</p>
+   <p dir="ltr" class="FM_ADP_TG_Note___Start"><span class="FM_Bold">Note:<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>A purchase order will be associated to both sites.</p>
+</td>
+</tr>
+   <tr class="tr38">
+   <td class="td34">
+   <p dir="ltr" class="FM_ADP_TG_Table_Text">Springfield</p>
+</td>
+   <td class="td35">
+   <p dir="ltr" class="FM_ADP_TG_Table_Text">4702</p>
+</td>
+   <td class="td36">
+   <p dir="ltr" class="FM_ADP_TG_Table_Text">&nbsp;</p>
+</td>
+</tr>
+   <tr class="tr39">
+   <td class="td40">
+   <p dir="ltr" class="FM_ADP_TG_Screenshot_Anchor">&nbsp;</p>
+</td>
+   <td class="td41">
+   <p dir="ltr" class="FM_ADP_TG_Screenshot_Anchor">&nbsp;</p>
+</td>
+   <td class="td42">
+   <p dir="ltr" class="FM_ADP_TG_Screenshot_Anchor">&nbsp;</p>
+</td>
+   <td class="td43">
+   <p dir="ltr" class="FM_ADP_TG_Screenshot_Anchor">&nbsp;</p>
+</td>
+   <td class="td44">
+   <p dir="ltr" class="FM_ADP_TG_Screenshot_Anchor">&nbsp;</p>
+</td>
+</tr>
+   <tr class="tr32">
+   <td class="td33" rowspan="2">
+   <p dir="ltr" class="FM_ADP_TG_Table_Text">Rolham Equipment Services</p>
+</td>
+   <td class="td34">
+   <p dir="ltr" class="FM_ADP_TG_Table_Text">Newark</p>
+</td>
+   <td class="td35">
+   <p dir="ltr" class="FM_ADP_TG_Table_Text">4702</p>
+</td>
+   <td class="td36">
+   <p dir="ltr" class="FM_ADP_TG_Table_Text">&nbsp;</p>
+</td>
+   <td class="td37" rowspan="2">
+   <p dir="ltr" class="FM_ADP_TG_Body_Style" style="font-weight : bold;">Sites within a supplier company can have different supplier numbers. </p>
+</td>
+</tr>
+   <tr class="tr32">
+   <td class="td34">
+   <p dir="ltr" class="FM_ADP_TG_Table_Text">Springfield</p>
+</td>
+   <td class="td35">
+   <p dir="ltr" class="FM_ADP_TG_Table_Text">5930</p>
+</td>
+   <td class="td36">
+   <p dir="ltr" class="FM_ADP_TG_Table_Text">&nbsp;</p>
+</td>
+</tr>
+   <tr class="tr39">
+   <td class="td40">
+   <p dir="ltr" class="FM_ADP_TG_Screenshot_Anchor">&nbsp;</p>
+</td>
+   <td class="td41">
+   <p dir="ltr" class="FM_ADP_TG_Screenshot_Anchor">&nbsp;</p>
+</td>
+   <td class="td42">
+   <p dir="ltr" class="FM_ADP_TG_Screenshot_Anchor">&nbsp;</p>
+</td>
+   <td class="td43">
+   <p dir="ltr" class="FM_ADP_TG_Screenshot_Anchor">&nbsp;</p>
+</td>
+   <td class="td44">
+   <p dir="ltr" class="FM_ADP_TG_Screenshot_Anchor">&nbsp;</p>
+</td>
+</tr>
+   <tr class="tr32">
+   <td class="td33" rowspan="2">
+   <p dir="ltr" class="FM_ADP_TG_Table_Text">Rolham Equipment Services</p>
+   <p dir="ltr" class="FM_ADP_TG_Table_Text">(Registered)</p>
+</td>
+   <td class="td34">
+   <p dir="ltr" class="FM_ADP_TG_Table_Text">Newark</p>
+</td>
+   <td class="td35">
+   <p dir="ltr" class="FM_ADP_TG_Table_Text">4702</p>
+</td>
+   <td class="td36">
+   <p dir="ltr" class="FM_ADP_TG_Table_Text">12345</p>
+</td>
+   <td class="td37" rowspan="4">
+   <p dir="ltr" class="FM_ADP_TG_Table_Text">Supplier numbers can be shared between supplier companies if one of the companies is unregistered. </p>
+   <p dir="ltr" class="FM_ADP_TG_Table_Text">&nbsp;</p>
+   <p dir="ltr" class="FM_ADP_TG_Note___Start"><span class="FM_Bold">Note:<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>A purchase order will be associated with the registered company Rolham Equipment Services.</p>
+</td>
+</tr>
+   <tr class="tr45">
+   <td class="td34">
+   <p dir="ltr" class="FM_ADP_TG_Table_Text">Springfield</p>
+</td>
+   <td class="td35">
+   <p dir="ltr" class="FM_ADP_TG_Table_Text">4702</p>
+</td>
+   <td class="td36">
+   <p dir="ltr" class="FM_ADP_TG_Table_Text">12345</p>
+</td>
+</tr>
+   <tr class="tr32">
+   <td class="td33" rowspan="2">
+   <p dir="ltr" class="FM_ADP_TG_Table_Text">Rolham Services</p>
+   <p dir="ltr" class="FM_ADP_TG_Table_Text">(Unregistered)</p>
+</td>
+   <td class="td34">
+   <p dir="ltr" class="FM_ADP_TG_Table_Text">Chicago</p>
+</td>
+   <td class="td35">
+   <p dir="ltr" class="FM_ADP_TG_Table_Text">4702</p>
+</td>
+   <td class="td36">
+   <p dir="ltr" class="FM_ADP_TG_Table_Text">12345</p>
+</td>
+</tr>
+   <tr class="tr46">
+   <td class="td34">
+   <p dir="ltr" class="FM_ADP_TG_Table_Text">Houston</p>
+</td>
+   <td class="td35">
+   <p dir="ltr" class="FM_ADP_TG_Table_Text">4702</p>
+</td>
+   <td class="td36">
+   <p dir="ltr" class="FM_ADP_TG_Table_Text">12345</p>
+</td>
+</tr>
+   <tr class="tr39">
+   <td class="td40">
+   <p dir="ltr" class="FM_ADP_TG_Screenshot_Anchor">&nbsp;</p>
+</td>
+   <td class="td41">
+   <p dir="ltr" class="FM_ADP_TG_Screenshot_Anchor">&nbsp;</p>
+</td>
+   <td class="td42">
+   <p dir="ltr" class="FM_ADP_TG_Screenshot_Anchor">&nbsp;</p>
+</td>
+   <td class="td43">
+   <p dir="ltr" class="FM_ADP_TG_Screenshot_Anchor">&nbsp;</p>
+</td>
+   <td class="td44">
+   <p dir="ltr" class="FM_ADP_TG_Screenshot_Anchor">&nbsp;</p>
+</td>
+</tr>
+   <tr class="tr32">
+   <td class="td33" rowspan="2">
+   <p dir="ltr" class="FM_ADP_TG_Table_Text">Rolham Equipment Services</p>
+</td>
+   <td class="td34">
+   <p dir="ltr" class="FM_ADP_TG_Table_Text">Newark</p>
+</td>
+   <td class="td35">
+   <p dir="ltr" class="FM_ADP_TG_Table_Text">4702</p>
+</td>
+   <td class="td36">
+   <p dir="ltr" class="FM_ADP_TG_Table_Text">12345</p>
+</td>
+   <td class="td37" rowspan="4">
+   <p dir="ltr" class="FM_ADP_TG_Table_Text">Secondary supplier numbers can be shared between supplier companies if the companies do not share supplier numbers.</p>
+   <p dir="ltr" class="FM_ADP_TG_Table_Text">&nbsp;</p>
+   <p dir="ltr" class="FM_ADP_TG_Note___Start"><span class="FM_Bold">Note:<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>A purchase order using 12345 will fail to import because the number is associated with two supplier companies.</p>
+</td>
+</tr>
+   <tr class="tr32">
+   <td class="td34">
+   <p dir="ltr" class="FM_ADP_TG_Table_Text">Springfield</p>
+</td>
+   <td class="td35">
+   <p dir="ltr" class="FM_ADP_TG_Table_Text">4702</p>
+</td>
+   <td class="td36">
+   <p dir="ltr" class="FM_ADP_TG_Table_Text">12345</p>
+</td>
+</tr>
+   <tr class="tr32">
+   <td class="td33" rowspan="2">
+   <p dir="ltr" class="FM_ADP_TG_Table_Text">Rolham Trucking</p>
+</td>
+   <td class="td34">
+   <p dir="ltr" class="FM_ADP_TG_Table_Text">Chicago</p>
+</td>
+   <td class="td35">
+   <p dir="ltr" class="FM_ADP_TG_Table_Text">8035</p>
+</td>
+   <td class="td36">
+   <p dir="ltr" class="FM_ADP_TG_Table_Text">12345</p>
+</td>
+</tr>
+   <tr class="tr47">
+   <td class="td34">
+   <p dir="ltr" class="FM_ADP_TG_Table_Text">Houston</p>
+</td>
+   <td class="td35">
+   <p dir="ltr" class="FM_ADP_TG_Table_Text">8035</p>
+</td>
+   <td class="td36">
+   <p dir="ltr" class="FM_ADP_TG_Table_Text">12345</p>
+</td>
+</tr>
+  </table>
+</div>
+  <p dir="ltr" class="FM_ADP_TG_Screenshot_Anchor">&#160;<span style="font-size: small;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+
+  <p dir="ltr" class="FM_ADP_TG_Body_Style">&nbsp;</p>
+  <p dir="ltr" class="FM_ADP_TG_Body_Style">&nbsp;</p>
+ </div>
+</body>
+</html>

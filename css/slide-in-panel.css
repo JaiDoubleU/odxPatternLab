@@ -1,0 +1,78 @@
+.modal.left,
+.modal.right {
+    height: 100%;
+    display: block;
+    width:250px;
+}
+.modal.right {
+    border-left: 1px solid #e5e5e5;
+    left:-250px;
+     left:100%;
+     -webkit-animation-duration: 0ms !important;
+     animation-duration: 0ms !important;
+}
+.modal.left {
+    border-right: 1px solid #e5e5e5;
+}
+
+.modal.right.slideInRight {
+    left: calc(100% - 250px);
+     -webkit-animation-duration: 0ms !important;
+     animation-duration: 0ms !important;
+}
+
+.modal.left .modal-dialog,
+.modal.right .modal-dialog {
+    position: fixed;
+    margin: auto;
+    width: 250px;
+    height: 100%;
+}
+
+.modal.left .modal-content,
+.modal.right .modal-content {
+    height: 100%;
+    overflow-y: auto;
+}
+
+.modal.left .modal-body,
+.modal.right .modal-body {
+    padding: 15px 15px 80px;
+    height: calc(100% - 122px);
+    overflow-y: auto;
+}
+
+/* used to make room for the slide in panel when it shows on the right */
+.shrink {
+    width: calc(100% - 250px);
+    -webkit-transition: width 500ms;
+    -moz-transition: width 500ms;
+    -o-transition: width 500ms;
+    transition: width 500ms;
+    float: left;
+}
+
+/*Right*/
+.modal.right .modal-dialog {
+    right: -250px;
+}
+.modal.right.in .modal-dialog {
+    right: 0;
+}
+
+/* ----- MODAL STYLE ----- */
+.modal-content {
+    border-radius: 0;
+    border: none;
+}
+
+.modal-header {
+    border-bottom-color: #EEEEEE;
+    background-color: #FAFAFA;
+}
+
+.sidenav .modal-content {
+    box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    border-left: 1px solid #e5e5e5;
+}

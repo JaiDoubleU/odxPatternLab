@@ -1,0 +1,21 @@
+.panel.panel-tab .panel-body div.panel-wrapper{
+    position: relative;
+    right: 0;
+    top: -57px;
+}
+
+.panel.panel-tab .tab-pane {
+    padding: 0;
+}
+
+.panel.panel-tab .nav-tabs > li.active > a {
+}
+
+.panel.panel-tab .nav-tabs>li>a {
+    margin-right: 0;
+}
+
+.panel.panel-tab div.panel-wrapper div.tab-content {
+    background-color: transparent;
+    border: none;
+}

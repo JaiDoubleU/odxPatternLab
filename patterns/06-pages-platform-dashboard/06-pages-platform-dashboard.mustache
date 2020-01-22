@@ -1,0 +1,174 @@
+{{> organisms-navbar("extraClass":"navbar-fixed-top")}}
+<div class="container-fluid  page-top-padding">
+    <div class="row">
+        <div class="col-xs-12">
+            {{> atoms-page-header("heading": "Oildex Platform Dashboard", "subheading": "") }}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-3">
+            <div class="panel panel-default dashboard-card">
+                <div class="panel-body ">
+                    <div class="row text-right">
+                        <div class="col-xs-2">
+                            <span class="fa-dashboard-icon-success">
+                                <i class="fal fa-money-bill-alt" ></i>
+                            </span>
+                        </div>
+                        <div class="col-xs-10 text-right">
+                            <ul class="list-unstyled">
+                                <li><strong>Check Stub (CDEX)</strong></li>
+                                <li class="dashboard-card-lg-text text-info">15</li>
+                                <li class="small">New checks to download.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 text-center">
+                            {{> atoms-btn:btn-default ("buttonText":"Open Application")}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end dashboard card -->
+        </div>
+        <div class="ccol-xs-12 col-sm-6 col-md-3">
+            <div class="panel panel-default dashboard-card">
+                <div class="panel-body ">
+                    <div class="row text-right">
+                        <div class="col-xs-2 ">
+                            <span class="fa-dashboard-icon-danger">
+                                <i class="fas fa-ticket-alt "></i>
+                            </span>
+                        </div>
+                        <div class="col-xs-10 text-right">
+                            <ul class="list-unstyled text-right">
+                                <li><strong>Run Ticket (CODE)</strong></li>
+                                <li class="dashboard-card-lg-text text-info">38</li>
+                                <li class="small">Tickets available for download.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row text-center">
+                        <div class="col-xs-12">
+                            {{> atoms-btn:btn-default ("buttonText":"Open Application")}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end dashboard card -->
+        </div>
+
+        <div class="col-xs-12 col-sm-6 col-md-3">
+            <div class="panel panel-default dashboard-card">
+                <div class="panel-body ">
+                    <div class="row text-right">
+                        <div class="col-xs-2">
+                            <span class="fa-dashboard-icon-success">
+                                <i class="fas fa-users" ></i>
+                            </span>
+                        </div>
+                        <div class="col-xs-10">
+                            <ul class="list-unstyled text-right">
+                                <li><strong>Joint Interest Bill (JIB)</strong></li>
+                                <li class="dashboard-card-lg-text text-info" >38</li>
+                                <li class="small">New JIBs available.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row text-center">
+                        <div class="col-xs-12">
+                            {{> atoms-btn:btn-default ("buttonText":"Open Application")}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3">
+            <div class="panel panel-default dashboard-card">
+                <div class="panel-body ">
+                    <div class="row text-right">
+                        <div class="col-xs-2">
+                             <span class="fa-dashboard-icon-primary">
+                                <i class="fas fa-home"></i>
+                            </span>
+                        </div>
+                        <div class="col-xs-10 text-right">
+                            <ul class="list-unstyled text-right">
+                                <li><strong>Owner Relations</strong></li>
+                                <li class="dashboard-card-lg-text text-info"><i class="fal fa-smile"></i></li>
+                                <li class="small">All records have been downloaded</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row text-center">
+                        <div class="col-xs-12">
+                            {{> atoms-btn:btn-default ("buttonText":"Open Application")}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12 col-sm-6">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                         <ul class="list-unstyled">
+                            <li class="text-nowrap text-primary text-left">
+                                <i class="fas fa-upload fa-lg text-primary"></i>
+                                 <span class="h5">Upload Files</span>
+                            </li>
+                            <li class="text-nowrap text-left small">
+                                <i class="fas fa-inverse fa-2x fa-stop"> </i>
+                                Upload Check Stub or Run Ticket documents
+                            </li>
+                            <li class="text-nowrap text-left">
+                                <i class="fas fa-inverse fa-2x fa-stop"></i>
+                                 {{> atoms-btn("buttonText": "Upload a File", "styleModifier" : "btn-success")}}
+                            </li>
+                        </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-6">
+              <div class="panel panel-default">
+                    <div class="panel-body">
+                            <div class="col-xs-6">
+                                 <ul class="list-unstyled">
+                                    <li class="text-nowrap text-left h5 text-primary">
+                                        Other Solutions
+                                    </li>
+                                    <li class="small text-nowrap text-left">
+                                        Learn more about other Oildex solutions.
+                                    </li>
+                                    <li class="small text-nowrap text-left">
+                                        <strong>Toll Free Number:</strong>
+                                        1-888-922-1222
+                                    </li>
+                                     <li class="small text-nowrap text-left">
+                                        <strong>Email:</strong>
+                                        sales@oildex.com
+                                    </li>
+                                </ul>
+                        </div>
+                        <div class="col-xs-6">
+                            <ul class="list-unstyled">
+                                    <li class="text-nowrap text-left h5 text-primary">
+                                        <i class="fas fa-cloud-download" ></i> Gas Plant Data Exchange
+                                    </li>
+                                    <li class="text-nowrap text-left h5 text-primary">
+                                       <i class="fas fa-cloud-download" ></i> OpenInvoice
+                                    </li>
+                                </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+       </div>
+    </div>
+</div>
+
+<script>
+    $('body').addClass('page-bg');
+</script>

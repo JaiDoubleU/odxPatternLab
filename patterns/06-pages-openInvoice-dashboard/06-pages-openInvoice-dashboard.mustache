@@ -1,0 +1,436 @@
+{{> organisms-navbar("extraClass":"navbar-fixed-top animated")}}
+{{> organisms-secondary-navbar("showBackButton":false,"hideNextPreviousButtons":true, "showConfigureButton":true, "extraClass":"navbar-fixed-top animated", "pageTitle":"OpenInvoice Dashboard")}}
+{{> templates-slide-in-panel("showSlideInPanelTriggers": false, "slideInPanelTitle":"Available Widgets", "slideInPanelContent":"pages-openInvoice-dashboard-widgets") }}
+<div id="openInvoiceDashboard" class="container-fluid animated page-top-padding">
+    <div id="content-wrapper">
+        <div class="row display-flex">
+            <!-- ------------------- -->
+            <!-- Left Column         -->
+            <!-- ------------------- -->
+            <div class="col-sm-6" id="drop-target-left">
+                <!-- <div id="pricebookSpend" class="panel panel-default status-panel ">
+                    <div class="panel-heading hide-overflow">
+                        <div class="panel-title">
+                            Pricebook Spend
+                            <span class="dropdown pull-right">
+                                <a data-toggle="popover" data-container="body" data-placement="bottom" type="button" data-html="true"
+                                    href="#" id="logout" data-original-title="" title="">
+                                    <i class="fal fa-question-circle text-muted fa-fw"></i>
+                                </a>
+
+                                <div style="width: 450px;" id="popover-content-logout" class="hide">
+                                    <dl>
+                                        <dd><strong>Draft:</strong> New created contracts that have not been reviewed.</dd>
+                                        <dd><strong>Internal Review:</strong> Contracts that are ready for review by internal
+                                            stakeholders </dd>
+                                        <dd><strong>Supplier Review:</strong> Contracts that are ready for review by the
+                                            Supplier company.</dd>
+                                        <dd><strong>Approved:</strong> Contracts that have been reviewed and approved by the
+                                            Supplier company.</dd>
+                                        <dd><strong>Executed: </strong> Contracts that are ready to be referenced by suppliers
+                                            on Invoices and Tickets.</dd>
+                                    </dl>
+                                </div>
+                            </span>
+                            <a class="btn btn-link btn-sm deleteBtn hide pull-right">
+                                <i class="fas deleteIcon fa-trash-alt fa-fw" title="Remove Item"></i>
+                            </a>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                    <div class="panel-body">
+                        <div class="col-xs-6 text-center" style="cursor:pointer;">
+                            <div class="small">Off Contract</div>
+                            <a class="btn btn-link btn-block"><span class="h3 text-danger ">{{pricebookOffContractSpend}}</span></a>
+                            <div class="small">Trailing 12 Months</div>
+                        </div>
+                        <div class="col-xs-6 text-center" style="cursor:pointer;">
+                            <div class="small">Under Contract</div>
+                            <a class="btn btn-link btn-block"><span class="h3 text-success ">{{pricebookUnderContractSpend}}</span></a>
+                            <div class="small">Trailing 12 Months</div>
+                        </div>
+                    </div>
+                </div> -->
+
+                <div id="expiringContracts" class="panel panel-default status-panel ">
+                    <div class="panel-heading hide-overflow">
+                        <div class="panel-title">
+                            Expiring Contracts
+                            <span class="dropdown pull-right">
+                                <a data-toggle="popover" data-container="body" data-placement="bottom" type="button"
+                                    data-html="true" href="#" id="expiring-contracts" data-original-title="" title="">
+                                    <i class="fal fa-question-circle text-muted fa-fw"></i>
+                                </a>
+
+                                <div style="width: 450px;" id="popover-content-expiring-contracts" class="hide">
+                                    Contracts whose end dates are within the date ranges shown below
+                                </div>
+                                <script>
+                                    $("[data-toggle=popover]").each(function (i, obj) {
+                                        $(this).popover({
+                                            html: true,
+                                            content: function () {
+                                                var id = $(this).attr("id");
+                                                return $("#popover-content-" + id).html();
+                                            }
+                                        });
+                                    });
+                                </script>
+                            </span>
+                            <a class="btn btn-link btn-sm deleteBtn hide pull-right">
+                                <i class="fas deleteIcon fa-trash-alt fa-fw" title="Remove Item"></i>
+                            </a>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                    <div class="panel-body hide-overflow">
+                        {{#contractExpiryData}}
+                            <div class="col-xs-3 text-center" style="cursor:pointer;">
+                                <div class="small">{{statusTitle}}</div>
+                                <span class="clearfix"><a class="btn btn-link btn-block"><span
+                                            class="h3">{{statusValue}}</span></a></span>
+                            </div>
+                        {{/contractExpiryData}}
+                    </div>
+                </div>
+
+                <div id="currentContracts" class="panel panel-default status-panel ">
+                    <div class="panel-heading hide-overflow">
+                        <div class="panel-title">
+                            Contracts
+                            <span class="dropdown pull-right">
+                                <a data-toggle="popover" data-container="body" data-placement="bottom" type="button" data-html="true"
+                                    href="#" id="logout" data-original-title="" title="">
+                                    <i class="fal fa-question-circle text-muted fa-fw"></i>
+                                </a>
+
+                                <div style="width: 450px;" id="popover-content-logout" class="hide">
+                                    <dl>
+                                        <dd><strong>Draft:</strong> New created contracts that have not been reviewed.</dd>
+                                        <dd><strong>Internal Review:</strong> Contracts that are ready for review by internal
+                                            stakeholders </dd>
+                                        <dd><strong>Supplier Review:</strong> Contracts that are ready for review by the
+                                            Supplier company.</dd>
+                                        <dd><strong>Approved:</strong> Contracts that have been reviewed and approved by the
+                                            Supplier company.</dd>
+                                        <dd><strong>Executed: </strong> Contracts that are ready to be referenced by suppliers
+                                            on Invoices and Tickets.</dd>
+                                    </dl>
+                                </div>
+                            </span>
+                            <a class="btn btn-link btn-sm deleteBtn hide pull-right">
+                                <i class="fas deleteIcon fa-trash-alt fa-fw" title="Remove Item"></i>
+                            </a>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                    <div class="panel-body">
+                        {{#contractStatusData}}
+                            <div class="col-xs-3 text-center" style="cursor:pointer;">
+                                <div class="small">{{statusTitle}}</div>
+                                <span class="clearfix"><a class="btn btn-link btn-block"><span class="h3">{{statusValue}}</span></a></span>
+                            </div>
+                        {{/contractStatusData}}
+                    </div>
+                </div>
+
+                <div id="priceBooksRequiringAction" class="panel panel-default">
+                    <div class="panel-heading">
+                        <div class="panel-title">
+                            PriceBooks Requiring My Action
+
+                            <span class="dropdown pull-right">
+                                <a type="button" class="close" data-toggle="dropdown"><i class="fal fa-sm fa-cog text-muted fa-fw"></i></a>
+
+                                <ul class="dropdown-menu dropdown-menu-right">
+                                    <li>
+                                        <a href="#"><i class="fas fa-plus-circle text-success"></i> Create New Price Book</a>
+                                    </li>
+                                </ul>
+                            </span>
+
+                            <a class="btn btn-link btn-sm deleteBtn hide pull-right">
+                                <i class="fas deleteIcon fa-trash-alt fa-fw" title="Remove Item"></i>
+                            </a>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                    <div class="panel-body">
+                        <table class="table table-condensed table-striped table-hover table-cell-bordered" width="100%">
+                            <thead>
+                                <tr>
+                                    <th>Pending Change</th>
+                                    <th width="25%" class="text-center">Count</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="text-block">Requested</td>
+                                    <td width="25%" class="text-center">
+                                        <a class="btn-block" href="#nogo;">15</a>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>Disputed</td>
+                                    <td width="25%" class="text-center">
+                                        <a class="btn-block" href="#nogo;">1</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <table class="table table-condensed table-striped table-hover table-cell-bordered" width="100%">
+                           <thead>
+                                <tr>
+                                    <th>Pending Approval</th>
+                                    <th width="25%" class="text-center">Count</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Submitted</td>
+                                    <td width="25%" class="text-center">
+                                        <a class="btn-block" href="#nogo;">8</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Re-Submitted</td>
+                                    <td width="25%" class="text-center">
+                                        <a class="btn-block" href="#nogo;">2</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ------------------- -->
+            <!-- Right Column         -->
+            <!-- ------------------- -->
+            <div class="col-sm-6" id="drop-target-right">
+                <!-- <div id="contractCompliance" class="panel panel-default status-panel ">
+                    <div class="panel-heading hide-overflow">
+                        <div class="panel-title">
+                            Pricebook Compliance
+                            <span class="dropdown pull-right">
+                                <a data-toggle="popover" data-container="body" data-placement="bottom" type="button" data-html="true"
+                                    href="#" id="logout" data-original-title="" title="">
+                                    <i class="fal fa-question-circle text-muted fa-fw"></i>
+                                </a>
+
+                                <div style="width: 450px;" id="popover-content-logout" class="hide">
+                                    <dl>
+                                        <dd><strong>Draft:</strong> New created contracts that have not been reviewed.</dd>
+                                        <dd><strong>Internal Review:</strong> Contracts that are ready for review by internal
+                                            stakeholders </dd>
+                                        <dd><strong>Supplier Review:</strong> Contracts that are ready for review by the
+                                            Supplier company.</dd>
+                                        <dd><strong>Approved:</strong> Contracts that have been reviewed and approved by the
+                                            Supplier company.</dd>
+                                        <dd><strong>Executed: </strong> Contracts that are ready to be referenced by suppliers
+                                            on Invoices and Tickets.</dd>
+                                    </dl>
+                                </div>
+                            </span>
+                            <a class="btn btn-link btn-sm deleteBtn hide pull-right">
+                                <i class="fas deleteIcon fa-trash-alt fa-fw" title="Remove Item"></i>
+                            </a>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                    <div class="panel-body">
+                        <div class="col-xs-6 text-center" style="cursor:pointer;">
+                            <div class="small">Compliant</div>
+                            <a class="btn btn-link btn-block"><span class="h3 text-success ">{{pricebookCompliantSpend}}</span></a>
+                            <div class="small">Trailing 12 Months</div>
+                        </div>
+                        <div class="col-xs-6 text-center" style="cursor:pointer;">
+                            <div class="small">Non-Compliant</div>
+                            <a class="btn btn-link btn-block"><span class="h3 text-danger ">{{pricebookNonCompliantSpend}}</span></a>
+                            <div class="small">Trailing 12 Months</div>
+                        </div>
+                    </div>
+                </div> -->
+
+                <div id="myInvoices" class="panel panel-default">
+                    <div class="panel-heading">
+                        <div class="panel-title">
+                            My Invoices
+                            <span class="dropdown pull-right">
+                                <button type="button" class="close" data-toggle="dropdown"><i class="fal fa-cog fa-w-16 fa-xs text-muted fa-fw"></i></button>
+
+                                <ul class="dropdown-menu">
+                                    <li><a href="#"><i class="fas fa-sync"></i> Refresh</a></li>
+                                    <li><a href="#"><i class="fas fa-pencil"></i> Modify Custom List</a></li>
+                                </ul>
+                            </span>
+                            <a class="btn btn-link btn-sm deleteBtn hide pull-right">
+                                <i class="fas deleteIcon fa-trash-alt fa-fw" title="Remove Item"></i>
+                            </a>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                    <div class="panel-body">
+                        <div class="table-responsive">
+                            <table class="table table-condensed table-striped table-hover table-cell-bordered">
+                                <thead>
+                                    <tr>
+                                        <th></th>
+                                        <th class="text-center">Early Pay</th>
+                                        <th class="text-center">Count</th>
+                                        <th class="text-center">Stalled</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Ready to Code</td>
+                                        <td class="text-center">
+                                            <a class="btn-block" href="">5</a>
+                                        </td>
+                                        <td class="text-center">
+                                            <a class="btn-block" href="">1</a>
+                                        </td>
+                                        <td class="text-center">
+                                            <a class="btn-block" href="">-</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Ready to Approve</td>
+                                        <td class="text-center">
+                                            <a class="btn-block" href="">10</a>
+                                        </td>
+                                        <td class="text-center">
+                                            <a class="btn-block" href="">3</a>
+                                        </td>
+                                        <td class="text-center">
+                                            <a class="btn-block" href="">-</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Custom List</td>
+                                        <td class="text-center">
+                                            <a class="btn-block" href="">-</a>
+                                        </td>
+                                        <td class="text-center">
+                                            <a class="btn-block" href="">View</a>
+                                        </td>
+                                        <td class="text-center">
+                                            <a class="btn-block" href="">-</a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="invoiceCounts" class="panel panel-default">
+                    <div class="panel-heading">
+                        <div class="panel-title">
+                            Invoice Counts
+                            <span class="dropdown pull-right">
+                                <button type="button" class="close" data-toggle="dropdown"><i
+                                        class="fal fa-cog fa-w-16 fa-xs text-muted fa-fw"></i></button>
+
+                                <ul class="dropdown-menu">
+                                    <li><a href="#"><i class="fas fa-sync"></i> Refresh</a></li>
+                                    <li><a href="#"><i class="fas fa-pencil"></i> Edit Settings </a></li>
+                                </ul>
+                            </span>
+                            <a class="btn btn-link btn-sm deleteBtn hide pull-right">
+                                <i class="fas deleteIcon fa-trash-alt fa-fw" title="Remove Item"></i>
+                            </a>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                    <div class="panel-body">
+                        <div class="small text-info">
+                            <i>
+                                <i class="fas fa-info-circle fa-fw"></i></i> Filtered by Site, Department, Currency
+                            </i>
+                        </div>
+                        <div class="table-responsive">
+                            <table class="table table-condensed table-striped table-hover table-cell-bordered">
+                                <thead>
+                                    <tr>
+                                        <th></th>
+                                        <th class="text-center">0-10 Days</th>
+                                        <th class="text-center">11-30 Days</th>
+                                        <th class="text-center">Over 30 Days</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Ready to Code</td>
+                                        <td class="text-center">
+                                            <a class="btn-block" href="">5</a>
+                                        </td>
+                                        <td class="text-center">
+                                            <a class="btn-block" href="">1</a>
+                                        </td>
+                                        <td class="text-center">
+                                            <a class="btn-block" href="">-</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Ready to Approve</td>
+                                        <td class="text-center">
+                                            <a class="btn-block" href="">10</a>
+                                        </td>
+                                        <td class="text-center">
+                                            <a class="btn-block" href="">3</a>
+                                        </td>
+                                        <td class="text-center">
+                                            <a class="btn-block" href="">-</a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="myFieldTickets" class="panel panel-default">
+                    <div class="panel-heading">
+                        <div class="panel-title">
+                            My Field Tickets
+
+                            <a class="btn btn-link btn-sm deleteBtn hide pull-right">
+                                <i class="fas deleteIcon fa-trash-alt fa-fw" title="Remove Item"></i>
+                            </a>
+                            <div class="clearfix"></div>
+                         </div>
+
+                    </div>
+                    <div class="panel-body">
+                        <div class="table-responsive">
+                            <table class="table table-condensed table-striped table-hover table-cell-bordered ">
+                                <thead>
+                                    <tr>
+                                        <th>
+                                        </th>
+                                        <th width="25%" class="text-center">Count</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Ready to Approve</td>
+                                        <td width="25%" class="text-center">
+                                            <a class="btn-block" href="">10</a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+	</div>
+</div>
+<script>
+    $('body').addClass('page-bg');
+</script>
+<script type="text/javascript" src="../../js/openinvoice-dashboard.js"></script>

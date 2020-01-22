@@ -1,0 +1,63 @@
+path.line {
+    fill: none;
+    stroke: #666;
+    stroke-width: 2px;
+}
+
+path.area {
+    fill: #e7e7e7;
+}
+
+.axis {
+    shape-rendering: crispEdges;
+}
+
+.tick {
+    height: 25px;
+}
+
+.tick text {
+    margin-top: 5px;
+    font-size: 9px !important;
+}
+
+.x.axis line {
+    stroke: #fff;
+}
+
+.x.axis .minor {
+    stroke-opacity: .5;
+}
+
+.x.axis path {
+    fill: none;
+    stroke: #ccc;
+}
+
+.y.axis line,
+.y.axis path {
+    fill: none;
+    stroke: #ccc;
+}
+
+text {
+    font-size: 12px;
+}
+
+
+.overlay {
+    fill: none;
+    pointer-events: all;
+}
+
+.focus circle {
+    fill: #F1F3F3;
+    stroke: #6F257F;
+    stroke-width: 3px;
+}
+
+.hover-line {
+    stroke: #6F257F;
+    stroke-width: 1px;
+    stroke-dasharray: 3, 3;
+}

@@ -1,0 +1,51 @@
+#openInvoiceDashboard .panel-heading {
+    background-color: white !important;
+    border-bottom: none;
+}
+
+#openInvoiceDashboard .panel-default .panel-title {
+    border-bottom: 1px solid lightskyblue;
+    margin-bottom: 0;
+    display: block;
+}
+
+#openInvoiceDashboard .panel-body {
+    padding-top: 0 !important;
+    padding-bottom: 5px !important;
+}
+
+#openInvoiceDashboard .table-cell-bordered {
+    border-top: 0px !important;
+    border-bottom: 1px solid #ddd !important;
+}
+
+#openInvoiceDashboard .table-cell-bordered tbody td:not(:first-child) {
+    border-left: 1px solid #ddd !important;
+}
+
+#openInvoiceDashboard .table-cell-bordered tbody td:not(:last-child) {
+    border-right: 1px solid #ddd !important;
+}
+
+#openInvoiceDashboard .btn-link,
+#openInvoiceDashboard .btn-block {
+    color: #0073CF !important;
+}
+
+.grabbable {
+    cursor: move;
+    /* fallback if grab cursor is unsupported */
+    cursor: grab;
+    cursor: -moz-grab;
+    cursor: -webkit-grab;
+}
+.gu-mirror {
+    cursor: grabbing;
+    cursor: -moz-grabbing;
+    cursor: -webkit-grabbing;
+}
+.grabbing {
+    cursor: grabbing;
+    cursor: -moz-grabbing;
+    cursor: -webkit-grabbing;
+}

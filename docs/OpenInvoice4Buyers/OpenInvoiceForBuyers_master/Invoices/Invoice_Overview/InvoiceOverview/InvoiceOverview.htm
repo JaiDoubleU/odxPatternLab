@@ -1,0 +1,967 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+ <title>InvoiceOverview</title>
+
+ <link rel="stylesheet" href="../../../../OpenInvoiceForBuyers_master.css" type="text/css" />
+
+
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style>
+ <meta name="generator" content="Adobe FrameMaker 2017" />
+<script type="text/javascript" src="../../../../template/scripts/rh.min.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/common.min.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/topic.min.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/constants.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/utils.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/mhutils.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/mhlang.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/mhver.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/settings.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/XmlJsReader.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/loadparentdata.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/loadscreen.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/loadprojdata.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/mhtopic.js"></script>
+ <link rel="stylesheet" type="text/css" href="../../../../template/styles/topic.min.css">
+<script type="text/javascript" >
+gRootRelPath = "../../../..";
+gCommonRootRelPath = "../../../..";
+gTopicId = "1.8_1";
+</script>
+ <meta name="brsprev" value="OpenInvoiceForBuyers_master/Field_Tickets/FieldTicket_BulkActions/FieldTicket_BulkActions.htm">
+ <meta name="brsnext" value="OpenInvoiceForBuyers_master/Invoices/Invoice_Creation/InvoiceCreation/InvoiceCreation.htm">
+ <meta name="topic-breadcrumbs" content="Administrator & User Guide for Buyers" />
+</head>
+
+<body dir="ltr">
+<script type="text/javascript" src="../../../../ehlpdhtm.js"></script>
+
+ <div dir="ltr">
+  <p dir="ltr" class="FM_Chapter_Title">Invoice Overview</p>
+  <p dir="ltr" class="FM_Body_Style">Invoices are created by suppliers after products and services have been delivered. <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>&#160;facilitates the process of creating and distributing invoices to buyers. This section provides an overview of invoices including how they are used in <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>&#160;as part of the business transaction workflow. </p>
+  <p dir="ltr" class="FM_Body_Style">The benefits of submitting invoices electronically include:</p>
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>faster approval</p>
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>expedited invoice processing and timely payment</p>
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>ability to track the status and payment of each invoice</p>
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>online adjudication process for quick dispute resolution</p>
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>complete history and audit trail of all invoice-related changes</p>
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>no lost invoices</p>
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>mailing cost reduction.</p>
+  <p dir="ltr" class="FM_Body_Style">The following instructions are applicable to users who create invoices and/or require invoice information to process payments and other documents in <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>:</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><a href="#XREF_97081_Invoice_Dashboard"><span class="FM_ADP_TG__Link">Invoice Dashboard</span></a></p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><a href="#XREF_42898_Invoice_Search_and"><span class="FM_ADP_TG__Link">Invoice Search and My Custom List</span></a></p>
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><a href="#XREF_85843_Invoice_List_Pages"><span class="FM_ADP_TG__Link">Invoice List Pages</span></a></p>
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><a href="#XREF_77863_Invoice_Ownership"><span class="FM_ADP_TG__Link">Invoice Ownership</span></a></p>
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><a href="#XREF_26017_Invoice_Journal"><span class="FM_ADP_TG__Link">Invoice Journal</span></a></p>
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><a href="#XREF_74843_Calculating"><span class="FM_ADP_TG__Link">Calculating Invoice Line Amounts</span></a></p>
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><a href="#XREF_35337_Early_Pay_Terms"><span class="FM_ADP_TG__Link">Early Pay Terms and Discount</span></a></p>
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><a href="#XREF_63255_Alerts_Presented"><span class="FM_ADP_TG__Link">Alerts Presented on an Invoice</span></a></p>
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><a href="#XREF_26762_Invoice_Submission"><span class="FM_ADP_TG__Link">Invoice Submission Types and Guidelines</span></a></p>
+  <p dir="ltr" class="FM_Heading_1">Invoice Structure</p>
+  <p dir="ltr" class="FM_Body_Style">An invoice consists of one or more line items (each line representing a product or service) that are coded according to the buyer’s accounts. The invoice view page includes an Invoice Journal, attachments, buyer and supplier information, referenced documents (such as price books), an invoice number, and other invoice details.</p>
+  <p dir="ltr" class="FM_Screenshot_Anchor">&nbsp;</p>
+
+  <div align="center"><img alt="InvoiceOverview_invoicestructureBuyer.png" id="image299" src="../../../../assets/InvoiceOverview_invoicestructureBuyer.png" style="max-width: 100% ;height: auto" />
+  </div>
+  <p dir="ltr" class="FM_Screenshot_Anchor">&nbsp;</p>
+  <p dir="ltr" class="FM_Heading_2"><a name="XREF_26017_Invoice_Journal"></a>Invoice Journal</p>
+  <p dir="ltr" class="FM_Body_Style">The Invoice Journal displays the current owner of the invoice and lists the actions that have been performed. The current owner is the site, department, and user (if applicable)&#160;responsible for processing the invoice. Each action is listed with the date and time of the action, the name of the user who performed the action, and, if applicable, comments entered at the time of performing the action. The action list displays the most recent action at the top and the oldest at the bottom.</p>
+  <p dir="ltr" class="FM_Body_Style">Users will only see Invoice Journal information that is relevant to them and their company. For instance, buyers will see the supplier’s <span style="font-weight : bold; ">Submitted</span>&#160;action along with any buyer actions. The journal includes <span style="font-weight : bold; ">Current Owner </span>information and the actions performed on the invoice.</p>
+  <p dir="ltr" class="FM_Screenshot_Anchor">&nbsp;</p>
+
+<div width="100%" align="left">
+  <table border-spacing="0" dir="ltr" class="table17" border-collapse="collapse" style="max-width: 100% ;height: auto">
+   <tr class="tr179">
+   <td class="td19">
+   <p dir="ltr" class="FM_Table_Text" style="display:inline"><img alt="InvoiceOverview_invoicejournalBuyer.png" id="image300" src="../../../../assets/InvoiceOverview_invoicejournalBuyer.png" style="max-width: 100% ;height: auto" />&#160;</p>
+</td>
+</tr>
+  </table>
+</div>
+  <p dir="ltr" class="FM_Heading_3">Journal Items Visible to Buyers</p>
+  <p dir="ltr" class="FM_Body_Style">A buyer can view the following items in the Invoice Journal:</p>
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>All actions performed on the invoice by users in their company.</p>
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>All actions performed on the invoice by the system.</p>
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>Names of users within their company who have performed an action on the invoice.</p>
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>Names of supplier users who have performed an action on the invoice.</p>
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>Comments made at the time of invoice submission and dispute.</p>
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>Comments made at the time of forwarding by a user within their company.</p>
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>General comments entered using the invoice’s toolbar by users within their company.</p>
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>Payment actions related to the invoice if the company is using the <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span> Payment module.</p>
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>Payment status updates related to the invoice submitted through integration if the company is not using the payment module.</p>
+  <p dir="ltr" class="FM_Heading_3">Journal Items Visible to Suppliers</p>
+  <p dir="ltr" class="FM_Body_Style">A supplier can view the following items in the Invoice Journal:</p>
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>All actions performed on the invoice by users in their company.</p>
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>All actions performed on the invoice by the system.</p>
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>Names of users within their company who have performed an action on the invoice.</p>
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>Name of the buyer user who disputed the invoice to the supplier.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>The internal dispute action is not visible to the supplier.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>Comments made at the time of invoice submission and dispute.</p>
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>Comments made at the time of forwarding by a user within their company.</p>
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>General comments entered using the invoice’s toolbar by users within their company.</p>
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Approved: by Buyer</span> is displayed when the invoice is approved.</p>
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Itemized: by Buyer</span> is displayed when the Image Scan invoice is itemized by the buyer.</p>
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>Payment status updates related to the invoice.</p>
+  <p dir="ltr" class="FM_Heading_3"><a name="XREF_90947_Workflow_Actions"></a>Workflow Actions Visible in the Invoice Journal</p>
+  <p dir="ltr" class="FM_Note___Start"><span class="FM_Bold">Note:<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>For a description of workflow actions related to payments, refer to the <span style="font-style : italic; "><span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span></span><span style="font-style : italic; ">&#160;Payment User Guide for</span><span style="font-style : italic; "> Buyers</span><span style="font-style : italic; "></span>.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Saved:</span> a user within your company modified the buyer editable invoice content.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; "></span><span style="font-weight : bold; ">Submitted:</span>&#160;a supplier user, one of your indexers, or <span data-name="_OpenInvoice_Support" data-val="OpenInvoice Support" data-showval="TRUE" data-format="_OpenInvoice_Support">OpenInvoice Support</span>&#160;submitted the invoice for approval. This includes resubmissions. If an image was uploaded on the supplier’s behalf, the uploader’s name is displayed as a comment along with the date and time when the image was uploaded.</p>
+
+  <p dir="ltr" class="FM_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 13pt;" class="FMAutoNumber_2"></span></span>Any actions performed by <span data-name="_OpenInvoice_Support" data-val="OpenInvoice Support" data-showval="TRUE" data-format="_OpenInvoice_Support">OpenInvoice Support</span>&#160;will display as <span style="font-weight : bold; ">by OpenInvoice Indexer </span>to users within your company. Any actions performed by <span data-name="_OpenInvoice_Support" data-val="OpenInvoice Support" data-showval="TRUE" data-format="_OpenInvoice_Support">OpenInvoice Support</span>&#160;or one of your indexers on behalf of a supplier will display as <span style="font-weight : bold; ">by Buyer</span> when a supplier views the invoice.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Forwarded:</span>&#160;a user within your company forwarded the invoice to another user within your company. The name of the user who performed the action and the recipient are both listed.&#160;If the invoice is forwarded to a department, the site and department name are listed. If the invoice is forwarded as a result of invoice recipient routing, <span style="font-weight : bold; ">the System</span> is listed as the user who performed the action.&#160;</p>
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Commented:</span> a user within your company provided additional information about the invoice.</p>
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Disputed: </span>a user within your company disagreed with information on the invoice and returned it to the supplier&#160;for resolution. Once the supplier cancels or resubmits the invoice, users can click <span style="font-weight : bold; ">Disputed</span>&#160;to display the disputed version of the invoice. The HISTORICAL watermark indicates the invoice is not the current version. If the invoice is auto-disputed, <span style="font-weight : bold; ">the System</span> is listed as the user who performed the action.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Disputed Internally:</span>&#160;a user within your company who disagreed with information on the invoice disputed the invoice. Your company’s configured dispute management rules routed the invoice to a department within your company to resolve instead of returning it back to the supplier. A system generated comment stating the department the invoice was routed to is added to the action. This action and accompanying comment is not visible to the supplier.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span class="FM_historyitem" style="font-weight : bold; ">Coding Verified: </span><span class="FM_historyitem">a user within your company verified the coding on the invoice. If the invoice is auto code-verified, </span><span class="FM_historyitem" style="font-weight : bold; ">the System</span><span class="FM_historyitem"> will be listed as the user who performed the action.</span></p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span class="FM_historyitem" style="font-weight : bold; ">Approved:</span>&#160;the invoice received an approval signature from a user within your company. Multiple approval actions may be required to change the invoice status to <span style="font-weight : bold; ">Approved</span>. If the invoice is forwarded to a department, the site and department name are listed. If the invoice is auto-approved, <span style="font-weight : bold; ">the System</span>&#160;is listed as the user who performed the action.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span class="FM_historyitem"></span><span style="font-weight : bold; ">Cancelled: </span>a supplier user or the system cancelled an invoice. If you have configured the system to automatically cancel disputed invoices after a defined number of days with no supplier action, <span style="font-weight : bold; ">the System</span>&#160;is listed as the user who performed the action and a comment stating the number of days is added to the action.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; "></span><span style="font-weight : bold; ">Itemized:</span> a user added or modified detail lines on an image invoice.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Corrected</span>: on behalf of a supplier, a user within your company edited the header information of an Image Post or Image OBO invoice. Any comments made at the time of editing are listed. If the supplier name or supplier site were modified, the original and modified values are displayed.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Short Paid:</span> a user within your company reduced the Remit Amount on an Image OBO or Image Post invoice.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Held</span>&#160;and <span style="font-weight : bold; ">Hold Released: </span>the invoice is held after a user within your company added a new supplier and setup is incomplete. The invoice is view-only. Once a user with the Corporate Partnership permission enters/verifies the supplier’s information, the hold is released.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Delegation Confirmed:</span>&#160;a user within your company performed an action on the invoice that was delegated to them by another user. Invoice ownership has been transferred to the delegate.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Workflow set to Client:</span>&#160;automatic export by the system or manual export performed by a user within your company. Automatic export to the buyer’s ERP is performed according to the invoice workflow rules. In the case of a manual export, the invoice will be exported to the buyer’s ERP when the Rules Based Invoice Export scheduled service is run. The date/time and name of the user who exported the invoice will be displayed.<span style="font-weight : bold; ">&#160;The System</span>&#160;will be listed as the user who exported the invoice if it was automatically exported. </p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Workflow set to <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span></span><span style="font-weight : bold; ">:</span>&#160;a user within your company moved the invoice from the Client Workflow to the <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span> Workflow. The date/time and name of the user who unlocked the invoice is displayed.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Unapproved:</span>&#160;a user within your company returned a previously approved invoice back into the workflow for issue resolution. The invoice reverts to the status it had prior to being approved.&#160;The comment associated with this action is not visible to suppliers.</p>
+  <p dir="ltr" class="FM_Heading_2"><a name="XREF_77863_Invoice_Ownership"></a>Invoice Ownership</p>
+
+  <p dir="ltr" class="FM_Body_Style">Invoices are submitted to a site’s Remit To department, which then becomes the invoice owner. From there, invoices can be forwarded to another department and/or user. Any user with the appropriate permissions can work on a department-owned invoice.</p>
+
+  <p dir="ltr" class="FM_Body_Style">A user becomes the owner of an invoice if it has been forwarded to them or if they perform a workflow action that does not require them to forward the invoice for additional processing (final financial approval in the Code then Approve workflow). If an invoice has been automatically processed according to your company’s invoice workflow rules, the owner on the invoice will depend on the workflow sequence your company is using.</p>
+
+  <p dir="ltr" class="FM_Screenshot_Anchor"><span style="font-size: small;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+
+<div width="100%" align="left">
+  <table border-spacing="0" dir="ltr" class="table180" border-collapse="collapse" style="max-width: 100% ;height: auto">
+   <tr class="tr181">
+   <th class="td182">
+   <p dir="ltr" class="FM_CellHeading">&nbsp;</p>
+</th>
+   <th class="td183">
+   <p dir="ltr" class="FM_CellHeading"><span class="FM_ADPTG_Cell_Heading">Code <br />then Approve</span></p>
+</th>
+   <th class="td184">
+   <p dir="ltr" class="FM_CellHeading"><span class="FM_ADPTG_Cell_Heading">Approve <br />then Code</span></p>
+</th>
+   <th class="td185">
+   <p dir="ltr" class="FM_CellHeading"><span class="FM_ADPTG_Cell_Heading">Approve <br />Only</span></p>
+</th>
+</tr>
+   <tr class="tr100">
+   <td class="td186">
+   <p dir="ltr" class="FM_Table_Text">Automatic code verification</p>
+</td>
+   <td class="td187">
+   <p dir="ltr" class="FM_Table_Text">Recipient of the submitted invoice.</p>
+</td>
+   <td class="td188">
+   <p dir="ltr" class="FM_Table_Text">User who approved the invoice <span style="font-weight : bold; ">or </span>the recipient of the submitted invoice if the invoice was automatically approved.</p>
+</td>
+   <td class="td189">
+   <p dir="ltr" class="FM_Table_Text">N/A</p>
+</td>
+</tr>
+   <tr class="tr95">
+   <td class="td186">
+   <p dir="ltr" class="FM_Table_Text">Automatic approval</p>
+</td>
+   <td class="td187">
+   <p dir="ltr" class="FM_Table_Text">User who code verified the invoice or the recipient of the submitted invoice if the invoice was automatically code verified.</p>
+</td>
+   <td class="td188">
+   <p dir="ltr" class="FM_Table_Text">Recipient of the submitted invoice.</p>
+</td>
+   <td class="td189">
+   <p dir="ltr" class="FM_Table_Text">Recipient of the submitted invoice.</p>
+</td>
+</tr>
+  </table>
+</div>
+  <p dir="ltr" class="FM_Screenshot_Anchor"><span style="font-size: small;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+
+  <p dir="ltr" class="FM_Body_Style">Unless your company has configured invoice workflow rules to automate actions performed on an invoice, only the owner or the owner’s delegate can process it.</p>
+
+  <p dir="ltr" class="FM_Body_Style">You may forward an invoice to users who have the ability to view, modify, or perform the next workflow step on the invoice. If the next workflow step is financial approval and the user is able to financially approve the invoice, the user’s authorization levels will be displayed in the user list on the forwarding page. Once the invoice is forwarded, ownership of the invoice is transferred and the original owner of the invoice can no longer process it. A user with the Invoice Admin permission can forward an invoice on behalf of an invoice owner.</p>
+
+  <p dir="ltr" class="FM_Body_Style">Suppliers can send invoice messages to a buyer, but only the buyer company is listed as the recipient in the message. On the buyer’s side, the message is sent to the invoice owner. If the invoice is owned by a department, the department’s notification user receives the message.</p>
+
+  <p dir="ltr" class="FM_Heading_3"><span style="font-weight : normal; font-size  : 10.0pt; "></span>Delegations</p>
+
+  <p dir="ltr" class="FM_Body_Style">An invoice owner who will be away for a period of time may delegate their ownership to another user who has the same viewing permissions (at least the Invoice View permission in the same site as the original invoice owner). Invoice ownership is transferred once the delegate performs an action (Save, Forward, Code Verify, Dispute or Approve) on the delegated invoice. Transfer of invoice ownership is displayed in the Invoice Journal.</p>
+
+  <p dir="ltr" class="FM_Heading_4">Things to Consider when Delegating Invoice Ownership</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>Delegation does not transfer permissions or authorization levels. The delegate will be able to forward an invoice, but their ability to perform other invoice functions will depend on their assigned permissions and authorization level; the final owner of a forwarded invoice is the recipient. </p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>If the supplier has sent a message on a delegated invoice, the delegate does not need to perform an action before receiving a copy of the message. The original invoice owner will still receive the supplier’s messages until the delegate replies.</p>
+
+  <p dir="ltr" class="FM_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 13pt;" class="FMAutoNumber_2"></span></span>Replying to the supplier’s message will not transfer ownership of the invoice. </p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>Ensure the delegate is available on the days that the invoice owner will be away. A delegate cannot delegate their own invoices or re-delegate another user’s invoices.</p>
+
+  <p dir="ltr" class="FM_Heading_3">Where Ownership is Displayed</p>
+
+  <p dir="ltr" class="FM_Body_Style">In the Invoice Journal, the <span style="font-weight : bold; ">Current Owner</span>&#160;section will show the destination site, department, and user’s name (if owned by a user) of the last submit or forward action.</p>
+
+  <p dir="ltr" class="FM_Body_Style">The user’s number of outstanding invoices displays in yellow at the top of their profile page.</p>
+  <p dir="ltr" class="FM_Heading_2">Attached Documents</p>
+  <p dir="ltr" class="FM_Body_Style">Attached documents are found next to the Invoice Journal. In the <span style="font-weight : bold; ">Attached Documents</span>&#160;area, an attachment is listed with a date, time, attachment description, and user who attached the document. The most recent attached document is listed at the bottom and the oldest is at the top. View an attachment by clicking the attachment description. Delete an attachment by clicking the <span style="font-weight : bold; ">Delete</span> icon.</p>
+  <p dir="ltr" class="FM_Heading_2">Buyer and Supplier Information</p>
+  <p dir="ltr" class="FM_Body_Style">The original buyer and supplier companies are listed here, even if the invoice is routed or forwarded to another buyer department or site after submission.</p>
+  <p dir="ltr" class="FM_Heading_2">General Information</p>
+  <p dir="ltr" class="FM_Body_Style">The details listed on an invoice are determined by the configuration of the invoice data fields by the buyer. </p>
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Invoice Number:</span>&#160;must be unique for each supplier. This number may be automatically generated by the system or manually entered by the supplier.</p>
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>Masked Invoice Number: invoice numbers that have been modified to have a maximum length of 16 characters and contain only alphanumeric characters (A-Z, 0-9). The Masked Invoice Number displays if the buyer has enabled invoice number masking.</p>
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Invoice Type:</span> specifies whether the invoice has a positive total (<span style="font-weight : bold; ">Original Invoice</span>)<span style="font-weight : bold; ">&#160;</span>or negative total (<span style="font-weight : bold; ">Credit Invoice</span>). </p>
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Submission Type:</span>&#160;specifies how the invoice was submitted. </p>
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Status:</span> specifies the invoice’s location in the workflow.</p>
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Routing Code:</span>&#160;used to automatically forward the invoice to a buyer’s department and/or user for processing when the invoice is submitted. A buyer can disable this field.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>Supplier Number: the number assigned to the supplier. </p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Workflow:</span>&#160;the current workflow state of the invoice. </p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Invoice Date: </span>supplier specified value. This date is typically the invoice creation date in the supplier’s accounting system. The date is entered in MM/DD/YYYY format. </p>
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Invoice Due Date:</span> The date the invoice is due.</p>
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Service Date:</span>&#160;specify the time period when the work was performed. The <span style="font-weight : bold; ">Service Date</span>&#160;must be on or before the <span style="font-weight : bold; ">Invoice Date</span>. This field will default to the invoice date. </p>
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>Currency: the currency applicable to the invoice.</p>
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Invoice Amount:</span> total amount due to the supplier. This amount includes the sum of all invoice lines and taxes.</p>
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Remit Amount: </span>total payment requested after credits are applied.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Self Assess Tax:</span>&#160;indicates if the self assess tax should be applied. </p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Quick Pay:</span>&#160;also known as Priority Pay. Priority Pay agreements are made outside of the <span data-name="ADP_Software_Name" data-val="OpenInvoice Platform" data-showval="TRUE" data-format="ADP_Software_Name">OpenInvoice Platform</span>&#160;and, as such, remit amounts calculated in <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span> are not adjusted.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Description: </span>describes the charges/credits listed on the invoice.</p>
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>WO: the work order reference. </p>
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">PO:</span> the purchase order number reference.</p>
+
+  <p dir="ltr" class="FM_Heading_2"><span style="font-size  : 10.0pt; color   : #000000; "></span>Tickets</p>
+
+  <p dir="ltr" class="FM_Body_Style">The tickets listed on the invoice. </p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Ticket No.:</span>&#160;The field ticket number. </p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Status:</span>&#160;The status of the field ticket. </p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Amount:</span>&#160;The amount of the field ticket. </p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Approved By:</span> The approver of the field ticket.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Office Approver</span>: The office approve of the field ticket. </p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Superintendent:</span>&#160;The superintendent assigned to the field ticket. </p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Attachments:</span>&#160;The number of attachments to the field ticket. </p>
+
+  <p dir="ltr" class="FM_Heading_2">Price Book and Early Pay Information</p>
+  <p dir="ltr" class="FM_Body_Style">When the buyer and supplier have negotiated pricing and payment agreements, these agreements can be applied to invoices. If an invoice includes Early Pay Terms, the invoice must be paid by the specified Early Pay due date for the Early Pay discount to apply.</p>
+  <p dir="ltr" class="FM_Heading_2">Line Item Details and Coding</p>
+  <p dir="ltr" class="FM_Body_Style">Line item details are determined by the configuration of the invoice data fields by the buyer. Line items may have specific coding requirements that must be met before the invoice can proceed through the workflow. Some fields may require entries in additional fields (entering an <span style="font-weight : bold; ">AFE</span>&#160;may result in the <span style="font-weight : bold; ">Cost Center</span>, <span style="font-weight : bold; ">Location</span>, <span style="font-weight : bold; ">Field/Lease</span>, <span style="font-weight : bold; ">Major</span>, and <span style="font-weight : bold; ">Minor</span> fields being populated).</p>
+
+  <p dir="ltr" class="FM_Body_Style">Each line will have one or more coding records. At a minimum, there is one coding record for the non-tax portion of the invoice line and one coding record for each tax applied to the invoice line. Coding can be copied and applied to multiple line items.</p>
+
+  <p dir="ltr" class="FM_Body_Style">An invoice’s coding history can be viewed by clicking the <span style="font-weight : bold; ">Coding History</span>&#160;link above the <span style="font-weight : bold; ">Coding</span>&#160;section. The <span style="font-weight : bold; ">Coding History</span>&#160;displays the coding information for the invoice line item at the time the invoice was submitted, including the Smart Coded custom data fields and the source for the GL codes. </p>
+
+  <p dir="ltr" class="FM_Body_Style">Invoice line items may include:</p>
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Service Date</span>&#160;or <span style="font-weight : bold; ">Service Date From/To:</span>&#160;populated according to the service date displayed in the header. Buyers can configure whether a single date or date range is displayed. If the service date is a range, <span style="font-weight : bold; ">Service Date From</span>&#160;is used to filter price book products/services and determine price book compliance. </p>
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">AFE</span>&#160;and <span style="font-weight : bold; ">Cost Center</span></p>
+  <p dir="ltr" class="FM_Bullet_List_1" style="font-weight : bold;"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>Location</p>
+  <p dir="ltr" class="FM_Bullet_List_1" style="font-weight : bold;"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>Field/Lease</p>
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Major/Minor/Subcode</span></p>
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Ticket No.:</span>&#160;more than one ticket number can be referenced. On image invoices, the ticket numbers are header values and, as such, they apply to all lines and cannot be different between the lines. On detail invoices, ticket numbers are line item values. </p>
+  <p dir="ltr" class="FM_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 13pt;" class="FMAutoNumber_2"></span></span>If the buyer preference <span style="font-weight : bold; ">Display Alert for Duplicate Ticket No. Reference</span>&#160;is enabled, a red alert will appear if a ticket number has been referenced on more than one invoice from the same supplier company. </p>
+  <p dir="ltr" class="FM_Bullet_List_1" style="font-weight : bold;"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>Asset Number</p>
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">PO</span>&#160;and <span style="font-weight : bold; ">PO Line: </span>numbers that reference details on a specific purchase order</p>
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">WO:</span> work order reference</p>
+  <p dir="ltr" class="FM_Heading_2"><a name="XREF_74843_Calculating"></a>Calculating Invoice Line Amounts</p>
+  <p dir="ltr" class="FM_Body_Style">All invoice line amounts are calculated by <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>, including the amounts on invoices submitted from B2B suppliers. The precision and rounding methods used by <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>&#160;may be different than your financial system. As a result, you may see a difference between the totals calculated in <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>&#160;and the totals on the backup provided by the supplier.</p>
+  <p dir="ltr" class="FM_Heading_3">Field Precision</p>
+  <p dir="ltr" class="FM_Body_Style">Input fields (Quantity, Rate, etc.) have a precision of 2, 6, or 8 decimal points. Calculated fields (Subtotal, Discount Amount, etc.) have a precision of 2 or 10 decimal points.</p>
+  <p dir="ltr" class="FM_Heading_4">Input Fields</p>
+<div width="100%" align="left">
+  <table border-spacing="0" dir="ltr" class="table190" border-collapse="collapse" style="max-width: 100% ;height: auto">
+   <tr class="tr136">
+   <th class="td191">
+   <p dir="ltr" class="FM_CellHeading">Field</p>
+</th>
+   <th class="td28">
+   <p dir="ltr" class="FM_CellHeading">Precision</p>
+</th>
+   <th class="td192">
+   <p dir="ltr" class="FM_CellHeading">Comments</p>
+</th>
+</tr>
+   <tr class="tr32">
+   <td class="td193">
+   <p dir="ltr" class="FM_Table_Text">Quantity</p>
+</td>
+   <td class="td34">
+   <p dir="ltr" class="FM_Table_Text">6</p>
+</td>
+   <td class="td194">
+   <p dir="ltr" class="FM_Table_Text">&nbsp;</p>
+</td>
+</tr>
+   <tr class="tr32">
+   <td class="td193">
+   <p dir="ltr" class="FM_Table_Text">Rate</p>
+</td>
+   <td class="td34">
+   <p dir="ltr" class="FM_Table_Text">6</p>
+</td>
+   <td class="td194">
+   <p dir="ltr" class="FM_Table_Text">&nbsp;</p>
+</td>
+</tr>
+   <tr class="tr32">
+   <td class="td193">
+   <p dir="ltr" class="FM_Table_Text">Discount Percent</p>
+</td>
+   <td class="td34">
+   <p dir="ltr" class="FM_Table_Text">8</p>
+</td>
+   <td class="td194">
+   <p dir="ltr" class="FM_Table_Text">Value entered must be between 0 and 100%.</p>
+</td>
+</tr>
+   <tr class="tr32">
+   <td class="td193">
+   <p dir="ltr" class="FM_Table_Text">Tax Percent</p>
+</td>
+   <td class="td34">
+   <p dir="ltr" class="FM_Table_Text">8</p>
+</td>
+   <td class="td194">
+   <p dir="ltr" class="FM_Table_Text">Value entered must be between 0 and 100%.</p>
+</td>
+</tr>
+   <tr class="tr32">
+   <td class="td193">
+   <p dir="ltr" class="FM_Table_Text">Early Pay Discount Percentage</p>
+</td>
+   <td class="td34">
+   <p dir="ltr" class="FM_Table_Text">2</p>
+</td>
+   <td class="td194">
+   <p dir="ltr" class="FM_Table_Text">Value entered must be between 0 and 99.99%.</p>
+</td>
+</tr>
+  </table>
+</div>
+  <p dir="ltr" class="FM_Heading_4">Calculated Fields</p>
+<div width="100%" align="left">
+  <table border-spacing="0" dir="ltr" class="table195" border-collapse="collapse" style="max-width: 100% ;height: auto">
+   <tr class="tr136">
+   <th class="td196">
+   <p dir="ltr" class="FM_CellHeading">Field </p>
+</th>
+   <th class="td28">
+   <p dir="ltr" class="FM_CellHeading">Precision</p>
+</th>
+   <th class="td197">
+   <p dir="ltr" class="FM_CellHeading">Field</p>
+</th>
+   <th class="td28">
+   <p dir="ltr" class="FM_CellHeading">Precision</p>
+</th>
+</tr>
+   <tr class="tr32">
+   <td class="td198">
+   <p dir="ltr" class="FM_Table_Text">Discount Rate</p>
+</td>
+   <td class="td34">
+   <p dir="ltr" class="FM_Table_Text">10</p>
+</td>
+   <td class="td199">
+   <p dir="ltr" class="FM_Table_Text">Subtotal</p>
+</td>
+   <td class="td34">
+   <p dir="ltr" class="FM_Table_Text">2</p>
+</td>
+</tr>
+   <tr class="tr32">
+   <td class="td198">
+   <p dir="ltr" class="FM_Table_Text">Tax Rate</p>
+</td>
+   <td class="td34">
+   <p dir="ltr" class="FM_Table_Text">10</p>
+</td>
+   <td class="td199">
+   <p dir="ltr" class="FM_Table_Text">Discount Amount</p>
+</td>
+   <td class="td34">
+   <p dir="ltr" class="FM_Table_Text">2</p>
+</td>
+</tr>
+   <tr class="tr32">
+   <td class="td198">
+   <p dir="ltr" class="FM_Table_Text">Early Pay Discount Rate</p>
+</td>
+   <td class="td34">
+   <p dir="ltr" class="FM_Table_Text">4</p>
+</td>
+   <td class="td199">
+   <p dir="ltr" class="FM_Table_Text">Pre-tax Amount</p>
+</td>
+   <td class="td34">
+   <p dir="ltr" class="FM_Table_Text">2</p>
+</td>
+</tr>
+   <tr class="tr32">
+   <td class="td198">
+   <p dir="ltr" class="FM_Table_Text">Tax Amount</p>
+</td>
+   <td class="td34">
+   <p dir="ltr" class="FM_Table_Text">2</p>
+</td>
+   <td class="td199">
+   <p dir="ltr" class="FM_Table_Text">Early Pay Discount Amount</p>
+</td>
+   <td class="td34">
+   <p dir="ltr" class="FM_Table_Text">2</p>
+</td>
+</tr>
+   <tr class="tr32">
+   <td class="td198">
+   <p dir="ltr" class="FM_Table_Text">Total</p>
+</td>
+   <td class="td34">
+   <p dir="ltr" class="FM_Table_Text">2</p>
+</td>
+   <td class="td199">
+   <p dir="ltr" class="FM_Table_Text">Early Pay Total</p>
+</td>
+   <td class="td34">
+   <p dir="ltr" class="FM_Table_Text">2</p>
+</td>
+</tr>
+  </table>
+</div>
+  <p dir="ltr" class="FM_Heading_3"><a name="XREF_38381_Calculations"></a>Calculations</p>
+  <p dir="ltr" class="FM_Note___Start"><span class="FM_Bold">Note:<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>The following calculations are performed for each invoice line. The result of each calculation step is rounded to its defined precision and the rounded value is used as the input for subsequent calculations.</p>
+  <p dir="ltr" class="FM_Steps"><span class="FM_Bold">Steps:<span style="padding-left: 8pt;" class="FMAutoNumber_1"></span></span></p>
+  <p dir="ltr" class="FM_Number_List_1___Start"><span class="FM_Bullet4">1.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Subtotal = Quantity * Rate</p>
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">2.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Discount Rate = Discount Percent / 100</p>
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">3.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Discount Amount = Subtotal * Discount Rate</p>
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">4.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Pre-tax Amount = Subtotal – Discount Amount</p>
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">5.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Tax Rate = Tax Percent / 100</p>
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">6.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Tax Amount = Pre-tax Amount * Tax Rate</p>
+  <p dir="ltr" class="FM_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 13pt;" class="FMAutoNumber_2"></span></span>This is calculated separately for each tax type applied to the line.</p>
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">7.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span><a name="XREF_67303_7_Total_Pre_tax"></a>Total = Pre-tax Amount + Sum (Tax Amount (for all taxes on the line))</p>
+  <p dir="ltr" class="FM_Body_Style">If the invoice line is eligible for an Early Pay discount, the discount is calculated as:</p>
+  <p dir="ltr" class="FM_Number_List_1___Start"><span class="FM_Bullet4">1.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Early Pay Discount Rate = Early Pay Discount Percentage / 100</p>
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">2.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Early Pay Discount Amount = (Pre-tax Amount + Sum (EP eligible Tax Amounts)) * Early Pay Discount Rate</p>
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">3.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Early Pay Total = Total – Early Pay Discount Amount</p>
+  <p dir="ltr" class="FM_Heading_3">Displayed Values</p>
+  <p dir="ltr" class="FM_Body_Style">When viewing the details of each invoice line item, the <span style="font-weight : bold; ">Total</span>&#160;field represents the line’s total after discounts and taxes are applied. See the previous section for a breakdown of the <span style="font-weight : bold; ">Total </span>calculation.</p>
+  <p dir="ltr" class="FM_Body_Style">On the invoice’s <span style="font-weight : bold; ">Summary</span>&#160;tab, the <span style="font-weight : bold; ">Total</span>&#160;column represents each invoice line’s total after discounts but before taxes. See the previous section for a breakdown of the <span style="font-weight : bold; ">Pre-Tax Amount</span>&#160;calculation. </p>
+  <p dir="ltr" class="FM_Body_Style">The invoice’s <span style="font-weight : bold; ">Total Amount</span>&#160;is displayed at the bottom of the <span style="font-weight : bold; ">Summary </span>tab and is calculated by adding the sum of each line’s tax amounts to the sum of the <span style="font-weight : bold; ">Total</span>&#160;column. </p>
+  <p dir="ltr" class="FM_Heading_3">Converting Dollar Values to Percentages</p>
+  <p dir="ltr" class="FM_Body_Style">When a B2B supplier submits an invoice specifying either a discount or tax as a dollar value instead of a percentage, <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>&#160;calculates the percentage discount or tax, which is stored in the <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>&#160;database. The stored percentage is used to calculate and display the dollar amount in all future calculations.</p>
+  <p dir="ltr" class="FM_Heading_3">Price Reconciliations</p>
+  <p dir="ltr" class="FM_Body_Style">All price reconciliations are performed using the discounted rate. A discounted rate on the invoice line will reconcile with:</p>
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>The referenced purchase order line if the discounted rate equals the rate on the purchase order line.</p>
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>The referenced ticket if the discounted rate equals the discounted rate on the ticket.</p>
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>The referenced price book if the discounted rate is between the adjusted rates on the price book.</p>
+  <p dir="ltr" class="FM_Heading_2"><a name="XREF_35337_Early_Pay_Terms"></a>Early Pay Terms and Discount</p>
+  <p dir="ltr" class="FM_Body_Style">Buyer administrators have the option to configure taxes as <span style="font-weight : bold; ">Eligible for Early Pay Discounts</span>. If the tax is eligible for Early Pay discounts and the invoice is approved with an Early Pay discount, the tax and the product/service amount is discounted. If the tax is not eligible for Early Pay discounts, just the product/service amount is discounted and the full tax amount still applies. </p>
+  <p dir="ltr" class="FM_Body_Style">For example, assume the invoice line is $1000 with a tax rate of 10% for a total of $1100. If there is a 5% Early Pay discount and the tax is eligible then the amount due is $1100 – 5% = $1045. If the tax is not eligible for the discount, the amount due is ($1000 – 5%) + (tax of $100) = $1050.</p>
+  <p dir="ltr" class="FM_Heading_3">Early Pay Program Rules</p>
+  <p dir="ltr" class="FM_Body_Style">This section describes the rules associated with the Early Pay Program. </p>
+  <p dir="ltr" class="FM_Body_Style">The EPP rules are:</p>
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>Only available to OpenInvoice Suppliers.</p>
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>Payment terms are based on the invoice submission date.</p>
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>Correctly submitted invoices only are applicable to the EP Program. </p>
+  <p dir="ltr" class="FM_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 13pt;" class="FMAutoNumber_2"></span></span>If an invoice is disputed, corrected, and re-submitted the payment terms are based on the original invoice submission date <span style="font-weight : bold; ">not</span>&#160;the re-submitted invoice date. </p>
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>Enter the original invoice costs, the EP functionality will calculate the discount and factor it in. </p>
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>The EP discount is calculated automatically on all lines of the invoice where the EP program has been applied by the supplier.</p>
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>If an invoice is approved after the EP deadline, the system marks the invoice as “EP not realized” and the invoice total remains the full total, without the EP discount. </p>
+  <p dir="ltr" class="FM_Heading_2"><a name="XREF_63255_Alerts_Presented"></a>Alerts Presented on an Invoice</p>
+  <p dir="ltr" class="FM_Body_Style">The following alerts are presented on an invoice:</p>
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>Price book, purchase order, duplicate ticket, and ticket compliance alerts</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>Early Pay, Priority Pay, and image invoice information alerts</p>
+
+  <p dir="ltr" class="FM_Body_Style">The compliance alerts are displayed on the My Ready to Approve portlet of the Invoice Dashboard, list pages (if configured to display alerts), the invoice <span style="font-weight : bold; ">Summary</span> tab and<span style="font-weight : bold; ">&#160;</span>the invoice <span style="font-weight : bold; ">Coding</span>&#160;tab. The information alerts are only displayed on the My Ready to Approve portlet of the Invoice Dashboard and list pages (if configured to display alerts).</p>
+
+  <p dir="ltr" class="FM_Body_Style">Compliance alerts are evaluated on all unapproved invoices. Once invoices are approved, the alert statuses are maintained and no longer evaluated. For example, a green alert at the time of the invoice’s approval will remain as a green alert after the invoice is approved and will never change.&#160;For descriptions of the compliance alerts, refer to <a href="../../../Price_Books/PriceBookOverview/PriceBookOverview.htm#XREF_86621_Price_Book">Price Book Compliance Alerts</a>&#160;and <a href="../../../Purchase_Orders/Purchase_Order_Overview/PO_Overview/PO_Overview.htm#XREF_72790_Purchase_Order">Purchase Order Compliance Alerts</a>.</p>
+
+  <p dir="ltr" class="FM_Body_Style">Invoice information alerts provide visual cues about the content of an invoice.<span style="font-size: small;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>&#160;</p>
+
+<div width="100%" align="left">
+  <table border-spacing="0" dir="ltr" class="table147" border-collapse="collapse" style="max-width: 100% ;height: auto">
+   <tr class="tr136">
+   <th class="td200">
+   <p dir="ltr" class="FM_CellHeading">Alert Name </p>
+</th>
+   <th class="td201">
+   <p dir="ltr" class="FM_CellHeading">Alert</p>
+</th>
+   <th class="td202">
+   <p dir="ltr" class="FM_CellHeading">Description </p>
+</th>
+</tr>
+   <tr class="tr203">
+   <td class="td204">
+   <p dir="ltr" class="FM_Table_Text">Duplicate Ticket </p>
+</td>
+   <td class="td205">
+   <div align="center"><img alt="alert_RedFieldTicketIcon.jpg" id="image301" src="../../../../assets/alert_RedFieldTicketIcon.jpg" style="max-width: 100% ;height: auto" />
+   </div>
+   <p dir="ltr" class="FM_Table_Text">&nbsp;</p>
+</td>
+   <td class="td206">
+   <p dir="ltr" class="FM_Table_Text">The ticket number referenced on the invoice has also been referenced on another invoice.</p>
+   <p dir="ltr" class="FM_Table_Text"><span style="font-weight : bold; ">Note: </span>Duplicate ticket numbers referenced on credit invoices are not considered. </p>
+</td>
+</tr>
+   <tr class="tr207">
+   <td class="td204">
+   <p dir="ltr" class="FM_Table_Text">Early Pay Eligible </p>
+</td>
+   <td class="td205">
+   <div align="center"><img alt="alert_EPeligible.jpg" id="image302" src="../../../../assets/alert_EPeligible.jpg" style="max-width: 100% ;height: auto" />
+   </div>
+   <p dir="ltr" class="FM_Table_Text">&nbsp;</p>
+</td>
+   <td class="td206">
+   <p dir="ltr" class="FM_Table_Text">The invoice is eligible for an Early Pay discount. </p>
+</td>
+</tr>
+   <tr class="tr100">
+   <td class="td204">
+   <p dir="ltr" class="FM_Table_Text">Early Pay Missing</p>
+</td>
+   <td class="td205">
+   <div align="center"><img alt="alert_EPmissing.jpg" id="image303" src="../../../../assets/alert_EPmissing.jpg" style="max-width: 100% ;height: auto" />
+   </div>
+   <p dir="ltr" class="FM_Table_Text">&nbsp;</p>
+</td>
+   <td class="td206">
+   <p dir="ltr" class="FM_Table_Text">The invoice is from a supplier that is required to offer Early Pay discounts, however the invoice was submitted without the discount.</p>
+   <p dir="ltr" class="FM_Table_Text"><span style="font-weight : bold; ">Note: </span>This alert is only visible if the <span style="font-weight : bold; ">Invoices Require Early Pay Program</span>&#160;checkbox is configured for the supplier.</p>
+</td>
+</tr>
+   <tr class="tr208">
+   <td class="td204">
+   <p dir="ltr" class="FM_Table_Text">Priority Pay </p>
+</td>
+   <td class="td205">
+   <div align="center"><img alt="alert_prioritypay.png" id="image304" src="../../../../assets/alert_prioritypay.png" style="max-width: 100% ;height: auto" />
+   </div>
+   <p dir="ltr" class="FM_Table_Text">&nbsp;</p>
+</td>
+   <td class="td206">
+   <p dir="ltr" class="FM_Table_Text">The invoice is from a supplier that has been marked as a Priority Pay supplier.</p>
+</td>
+</tr>
+   <tr class="tr209">
+   <td class="td204">
+   <p dir="ltr" class="FM_Table_Text">Image Invoice </p>
+</td>
+   <td class="td210">
+   <p dir="ltr" class="FM_Table_Text" style="display:inline"><img alt="alert_imageinvoice.png" id="image305" src="../../../../assets/alert_imageinvoice.png" style="max-width: 100% ;height: auto" />&nbsp;</p>
+</td>
+   <td class="td206">
+   <p dir="ltr" class="FM_Table_Text">The invoice is an image invoice. </p>
+</td>
+</tr>
+  </table>
+</div>
+  <p dir="ltr" class="FM_Heading_2"><a name="XREF_26762_Invoice_Submission"></a>Invoice Submission Types and Guidelines</p>
+  <p dir="ltr" class="FM_Body_Style"><span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>&#160;will assign the following submission types to invoices depending on how the invoice is created and submitted. Submission types control the actions that can be performed and determine additional processing logic that occurs during the submission process.</p>
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>Direct Entry</p>
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Created by the supplier who manually enters the invoice header and line details, creates the invoice from a purchase order, or creates the invoice from tickets.</p>
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>LIDO CSV / LIDO XML</p>
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Created by the supplier who uploads a CSV or XML file containing the invoice header and line details. Once the file is uploaded, the supplier can modify the invoice content and/or add attachments prior to submitting the invoice.</p>
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>B2B</p>
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Created by the supplier who transmits an XML file containing the invoice header and line details. The XML file can include any associated attachments.</p>
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>Image Scan</p>
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Created by the supplier who uploads a scanned copy of the invoice, enters basic header information, and optionally itemizes the invoice.</p>
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>These invoices can be itemized by either the supplier or buyer.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>These invoices cannot be short paid.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>Image OBO</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Created by a buyer user working on behalf of a supplier. The buyer uploads a scanned copy of the invoice, enters basic header information, and optionally itemizes the invoice.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>These invoices can be itemized at any point in the invoice workflow.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>The <span style="font-weight : bold; ">Correct</span> function can be used to modify the invoice header information.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>These invoices can be short paid.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span class="FM_Hyperlink">Image Post</span></p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Created by the buyer transmitting an XML file with a scanned attachment and basic header. </p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>These invoices can be itemized at any point in the invoice workflow.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>These invoices cannot be disputed to the supplier; however, they can be disputed internally to a department that is configured to manage and/or resolve dispute issues. </p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>The <span style="font-weight : bold; ">Correct</span> function can be used to modify the invoice header information.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>These invoices can be short paid.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>Transaction Upload</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Created by a buyer user in the platform or by transmitting a file via integration.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Represents transactions that were previously approved and/or paid outside of <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>. </p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>The transactions can be associated with any enabled suppler (registered or unregistered).</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>The transactions are imported with an Approved or Paid invoice status.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>The transactions cannot be unapproved.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Qualifying transactions imported with an Approved status may be paid using <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>.</p>
+
+  <p dir="ltr" class="FM_Heading_1"><span style="font-size  : 12.0pt; "></span><a name="XREF_97081_Invoice_Dashboard"></a>Invoice Dashboard</p>
+
+  <p dir="ltr" class="FM_Body_Style">The Invoice Dashboard is accessed by going to <span style="font-weight : bold; ">Invoice </span>&gt; <span style="font-weight : bold; ">Dashboard</span>. The dashboard consists of five portlets:</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Invoices:</span> displays counts and provides direct access to invoices you are responsible for processing.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Field Tickets</span>: displays the My Ready to Approve tickets if you have the Field Ticket Modify or Field Ticket Modify (Restricted) permissions.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Invoice Counts:</span> (<span style="font-style : italic; ">Invoice Admin permissions only) </span>displays the <span style="font-weight : bold; ">Ready to Code</span>&#160;and <span style="font-weight : bold; ">Ready to Approve</span>&#160;invoices organized by date range calculated using the <span style="font-weight : bold; ">Last Submit Date</span>. You can filter this data by <span style="font-weight : bold; ">Site</span>&#160;and <span style="font-weight : bold; ">Currency</span>. </p>
+
+  <p dir="ltr" class="FM_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 13pt;" class="FMAutoNumber_2"></span></span>Users with Corporate Admin permissions can change the date range calculation to use the <span style="font-weight : bold; ">Last Action Date</span>. </p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">My Ready to Approve</span>: displays a list of invoices that require your financial approval. </p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Purchase Orders:</span>&#160;displays counts and provides direct access to the purchase orders that you are responsible for processing. For an explanation of the <span style="font-weight : bold; ">Purchase Orders</span>&#160;portlet, refer to <a href="../../../Purchase_Orders/Purchase_Order_Overview/PO_Overview/PO_Overview.htm#XREF_64415_Purchase_Order">Purchase Orders Portlet</a>.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Average Time To Process:</span>&#160;displays a graphical representation of the organization’s complete workflow performance over the past three months.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Completed Reports:</span> displays the current user’s completed reports.</p>
+
+  <div align="center"><img alt="InvoiceOverview_InvoiceDashboardBuyer.jpg" id="image306" src="../../../../assets/InvoiceOverview_InvoiceDashboardBuyer.jpg" style="max-width: 100% ;height: auto" />
+  </div>
+  <p dir="ltr" class="FM_Screenshot_Anchor">&nbsp;</p>
+
+  <p dir="ltr" class="FM_Heading_2">Invoices Portlet</p>
+
+  <p dir="ltr" class="FM_Body_Style">The <span style="font-weight : bold; ">Invoices </span>portlet summarizes your invoices by workflow status. The portlet only provides access to invoices that you are able to process in the OpenInvoice platform based on your assigned permissions and authorization levels. Invoices routed to your ERP for client processing are excluded from the portlet.</p>
+
+  <p dir="ltr" class="FM_Body_Style">Your invoices are categorized into the following columns:</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Early Pay:</span> invoices that are currently eligible for an Early Pay discount.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Count:</span>&#160;invoices that are in a Submitted or Resubmitted status (including those in the <span style="font-weight : bold; ">Early Pay</span>&#160;and <span style="font-weight : bold; ">Stalled</span>&#160;columns).</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Stalled:</span>&#160;invoices considered stalled based on the <span style="font-weight : bold; ">Days to Stalled Invoices After Last Action</span>&#160;company preference.</p>
+
+  <p dir="ltr" class="FM_Body_Style">The rows of the portlet represent the invoice workflow status:</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">My Custom List (Configure):</span>&#160;a saved search that can be accessed through the dashboard for convenience. Once <span style="font-weight : bold; ">My Custom List</span>&#160;is set up, there will be a <span style="font-weight : bold; ">View</span>&#160;link that generates the search results. Click the link to generate a previously configured list.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Supplier Setup:</span>&#160;a holding queue for posted invoices from a supplier who requires setup in <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>. This category is not displayed when the count is <span style="font-weight : bold; ">0</span>.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Duplicate Checking: </span>a holding queue for posted invoices with invoice numbers that have already been used by the supplier in <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>. The category is displayed only if the current user has the <span style="font-weight : bold; ">Invoice Hold Adjudication</span> permission.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Ready to Code: </span>invoices that are ready to be coded by someone in your department who has the Invoice Modify<span style="font-weight : bold; ">&#160;</span>permission. The category is not displayed when the count is identical to the <span style="font-weight : bold; ">My Ready to Code</span>&#160;count (the user owns all invoices in the department).</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">My Ready to Code: </span>invoices that have been submitted or forwarded to you for coding. This category is not displayed when the count is <span style="font-weight : bold; ">0</span>. </p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Ready to Review:</span>&#160;invoices that are ready to be reviewed by someone in the departments where you have either the Invoice Modify or the Invoice Approve permission, but you do not have an authorization level to financially approve invoices. The category is not displayed when the count is identical to the <span style="font-weight : bold; ">My Ready to Review</span> count<span style="font-weight : bold; ">&#160;</span>(the user owns all invoices in the department).</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">My Ready to Review:</span>&#160;invoices that are ready for your review after coding, but you cannot financially approve because you do not have the appropriate authorization level. The category is not displayed when the count is <span style="font-weight : bold; ">0</span>.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Ready to Approve: </span>invoices that are ready to be approved by someone in the departments where you have either the Invoice Modify or the Invoice Approve permission and you do have an authorization level allowing you to financially approve invoices. The category is not displayed when the count is identical to the <span style="font-weight : bold; ">My Ready to Approve</span>&#160;count (the user owns all invoices in the department). If coding and review are performed by another user, ensure you have the appropriate authorization level for the category to be included in the portlet.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">My Ready to Approve: </span>invoices that are ready for your approval. This category is not displayed when the count is <span style="font-weight : bold; ">0</span>. If coding and review are performed by another user, ensure you have the appropriate authorization level for the category to be included in the portlet.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Delegated to Me:</span>&#160;invoices, owned by another user, that have been delegated to you. This category appears in the portlet if you have at least Invoice View permission in one site and you have been delegated at least one active invoice.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">My Recent Approvals:</span>&#160;invoices that you final approved within the last 30 days. The category is not displayed when the count is <span style="font-weight : bold; ">0</span>.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Notification User: </span>stalled invoices based on the <span style="font-weight : bold; ">Days to Stalled Invoice After Last Action</span>&#160;company preference. You are the notification user for the department of the stalled invoice. The category is not displayed when the count is <span style="font-weight : bold; ">0</span>.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Disputes to Resolve:</span>&#160;invoices that have been disputed to an internal department for resolution instead of being disputed back to the supplier or indexer. This category is not displayed when the count is <span style="font-weight : bold; ">0</span>.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Unowned Invoices</span> (<span style="font-style : italic; ">Invoice Admin</span><span style="font-style : italic; font-weight : bold; ">&#160;</span><span style="font-style : italic; ">permission only)</span><span style="font-weight : bold; ">:</span>&#160;invoices that are owned by users who no longer have access to the <span data-name="ADP_Software_Name" data-val="OpenInvoice Platform" data-showval="TRUE" data-format="ADP_Software_Name">OpenInvoice Platform</span>&#160;or by a department that no longer has any active users. </p>
+
+  <p dir="ltr" class="FM_Heading_2">Field Tickets Portlet</p>
+
+  <p dir="ltr" class="FM_Body_Style">The <span style="font-weight : bold; ">Field Tickets</span>&#160;portlet displays the number of field tickets that are ready for your approval. This portlet will display field tickets that are Submitted and you are: the requisitioner, the ticket owner, or have Field Ticket Modify (Restricted) permissions for the department that is the ticket owner. Click on the count displayed to view the list of all field tickets awaiting approval. </p>
+
+  <p dir="ltr" class="FM_Heading_2">My Ready to Approve Portlet </p>
+
+  <p dir="ltr" class="FM_Body_Style">The<span style="font-weight : bold; "> My Ready to Approve</span>&#160;portlet lists your invoices that are in the financial approval portion of workflow. The portlet displays each invoice’s original submit date, alerts, the supplier company name, the invoice number, the invoice amount, the total of all line item discounts on the invoice, and the total of all taxes on the invoice. The portlet provides you the ability to approve, dispute, forward, or comment on one or more invoices according to your permissions, authorization levels, and the company configuration. Click the <span style="font-weight : bold; ">Invoice #</span> to open the invoice.</p>
+
+  <p dir="ltr" class="FM_Heading_2">Invoice Counts Portlet</p>
+
+  <p dir="ltr" class="FM_Body_Style">This portlet displays if you have <span style="font-style : italic; ">Invoice Admin</span>&#160;permissions. The <span style="font-weight : bold; ">Invoice Counts</span>&#160;portlet displays the invoices that are <span style="font-weight : bold; ">Ready to Code</span>&#160;and <span style="font-weight : bold; ">Ready to Approve</span>. The invoices are sorted into date ranges. These date ranges are calculated using the <span style="font-weight : bold; ">Last Submit Date</span>. Users with Corporate Admin permissions can change the calculation to use <span style="font-weight : bold; ">Last Action Date</span>&#160;if desired in the Company Preferences. &#160;</p>
+
+  <p dir="ltr" class="FM_Heading_2">Purchase Orders Portlet</p>
+
+  <p dir="ltr" class="FM_Body_Style">The <span style="font-weight : bold; ">Purchase Orders Portlet</span>&#160;displays counts and provides direct access to purchase orders that the user is responsible for processing. </p>
+
+  <p dir="ltr" class="FM_Heading_2">Average Time to Process Portlet</p>
+
+  <p dir="ltr" class="FM_Body_Style">The <span style="font-weight : bold; ">Average Time to Process</span>&#160;portlet provides you with a graphical overview of the invoicing processing performance for the entire company. The portlet includes three months of data and the averages for all invoices processed by the company, not just the invoices the you processed. For each month, the graph calculates the average time for the buyer to code verify an invoice, for the buyer to financially approve an invoice, and for a supplier to resubmit a disputed invoice. The graph also displays the average time from initial submission to completion of all workflow steps resulting in invoice approval.</p>
+
+  <p dir="ltr" class="FM_Body_Style">Hover over one of the bar graphs to display the month, total number of invoices included in the average, and the average number of days.</p>
+
+  <p dir="ltr" class="FM_Body_Style">The averages for the past year are displayed directly below the graph. The past year averages include the previous 12 months of data plus the current month. For example, if viewing the graph on May 27, 2013, the past year average includes all data from May 1, 2012 to May 27, 2013.</p>
+
+  <p dir="ltr" class="FM_Heading_2">The Completed Reports Portlet</p>
+
+  <p dir="ltr" class="FM_Body_Style">The <span style="font-weight : bold; ">Completed Reports</span>&#160;portlet provides you with your list of completed reports. Click the subject to open or save the report. The portlet includes the date that the report will expire and be automatically deleted.</p>
+
+  <p dir="ltr" class="FM_Heading_1"><a name="XREF_42898_Invoice_Search_and"></a>Invoice Search and My Custom List</p>
+  <p dir="ltr" class="FM_Body_Style">Searches for invoices are performed using one of the following ways: specifying multiple search criteria or, if all or part of an invoice number is known, using the Global Search field. To specify multiple search criteria, use the <span style="font-weight : bold; ">Invoice Search</span> function, which also allows users to save search criteria (<span style="font-weight : bold; ">My Custom List</span>).</p>
+  <p dir="ltr" class="FM_Heading_2">Search Details</p>
+  <p dir="ltr" class="FM_Body_Style">Additional detailed search fields are available in three sections: Invoice Details, Line Item Details, and Coding Details. The Coding Details section displays if you select any search criteria in the Line Item Details section of the search screen. </p>
+  <p dir="ltr" class="FM_Heading_2_HowTo">How to Search by Invoice Number</p>
+  <p dir="ltr" class="FM_Body_Style">Use this procedure to search by invoice number from the Global Search field. </p>
+  <p dir="ltr" class="FM_Permission___Start"><span class="FM_Bold">Permission:<span style="padding-left: 21pt;" class="FMAutoNumber_1"></span></span>Invoice View</p>
+  <p dir="ltr" class="FM_Steps"><span class="FM_Bold">Steps:<span style="padding-left: 8pt;" class="FMAutoNumber_1"></span></span></p>
+  <p dir="ltr" class="FM_Number_List_1___Start"><span class="FM_Bullet4">1.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>In the main navigation bar, click the down arrow in the <span style="font-weight : bold; ">Global Search</span>&#160;field and select <span style="font-weight : bold; ">Invoice #</span>.</p>
+
+  <div align="center"><img alt="InvoiceOverview_invoicesearchnavbarBuyer.png" id="image307" src="../../../../assets/InvoiceOverview_invoicesearchnavbarBuyer.png" style="max-width: 100% ;height: auto" />
+  </div>
+  <p dir="ltr" class="FM_Screenshot_Anchor">&nbsp;</p>
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">2.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Enter all or part of the invoice number.</p>
+  <p dir="ltr" class="FM_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 13pt;" class="FMAutoNumber_2"></span></span>If only part of the invoice number is known, an asterisk (*) must be used to denote the unknown part of the invoice number.</p>
+
+  <p dir="ltr" class="FM_Note_Indent___Next"><span class="FM_Bold"><span style="padding-left: 54pt;" class="FMAutoNumber_1"></span></span>If your company is using invoice number masking, you can search by either the masked invoice number or the original invoice number entered by the supplier.</p>
+
+  <p dir="ltr" class="FM_Note_Indent___Next"><span class="FM_Bold"><span style="padding-left: 54pt;" class="FMAutoNumber_1"></span></span>As you type the invoice number, a list of up to 20 matching invoices is displayed in a quick-view list. The list is based on the most recent invoice dates, then sorted by supplier name. The invoice number, supplier name, submission date, currency, total, and status of the invoice are also displayed.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">3.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click the <span style="font-weight : bold; ">Search</span> icon to select from the resulting list page<span style="font-weight : bold; ">&#160;</span>or select an invoice from the quick-view list.</p>
+
+  <p dir="ltr" class="FM_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 13pt;" class="FMAutoNumber_2"></span></span>Selecting an invoice from the quick-view list will open a read-only version of the invoice in a new window.<span style="font-size: small;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+
+  <p dir="ltr" class="FM_Heading_2_HowTo">How to Search for an Invoice by Multiple Criteria</p>
+  <p dir="ltr" class="FM_Body_Style">Use this procedure to search for an invoice using multiple search criteria. </p>
+  <p dir="ltr" class="FM_Permission___Start"><span class="FM_Bold">Permission:<span style="padding-left: 21pt;" class="FMAutoNumber_1"></span></span>Invoice View</p>
+  <p dir="ltr" class="FM_Steps"><span class="FM_Bold">Steps:<span style="padding-left: 8pt;" class="FMAutoNumber_1"></span></span></p>
+  <p dir="ltr" class="FM_Number_List_1___Start"><span class="FM_Bullet4">1.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Select <span style="font-weight : bold; ">Invoice</span>&#160;&gt; <span style="font-weight : bold; ">Invoice Search</span>.</p>
+  <p dir="ltr" class="FM_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 13pt;" class="FMAutoNumber_2"></span></span>The criteria entered on your last search will populate the fields. Click <span style="font-weight : bold; ">Reset Criteria</span> to clear all fields.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">2.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Select how your search results are displayed with the <span style="font-weight : bold; ">Select Columns</span>, <span style="font-weight : bold; ">Number of Results</span>, and <span style="font-weight : bold; ">View Results As</span> options.</p>
+
+  <p dir="ltr" class="FM_Note_Indent___Next"><span class="FM_Bold"><span style="padding-left: 54pt;" class="FMAutoNumber_1"></span></span>Depending on the option selected in the <span style="font-weight : bold; ">Select Columns</span>&#160;drop-down, additional criteria may be automatically applied to your search. For example, selecting <span style="font-weight : bold; ">Ready to Code</span>&#160;will limit the results to just the invoices in the code verification portion of the workflow.</p>
+
+  <div align="center"><img alt="InvoiceOverview_invoicesearchpageBuyer.png" id="image308" src="../../../../assets/InvoiceOverview_invoicesearchpageBuyer.png" style="max-width: 100% ;height: auto" />
+  </div>
+  <p dir="ltr" class="FM_Screenshot_Anchor">&nbsp;</p>
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">3.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Enter additional search criteria in the Invoice Details or Line Item Details sections.</p>
+  <p dir="ltr" class="FM_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 13pt;" class="FMAutoNumber_2"></span></span>In some fields, you may type an asterisk (*) and click the <span style="font-weight : bold; ">Search </span>icon next to the field to reveal a list of available options. Select an option and click <span style="font-weight : bold; ">Submit</span>.</p>
+
+  <p dir="ltr" class="FM_Note_Indent___Next"><span class="FM_Bold"><span style="padding-left: 54pt;" class="FMAutoNumber_1"></span></span>For the <span style="font-weight : bold; ">Supplier Name</span>&#160;field, use whole words without an asterisk (*) when selecting the <span style="font-weight : bold; ">Words Within Name</span>&#160;matching option. For the <span style="font-weight : bold; ">Name</span>&#160;matching option, use the entire supplier name or partial name followed by an *.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">4.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Find Invoices</span>&#160;or <span style="font-weight : bold; ">Run Report</span>, depending on your <span style="font-weight : bold; ">View Result As</span> selection.</p>
+  <p dir="ltr" class="FM_Heading_2">Configuring the Search Output</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span class="FM_line_number" style="font-weight : bold; ">Select Columns:</span><span class="FM_line_number">&#160;determines which columns are displayed in the search results. The options available in this drop-down list depend on your permissions and whether or not you have an authorization level.</span></p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Invoice Search:</span>&#160;returns a list of invoices that match the selected criteria. </p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Invoice Reporting:</span>&#160;returns a list of invoices matching the selected criteria for reporting. </p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Invoice Administration:</span>&#160;returns a list of invoices matching the selected criteria for departments in which you have the Invoice Admin permission. </p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Ready to Code:</span> returns invoices that are ready for code verification and match the selected criteria.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Ready to Approve:</span> returns invoices ready for financial approval and match the selected criteria.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Ready to Review:</span>&#160;returns invoices ready for your review. </p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Disputes to Resolve:</span>&#160;returns disputed invoices requiring resolution. </p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Delegated Invoices:</span>&#160;returns delegated invoices that match the selected criteria. </p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Duplicate Checking:</span> returns invoices with duplicate numbers that match the selected criteria.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Custom: </span>only applies to saved custom reports. </p>
+
+  <p dir="ltr" class="FM_Note_Indent2___Start"><span class="FM_Bold"><span style="padding-left: 36pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 13pt;" class="FMAutoNumber_2"></span></span>Click <span style="font-weight : bold; ">Customize</span>&#160;next to the drop-down list to modify your saved configured list settings for the selected column configuration.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Number of results: </span>only the first 1000 qualifying invoices are returned.</p>
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">View Results As</span>: displays your search results in one of the following forms:</p>
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">List:</span> on a new page as a list.</p>
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Summary Report:</span> a spreadsheet report that can be accessed from the completed reports icon&#160;or <span style="font-weight : bold; ">Completed Reports</span> portlet. Each row in the spreadsheet will display an invoice.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Detailed Report:</span>&#160;a spreadsheet report that can be accessed from the <span style="font-weight : bold; ">Completed Reports </span>icon or <span style="font-weight : bold; ">Completed Reports</span>&#160;portlet. Each row in the spreadsheet will display an invoice coding record along with its header and other line information.</p>
+
+  <p dir="ltr" class="FM_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 13pt;" class="FMAutoNumber_2"></span></span>The <span style="font-weight : bold; ">Current Status</span>&#160;field allows you to search for invoices with a specific status. The options are: </p>
+  <p dir="ltr" class="FM_Bullet_List_3"><span class="FM_Bullet3">-<span style="padding-left: 15pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">All</span>: includes all invoices</p>
+
+  <p dir="ltr" class="FM_Bullet_List_3"><span class="FM_Bullet3">-<span style="padding-left: 15pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">All Except Disputed</span>: includes invoices where the current status is not Disputed. </p>
+
+  <p dir="ltr" class="FM_Bullet_List_3"><span class="FM_Bullet3">-<span style="padding-left: 15pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">All Unapproved</span>: includes only the unapproved invoices. </p>
+  <p dir="ltr" class="FM_Bullet_List_3"><span class="FM_Bullet3">-<span style="padding-left: 15pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">On-Hold</span>: includes only the invoices on-hold. </p>
+  <p dir="ltr" class="FM_Bullet_List_3"><span class="FM_Bullet3">-<span style="padding-left: 15pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Approved</span>: includes only the approved invoices. </p>
+  <p dir="ltr" class="FM_Bullet_List_3"><span class="FM_Bullet3">-<span style="padding-left: 15pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Disputed</span>: includes only the disputed invoices. </p>
+  <p dir="ltr" class="FM_Bullet_List_3"><span class="FM_Bullet3">-<span style="padding-left: 15pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Cancelled</span>: includes only the cancelled invoices. </p>
+
+  <p dir="ltr" class="FM_Bullet_List_3"><span class="FM_Bullet3">-<span style="padding-left: 15pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; "></span><span style="font-weight : bold; ">Re-Submitted</span>: includes only the re-submitted invoices. </p>
+
+  <p dir="ltr" class="FM_Bullet_List_3"><span class="FM_Bullet3">-<span style="padding-left: 15pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Submitted</span>: includes only the submitted invoices. </p>
+
+  <p dir="ltr" class="FM_Bullet_List_3"><span class="FM_Bullet3">-<span style="padding-left: 15pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Submitted and Re-Submitted</span>: includes the submitted and re-submitted invoices. </p>
+
+  <p dir="ltr" class="FM_Bullet_List_3"><span class="FM_Bullet3">-<span style="padding-left: 15pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Paid</span>: includes only the paid invoices. </p>
+  <p dir="ltr" class="FM_Bullet_List_3"><span class="FM_Bullet3">-<span style="padding-left: 15pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Approved, not yet Paid</span>: includes the invoices that have been approved but not yet paid.</p>
+
+  <p dir="ltr" class="FM_Body_Style">The following invoice configurable list options include multiple columns when added to lists and reports:</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Coding:</span>&#160;includes the <span style="font-weight : bold; ">Major</span>, <span style="font-weight : bold; ">Minor</span>, and <span style="font-weight : bold; ">Subcode</span> columns for detail reports.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Description</span>: </p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>includes the <span style="font-weight : bold; ">Invoice Description</span> column for lists and summary reports</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>includes the <span style="font-weight : bold; ">Invoice Description</span>, <span style="font-weight : bold; ">Part #/ Item ID</span>, and <span style="font-weight : bold; ">Product/Service Description</span> for detail reports.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Discount</span>: Includes the <span style="font-weight : bold; ">Discount Total</span>&#160;column for lists and summary reports. Includes the <span style="font-weight : bold; ">Discount Total</span>, <span style="font-weight : bold; ">Discount %</span>, and <span style="font-weight : bold; ">Discount Amount</span> for detail reports.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Invoice #</span>: Includes the <span style="font-weight : bold; ">Invoice #</span>&#160;column for lists and summary reports. Includes the <span style="font-weight : bold; ">Invoice #</span>&#160;and <span style="font-weight : bold; ">Line Number</span> for detail reports.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Tax</span>: Includes the <span style="font-weight : bold; ">Tax Total</span>&#160;column for lists and summary reports. Includes the <span style="font-weight : bold; ">Tax Total</span>, <span style="font-weight : bold; ">Tax Type</span>, and <span style="font-weight : bold; ">Tax Amount</span> for detail reports.</p>
+
+  <p dir="ltr" class="FM_Heading_2_HowTo">How to Save Customized Search Criteria</p>
+
+  <p dir="ltr" class="FM_Body_Style">Use this procedure to save your customized search criteria.</p>
+
+  <p dir="ltr" class="FM_Permission___Start"><span class="FM_Bold">Permission:<span style="padding-left: 21pt;" class="FMAutoNumber_1"></span></span>Invoice View</p>
+
+  <p dir="ltr" class="FM_Steps"><span class="FM_Bold">Steps:<span style="padding-left: 8pt;" class="FMAutoNumber_1"></span></span></p>
+
+  <p dir="ltr" class="FM_Number_List_1___Start"><span class="FM_Bullet4">1.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Select <span style="font-weight : bold; ">Invoice </span>&gt; <span style="font-weight : bold; ">Dashboard</span>.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">2.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>In the <span style="font-weight : bold; ">Invoices </span>portlet, click <span style="font-weight : bold; ">Configure</span>&#160;in the <span style="font-weight : bold; ">My Custom List</span> row.</p>
+
+  <div align="center"><img alt="InvoiceOverview_configurecustomizedsearch.png" id="image309" src="../../../../assets/InvoiceOverview_configurecustomizedsearch.png" style="max-width: 100% ;height: auto" />
+  </div>
+  <p dir="ltr" class="FM_Screenshot_Anchor">&nbsp;</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">3.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Enter your search criteria.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">4.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Depending on your <span style="font-weight : bold; ">View Result As</span>&#160;selection, click <span style="font-weight : bold; ">Find Invoices</span>&#160;or <span style="font-weight : bold; ">Run Report</span>.<span style="font-size: small;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+
+  <p dir="ltr" class="FM_Heading_2_HowTo">How to Search Based on Saved Customized Search Criteria</p>
+
+  <p dir="ltr" class="FM_Body_Style">Use this procedure to search using your previously saved customized search criteria. </p>
+
+  <p dir="ltr" class="FM_Permission___Start"><span class="FM_Bold">Permission:<span style="padding-left: 21pt;" class="FMAutoNumber_1"></span></span>Invoice View</p>
+
+  <p dir="ltr" class="FM_Steps"><span class="FM_Bold">Steps:<span style="padding-left: 8pt;" class="FMAutoNumber_1"></span></span></p>
+
+  <p dir="ltr" class="FM_Number_List_1___Start"><span class="FM_Bullet4">1.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Select <span style="font-weight : bold; ">Invoice </span>&gt; <span style="font-weight : bold; ">Dashboard</span>.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">2.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>In the <span style="font-weight : bold; ">Invoices</span>&#160;portlet, click <span style="font-weight : bold; ">View</span>&#160;in the <span style="font-weight : bold; ">My Custom List</span>&#160;row. </p>
+
+  <p dir="ltr" class="FM_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 13pt;" class="FMAutoNumber_2"></span></span>The <span style="font-weight : bold; ">View</span> link will not be available until a customized search has been saved.<span style="font-size: small;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+
+  <div align="center"><img alt="InvoiceOverview_opencustomizedsearch.png" id="image310" src="../../../../assets/InvoiceOverview_opencustomizedsearch.png" style="max-width: 100% ;height: auto" />
+  </div>
+  <p dir="ltr" class="FM_Screenshot_Anchor">&nbsp;</p>
+  <p dir="ltr" class="FM_Heading_1"><a name="XREF_85843_Invoice_List_Pages"></a>Invoice List Pages</p>
+  <p dir="ltr" class="FM_Body_Style">Invoice list pages are generated when you perform an invoice search or click an item on the dashboard. The invoices you can select and view from the list page will depend on your search criteria, your permissions, and the invoice status.You can click a column heading to sort the results by that column. </p>
+  <p dir="ltr" class="FM_Body_Style">The first column will be highlighted yellow if the invoice is considered stalled. An invoice is stalled when no action has been performed on the invoice within the defined <span style="font-weight : bold; ">Days to Stalled Invoice After Last Action</span>&#160;company preference value. The column will be red if the invoice is considered stalled because it has not been approved within the defined <span style="font-weight : bold; ">Days to Stalled Invoice After Most Recent Submit</span>&#160;company preference value. </p>
+
+  <p dir="ltr" class="FM_Note___Start"><span class="FM_Bold">Note:<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>If an invoice is considered stalled based on both preferences, the <span style="font-weight : bold; ">Days to Stalled Invoice Most Recent Submit</span>&#160;preference takes priority and the first column on the list page will be red. </p>
+
+  <p dir="ltr" class="FM_Body_Style">After opening an invoice from the list page you can:</p>
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>move to the previous or next invoice without navigating back to the list page. Click the<span style="font-weight : bold; ">&#160;Previous In List </span>and <span style="font-weight : bold; ">Next In List</span> links located at the top of the page.</p>
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>use the breadcrumb to return to the Invoice list page.</p>
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>process the invoice. The next invoice on the list page will automatically open. If you have processed the last invoice in the list, you will be returned to the Invoice List page.</p>
+  <p dir="ltr" class="FM_Heading_2_HowTo">How to Customize Your View of the Invoice List Page</p>
+  <p dir="ltr" class="FM_Body_Style">Use this procedure to customize your Invoice List results page.</p>
+  <p dir="ltr" class="FM_Permission___Start"><span class="FM_Bold">Permission:<span style="padding-left: 21pt;" class="FMAutoNumber_1"></span></span>Invoice View</p>
+  <p dir="ltr" class="FM_Steps"><span class="FM_Bold">Steps:<span style="padding-left: 8pt;" class="FMAutoNumber_1"></span></span></p>
+  <p dir="ltr" class="FM_Number_List_1___Start"><span class="FM_Bullet4">1.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Do one of the following:</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Select <span style="font-weight : bold; ">Invoice </span>&gt; <span style="font-weight : bold; ">Dashboard</span> and click a counter in one of the portlets.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Perform a search by <span style="font-weight : bold; ">Invoice #</span>&#160;using the <span style="font-weight : bold; ">Global Search</span> field in the main navigation bar.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Perform a search with multiple criteria by going to <span style="font-weight : bold; ">Invoice</span>&#160;&gt; <span style="font-weight : bold; ">Invoice Search</span>.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">2.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>On the invoice list page, click the <span style="font-weight : bold; ">List Settings</span> button located in the upper right corner.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">3.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span><span style="font-size  : 5.0pt; "></span>Do one or more of the following:</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Add or remove column titles from <span style="font-weight : bold; ">Configured Columns</span>&#160;box by selecting a column title and clicking <span style="font-weight : bold; ">Add&nbsp;</span>&gt; or &lt;&nbsp;<span style="font-weight : bold; ">Remove</span>.</p>
+
+  <p dir="ltr" class="FM_Note_Indent2___Start"><span class="FM_Bold"><span style="padding-left: 36pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 13pt;" class="FMAutoNumber_2"></span></span>To select multiple column titles at once, hold the<span style="font-weight : bold; "> Ctrl</span>&#160;key and select the columns. Alternatively, hold the <span style="font-weight : bold; ">Shift </span>key to select a range of columns. </p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Click the arrows to the right of the <span style="font-weight : bold; ">Configured Columns</span>&#160;box to determine the display order of your columns. </p>
+
+  <p dir="ltr" class="FM_Note_Indent2___Start"><span class="FM_Bold"><span style="padding-left: 36pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 13pt;" class="FMAutoNumber_2"></span></span>Top-to-bottom order in the <span style="font-weight : bold; ">Configured Columns </span>box corresponds with left-to-right order on the list page.</p>
+
+  <p dir="ltr" class="FM_Note_Indent2___Next"><span class="FM_Bold"><span style="padding-left: 72pt;" class="FMAutoNumber_1"></span></span>Move a column title one position at a time by clicking the single arrows; use the underlined arrows to move column titles directly to the top or directly to the bottom.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Reset to Default</span> to restore the list page settings to your company default.</p>
+
+<div width="100%" align="left">
+  <table border-spacing="0" dir="ltr" class="table51" border-collapse="collapse" style="max-width: 100% ;height: auto">
+   <tr class="tr211">
+   <td class="td53">
+   <p dir="ltr" class="FM_Table_Text" style="display:inline"><img alt="InvoiceOverview_customizelistpageBuyer.png" id="image311" src="../../../../assets/InvoiceOverview_customizelistpageBuyer.png" style="max-width: 100% ;height: auto" />&nbsp;</p>
+   <p dir="ltr" class="FM_Table_Text">Example of customizing the columns that appear on your list page.</p>
+</td>
+</tr>
+  </table>
+</div>
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">4.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Submit</span>.</p>
+
+  <p dir="ltr" class="FM_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 13pt;" class="FMAutoNumber_2"></span></span>The list page is immediately refreshed and your customized view of the list page will be retained until you change it.</p>
+
+  <p dir="ltr" class="FM_Body_Style">&nbsp;</p>
+ </div>
+</body>
+
+</html>
+

@@ -1,0 +1,207 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+ <title>Roles</title>
+
+ <link rel="stylesheet" href="../../../OpenInvoiceForBuyers_master.css" type="text/css" />
+
+
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style>
+ <meta name="generator" content="Adobe FrameMaker 2017" />
+<script type="text/javascript" src="../../../template/scripts/rh.min.js"></script>
+<script type="text/javascript" src="../../../template/scripts/common.min.js"></script>
+<script type="text/javascript" src="../../../template/scripts/topic.min.js"></script>
+<script type="text/javascript" src="../../../template/scripts/constants.js"></script>
+<script type="text/javascript" src="../../../template/scripts/utils.js"></script>
+<script type="text/javascript" src="../../../template/scripts/mhutils.js"></script>
+<script type="text/javascript" src="../../../template/scripts/mhlang.js"></script>
+<script type="text/javascript" src="../../../template/scripts/mhver.js"></script>
+<script type="text/javascript" src="../../../template/scripts/settings.js"></script>
+<script type="text/javascript" src="../../../template/scripts/XmlJsReader.js"></script>
+<script type="text/javascript" src="../../../template/scripts/loadparentdata.js"></script>
+<script type="text/javascript" src="../../../template/scripts/loadscreen.js"></script>
+<script type="text/javascript" src="../../../template/scripts/loadprojdata.js"></script>
+<script type="text/javascript" src="../../../template/scripts/mhtopic.js"></script>
+ <link rel="stylesheet" type="text/css" href="../../../template/styles/topic.min.css">
+<script type="text/javascript" >
+gRootRelPath = "../../..";
+gCommonRootRelPath = "../../..";
+gTopicId = "1.6.0_2";
+</script>
+ <meta name="brsprev" value="OpenInvoiceForBuyers_master/User_Management/UserMgmt/Departments.htm">
+ <meta name="brsnext" value="OpenInvoiceForBuyers_master/User_Management/UserMgmt/Permission_Descriptions.htm">
+ <meta name="topic-breadcrumbs" content="Administrator & User Guide for Buyers > User Management" />
+</head>
+
+<body dir="ltr">
+<script type="text/javascript" src="../../../ehlpdhtm.js"></script>
+<div dir="ltr">
+  <p dir="ltr" class="FM_ADP_TG_Heading_1"><a name="XREF_71232_Roles"></a>Roles</p>
+  <p dir="ltr" class="FM_ADP_TG_Body_Style">Roles are set up from within departments. Departments separate functional areas of the company, and roles define job duties within the department. Permissions are assigned to roles according to job function. Users are assigned to roles that allow them to perform the tasks related to their job area. A set of permissions may include varying levels of access including view-only, permission to modify, and/or permission to configure.</p>
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>View permissions allow users to view documents, comment, add attachments and move the document through workflow, but they may not change the content of documents.</p>
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>Modify permissions allow users to change the content of documents.</p>
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>Admin permissions allow users to perform special functions.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 12pt;" class="FMAutoNumber_2"></span></span>The Invoice Modify (IM) and Invoice Hold Adjudication permissions are considered Admin level permissions.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Heading_2">Considerations When Configuring Roles</p>
+  <p dir="ltr" class="FM_ADP_TG_Heading_3">The Member Role</p>
+  <p dir="ltr" class="FM_ADP_TG_Body_Style">When the department is added, an empty role called <span style="font-weight : bold; ">Member</span>&#160;is automatically created. All users in a department will be assigned to the Member role, along with any other roles that are applicable to their job function. Because every user must be assigned to the department’s Member role, the Member role should be configured with only the permissions that apply to all members of the department. All permissions can be removed from the Member role if there are no common permissions that apply to all members of the department. </p>
+  <p dir="ltr" class="FM_ADP_TG_Note___Start"><span class="FM_Bold">Note:<span style="padding-left: 12pt;" class="FMAutoNumber_1"></span></span>The Member role cannot be renamed, deleted, or made inactive.</p>
+  <p dir="ltr" class="FM_ADP_TG_Heading_3">Segregation of Duties Between Membership Permissions</p>
+  <p dir="ltr" class="FM_ADP_TG_Body_Style">Users with the Membership Modify permissions can manage user profiles, create roles, add or remove non-Admin permissions to roles, and assign users to roles that do not have Admin permissions. </p>
+  <p dir="ltr" class="FM_ADP_TG_Body_Style">Users with the Membership Admin permissions can add or remove Admin permissions on roles and assign users to any role including roles with Admin permissions. </p>
+
+  <p dir="ltr" class="FM_ADP_TG_Body_Style">Users with the Membership Manage Auth permission can create, edit, modify, or assign authorization levels. To assign an authorization level to yourself, you must have the Self Manage attribute enabled along with the Membership Manage Auth permission.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Body_Style">To assign yourself to a role or modify the permissions of a role in which you are a members, you must have the Self Manage attribute enabled along with the Membership Modify and/or Membership Admin permissions. Refer to <a href="../../Overview_and_General_Info/OverviewGeneralInfo/OverviewGeneralInfo.htm#XREF_81462_How_to_View_and">View and Modify Your Profile</a>.</p>
+  <p dir="ltr" class="FM_ADP_TG_Heading_3">Implications of Editing or Deleting Roles</p>
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>If a role is marked Inactive, it will be displayed on the <span style="font-weight : bold; ">Departments and Roles</span>&#160;list page as <span style="font-style : italic; ">(Inactive)</span>. Existing users and permissions are still assigned to the role; however, the permissions will not apply to the users. An inactive role can still be edited.</p>
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>Users affected by changes to role assignments will retain their current permissions until they sign out. Any altered access to the platform will take effect the next time they sign in. Users can be forcibly signed out, if necessary.</p>
+  <p dir="ltr" class="FM_ADP_TG_Heading_2_HowTo">How to Add a Role</p>
+  <p dir="ltr" class="FM_ADP_TG_Body_Style">Use this procedure to add a new role to your department. </p>
+  <p dir="ltr" class="FM_ADP_TG_Permission___Start"><span class="FM_Bold">Permission:<span style="padding-left: 18pt;" class="FMAutoNumber_1"></span></span>Membership Modify and/or Membership Admin</p>
+  <p dir="ltr" class="FM_ADP_TG_Steps"><span class="FM_Bold">Steps:<span style="padding-left: 6pt;" class="FMAutoNumber_1"></span></span></p>
+  <ol dir="ltr" start="1">
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Start">Select <span style="font-weight : bold; ">Membership &gt; Departments &amp; Roles</span>.</p>
+</li>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Click the <span style="font-weight : bold; ">Department Name</span>.</p>
+</li>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Click the <span style="font-weight : bold; ">Settings </span>tab.</p>
+</li>
+   <div align="center"><img alt="UserMgmt_deptsettingstabBuyer.png" id="image160" src="../../../assets/UserMgmt_deptsettingstabBuyer.png" style="max-width: 100% ;height: auto" />
+   </div>
+   <p dir="ltr" class="FM_ADP_TG_Screenshot_Anchor">&nbsp;</p>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Click <span style="font-weight : bold; ">Add Role.</span></p>
+</li>
+   <div align="center"><img alt="UserMgmt_addroleBuyer.png" id="image161" src="../../../assets/UserMgmt_addroleBuyer.png" style="max-width: 100% ;height: auto" />
+   </div>
+   <p dir="ltr" class="FM_ADP_TG_Screenshot_Anchor">&nbsp;</p>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Enter a <span style="font-weight : bold; ">Role Name</span>. The <span style="font-weight : bold; ">Description</span> is optional.</p>
+</li>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">To add users to the new role, select one or more <span style="font-weight : bold; ">Non-Member</span>&#160;users and click <span style="font-weight : bold; ">Add &gt;</span>.</p>
+</li>
+   <p dir="ltr" class="FM_ADP_TG_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 12pt;" class="FMAutoNumber_2"></span></span>Only users who are assigned the department’s Member role will be available to add to the new role.</p>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Click <span style="font-weight : bold; ">Submit</span>.</p>
+</li>
+  </ol>
+  <p dir="ltr" class="FM_ADP_TG_Body_Style" style="font-weight : bold;">Next Steps: See the <a href="#XREF_21672_How_to_Modify_the">Modify the Permissions Assigned to the Role</a>&#160;to set the permissions for the new role. </p>
+  <p dir="ltr" class="FM_ADP_TG_Heading_2_HowTo">How to Edit an Existing Role</p>
+  <p dir="ltr" class="FM_ADP_TG_Body_Style">Use this procedure to add or delete members for an existing role. </p>
+  <p dir="ltr" class="FM_ADP_TG_Permission___Start"><span class="FM_Bold">Permission:<span style="padding-left: 18pt;" class="FMAutoNumber_1"></span></span>Membership Modify and/or Membership Admin</p>
+  <p dir="ltr" class="FM_ADP_TG_Steps"><span class="FM_Bold">Steps:<span style="padding-left: 6pt;" class="FMAutoNumber_1"></span></span></p>
+  <ol dir="ltr" start="1">
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Start">Select <span style="font-weight : bold; ">Membership &gt; Departments &amp; Roles</span>.</p>
+</li>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Click the department name.</p>
+</li>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Click the <span style="font-weight : bold; ">Settings </span>tab.</p>
+</li>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Click the <span style="font-weight : bold; ">Role Name</span> in the left column.</p>
+</li>
+   <div align="center"><img alt="UserMgmt_deptsettingstabBuyer.png" id="image162" src="../../../assets/UserMgmt_deptsettingstabBuyer.png" style="max-width: 100% ;height: auto" />
+   </div>
+   <p dir="ltr" class="FM_ADP_TG_Screenshot_Anchor">&nbsp;</p>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Update the information.</p>
+</li>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">To add users to the role, select one or more <span style="font-weight : bold; ">Non-Member</span>&#160;users and click <span style="font-weight : bold; ">Add &gt;</span>.</p>
+</li>
+   <p dir="ltr" class="FM_ADP_TG_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 12pt;" class="FMAutoNumber_2"></span></span>Only users who are assigned the department’s Member role will be available to add to the new role.</p>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">To remove users from the role, select one or more Member users and click <span style="font-weight : bold; ">&lt; Remove</span>.</p>
+</li>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Click <span style="font-weight : bold; ">Submit</span>.</p>
+</li>
+  </ol>
+  <p dir="ltr" class="FM_ADP_TG_Heading_2_HowTo">How to Delete a Role</p>
+  <p dir="ltr" class="FM_ADP_TG_Body_Style">Use this procedure to delete a role. </p>
+  <p dir="ltr" class="FM_ADP_TG_Permission___Start"><span class="FM_Bold">Permission:<span style="padding-left: 18pt;" class="FMAutoNumber_1"></span></span>Membership Modify and/or Membership Admin</p>
+  <p dir="ltr" class="FM_ADP_TG_Steps"><span class="FM_Bold">Steps:<span style="padding-left: 6pt;" class="FMAutoNumber_1"></span></span></p>
+  <ol dir="ltr" start="1">
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Start">Select <span style="font-weight : bold; ">Membership &gt; Departments &amp; Roles</span>.</p>
+</li>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Click the <span style="font-weight : bold; ">Department Name</span>.</p>
+</li>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Click the <span style="font-weight : bold; ">Settings </span>tab.</p>
+</li>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Click the <span style="font-weight : bold; ">Delete</span> icon.</p>
+</li>
+   <div align="center"><img alt="UserMgmt_deptsettingstabBuyer.png" id="image163" src="../../../assets/UserMgmt_deptsettingstabBuyer.png" style="max-width: 100% ;height: auto" />
+   </div>
+   <p dir="ltr" class="FM_ADP_TG_Screenshot_Anchor">&nbsp;</p>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Click <span style="font-weight : bold; ">OK</span> to confirm.</p>
+</li>
+  </ol>
+  <p dir="ltr" class="FM_ADP_TG_Heading_2_HowTo">How to <a name="XREF_21672_How_to_Modify_the"></a>Modify the Permissions Assigned to the Role</p>
+  <p dir="ltr" class="FM_ADP_TG_Body_Style">Use this procedure to update the permissions for a specific role. </p>
+  <p dir="ltr" class="FM_ADP_TG_Permission___Start"><span class="FM_Bold">Permission:<span style="padding-left: 18pt;" class="FMAutoNumber_1"></span></span>Membership Modify and/or Membership Admin</p>
+  <p dir="ltr" class="FM_ADP_TG_Steps"><span class="FM_Bold">Steps:<span style="padding-left: 6pt;" class="FMAutoNumber_1"></span></span></p>
+  <ol dir="ltr" start="1">
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Start">Select <span style="font-weight : bold; ">Membership &gt; Departments &amp; Roles</span>.</p>
+</li>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Click the <span style="font-weight : bold; ">Department Name</span>.</p>
+</li>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Click the <span style="font-weight : bold; ">Settings </span>tab.</p>
+</li>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Select or deselect the checkbox to add or remove permissions to/from a role.</p>
+</li>
+   <p dir="ltr" class="FM_ADP_TG_Screenshot_Anchor">&nbsp;</p>
+
+   <div align="center"><img alt="UserMgmt_deptsettingstabBuyer.png" id="image164" src="../../../assets/UserMgmt_deptsettingstabBuyer.png" style="max-width: 100% ;height: auto" />
+   </div>
+   <p dir="ltr" class="FM_ADP_TG_Screenshot_Anchor">&nbsp;</p>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Click <span style="font-weight : bold; ">Submit</span>.</p>
+</li>
+  </ol>
+  </div>
+</body>
+</html>

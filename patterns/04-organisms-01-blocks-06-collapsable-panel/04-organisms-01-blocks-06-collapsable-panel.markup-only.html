@@ -1,0 +1,32 @@
+
+<div class="row">
+    <div class="col-xs-12 col-sm-6">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <div class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#filterPanel">Collapsable Panel</a>
+                    <span class="pull-right" data-toggle="collapse" data-parent="#accordion" href="#collapsablePanel">
+                        <i class="panelExpandIcon glyphicon glyphicon-chevron-down"></i>
+                    </span>
+                </div>
+            </div>
+            <div id="collapsablePanel" class="panel-collapse collapse">
+                <div class="panel-body">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $('#collapsablePanel').on('shown.bs.collapse', function () {
+       $('.panelExpandIcon').toggleClass('glyphicon-chevron-up glyphicon-chevron-down');
+    });
+
+    $('#collapsablePanel').on('hidden.bs.collapse', function () {
+       $('.panelExpandIcon').toggleClass('glyphicon-chevron-up glyphicon-chevron-down');
+    });
+</script>

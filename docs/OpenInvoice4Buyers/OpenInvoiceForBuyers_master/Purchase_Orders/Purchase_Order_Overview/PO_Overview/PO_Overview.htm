@@ -1,0 +1,440 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+ <title>PO_Overview</title>
+
+ <link rel="stylesheet" href="../../../../OpenInvoiceForBuyers_master.css" type="text/css" />
+
+
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style>
+ <meta name="generator" content="Adobe FrameMaker 2017" />
+<script type="text/javascript" src="../../../../template/scripts/rh.min.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/common.min.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/topic.min.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/constants.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/utils.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/mhutils.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/mhlang.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/mhver.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/settings.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/XmlJsReader.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/loadparentdata.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/loadscreen.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/loadprojdata.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/mhtopic.js"></script>
+ <link rel="stylesheet" type="text/css" href="../../../../template/styles/topic.min.css">
+<script type="text/javascript" >
+gRootRelPath = "../../../..";
+gCommonRootRelPath = "../../../..";
+gTopicId = "1.6_4";
+</script>
+ <meta name="brsprev" value="OpenInvoiceForBuyers_master/Price_Books/PriceBookManagement/PriceBookManagement.htm">
+ <meta name="brsnext" value="OpenInvoiceForBuyers_master/Purchase_Orders/Purchase_Order_Collaboration/PO_Collaboration/PO_Collaboration.htm">
+ <meta name="topic-breadcrumbs" content="Administrator & User Guide for Buyers" />
+</head>
+
+<body dir="ltr">
+<script type="text/javascript" src="../../../../ehlpdhtm.js"></script>
+
+ <div dir="ltr">
+  <p dir="ltr" class="FM_Chapter_Title">Purchase Orders</p>
+  <p dir="ltr" class="FM_Body_Style">Purchase orders are created by the buyer and added to the <span data-name="ADP_Software_Name" data-val="OpenInvoice Platform" data-showval="TRUE" data-format="ADP_Software_Name">OpenInvoice Platform</span>&#160;through integration. Suppliers create invoices and tickets referencing a purchase order. This section provides an overview of how users can view and use purchase orders in <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>. </p>
+  <p dir="ltr" class="FM_Body_Style">The following topics are applicable to users who manage purchase orders and/or require purchase order information to process other <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span> documents:</p>
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><a href="#XREF_64415_Purchase_Order"><span class="FM_ADP_TG__Link">Purchase Orders Portlet</span></a></p>
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><a href="#XREF_92610_Purchase_Order"><span class="FM_ADP_TG__Link">Purchase Order Search</span></a></p>
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><a href="#XREF_25512_Change_Requests"><span class="FM_ADP_TG__Link">Change Requests</span></a></p>
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><a href="#XREF_51750_Purchase_Order"><span class="FM_ADP_TG__Link">Purchase Order Notifications</span></a></p>
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><a href="#XREF_34743_Calculating"><span class="FM_ADP_TG__Link">Calculating Fulfillment</span></a></p>
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><a href="#XREF_72790_Purchase_Order"><span class="FM_ADP_TG__Link">Purchase Order Compliance Alerts</span></a></p>
+  <p dir="ltr" class="FM_Heading_1"><a name="XREF_26973_Purchase_Order"></a>Purchase Order Structure</p>
+  <p dir="ltr" class="FM_Body_Style">A purchase order consists of buyer and supplier information, purchase order details, addresses and contacts, line item details, and, if applicable, attached documents. Purchase orders can be viewed on two tabs: <span style="font-weight : bold; ">Current</span>&#160;and <span style="font-weight : bold; ">Proposed</span>. The <span style="font-weight : bold; ">Current </span>tab displays the most recently accepted version of the purchase order. The <span style="font-weight : bold; ">Proposed</span>&#160;tab displays a version that contains changes pending approval. New purchase orders that have never been accepted are displayed on the<span style="font-weight : bold; ">&#160;Proposed </span>tab. </p>
+
+  <div align="center"><img alt="PO_Overview_POstructure_Buyer.jpg" id="image229" src="../../../../assets/PO_Overview_POstructure_Buyer.jpg" style="max-width: 100% ;height: auto" />
+  </div>
+  <p dir="ltr" class="FM_Screenshot_Anchor">&nbsp;</p>
+  <p dir="ltr" class="FM_Heading_2">Supplemental Information</p>
+  <p dir="ltr" class="FM_Body_Style">Expanding this section will display the PO Journal and all attached documents related to the purchase order. The <span style="font-weight : bold; ">Supplemental Information</span>&#160;section is the same on both the <span style="font-weight : bold; ">Current</span>&#160;and <span style="font-weight : bold; ">Proposed</span>&#160;tabs. The PO Journal displays historical workflow actions that have been performed against the purchase order with the most recent entry at the top and the oldest at the bottom. </p>
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Accepted</span>&#160;to open a read-only historical version of the purchase order. Click <span style="font-weight : bold; ">Countered</span> to open a read-only version of the counter offer. To return to the current purchase order, click <span style="font-weight : bold; ">View Current Revision</span>&#160;at the top of the PO Journal.</p>
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>Click the name or description of an attachment to open it.</p>
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>A file called <span style="font-weight : bold; ">Import Errors and Warnings</span>&#160;will be attached to the purchase order when it is uploaded into the platform. This document displays conditions that should be corrected but will not prevent the purchase order from being saved.</p>
+  <p dir="ltr" class="FM_Heading_2">Buyer and Supplier</p>
+  <p dir="ltr" class="FM_Body_Style">The buyer name, buyer site, and supplier name are always displayed. If a purchase order is associated with multiple supplier sites, the number of supplier sites is displayed. Expand this section to list the site names.</p>
+  <p dir="ltr" class="FM_Heading_2">General Information</p>
+  <p dir="ltr" class="FM_Body_Style">The purchase order number, purchase order date, purchase order status, last accepted change request number (if one exists), last accepted change request date (if one exists), receipt fulfillment status, and invoice fulfillment status are always displayed. </p>
+  <p dir="ltr" class="FM_Note___Start"><span class="FM_Bold">Note:<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>On the <span style="font-weight : bold; ">Proposed</span>&#160;tab, the most recent change request number and date (if one exists) are displayed instead of the last accepted.</p>
+  <p dir="ltr" class="FM_Body_Style">Expanding this section further displays the currency, payment terms, purchase order description, price book, special instructions, and invoice numbers referencing the purchase order. </p>
+
+  <p dir="ltr" class="FM_Body_Style">If the <span style="font-weight : bold; ">Rules Based Invoice Export</span>&#160;job has been configured for the buyer and the purchase order has a routing flag, the <span style="font-weight : bold; ">Workflow</span>&#160;field will display <span style="font-weight : bold; ">OpenInvoice Processing</span>&#160;or <span style="font-weight : bold; ">Client Processing</span>. This field does not appear if the job is not configured.</p>
+
+  <p dir="ltr" class="FM_Heading_2"><a name="XREF_Ref314228881"></a>Addresses and Contacts</p>
+  <p dir="ltr" class="FM_Body_Style">Expanding this section will display the buyer’s address and contact information. There are five types of addresses: <span style="font-weight : bold; ">Bill To</span>, <span style="font-weight : bold; ">Ship To</span>, <span style="font-weight : bold; ">Recipient</span>, <span style="font-weight : bold; ">Non-Billing Inquiries</span>, and <span style="font-weight : bold; ">Requisitioner</span>. Details for the first four types are specified in the purchase order import file.<span style="font-weight : bold; ">&#160;Requisitioner </span>details are pulled directly from the associated user profile in the <span data-name="ADP_Software_Name" data-val="OpenInvoice Platform" data-showval="TRUE" data-format="ADP_Software_Name">OpenInvoice Platform</span>.</p>
+  <p dir="ltr" class="FM_Heading_2"><a name="XREF_Ref274125868"></a>Line Item Details</p>
+  <p dir="ltr" class="FM_Body_Style">The type, supplier code, supplier product/service description, buyer description, manufacturer’s code, quantity, unit of measure, rate, and total amount are always displayed.</p>
+  <p dir="ltr" class="FM_Body_Style">Expanding the <span style="font-weight : bold; ">Details</span>&#160;section under the purchase order line will display the delivery details, coding details, and fulfillment details for that line.</p>
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Delivery Details:</span>&#160;the quantity to be shipped between a defined start and end date. A delivery contact, job site/activity (if the buyer uses the OpenTicket module), and buyer comments are also provided.</p>
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Coding Details:</span>&#160;the buyer’s accounting information including the item master, AFE, cost center, work order, and general ledger combination of major, minor, and subcode.</p>
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Fulfillment Details:</span>&#160;summarizes the total quantity and total amount of all associated invoice lines as well as the quantity and amount that is remaining to be invoiced.</p>
+  <p dir="ltr" class="FM_Heading_2">Purchase Order Line Type</p>
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Detail: </span>has a product/service, defined quantity, rate, and unit of measure.</p>
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Limit: </span>represents a maximum dollar value for the work being performed. The line does not have a product/service, quantity, rate, or unit of measure.</p>
+  <p dir="ltr" class="FM_Heading_2">Purchase Order Status<span style="font-size: small;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+<div width="100%" align="left">
+  <table border-spacing="0" dir="ltr" class="table147" border-collapse="collapse" style="max-width: 100% ;height: auto">
+   <tr class="tr71">
+   <th class="td148">
+   <p dir="ltr" class="FM_CellHeading">Status</p>
+</th>
+   <th class="td149">
+   <p dir="ltr" class="FM_CellHeading">Available for Reference</p>
+</th>
+   <th class="td150">
+   <p dir="ltr" class="FM_CellHeading">Description</p>
+</th>
+</tr>
+   <tr class="tr32">
+   <td class="td151">
+   <p dir="ltr" class="FM_Table_Text">Pending</p>
+</td>
+   <td class="td152">
+   <p dir="ltr" class="FM_Table_Text">&nbsp;</p>
+</td>
+   <td class="td153">
+   <p dir="ltr" class="FM_Table_Text">Purchase order is not yet accepted or rejected by the supplier.</p>
+</td>
+</tr>
+   <tr class="tr32">
+   <td class="td151">
+   <p dir="ltr" class="FM_Table_Text">Accepted</p>
+</td>
+   <td class="td152">
+   <p dir="ltr" class="FM_Table_Text">X</p>
+</td>
+   <td class="td153">
+   <p dir="ltr" class="FM_Table_Text">Reviewed and accepted by the supplier. </p>
+</td>
+</tr>
+   <tr class="tr32">
+   <td class="td151">
+   <p dir="ltr" class="FM_Table_Text">Rejected</p>
+</td>
+   <td class="td152">
+   <p dir="ltr" class="FM_Table_Text">&nbsp;</p>
+</td>
+   <td class="td153">
+   <p dir="ltr" class="FM_Table_Text">Reviewed and rejected by the supplier.</p>
+</td>
+</tr>
+   <tr class="tr105">
+   <td class="td151">
+   <p dir="ltr" class="FM_Table_Text">Closed</p>
+</td>
+   <td class="td152">
+   <p dir="ltr" class="FM_Table_Text">&nbsp;</p>
+</td>
+   <td class="td153">
+   <p dir="ltr" class="FM_Table_Text">All work has been completed by the supplier.</p>
+   <p dir="ltr" class="FM_Table_Text">References to the PO remain valid if they were made prior to closing.</p>
+</td>
+</tr>
+   <tr class="tr105">
+   <td class="td151">
+   <p dir="ltr" class="FM_Table_Text">Cancelled</p>
+</td>
+   <td class="td152">
+   <p dir="ltr" class="FM_Table_Text">&nbsp;</p>
+</td>
+   <td class="td153">
+   <p dir="ltr" class="FM_Table_Text">Terminated by the buyer.</p>
+   <p dir="ltr" class="FM_Table_Text">References to the PO remain valid if they were made prior to cancelling.</p>
+</td>
+</tr>
+  </table>
+</div>
+  <p dir="ltr" class="FM_Heading_2">Change Request Status</p>
+  <p dir="ltr" class="FM_Body_Style">Change request statuses are assigned only for purchase order searching. The Change Request status is not displayed on the purchase order and does not affect whether suppliers can reference the purchase order on their documents.</p>
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Pending:</span>&#160;the change request has not been accepted or rejected by the supplier. </p>
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Accepted:</span> the change request has been reviewed and accepted by the supplier.</p>
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Rejected:</span>&#160;the change request has been reviewed and rejected by the supplier. </p>
+  <p dir="ltr" class="FM_Heading_2">Invoice Fulfillment Status</p>
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>New: there are no invoices that reference the purchase order. </p>
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>Full: total amount invoiced for all purchase order lines is greater than or equal to the purchase order line amount.</p>
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>Partial: at least one purchase order line has at least one invoice against it, and at least one purchase order line is not fully invoiced (amount invoiced for the line is less than the amount of the line).</p>
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>Inactive: purchase orders that have been cancelled or closed within the last 90 days. </p>
+  <p dir="ltr" class="FM_Heading_2">Ticket Fulfillment Status</p>
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Fully Received:</span>&#160;the total amount received for all purchase order lines is greater than or equal to the purchase order line amount.</p>
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Partially Received:</span>&#160;at least one purchase order line has been partially received (amount received for the line is less than the amount of the line).</p>
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Not Received:</span> There are no tickets that reference the purchase order.</p>
+  <p dir="ltr" class="FM_Heading_1"><a name="XREF_64415_Purchase_Order"></a>Purchase Orders Portlet</p>
+
+  <p dir="ltr" class="FM_Body_Style">The <span style="font-weight : bold; ">Purchase Orders</span>&#160;portlet is displayed on the Invoice Dashboard. The portlet displays counts and provides direct access to purchase orders that the user is responsible for processing. The portlet includes the same set of purchase orders for both dashboards; however, the fulfillment classification is based on the dashboard being viewed.</p>
+
+  <div align="center"><img alt="PO_Overview_POportletinvoicedashboardBuyer.jpg" id="image230" src="../../../../assets/PO_Overview_POportletinvoicedashboardBuyer.jpg" style="max-width: 100% ;height: auto" />
+  </div>
+  <p dir="ltr" class="FM_Screenshot_Anchor">&nbsp;</p>
+
+  <p dir="ltr" class="FM_Body_Style">Portlet Displayed on the Invoice Dashboard</p>
+
+  <p dir="ltr" class="FM_Heading_2">Purchase Orders Portlet Categories</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>The <span style="font-weight : bold; ">Count</span> column includes all purchase orders that are in the corresponding status:</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Pending:</span>&#160;submitted to the supplier but not yet accepted or rejected by the supplier. Previously accepted purchase orders with an outstanding change request are included in this category.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Accepted:</span>&#160;accepted by the supplier and are available for reference on tickets or invoices. Accepted purchase orders with either an outstanding change request or a rejected change request are included in this category.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Rejected:</span>&#160;supplier has rejected the last submitted version of the purchase order. Accepted purchase orders with a rejected change request are included in this category.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Inactive:</span> closed or cancelled in the last 90 days.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>The <span style="font-weight : bold; ">Invoice Fulfillment </span>columns on the Invoice Dashboard provide information on the fulfillment of the purchase order from an invoicing perspective:</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">New: </span>purchase orders that are not referenced by any invoice.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Partial:</span>&#160;purchase orders that are referenced by at least one invoice but not all requested products/services have been invoiced.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Full:</span> purchase orders where all requested products/services have been invoiced.</p>
+
+  <p dir="ltr" class="FM_Heading_1"><span style="font-weight : normal; font-size  : 10.0pt; "></span><a name="XREF_92610_Purchase_Order"></a>Purchase Order Search</p>
+  <p dir="ltr" class="FM_Body_Style">This section describes the procedure for searching for purchase orders.</p>
+  <p dir="ltr" class="FM_Heading_2_HowTo">How to Search for Purchase Orders</p>
+  <p dir="ltr" class="FM_Body_Style">Use this procedure to search for purchase orders. </p>
+  <p dir="ltr" class="FM_Permission___Start"><span class="FM_Bold">Permission:<span style="padding-left: 21pt;" class="FMAutoNumber_1"></span></span>PO View</p>
+  <p dir="ltr" class="FM_Steps"><span class="FM_Bold">Steps:<span style="padding-left: 8pt;" class="FMAutoNumber_1"></span></span></p>
+  <p dir="ltr" class="FM_Number_List_1___Start"><span class="FM_Bullet4">1.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Select <span style="font-weight : bold; ">Invoice &gt; PO Search</span>.</p>
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">2.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Enter your search criteria.</p>
+  <p dir="ltr" class="FM_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 13pt;" class="FMAutoNumber_2"></span></span>If only part of the PO number or supplier name is known, an asterisk (*) must be used to denote the unknown part of the number or name. </p>
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">3.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Apply Filter</span>.</p>
+
+  <div align="center"><img alt="PO_Overview_POlistpageBuyer.jpg" id="image231" src="../../../../assets/PO_Overview_POlistpageBuyer.jpg" style="max-width: 100% ;height: auto" />
+  </div>
+  <p dir="ltr" class="FM_Screenshot_Anchor">&nbsp;</p>
+  <p dir="ltr" class="FM_Heading_2">Purchase Order List Page</p>
+  <p dir="ltr" class="FM_Body_Style">Search results will be displayed in a table based on the most recently accepted version of the purchase order, if one exists. If the purchase order has never been accepted, the most recently submitted version of the purchase order is displayed.</p>
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>Expand the <span style="font-weight : bold; ">Legend</span>&#160;for an overview of the icons found in the <span style="font-weight : bold; ">Action</span>&#160;column. These icons indicate actions that can be performed against the purchase order.</p>
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>Purchase order search results can be sorted by clicking a column heading. By default, purchase orders are sorted by the PO number.</p>
+  <p dir="ltr" class="FM_Heading_1"><a name="XREF_25512_Change_Requests"></a>Change Requests</p>
+  <p dir="ltr" class="FM_Body_Style">A change request allows a buyer to modify the contents of a purchase order without having to cancel the existing purchase order and create a new one.</p>
+  <p dir="ltr" class="FM_Heading_2">Viewing Changes on the Proposed Tab</p>
+  <p dir="ltr" class="FM_Body_Style">All change requests are visible on the <span style="font-weight : bold; ">Proposed</span>&#160;tab. In the top left corner of the tab, a legend explains the conventions indicating the differences between the current and proposed versions of the purchase order. </p>
+
+  <div align="center"><img alt="PO_Overview_changerequest.png" id="image232" src="../../../../assets/PO_Overview_changerequest.png" style="max-width: 100% ;height: auto" />
+  </div>
+  <p dir="ltr" class="FM_Screenshot_Anchor">&nbsp;</p>
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>A section header in red indicates that information in that section has been modified from the current version of the purchase order. Red text indicates information that has been modified.</p>
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>A yellow triangle in the <span style="font-weight : bold; ">Action</span>&#160;column of a table indicates that information in the row has been modified. </p>
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>A green square with a white plus symbol in the <span style="font-weight : bold; ">Action</span> column of a table indicates that the line was added.</p>
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>A red octagon with white minus symbol in the <span style="font-weight : bold; ">Action</span>&#160;column of a table indicates that the record has been removed.</p>
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>A red zero (<span style="font-weight : bold; color   : #dc1e32; ">0.00</span>) value in the line item details indicates that the buyer company has deleted the line. Revised values appear as red text. </p>
+  <p dir="ltr" class="FM_Body_Style">To facilitate comparison between the last accepted version of the purchase order and the proposed changes:</p>
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>line item details in the <span style="font-weight : bold; ">Proposed</span>&#160;tab will display the current value (black text) below any proposed value (red text).</p>
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>a value deleted by the buyer company will have a blank proposed value. </p>
+  <p dir="ltr" class="FM_Body_Style">Once a change request is accepted, the proposed version of the purchase order becomes the current version. Previously accepted versions can be viewed by clicking the <span style="font-weight : bold; ">Accepted</span> link in the PO Journal.</p>
+  <p dir="ltr" class="FM_Heading_2">Multiple Pending Change Requests</p>
+  <p dir="ltr" class="FM_Body_Style">Multiple pending change requests for a purchase order are accepted or rejected as a package. It is not possible to accept one pending change request and reject another. Everything in the <span style="font-weight : bold; ">Proposed </span>tab will either be accepted or rejected. If accepted, the change request will fully replace the current (last accepted) purchase order. If the supplier rejects the change requests, the last accepted version of the purchase order is maintained. An original purchase order that has not yet been accepted (viewed in the <span style="font-weight : bold; ">Proposed</span>&#160;tab) will be rejected along with the rest of the change request and there will not be an accepted version of the purchase order to reference. </p>
+  <p dir="ltr" class="FM_Heading_2">Impact of a Change Request on Existing Invoices and Tickets</p>
+  <p dir="ltr" class="FM_Body_Style">Invoices and tickets can only reference the last accepted version of a purchase order (viewed in the <span style="font-weight : bold; ">Current</span>&#160;tab). </p>
+  <p dir="ltr" class="FM_Body_Style">If a change request is accepted after an invoice or ticket is submitted, but the invoice or ticket has not yet been approved or disputed, compliance will be measured against the newly accepted version of the purchase order.</p>
+  <p dir="ltr" class="FM_Body_Style">If an invoice or ticket references a purchase order line that was deleted in the newly accepted version of the purchase order, the quantity is considered over-fulfilled and the red purchase order compliance alert will be triggered.</p>
+  <p dir="ltr" class="FM_Heading_1"><a name="XREF_51750_Purchase_Order"></a>Purchase Order Notifications</p>
+
+  <p dir="ltr" class="FM_Body_Style">The contact you provided in the <span style="font-weight : bold; ">Non-Billing Inquiries</span>&#160;address of the purchase order will automatically receive emails of the following supplier actions if the contact includes an email address. </p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>A purchase order or change request is accepted. </p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>A purchase order or change request is rejected. </p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>A purchase order is closed.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>A purchase order is reopened.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>A purchase order counter offer is submitted. </p>
+
+  <p dir="ltr" class="FM_Body_Style">The subject line of the email notification will include the supplier’s company name, the purchase order number, and the action taken. The body of the email notification will include the supplier’s company name, purchase order number, action taken, user who took the action, date and time the action was taken, and any comments the user entered when they took the action.</p>
+
+  <p dir="ltr" class="FM_Heading_1"><span style="font-weight : normal; font-size  : 10.0pt; "></span><a name="XREF_34743_Calculating"></a>Calculating Fulfillment</p>
+  <p dir="ltr" class="FM_Body_Style">This section provides information on how purchase order fulfillment is calculated. </p>
+  <p dir="ltr" class="FM_Heading_2">Calculating Ticket Purchase Order Amount Fulfillment</p>
+  <p dir="ltr" class="FM_Body_Style">Calculating the ticket purchase order amount fulfillment requires consideration of all tickets and all purchase order lines (detail or limit). The calculation is performed for each purchase order line, not the purchase order as a whole (over-fulfillment of a purchase order line cannot be offset by under-fulfillment of another line). A purchase order line is over-fulfilled when the total received amount is greater than the purchase order line amount.</p>
+  <p dir="ltr" class="FM_Body_Style">The total received amount for a given purchase order line is:</p>
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>The sum of the amount (subtotal less discount) on all submitted, confirmed, approved, and invoiced tickets referencing the purchase order line.</p>
+  <p dir="ltr" class="FM_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 13pt;" class="FMAutoNumber_2"></span></span>Tickets and purchase orders with mismatched currencies will be calculated as if they have the same currency. A yellow purchase order compliance alert is displayed for mismatched unit of measure.</p>
+  <p dir="ltr" class="FM_Heading_2">Calculating Ticket Purchase Order Quantity Fulfillment</p>
+  <p dir="ltr" class="FM_Body_Style">Calculating the ticket purchase order quantity fulfillment can only be done when a ticket refers to a detail purchase order line. The calculation is performed for each purchase order line, not the purchase order as a whole (over-fulfillment of a purchase order line cannot be offset by under-fulfillment of another line). A purchase order line is over-fulfilled when the total received quantity is greater than the purchase order line quantity.</p>
+  <p dir="ltr" class="FM_Body_Style">The total received quantity for a given purchase order line is:</p>
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>The sum of the quantity on all submitted, confirmed, approved, and invoiced tickets referencing the purchase order line.</p>
+  <p dir="ltr" class="FM_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 13pt;" class="FMAutoNumber_2"></span></span>Tickets and purchase orders with mismatched units of measure will be calculated as if they have the same unit of measure. A red purchase order compliance alert is displayed for mismatched currency.</p>
+  <p dir="ltr" class="FM_Heading_2">Calculating Invoice Purchase Order Amount Fulfillment</p>
+  <p dir="ltr" class="FM_Body_Style">Calculating the invoice purchase order amount fulfillment requires consideration of all invoices (detail or image) and all purchase order lines (detail or limit). The calculation is performed for each purchase order line, not the purchase order as a whole (over-fulfillment of a purchase order line cannot be offset by under-fulfillment of another line). A purchase order line is over-fulfilled when the total invoiced amount is greater than the purchase order line amount.</p>
+  <p dir="ltr" class="FM_Body_Style">Definition of invoiced amount:</p>
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">For detail invoices:</span>&#160;the line’s subtotal amount less the discount amount. This excludes taxes from the fulfillment calculation.</p>
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">For image invoices that have been split by a purchase order:</span>&#160;amount allocated to all non-tax coding records referring to the purchase order line. If the buyer chooses to include tax amounts in the non-tax coding records, those taxes are included in the fulfillment calculation.</p>
+  <p dir="ltr" class="FM_Body_Style">The total invoiced amount for a given purchase order line is:</p>
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>The sum of the amount on all submitted, resubmitted, on-hold, and approved debit invoice lines referencing the purchase order line.</p>
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>MINUS the sum of the amount on all submitted, resubmitted, on-hold, and approved credit invoice lines referencing the purchase order line.</p>
+  <p dir="ltr" class="FM_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 13pt;" class="FMAutoNumber_2"></span></span>Invoices and purchase orders with mismatched currencies will be calculated as if they have the same currency. A red purchase order compliance alert is displayed for mismatched currency.</p>
+  <p dir="ltr" class="FM_Heading_2"><a name="XREF_Toc357148665"></a><a name="XREF_Ref330797554"></a><a name="XREF_Ref330797550"></a>Calculating Invoice Purchase Order Quantity Fulfillment</p>
+  <p dir="ltr" class="FM_Body_Style">Calculating the invoice purchase order quantity fulfillment can only be done when a detail invoice refers to a detail purchase order line. The calculation is performed for each purchase order line, not the purchase order as a whole (over-fulfillment of a purchase order line cannot be offset by under-fulfillment of another line). A purchase order line is over-fulfilled when the total invoiced quantity is greater than the purchase order line quantity.</p>
+  <p dir="ltr" class="FM_Body_Style">The total invoiced quantity for a given purchase order line is:</p>
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>The sum of the quantity on all submitted, resubmitted, on-hold, and approved debit invoice lines referencing the purchase order line.</p>
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>MINUS the sum of the quantity on all submitted, resubmitted, on-hold, and approved credit invoice lines referencing the purchase order line.</p>
+  <p dir="ltr" class="FM_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 13pt;" class="FMAutoNumber_2"></span></span>Invoices and purchase orders with mismatched units of measure will be calculated as if they have the same unit of measure. A yellow purchase order compliance alert is displayed for mismatched unit of measure.</p>
+  <p dir="ltr" class="FM_Heading_1"><a name="XREF_72790_Purchase_Order"></a>Purchase Order Compliance Alerts</p>
+  <p dir="ltr" class="FM_Body_Style">Purchase order compliance alerts notify both the buyer and supplier when an invoice or ticket is not in compliance with the referenced purchase order line. The alerts are categorized by severity—red or yellow—with red being the most severe and yellow being the least severe. An invoice or ticket that is compliant with the referenced purchase order line will have a green alert.</p>
+  <p dir="ltr" class="FM_Body_Style">Buyers have the ability to specify whether each purchase order line will tolerate a variance in price and/or over-fulfillment. If a purchase order line has been flagged as being tolerant, then the Amount Over-fulfillment, Quantity Over-fulfillment, and Price/Currency Mismatch (resulting from a rate mismatch) alerts presented on an invoice or ticket will be yellow instead of red. If the Price/Currency Mismatch results from a currency mismatch, the severity will always be red.</p>
+<div width="100%" align="left">
+  <table border-spacing="0" dir="ltr" class="table154" border-collapse="collapse" style="max-width: 100% ;height: auto">
+   <tr class="tr136">
+   <th class="td155">
+   <p dir="ltr" class="FM_CellHeading">Alert Name</p>
+</th>
+   <th class="td156">
+   <p dir="ltr" class="FM_CellHeading">Alert</p>
+</th>
+   <th class="td157">
+   <p dir="ltr" class="FM_CellHeading">Description</p>
+</th>
+</tr>
+   <tr class="tr158">
+   <td class="td159">
+   <p dir="ltr" class="FM_Table_Text">Purchase Order Compliant</p>
+</td>
+   <td class="td160">
+   <div align="center"><img alt="alert_GreenPOIcon.jpg" id="image233" src="../../../../assets/alert_GreenPOIcon.jpg" style="max-width: 100% ;height: auto" />
+   </div>
+   <p dir="ltr" class="FM_Table_Text">&nbsp;</p>
+</td>
+   <td class="td161">
+   <p dir="ltr" class="FM_Table_Text">The invoice line or ticket refers to a purchase order and all of the details on the invoice or ticket match the details on the purchase order.</p>
+</td>
+</tr>
+   <tr class="tr162">
+   <td class="td159">
+   <p dir="ltr" class="FM_Table_Text">Amount Over-fulfillment</p>
+</td>
+   <td class="td160">
+   <div align="center"><img alt="alert_RedPOIcon.jpg" id="image234" src="../../../../assets/alert_RedPOIcon.jpg" style="max-width: 100% ;height: auto" />
+   </div>
+   <p dir="ltr" class="FM_Table_Text">&nbsp;</p>
+   <div align="center"><img alt="alert_YellowPOIcon.jpg" id="image235" src="../../../../assets/alert_YellowPOIcon.jpg" style="max-width: 100% ;height: auto" />
+   </div>
+   <p dir="ltr" class="FM_Table_Text">&nbsp;</p>
+</td>
+   <td class="td161">
+   <p dir="ltr" class="FM_Table_Text">The total dollar value of all invoice lines or tickets referring to the purchase order line is greater than the dollar amount of the purchase order line.</p>
+</td>
+</tr>
+   <tr class="tr163">
+   <td class="td159">
+   <p dir="ltr" class="FM_Table_Text">Quantity Over-fulfillment</p>
+</td>
+   <td class="td160">
+   <div align="center"><img alt="alert_RedPOIcon.jpg" id="image236" src="../../../../assets/alert_RedPOIcon.jpg" style="max-width: 100% ;height: auto" />
+   </div>
+   <p dir="ltr" class="FM_Table_Text">&nbsp;</p>
+   <div align="center"><img alt="alert_YellowPOIcon_1.jpg" id="image237" src="../../../../assets/alert_YellowPOIcon_1.jpg" style="max-width: 100% ;height: auto" />
+   </div>
+   <p dir="ltr" class="FM_Table_Text">&nbsp;</p>
+</td>
+   <td class="td161">
+   <p dir="ltr" class="FM_Table_Text">The total quantity of all detail/itemized invoice lines or tickets referring to the detailed purchase order line is greater than the quantity of the purchase order line. Does not apply to unitemized image invoices or limit PO lines.</p>
+</td>
+</tr>
+   <tr class="tr90">
+   <td class="td159">
+   <p dir="ltr" class="FM_Table_Text">Price/Currency Mismatch</p>
+</td>
+   <td class="td160">
+   <div align="center"><img alt="alert_RedPOIcon.jpg" id="image238" src="../../../../assets/alert_RedPOIcon.jpg" style="max-width: 100% ;height: auto" />
+   </div>
+   <p dir="ltr" class="FM_Table_Text">&nbsp;</p>
+</td>
+   <td class="td161">
+   <p dir="ltr" class="FM_Table_Text">Either the rate or the currency of a detail/itemized invoice line or ticket is different than the rate or currency of the referenced detailed purchase order line. Does not apply to unitemized image invoices or limit PO lines.</p>
+</td>
+</tr>
+   <tr class="tr90">
+   <td class="td159">
+   <p dir="ltr" class="FM_Table_Text">Unit of Measure Mismatch</p>
+</td>
+   <td class="td160">
+   <div align="center"><img alt="alert_YellowPOIcon_2.jpg" id="image239" src="../../../../assets/alert_YellowPOIcon_2.jpg" style="max-width: 100% ;height: auto" />
+   </div>
+   <p dir="ltr" class="FM_Table_Text">&nbsp;</p>
+</td>
+   <td class="td161">
+   <p dir="ltr" class="FM_Table_Text">The unit of measure of a detail/itemized invoice line or ticket is different than the unit of measure of the referenced detail purchase order line. Does not apply to unitemized image invoices or limit PO lines.</p>
+</td>
+</tr>
+   <tr class="tr90">
+   <td class="td159">
+   <p dir="ltr" class="FM_Table_Text">Product/Service Mismatch</p>
+</td>
+   <td class="td160">
+   <div align="center"><img alt="alert_YellowPOIcon_3.jpg" id="image240" src="../../../../assets/alert_YellowPOIcon_3.jpg" style="max-width: 100% ;height: auto" />
+   </div>
+   <p dir="ltr" class="FM_Table_Text">&nbsp;</p>
+</td>
+   <td class="td161">
+   <p dir="ltr" class="FM_Table_Text">The supplier part # / item ID of a detailed invoice line or ticket is different than supplier part # / item ID of the referenced detailed purchase order line. Does not apply to image invoices or limit PO lines.</p>
+</td>
+</tr>
+   <tr class="tr164">
+   <td class="td159">
+   <p dir="ltr" class="FM_Table_Text">Requisitioner Mismatch</p>
+</td>
+   <td class="td160">
+   <div align="center"><img alt="alert_YellowPOIcon_4.jpg" id="image241" src="../../../../assets/alert_YellowPOIcon_4.jpg" style="max-width: 100% ;height: auto" />
+   </div>
+   <p dir="ltr" class="FM_Table_Text">&nbsp;</p>
+</td>
+   <td class="td161">
+   <p dir="ltr" class="FM_Table_Text">The requisitioner on an invoice line or ticket is different than the requisitioner on the referenced purchase order.</p>
+</td>
+</tr>
+   <tr class="tr100">
+   <td class="td159">
+   <p dir="ltr" class="FM_Table_Text">Price Book Mismatch</p>
+</td>
+   <td class="td160">
+   <div align="center"><img alt="alert_YellowPOIcon_5.jpg" id="image242" src="../../../../assets/alert_YellowPOIcon_5.jpg" style="max-width: 100% ;height: auto" />
+   </div>
+   <p dir="ltr" class="FM_Table_Text">&nbsp;</p>
+</td>
+   <td class="td161">
+   <p dir="ltr" class="FM_Table_Text">The price book on a detailed invoice or ticket is different than the price book on the referenced purchase order. Does not apply to image invoices.</p>
+   <p dir="ltr" class="FM_Table_Text"><span style="font-weight : bold; ">NOTE: </span>Invoices with a yellow Price Book Mismatch alert must be corrected before the invoice can continue through workflow.</p>
+</td>
+</tr>
+  </table>
+</div>
+  <p dir="ltr" class="FM_Body_Style">&nbsp;</p>
+ </div>
+</body>
+
+</html>
+

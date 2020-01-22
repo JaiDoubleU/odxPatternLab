@@ -1,0 +1,377 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+ <title>InvoiceCreation</title>
+
+ <link rel="stylesheet" href="../../../../OpenInvoiceForBuyers_master.css" type="text/css" />
+
+
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style>
+ <meta name="generator" content="Adobe FrameMaker 2017" />
+<script type="text/javascript" src="../../../../template/scripts/rh.min.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/common.min.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/topic.min.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/constants.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/utils.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/mhutils.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/mhlang.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/mhver.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/settings.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/XmlJsReader.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/loadparentdata.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/loadscreen.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/loadprojdata.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/mhtopic.js"></script>
+ <link rel="stylesheet" type="text/css" href="../../../../template/styles/topic.min.css">
+<script type="text/javascript" >
+gRootRelPath = "../../../..";
+gCommonRootRelPath = "../../../..";
+gTopicId = "1.8_2";
+</script>
+ <meta name="brsprev" value="OpenInvoiceForBuyers_master/Invoices/Invoice_Overview/InvoiceOverview/InvoiceOverview.htm">
+ <meta name="brsnext" value="OpenInvoiceForBuyers_master/Invoices/Invoice_Workflow/InvoiceWorkflow/InvoiceWorkflow.htm">
+ <meta name="topic-breadcrumbs" content="Administrator & User Guide for Buyers" />
+</head>
+
+<body dir="ltr">
+<script type="text/javascript" src="../../../../ehlpdhtm.js"></script>
+
+ <div dir="ltr">
+  <p dir="ltr" class="FM_Chapter_Title">Invoice Creation</p>
+
+  <p dir="ltr" class="FM_Body_Style">This section provides instructions on how to upload a. scanned copy of paper invoices you receive from the supplier outside of the <span data-name="ADP_Software_Name" data-val="OpenInvoice Platform" data-showval="TRUE" data-format="ADP_Software_Name">OpenInvoice Platform</span>.</p>
+
+  <p dir="ltr" class="FM_Body_Style">The following topics are applicable to users who scan and index invoices:</p>
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><a href="#XREF_14964_Duplicate_Invoice"><span class="FM_ADP_TG__Link">Duplicate Invoice Number Checking</span></a></p>
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><a href="#XREF_18100_Creating_an"><span class="FM_ADP_TG__Link">Creating an Invoice from an Image File</span></a></p>
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><a href="#XREF_93758_Creating_a_Credit"><span class="FM_ADP_TG__Link">Creating a Credit Invoice</span></a></p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><a href="#XREF_60776_Image_Search"><span class="FM_ADP_TG__Link">Image Search</span></a></p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><a href="#XREF_52769_Exporting_Image"><span class="FM_ADP_TG__Link">Exporting Image Files</span></a></p>
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><a href="#XREF_37731_Itemizing_an_Image"><span class="FM_ADP_TG__Link">Itemizing an Image Invoice</span></a></p>
+  <p dir="ltr" class="FM_Heading_1"><a name="XREF_14964_Duplicate_Invoice"></a>Duplicate Invoice Number Checking</p>
+  <p dir="ltr" class="FM_Body_Style"><span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>&#160;checks for duplicate invoice numbers prior to invoice submission. The following criteria must be met before the invoice can be submitted:</p>
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>The invoice number must be unique between the buyer company and supplier company (a supplier cannot submit an invoice number that has been previously submitted to the same buyer). </p>
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>The invoice number must be unique among supplier sites that share the same supplier number (a supplier cannot submit an invoice number that has been previously submitted by another site or supplier company who has the same supplier number assigned by the buyer). </p>
+  <p dir="ltr" class="FM_Body_Style">If the buyer company preference <span style="font-weight : bold; ">Enable Invoice Number Masking</span>&#160;is enabled, both originally-entered invoice numbers and system-generated masked invoice number are subjected to duplicate invoice number checking. Invoices with a duplicate number cannot be submitted and will fail to export.</p>
+  <p dir="ltr" class="FM_Body_Style">Invoice numbers restrict the special characters to prevent accidental duplication of invoices. The allowed special characters are: </p>
+  <p dir="ltr" class="FM_Schema_Text">! &quot; # $ % &amp; '&#160;( ) * + , - . &#160;/ : ; &lt; = &gt;&#160;? [ \ ] ^ | _ ` { | } ~</p>
+  <p dir="ltr" class="FM_Heading_1"><a name="XREF_18100_Creating_an"></a>Creating an Invoice from an Image File</p>
+  <p dir="ltr" class="FM_Body_Style">There are two ways to create Image OBO invoices. The accepted file types differ in the two methods.</p>
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Batch:</span>&#160;multiple image files are uploaded then indexed one at a time. Only image files (.jpg, .jpeg, .gif, .png and .tiff) and PDF files can be uploaded when batch processing.&#160;This method may be used to add new suppliers as part of the invoice indexing process. If the user is unable to complete the supplier setup, the invoice is put on-hold until a user with the Corporate Partnership permission is able to complete the process.</p>
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Single:</span> An image file is uploaded and indexed on the page where you select the supplier you are working with.&#160;PDF, Word, spreadsheet, jpg, .jpeg, .gif, .png, and .tiff image files are supported.</p>
+
+  <p dir="ltr" class="FM_Body_Style">Invoices created on behalf of a supplier can be itemized at any point in the invoice workflow. For instructions on how to itemize an invoice, refer to <a href="#XREF_37731_Itemizing_an_Image">Itemizing an Image Invoice</a>.</p>
+
+  <p dir="ltr" class="FM_Heading_2_HowTo">How to Upload and Index Image Invoices</p>
+
+  <p dir="ltr" class="FM_Permission___Start"><span class="FM_Bold">Permission:<span style="padding-left: 21pt;" class="FMAutoNumber_1"></span></span>Invoice Modify (IM)</p>
+
+  <p dir="ltr" class="FM_Steps"><span class="FM_Bold">Steps:<span style="padding-left: 8pt;" class="FMAutoNumber_1"></span></span></p>
+
+  <p dir="ltr" class="FM_Number_List_1___Start"><span class="FM_Bullet4">1.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Select <span style="font-weight : bold; ">Invoice &gt;  Dashboard</span> (under the Create Invoice column of menu).</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">2.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Enter the supplier name, number, postal/zip code, or site name to display a list of matching suppliers.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">3.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Select an entry from the list that appears as you type.</p>
+
+  <p dir="ltr" class="FM_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 13pt;" class="FMAutoNumber_2"></span></span>Only the first 10 matching entries are displayed in the list.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">4.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Select</span>. </p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">5.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Select <span style="font-weight : bold; ">Invoice &gt; Create Invoice</span> (under the Create Invoice column of menu).</p>
+
+  <p dir="ltr" class="FM_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 13pt;" class="FMAutoNumber_2"></span></span>The <span style="font-weight : bold; ">Create Invoice</span>&#160;submenu item is only available when you are acting on behalf of the supplier. Above the main navigation bar, the name of the supplier will be displayed next to your name. You are no longer working on behalf of the supplier after you navigate outside of the Create Invoice module.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">6.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Select a customer site, and department.</p>
+
+  <p dir="ltr" class="FM_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 13pt;" class="FMAutoNumber_2"></span></span>A field will automatically populate if it only has one option.</p>
+
+  <p dir="ltr" class="FM_Screenshot_Anchor"><span style="font-size: small;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+
+<div width="100%" align="left">
+  <table border-spacing="0" dir="ltr" class="table109" border-collapse="collapse" style="max-width: 100% ;height: auto">
+   <tr class="tr212">
+   <td class="td111">
+   <p dir="ltr" class="FM_Table_Text" style="display:inline"><img alt="InvoiceCreation_uploadANDindexsingle.png" id="image312" src="../../../../assets/InvoiceCreation_uploadANDindexsingle.png" style="max-width: 100% ;height: auto" />&nbsp;</p>
+</td>
+</tr>
+  </table>
+</div>
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">7.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Enter the <span style="font-weight : bold; ">Invoice Number</span>&#160;and invoice <span style="font-weight : bold; ">Description</span>.</p>
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">8.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Select a <span style="font-weight : bold; ">Currency</span>.</p>
+
+  <p dir="ltr" class="FM_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 13pt;" class="FMAutoNumber_2"></span></span>You can begin typing the name of the currency to narrow the list of selections as you type. This field will remember your last selection within your current session. </p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">9.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Enter the <span style="font-weight : bold; ">Service Date</span>. </p>
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">10.<span style="padding-left: 5pt;" class="FMAutoNumber_1"></span></span>Enter the <span style="font-weight : bold; ">Amount</span>. </p>
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">11.<span style="padding-left: 5pt;" class="FMAutoNumber_1"></span></span>(<span style="font-style : italic; ">Optional</span>) Enter or modify the <span style="font-weight : bold; ">Invoice Date</span>&#160;and <span style="font-weight : bold; ">Routing Code</span>.</p>
+  <p dir="ltr" class="FM_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 13pt;" class="FMAutoNumber_2"></span></span>The <span style="font-weight : bold; ">Invoice Date</span> will default to the current date.</p>
+  <p dir="ltr" class="FM_Note_Indent___Next"><span class="FM_Bold"><span style="padding-left: 54pt;" class="FMAutoNumber_1"></span></span>The <span style="font-weight : bold; ">Amount</span>&#160;is the total value of the invoice after all discounts and taxes have been applied. Do not include any <span style="font-weight : bold; ">Early Pay Discount</span> amounts.</p>
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">12.<span style="padding-left: 5pt;" class="FMAutoNumber_1"></span></span>To upload an image file, click <span style="font-weight : bold; ">Upload Image File</span>, then <span style="font-weight : bold; ">Choose File</span>. Navigate to the image file on your computer, click <span style="font-weight : bold; ">Open</span>, then click <span style="font-weight : bold; ">Upload</span>.</p>
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">13.<span style="padding-left: 5pt;" class="FMAutoNumber_1"></span></span>(<span style="font-style : italic; ">Optional)</span>&#160;Modify the <span style="font-weight : bold; ">Image File Description</span>.</p>
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">14.<span style="padding-left: 5pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Next</span>.</p>
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">15.<span style="padding-left: 5pt;" class="FMAutoNumber_1"></span></span>Do one or more of the following:</p>
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Edit Header</span> to modify the invoice header information.</p>
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Contact</span> to add a contact to this invoice.</p>
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Add Header Data</span>. </p>
+  <p dir="ltr" class="FM_Note_Indent2___Start"><span class="FM_Bold"><span style="padding-left: 36pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 13pt;" class="FMAutoNumber_2"></span></span>This option is only available if the buyer has configured additional data fields for the invoice header.</p>
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Itemize</span> to itemize the invoice.</p>
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Comment</span>.</p>
+  <p dir="ltr" class="FM_Note_Indent2___Start"><span class="FM_Bold"><span style="padding-left: 36pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 13pt;" class="FMAutoNumber_2"></span></span>This option is only available if the invoice has been saved at least once.</p>
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Attach File</span>.</p>
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">16.<span style="padding-left: 5pt;" class="FMAutoNumber_1"></span></span><span style="font-size  : 5.0pt; "></span>Do one or more of the following:</p>
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Save</span> to save the invoice. You can submit the invoice at a later time.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Submit</span> to submit the invoice into workflow immediately.</p>
+
+  <p dir="ltr" class="FM_Note_Indent2___Start"><span class="FM_Bold"><span style="padding-left: 36pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 13pt;" class="FMAutoNumber_2"></span></span>Upon submission, <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>&#160;will check to ensure the invoice number is unique. If a duplicate invoice number is found, the invoice cannot be submitted and an error message will appear.</p>
+  <p dir="ltr" class="FM_Heading_2_HowTo">How to Upload Multiple Image Files</p>
+
+  <p dir="ltr" class="FM_Permission___Start"><span class="FM_Bold">Permission:<span style="padding-left: 21pt;" class="FMAutoNumber_1"></span></span>Invoice Modify (IM)</p>
+
+  <p dir="ltr" class="FM_Steps"><span class="FM_Bold">Steps:<span style="padding-left: 8pt;" class="FMAutoNumber_1"></span></span></p>
+  <p dir="ltr" class="FM_Number_List_1___Start"><span class="FM_Bullet4">1.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Select <span style="font-weight : bold; ">Invoice &gt; Image Invoice Upload</span>.</p>
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">2.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click<span style="font-weight : bold; "> Select Files</span>, navigate and select the image files on your computer, then click <span style="font-weight : bold; ">Open</span>. </p>
+  <p dir="ltr" class="FM_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 13pt;" class="FMAutoNumber_2"></span></span>To select multiple items, hold the<span style="font-weight : bold; "> Ctrl</span>&#160;key and select the items. Alternatively, you can hold the <span style="font-weight : bold; ">Shift</span>&#160;key to select a range of items. If the files are in multiple folders, upload the files from one folder at a time.</p>
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">3.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Upload Files</span>.</p>
+  <div align="center"><img alt="InvoiceCreation_uploadmultiple.png" id="image313" src="../../../../assets/InvoiceCreation_uploadmultiple.png" style="max-width: 100% ;height: auto" />
+  </div>
+  <p dir="ltr" class="FM_Screenshot_Anchor">&nbsp;</p>
+  <p dir="ltr" class="FM_Heading_2_HowTo">How to Index Multiple Image Files</p>
+
+  <p dir="ltr" class="FM_Permission___Start"><span class="FM_Bold">Permission:<span style="padding-left: 21pt;" class="FMAutoNumber_1"></span></span>Invoice Modify (IM)</p>
+
+  <p dir="ltr" class="FM_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 13pt;" class="FMAutoNumber_2"></span></span>This process is used to index and submit invoices in the <span style="font-weight : bold; ">Working Queue</span>&#160;and <span style="font-weight : bold; ">Exception Queue</span>.</p>
+  <p dir="ltr" class="FM_Steps"><span class="FM_Bold">Steps:<span style="padding-left: 8pt;" class="FMAutoNumber_1"></span></span></p>
+  <p dir="ltr" class="FM_Number_List_1___Start"><span class="FM_Bullet4">1.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Do one of the following:</p>
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Immediately after uploading image invoice files on the <span style="font-weight : bold; ">Image Invoice Upload</span>&#160;page, click <span style="font-weight : bold; ">Image Invoice Processing</span>.</p>
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Select <span style="font-weight : bold; ">Invoice</span>&#160;&gt; <span style="font-weight : bold; ">Image Invoice Processing</span>.</p>
+  <p dir="ltr" class="FM_Note_Indent2___Start"><span class="FM_Bold"><span style="padding-left: 36pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 13pt;" class="FMAutoNumber_2"></span></span>The first invoice in the working queue will automatically open in a new window.</p>
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">2.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>(<span style="font-style : italic; ">Optional</span>) Apply a filter to find the appropriate image file.</p>
+  <p dir="ltr" class="FM_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 13pt;" class="FMAutoNumber_2"></span></span>Image files that have not been indexed and submitted to workflow are automatically deleted after 99 days. The <span style="font-weight : bold; ">Days To Deletion</span>&#160;field shows the number of days remaining. </p>
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">3.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click an image file from the <span style="font-weight : bold; ">Working Queue</span> tab.</p>
+  <div align="center"><img alt="InvoiceCreation_uploadthenindex2multiple.png" id="image314" src="../../../../assets/InvoiceCreation_uploadthenindex2multiple.png" style="max-width: 100% ;height: auto" />
+  </div>
+  <p dir="ltr" class="FM_Screenshot_Anchor">&nbsp;</p>
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">4.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Do one or more of the following:</p>
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Click the icon in the <span style="font-weight : bold; ">Send to Exception Queue</span>&#160;column if the invoice cannot be processed <br />at this time. You may enter a comment that will appear next to the file name in the <span style="font-weight : bold; ">Exception Queue</span> tab.</p>
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Click the <span style="font-weight : bold; ">Delete</span>&#160;icon, enter a <span style="font-weight : bold; ">Comment</span>, and click <span style="font-weight : bold; ">Submit</span>.</p>
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Index and submit the invoice using the steps below.</p>
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">5.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>(<span style="font-style : italic; ">Optional</span>) Enter a <span style="font-weight : bold; ">PO</span> number.</p>
+  <p dir="ltr" class="FM_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 13pt;" class="FMAutoNumber_2"></span></span>This will populate data on the form with the corresponding information from the purchase order.</p>
+
+  <p dir="ltr" class="FM_Note_Indent___Next"><span class="FM_Bold"><span style="padding-left: 54pt;" class="FMAutoNumber_1"></span></span>By default, if valid purchase orders exist in <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>&#160;for the supplier, the referenced purchase order must be one of the purchase orders in platform.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">6.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Select a supplier company and site:</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Enter a supplier name, number, postal zip/code, or site name.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Select an entry from the list that appears as you type.</p>
+
+  <p dir="ltr" class="FM_Note_Indent2___Start"><span class="FM_Bold"><span style="padding-left: 36pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 13pt;" class="FMAutoNumber_2"></span></span>Only the first 10 matching entries are displayed in the list. Click <span style="font-weight : bold; ">More </span>to view the complete list of matching suppliers.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">7.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>If necessary, create a new supplier:</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Add Supplier</span>.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Enter the supplier name and any other information that is known.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Submit</span>.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">8.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Select a <span style="font-weight : bold; ">Customer Site</span>&#160;and <span style="font-weight : bold; ">Customer Department</span>.</p>
+  <p dir="ltr" class="FM_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 13pt;" class="FMAutoNumber_2"></span></span>A field will automatically populate if it only has one option.</p>
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">9.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Enter the <span style="font-weight : bold; ">Invoice Number</span>, <span style="font-weight : bold; ">Invoice Date</span>, <span style="font-weight : bold; ">Description</span>, and <span style="font-weight : bold; ">Total Amount incl. Tax Amount</span>.</p>
+  <p dir="ltr" class="FM_Note_Indent___Next"><span class="FM_Bold"><span style="padding-left: 54pt;" class="FMAutoNumber_1"></span></span>The <span style="font-weight : bold; ">Amount</span>&#160;is the total value of the invoice after all discounts and taxes have been applied. Do not include any <span style="font-weight : bold; ">Early Pay Discount</span> amounts.</p>
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">10.<span style="padding-left: 5pt;" class="FMAutoNumber_1"></span></span>Select a <span style="font-weight : bold; ">Currency</span>.</p>
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">11.<span style="padding-left: 5pt;" class="FMAutoNumber_1"></span></span>(<span style="font-style : italic; ">Optional)</span>&#160;Enter <span style="font-weight : bold; ">Tax Type/Tax Amount</span>. </p>
+  <div align="center"><img alt="InvoiceCreation_TaxType.png" id="image315" src="../../../../assets/InvoiceCreation_TaxType.png" style="max-width: 100% ;height: auto" />
+  </div>
+  <p dir="ltr" class="FM_Screenshot_Anchor">&nbsp;</p>
+  <p dir="ltr" class="FM_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 13pt;" class="FMAutoNumber_2"></span></span>To enter more than one tax type/tax amount, click the <span style="font-weight : bold; ">Add</span> button.</p>
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">12.<span style="padding-left: 5pt;" class="FMAutoNumber_1"></span></span>(<span style="font-style : italic; ">Optional</span>) Modify the <span style="font-weight : bold; ">Service Date</span>&#160;and/or <span style="font-weight : bold; ">Routing Code</span>. </p>
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">13.<span style="padding-left: 5pt;" class="FMAutoNumber_1"></span></span>(<span style="font-style : italic; ">Optional) </span>Enter one or more <span style="font-weight : bold; ">Ticket No.</span></p>
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">14.<span style="padding-left: 5pt;" class="FMAutoNumber_1"></span></span>(<span style="font-style : italic; ">Optional)</span>&#160;Click <span style="font-weight : bold; ">Itemize</span>. </p>
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">15.<span style="padding-left: 5pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Submit</span>.</p>
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">16.<span style="padding-left: 5pt;" class="FMAutoNumber_1"></span></span>Repeat steps 2 through 16 to index another uploaded file.</p>
+  <p dir="ltr" class="FM_Heading_1"><a name="XREF_93758_Creating_a_Credit"></a>Creating a Credit Invoice</p>
+  <p dir="ltr" class="FM_Heading_2_HowTo">How to <span style="font-weight : normal; font-size  : 10.0pt; color   : #000000; "></span>Create a Credit Invoice from an Image File</p>
+
+  <p dir="ltr" class="FM_Permission___Start"><span class="FM_Bold">Permission:<span style="padding-left: 21pt;" class="FMAutoNumber_1"></span></span>Invoice Modify (IM)</p>
+
+  <p dir="ltr" class="FM_Steps"><span class="FM_Bold">Steps:<span style="padding-left: 8pt;" class="FMAutoNumber_1"></span></span></p>
+  <p dir="ltr" class="FM_Number_List_1___Start"><span class="FM_Bullet4">1.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Following the process for <a href="#XREF_18100_Creating_an">Creating an Invoice from an Image File</a>, enter the invoice amount as a negative value.</p>
+  <p dir="ltr" class="FM_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 13pt;" class="FMAutoNumber_2"></span></span>The <span style="font-weight : bold; ">Amount</span>&#160;is the total value of the invoice after all discounts and taxes have been applied. Do not include any <span style="font-weight : bold; ">Early Pay Discount</span> amounts.</p>
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">2.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Submit</span>.</p>
+  <p dir="ltr" class="FM_Heading_1"><a name="XREF_37731_Itemizing_an_Image"></a>Itemizing an Image Invoice</p>
+  <p dir="ltr" class="FM_Body_Style">Itemization breaks the total invoice amount into separate lines with the product/service description, quantity, unit of measure, rate, and any applicable discounts. Itemization adds detail lines to the invoice allowing for the same level of reconciliation that can be performed on a traditional invoice. The only difference is that the itemized invoice does not reference a supplier’s catalog in the <span data-name="ADP_Software_Name" data-val="OpenInvoice Platform" data-showval="TRUE" data-format="ADP_Software_Name">OpenInvoice Platform</span>.</p>
+  <p dir="ltr" class="FM_Heading_2_HowTo">How to <a name="XREF_33513_How_to_Itemize_an"></a>Itemize an Image Invoice</p>
+  <p dir="ltr" class="FM_Body_Style">This section provides the procedures for itemizing image invoices. </p>
+  <p dir="ltr" class="FM_Heading_4">To itemize an invoice that is not yet submitted:</p>
+
+  <p dir="ltr" class="FM_Permission___Start"><span class="FM_Bold">Permission:<span style="padding-left: 21pt;" class="FMAutoNumber_1"></span></span>Invoice Modify (IM) for Image OBO or Image Post invoices</p>
+
+  <p dir="ltr" class="FM_Permission___Next"><span class="FM_Bold"><span style="padding-left: 72pt;" class="FMAutoNumber_1"></span></span>Invoice Modify for Image Scan invoices not itemized by the supplier</p>
+
+  <p dir="ltr" class="FM_Note___Start"><span class="FM_Bold">Note:<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span><span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>&#160;will delete your itemization details if the supplier changes the invoice amount on a disputed Image Scan invoice that you have itemized. The Invoice Journal will display a message stating line item details have been automatically removed.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Start"><span class="FM_Bullet4">1.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Do one of the following:</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Select <span style="font-weight : bold; ">Invoice &gt; Dashboard</span> (under Create Invoice column) and click one of the dashboard counters.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Perform a search by invoice number using the Global Search field in the main navigation bar.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Perform a search with multiple criteria by going to <span style="font-weight : bold; ">Invoice</span>&#160;&gt; <span style="font-weight : bold; ">Invoice Search</span>.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Itemize an invoice on the <span style="font-weight : bold; ">Image Invoice Processing</span> page before submitting the invoice.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">2.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Itemize</span>.</p>
+
+  <div align="center"><img alt="InvoiceCreation_itemizationwizardBuyer.png" id="image316" src="../../../../assets/InvoiceCreation_itemizationwizardBuyer.png" style="max-width: 100% ;height: auto" />
+  </div>
+  <p dir="ltr" class="FM_Screenshot_Anchor">&nbsp;</p>
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">3.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>In the Itemization Wizard window, enter the invoice information.</p>
+  <p dir="ltr" class="FM_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 13pt;" class="FMAutoNumber_2"></span></span>If the invoice references a purchase order in the platform, the Itemization Wizard will use the purchase order as a template. </p>
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">4.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Enter the product/service information in the lines.</p>
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Click in a field to make the entire row editable. Use the <span style="font-weight : bold; ">Tab</span>&#160;key to move from left to right or <span style="font-weight : bold; ">Shift</span>+<span style="font-weight : bold; ">Tab</span>&#160;to move from right to left. </p>
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Use the <span style="font-weight : bold; ">Enter</span>&#160;key to move to the first column of the next row. The <span style="font-weight : bold; ">Enter</span>&#160;key also adds a new row if the user is currently on the last row. </p>
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Use the arrow keys to move up and down in the same column. </p>
+  <p dir="ltr" class="FM_Note_Indent2___Start"><span class="FM_Bold"><span style="padding-left: 36pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 13pt;" class="FMAutoNumber_2"></span></span>The down arrow key also moves control to the buttons when on the last row.</p>
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">5.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>In each line, enter the <span style="font-weight : bold; ">Description</span>, <span style="font-weight : bold; ">Quantity</span>, and <span style="font-weight : bold; ">Rate</span>. All other fields are optional.</p>
+  <p dir="ltr" class="FM_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 13pt;" class="FMAutoNumber_2"></span></span>Enter <span style="font-weight : bold; ">1</span>&#160;in the <span style="font-weight : bold; ">Qty</span> field for tax lines.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">6.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>(<span style="font-style : italic; ">Optional)</span>&#160;The itemization wizard assumes the line item will have taxes applied. If a line item does not require taxes, select the <span style="font-weight : bold; ">Exclude Tax</span>&#160;checkbox. This option applies to Image OBO invoices. &#160;</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">7.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Submit</span>. </p>
+  <p dir="ltr" class="FM_Heading_4">To itemize an invoice that has been submitted and disputed by a buyer:</p>
+
+  <p dir="ltr" class="FM_Permission___Start"><span class="FM_Bold">Permission:<span style="padding-left: 21pt;" class="FMAutoNumber_1"></span></span>Invoice Modify (IM) for Image OBO or Image Post invoices</p>
+
+  <p dir="ltr" class="FM_Permission___Next"><span class="FM_Bold"><span style="padding-left: 72pt;" class="FMAutoNumber_1"></span></span>Invoice Modify for Image Scan invoices not itemized by the supplier</p>
+
+  <p dir="ltr" class="FM_Note___Start"><span class="FM_Bold">Note:<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span><span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>&#160;will delete your itemization details if the supplier changes the invoice amount on a disputed Image Scan invoice that you have itemized. The Invoice Journal will display a message stating line item details have been automatically removed.</p>
+
+  <p dir="ltr" class="FM_Steps"><span class="FM_Bold">Steps:<span style="padding-left: 8pt;" class="FMAutoNumber_1"></span></span></p>
+  <p dir="ltr" class="FM_Number_List_1___Start"><span class="FM_Bullet4">1.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Do one of the following:</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Select <span style="font-weight : bold; ">Invoice &gt; Dashboard</span> and click one of the dashboard counters.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Perform a search by invoice number using the Global Search field in the main navigation bar.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Perform a search with multiple criteria by going to <span style="font-weight : bold; ">Invoice</span>&#160;&gt; <span style="font-weight : bold; ">Invoice Search</span>.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Itemize an invoice on the <span style="font-weight : bold; ">Image Invoice Processing</span> page before submitting the invoice.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">2.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Itemize</span>.</p>
+  <div align="center"><img alt="InvoiceCreation_itemizationwizard.png" id="image317" src="../../../../assets/InvoiceCreation_itemizationwizard.png" style="max-width: 100% ;height: auto" />
+  </div>
+  <p dir="ltr" class="FM_Screenshot_Anchor">&nbsp;</p>
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">3.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>In the Itemization Wizard window, enter the invoice information.</p>
+  <p dir="ltr" class="FM_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 13pt;" class="FMAutoNumber_2"></span></span>If the invoice references a purchase order in the platform, the Itemization Wizard will use the purchase order as a template. </p>
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">4.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Enter the product/service information in the lines.</p>
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Click in a field to make the entire row editable. Use the <span style="font-weight : bold; ">Tab</span>&#160;key to move from left to right or <span style="font-weight : bold; ">Shift</span>+<span style="font-weight : bold; ">Tab</span>&#160;to move from right to left. </p>
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Use the <span style="font-weight : bold; ">Enter</span>&#160;key to move to the first column of the next row. The <span style="font-weight : bold; ">Enter</span>&#160;key also adds a new row if the user is currently on the last row. </p>
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Use the arrow keys to move up and down in the same column. </p>
+  <p dir="ltr" class="FM_Note_Indent2___Start"><span class="FM_Bold"><span style="padding-left: 36pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 13pt;" class="FMAutoNumber_2"></span></span>The down arrow key also moves control to the buttons when on the last row.</p>
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">5.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>In each line, enter the <span style="font-weight : bold; ">Description</span>, <span style="font-weight : bold; ">Quantity</span>, and <span style="font-weight : bold; ">Rate</span>. All other fields are optional.</p>
+  <p dir="ltr" class="FM_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 13pt;" class="FMAutoNumber_2"></span></span>Enter <span style="font-weight : bold; ">1</span>&#160;in the <span style="font-weight : bold; ">Qty</span> field for tax lines.</p>
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">6.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Submit</span>. </p>
+  <p dir="ltr" class="FM_Heading_2">Additional Information</p>
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>The <span style="font-weight : bold; ">Submit</span> button in the Itemization Wizard will not be available until the<span style="font-weight : bold; "> Total Amount</span>&#160;field equals the exact amount of the invoice.</p>
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>If the Itemization Wizard is accessed from the <span style="font-weight : bold; ">Image Invoice Processing page</span>, the invoice can be submitted after itemization.&#160;If the Itemization Wizard is accessed when viewing the image invoice, the invoice must be saved before any further actions can be taken.&#160;</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>If the itemization is changed, all prior coding is deleted (except for any short pay lines). Whenever the Itemization Wizard is opened and <span style="font-weight : bold; ">Submit</span>&#160;is clicked, the coding must be redone even if no changes have been made. To close the Itemization Wizard without deleting prior coding, click <span style="font-weight : bold; ">Cancel</span>.<a name="XREF_Buyers_Short_Pay"></a><a name="XREF_Short_Pay"></a><a name="XREF_Short_Pay_1"></a></p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>Tax lines must be added for any applicable taxes that were on the invoice.</p>
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>If the purchase order line is a detail line, then:</p>
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>The invoice line <span style="font-weight : bold; ">Description</span> is populated using the buyer’s description from the purchase order line.</p>
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>The invoice line <span style="font-weight : bold; ">Unit of Measure</span>&#160;and <span style="font-weight : bold; ">Rate</span>&#160;are populated with the corresponding information on the purchase order line.</p>
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>The <span style="font-weight : bold; ">Quantity</span> is defaulted to the remaining fulfillment quantity for the purchase order line.</p>
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>If the purchase order line is a limit order line, then:</p>
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>The invoice line <span style="font-weight : bold; ">Description</span> is populated using the buyer’s description from the purchase order.</p>
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>The invoice line <span style="font-weight : bold; ">Unit of Measure</span>, <span style="font-weight : bold; ">Rate</span>, and quantity information are not populated</p>
+  <p dir="ltr" class="FM_Heading_3">Itemization Wizard Details</p>
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Number of Lines:</span>&#160;number of lines on the invoice including tax lines and invoice level discounts. </p>
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Enter line discounts as:</span>&#160;select whether any applicable line item discounts should be applied by <span style="font-weight : bold; ">Amount</span>&#160;or <span style="font-weight : bold; ">Percentage</span>. All lines will have the same type of discount. </p>
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Error:</span> an icon will appear if there is an error in an entry. Click the icon to see an explanation of the error.</p>
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Discount:</span>&#160;may be a percentage or amount depending on the option selected in the <span style="font-weight : bold; ">Enter line discounts as </span>field. </p>
+  <p dir="ltr" class="FM_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 13pt;" class="FMAutoNumber_2"></span></span>Do not enter Early Pay discounts here. </p>
+
+  <p dir="ltr" class="FM_Heading_1"><a name="XREF_60776_Image_Search"></a>Image Search</p>
+
+  <p dir="ltr" class="FM_Body_Style">Search for image files that have been uploaded, deleted, and invoiced. You can search by file name, date range, and/or document status. </p>
+
+  <p dir="ltr" class="FM_Body_Style">Results will display the file name, status, status date, invoice number (if the file has been invoiced), and comments (if any). The <span style="font-weight : bold; ">Action</span>&#160;column allows you to view or download your file. If you have the Invoice View permission for an invoice you can view it by clicking on the invoice number. Configure your search result columns by clicking the plus icon next to the <span style="font-weight : bold; ">Action</span> column.</p>
+
+  <p dir="ltr" class="FM_Heading_2_HowTo">How to Search for Image Files</p>
+
+  <p dir="ltr" class="FM_Permission___Start"><span class="FM_Bold">Permission:<span style="padding-left: 21pt;" class="FMAutoNumber_1"></span></span>Invoice Modify (IM)</p>
+
+  <p dir="ltr" class="FM_Steps"><span class="FM_Bold">Steps:<span style="padding-left: 8pt;" class="FMAutoNumber_1"></span></span></p>
+
+  <p dir="ltr" class="FM_Number_List_1___Start"><span class="FM_Bullet4">1.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Select <span style="font-weight : bold; ">Invoice</span>&#160;&gt; <span style="font-weight : bold; ">Search Images</span> (under the Create Invoice column).</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">2.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Enter your search criteria.</p>
+
+  <p dir="ltr" class="FM_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 13pt;" class="FMAutoNumber_2"></span></span>If only part of the file name is known, an asterisk (*) must be used to denote the unknown part of the name. </p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">3.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Search</span>.</p>
+
+<div width="100%" align="left">
+  <table border-spacing="0" dir="ltr" class="table109" border-collapse="collapse" style="max-width: 100% ;height: auto">
+   <tr class="tr213">
+   <td class="td111">
+   <p dir="ltr" class="FM_Table_Text" style="display:inline"><img alt="InvoiceCreation_searchimages.png" id="image318" src="../../../../assets/InvoiceCreation_searchimages.png" style="max-width: 100% ;height: auto" />&nbsp;</p>
+   <p dir="ltr" class="FM_Table_Text">Example of results listed after searching for images.</p>
+</td>
+</tr>
+  </table>
+</div>
+  <p dir="ltr" class="FM_Heading_1"><a name="XREF_52769_Exporting_Image"></a>Exporting Image Files</p>
+  <p dir="ltr" class="FM_Body_Style">To analyze and report on images uploaded for processing in <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>, users can export image files in the Working and Exception queues on the <span style="font-weight : bold; ">Image Invoice Processing</span>&#160;page. Images are exported into a TSV file. </p>
+  <p dir="ltr" class="FM_Heading_2_HowTo">How to Export Image Files</p>
+
+  <p dir="ltr" class="FM_Permission___Start"><span class="FM_Bold">Permission:<span style="padding-left: 21pt;" class="FMAutoNumber_1"></span></span>Invoice Modify (IM)</p>
+
+  <p dir="ltr" class="FM_Steps"><span class="FM_Bold">Steps:<span style="padding-left: 8pt;" class="FMAutoNumber_1"></span></span></p>
+
+  <p dir="ltr" class="FM_Number_List_1___Start"><span class="FM_Bullet4">1.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Select <span style="font-weight : bold; ">Invoice</span>&#160;&gt; <span style="font-weight : bold; ">Image Invoice Processing</span> (under the Create Invoice column).</p>
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">2.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Next to the <span style="font-weight : bold; ">Working Queue</span>&#160;and <span style="font-weight : bold; ">Exception Queue</span>&#160;tabs, click the <span style="font-weight : bold; ">Export Lists</span> button.</p>
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">3.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Select the queues you want to export.</p>
+  <div align="center"><img alt="InvoiceCreation_exportimages.png" id="image319" src="../../../../assets/InvoiceCreation_exportimages.png" style="max-width: 100% ;height: auto" />
+  </div>
+  <p dir="ltr" class="FM_Screenshot_Anchor">&nbsp;</p>
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">4.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Export</span>. </p>
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">5.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Save</span> to save the TSV file.</p>
+  <p dir="ltr" class="FM_Body_Style">&nbsp;</p>
+ </div>
+</body>
+
+</html>
+

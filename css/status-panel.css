@@ -1,0 +1,26 @@
+.status-panel .panel-body, .status-panel div[class*='col'] {
+    margin: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    text-align: center;
+}
+
+.status-panel div[class*='col']:not(:first-child) {
+    border-left: 1px solid #ccc;
+}
+
+.status-panel .panel-heading {
+    background-color: white !important;
+    border-bottom: none;
+}
+
+.status-panel .panel-title {
+    border-bottom: 1px solid lightskyblue;
+    margin-bottom: 0;
+    display: block;
+}
+
+.status-panel .panel-body {
+    padding-top: 0 !important;
+    padding-bottom: 5px !important;
+}

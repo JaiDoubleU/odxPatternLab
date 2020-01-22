@@ -1,0 +1,30 @@
+<div class="modal fade in" style="display: block; position:static">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            {{#showModalHeader}}
+                <div class="modal-header">
+                    <div class="alert alert-warning" role="alert" style="position: fixed; top: 5px; width: 95%; z-index: 1;">
+                        <strong>{{ warningAlertHeadline }}:</strong> {{ warningAlertText }}
+                        {{# dismissableAlert }}
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span
+                                    aria-hidden="true">&times;</span></button>
+                            {{/ dismissableAlert }}
+                    </div>
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <div class="lead modal-title">
+                        {{loremIpsumShort}}
+                    </div>
+                </div>
+            {{/showModalHeader}}
+            <div class="modal-body">
+                <p>{{loremIpsumMed}}</p>
+            </div>
+            {{#showModalFooter}}
+                <div class="modal-footer">
+                    {{> atoms-btn:btn-default ("buttonText": "No")}}
+                    {{> atoms-btn:btn-success ("buttonText": "Yes")}}
+                </div>
+            {{/showModalFooter}}
+        </div>
+    </div>
+</div>

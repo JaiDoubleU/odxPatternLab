@@ -1,0 +1,5 @@
+/* Compact the table as much as possible */
+#bulkUpdateModal #allocationsFld .table tr td {
+    border: none;
+    padding: 2px;
+}

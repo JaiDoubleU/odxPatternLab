@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+ <title>IntegrationImports_User</title>
+
+ <link rel="stylesheet" href="../../../../OpenInvoiceForBuyers_master.css" type="text/css" />
+
+
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style>
+ <meta name="generator" content="Adobe FrameMaker 2017" />
+<script type="text/javascript" src="../../../../template/scripts/rh.min.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/common.min.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/topic.min.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/constants.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/utils.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/mhutils.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/mhlang.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/mhver.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/settings.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/XmlJsReader.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/loadparentdata.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/loadscreen.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/loadprojdata.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/mhtopic.js"></script>
+ <link rel="stylesheet" type="text/css" href="../../../../template/styles/topic.min.css">
+<script type="text/javascript" >
+gRootRelPath = "../../../..";
+gCommonRootRelPath = "../../../..";
+gTopicId = "";
+</script>
+ <meta name="brsprev" value="OpenInvoiceForBuyers_master/Integrations/Integration_Imports/IntegrationImports_CostCollection/IntegrationImports_CostCollection.htm">
+ <meta name="brsnext" value="OpenInvoiceForBuyers_master/Integrations/Integration_Imports/IntegrationImports_InvoiceResponse/IntegrationImports_InvoiceResponse.htm">
+ <meta name="topic-breadcrumbs" content="Administrator & User Guide for Buyers > Integration Imports" />
+</head>
+
+<body dir="ltr">
+<script type="text/javascript" src="../../../../ehlpdhtm.js"></script>
+
+ <div dir="ltr">
+  
+  <p dir="ltr" class="FM_ADP_TG_Heading_1"><a name="TOC_User_Import"></a><a name="XREF_72703_User_Import"></a>User Import</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Body_Style">The user information files used in your company’s back office is imported to ensure the <span data-name="ADP_Software_Name" data-val="OpenInvoice Platform" data-showval="TRUE" data-format="ADP_Software_Name">OpenInvoice Platform</span>&#160;corresponds. Information on each user such as name, contact information, approval levels, authorization limits, and delegations, can be included in the file. Each User Import file may include multiple users and associated business rules. </p>
+
+  <p dir="ltr" class="FM_ADP_TG_Body_Style">User Import files are in XML format. The maximum size of each file is 3 MB. Larger files may time out and result in a failed import.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Body_Style">The User Import is not a scheduled service. Instead, you will post the files as necessary or you can schedule the service in <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>. The file is not saved on the secure server but is, instead, redirected to the <span data-name="ADP_Software_Name" data-val="OpenInvoice Platform" data-showval="TRUE" data-format="ADP_Software_Name">OpenInvoice Platform</span> if not posted there directly.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Heading_2">Business Rules for Usernames</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Body_Style">The UserName element is the user’s sign in name. If this element is not present, the base username is derived from the user’s first name, middle initial, and last name.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Body_Style">Usernames are never updated for existing users. If the username already exists when creating a new user, a suffix will be added to the base username with the lowest possible integer in order to get a unique username. For example, if the import identifies a new user with &lt;Username&gt;joehsmith&lt;/Username&gt; or  &lt;FirstName&gt;Joe&lt;/FirstName&gt; &lt;Initial&gt;H&lt;/Initial&gt; &lt;LastName&gt;Smith&lt;/LastName&gt; and  joehsmith, joehsmith1, joehsmith2 and joehsmith123 already exist as system usernames, the assigned username for the new user will be joehsmith3.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Body_Style">If a username is less than six characters, it will be padded with zeros and the lowest possible integer suffix to get a unique username. For example, &lt;Username&gt;hge&lt;/Username&gt; would result in the username hge001.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Body_Style">User profile email addresses support the use of ampersand (&amp;), apostrophe (') and plus (+) characters. The ampersand and apostrophe characters must be encoded in the import file as &amp;amp; and &amp;apos; respectively. For example, <span style="font-weight : bold; ">Joe.O’Mally@nobody.com</span>&#160;is encoded as <span style="font-weight : bold; ">Joe.O&amp;apos;Mally@nobody.com</span>.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Body_Style">Each time a new user is created during an import, a warning message will be added to the response file and sent back to the buyer.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Body_Style"><span style="font-weight : bold; ">Schema: </span>UserBatch.xsd</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Body_Style"><span style="font-weight : bold; ">See also: </span>UserImportIG.pdf</p>
+  <p dir="ltr" class="FM_ADP_TG_Body_Style">&nbsp;</p>
+ </div>
+</body>
+
+</html>
+

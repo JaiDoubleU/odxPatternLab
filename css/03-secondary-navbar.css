@@ -1,0 +1,23 @@
+/* custom colors */
+.navbar-default {
+    z-index: 999 !important; /* set one below the z-index of bootstrap's dropdown-menu class */
+    box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075) !important;
+}
+
+.navbar-default .form-control-static {
+    color:white;
+}
+
+/* classes to prevent btn-groups from wrapping */
+.btn-group.nowrap {
+    white-space: nowrap;
+}
+
+.btn-group.nowrap .btn {
+    display: inline-block;
+    float: none;
+}
+
+.btn-group.nowrap .btn +.btn {
+    margin-left: -1rem;
+}

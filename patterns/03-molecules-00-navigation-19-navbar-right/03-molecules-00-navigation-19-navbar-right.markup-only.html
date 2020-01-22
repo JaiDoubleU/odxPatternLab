@@ -1,0 +1,89 @@
+
+<ul class="nav navbar-nav" style="float:none;">
+    <li class="hidden visible-xs hidden-sm dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fas fa-search fa-fw"></i></a>
+        <ul class="dropdown-menu" style="padding: 15px;min-width: 250px;">
+            <li>
+                <div class="row">
+                    <div class="col-md-12">
+                        <form>
+                            <div class="input-group input-group-sm ">
+                                <span class="input-group-addon dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false">
+                                    <span class="caret"></span>
+                                </span>
+                                <ul class="dropdown-menu dropdown-menu-left">
+                                    <li onclick="setGlobalSearchPlaceholder($(this).first().text());"><a>Invoice #</a></li>
+                                    <li onclick="setGlobalSearchPlaceholder($(this).first().text());"><a href="#">Pricebook
+                                            #</a></li>
+                                    <li onclick="setGlobalSearchPlaceholder($(this).first().text());"><a href="#">Field
+                                            Ticket #</a></li>
+                                    <li onclick="setGlobalSearchPlaceholder($(this).first().text());"><a href="#">Purchase
+                                            Order #</a></li>
+                                </ul>
+
+                                <input class="form-control" id="globalSearch" placeholder="Invoice #">
+
+                                <span class="input-group-btn">
+                                    <button class="btn btn-default"><i class="fas fa-search fa-fw"></i></button>
+                                </span>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </li>
+    <li class="dropdown">
+        <a title="Message Centre" class="dropdown-toggle" data-toggle="dropdown" href="#">
+            <span class="badge badge-xs">49</span>
+            <i class="fas fa-envelope fa-fw"></i>
+            <span class="hidden-xs hide">Messages</span>
+        </a>
+        <ul class="dropdown-menu dropdown-menu-right">
+            <li>
+                <a title="Message Centre" href="#">
+                    <span class="fa-fw">
+                        <i class="fas fa-envelope"></i>
+                        Messages
+                    </span>
+                    <sup class="badge" style="background:#BE3A34">41</sup>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="fa-fw">
+                        <i class="fas fa-file-alt"></i>
+                        Completed Reports
+                    </span>
+                    <sup class="badge" style="background:#BE3A34">8</sup>
+                </a>
+            </li>
+        </ul>
+    </li>
+    <li class="dropdown">
+        <a title="Help Center" class="dropdown-toggle" data-toggle="dropdown" href="#">
+            <i class="fas fa-question-circle fa-fw"></i> <span class="hidden-xs hide">Help</span>
+        </a>
+        <ul class="dropdown-menu">
+            <li><a href="#"><i class="fas fa-life-ring fa-fw"></i> Contact Support</a></li>
+            <li><a href="#"><i class="fas fa-book fa-fw"></i> Resource Center</a></li>
+            <li><a href="#"><i class="fas fa-comment fa-fw"></i> Feedback</a></li>
+            <li><a href="#"><i class="fas fa-users fa-fw"></i> About</a></li>
+            <li><a href="#"><i class="fas fa-user-secret fa-fw"></i> Privacy</a></li>
+            <li><a href="#"><i class="fas fa-gavel fa-fw"></i> Terms</a></li>
+            <li><a href="#"><i class="fas fa-globe fa-fw"></i> Browsers</a></li>
+        </ul>
+    </li>
+    <li class="dropdown">
+        <a title="My Profile" class="dropdown-toggle" data-toggle="dropdown" href="#">
+            <i class="fas fa-user fa-fw"></i> <span class="hidden-xs hide">Profile</span>
+        </a>
+        <ul class="dropdown-menu dropdown-menu-right">
+            <li><a href="#"><i class="fas fa-user fa-fw"></i> Christopher Schwartzenberg</a></li>
+            <li><a href="#"><i class="fas fa-cog fa-fw"></i> Preferences</a></li>
+            <li><a href="#"><i class="fas fa-font fa-fw"></i> Font Size</a></li>
+        </ul>
+    </li>
+    <li><a title="Sign Out" href="#"><i class="fas fa-sign-out fa-fw"></i></a></li>
+</ul>

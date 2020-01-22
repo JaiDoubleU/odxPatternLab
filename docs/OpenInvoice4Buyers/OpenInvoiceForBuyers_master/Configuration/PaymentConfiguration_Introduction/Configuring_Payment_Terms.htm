@@ -1,0 +1,161 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+ <title>Configuring Payment Terms</title>
+
+ <link rel="stylesheet" href="../../../OpenInvoiceForBuyers_master.css" type="text/css" />
+
+
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style>
+ <meta name="generator" content="Adobe FrameMaker 2017" />
+<script type="text/javascript" src="../../../template/scripts/rh.min.js"></script>
+<script type="text/javascript" src="../../../template/scripts/common.min.js"></script>
+<script type="text/javascript" src="../../../template/scripts/topic.min.js"></script>
+<script type="text/javascript" src="../../../template/scripts/constants.js"></script>
+<script type="text/javascript" src="../../../template/scripts/utils.js"></script>
+<script type="text/javascript" src="../../../template/scripts/mhutils.js"></script>
+<script type="text/javascript" src="../../../template/scripts/mhlang.js"></script>
+<script type="text/javascript" src="../../../template/scripts/mhver.js"></script>
+<script type="text/javascript" src="../../../template/scripts/settings.js"></script>
+<script type="text/javascript" src="../../../template/scripts/XmlJsReader.js"></script>
+<script type="text/javascript" src="../../../template/scripts/loadparentdata.js"></script>
+<script type="text/javascript" src="../../../template/scripts/loadscreen.js"></script>
+<script type="text/javascript" src="../../../template/scripts/loadprojdata.js"></script>
+<script type="text/javascript" src="../../../template/scripts/mhtopic.js"></script>
+ <link rel="stylesheet" type="text/css" href="../../../template/styles/topic.min.css">
+<script type="text/javascript" >
+gRootRelPath = "../../..";
+gCommonRootRelPath = "../../..";
+gTopicId = "";
+</script>
+ <meta name="brsprev" value="OpenInvoiceForBuyers_master/Configuration/PaymentConfiguration_Introduction/Configuring_Unregistered_Suppliers.htm">
+ <meta name="brsnext" value="OpenInvoiceForBuyers_master/Configuration/PaymentConfiguration_Introduction/Payment_Scheduling.htm">
+ <meta name="topic-breadcrumbs" content="Administrator & User Guide for Buyers > Payment Configuration" />
+</head>
+
+<body dir="ltr">
+<script type="text/javascript" src="../../../ehlpdhtm.js"></script>
+<div dir="ltr">
+  <p dir="ltr" class="FM_ADP_TG_Heading_1"><a name="TOC_Configuring_Payment_Terms"></a>Configuring <a name="XREF_11573_Payment_Terms"></a>Payment Terms</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Body_Style"><span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>&#160;uses your configured payment terms to determine when and how to generate and schedule payments for your approved invoices. In addition to your company default payment schedule you are able to define a custom payment schedule for each supplier.</p>
+
+  <p dir="ltr" class="FM_ADP_TG__How_to__Heading_2">How to Configure Your Company’s Default Payment Terms</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Permission___Start"><span class="FM_Bold">Permission:<span style="padding-left: 18pt;" class="FMAutoNumber_1"></span></span>Corporate View and Payment Admin</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Steps"><span class="FM_Bold">Steps:<span style="padding-left: 6pt;" class="FMAutoNumber_1"></span></span></p>
+
+  <ol dir="ltr" start="1">
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Start">Go to <span style="font-weight : bold; ">Payment</span>&#160;&gt; <span style="font-weight : bold; ">Payment Terms</span>.</p>
+</li>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Configure your company’s default payment terms.</p>
+</li>
+   <div align="center"><img alt="PaymentGuides_paymentterms.png" id="image152" src="../../../assets/PaymentGuides_paymentterms.png" style="max-width: 100% ;height: auto" />
+   </div>
+   <p dir="ltr" class="FM_ADP_TG_Screenshot_Anchor">&nbsp;</p>
+
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Click <span style="font-weight : bold; ">Submit</span>.</p>
+</li>
+  </ol>
+  <p dir="ltr" class="FM_ADP_TG_Heading_3">Default Payment Term Details</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 12pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">By default, schedule Payment:</span>&#160;defines how <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>&#160;will calculate the date that the invoice will be paid using either the invoice date as entered by the supplier, or the date that the supplier submitted the invoice in OpenInvoice. For example, assume the invoice date is May 1 and the submission date is May 5. If the setting is 15 days after invoice date, the invoice will be paid on May 16. If the setting is 15 days after invoice submission, the invoice will be paid on May 20.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 12pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Finance my Payments every:</span>&#160;days of the week that <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>’s money movement partner can withdraw funds from your bank account in order to finance your payments.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 12pt;" class="FMAutoNumber_2"></span></span>This setting applies to all payment accounts.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 12pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Generate Payments on:</span>&#160;determines when <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>&#160;generates a payment record. If <span style="font-weight : bold; ">Invoice Approval</span>&#160;is selected, <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>&#160;will automatically generate a payment record when the invoice status changes to Approved. If <span style="font-weight : bold; ">Invoice Release For Payment</span>&#160;is selected, <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>&#160;will wait until a Release for Payment action is received from your financial system.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 12pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Allow same day financing:</span>&#160;determines if <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>’s money movement partner can withdraw funds from your account on the same day that the payment record is generated. By default, funds will be withdrawn at least one banking day after the payment is generated. </p>
+
+  <p dir="ltr" class="FM_ADP_TG_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 12pt;" class="FMAutoNumber_2"></span></span>This setting applies to all payment accounts. If this option is enabled, any payments that are financed on the same day the payment is generated will not be included in the payment notifications.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Note_Indent___Next"><span class="FM_Bold"><span style="padding-left: 54pt;" class="FMAutoNumber_1"></span></span>Same day financing is only available if the payment is posted to <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>’s money movement partner before 12:00 noon Mountain Time.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 12pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Release Payments</span>&#160;<span style="font-weight : bold; ">manually:</span>&#160;determines if a payment will be put on hold when the payment is generated. By default, the payment is automatically scheduled and processed without any user intervention. If this option is enabled, every payment must be released by a user before <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>’s money movement partner will withdraw funds from your account to pay the supplier. </p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 12pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Apply Credit automatically:</span>&#160;determines if available credits from a supplier will be automatically applied to future payments. By default, credits must be manually associated with a payment before the payment amount is reduced. If this option is enabled, the payment amount is automatically reduced by the amount of the available credit.</p>
+
+  <p dir="ltr" class="FM_ADP_TG__How_to__Heading_2">How to Configure Supplier-Specific Payment Terms</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Permission___Start"><span class="FM_Bold">Permission:<span style="padding-left: 18pt;" class="FMAutoNumber_1"></span></span>Corporate View and Payment Admin</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Prerequisite___Start"><span class="FM_Bold">Prerequisite:<span style="padding-left: 12pt;" class="FMAutoNumber_1"></span></span>The supplier must be enabled.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Steps"><span class="FM_Bold">Steps:<span style="padding-left: 6pt;" class="FMAutoNumber_1"></span></span></p>
+
+  <ol dir="ltr" start="1">
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Start">Go to <span style="font-weight : bold; ">Corporate</span>&#160;&gt; <span style="font-weight : bold; ">Suppliers</span>.</p>
+</li>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Do one of the following:</p>
+</li>
+   <p dir="ltr" class="FM_ADP_TG_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 12pt;" class="FMAutoNumber_1"></span></span>In the <span style="font-weight : bold; ">Suppliers</span>&#160;portlet, click the <span style="font-weight : bold; ">Enabled</span> counter.</p>
+
+   <p dir="ltr" class="FM_ADP_TG_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 12pt;" class="FMAutoNumber_1"></span></span>In the <span style="font-weight : bold; ">Tasks</span>&#160;portlet, click <span style="font-weight : bold; ">Search Suppliers</span> to perform a search.</p>
+
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">If necessary, apply a filter to narrow the list of suppliers.</p>
+</li>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Click the supplier site name.</p>
+</li>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">On the <span style="font-weight : bold; ">Supplier Configuration</span>&#160;page, click <span style="font-weight : bold; ">Edit</span>&#160;under the <span style="font-weight : bold; ">Payment Terms</span> section.</p>
+</li>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Select the supplier’s payment schedule configuration.</p>
+</li>
+   <p dir="ltr" class="FM_ADP_TG_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 12pt;" class="FMAutoNumber_2"></span></span>If modifying existing payment terms, your changes will be effective for newly approved invoices only.</p>
+
+   <div align="center"><img alt="PaymentGuides_supplierpaymentterms.png" id="image153" src="../../../assets/PaymentGuides_supplierpaymentterms.png" style="max-width: 100% ;height: auto" />
+   </div>
+   <p dir="ltr" class="FM_ADP_TG_Screenshot_Anchor">&nbsp;</p>
+
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Click <span style="font-weight : bold; ">Submit</span>.</p>
+</li>
+  </ol>
+  <p dir="ltr" class="FM_ADP_TG_Heading_3">Supplier-Specific Payment Terms</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Body_Style">Select from the following payment schedule configurations:</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 12pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Company Default: </span>uses your company’s default payment terms.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 12pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Never: </span>the supplier will not be paid through <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>. </p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 12pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Custom:</span>&#160;defines how <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>&#160;will calculate the date that invoices for this supplier will be paid using either the invoice date as entered by the supplier, or the date that the supplier submitted the invoice in OpenInvoice. For example, assume the invoice date is May 1 and the submission date is May 5. If the setting is 15 days after invoice date, the invoice will be paid on May 16. If the setting is 15 days after invoice submission, the invoice will be paid on May 20.</p>
+  </div>
+</body>
+</html>

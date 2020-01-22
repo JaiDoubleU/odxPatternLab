@@ -1,0 +1,103 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+ <title>IntegrationExports_ApprovedInvoices</title>
+
+ <link rel="stylesheet" href="../../../../OpenInvoiceForBuyers_master.css" type="text/css" />
+
+
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style>
+ <meta name="generator" content="Adobe FrameMaker 2017" />
+<script type="text/javascript" src="../../../../template/scripts/rh.min.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/common.min.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/topic.min.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/constants.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/utils.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/mhutils.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/mhlang.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/mhver.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/settings.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/XmlJsReader.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/loadparentdata.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/loadscreen.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/loadprojdata.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/mhtopic.js"></script>
+ <link rel="stylesheet" type="text/css" href="../../../../template/styles/topic.min.css">
+<script type="text/javascript" >
+gRootRelPath = "../../../..";
+gCommonRootRelPath = "../../../..";
+gTopicId = "";
+</script>
+ <meta name="brsprev" value="OpenInvoiceForBuyers_master/Integrations/Integration_Exports/IntegrationExports_UnapprovedInvoiceBatch/IntegrationExports_UnapprovedInvoiceBatch.htm">
+ <meta name="brsnext" value="OpenInvoiceForBuyers_master/Integrations/Integration_Exports/IntegrationExports_FieldCost/IntegrationExports_FieldCost.htm">
+ <meta name="topic-breadcrumbs" content="Administrator & User Guide for Buyers > Integration Exports" />
+</head>
+
+<body dir="ltr">
+<script type="text/javascript" src="../../../../ehlpdhtm.js"></script>
+
+ <div dir="ltr">
+  
+  <p dir="ltr" class="FM_ADP_TG_Heading_1"><a name="TOC_Approved_Invoices_Export"></a><a name="XREF_30348_Approved_Invoices"></a>Approved Invoices Export</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Body_Style">Invoices approved in the <span data-name="ADP_Software_Name" data-val="OpenInvoice Platform" data-showval="TRUE" data-format="ADP_Software_Name">OpenInvoice Platform</span>&#160;are exported to the secure server and/or your company’s back office. Approved invoices are exported in two scenarios:</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>invoices are coded and final approved within the <span data-name="ADP_Software_Name" data-val="OpenInvoice Platform" data-showval="TRUE" data-format="ADP_Software_Name">OpenInvoice Platform</span></p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>invoices are approved in the buyer’s back office and an Invoice Response file is sent to mark the invoice as approved in the <span data-name="ADP_Software_Name" data-val="OpenInvoice Platform" data-showval="TRUE" data-format="ADP_Software_Name">OpenInvoice Platform</span>. </p>
+
+  <p dir="ltr" class="FM_ADP_TG_Body_Style">The export transfers the final approved invoice to the buyer’s back office.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Body_Style">Approved Invoice Exports are transmitted in multi-part MIME format.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Body_Style">Both image and detail invoices can be exported. Different tag names in the XML are used to differentiate between image and detail invoices. </p>
+
+  <p dir="ltr" class="FM_ADP_TG_Body_Style">Click the action icon, then <span style="font-weight : bold; ">Select Invoices</span>&#160;to search for invoices you wish to export. Otherwise, all approved invoices will be exported according to the<span style="font-weight : bold; ">&#160;</span>service configuration setting.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Schedule: </span>run at specified time(s) of the day or in real time (invoices are exported within a few minutes of being approved in the <span data-name="ADP_Software_Name" data-val="OpenInvoice Platform" data-showval="TRUE" data-format="ADP_Software_Name">OpenInvoice Platform</span>&#160;regardless of the approval method— manual, automatic or integrated).</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Include All Attachments:</span> If set to<span style="font-weight : bold; "> Yes</span>, any attached backup documentation such as scanned invoices will be exported as well. </p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Generate PDF of Invoice on Export:</span>&#160;If set to <span style="font-weight : bold; ">Yes</span>, a PDF of the invoice will be created and transferred as an attachment along with the XML file.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Attachment/PDF Directory:</span>&#160;Location for any attachments or generated PDFs. </p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Filemask: </span>The location where the file will be sent and name of the created file.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Body_Style"><span style="font-weight : bold; ">Scheduled Service: </span>Approved Invoice Export</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Body_Style"><span style="font-weight : bold; ">Schema: </span><span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>’s SupplierConnectInvoice.xsd</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Body_Style"><span style="font-weight : bold; ">See also: </span>ApprovedInvoiceExportIG.pdf and ApprovedInvoiceExport_TRP.pdf </p>
+
+  <p dir="ltr" class="FM_ADP_TG_Body_Style" style="margin-top  : 8.000pt; margin-bottom : 8.000pt; font-weight : bold; font-size  : 20.0pt;">&nbsp;</p>
+ </div>
+</body>
+
+</html>
+

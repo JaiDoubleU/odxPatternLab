@@ -1,0 +1,916 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+ <title>CorporateConfig</title>
+
+ <link rel="stylesheet" href="../../../OpenInvoiceForBuyers_master.css" type="text/css" />
+
+
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style>
+ <meta name="generator" content="Adobe FrameMaker 2017" />
+<script type="text/javascript" src="../../../template/scripts/rh.min.js"></script>
+<script type="text/javascript" src="../../../template/scripts/common.min.js"></script>
+<script type="text/javascript" src="../../../template/scripts/topic.min.js"></script>
+<script type="text/javascript" src="../../../template/scripts/constants.js"></script>
+<script type="text/javascript" src="../../../template/scripts/utils.js"></script>
+<script type="text/javascript" src="../../../template/scripts/mhutils.js"></script>
+<script type="text/javascript" src="../../../template/scripts/mhlang.js"></script>
+<script type="text/javascript" src="../../../template/scripts/mhver.js"></script>
+<script type="text/javascript" src="../../../template/scripts/settings.js"></script>
+<script type="text/javascript" src="../../../template/scripts/XmlJsReader.js"></script>
+<script type="text/javascript" src="../../../template/scripts/loadparentdata.js"></script>
+<script type="text/javascript" src="../../../template/scripts/loadscreen.js"></script>
+<script type="text/javascript" src="../../../template/scripts/loadprojdata.js"></script>
+<script type="text/javascript" src="../../../template/scripts/mhtopic.js"></script>
+ <link rel="stylesheet" type="text/css" href="../../../template/styles/topic.min.css">
+<script type="text/javascript" >
+gRootRelPath = "../../..";
+gCommonRootRelPath = "../../..";
+gTopicId = "1.0_3";
+</script>
+ <meta name="brsprev" value="OpenInvoiceForBuyers_master/Overview_and_General_Info/OverviewGeneralInfo/OverviewGeneralInfo.htm">
+ <meta name="brsnext" value="OpenInvoiceForBuyers_master/Configuration/CostObjectConfig/CostObjectConfig.htm">
+ <meta name="topic-breadcrumbs" content="Administrator & User Guide for Buyers" />
+</head>
+
+<body dir="ltr">
+<script type="text/javascript" src="../../../ehlpdhtm.js"></script>
+
+ <div dir="ltr">
+  <p dir="ltr" class="FM_Chapter_Title"><a name="XREF_42332_Corporate"></a>Corporate Configuration</p>
+  <p dir="ltr" class="FM_Body_Style">This section provides instructions on how to configure <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>&#160;according to your company’s business practices and workflow. </p>
+  <p dir="ltr" class="FM_Body_Style">The following topics are applicable to company administrators who oversee company setup and configuration:</p>
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><a href="#XREF_73099_Organizational"><span class="FM_ADP_TG__Link">Organizational Structure and Overview</span></a></p>
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><a href="#XREF_66276_Initial_Company"><span class="FM_ADP_TG__Link">Initial Company Setup</span></a></p>
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><a href="#XREF_17608_Configuring_Sites"><span class="FM_ADP_TG__Link">Configuring Sites</span></a></p>
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><a href="#XREF_23555_Configuring"><span class="FM_ADP_TG__Link">Configuring Company Preferences</span></a></p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><a href="#XREF_71150_Managing_Reference"><span class="FM_ADP_TG__Link">Managing Reference Data</span></a></p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><a href="#XREF_31234_Configuring"><span class="FM_ADP_TG__Link">Configuring Default List Page Settings</span></a></p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><a href="#XREF_51365_Configuring_Taxes"><span class="FM_ADP_TG__Link">Configuring Taxes</span></a></p>
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><a href="#XREF_36322_Configuring"><span class="FM_ADP_TG__Link">Configuring Company Codes &amp; Defaults</span></a></p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><a href="#XREF_40513_Configuring_Early"><span class="FM_ADP_TG__Link">Configuring Early Pay Programs</span></a></p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><a href="#XREF_83024_Platform_Security"><span class="FM_ADP_TG__Link">Platform Security</span></a></p>
+  <p dir="ltr" class="FM_Heading_1"><span style="font-weight : normal; font-size  : 10.0pt; "></span><a name="XREF_73099_Organizational"></a>Organizational Structure and Overview</p>
+  <p dir="ltr" class="FM_Body_Style">All companies transacting in the <span data-name="ADP_Software_Name" data-val="OpenInvoice Platform" data-showval="TRUE" data-format="ADP_Software_Name">OpenInvoice Platform</span>&#160;are structured into sites, departments, and roles. This structure helps control user access to different functional areas of the platform; much like how employees perform office tasks based on their roles and responsibilities, <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>&#160;users are restricted to only those areas in the platform that pertain to their job functions. </p>
+  <p dir="ltr" class="FM_Body_Style">Your company consists of one or more sites. Inside each of these sites are one or more departments. Inside each department are one or more roles, and each role has a different set of permissions.</p>
+  <p dir="ltr" class="FM_Body_Style">In the example below, the company has two sites. Each site has two departments. Each department has two roles. </p>
+  <div align="center"><img alt="CorporateConfig_companystructure.jpg" id="image19" src="../../../assets/CorporateConfig_companystructure.jpg" style="max-width: 100% ;height: auto" />
+  </div>
+  <p dir="ltr" class="FM_Screenshot_Anchor">&nbsp;</p>
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Sites:</span> geographical locations where a company operates</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 12pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Subsidiaries:</span>&#160;similar to a site but is a separate legal entity within a company; the subsidiary name is displayed on the invoice instead of the company name. This option displays on the Add Site page.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Departments:</span> subdivisions of a site defined by the various functional areas of a company</p>
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Roles: </span>user groups defined by the specific work tasks they perform within a department</p>
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Permissions:</span> characteristics of roles and departments that allow users to perform their work tasks</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Licenses:</span>&#160;features assigned to provide user access to particular modules in <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span></p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Users:</span>&#160;employees assigned to any number of roles across one or more departments and sites to perform their work tasks</p>
+  <p dir="ltr" class="FM_Heading_1"><a name="XREF_66276_Initial_Company"></a>Initial Company Setup</p>
+
+  <p dir="ltr" class="FM_Body_Style"><span data-name="_OpenInvoice_Support" data-val="OpenInvoice Support" data-showval="TRUE" data-format="_OpenInvoice_Support">OpenInvoice Support</span>&#160;initially structures and configures your company in the <span data-name="ADP_Software_Name" data-val="OpenInvoice Platform" data-showval="TRUE" data-format="ADP_Software_Name">OpenInvoice Platform</span> with:</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>your company name (future company name changes will be updated in the platform by <span data-name="_OpenInvoice_Support" data-val="OpenInvoice Support" data-showval="TRUE" data-format="_OpenInvoice_Support">OpenInvoice Support</span>)</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>at least one administrative user with Membership and Corporate permissions who will internally complete your company’s setup</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>at least one site and department</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>purchased product licenses</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>bank account information if using <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span> to make payments</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>integration configuration which includes an optional secure server and electronic document job configuration for automatic importing and exporting of files</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>custom labels on the user interface which display the terminology used by your users in their everyday business practices. </p>
+
+  <p dir="ltr" class="FM_Body_Style">Unregistered suppliers cannot access the <span data-name="ADP_Software_Name" data-val="OpenInvoice Platform" data-showval="TRUE" data-format="ADP_Software_Name">OpenInvoice Platform</span>. Their company details are entered into <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span> by one of your users who has the Corporate Partnership permission.</p>
+
+  <p dir="ltr" class="FM_Heading_1"><a name="XREF_17608_Configuring_Sites"></a>Configuring Sites</p>
+  <p dir="ltr" class="FM_Body_Style">This section provides descriptions of the fields associated with site configuration and describes how to add, edit, deactivate, and delete sites. </p>
+  <p dir="ltr" class="FM_Heading_2">Site Profile Details</p>
+  <p dir="ltr" class="FM_Body_Style">This section provides the descriptions of the fields on the site profile page. </p>
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Site Name:</span>&#160;the name used to identify the site in <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span> and on all documents.</p>
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Site Code: </span>a code defined by your company’s ERP system. A site code is required when working with image invoice suppliers.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Organization Type: </span>will be <span style="font-weight : bold; ">Site</span>&#160;or <span style="font-weight : bold; ">Subsidiary</span>. Selecting <span style="font-weight : bold; ">Subsidiary</span>&#160;replaces the company name on invoices with the site name.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Location: </span>further describes the site name.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>Active: indicates if the site is active. </p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Comments:</span> additional comments regarding the site.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Primary Address </span>and <span style="font-weight : bold; ">Primary Contact:</span>&#160;address information that is displayed on document headers. Contact information is for internal purposes and, therefore, not displayed.</p>
+
+  <p dir="ltr" class="FM_Heading_2_HowTo"><a name="IX_Add"></a>How to <span style="font-size  : 10.0pt; color   : #000000; "></span>Add a Site</p>
+  <p dir="ltr" class="FM_Body_Style">Use this procedure to add a new site profile. </p>
+  <p dir="ltr" class="FM_Permission___Start"><span class="FM_Bold">Permission:<span style="padding-left: 18pt;" class="FMAutoNumber_1"></span></span>Corporate Admin</p>
+  <p dir="ltr" class="FM_Steps"><span class="FM_Bold">Steps:<span style="padding-left: 6pt;" class="FMAutoNumber_1"></span></span></p>
+  <p dir="ltr" class="FM_Number_List_1___Start"><span class="FM_Bullet4">1.<span style="padding-left: 11pt;" class="FMAutoNumber_1"></span></span>Select <span style="font-weight : bold; ">Corporate &gt; Sites</span>. </p>
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">2.<span style="padding-left: 11pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Add Site</span>.</p>
+
+  <div align="center"><img alt="CorporateConfig_configuringsitesBuyer.png" id="image20" src="../../../assets/CorporateConfig_configuringsitesBuyer.png" style="max-width: 100% ;height: auto" />
+  </div>
+  <p dir="ltr" class="FM_Screenshot_Anchor">&nbsp;</p>
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">3.<span style="padding-left: 11pt;" class="FMAutoNumber_1"></span></span><span style="font-size  : 5.0pt; "></span>Enter the site’s profile information.</p>
+
+  <div align="center"><img alt="CorporateConfig_siteprofileBuyer.png" id="image21" src="../../../assets/CorporateConfig_siteprofileBuyer.png" style="max-width: 100% ;height: auto" />
+  </div>
+  <p dir="ltr" class="FM_Screenshot_Anchor">&nbsp;</p>
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">4.<span style="padding-left: 11pt;" class="FMAutoNumber_1"></span></span><span style="font-size  : 5.0pt; "></span>Click <span style="font-weight : bold; ">Submit</span>. </p>
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">5.<span style="padding-left: 11pt;" class="FMAutoNumber_1"></span></span>Select <span style="font-weight : bold; ">Membership &gt; Departments &amp; Roles</span>&#160;from the main menu. </p>
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">6.<span style="padding-left: 11pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Add Department</span>. </p>
+
+  <div align="center"><img alt="CorporateConfig_addDepartment.jpg" id="image22" src="../../../assets/CorporateConfig_addDepartment.jpg" style="max-width: 100% ;height: auto" />
+  </div>
+  <p dir="ltr" class="FM_Screenshot_Anchor">&nbsp;</p>
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">7.<span style="padding-left: 11pt;" class="FMAutoNumber_1"></span></span><span style="font-size  : 5.0pt; "></span>Enter <span style="font-weight : bold; ">Department Name</span>, <span style="font-weight : bold; ">Site</span>, and <span style="font-weight : bold; ">Notification</span>&#160;user. The other fields are optional. </p>
+  <p dir="ltr" class="FM_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 12pt;" class="FMAutoNumber_2"></span></span>To search for a notification user, enter all or part of the user’s name and click the <span style="font-weight : bold; ">Search</span> icon.</p>
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">8.<span style="padding-left: 11pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Submit</span>. </p>
+
+  <div align="center"><img alt="CorporateConfig_addRole_Buyer.jpg" id="image23" src="../../../assets/CorporateConfig_addRole_Buyer.jpg" style="max-width: 100% ;height: auto" />
+  </div>
+  <p dir="ltr" class="FM_Screenshot_Anchor">&nbsp;</p>
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">9.<span style="padding-left: 11pt;" class="FMAutoNumber_1"></span></span><span style="font-size  : 5.0pt; "></span>Click <span style="font-weight : bold; ">Member</span>&#160;under organization roles. </p>
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">10.<span style="padding-left: 6pt;" class="FMAutoNumber_1"></span></span>Select one or more Non-Member users, then click <span style="font-weight : bold; ">Add &gt;</span>. </p>
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">11.<span style="padding-left: 6pt;" class="FMAutoNumber_1"></span></span>Select the checkbox under each permission you want to assign to the <span style="font-weight : bold; ">Member</span> role.</p>
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">12.<span style="padding-left: 6pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Add Role</span>. </p>
+  <div align="center"><img alt="CorporateConfig_AddingRole.jpg" id="image24" src="../../../assets/CorporateConfig_AddingRole.jpg" style="max-width: 100% ;height: auto" />
+  </div>
+  <p dir="ltr" class="FM_Screenshot_Anchor">&nbsp;</p>
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">13.<span style="padding-left: 6pt;" class="FMAutoNumber_1"></span></span>Enter <span style="font-weight : bold; ">Role Name</span>&#160;and <span style="font-weight : bold; ">Description</span> (<span style="font-style : italic; ">optional</span>). </p>
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">14.<span style="padding-left: 6pt;" class="FMAutoNumber_1"></span></span>Select <span style="font-weight : bold; ">Non-Members</span>, then click <span style="font-weight : bold; ">Add &gt;</span>&#160;to add the users as members. </p>
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">15.<span style="padding-left: 6pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Submit</span>. </p>
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">16.<span style="padding-left: 6pt;" class="FMAutoNumber_1"></span></span>Select the checkbox under each permission you want to assign to the new role.</p>
+  <p dir="ltr" class="FM_Heading_2_HowTo"><a name="IX_Edit"></a>How to Edit a Site</p>
+  <p dir="ltr" class="FM_Body_Style">Use this procedure to modify an existing site profile.</p>
+  <p dir="ltr" class="FM_Permission___Start"><span class="FM_Bold">Permission:<span style="padding-left: 18pt;" class="FMAutoNumber_1"></span></span>Corporate Admin</p>
+  <p dir="ltr" class="FM_Steps"><span class="FM_Bold">Steps:<span style="padding-left: 6pt;" class="FMAutoNumber_1"></span></span></p>
+  <p dir="ltr" class="FM_Number_List_1___Start"><span class="FM_Bullet4">1.<span style="padding-left: 11pt;" class="FMAutoNumber_1"></span></span>Select <span style="font-weight : bold; ">Corporate &gt; Sites</span>. </p>
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">2.<span style="padding-left: 11pt;" class="FMAutoNumber_1"></span></span>Click the site name to edit the site details.</p>
+
+  <div align="center"><img alt="CorporateConfig_configuringsitesBuyer.png" id="image25" src="../../../assets/CorporateConfig_configuringsitesBuyer.png" style="max-width: 100% ;height: auto" />
+  </div>
+  <p dir="ltr" class="FM_Screenshot_Anchor">&nbsp;</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">3.<span style="padding-left: 11pt;" class="FMAutoNumber_1"></span></span>Update the site details.</p>
+
+  <div align="center"><img alt="CorporateConfig_editsiteprofileBuyer.jpg" id="image26" src="../../../assets/CorporateConfig_editsiteprofileBuyer.jpg" style="max-width: 100% ;height: auto" />
+  </div>
+  <p dir="ltr" class="FM_Screenshot_Anchor">&nbsp;</p>
+  <p dir="ltr" class="FM_Screenshot_Anchor">&nbsp;</p>
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">4.<span style="padding-left: 11pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Submit</span>.</p>
+  <p dir="ltr" class="FM_Heading_2_HowTo"><a name="IX_Deactivate"></a>How to Deactivate a Site</p>
+  <p dir="ltr" class="FM_Body_Style">Use this procedure to deactivate a site profile. </p>
+  <p dir="ltr" class="FM_Permission___Start"><span class="FM_Bold">Permission:<span style="padding-left: 18pt;" class="FMAutoNumber_1"></span></span>Corporate Admin</p>
+  <p dir="ltr" class="FM_Steps"><span class="FM_Bold">Steps:<span style="padding-left: 6pt;" class="FMAutoNumber_1"></span></span></p>
+  <p dir="ltr" class="FM_Number_List_1___Start"><span class="FM_Bullet4">1.<span style="padding-left: 11pt;" class="FMAutoNumber_1"></span></span>Select <span style="font-weight : bold; ">Corporate &gt; Sites</span>. </p>
+
+  <div align="center"><img alt="CorporateConfig_configuringsitesBuyer.png" id="image27" src="../../../assets/CorporateConfig_configuringsitesBuyer.png" style="max-width: 100% ;height: auto" />
+  </div>
+  <p dir="ltr" class="FM_Screenshot_Anchor">&nbsp;</p>
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">2.<span style="padding-left: 11pt;" class="FMAutoNumber_1"></span></span><span style="font-size  : 5.0pt; "></span>Click the site name.</p>
+  <div align="center"><img alt="CorporateConfig_deactivatesite.jpg" id="image28" src="../../../assets/CorporateConfig_deactivatesite.jpg" style="max-width: 100% ;height: auto" />
+  </div>
+  <p dir="ltr" class="FM_Screenshot_Anchor">&nbsp;</p>
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">3.<span style="padding-left: 11pt;" class="FMAutoNumber_1"></span></span>Deselect the <span style="font-weight : bold; ">Active</span> checkbox to deactivate the site.</p>
+  <p dir="ltr" class="FM_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 12pt;" class="FMAutoNumber_2"></span></span>A Membership Admin user must first delete all departments from the site. If the departments are not deleted, you will receive an error message when attempting to deactivate the site.</p>
+  <p dir="ltr" class="FM_Note_Indent___Next"><span class="FM_Bold"><span style="padding-left: 54pt;" class="FMAutoNumber_1"></span></span>Outstanding invoices against the site must be approved or forwarded to another site. <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>&#160;does not check if there are tickets against the site’s departments.</p>
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">4.<span style="padding-left: 11pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Submit</span>.</p>
+  <p dir="ltr" class="FM_Heading_2_HowTo"><a name="IX_Delete"></a>How to Delete a Site</p>
+  <p dir="ltr" class="FM_Body_Style">Use this procedure to delete a site profile.</p>
+  <p dir="ltr" class="FM_Permission___Start"><span class="FM_Bold">Permission:<span style="padding-left: 18pt;" class="FMAutoNumber_1"></span></span>Corporate Admin</p>
+  <p dir="ltr" class="FM_Steps"><span class="FM_Bold">Steps:<span style="padding-left: 6pt;" class="FMAutoNumber_1"></span></span></p>
+  <p dir="ltr" class="FM_Number_List_1___Start"><span class="FM_Bullet4">1.<span style="padding-left: 11pt;" class="FMAutoNumber_1"></span></span>Select <span style="font-weight : bold; ">Corporate &gt; Sites</span>. </p>
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">2.<span style="padding-left: 11pt;" class="FMAutoNumber_1"></span></span>Click the <span style="font-weight : bold; ">Delete</span> icon to delete the site.</p>
+  <p dir="ltr" class="FM_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 12pt;" class="FMAutoNumber_2"></span></span>The delete icon will only be visible if the site is inactive.</p>
+
+  <div align="center"><img alt="CorporateConfig_configuringsitesBuyer.png" id="image29" src="../../../assets/CorporateConfig_configuringsitesBuyer.png" style="max-width: 100% ;height: auto" />
+  </div>
+  <p dir="ltr" class="FM_Screenshot_Anchor">&nbsp;</p>
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">3.<span style="padding-left: 11pt;" class="FMAutoNumber_1"></span></span><span style="font-size  : 5.0pt; "></span>Click <span style="font-weight : bold; ">OK</span> to confirm.</p>
+
+  <p dir="ltr" class="FM_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 12pt;" class="FMAutoNumber_2"></span></span>If the site is associated with a price book, remove the site from the price book prior to deleting.</p>
+
+  <p dir="ltr" class="FM_Heading_1"><a name="XREF_23555_Configuring"></a>Configuring Company Preferences</p>
+  <p dir="ltr" class="FM_Note___Start"><span class="FM_Bold">Note:<span style="padding-left: 12pt;" class="FMAutoNumber_1"></span></span>Some company preferences are <span data-name="ADP_Company_Name" data-val="Oildex" data-showval="TRUE" data-format="ADP_Company_Name">Oildex</span>-controlled and require additional documentation and approval before they can be configured. User access to invoice data fields may be configured to be hidden, view-only, or editable. Make sure users have the ability to edit all required fields.</p>
+  <p dir="ltr" class="FM_Heading_2">General Preferences</p>
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span class="FM_Bold"></span><span class="FM_Bold">Enable AFE or Cost Center Ownership</span><span class="FM_Bold">: AFEs and Cost Centers can each be assigned owner. Owners will be displayed on the forwarding screen of invoices pending approval and one of them will be the default owner. AFE and Cost Center approval levels may apply when approving an invoice.</span><span class="FM_Bold"></span></p>
+
+  <p dir="ltr" class="FM_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 12pt;" class="FMAutoNumber_2"></span></span><span class="FM_Bold">Cost object owners need to have the </span><span class="FM_Bold">Invoice Approve</span><span class="FM_Bold">&#160;permission to be included in the forwardee list of an invoice pending approval. This feature is not available when forwarding multiple invoices at once. </span></p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span class="FM_Bold">Enable Supplier Categorization</span>: allows users with the Corporate Partnership permission to assign a supplier type for each enabled supplier.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span class="FM_Bold">Enable Supplier Merge </span><span class="FM_Bold" style="font-style : italic; ">(Oildex-controlled)</span><span class="FM_Bold">: </span><span class="FM_Bold">allows merging of unregistered supplier sites and registered supplier sites with the same supplier number. All invoices and purchase orders from the unregistered supplier site are transferred. Once merging is complete, the unregistered supplier site is deleted. </span></p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span class="FM_Bold">Enable Units of Measure Compliance:</span>&#160;makes the units of measure field on an invoice line required for all direct entry and B2B suppliers. The actual units are entered under Reference Data. Direct entry suppliers must select a unit of measure value from the buyer’s predefined list. Invoices submitted from B2B suppliers will be disputed automatically on the buyer’s behalf if one of the invoice lines does not include a valid unit of measure value. Invoices submitted before the preference is enabled are not affected. The preference has no effect on receipts.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Company Assistance URL:</span>&#160;defines the address of a web page that your users are directed to if they have trouble accessing OpenInvoice. This URL will be included in messages sent to user email addresses during attempts to recover access. </p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span class="FM_Bold">Number of Custom Authorization Types </span><span class="FM_Emphasis">(<span data-name="ADP_Company_Name" data-val="Oildex" data-showval="TRUE" data-format="ADP_Company_Name">Oildex</span></span><span class="FM_Emphasis">-controlled</span><span class="FM_Emphasis" style="font-weight : bold; ">)</span><span class="FM_Bold">:</span>&#160;defines the maximum number of approval types which can be mapped to general ledger major codes.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span class="FM_Bold">Skin and Label Customization Identifier</span>&#160;<span class="FM_Emphasis">(<span data-name="ADP_Company_Name" data-val="Oildex" data-showval="TRUE" data-format="ADP_Company_Name">Oildex</span></span><span class="FM_Emphasis">-controlled)</span><span class="FM_Bold">:</span>&#160;customized <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>&#160;labels that correspond with the terminology used by buyer companies in their everyday business practices. This customized terminology is visible to suppliers where appropriate. </p>
+
+  <p dir="ltr" class="FM_Heading_2"><a name="XREF_48834_Security"></a>Security Preferences</p>
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span class="FM_Bold">Days to Password Expiry: </span>defines the number of days that a user can use the same password before being prompted to change it. Allowed values: an integer in the range 30 to 360. Default Value: 180.</p>
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span class="FM_Bold">Duration of Account Lockout: </span>defines the number of minutes that locked out users must wait before attempting to sign in again. If the preference is set to indefinite, an email notification is sent to all users with the Membership Admin permission, and a user with the Membership Modify permission must manually unlock the locked out user. Allowed values: indefinite, 5, 10, 15 or 30. Default value: 5. </p>
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span class="FM_Bold">Minimum Number of Hours Users Allowed Between Password Changes: </span>defines the number of hours users must wait after changing their own password before they can change it again. Allowed values: an integer in the range 24 to 999,999. Default value: 24.</p>
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span class="FM_Bold">Number of Previous Passwords Disallowed for Re-Use: </span>defines the number of historical passwords (including the current password) the system uses when validating a new password for a user. A new password cannot be in the historical list. Allowed values: an integer in the range of 4 to 999,999. Default value: 4.</p>
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span class="FM_Bold">Number of Successive Failed Sign In Attempts before Account Lockout:</span>&#160;defines the number of times a user can enter an incorrect password before being locked out of their account. The user will receive a message to contact support on their next login attempt. Allowed values: an integer in the range 3 to 8. Default value: 3.</p>
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Keep Me Signed In Enabled:</span>&#160;makes the Keep Me Signed In checkbox visible on the Sign In page. This feature is available to all users within your company. </p>
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Keep Me Signed In - Maximum Time Between Uses:</span>&#160;sets the maximum time frame between uses before a user’s token expires and they must manually sign in again. Allowed values: 1 hour, 4 hours, 8 hours, 1 day, 2 days, 1 week, 2 weeks, 30 days. Default value: 2 days.</p>
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Keep Me Signed In - IP Address Restriction Type:</span>&#160;specifies when users must be connected from a specified IP address in order to use the Keep Me Signed In feature. Allowed values: Never, On Opt-In, Always. Default value: Never.</p>
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Keep Me Signed In - Allowed IP Addresses: </span>manages the allowable IP addresses from which a user can use the <span style="font-weight : bold; ">Keep Me Signed In</span> feature.</p>
+
+  <p dir="ltr" class="FM_Heading_2">Invoice Content Preferences</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span class="FM_Bold">Enable Additional Line Item Description: </span>allows the buyer to enter an invoice line description in addition to the description entered by the supplier. A gray “DA” alert is displayed on lines with a buyer description. Moving the mouse over the alert will display the buyer’s description.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span class="FM_Bold">Require AFE or Cost Center: </span>makes the <span class="FM_Bold">AFE</span>&#160;and <span class="FM_Bold">Cost Center</span>&#160;fields required on an invoice line. A supplier must enter a valid value for one of the two fields before the line can be added to the invoice. This preference has no effect on B2B suppliers. </p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span class="FM_Bold">Require PO: </span>makes the purchase order number field on a detail invoice line required. Both purchase orders in the <span data-name="ADP_Software_Name" data-val="OpenInvoice Platform" data-showval="TRUE" data-format="ADP_Software_Name">OpenInvoice Platform</span>&#160;and external purchase orders are allowed. Invoices submitted from B2B suppliers will be disputed automatically on the buyer’s behalf if one of the invoice lines does not include a purchase order number. Image invoices are not affected.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span class="FM_Bold">Require Invoice Approver:</span>&#160;adds the <span class="FM_Bold">Invoice Approver</span>&#160;field to the invoice header and makes it required for direct entry suppliers. Displays the approver’s name and phone number as a contact in the supplementary information section of the invoice view screen for both suppliers and buyers. This preference has no effect on B2B suppliers. Buyer users who have been assigned an authorization level and an invoice permission in at least one department will populate the list of search results for the suppliers. </p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span class="FM_Bold">Require Invoice Line Service Dates:</span>&#160;makes the <span class="FM_Bold">service date</span>&#160;field(s) required on a detail invoice line and makes the service date field required on an image invoice. The Service Date field on a detail invoice header remains optional. Invoices submitted from B2B suppliers will be disputed automatically on the buyer’s behalf if any of the invoice lines do not include both service dates. </p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span class="FM_Bold">Restrict Field/Lease by AFE or Cost Center:</span>&#160;restricts the Field/Lease on an invoice coding record to the Field/Lease associated with the specified AFE or cost center.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span class="FM_Bold">Restrict Location by AFE or Cost Center:</span>&#160;restricts the Location on an invoice coding record to the Location associated with the specified AFE or cost center.</p>
+
+  <p dir="ltr" class="FM_Heading_2"><a name="XREF_65260_Invoice_Workflow"></a>Invoice Workflow Preferences</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span class="FM_Bold">Allow Forwarding to Invoice View-Only Users:</span><span class="FM_Bold">&#160;allows buyers to forward invoices to users with view-only permissions. </span></p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span class="FM_Bold">Days Following Approved Export Before Disabling Amend: </span>defines the maximum number of days following the approved invoice export that a user with the <span class="FM_Bold">Invoice Amend</span>&#160;permission is able to modify the general ledger coding of an approved invoice. By default this is not active, so there is no time limit on when an Amend action can occur. If this feature is enabled the allowed value is an integer in the range 0 to 999999. </p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span class="FM_Bold">Days to Cancel Disputed Invoices:</span><span class="FM_Bold">&#160;defines the number of days that must pass before a disputed invoice is automatically canceled. Allowed values: an integer in the range 90 to 9999. Image Post and Image OBO invoices submitted by buyers cannot be automatically canceled. </span></p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span class="FM_Bold">Days to Stalled Invoice After Last Action:</span>&#160;defines the number of days following the last action before an invoice is considered stalled. Adds Stalled counters to the invoice dashboard. Stalled invoices are indicated in the Invoice List page by yellow highlighting in the Type column. Allowed values: an integer in the range 0 to 999999.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span class="FM_Bold">Days to Stalled Invoice After Most Recent Submit:</span>&#160;defines the number of days following an invoice submission (or resubmission) from the supplier before the invoice is considered to be stalled. Stalled counters on the invoice dashboard are not affected by this preference. Stalled invoices are indicated on the Invoice page by red highlighting in the Type column.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span class="FM_Bold">Disable Amend After Post Action:</span>&#160;prevents users with the <span class="FM_Bold">Invoice Amend</span>&#160;permission from modifying the general ledger coding of an approved invoice after the invoice has been updated as <span class="FM_Bold">Posted</span>&#160;through an integrated response.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span class="FM_Bold">Disable Mandatory Comments on Invoice Forward Action:</span>&#160;allows users to forward an invoice without having to enter a comment. </p>
+
+  <p dir="ltr" class="FM_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 12pt;" class="FMAutoNumber_2"></span></span>Comments are always optional when forwarding an invoice as part of the Code Verify or Approval Workflow actions. </p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span class="FM_Bold">Enable Alert for Duplicate Ticket No. Reference:</span>&#160;enables a red ticket alert when a field ticket number is referenced on more than one invoice. The alert appears on the invoice line and next to the invoice number on the Invoice List pages. </p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span class="FM_Bold">Enable Dispute Categorization:</span>&#160;This feature is currently inactive and the user’s selection is not referenced again in the application. The <span class="FM_Bold">Comments</span> field is still mandatory when disputing an invoice.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span class="FM_Bold">Enable Stalled Documents Email Notification:</span>&#160;sends an email notification of a stalled invoice to both the invoice owner and the department’s notification user.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span class="FM_Bold">Enable Supplier Correction:</span>&#160;allows users with the <span class="FM_Bold">Invoice Modify (IM)</span>&#160;permission to modify the supplier and/or supplier site for an image invoice using the Correct feature.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span class="FM_Bold">Invoice Approval - Requisitioner May Not Final Approve Invoice:</span>&#160;makes the <span class="FM_Bold">Requisitioner</span>&#160;field available on a detail invoice line and the Image OBO invoice indexing page. If a requisitioner is specified then an invoice manually approved by the requisitioner must be forwarded to another user for additional approval.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span class="FM_Bold">Invoice Approval - Absolute Value Gross Line Amount:</span>&#160;makes invoice approval and invoice workflow routing based on the absolute value of all invoice lines (credit lines are added to debits instead of subtracted).</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Invoice Counts Date Type:</span>&#160;sets the date type for the Invoice Counts dashboard section. The selected date type is used to calculate the invoice counts categorization.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Invoice Due Date Period:</span> sets the number of days after submission that an invoice is due.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Invoice Due Date Type:</span>&#160;sets the date type used to calculate the invoice due date. Options are: Invoice Date or Submitted Date.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Parse Format for Supplier Coding:</span>&#160;defines the string mask (parse format) used to translate the specified general ledger code into the corresponding major, minor, and subcode values for invoices and tickets submitted from B2B suppliers. The supplier provided coding must match the defined format in order to be considered valid. If the preference is not enabled then the supplier provided coding will be considered valid if it matches any configured accounting string, regardless of format.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Populate Smart-Coding From Invoice: </span>selects the stage in the workflow where an invoice’s line item coding will be used to automatically update the smart coding. <span style="font-weight : bold; ">When Approved: </span>smart coding rules updated upon invoice approval. <span style="font-weight : bold; ">When Code Verified: </span>smart coding rules updated upon code verification. <span style="font-weight : bold; ">Never: </span>never automatically update smart coding. The never setting requires updates to be made manually or through an import/export process. Default value: When Approved.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Disable OBO Invoice Processing Emails (</span><span style="font-style : italic; ">Oildex-controlled</span><span style="font-weight : bold; ">):</span>&#160;turns off the feature that automatically sends an email notification to an unregistered supplier whenever an OBO ivoice is submitted on their behalf. </p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>Enable OBO Invoice Tax Fields: enables the Total Tax field and the Tax Type drop-down menu on the Image Invoice Processing page. </p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Enable Invoice Number Masking</span>&#160;<span style="font-style : italic; ">(<span data-name="ADP_Company_Name" data-val="Oildex" data-showval="TRUE" data-format="ADP_Company_Name">Oildex</span></span><span style="font-style : italic; ">-controlled</span>)<span style="font-weight : bold; ">: </span>generates a second invoice number that contains only alphanumeric characters (A-Z, 0-9) with a maximum length of 16 characters. Invoices will have both the original invoice number provided by the supplier and the masked number generated by <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>. Only the masked invoice number is included in the invoice exports. Both &#160;invoice numbers are used for duplicate invoice number checking, and either invoice number can be used when searching for an invoice.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Hide Unowned Invoices Dashboard Bin</span><span style="font-style : italic; font-weight : bold; ">&#160;</span><span style="font-style : italic; ">(<span data-name="ADP_Company_Name" data-val="Oildex" data-showval="TRUE" data-format="ADP_Company_Name">Oildex</span></span><span style="font-style : italic; ">-controlled)</span>: hides the Unowned Invoices dashboard category in the Invoices portlet.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span class="FM_Bold">Ignore PO Mismatch on B2B Invoice Import </span><span class="FM_Emphasis">(<span data-name="ADP_Company_Name" data-val="Oildex" data-showval="TRUE" data-format="ADP_Company_Name">Oildex</span></span><span class="FM_Emphasis">-controlled)</span><span class="FM_Bold">:</span>&#160;allows B2B suppliers to submit invoices if the supplier site listed is not one of the supplier sites on the referenced purchase order.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span class="FM_Bold">Invoice Approval – Company Preferred Approval Currency</span><span class="FM_Bold" style="font-style : italic; ">&#160;</span><span class="FM_Emphasis">(<span data-name="ADP_Company_Name" data-val="Oildex" data-showval="TRUE" data-format="ADP_Company_Name">Oildex</span></span><span class="FM_Emphasis">-controlled)</span><span class="FM_Bold">:</span>&#160;establishes a single currency to which authorization levels are defined. The invoice currency is ignored when determining if a user has the sufficient authorization level.</p>
+
+  <p dir="ltr" class="FM_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 12pt;" class="FMAutoNumber_2"></span></span>If this is not configured, then the approver must have an authorization level in the currency of the invoice.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span class="FM_Bold">Invoice Approval Method </span><span class="FM_Emphasis">(<span data-name="ADP_Company_Name" data-val="Oildex" data-showval="TRUE" data-format="ADP_Company_Name">Oildex</span></span><span class="FM_Emphasis">-controlled)</span><span class="FM_Bold">:</span>&#160;determines the type of authorization level required by a financial approver. </p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 12pt;" class="FMAutoNumber_1"></span></span><span class="FM_Bold">GL Based Approvals</span><span style="font-weight : bold; ">:</span>&#160;the financial approver must have an authorization level for every general ledger code on the invoice. This is the default setting.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 12pt;" class="FMAutoNumber_1"></span></span><span class="FM_Bold">Total Invoice Amount</span><span style="font-weight : bold; ">:</span>&#160;any general ledger codes on the invoice are ignored for approval purposes and the financial approver only needs a <span class="FM_Bold">Total</span>&#160;authorization level. </p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span class="FM_Bold">Invoice Workflow Sequence </span><span class="FM_Emphasis">(<span data-name="ADP_Company_Name" data-val="Oildex" data-showval="TRUE" data-format="ADP_Company_Name">Oildex</span></span><span class="FM_Emphasis">-controlled)</span><span class="FM_Bold">:</span>&#160;determines the sequence of events when processing invoices in the <span data-name="ADP_Software_Name" data-val="OpenInvoice Platform" data-showval="TRUE" data-format="ADP_Software_Name">OpenInvoice Platform</span>. </p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 12pt;" class="FMAutoNumber_1"></span></span><span class="FM_Bold">Code Then Approve</span><span style="font-weight : bold; ">:</span>&#160;every invoice must be code verified before it is financially approved. This is the default setting.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 12pt;" class="FMAutoNumber_1"></span></span><span class="FM_Bold">Approve Only</span><span style="font-weight : bold; ">:</span>&#160;invoices can be financially approved without a separate code verification. </p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 12pt;" class="FMAutoNumber_1"></span></span><span class="FM_Bold">Approve then Code</span><span style="font-weight : bold; ">:</span>&#160;every invoice must be financially approved before it is code verified. </p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Prevent Supplier Attachments after Submit </span>(<span style="font-style : italic; ">Oildex</span>-<span style="font-style : italic; ">controlled</span>): If this preference is selected, suppliers will <span style="font-weight : bold; ">not</span> be able to add attachments to submitted invoices (that have not been disputed by the buyer).</p>
+
+  <p dir="ltr" class="FM_Heading_2">OI Receipt Content Preferences</p>
+
+  <p dir="ltr" class="FM_Note___Start"><span class="FM_Bold">Note:<span style="padding-left: 12pt;" class="FMAutoNumber_1"></span></span>These preferences are obsolete and are no longer supported. They are scheduled to be removed from the platform in a future release.</p>
+
+  <p dir="ltr" class="FM_Heading_2">OI Receipt Workflow Preferences</p>
+
+  <p dir="ltr" class="FM_Note___Start"><span class="FM_Bold">Note:<span style="padding-left: 12pt;" class="FMAutoNumber_1"></span></span>These preferences are obsolete and are no longer supported. They are scheduled to be removed from the platform in a future release.</p>
+
+  <p dir="ltr" class="FM_Heading_2">Ticket Workflow Preferences</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Approve Tickets When Approving an Invoice:</span>&#160;allows a buyer to auto-approve all unapproved Field Tickets associated with an invoice when approving an invoice. </p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Enable Multiple Superintendents, Office Approvers on the Same Invoice:</span>&#160;allows a supplier to create an invoice from multiple tickets having different superintendents and office approvers. If this is not active, the system will not allow you to combine tickets with different superintendents or office approvers on the same invoice. </p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Enforce Invoice Coding Validation on Field Ticket Approval:</span>&#160;allows buyers to enforce the invoice coding validation rules when approving a field ticket.</p>
+
+  <p dir="ltr" class="FM_Heading_2"><span style="font-weight : normal; font-size  : 10.0pt; color   : #000000; "><a name="XREF_68305_Purchase_Order"></a></span>Purchase Order Preferences</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">PO Coding Override: </span>when enabled this preference allows users to override the coding provided on a purchase order.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Allow Blank PO Reference(s):</span>&#160;when enabled this preference allows users to create and/or code an invoice with some lines referencing a purchase order and some lines with no purchase order reference. Any “Purchase Order Required” rules are satisfied if at least one line on the invoice has a purchase order reference.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Allow Multiple PO Reference(s):</span>&#160;when enabled this preference allows users to reference multiple purchase orders on a single invoice.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Enable PO Counter Offers:</span> allows suppliers to create counter offers against a purchase order.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span class="FM_Bold">Prevent Invoice Submission on RED PO Compliance Alerts: </span>prevents a direct entry supplier from submitting a detail invoice with a red purchase order compliance alert. This preference has no effect on image invoices or B2B suppliers.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span class="FM_Bold">Prevent Receipt Submission on RED PO Compliance Alerts: </span>This preference is obsolete and is no longer supported. It is scheduled to be removed from the platform in a future release.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span class="FM_Bold">Require Explicit PO Line:</span>&#160;disables the purchase order line number option <span style="font-weight : bold; ">No PO Line </span>on invoices. All lines on a detail or itemized image invoice referencing a purchase order must also reference a valid line on that purchase order. Invoices submitted from B2B suppliers will be disputed automatically on the buyer’s behalf if one of the invoice lines does not include a purchase order line reference. </p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Invoice Price Book Must Match Purchase Order:</span>&#160;controls how strict the match must be between the price book on the invoice and the price book on the purchase order. When the preference is active, the invoice must refer to the same price book as the purchase order, including no price book when the purchase order does not refer to one. When the preference is not active, the system will still default the invoice price book to match that of the purchase order, but the supplier can refer to any valid price book.</p>
+
+  <p dir="ltr" class="FM_Heading_2">Price Book Preferences</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span class="FM_Bold">Days to Display Inactive/Expired Price Books:</span>&#160;defines the number of days that expired, cancelled, and terminated price books are included in the Price Book Dashboard. Allowed values: an integer in the range 1 to 999999.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span class="FM_Bold">Days to Notify in Advance of Price Book Expiry:</span>&#160;defines when a price book administrator will be notified in advance of a price book’s expiration. Allowed values: an integer in the range 1 to 365. Default value: 90.</p>
+
+  <p dir="ltr" class="FM_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 12pt;" class="FMAutoNumber_2"></span></span>In addition to the notification sent on the configured number of days before the price book expires, <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span> will automatically send a notification one day before the price book expires.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Amber Price Book Alert Overrides Blue </span>(<span style="font-style : italic; "><span data-name="ADP_Company_Name" data-val="Oildex" data-showval="TRUE" data-format="ADP_Company_Name">Oildex</span></span><span style="font-style : italic; ">-controlled</span>): Price Book alerts are categorized by severity: red, yellow (amber), or blue. By default, red is the most severe, blue is the second most severe, and yellow is the least severe. When enabled, this preference modifies alert severity so that yellow takes priority over blue; red is most severe, yellow is second most severe, and blue is least severe.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Enable Co-Managed Catalogs</span> (<span style="font-style : italic; ">Oildex</span>-<span style="font-style : italic; ">controlled</span>): Allows buyers to create catalog items on a Direct-Entry supplier's behalf through a TSV import.</p>
+
+  <p dir="ltr" class="FM_Heading_2_HowTo"><a name="IX_Modify"></a>How to Modify Company Preferences</p>
+  <p dir="ltr" class="FM_Body_Style">Use this procedure to update your company preferences. </p>
+  <p dir="ltr" class="FM_Permission___Start"><span class="FM_Bold">Permission:<span style="padding-left: 18pt;" class="FMAutoNumber_1"></span></span>Corporate Admin</p>
+  <p dir="ltr" class="FM_Steps"><span class="FM_Bold">Steps:<span style="padding-left: 6pt;" class="FMAutoNumber_1"></span></span></p>
+  <p dir="ltr" class="FM_Number_List_1___Start"><span class="FM_Bullet4">1.<span style="padding-left: 11pt;" class="FMAutoNumber_1"></span></span>Select <span class="FM_Bold">Corporate</span><span style="font-weight : bold; ">&#160;&gt; </span><span class="FM_Bold">Company Preferences</span>.</p>
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">2.<span style="padding-left: 11pt;" class="FMAutoNumber_1"></span></span>Click a preference name. </p>
+
+  <div align="center"><img alt="CorporateConfig_companypreferencesBuyer.jpg" id="image30" src="../../../assets/CorporateConfig_companypreferencesBuyer.jpg" style="max-width: 100% ;height: auto" />
+  </div>
+  <p dir="ltr" class="FM_Screenshot_Anchor">&nbsp;</p>
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">3.<span style="padding-left: 11pt;" class="FMAutoNumber_1"></span></span><span style="font-size  : 5.0pt; "></span>Configure the preference.</p>
+  <p dir="ltr" class="FM_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 12pt;" class="FMAutoNumber_2"></span></span>To deactivate a preference with a value, deselect the <span class="FM_Bold">Active</span>&#160;checkbox. You do not need to modify the values.</p>
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">4.<span style="padding-left: 11pt;" class="FMAutoNumber_1"></span></span>Click <span class="FM_Bold">Submit</span>.</p>
+
+  <p dir="ltr" class="FM_Heading_1"><a name="XREF_71150_Managing_Reference"></a>Managing Reference Data</p>
+
+  <p dir="ltr" class="FM_Body_Style">This section contains the procedures for adding, editing and deleting custom reference data and the details for the reference data. You can perform these functions on single data records, multiple data records, single reference data details, or multiple reference data details.</p>
+
+  <p dir="ltr" class="FM_Heading_2_HowTo"><a name="IX_Add_a_Single_Record"></a>How to Add a Single Custom Reference Data Record</p>
+
+  <p dir="ltr" class="FM_Permission___Start"><span class="FM_Bold">Permission:<span style="padding-left: 18pt;" class="FMAutoNumber_1"></span></span>Corporate Modify</p>
+
+  <p dir="ltr" class="FM_Steps"><span class="FM_Bold">Steps:<span style="padding-left: 6pt;" class="FMAutoNumber_1"></span></span></p>
+
+  <p dir="ltr" class="FM_Number_List_1___Start"><span class="FM_Bullet4">1.<span style="padding-left: 11pt;" class="FMAutoNumber_1"></span></span>Select <span style="font-weight : bold; ">Corporate</span>&#160;&gt; <span style="font-weight : bold; ">Reference Data</span>.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">2.<span style="padding-left: 11pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Custom Reference Data</span>.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">3.<span style="padding-left: 11pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Add Record</span></p>
+
+  <p dir="ltr" class="FM_Screenshot_Anchor"><span style="font-size: small;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+
+  <div align="left"><img alt="CorporateConfig_referencedatamgmt.png" id="image31" src="../../../assets/CorporateConfig_referencedatamgmt.png" style="max-width: 100% ;height: auto" />
+  </div>
+  <p dir="ltr" class="FM_Screenshot_Anchor"><span style="font-size: small;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">4.<span style="padding-left: 11pt;" class="FMAutoNumber_1"></span></span>Enter the <span style="font-weight : bold; ">Name</span>&#160;and <span style="font-weight : bold; ">Description</span>. </p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">5.<span style="padding-left: 11pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Submit</span>.</p>
+
+  <p dir="ltr" class="FM_Heading_2_HowTo"><a name="IX_Edit_a_Single_Record"></a>How to Edit a Single Custom Reference Data Record</p>
+
+  <p dir="ltr" class="FM_Permission___Start"><span class="FM_Bold">Permission:<span style="padding-left: 18pt;" class="FMAutoNumber_1"></span></span>Corporate Modify</p>
+
+  <p dir="ltr" class="FM_Steps"><span class="FM_Bold">Steps:<span style="padding-left: 6pt;" class="FMAutoNumber_1"></span></span></p>
+
+  <p dir="ltr" class="FM_Number_List_1___Start"><span class="FM_Bullet4">1.<span style="padding-left: 11pt;" class="FMAutoNumber_1"></span></span>Select <span style="font-weight : bold; ">Corporate</span>&#160;&gt; <span style="font-weight : bold; ">Reference Data</span>.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">2.<span style="padding-left: 11pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Custom Reference Data</span>.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">3.<span style="padding-left: 11pt;" class="FMAutoNumber_1"></span></span>Click the <span style="font-weight : bold; ">Name</span>&#160;or <span style="font-weight : bold; ">Description</span> to edit the record.</p>
+
+  <p dir="ltr" class="FM_Screenshot_Anchor"><span style="font-size: small;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+
+  <div align="left"><img alt="CorporateConfig_referencedatamgmt.png" id="image32" src="../../../assets/CorporateConfig_referencedatamgmt.png" style="max-width: 100% ;height: auto" />
+  </div>
+  <p dir="ltr" class="FM_Screenshot_Anchor"><span style="font-size: small;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">4.<span style="padding-left: 11pt;" class="FMAutoNumber_1"></span></span>Update the fields, as appropriate. </p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">5.<span style="padding-left: 11pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Submit</span>. </p>
+
+  <p dir="ltr" class="FM_Heading_2_HowTo"><a name="IX_Delete_a_Single_Record"></a>How to Delete a Single Custom Reference Data Record</p>
+
+  <p dir="ltr" class="FM_Permission___Start"><span class="FM_Bold">Permission:<span style="padding-left: 18pt;" class="FMAutoNumber_1"></span></span>Corporate Modify</p>
+
+  <p dir="ltr" class="FM_Steps"><span class="FM_Bold">Steps:<span style="padding-left: 6pt;" class="FMAutoNumber_1"></span></span></p>
+
+  <p dir="ltr" class="FM_Number_List_1___Start"><span class="FM_Bullet4">1.<span style="padding-left: 11pt;" class="FMAutoNumber_1"></span></span>Select <span style="font-weight : bold; ">Corporate</span>&#160;&gt; <span style="font-weight : bold; ">Reference Data</span>.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">2.<span style="padding-left: 11pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Custom Reference Data</span>.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">3.<span style="padding-left: 11pt;" class="FMAutoNumber_1"></span></span>Click the <span style="font-weight : bold; ">Delete</span>&#160;icon next to the record you want to delete. </p>
+
+  <p dir="ltr" class="FM_Screenshot_Anchor"><span style="font-size: small;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+
+  <div align="left"><img alt="CorporateConfig_referencedatamgmt.png" id="image33" src="../../../assets/CorporateConfig_referencedatamgmt.png" style="max-width: 100% ;height: auto" />
+  </div>
+  <p dir="ltr" class="FM_Screenshot_Anchor"><span style="font-size: small;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+
+  <p dir="ltr" class="FM_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 12pt;" class="FMAutoNumber_2"></span></span>Deleting a record will delete all the details associated with the data record. </p>
+
+  <p dir="ltr" class="FM_Heading_2_HowTo"><a name="IX_Add_Edit_or_Delete"></a>How to Add, Edit, or Delete Multiple Reference Data Records</p>
+
+  <p dir="ltr" class="FM_Permission___Start"><span class="FM_Bold">Permission:<span style="padding-left: 18pt;" class="FMAutoNumber_1"></span></span>Corporate Modify</p>
+
+  <p dir="ltr" class="FM_Steps"><span class="FM_Bold">Steps:<span style="padding-left: 6pt;" class="FMAutoNumber_1"></span></span></p>
+
+  <p dir="ltr" class="FM_Number_List_1___Start"><span class="FM_Bullet4">1.<span style="padding-left: 11pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Export</span> to download and save a copy of your existing records.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">2.<span style="padding-left: 11pt;" class="FMAutoNumber_1"></span></span>In the file, modify your existing records and/or add new custom reference data. For more information about the column headings, refer to <a href="../../Appendix/Appendix/Appendix.htm#XREF_53861_Custom_Reference">Custom Reference Data Template</a>.</p>
+
+  <p dir="ltr" class="FM_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 12pt;" class="FMAutoNumber_2"></span></span>Enter <span style="font-weight : bold; ">Add</span>, <span style="font-weight : bold; ">Edit</span>, <span style="font-weight : bold; ">Delete</span>, or <span style="font-weight : bold; ">Leave</span>&#160;in the <span style="font-weight : bold; ">Action</span> column. These values are case-sensitive.</p>
+
+  <p dir="ltr" class="FM_Note_Indent___Next"><span class="FM_Bold"><span style="padding-left: 54pt;" class="FMAutoNumber_1"></span></span>Do not modify or delete values in the <span style="font-weight : bold; ">Row#(DO NOT MODIFY/DELETE) </span>column.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">3.<span style="padding-left: 11pt;" class="FMAutoNumber_1"></span></span>In <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>, do one of the following:</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 12pt;" class="FMAutoNumber_1"></span></span>To upload a file saved on your desktop, select <span style="font-weight : bold; ">File </span>as the import method, click <span style="font-weight : bold; ">Choose File</span>, navigate to the file on your computer, and click <span style="font-weight : bold; ">Open</span>.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 12pt;" class="FMAutoNumber_1"></span></span>To copy the contents of a spreadsheet, select <span style="font-weight : bold; ">Copy/Paste</span>&#160;as the import method, copy the information in your file, and paste it into the box.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">4.<span style="padding-left: 11pt;" class="FMAutoNumber_1"></span></span>Click<span style="font-weight : bold; "> Upload</span></p>
+
+  <p dir="ltr" class="FM_Heading_2_HowTo"><a name="IX_Add_a_Single_Data_Detail"></a>How to Add a Reference Data Detail Record</p>
+
+  <p dir="ltr" class="FM_Permission___Start"><span class="FM_Bold">Permission:<span style="padding-left: 18pt;" class="FMAutoNumber_1"></span></span>Corporate Modify</p>
+
+  <p dir="ltr" class="FM_Steps"><span class="FM_Bold">Steps:<span style="padding-left: 6pt;" class="FMAutoNumber_1"></span></span></p>
+
+  <p dir="ltr" class="FM_Number_List_1___Start"><span class="FM_Bullet4">1.<span style="padding-left: 11pt;" class="FMAutoNumber_1"></span></span>Select <span style="font-weight : bold; ">Corporate</span>&#160;&gt; <span style="font-weight : bold; ">Reference Data</span>.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">2.<span style="padding-left: 11pt;" class="FMAutoNumber_1"></span></span>Click a <span style="font-weight : bold; ">Reference Data Type</span>.</p>
+
+  <p dir="ltr" class="FM_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 12pt;" class="FMAutoNumber_2"></span></span>If you clicked <span style="font-weight : bold; ">Custom Reference Data</span>, then click the <span style="font-weight : bold; ">Edit</span> icon next to the record you want to modify.</p>
+
+  <div align="center"><img alt="CorporateConfig_referencedatadetail.png" id="image34" src="../../../assets/CorporateConfig_referencedatadetail.png" style="max-width: 100% ;height: auto" />
+  </div>
+  <p dir="ltr" class="FM_Screenshot_Anchor">&nbsp;</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">3.<span style="padding-left: 11pt;" class="FMAutoNumber_1"></span></span>Click the <span style="font-weight : bold; ">Add Record</span>&#160;button to add a new detail record. </p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">4.<span style="padding-left: 11pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Submit</span>.</p>
+
+  <p dir="ltr" class="FM_Heading_2_HowTo"><a name="IX_Edot_a_Single_Data"></a>How to Edit a Reference Data Detail Record</p>
+
+  <p dir="ltr" class="FM_Permission___Start"><span class="FM_Bold">Permission:<span style="padding-left: 18pt;" class="FMAutoNumber_1"></span></span>Corporate Modify</p>
+
+  <p dir="ltr" class="FM_Steps"><span class="FM_Bold">Steps:<span style="padding-left: 6pt;" class="FMAutoNumber_1"></span></span></p>
+
+  <p dir="ltr" class="FM_Number_List_1___Start"><span class="FM_Bullet4">1.<span style="padding-left: 11pt;" class="FMAutoNumber_1"></span></span>Select <span style="font-weight : bold; ">Corporate</span>&#160;&gt; <span style="font-weight : bold; ">Reference Data</span>.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">2.<span style="padding-left: 11pt;" class="FMAutoNumber_1"></span></span>Click a <span style="font-weight : bold; ">Reference Data Type</span>.</p>
+
+  <p dir="ltr" class="FM_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 12pt;" class="FMAutoNumber_2"></span></span>If you clicked <span style="font-weight : bold; ">Custom Reference Data</span>, then click the edit icon next to the record you want to modify.</p>
+
+  <div align="center"><img alt="CorporateConfig_referencedatadetail.png" id="image35" src="../../../assets/CorporateConfig_referencedatadetail.png" style="max-width: 100% ;height: auto" />
+  </div>
+  <p dir="ltr" class="FM_Screenshot_Anchor">&nbsp;</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">3.<span style="padding-left: 11pt;" class="FMAutoNumber_1"></span></span>Click a detail name to modify the information.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">4.<span style="padding-left: 11pt;" class="FMAutoNumber_1"></span></span>Update the fields, as appropriate. </p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">5.<span style="padding-left: 11pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Submit</span>. </p>
+
+  <p dir="ltr" class="FM_Heading_2_HowTo">How to Delete a Reference Data Detail Record</p>
+
+  <p dir="ltr" class="FM_Permission___Start"><span class="FM_Bold">Permission:<span style="padding-left: 18pt;" class="FMAutoNumber_1"></span></span>Corporate Modify</p>
+
+  <p dir="ltr" class="FM_Steps"><span class="FM_Bold">Steps:<span style="padding-left: 6pt;" class="FMAutoNumber_1"></span></span></p>
+
+  <p dir="ltr" class="FM_Number_List_1___Start"><span class="FM_Bullet4">1.<span style="padding-left: 11pt;" class="FMAutoNumber_1"></span></span>Select <span style="font-weight : bold; ">Corporate</span>&#160;&gt; <span style="font-weight : bold; ">Reference Data</span>.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">2.<span style="padding-left: 11pt;" class="FMAutoNumber_1"></span></span>Click a <span style="font-weight : bold; ">Reference Data Type</span>.</p>
+
+  <p dir="ltr" class="FM_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 12pt;" class="FMAutoNumber_2"></span></span>If you clicked <span style="font-weight : bold; ">Custom Reference Data</span>, then click the edit icon next to the record you want to modify.</p>
+
+  <div align="center"><img alt="CorporateConfig_referencedatadetail.png" id="image36" src="../../../assets/CorporateConfig_referencedatadetail.png" style="max-width: 100% ;height: auto" />
+  </div>
+  <p dir="ltr" class="FM_Screenshot_Anchor">&nbsp;</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">3.<span style="padding-left: 11pt;" class="FMAutoNumber_1"></span></span>Click the delete icon next to the detail record you want to delete.</p>
+
+  <p dir="ltr" class="FM_Heading_2_HowTo"><a name="IX_Add_Edit_or_Delete_1"></a>How to Add, Edit, or Delete Multiple Data Detail Records</p>
+
+  <p dir="ltr" class="FM_Permission___Start"><span class="FM_Bold">Permission:<span style="padding-left: 18pt;" class="FMAutoNumber_1"></span></span>Corporate Modify</p>
+
+  <p dir="ltr" class="FM_Steps"><span class="FM_Bold">Steps:<span style="padding-left: 6pt;" class="FMAutoNumber_1"></span></span></p>
+
+  <p dir="ltr" class="FM_Number_List_1___Start"><span class="FM_Bullet4">1.<span style="padding-left: 11pt;" class="FMAutoNumber_1"></span></span>Select <span style="font-weight : bold; ">Corporate</span>&#160;&gt; <span style="font-weight : bold; ">Reference Data</span>.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">2.<span style="padding-left: 11pt;" class="FMAutoNumber_1"></span></span>Click a <span style="font-weight : bold; ">Reference Data Type</span>.</p>
+
+  <p dir="ltr" class="FM_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 12pt;" class="FMAutoNumber_2"></span></span>If you clicked <span style="font-weight : bold; ">Custom Reference Data</span>, then click the edit icon next to the record you want to modify.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">3.<span style="padding-left: 11pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Export</span> to download and save a copy of your existing records in a file.</p>
+
+  <div align="center"><img alt="CorporateConfig_referencedatadetail.png" id="image37" src="../../../assets/CorporateConfig_referencedatadetail.png" style="max-width: 100% ;height: auto" />
+  </div>
+  <p dir="ltr" class="FM_Screenshot_Anchor">&nbsp;</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">4.<span style="padding-left: 11pt;" class="FMAutoNumber_1"></span></span>In the file, modify your existing records and/or add new custom reference data. For more information about the column headings, refer to <a href="../../Appendix/Appendix/Appendix.htm#XREF_53861_Custom_Reference">Custom Reference Data Template</a>.</p>
+
+  <p dir="ltr" class="FM_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 12pt;" class="FMAutoNumber_2"></span></span>Enter <span style="font-weight : bold; ">Add</span>, <span style="font-weight : bold; ">Edit</span>, <span style="font-weight : bold; ">Delete</span>, or <span style="font-weight : bold; ">Leave</span>&#160;in the <span style="font-weight : bold; ">Action</span> column. These values are case-sensitive.</p>
+
+  <p dir="ltr" class="FM_Note_Indent___Next"><span class="FM_Bold"><span style="padding-left: 54pt;" class="FMAutoNumber_1"></span></span>Do not modify or delete values in the <span style="font-weight : bold; ">Row#(DO NOT MODIFY/DELETE) </span>column.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">5.<span style="padding-left: 11pt;" class="FMAutoNumber_1"></span></span>In <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>, do one of the following:</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 12pt;" class="FMAutoNumber_1"></span></span>To upload a file saved on your desktop, select <span style="font-weight : bold; ">File </span>as the import method, click <span style="font-weight : bold; ">Choose File</span>, navigate to the file on your computer, and click <span style="font-weight : bold; ">Open</span>.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 12pt;" class="FMAutoNumber_1"></span></span>To copy the contents of a spreadsheet, select <span style="font-weight : bold; ">Copy/Paste</span>&#160;as the import method, copy the information in your file, and paste it into the box.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">6.<span style="padding-left: 11pt;" class="FMAutoNumber_1"></span></span>Click<span style="font-weight : bold; "> Upload</span>.</p>
+
+  <p dir="ltr" class="FM_Note___Start"><span class="FM_Bold">Note:<span style="padding-left: 12pt;" class="FMAutoNumber_1"></span></span>Custom Reference data can be filtered by Name, Code, Active/Inactive records or Description. Search results are limited to the first 1,000 rows. Use filtering to further refine your search results.</p>
+
+  <p dir="ltr" class="FM_Heading_3">Active vs Inactive Custom Reference Data</p>
+
+  <p dir="ltr" class="FM_Body_Style">Custom reference data fields can be set to ‘Active’ or ‘Inactive’ through the user interface, TSV import, and the API for Custom Reference Data. </p>
+
+  <p dir="ltr" class="FM_Body_Style">By default all existing Custom Reference Data records are set to ‘Active.’ If you do not want a new Custom Reference Data record to be active you must uncheck the Active option when the record is created. </p>
+
+  <p dir="ltr" class="FM_Body_Style">‘Inactive’ Custom Reference Data does not appear in the drop-down list when adding invoice header information, line item details, or line item coding information. ‘Inactive’ Custom Reference Data cannot be entered or searched for when using the <span style="font-weight : bold; ">Searchable Text</span> display type.</p>
+
+  <p dir="ltr" class="FM_Heading_2">Reference Data Types</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Custom Reference Data:</span>&#160;data fields that are customized to correspond to your daily business terminology and practices. These fields can be added to invoice headers, line item details, or line item coding. Custom reference data fields can be set to ‘Active’ or ‘Inactive’ through the user interface, TSV import, and the API for Custom Reference Data. Records are set to ‘Active’ by default unless explicitly set to inactive. Inactive records will not appear in drop-down lists and cannot be entered or searched for.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">AFE Type:</span>&#160;categorization of AFEs into types, which will save time on configuration and maintenance (coding) if you have a large number of AFEs.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Approval Type:</span>&#160;custom approval requirements created by mapping to general ledger codes which are then added to authorization levels. A general ledger code can only belong to one approval type at a time. </p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Coding Level 1 – Major:</span>&#160;main general ledger codes used to classify types of expenditures. The <span style="font-weight : bold; ">Cost Type</span>&#160;is hard-coded to <span style="font-weight : bold; ">Capital</span>&#160;or <span style="font-weight : bold; ">Expense</span>. Code and description combinations must be unique for each general ledger coding level. The general ledger codes added here must be mapped to establish valid major.minor.subcode combinations. If a general ledger code or description is changed after the codes have been mapped, the mappings do not change. </p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Coding Level 2 – Minor:</span>&#160;minor general ledger codes used to sub-classify expenditures within majors accounts. Code and description combinations must be unique for each general ledger coding level. The general ledger codes added here must be mapped to establish valid major.minor.subcode combinations. If a general ledger code or description is changed after the codes have been mapped, the mappings do not change.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Coding Level 3 – Subcode: </span>subcodes used to sub-classify expenditures within minor accounts. Subcodes are optional unless a user sets them as mandatory for specific general ledger codes. Code and description combinations must be unique for each general ledger coding level. The general ledger codes added here must be mapped to establish valid major.minor.subcode combinations. If a general ledger code or description is changed after the codes have been mapped, the mappings do not change. </p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Cost Center Type:</span>&#160;categorization of cost centers into types, which will save time on configuration and maintenance (coding) if you have a large number of cost centers. Cost centers and cost center types can be configured so that only specified general ledger codes are available when coding an invoice associated with a specific cost center/cost center type. When configuring the restricted general codes for a cost center type, all cost centers assigned to that type will automatically inherit the coding restrictions. </p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Dispute Type: </span>categorization of reasons for invoice disputes.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Field/Lease:</span>&#160;classification of properties and assets. These can be associated with one or more AFEs and cost centers so the Field/Lease code gets added to the general ledger string that is exported to your ERP.<span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span></p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Purchase Category:</span>&#160;purchase categories that are mapped to major general ledger codes. The list will appear in the drop-down list on invoices.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Supplier Type:</span>&#160;categorization of supplier sites to set up automatic invoice approvals. Types can be based on the workflow and business documents used to transact with the supplier (such as PO, Non-PO, Image) or the types of services performed by the supplier (such as Courier, Legal, Transportation). The <span style="font-weight : bold; ">Supplier Type Code</span>&#160;is a unique value exported to identify supplier types.</p>
+
+  <p dir="ltr" class="FM_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 12pt;" class="FMAutoNumber_2"></span></span>To apply one of the defined types to a supplier site, a Corporate Admin user must enable the <span style="font-weight : bold; ">Enable Supplier Categorization</span> company preference.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Units of Measure:</span>&#160;codes used to enforce units of measure on invoice and price book line items. Entries here will appear in a drop-down menu on the supplier side. For Price Book referencing and compliance, suppliers can reference preferred and equivalent units of measure. Refer to <a href="../../Price_Books/PriceBook/PriceBook.htm#XREF_54342_Configuring">Configuring Equivalent Units of Measure</a>. </p>
+
+  <p dir="ltr" class="FM_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 12pt;" class="FMAutoNumber_2"></span></span>To be applied, a Corporate Admin user must enable the <span style="font-weight : bold; ">Enable Units of Measure Compliance </span>company preference.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">WO List Type:</span> configuration of the work order (WO) line item to be a free-text field or a lookup list.</p>
+
+  <p dir="ltr" class="FM_Heading_1"><a name="XREF_31234_Configuring"></a>Configuring Default List Page Settings</p>
+
+  <p dir="ltr" class="FM_Body_Style">This section provides the procedures for configuring your company’s default column settings on your pages. </p>
+
+  <p dir="ltr" class="FM_Heading_2_HowTo"><a name="IX_Default_Column"></a>How to Configure Your Company’s Default Column Configuration</p>
+
+  <p dir="ltr" class="FM_Permission___Start"><span class="FM_Bold">Permission:<span style="padding-left: 18pt;" class="FMAutoNumber_1"></span></span>Corporate Admin</p>
+
+  <p dir="ltr" class="FM_Steps"><span class="FM_Bold">Steps:<span style="padding-left: 6pt;" class="FMAutoNumber_1"></span></span></p>
+
+  <p dir="ltr" class="FM_Number_List_1___Start"><span class="FM_Bullet4">1.<span style="padding-left: 11pt;" class="FMAutoNumber_1"></span></span>Select <span style="font-weight : bold; ">Corporate &gt; Workflow Configuration</span>.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">2.<span style="padding-left: 11pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Corporate Column Configuration</span>.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">3.<span style="padding-left: 11pt;" class="FMAutoNumber_1"></span></span>Click the name of the list page (link in the first column) to be configured.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">4.<span style="padding-left: 11pt;" class="FMAutoNumber_1"></span></span>Do one or more of the following:</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 12pt;" class="FMAutoNumber_1"></span></span>Add or remove column titles from the <span style="font-weight : bold; ">Configured Columns</span>&#160;box to determine the columns that will appear on the list page.</p>
+
+  <p dir="ltr" class="FM_Note_Indent2___Start"><span class="FM_Bold"><span style="padding-left: 36pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 12pt;" class="FMAutoNumber_2"></span></span>To select multiple items at once, hold the<span style="font-weight : bold; "> Ctrl</span>&#160;key and select the columns. Alternatively, hold the <span style="font-weight : bold; ">Shift </span>key to select a range of columns. </p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 12pt;" class="FMAutoNumber_1"></span></span>Click the up and down arrows to the right of the <span style="font-weight : bold; ">Configured Columns</span>&#160;box to determine the display order of your columns. </p>
+
+  <p dir="ltr" class="FM_Note_Indent2___Start"><span class="FM_Bold"><span style="padding-left: 36pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 12pt;" class="FMAutoNumber_2"></span></span>Top-to-bottom order in the <span style="font-weight : bold; ">Configured Columns </span>box corresponds with left-to-right order on the list page.</p>
+
+  <p dir="ltr" class="FM_Note_Indent2___Next"><span class="FM_Bold"><span style="padding-left: 72pt;" class="FMAutoNumber_1"></span></span>Move an item one position at a time by clicking the single arrows; use the underlined arrows to move items directly to the top or bottom.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 12pt;" class="FMAutoNumber_1"></span></span>Click the <span style="font-weight : bold; ">Sort </span>button to select the primary, secondary, and tertiary columns to determine the sort priority, select <span style="font-weight : bold; ">Ascending</span>&#160;or <span style="font-weight : bold; ">Descending </span>order for each sort priority, and then click <span style="font-weight : bold; ">Submit.</span></p>
+
+  <p dir="ltr" class="FM_Note_Indent2___Start"><span class="FM_Bold"><span style="padding-left: 36pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 12pt;" class="FMAutoNumber_2"></span></span>The <span style="font-weight : bold; ">Priority Pay </span>column precedes your configured sort priority when the <span style="font-weight : bold; ">Alerts </span>column is displayed on the list page.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 12pt;" class="FMAutoNumber_1"></span></span>Click the <span style="font-weight : bold; ">Default</span> button to restore the list page settings to the system default.</p>
+
+  <div align="center"><img alt="CorporateConfig_listpagesettingsapprovedinvoices.png" id="image38" src="../../../assets/CorporateConfig_listpagesettingsapprovedinvoices.png" style="max-width: 100% ;height: auto" />
+  </div>
+  <p dir="ltr" class="FM_Screenshot_Anchor">&nbsp;</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">5.<span style="padding-left: 11pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Submit</span>.</p>
+
+  <p dir="ltr" class="FM_Heading_2">Considerations for Configuring Default List Page Settings</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>List pages resulting from a search will only display system columns. </p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>Some columns will not appear if there are no results for that column.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>The <span style="font-weight : bold; ">Document Id</span>&#160;column is only displayed in reports. </p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>The following invoice configurable list options will display multiple columns: </p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 12pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Coding:</span>&#160;</p>
+
+  <p dir="ltr" class="FM_Bullet_List_3"><span class="FM_Bullet3">-<span style="padding-left: 15pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Major</span>, <span style="font-weight : bold; ">Minor</span>, and <span style="font-weight : bold; ">Subcode</span> for detail reports</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 12pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Description:</span>&#160;</p>
+
+  <p dir="ltr" class="FM_Bullet_List_3"><span class="FM_Bullet3">-<span style="padding-left: 15pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Invoice Description</span> for lists and summary reports</p>
+
+  <p dir="ltr" class="FM_Bullet_List_3"><span class="FM_Bullet3">-<span style="padding-left: 15pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Invoice Description</span>, <span style="font-weight : bold; ">Product/Service Code</span>, and <span style="font-weight : bold; ">Product/Service Description</span> for detail reports</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 12pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Discount:</span>&#160;</p>
+
+  <p dir="ltr" class="FM_Bullet_List_3"><span class="FM_Bullet3">-<span style="padding-left: 15pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Discount Total</span> for lists and summary reports</p>
+
+  <p dir="ltr" class="FM_Bullet_List_3"><span class="FM_Bullet3">-<span style="padding-left: 15pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Discount Total</span>, <span style="font-weight : bold; ">Discount%</span>, and <span style="font-weight : bold; ">Discount Amount</span> for detail reports</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 12pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Invoice #:</span>&#160;</p>
+
+  <p dir="ltr" class="FM_Bullet_List_3"><span class="FM_Bullet3">-<span style="padding-left: 15pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Invoice #</span> for lists and summary reports</p>
+
+  <p dir="ltr" class="FM_Bullet_List_3"><span class="FM_Bullet3">-<span style="padding-left: 15pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Invoice #</span>&#160;and <span style="font-weight : bold; ">Line Number</span> for detail reports.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 12pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Tax</span>:</p>
+
+  <p dir="ltr" class="FM_Bullet_List_3"><span class="FM_Bullet3">-<span style="padding-left: 15pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Tax Total</span> column for lists and summary reports</p>
+
+  <p dir="ltr" class="FM_Bullet_List_3"><span class="FM_Bullet3">-<span style="padding-left: 15pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Tax Total</span>, <span style="font-weight : bold; ">Tax Type</span>, and <span style="font-weight : bold; ">Tax Amount</span> for detail reports</p>
+
+  <p dir="ltr" class="FM_Heading_1"><a name="XREF_51365_Configuring_Taxes"></a>Configuring Taxes</p>
+  <p dir="ltr" class="FM_Body_Style">This section describes the tax types&#160;and provides information for configuring your tax type. </p>
+
+  <p dir="ltr" class="FM_Heading_2">Tax Type Profiles</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><a name="XREF_Tax_Type_Profiles"></a><span style="font-weight : bold; ">Excluded from Approval Requirements: </span>the tax amount is excluded from the total invoice amount which determines whether a user has the appropriate authorization level to approve. If the tax has been mapped to a general ledger code, the user does not need to have the tax’s code in their approval levels to approve the invoice. </p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Eligible For Early Pay Discounts:</span>&#160;Early Pay terms are created as incentives for buyers to pay an invoice within a set number of days by reducing the amount owed. This setting applies the discount to the total invoice amount including tax.</p>
+
+  <p dir="ltr" class="FM_Heading_2_HowTo"><a name="IX_Tax_Type_Profile_Settings"></a>How to Configure Tax Type Profile Settings</p>
+
+  <p dir="ltr" class="FM_Body_Style">Use this procedure to configure the tax types. The tax types you can configure are <span style="font-weight : bold; ">Excluded From Approval Requirements</span>&#160;and <span style="font-weight : bold; ">Eligible for Early Pay Discounts</span>. </p>
+
+  <p dir="ltr" class="FM_Permission___Start"><span class="FM_Bold">Permission:<span style="padding-left: 18pt;" class="FMAutoNumber_1"></span></span>Corporate Modify</p>
+
+  <p dir="ltr" class="FM_Steps"><span class="FM_Bold">Steps:<span style="padding-left: 6pt;" class="FMAutoNumber_1"></span></span></p>
+
+  <p dir="ltr" class="FM_Number_List_1___Start"><span class="FM_Bullet4">1.<span style="padding-left: 11pt;" class="FMAutoNumber_1"></span></span>Select <span style="font-weight : bold; ">Corporate &gt; COA Setup</span>.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">2.<span style="padding-left: 11pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Tax Type Profile</span>. </p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">3.<span style="padding-left: 11pt;" class="FMAutoNumber_1"></span></span>Select the tax types you want to have <span style="font-weight : bold; ">Excluded From Approval Requirements.</span></p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">4.<span style="padding-left: 11pt;" class="FMAutoNumber_1"></span></span>Select the tax types you want to make <span style="font-weight : bold; ">Eligible For Early Pay Discounts</span>.</p>
+
+  <div align="center"><img alt="CorporateConfig_ConfiguringTaxesBuyer.jpg" id="image39" src="../../../assets/CorporateConfig_ConfiguringTaxesBuyer.jpg" style="max-width: 100% ;height: auto" />
+  </div>
+  <p dir="ltr" class="FM_Screenshot_Anchor">&nbsp;</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">5.<span style="padding-left: 11pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Submit</span>.</p>
+
+  <p dir="ltr" class="FM_Heading_1"><a name="XREF_36322_Configuring"></a>Configuring Company Codes &amp; Defaults</p>
+  <p dir="ltr" class="FM_Body_Style">The <span style="font-weight : bold; ">Company Codes &amp; Defaults</span>&#160;page displays site and department information used to direct your integration documents to the right location.&#160;Default sites and departments, company codes, and Remit To department indicators are displayed in a table.&#160;Click the drop-down list icon above the <span style="font-weight : bold; ">Edit</span> column to filter the table by defaults, Remit To department, department code, or DUNS+4 numbers.</p>
+
+  <p dir="ltr" class="FM_Note___Start"><span class="FM_Bold">Note:<span style="padding-left: 12pt;" class="FMAutoNumber_1"></span></span>To modify the Remit To flag on a department, refer to <a href="../../User_Management/UserMgmt/Departments.htm#XREF_57038_Departments">Departments</a>.</p>
+
+  <p dir="ltr" class="FM_Heading_2_HowTo">How to <span style="font-weight : normal; font-size  : 10.0pt; color   : #000000; "></span>Configure the Default Site</p>
+  <p dir="ltr" class="FM_Body_Style">Use this procedure to configure the default site for your company.</p>
+  <p dir="ltr" class="FM_Permission___Start"><span class="FM_Bold">Permission:<span style="padding-left: 18pt;" class="FMAutoNumber_1"></span></span>Corporate Integration</p>
+  <p dir="ltr" class="FM_Prerequisite___Start"><span class="FM_Bold">Prerequisite:<span style="padding-left: 12pt;" class="FMAutoNumber_1"></span></span><span data-name="_OpenInvoice_Support" data-val="OpenInvoice Support" data-showval="TRUE" data-format="_OpenInvoice_Support">OpenInvoice Support</span> has configured your DUNS number.</p>
+  <p dir="ltr" class="FM_Steps"><span class="FM_Bold">Steps:<span style="padding-left: 6pt;" class="FMAutoNumber_1"></span></span></p>
+  <p dir="ltr" class="FM_Number_List_1___Start"><span class="FM_Bullet4">1.<span style="padding-left: 11pt;" class="FMAutoNumber_1"></span></span>Select <span style="font-weight : bold; ">Corporate &gt; Company Codes &amp; Defaults</span>.</p>
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">2.<span style="padding-left: 11pt;" class="FMAutoNumber_1"></span></span>Click the <span style="font-weight : bold; ">Edit</span>&#160;icon next to the <span style="font-weight : bold; ">Default Site</span>&#160;above the table. </p>
+
+  <div align="center"><img alt="CorporateConfig_CompanyCodesBuyer.jpg" id="image40" src="../../../assets/CorporateConfig_CompanyCodesBuyer.jpg" style="max-width: 100% ;height: auto" />
+  </div>
+  <p dir="ltr" class="FM_Screenshot_Anchor">&nbsp;</p>
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">3.<span style="padding-left: 11pt;" class="FMAutoNumber_1"></span></span><span style="font-size  : 5.0pt; "></span>Select the site name from the drop-down list. </p>
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">4.<span style="padding-left: 11pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Save</span>. </p>
+
+  <p dir="ltr" class="FM_Heading_2_HowTo">How to Assign a Department Code</p>
+
+  <p dir="ltr" class="FM_Body_Style">Us this procedure to assign a department code. </p>
+
+  <p dir="ltr" class="FM_Permission___Start"><span class="FM_Bold">Permission:<span style="padding-left: 18pt;" class="FMAutoNumber_1"></span></span>Corporate Integration</p>
+
+  <p dir="ltr" class="FM_Prerequisite___Start"><span class="FM_Bold">Prerequisite:<span style="padding-left: 12pt;" class="FMAutoNumber_1"></span></span><span data-name="_OpenInvoice_Support" data-val="OpenInvoice Support" data-showval="TRUE" data-format="_OpenInvoice_Support">OpenInvoice Support</span> has configured your DUNS number.</p>
+
+  <p dir="ltr" class="FM_Steps"><span class="FM_Bold">Steps:<span style="padding-left: 6pt;" class="FMAutoNumber_1"></span></span></p>
+
+  <p dir="ltr" class="FM_Number_List_1___Start"><span class="FM_Bullet4">1.<span style="padding-left: 11pt;" class="FMAutoNumber_1"></span></span>Select <span style="font-weight : bold; ">Corporate &gt; Company Codes &amp; Defaults</span>.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">2.<span style="padding-left: 11pt;" class="FMAutoNumber_1"></span></span>Click the <span style="font-weight : bold; ">Edit</span> icon in the row of the department you want to configure.</p>
+
+  <div align="center"><img alt="CorporateConfig_CompanyCodesBuyer.jpg" id="image41" src="../../../assets/CorporateConfig_CompanyCodesBuyer.jpg" style="max-width: 100% ;height: auto" />
+  </div>
+  <p dir="ltr" class="FM_Screenshot_Anchor">&nbsp;</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">3.<span style="padding-left: 11pt;" class="FMAutoNumber_1"></span></span>Enter a department code. </p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">4.<span style="padding-left: 11pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Submit</span>.</p>
+
+  <p dir="ltr" class="FM_Heading_2_HowTo">How to Configure a Default Department</p>
+  <p dir="ltr" class="FM_Body_Style">Use this procedure to configure the default department for your site. </p>
+  <p dir="ltr" class="FM_Permission___Start"><span class="FM_Bold">Permission:<span style="padding-left: 18pt;" class="FMAutoNumber_1"></span></span>Corporate Integration</p>
+  <p dir="ltr" class="FM_Prerequisite___Start"><span class="FM_Bold">Prerequisite:<span style="padding-left: 12pt;" class="FMAutoNumber_1"></span></span><span data-name="_OpenInvoice_Support" data-val="OpenInvoice Support" data-showval="TRUE" data-format="_OpenInvoice_Support">OpenInvoice Support</span> has configured your DUNS number.</p>
+  <p dir="ltr" class="FM_Steps"><span class="FM_Bold">Steps:<span style="padding-left: 6pt;" class="FMAutoNumber_1"></span></span></p>
+  <p dir="ltr" class="FM_Number_List_1___Start"><span class="FM_Bullet4">1.<span style="padding-left: 11pt;" class="FMAutoNumber_1"></span></span>Select <span style="font-weight : bold; ">Corporate &gt; Company Codes &amp; Defaults</span>.</p>
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">2.<span style="padding-left: 11pt;" class="FMAutoNumber_1"></span></span>Click the <span style="font-weight : bold; ">Edit</span>&#160;icon in the row of the department you want to configure. </p>
+
+  <div align="center"><img alt="CorporateConfig_CompanyCodesBuyer.jpg" id="image42" src="../../../assets/CorporateConfig_CompanyCodesBuyer.jpg" style="max-width: 100% ;height: auto" />
+  </div>
+  <p dir="ltr" class="FM_Screenshot_Anchor">&nbsp;</p>
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">3.<span style="padding-left: 11pt;" class="FMAutoNumber_1"></span></span><span style="font-size  : 5.0pt; "></span>Select the <span style="font-weight : bold; ">Default Department</span>&#160;checkbox. </p>
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">4.<span style="padding-left: 11pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Submit</span>.</p>
+  <p dir="ltr" class="FM_Heading_2_HowTo">How to Configure the DUNS+4 Number for a Site or Department</p>
+  <p dir="ltr" class="FM_Body_Style">Use this procedure to configure the DUNS+4 number for a site or department. </p>
+  <p dir="ltr" class="FM_Prerequisite___Start"><span class="FM_Bold">Prerequisite:<span style="padding-left: 12pt;" class="FMAutoNumber_1"></span></span><span data-name="_OpenInvoice_Support" data-val="OpenInvoice Support" data-showval="TRUE" data-format="_OpenInvoice_Support">OpenInvoice Support</span> has configured your DUNS number.</p>
+  <p dir="ltr" class="FM_Steps"><span class="FM_Bold">Steps:<span style="padding-left: 6pt;" class="FMAutoNumber_1"></span></span></p>
+  <p dir="ltr" class="FM_Number_List_1___Start"><span class="FM_Bullet4">1.<span style="padding-left: 11pt;" class="FMAutoNumber_1"></span></span>Select <span style="font-weight : bold; ">Corporate &gt; Company Codes &amp; Defaults</span>.</p>
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">2.<span style="padding-left: 11pt;" class="FMAutoNumber_1"></span></span>Click the <span style="font-weight : bold; ">Edit</span>&#160;icon in the row of the site or department you want to configure. </p>
+
+  <div align="center"><img alt="CorporateConfig_CompanyCodesBuyer.jpg" id="image43" src="../../../assets/CorporateConfig_CompanyCodesBuyer.jpg" style="max-width: 100% ;height: auto" />
+  </div>
+  <p dir="ltr" class="FM_Screenshot_Anchor">&nbsp;</p>
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">3.<span style="padding-left: 11pt;" class="FMAutoNumber_1"></span></span><span style="font-size  : 5.0pt; "></span>Complete the <span style="font-weight : bold; ">DUNS+4</span>&#160;number. </p>
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">4.<span style="padding-left: 11pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Submit</span>. </p>
+
+  <p dir="ltr" class="FM_Heading_1"><a name="XREF_40513_Configuring_Early"></a>Configuring Early Pay Programs</p>
+
+  <p dir="ltr" class="FM_Body_Style">Early Pay programs are discounts negotiated between your company and the supplier outside of the <span data-name="ADP_Software_Name" data-val="OpenInvoice Platform" data-showval="TRUE" data-format="ADP_Software_Name">OpenInvoice Platform</span>. Your company may be offered a reduction on the total invoice amount if your company pays within a specified number of days after the invoice is submitted by the supplier. Early Pay programs include a dynamic discount option, which reduces the available discount using a sliding scale over a period of time. Early Pay programs are entered into <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>&#160;by buyers. Suppliers apply Early Pay programs at the time of invoice creation. The invoice displays both the original invoice amount and the invoice amount after the discount is applied.</p>
+
+  <p dir="ltr" class="FM_Note___Start"><span class="FM_Bold">Note:<span style="padding-left: 12pt;" class="FMAutoNumber_1"></span></span>Early Pay programs are replacing the existing Early Pay terms configured in price books. Existing Early Pay price books with a supplier will continue to be used until you assign an Early Pay program to that supplier. To assign Early Pay programs, refer to <a href="../SupplierMgmt/Enabling_and_Configuring_Suppliers.htm#XREF_78156_Enabling_and">Enabling and Configuring Suppliers</a>. </p>
+
+  <p dir="ltr" class="FM_Note___Next"><span class="FM_Bold"><span style="padding-left: 36pt;" class="FMAutoNumber_1"></span></span>Once an Early Pay program is assigned to a supplier, all price books with that supplier that include Early Pay terms are disabled. Refer to <a href="../../Price_Books/PriceBookManagement/PriceBookManagement.htm#XREF_16853_Removing_Early_Pay">Removing Early Pay Terms on Price Books</a>. </p>
+
+  <p dir="ltr" class="FM_Note___Next"><span class="FM_Bold"><span style="padding-left: 36pt;" class="FMAutoNumber_1"></span></span>To configure whether the Early Pay discounts are applied to taxes, modify the <span style="font-weight : bold; ">Eligible for Early Pay Discounts </span>settings on the tax type profile. Refer to <a href="#XREF_51365_Configuring_Taxes">Configuring Taxes</a>.</p>
+
+  <p dir="ltr" class="FM_Heading_2_HowTo">How to Add an Early Pay Program</p>
+
+  <p dir="ltr" class="FM_Permission___Start"><span class="FM_Bold">Permission:<span style="padding-left: 18pt;" class="FMAutoNumber_1"></span></span>Early Pay Modify</p>
+
+  <p dir="ltr" class="FM_Steps"><span class="FM_Bold">Steps:<span style="padding-left: 6pt;" class="FMAutoNumber_1"></span></span></p>
+
+  <p dir="ltr" class="FM_Number_List_1___Start"><span class="FM_Bullet4">1.<span style="padding-left: 11pt;" class="FMAutoNumber_1"></span></span>Select <span style="font-weight : bold; ">Corporate</span>&#160;&gt; <span style="font-weight : bold; ">Early Pay Programs</span>.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">2.<span style="padding-left: 11pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Add Program</span>.</p>
+
+  <div align="center"><img alt="CorporateConfig_addEPprogram.png" id="image44" src="../../../assets/CorporateConfig_addEPprogram.png" style="max-width: 100% ;height: auto" />
+  </div>
+  <p dir="ltr" class="FM_Screenshot_Anchor">&nbsp;</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">3.<span style="padding-left: 11pt;" class="FMAutoNumber_1"></span></span>Enter the <span style="font-weight : bold; ">Apply Discount of</span> percentage.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">4.<span style="padding-left: 11pt;" class="FMAutoNumber_1"></span></span>Enter the <span style="font-weight : bold; ">Expires</span>&#160;date (number of days after invoice submission). The maximum number of days allowed is 399.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">5.<span style="padding-left: 11pt;" class="FMAutoNumber_1"></span></span>Select a <span style="font-weight : bold; ">Status</span>. </p>
+
+  <p dir="ltr" class="FM_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 12pt;" class="FMAutoNumber_2"></span></span>The other fields are optional. </p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">6.<span style="padding-left: 11pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Save</span>.</p>
+
+  <p dir="ltr" class="FM_Heading_2">Early Pay Program Details</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Apply Discount of x%: </span>discount percent to be applied to the invoice.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Expires x days after invoice submission:</span>&#160;number of days, from invoice submission date, in which the invoice must be paid for the discount to be applied.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Prorate over the last x days:</span>&#160;number of days, before the discount expires, over which the available discount will decline using a sliding scale.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Invoices must be approved x days before discount expires:</span>&#160;number of days, before the discount expires, in which the invoice must be approved. This represents the number of days needed to complete the payment cycles for an approved invoice.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Discount code:</span> an internal code used to name this program.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Status:</span> select Active if you want to assign this program to one or more supplier sites.</p>
+
+  <p dir="ltr" class="FM_Heading_2_HowTo">How to View or Modify an Early Pay Program</p>
+
+  <p dir="ltr" class="FM_Permission___Start"><span class="FM_Bold">Permission:<span style="padding-left: 18pt;" class="FMAutoNumber_1"></span></span>Early Pay View to view.</p>
+
+  <p dir="ltr" class="FM_Permission___Next"><span class="FM_Bold"><span style="padding-left: 72pt;" class="FMAutoNumber_1"></span></span>Early Pay Modify to edit, activate, deactivate, or delete.</p>
+
+  <p dir="ltr" class="FM_Steps"><span class="FM_Bold">Steps:<span style="padding-left: 6pt;" class="FMAutoNumber_1"></span></span></p>
+
+  <p dir="ltr" class="FM_Number_List_1___Start"><span class="FM_Bullet4">1.<span style="padding-left: 11pt;" class="FMAutoNumber_1"></span></span>Select <span style="font-weight : bold; ">Corporate</span>&#160;&gt; <span style="font-weight : bold; ">Early Pay Programs</span>.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">2.<span style="padding-left: 11pt;" class="FMAutoNumber_1"></span></span>Click the <span style="font-weight : bold; ">Action</span> icon.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">3.<span style="padding-left: 11pt;" class="FMAutoNumber_1"></span></span>Do one of the following:</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 12pt;" class="FMAutoNumber_1"></span></span>To view the program, select <span style="font-weight : bold; ">View</span>.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 12pt;" class="FMAutoNumber_1"></span></span>To modify the program details, select <span style="font-weight : bold; ">Edit</span>, modify the terms, then click <span style="font-weight : bold; ">Save</span>.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 12pt;" class="FMAutoNumber_1"></span></span>To deactivate the program, select <span style="font-weight : bold; ">Deactivate</span>, then click <span style="font-weight : bold; ">OK</span> to confirm.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 12pt;" class="FMAutoNumber_1"></span></span>To activate the program, select <span style="font-weight : bold; ">Activate</span>, then click <span style="font-weight : bold; ">OK</span> to confirm.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 12pt;" class="FMAutoNumber_1"></span></span>To delete the program, select <span style="font-weight : bold; ">Delete</span>, then click <span style="font-weight : bold; ">OK</span> to confirm.</p>
+
+  <p dir="ltr" class="FM_Note_Indent2___Start"><span class="FM_Bold"><span style="padding-left: 36pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 12pt;" class="FMAutoNumber_2"></span></span>An Early Pay program cannot be modified or deleted if the program has been applied to an invoice. To determine if the program has been applied to an invoice, look in the <span style="font-weight : bold; ">Invoiced</span> column.</p>
+
+  <div align="center"><img alt="CorporateConfig_vieweditactivatedeleteEPprogram.png" id="image45" src="../../../assets/CorporateConfig_vieweditactivatedeleteEPprogram.png" style="max-width: 100% ;height: auto" />
+  </div>
+  <p dir="ltr" class="FM_Screenshot_Anchor">&nbsp;</p>
+  <p dir="ltr" class="FM_Heading_1"><a name="XREF_83024_Platform_Security"></a>Platform Security</p>
+  <p dir="ltr" class="FM_Body_Style">Users with the Corporate Admin permission are the only users with the ability to configure <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>&#160;according to your company’s business practices and workflow. This includes security configurations for user access. For instructions on how to configure corporate security preferences, refer to <a href="#XREF_48834_Security">Security Preferences</a>.</p>
+  <p dir="ltr" class="FM_Heading_2">Considerations for Password Security</p>
+  <p dir="ltr" class="FM_Body_Style">To ensure maximum security of your information on the <span data-name="ADP_Software_Name" data-val="OpenInvoice Platform" data-showval="TRUE" data-format="ADP_Software_Name">OpenInvoice Platform</span>, users with the Corporate Admin permission can configure password security settings for your company’s users. This includes:</p>
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>The maximum number of days before passwords expire.</p>
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>The minimum number of hours a user must wait before changing their password again.</p>
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>The number of previous passwords disallowed for re-use.</p>
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>The number of successive failed sign in attempts allowed before the user is locked out.</p>
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>The number of minutes that a locked out user must wait before attempting to sign in again.</p>
+  <p dir="ltr" class="FM_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 12pt;" class="FMAutoNumber_2"></span></span>A user with the Membership Modify permission can unlock the user’s account so they can attempt to sign in again.</p>
+  <p dir="ltr" class="FM_Heading_2">Considerations for the Keep Me Signed In Feature</p>
+  <p dir="ltr" class="FM_Body_Style"><span style="font-weight : bold; ">Keep Me Signed In</span>&#160;is the secure way to allow users to repeatedly access <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>&#160;without having to reenter their username and password. Once your company administrators determine that the feature complies with your companies internal standards and security policies, a user with the Corporate Admin permission enables and configures the feature.</p>
+  <p dir="ltr" class="FM_Body_Style">The first time a user signs into <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>&#160;after this feature is enabled for your company, <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>&#160;saves a cookie on the user’s device, which makes the <span style="font-weight : bold; ">Keep Me Signed In </span>checkbox available to the user on the <span style="font-weight : bold; ">Sign In</span>&#160;page.</p>
+  <p dir="ltr" class="FM_Body_Style">This feature does not store the username or password on the user’s device. Instead, if the user selects the <span style="font-weight : bold; ">Keep Me Signed In </span>checkbox and successfully signs into <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>, an encrypted token will be generated and saved on the user’s device. Going forward, <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>&#160;will automatically use the saved token to authenticate and grant the user access to the application.</p>
+  <p dir="ltr" class="FM_Note___Start"><span class="FM_Bold">Note:<span style="padding-left: 12pt;" class="FMAutoNumber_1"></span></span>This feature is device and browser specific. To use this feature across various devices and browsers, users must select the <span style="font-weight : bold; ">Keep Me Signed in</span> checkbox on each device and in each browser that they use.</p>
+  <p dir="ltr" class="FM_Note___Start"><span class="FM_Bold">Note:<span style="padding-left: 12pt;" class="FMAutoNumber_1"></span></span>If a user clicked <span style="font-weight : bold; ">Sign Out</span>&#160;to exit OpenInvoice the last time they were working on the platform the <span style="font-weight : bold; ">Keep Me Signed In</span>&#160;feature will not work the next time the user logs into the system. </p>
+  <p dir="ltr" class="FM_Heading_3">Configuration Settings</p>
+  <p dir="ltr" class="FM_Body_Style">Security preferences for <span style="font-weight : bold; ">Keep Me Signed In</span> will allow you to configure:</p>
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>The maximum time between uses (ranging from 1 hour to 30 days) before a user’s token expires. By default, <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span> sets this preference to 2 days.</p>
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>Whether this feature can be used on any device or if the device must have an allowed IP address.</p>
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>The allowable IP addresses from which users can use this feature.</p>
+  <p dir="ltr" class="FM_Heading_3">Exceptions</p>
+  <p dir="ltr" class="FM_Body_Style"><span style="font-weight : bold; ">Keep Me Signed In</span> will stop working for a user if:</p>
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>the token expires</p>
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>the user’s password expires</p>
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>the user’s account is suspended, deleted, or deactivated</p>
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>the user’s account is locked due to multiple failed sign in attempts using another device or browser</p>
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>your company has decided to disable this feature</p>
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>the user clicked <span style="font-weight : bold; ">Sign out</span>&#160;to exit <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span> the last time they were working on the platform</p>
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>&#160;suspects the token has been stolen </p>
+  <p dir="ltr" class="FM_Body_Style">&nbsp;</p>
+ </div>
+</body>
+
+</html>
+

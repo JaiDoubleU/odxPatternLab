@@ -1,0 +1,217 @@
+<br/>
+<div class="row">
+    <div class="col-xs-12 form-group">
+        <label class="control-label">General Ledger Allocations  (read only)</label>
+    </div>
+
+</div>
+<div class="row">
+    <div class="col-xs-12">
+        <div class="table-responsive">
+            <table id="glAllocationsTable" class="table table-condensed">
+                <thead>
+                    <tr>
+                        <th>AFE</th>
+                        <th>Cost Center</th>
+                        <th>Major</th>
+                        <th>Minor</th>
+                        <th>Subcode</th>
+                        <th width="75">Percent</th>
+                        <th width="125" class="text-center">Amount</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td >123456</td>
+                        <td>432</td>
+                        <td>10000</td>
+                        <td>1000</td>
+                        <td>100</td>
+                        <td>45%</td>
+                        <td class="text-right">1200.00</td>
+                    </tr>
+                    <tr>
+                        <td>556789</td>
+                        <td>2233</td>
+                        <td>34200</td>
+                        <td>2342</td>
+                        <td>310</td>
+                        <td>55%</td>
+                        <td class="text-right">1900.00</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<hr/>
+
+<style>
+    table.no-borders tbody tr td, table.no-borders thead tr th { border: none !important; }
+    table.no-borders tr td .help-block.small { margin: 0px; font-size: 0.8rem; color: #666; }
+</style>
+
+<div class="row">
+    <div class="col-xs-12 form-group">
+        <label class="control-label">General Ledger Allocations (edit mode)</label>
+    </div>
+</div>
+<div class="row">
+    <div class="col-xs-12">
+        <div class="table-responsive">
+            <table id="glAllocationsTable2" class="table table-condensed no-borders">
+                <thead>
+                    <tr class="has-feedback">
+                        <th width="30" class="text-center" ><label>Clear</label></th>
+                        <th><label class="control-label">AFE</label>  {{> atoms-required-field-indicator}}</th>
+                        <th><label class="control-label">Cost Center</label>  {{> atoms-required-field-indicator}}</th>
+                        <th><label class="control-label">Major</label>   {{> atoms-required-field-indicator}}</th>
+                        <th><label class="control-label">Minor </label>  {{> atoms-required-field-indicator}}</th>
+                        <th><label class="control-label">Subcode </label>  {{> atoms-required-field-indicator}}</th>
+                        <th width="75"><label class="control-label">Percent </label>  {{> atoms-required-field-indicator}}</th>
+                        <th width="125" class="text-center"><label class="control-label">Amount</label> </th>
+                        <th width="5%" class="text-center text-nowrap"><label class="control-label">Delete</label> </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td  class="text-center">
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" onclick="clearValues($(this));">
+                                </label>
+                            </div>
+                        </td>
+                        <td class="has-feedback">
+                            <input type="text" class="form-control" value="123456" >
+                            <span class="help-block small">AFE Description 1234565</span>
+                            <span class="help-block hide">Errors displayed here</span>
+                        </td>
+                        <td class="has-feedback">
+                            <input type="text" class="form-control" value="432" >
+                            <span class="help-block small">Cost Center Description 432</span>
+                            <span class="help-block hide">Errors displayed here</span>
+                        </td>
+                        <td class="has-feedback">
+                            <input type="text" class="form-control" value="10000" >
+                            <span class="help-block small">Major Description 10000</span>
+                            <span class="help-block hide">Errors displayed here</span>
+                        </td>
+                        <td class="has-feedback">
+                            <input type="text" class="form-control" value="1000" >
+                            <span class="help-block small">Minor Description 1000</span>
+                            <span class="help-block hide">Errors displayed here</span>
+                        </td>
+                        <td class="has-feedback">
+                            <input type="text" class="form-control" value="100" >
+                            <span class="help-block small">Subcode Description 100</span>
+                            <span class="help-block hide">Errors displayed here</span>
+                        </td>
+                        <td><input type="text" class="form-control text-right" value="45%" ></td>
+                        <td><input type="text" class="form-control text-right" value="1200.00" ></td>
+                        <td class="text-center"><div class='btn-group'><button class="btn btn-default btn-block" onclick="$(this).parents('td').parents('tr').remove();"><i class="fas fa-trash-alt"></i></button></div></td>
+                    </tr>
+                    <tr>
+                        <td  class="text-center">
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" onclick="clearValues($(this));">
+                                </label>
+                            </div>
+                        </td>
+                        <td class="has-feedback">
+                            <input type="text" class="form-control" value="78910" >
+                            <span class="help-block small">AFE Description 78910</span>
+                            <span class="help-block hide">Errors displayed here</span>
+                        </td>
+                        <td class="has-feedback">
+                            <input type="text" class="form-control" value="987" >
+                            <span class="help-block small">Cost Center Description 987</span>
+                            <span class="help-block hide">Errors displayed here</span>
+                        </td>
+                        <td class="has-feedback">
+                            <input type="text" class="form-control" value="20000" >
+                            <span class="help-block small">Major Description 20000</span>
+                            <span class="help-block hide">Errors displayed here</span>
+                        </td>
+                        <td class="has-feedback">
+                            <input type="text" class="form-control" value="3000" >
+                            <span class="help-block small">Minor Description 3000</span>
+                            <span class="help-block hide">Errors displayed here</span>
+                        </td>
+                        <td class="has-feedback">
+                            <input type="text" class="form-control" value="140" >
+                            <span class="help-block small">Subcode Description 140</span>
+                            <span class="help-block hide">Errors displayed here</span>
+                        </td>
+                        <td><input type="text" class="form-control text-right" value="45%" ></td>
+                        <td><input type="text" class="form-control text-right" value="1200.00" ></td>
+                        <td class="text-center"><div class='btn-group'><button class="btn btn-default btn-block" onclick="$(this).parents('td').parents('tr').remove();"><i class="fas fa-trash-alt"></i></button></div></td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th colspan="2">
+                            <div class="btn-group">
+                                <button id="addAllocationRowBtn" class="btn btn-default btn-sm">Add Allocation</button>
+                                <button class="btn btn-default btn-sm" onclick="toggleErrors()">Toggle Errors</button>
+                            </div>
+                        </th>
+                        <th class="text-right form-group-sm" colspan="4">
+                            <p class="form-control-static">Total:</p>
+                        </th>
+                        <th class="text-right form-group-sm">
+                            <p class="form-control-static">100%</p>
+                        </th>
+                        <th class="text-right form-group-sm">
+                            <p class="form-control-static">1200.00</p>
+                        </th>
+                        <th>
+                        </th>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    var counter = 0;
+
+    $("#addAllocationRowBtn").on("click", function () {
+        var newRow = $("<tr>");
+        var cols = "";
+        cols += '<td class="text-center"><div class="checkbox"><label><input type="checkbox" onclick="clearValues($(this));"> </label></div></td>';
+        cols += '<td><input type="text" class="form-control" placeholder="Type to search..." name="afe' + counter + '"/><small>&nbsp;</small></td>';
+        cols += '<td><input type="text" class="form-control" placeholder="Type to search..." name="costCenter' + counter + '"/><small>&nbsp;</small></td>';
+        cols += '<td><input type="text" class="form-control" placeholder="Type to search..." name="major' + counter + '"/><small>&nbsp;</small></td>';
+        cols += '<td><input type="text" class="form-control" placeholder="Type to search..." name="minor' + counter + '"/><small>&nbsp;</small></td>';
+        cols += '<td><input type="text" class="form-control" placeholder="Type to search..." name="sub' + counter + '"/><small>&nbsp;</small></td>';
+        cols += '<td><input type="text" class="form-control" name="percent' + counter + '"/><small>&nbsp;</small></td>';
+        cols += '<td><input type="text" class="form-control text-right" name="amount' + counter + '"/><small>&nbsp;</small></td>';
+        cols += '<td class="text-center" ><div class="btn-group deleteBtn"><button class="btn btn-default" onclick="$(this).parents(\'td\').parents(\'tr\').remove();"><i class="fas fa-trash-alt"></i></button></div></td>';
+        newRow.append(cols);
+        $("#glAllocationsTable2").append(newRow);
+        counter++;
+    });
+
+    var clearValues = function(checkbox) {
+        checkbox.closest('tr').find('.form-control').each(
+            function(index) {
+                $(this).val('');
+            }
+        );
+        checkbox.closest('tr').find('.help-block.small').each(
+            function( index ) {
+                $(this).html('');
+            }
+        );
+    }
+
+    var toggleErrors = function() {
+        $('.has-feedback').toggleClass('has-error');
+        $('.has-feedback .help-block').not(".small") .toggleClass('hide show');
+    };
+</script>

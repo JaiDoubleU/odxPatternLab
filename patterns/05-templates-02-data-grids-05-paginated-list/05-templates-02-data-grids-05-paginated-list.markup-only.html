@@ -1,0 +1,92 @@
+
+
+    <div class="row form-group">
+        <div class="col-xs-6">
+            <div class="btn-group btn-group-sm hidden-xs hidden-sm visible-md visible-lg">
+                <a href="#" class="btn btn-default"><i class="fas fa-plus-circle"></i> Add</a>
+                <a href="#" class="btn btn-default"><i class="fas fa-download"></i> Download</a>
+                <a href="#" class="btn btn-default"><i class="fas fa-upload"></i> Upload</a>
+            </div>
+            <div class="btn-group btn-group-sm visible-xs visible-sm hidden-md hidden-lg">
+                <a href="#" class="btn btn-default">Actions</a>
+
+                <a type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="caret"></span>
+                    <span class="sr-only"></span>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-left">
+                    <li><a href="#"><i class="fas fa-plus-circle"></i> Add</a></li>
+                    <li><a href="#"><i class="fas fa-download"></i> Download</a></li>
+                    <li><a href="#"><i class="fas fa-upload"></i> Upload</a></li>
+                    <li><a href="#"><i class="fas fa-trash-alt"></i> Delete</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-xs-6 text-right">
+            <div class="btn-group btn-group-sm text-nowrap">
+                <a class="btn btn-default" data-toggle="collapse" data-parent="#accordion" href="#paginatedListFilters"><i class="fas fa-filter"></i> Advanced Filters</a>
+
+                <div class="btn-group">
+                    <a type="button" class="btn btn-sm btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Columns <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-right">
+                                <li  >
+                                    <a href="#"><input type="checkbox"/> &nbsp;COLUMN 6</a>
+                                </li>
+                                <li  >
+                                    <a href="#"><input type="checkbox"/> &nbsp;COLUMN 7</a>
+                                </li>
+                                <li  >
+                                    <a href="#"><input type="checkbox"/> &nbsp;COLUMN 8</a>
+                                </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="paginatedListFilters" class="collapse form-group">
+        <fieldset>
+            <legend class="small">Advanced Filters</legend>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label for="input1" class="control-label">Column 1: &nbsp;</label>
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Type to search">
+                            <span class="input-group-addon">
+                                <i class="fas fa-search"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label for="input2" class="control-label">Column 2: &nbsp;</label>
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Type to search">
+                            <span class="input-group-addon">
+                                <i class="fas fa-search"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+    </div>
+
+    <div class="table-responsive">
+        <table id="paginatedList" class="table table-striped table-bordered" width="100%" >
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Position</th>
+                    <th>Office</th>
+                    <th>Extn.</th>
+                    <th>Start date</th>
+                    <th>Salary</th>
+                </tr>
+            </thead>
+        </table>
+    </div>

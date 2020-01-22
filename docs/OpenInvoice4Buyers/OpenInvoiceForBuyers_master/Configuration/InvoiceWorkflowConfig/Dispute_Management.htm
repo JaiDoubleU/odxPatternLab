@@ -1,0 +1,156 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+ <title>Dispute Management</title>
+
+ <link rel="stylesheet" href="../../../OpenInvoiceForBuyers_master.css" type="text/css" />
+
+
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style>
+ <meta name="generator" content="Adobe FrameMaker 2017" />
+<script type="text/javascript" src="../../../template/scripts/rh.min.js"></script>
+<script type="text/javascript" src="../../../template/scripts/common.min.js"></script>
+<script type="text/javascript" src="../../../template/scripts/topic.min.js"></script>
+<script type="text/javascript" src="../../../template/scripts/constants.js"></script>
+<script type="text/javascript" src="../../../template/scripts/utils.js"></script>
+<script type="text/javascript" src="../../../template/scripts/mhutils.js"></script>
+<script type="text/javascript" src="../../../template/scripts/mhlang.js"></script>
+<script type="text/javascript" src="../../../template/scripts/mhver.js"></script>
+<script type="text/javascript" src="../../../template/scripts/settings.js"></script>
+<script type="text/javascript" src="../../../template/scripts/XmlJsReader.js"></script>
+<script type="text/javascript" src="../../../template/scripts/loadparentdata.js"></script>
+<script type="text/javascript" src="../../../template/scripts/loadscreen.js"></script>
+<script type="text/javascript" src="../../../template/scripts/loadprojdata.js"></script>
+<script type="text/javascript" src="../../../template/scripts/mhtopic.js"></script>
+ <link rel="stylesheet" type="text/css" href="../../../template/styles/topic.min.css">
+<script type="text/javascript" >
+gRootRelPath = "../../..";
+gCommonRootRelPath = "../../..";
+gTopicId = "";
+</script>
+ <meta name="brsprev" value="OpenInvoiceForBuyers_master/Configuration/InvoiceWorkflowConfig/Invoice_Workflow_Rules.htm">
+ <meta name="brsnext" value="OpenInvoiceForBuyers_master/Configuration/InvoiceWorkflowConfig/Invoice_Recipient_Routing.htm">
+ <meta name="topic-breadcrumbs" content="Administrator & User Guide for Buyers > Invoice Workflow Configuration" />
+</head>
+
+<body dir="ltr">
+<script type="text/javascript" src="../../../ehlpdhtm.js"></script>
+<div dir="ltr">
+  <p dir="ltr" class="FM_ADP_TG_Heading_1"><a name="TOC_Dispute_Management"></a><a name="XREF_36167_Dispute_Management"></a>Dispute Management</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Body_Style">Invoice dispute routing rules determine whether a disputed invoice will be routed to a department within your company or returned to the supplier or indexer for resolution. The configured rules apply to all disputed invoices regardless of how the dispute was initiated (auto-disputed, manually disputed, or disputed by the integrated invoice response). If an invoice does not match any of the configured rules, or there are no rules configured, then the invoice will be disputed to the supplier or indexer for resolution.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Heading_2">Internal Dispute Considerations</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Body_Style">When invoices are routed to an internal department for dispute resolution:</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>The <span style="font-weight : bold; ">Invoices</span>&#160;portlet will include a <span style="font-weight : bold; ">Disputes to Resolve</span>&#160;counter, which is only visible to users who have the Invoice Modify permission in the internal dispute department.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>The invoice’s Invoice Journal will display an action of <span style="font-weight : bold; ">Disputed Internally </span>with the comment provided by the user who disputed the invoice. The action and comment are not visible to the supplier.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>The invoice status does not change while the invoice is reviewed by the internal dispute department. The status will only change to Disputed if a member of the internal dispute department with the Invoice Modify permission disputes the invoice to the supplier or indexer for resolution. The time the internal dispute department spent reviewing the invoice does not count towards the amount of time it takes the supplier or indexer to resubmit the invoice.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>Users with the Invoice Modify (IM) permission can cancel an Image OBO invoice.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>Users with the Invoice Delete (IM) permission can delete an Image Post invoice.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 12pt;" class="FMAutoNumber_2"></span></span>Image Post invoices can only be disputed if there is a configured rule applying to the invoice.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Heading_2">Dispute Routing Rules</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Body_Style">Each rule consists of two components: the criteria considered to select the appropriate rule and the action to take. When creating the criteria for rule selection, consider the following:</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>Criteria on disputed invoices must match a configured rule exactly for routing to occur. </p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>Rules entered as text in the TSV file are not case-sensitive.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>The rules are evaluated sequentially from top to bottom. The first matching rule will determine the action and subsequent rules will not be evaluated. Therefore, the rules at the top of the file must be more specific than the rules at the bottom of the file.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Heading_3">Routing Rule Options</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Body_Style">Disputed invoices are internally routed based on: </p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Invoice Site:</span> the site that owned the invoice when it was disputed.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Invoice Origin:</span>&#160;enter <span style="font-weight : bold; ">Scan and Index</span>&#160;for Image OBO and Image Post invoices, <span style="font-weight : bold; ">Integration Supplier</span>&#160;for B2B invoices, or <span style="font-weight : bold; ">Online Supplier</span> for Direct Entry, Image Scan, and LIDO invoices.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Dispute Site:</span> the site that the invoice will be routed to for dispute resolution.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1" style="font-weight : bold;"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>Dispute Department:&#160;the department within the Dispute Site that the invoice will be routed to for dispute resolution.</p>
+
+  <p dir="ltr" class="FM_Heading_2_HowTo">How to Configure Dispute Routing Rules</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Permission___Start"><span class="FM_Bold">Permission:<span style="padding-left: 18pt;" class="FMAutoNumber_1"></span></span>Corporate View to view rules</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Permission___Next"><span class="FM_Bold"><span style="padding-left: 72pt;" class="FMAutoNumber_1"></span></span>Corporate Admin to configure rules</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Note___Start"><span class="FM_Bold">Note:<span style="padding-left: 12pt;" class="FMAutoNumber_1"></span></span>Existing rules will be replaced whenever a set of rules is imported. Any previous rule not included in the new import file will be deleted.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Steps"><span class="FM_Bold">Steps:<span style="padding-left: 6pt;" class="FMAutoNumber_1"></span></span></p>
+
+  <ol dir="ltr" start="1">
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Start">Select <span style="font-weight : bold; ">Corporate </span>&gt; <span style="font-weight : bold; ">Workflow Configuration</span>.</p>
+</li>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Click <span style="font-weight : bold; ">Configure Dispute Routing Rules</span>.</p>
+</li>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Click <span style="font-weight : bold; ">Export</span> to download and save the currently configured rules.</p>
+</li>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">In the file, enter the new routing rules. Save the file in TSV format. For more information about the column headings, refer to <a href="../../Appendix/Appendix/Appendix.htm#XREF_34786_Invoice_Dispute">Invoice Dispute Routing Rules Template</a>.</p>
+</li>
+   <p dir="ltr" class="FM_ADP_TG_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 12pt;" class="FMAutoNumber_2"></span></span>To disable dispute routing, create a file with no rules.</p>
+
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">In <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>, click <span style="font-weight : bold; ">Import</span>.</p>
+</li>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Do one of the following:</p>
+</li>
+   <p dir="ltr" class="FM_ADP_TG_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 12pt;" class="FMAutoNumber_1"></span></span>To upload a file saved on your desktop, select <span style="font-weight : bold; ">File </span>as the import method, click <span style="font-weight : bold; ">Choose File</span>, navigate to the file on your computer, and click <span style="font-weight : bold; ">Open</span>.</p>
+
+   <p dir="ltr" class="FM_ADP_TG_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 12pt;" class="FMAutoNumber_1"></span></span>To copy the contents of a spreadsheet, select <span style="font-weight : bold; ">Copy/Paste</span>&#160;as the import method, copy the information in your file, and paste it into the box.</p>
+
+<div width="100%" align="left">
+   <table border-spacing="0" dir="ltr" class="table51" border-collapse="collapse" style="max-width: 100% ;height: auto">
+    <tr class="tr52">
+    <td class="td53">
+    <p dir="ltr" class="FM_CellBody" style="display:inline"><img alt="InvoiceWorkflowConfig_importdisputerules.png" id="image142" src="../../../assets/InvoiceWorkflowConfig_importdisputerules.png" style="max-width: 100% ;height: auto" />&nbsp;</p>
+</td>
+</tr>
+   </table>
+</div>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Click<span style="font-weight : bold; "> Upload</span>.</p>
+</li>
+  </ol>
+  </div>
+</body>
+</html>

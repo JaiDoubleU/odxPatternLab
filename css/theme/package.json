@@ -1,0 +1,76 @@
+{
+  "_from": "git+ssh://git@github.transzap.com:oildex/theme.git#v4.0.0",
+  "_id": "@oildex/theme@4.0.0",
+  "_inBundle": false,
+  "_integrity": "",
+  "_location": "/@oildex/theme",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "git",
+    "raw": "git+ssh://git@github.transzap.com:oildex/theme.git#v4.0.0",
+    "rawSpec": "git+ssh://git@github.transzap.com:oildex/theme.git#v4.0.0",
+    "saveSpec": "git+ssh://git@github.transzap.com:oildex/theme.git#v4.0.0",
+    "fetchSpec": "git@github.transzap.com:oildex/theme.git",
+    "gitCommittish": "v4.0.0"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "git+ssh://git@github.transzap.com:oildex/theme.git#58908735c21a824564a59c7f5612293dbac819c4",
+  "_spec": "git+ssh://git@github.transzap.com:oildex/theme.git#v4.0.0",
+  "_where": "/Users/shannonj/ghoildex/shannonj/patternlab",
+  "authors": [
+    "Hargobind Khalsa <hkhalsa@quickleft.com>",
+    "Keri Clowes <kclowes@quickleft.com>",
+    "Geoff Filippi <gfilippi@oildex.com>",
+    "Mayank Patel <mpatel@oildex.com>",
+    "Scott Davis <scott@thirstyhead.com>",
+    "Daniela Meneses <dvargas@oildex.com>"
+  ],
+  "bundleDependencies": false,
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "font-awesome": "^4.7.0"
+  },
+  "deprecated": false,
+  "description": "Oildex Theme",
+  "devDependencies": {
+    "grunt": "~1.0.3",
+    "grunt-autoprefixer": "~3.0.4",
+    "grunt-contrib-clean": "~1.0.0",
+    "grunt-contrib-concat": "~1.0.1",
+    "grunt-contrib-connect": "~1.0.2",
+    "grunt-contrib-less": "~1.4.0",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-watch": "~1.0.0"
+  },
+  "files": [
+    "oildex/**",
+    "enverus/**",
+    "fonts/**",
+    "assets/img/favicon.ico",
+    "version.json"
+  ],
+  "homepage": "http://github.transzap.com/oildex/theme",
+  "keywords": [
+    "Oildex",
+    "Theme",
+    "LESS",
+    "CSS"
+  ],
+  "license": "Proprietary",
+  "name": "@oildex/theme",
+  "private": false,
+  "publishConfig": {
+    "registry": "http://aus1-q-api01a.pdsenergy.local:4873"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.transzap.com:oildex/theme.git"
+  },
+  "scripts": {
+    "prepublishOnly": "node version-generator.js"
+  },
+  "version": "4.0.0"
+}

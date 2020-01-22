@@ -1,0 +1,163 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+ <title>Authorization Levels</title>
+
+ <link rel="stylesheet" href="../../../OpenInvoiceForBuyers_master.css" type="text/css" />
+
+
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style>
+ <meta name="generator" content="Adobe FrameMaker 2017" />
+<script type="text/javascript" src="../../../template/scripts/rh.min.js"></script>
+<script type="text/javascript" src="../../../template/scripts/common.min.js"></script>
+<script type="text/javascript" src="../../../template/scripts/topic.min.js"></script>
+<script type="text/javascript" src="../../../template/scripts/constants.js"></script>
+<script type="text/javascript" src="../../../template/scripts/utils.js"></script>
+<script type="text/javascript" src="../../../template/scripts/mhutils.js"></script>
+<script type="text/javascript" src="../../../template/scripts/mhlang.js"></script>
+<script type="text/javascript" src="../../../template/scripts/mhver.js"></script>
+<script type="text/javascript" src="../../../template/scripts/settings.js"></script>
+<script type="text/javascript" src="../../../template/scripts/XmlJsReader.js"></script>
+<script type="text/javascript" src="../../../template/scripts/loadparentdata.js"></script>
+<script type="text/javascript" src="../../../template/scripts/loadscreen.js"></script>
+<script type="text/javascript" src="../../../template/scripts/loadprojdata.js"></script>
+<script type="text/javascript" src="../../../template/scripts/mhtopic.js"></script>
+ <link rel="stylesheet" type="text/css" href="../../../template/styles/topic.min.css">
+<script type="text/javascript" >
+gRootRelPath = "../../..";
+gCommonRootRelPath = "../../..";
+gTopicId = "";
+</script>
+ <meta name="brsprev" value="OpenInvoiceForBuyers_master/Configuration/InvoiceFinancialApprovalConfig/Approval_Types.htm">
+ <meta name="brsnext" value="OpenInvoiceForBuyers_master/Configuration/InvoiceFinancialApprovalConfig/Number_of_Financial_Approvals_Required.htm">
+ <meta name="topic-breadcrumbs" content="Administrator & User Guide for Buyers > Invoice Financial Approval Configuration" />
+</head>
+
+<body dir="ltr">
+<script type="text/javascript" src="../../../ehlpdhtm.js"></script>
+<div dir="ltr">
+  <p dir="ltr" class="FM_ADP_TG_Heading_1"><a name="TOC_Authorization_Levels"></a><a name="XREF_87746_Authorization"></a>Authorization Levels</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Body_Style">Authorization levels establish a financial limit and currency for each approval type. If using the Total Invoice Amount approval method, only authorization levels associated with the Total approval type is used.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Body_Style">A user is able to financially approve an invoice if one of the user’s assigned authorization levels has an approval type associated with the invoice. To perform a final financial approval, the user must have sufficient financial limit, in the currency of the invoice, for all approval types associated with the invoice.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Body_Style">Refer to <a href="../../User_Management/UserMgmt/Granting_Financial_Authority.htm#XREF_95946_Granting_Financial">Granting Financial Authority</a>&#160;for instructions on how to assign authorization levels to users.</p>
+
+  <p dir="ltr" class="FM_Heading_2_HowTo">How to Add a New Authorization Level</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Permission___Start"><span class="FM_Bold">Permission:<span style="padding-left: 18pt;" class="FMAutoNumber_1"></span></span>Membership Manage Auth</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Prerequisite___Start"><span class="FM_Bold">Prerequisite:<span style="padding-left: 12pt;" class="FMAutoNumber_1"></span></span>If using approval types, they must be created and mapped to the chart of accounts by a user with the Corporate Modify permission.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Steps"><span class="FM_Bold">Steps:<span style="padding-left: 6pt;" class="FMAutoNumber_1"></span></span></p>
+
+  <ol dir="ltr" start="1">
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Start">Select <span style="font-weight : bold; ">Membership &gt; Authorization Levels</span>. </p>
+</li>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Click <span style="font-weight : bold; ">Add Authorization Level</span>. </p>
+</li>
+<div width="100%" align="left">
+   <table border-spacing="0" dir="ltr" class="table58" border-collapse="collapse" style="max-width: 100% ;height: auto">
+    <tr class="tr59">
+    <td class="td60">
+    <p dir="ltr" class="FM_CellBody" style="display:inline"><img alt="InvoiceFinancialApprovalConfig_authorizationlevels.png" id="image146" src="../../../assets/InvoiceFinancialApprovalConfig_authorizationlevels.png" style="max-width: 100% ;height: auto" />&nbsp;</p>
+</td>
+</tr>
+   </table>
+</div>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Enter a level name.</p>
+</li>
+   <p dir="ltr" class="FM_ADP_TG_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 12pt;" class="FMAutoNumber_2"></span></span>Level names can be repeated but must be unique for each approval type and currency pair.</p>
+
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Select an approval type and currency.</p>
+</li>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Enter an authorization limit or leave the field blank to indicate an unlimited authorization level.</p>
+</li>
+   <p dir="ltr" class="FM_ADP_TG_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 12pt;" class="FMAutoNumber_2"></span></span>Only one authorization level per approval type and currency pair can be unlimited.</p>
+
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Click <span style="font-weight : bold; ">Submit</span>.</p>
+</li>
+  </ol>
+  <p dir="ltr" class="FM_ADP_TG_Screenshot_Anchor">&nbsp;</p>
+
+  <p dir="ltr" class="FM_Heading_2_HowTo">How to Modify an Existing Authorization Level</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Permission___Start"><span class="FM_Bold">Permission:<span style="padding-left: 18pt;" class="FMAutoNumber_1"></span></span>Membership Manage Auth</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Prerequisite___Start"><span class="FM_Bold">Prerequisite:<span style="padding-left: 12pt;" class="FMAutoNumber_1"></span></span>If using approval types, they must be created and mapped to the chart of accounts by a user with the Corporate Modify permission.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Steps"><span class="FM_Bold">Steps:<span style="padding-left: 6pt;" class="FMAutoNumber_1"></span></span></p>
+
+  <ol dir="ltr" start="1">
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Start">Select <span style="font-weight : bold; ">Membership &gt; Authorization Levels</span>. </p>
+</li>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Click the level name.</p>
+</li>
+   <p dir="ltr" class="FM_ADP_TG_Screenshot_Anchor" style="display:inline"><img alt="InvoiceFinancialApprovalConfig_editauthorizationlevel.png" id="image147" src="../../../assets/InvoiceFinancialApprovalConfig_editauthorizationlevel.png" style="max-width: 100% ;height: auto" />&nbsp;</p>
+
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Edit the authorization level profile.</p>
+</li>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Click <span style="font-weight : bold; ">Submit</span>.</p>
+</li>
+  </ol>
+  <p dir="ltr" class="FM_Heading_2_HowTo">How to Delete an Existing Authorization Level</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Permission___Start"><span class="FM_Bold">Permission:<span style="padding-left: 18pt;" class="FMAutoNumber_1"></span></span>Membership Manage Auth</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Prerequisite___Start"><span class="FM_Bold">Prerequisite:<span style="padding-left: 12pt;" class="FMAutoNumber_1"></span></span>If using approval types, they must be created and mapped to the chart of accounts by a user with the Corporate Modify permission.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Steps"><span class="FM_Bold">Steps:<span style="padding-left: 6pt;" class="FMAutoNumber_1"></span></span></p>
+
+  <ol dir="ltr" start="1">
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Start">Select <span style="font-weight : bold; ">Membership &gt; Authorization Levels</span>. </p>
+</li>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Click the <span style="font-weight : bold; ">Configure Users</span> icon and remove all users from the authorization level.</p>
+</li>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Click the <span style="font-weight : bold; ">Delete</span> icon.</p>
+</li>
+  </ol>
+  <p dir="ltr" class="FM_ADP_TG_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 12pt;" class="FMAutoNumber_2"></span></span>The <span style="font-weight : bold; ">Delete</span>&#160;icon only appears if there are no users in the authorization level. </p>
+
+  <p dir="ltr" class="FM_ADP_TG_Screenshot_Anchor" style="display:inline"><img alt="InvoiceFinancialApprovalConfig_authorizationlevels_1.png" id="image148" src="../../../assets/InvoiceFinancialApprovalConfig_authorizationlevels_1.png" style="max-width: 100% ;height: auto" />&nbsp;</p>
+  </div>
+</body>
+</html>

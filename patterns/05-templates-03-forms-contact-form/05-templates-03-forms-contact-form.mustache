@@ -1,0 +1,92 @@
+    <div class="row">
+        <div class="col-xs-12 text-right text-danger">* All Fields Are Required unless specified</div>
+    </div>
+    <form class="form has-feedback">
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="form-group">
+                    <label class="control-label" for="firstName">First Name</label>
+                    <input type="text" class="form-control" id="firstName" placeholder="" value="Thomas" required="">
+                    <div class="help-block hide">
+                        Valid first name is required.
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="form-group">
+                    <label class="control-label" for="lastName">Last Name</label>
+                    <input type="text" class="form-control" id="lastName" placeholder="" value="Smith" required=""/>
+                    <div class="help-block hide">
+                        Valid last name is required.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="form-group">
+                    <label class="control-label" for="address ">Address</label>
+                    <input type="text " class="form-control " id="address " placeholder="i.e. 1234 Main St" required="">
+                    <div class="help-block hide">
+                        Please enter your address
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="form-group">
+                    <label class="control-label" for="address2 ">Address 2 <span class="text-muted">(Optional)</span></label>
+                    <input type="text" class="form-control " id="address2 " placeholder="">
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-6 ">
+                <div class="form-group">
+                    <label class="control-label" for="countrySelect">Country</label>
+                    <select class="form-control" id="countrySelect" name="country" onchange="populateStates()"></select>
+                    <div class="help-block hide">
+                        Select a country.
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="form-group">
+                    <label id="stateProvinceLabel" class="control-label">State/Province:</label>
+                    <select class="form-control" disabled name="state" id="state">
+                        <option>Select a State/Province</option>
+                    </select>
+                    <div class="help-block hide">
+                        Select a state.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-6 ">
+                <div class="form-group ">
+                    <label for="city ">City</label>
+                    <input type="text " class="form-control " id="city" placeholder="City or town name ">
+                    <div class="help-block hide">
+                        Please enter a city.
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 mb-3 ">
+                <div class="form-group">
+                    <label id="zipPostalCodeLabel" class="control-label " for="zipPostalCodeInput">Zip/Postal Code</label>
+                    <input type="text " class="form-control " id="zipPostalCodeInput" placeholder="Enter a valid Zip/Postal Code" required=""/>
+                    <div class="help-block hide">
+                        Please enter a valid Zip/Postal Code.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+    <script>
+        $('#countrySelect').ready(function(){
+             populateCountries("countrySelect", "state");
+        });
+    </script>

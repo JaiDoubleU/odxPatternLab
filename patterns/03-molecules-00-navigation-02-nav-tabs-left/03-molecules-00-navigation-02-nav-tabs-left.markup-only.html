@@ -1,0 +1,95 @@
+<style>
+    .tabs-left {
+        display: table;
+    }
+    .tabs-left .tab-content {
+        border: none;
+    }
+    .tabs-left > .nav-tabs {
+        border-bottom: 0;
+    }
+
+    .tab-content > .tab-pane {
+        display: none;
+    }
+
+    .tab-content > .active {
+        display: block;
+    }
+
+    .tabs-left > .nav-tabs > li {
+        float: none;
+    }
+
+    .tabs-left > .nav-tabs > li > a {
+        min-width: 74px;
+        max-width: 160px;
+        margin-right: 0;
+        margin-bottom: 3px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .tabs-left > .nav-tabs {
+        float: left;
+        margin-right: 19px;
+        border-right: 1px solid #ddd;
+    }
+
+    .tabs-left > .nav-tabs > li > a {
+        margin-right: -1px;
+        -webkit-border-radius: 4px 0 0 4px;
+        -moz-border-radius: 4px 0 0 4px;
+        border-radius: 4px 0 0 4px;
+    }
+
+    .tabs-left > .nav-tabs > li > a:hover,
+    .tabs-left > .nav-tabs > li > a:focus {
+        border-bottom-color: #ddd;
+    }
+
+    .tabs-left > .nav-tabs .active > a,
+    .tabs-left > .nav-tabs .active > a:hover,
+    .tabs-left > .nav-tabs .active > a:focus {
+        border-color: #ddd transparent #ddd #ddd;
+        *border-right-color: #ffffff;
+    }
+</style>
+<!-- tabs -->
+<div class="tabbable tabs-left">
+    <ul class="nav nav-tabs pull-left">
+        <li class="active"><a href="#home" data-toggle="tab">Home</a></li>
+        <li><a href="#tabsLeftProfile" data-toggle="tab">Profile</a></li>
+        <li><a href="#tabsLeftMessages" data-toggle="tab" alt="$(this).text();">Messages</a></li>
+        <li><a href="#tabsLeftContact" data-toggle="tab">Contact</a></li>
+    </ul>
+    <div class="tab-content">
+        <div class="tab-pane active" id="home">
+            <div class="">
+                <h3>Home</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et elit at quam finibus lobortis.</p>
+            </div>
+        </div>
+        <div class="tab-pane" id="tabsLeftProfile">
+            <div class="">
+                <h3>Profile</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et elit at quam finibus lobortis.</p>
+            </div>
+        </div>
+
+        <div class="tab-pane" id="tabsLeftMessages">
+            <div class="">
+                <h3>Messages</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et elit at quam finibus lobortis.</p>
+            </div>
+        </div>
+
+        <div class="tab-pane" id="tabsLeftContact">
+            <div class="">
+                <h3>Contact</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et elit at quam finibus lobortis.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /tabs -->

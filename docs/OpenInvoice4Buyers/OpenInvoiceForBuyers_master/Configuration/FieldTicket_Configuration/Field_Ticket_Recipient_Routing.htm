@@ -1,0 +1,138 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+ <title>Field Ticket Recipient Routing</title>
+
+ <link rel="stylesheet" href="../../../OpenInvoiceForBuyers_master.css" type="text/css" />
+
+
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style>
+ <meta name="generator" content="Adobe FrameMaker 2017" />
+<script type="text/javascript" src="../../../template/scripts/rh.min.js"></script>
+<script type="text/javascript" src="../../../template/scripts/common.min.js"></script>
+<script type="text/javascript" src="../../../template/scripts/topic.min.js"></script>
+<script type="text/javascript" src="../../../template/scripts/constants.js"></script>
+<script type="text/javascript" src="../../../template/scripts/utils.js"></script>
+<script type="text/javascript" src="../../../template/scripts/mhutils.js"></script>
+<script type="text/javascript" src="../../../template/scripts/mhlang.js"></script>
+<script type="text/javascript" src="../../../template/scripts/mhver.js"></script>
+<script type="text/javascript" src="../../../template/scripts/settings.js"></script>
+<script type="text/javascript" src="../../../template/scripts/XmlJsReader.js"></script>
+<script type="text/javascript" src="../../../template/scripts/loadparentdata.js"></script>
+<script type="text/javascript" src="../../../template/scripts/loadscreen.js"></script>
+<script type="text/javascript" src="../../../template/scripts/loadprojdata.js"></script>
+<script type="text/javascript" src="../../../template/scripts/mhtopic.js"></script>
+ <link rel="stylesheet" type="text/css" href="../../../template/styles/topic.min.css">
+<script type="text/javascript" >
+gRootRelPath = "../../..";
+gCommonRootRelPath = "../../..";
+gTopicId = "";
+</script>
+ <meta name="brsprev" value="OpenInvoiceForBuyers_master/Configuration/FieldTicket_Configuration/Configure_Field_Ticket_Data_Fields.htm">
+ <meta name="brsnext" value="OpenInvoiceForBuyers_master/Configuration/InvoiceContentConfig/InvoiceContentConfig.htm">
+ <meta name="topic-breadcrumbs" content="Administrator & User Guide for Buyers > Ticket Configuration" />
+</head>
+
+<body dir="ltr">
+<script type="text/javascript" src="../../../ehlpdhtm.js"></script>
+<div dir="ltr">
+  <p dir="ltr" class="FM_ADP_TG_Heading_1"><a name="TOC_Field_Ticket_Recipient"></a>Field Ticket Recipient Routing</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Body_Style">Ticket Recipient Routing rules allow field tickets processed in the OpenInvoice platform to be routed to:</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>A specific site and department. </p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>A specific site, department, and user. </p>
+
+  <p dir="ltr" class="FM_ADP_TG_Body_Style">Field Tickets are routed to the Remit To site and department as specified in the ticket routing rules. Ticket recipient routing, performed only on initial field ticket submission, forwards the field ticket to a recipient who then becomes the field ticket owner. </p>
+
+  <p dir="ltr" class="FM_ADP_TG_Note___Start"><span class="FM_Bold">Note:<span style="padding-left: 12pt;" class="FMAutoNumber_1"></span></span>If the field ticket is disputed and then resubmitted, it will be resubmitted as specified in the ticket routing rules.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Heading_2">Recipient Routing Rules</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Body_Style">Each rule consists of two components: the criteria used to select the appropriate rule and the routing destination. When creating the criteria for rule selection, consider the following:</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>Criteria on submitted field tickets must match a configured rule exactly for routing to occur. </p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>The rules are evaluated sequentially from top to bottom. The first matching rule will determine the recipient and subsequent rules will not be evaluated. Therefore, the rules at the top of file must be more specific than the rules at the bottom of the file.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>If the first matched routing specifies a destination that is no longer valid, the field ticket is not routed. Subsequent rules are not evaluated.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>A default rule is not required. If no rules match or if the Remit To site and Department are the same as the routing destination determined by the rules, the field ticket is not routed. </p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>A user is a valid recipient if they have the Field Ticket View permission in the destination site and department.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>When specifying a user as the valid recipient, the text in the TSV file must be copied and pasted into the <span style="font-weight : bold; ">Paste</span>&#160;field. The rules cannot be uploaded in an Excel TSV file. Excel will put quotation marks around the user’s name because the format contains a comma. The entry will then be rejected for not being formatted correctly.</p>
+
+  <p dir="ltr" style="margin-top  : 9.000pt; margin-bottom : 3.000pt; font-family : Arial; font-weight : bold; font-size  : 14.0pt; color   : #015db8;">How to Configure Recipient Routing Rules</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Permission___Start"><span class="FM_Bold">Permission:<span style="padding-left: 18pt;" class="FMAutoNumber_1"></span></span>Corporate View to view rules</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Permission___Next"><span class="FM_Bold"><span style="padding-left: 72pt;" class="FMAutoNumber_1"></span></span>Corporate Admin to configure rules</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Note___Start"><span class="FM_Bold">Note:<span style="padding-left: 12pt;" class="FMAutoNumber_1"></span></span>Existing rules will be replaced whenever a set of rules is imported. Any previous rule not included in a new import file will be deleted.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Steps"><span class="FM_Bold">Steps:<span style="padding-left: 6pt;" class="FMAutoNumber_1"></span></span></p>
+
+  <ol dir="ltr" start="1">
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Start">Select <span style="font-weight : bold; ">Corporate &gt; Workflow Configuration</span>.</p>
+</li>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Click <span style="font-weight : bold; ">Configure Ticket Recipient Rules</span>. </p>
+</li>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Click <span style="font-weight : bold; ">Export</span> to download and save the currently configured rules.</p>
+</li>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">In the file, enter the new routing rules. Save the file in TSV format. For more information about the column headings, refer to the <span style="font-style : italic; ">OpenInvoice Admin Guide.</span></p>
+</li>
+   <p dir="ltr" class="FM_ADP_TG_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 12pt;" class="FMAutoNumber_2"></span></span>To disable workflow routing, create a file with no rules.</p>
+
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">In <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>, click <span style="font-weight : bold; ">Import</span>.</p>
+</li>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Do one of the following:</p>
+</li>
+   <p dir="ltr" class="FM_ADP_TG_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 12pt;" class="FMAutoNumber_1"></span></span>To upload a file saved on your desktop, select <span style="font-weight : bold; ">File </span>as the import method, click <span style="font-weight : bold; ">Choose File</span>, navigate to the file on your computer, and click <span style="font-weight : bold; ">Open</span>.</p>
+
+   <p dir="ltr" class="FM_ADP_TG_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 12pt;" class="FMAutoNumber_1"></span></span>To copy the contents of a spreadsheet, select <span style="font-weight : bold; ">Copy/Paste</span>&#160;as the import method, copy the information in your file, and paste it into the box.</p>
+
+   <div align="center"><img alt="FieldTicket_ImportTicketRecipientRules.png" id="image111" src="../../../assets/FieldTicket_ImportTicketRecipientRules.png" style="max-width: 100% ;height: auto" />
+   </div>
+   <p dir="ltr" class="FM_ADP_TG_Screenshot_Anchor">&nbsp;</p>
+
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Click<span style="font-weight : bold; "> Upload</span>.</p>
+</li>
+  </ol>
+  <p dir="ltr" class="FM_ADP_TG_Body_Style">&nbsp;</p>
+ </div>
+</body>
+</html>

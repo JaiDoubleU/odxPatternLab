@@ -1,0 +1,1924 @@
+{
+  "version": 1,
+  "timestamp": 1579126526945,
+  "graph": {
+    "options": {
+      "directed": true,
+      "multigraph": false,
+      "compound": false
+    },
+    "nodes": [
+      {
+        "v": "00-home/00-home.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "00-home/01-using-color.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "00-home/02-messaging.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "00-home/03-button-types.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "00-home/04-building-forms.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "00-home/10-about-atoms.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "00-home/11-about-molecules.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "00-home/12-about-organisms.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "00-home/13-about-templates.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "00-home/14-about-pages.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "02-atoms/01-global/00-colors.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "02-atoms/01-global/01-enverus-colors.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "02-atoms/01-global/02-charting-colors.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "02-atoms/01-global/03-fonts.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "02-atoms/01-global/04-standard-icons.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "02-atoms/01-global/05-loading-spinner.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "02-atoms/01-global/06-animations.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "02-atoms/02-text/00-headings.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "02-atoms/02-text/01-paragraph.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "02-atoms/02-text/02-blockquote.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "02-atoms/02-text/03-inline-elements.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "02-atoms/02-text/05-preformatted-text.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "02-atoms/02-text/06-required-field-indicator.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/06-pages-user-profile/06-pages-user-profile.html",
+          "lineagePattern": "pages-user-profile"
+        }
+      },
+      {
+        "v": "02-atoms/02-text/07-page-header.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/06-pages-platform-dashboard/06-pages-platform-dashboard.html",
+          "lineagePattern": "pages-platform-dashboard"
+        }
+      },
+      {
+        "v": "02-atoms/03-lists/00-unordered.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "02-atoms/03-lists/01-ordered.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "02-atoms/03-lists/02-unstyled.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "02-atoms/03-lists/03-definition.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "02-atoms/04-buttons/00-button.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/04-organisms-02-form-elements-01-inline-form/04-organisms-02-form-elements-01-inline-form.html",
+          "lineagePattern": "organisms-inline-form"
+        }
+      },
+      {
+        "v": "02-atoms/04-buttons/01-icon-button.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "02-atoms/04-buttons/02-outline-button.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "02-atoms/04-buttons/03-link-button.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "02-atoms/04-buttons/04-button-variants.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "02-atoms/04-buttons/_00-btn.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/06-pages-platform-dashboard/06-pages-platform-dashboard.html",
+          "lineagePattern": "pages-platform-dashboard"
+        }
+      },
+      {
+        "v": "02-atoms/05-form-elements/00-input.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/06-pages-rental/06-pages-rental.html",
+          "lineagePattern": "pages-rental"
+        }
+      },
+      {
+        "v": "02-atoms/05-form-elements/01-radio-button.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/04-organisms-02-form-elements-00-simple-form/04-organisms-02-form-elements-00-simple-form.html",
+          "lineagePattern": "organisms-simple-form"
+        }
+      },
+      {
+        "v": "02-atoms/05-form-elements/02-checkbox.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/05-templates-03-forms-page-settings/05-templates-03-forms-page-settings.html",
+          "lineagePattern": "templates-page-settings"
+        }
+      },
+      {
+        "v": "02-atoms/06-tables/00-table.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/04-organisms-01-blocks-06-panel-with-footer-actions/04-organisms-01-blocks-06-panel-with-footer-actions.html",
+          "lineagePattern": "organisms-panel-with-footer-actions"
+        }
+      },
+      {
+        "v": "02-atoms/06-tables/01-table-striped.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "02-atoms/06-tables/02-table-bordered.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/05-templates-01-dashboards-dashboard-card-with-actions/05-templates-01-dashboards-dashboard-card-with-actions.html",
+          "lineagePattern": "templates-dashboard-card-with-actions"
+        }
+      },
+      {
+        "v": "02-atoms/06-tables/03-table-condensed.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "02-atoms/07-media/00-badges.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/03-molecules-06-list-groups-03-list-group/03-molecules-06-list-groups-03-list-group.html",
+          "lineagePattern": "molecules-list-group"
+        }
+      },
+      {
+        "v": "02-atoms/07-media/02-labels.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "02-atoms/07-media/03-labels-variants.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "02-atoms/07-media/04-progress-bars.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "02-atoms/07-media/05-progress-bars-variants.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "02-atoms/07-media/06-thumbnails.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "03-molecules/00-navigation/00-breadcrumbs.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "03-molecules/00-navigation/01-navs.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "03-molecules/00-navigation/02-nav-tabs-left.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "03-molecules/00-navigation/02-nav-tabs.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "03-molecules/00-navigation/03-nav-pills.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "03-molecules/00-navigation/04-nav-variants.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "03-molecules/00-navigation/05-page-header-with-navigation.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "03-molecules/00-navigation/12-pagination.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/05-templates-02-data-grids-01-simple-list-page/05-templates-02-data-grids-01-simple-list-page.html",
+          "lineagePattern": "templates-simple-list-page"
+        }
+      },
+      {
+        "v": "03-molecules/00-navigation/13-pagination-variants.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "03-molecules/00-navigation/14-pager.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "03-molecules/00-navigation/15-pager-variants.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "03-molecules/00-navigation/16-navbar-nav.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "03-molecules/00-navigation/17-navbar-form.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "03-molecules/00-navigation/18-navbar-left.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "03-molecules/00-navigation/19-navbar-right.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "03-molecules/01-blocks/00-panels.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "03-molecules/01-blocks/01-panels-variants.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "03-molecules/01-blocks/02-contextual-panels.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "03-molecules/01-blocks/04-wells.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "03-molecules/01-blocks/05-wells-variants.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "03-molecules/01-blocks/blockquotes.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "03-molecules/02-form-elements/00-input-group.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "03-molecules/02-form-elements/02-input-group-checkbox.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "03-molecules/02-form-elements/03-input-group-radio.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "03-molecules/02-form-elements/04-input-group-button.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "03-molecules/02-form-elements/05-multi-field-input-group.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "03-molecules/02-form-elements/06-button-group.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "03-molecules/02-form-elements/06-toggle-button-group.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "03-molecules/02-form-elements/07-dropdown.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "03-molecules/02-form-elements/08-multi-select.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/06-pages-contract-workspace/06-pages-contract-workspace.html",
+          "lineagePattern": "pages-contract-workspace"
+        }
+      },
+      {
+        "v": "03-molecules/02-form-elements/09-button-dropdown.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "03-molecules/02-form-elements/11-button-dropdown-split.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "03-molecules/02-form-elements/13-button-dropup.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "03-molecules/02-form-elements/15-switch.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "03-molecules/02-form-elements/16-definition-list-with-checkboxes.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "03-molecules/02-form-elements/17-checkbox-lg.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "03-molecules/02-form-elements/18-radio-lg.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "03-molecules/02-form-elements/20-tokenfield.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "03-molecules/03-tables/00-simple-table.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "03-molecules/03-tables/01-multi-header-table.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "03-molecules/03-tables/02-expandable-table.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "03-molecules/03-tables/03-table-with-actions.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "03-molecules/05-messaging/00-alerts.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "03-molecules/05-messaging/01-alerts-small.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "03-molecules/05-messaging/01-alerts-with-icons.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "03-molecules/05-messaging/03-modal.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "03-molecules/05-messaging/04-modal-variants.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "03-molecules/05-messaging/05-popover.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "03-molecules/06-list-groups/03-list-group.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "03-molecules/06-list-groups/04-list-group-variants.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "03-molecules/06-list-groups/05-selectable-list-group.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "03-molecules/07-media/01-media.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/04-organisms-06-media-00-media-object/04-organisms-06-media-00-media-object.html",
+          "lineagePattern": "organisms-media-object"
+        }
+      },
+      {
+        "v": "03-molecules/07-media/02-media-variants.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "04-organisms/00-navigation/00-navbar.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/06-pages-user-profile/06-pages-user-profile.html",
+          "lineagePattern": "pages-user-profile"
+        }
+      },
+      {
+        "v": "04-organisms/00-navigation/03-secondary-navbar.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/06-pages-user-profile/06-pages-user-profile.html",
+          "lineagePattern": "pages-user-profile"
+        }
+      },
+      {
+        "v": "04-organisms/00-navigation/05-centered-navbar.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/06-pages-super-ticket/06-pages-super-ticket.html",
+          "lineagePattern": "pages-super-ticket"
+        }
+      },
+      {
+        "v": "04-organisms/01-blocks/00-single-value-card.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/06-pages-super-ticket/06-pages-super-ticket.html",
+          "lineagePattern": "pages-super-ticket"
+        }
+      },
+      {
+        "v": "04-organisms/01-blocks/01-tabular-card.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/06-pages-super-ticket/06-pages-super-ticket.html",
+          "lineagePattern": "pages-super-ticket"
+        }
+      },
+      {
+        "v": "04-organisms/01-blocks/02-small-card.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "04-organisms/01-blocks/03-progress-cards.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "04-organisms/01-blocks/04-media-card.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "04-organisms/01-blocks/05-panel-with-header-button.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "04-organisms/01-blocks/06-collapsable-panel.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "04-organisms/01-blocks/06-panel-with-footer-actions.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "04-organisms/01-blocks/07-tabbed-panel.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "04-organisms/01-blocks/panel-with-ribbon.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "04-organisms/02-form-elements/00-simple-form.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "04-organisms/02-form-elements/01-inline-form.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "04-organisms/02-form-elements/03-horizontal-form.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "04-organisms/02-form-elements/04-multi-column-form.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "04-organisms/02-form-elements/05-message-form.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "04-organisms/02-form-elements/action-button-collapsed.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "04-organisms/02-form-elements/action-button.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "04-organisms/02-form-elements/busy-input.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "04-organisms/02-form-elements/currency-dropdown.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/06-pages-contract-workspace/06-pages-contract-workspace.html",
+          "lineagePattern": "pages-contract-workspace"
+        }
+      },
+      {
+        "v": "04-organisms/02-form-elements/password-toggle.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "04-organisms/04-messaging/01-default-modal.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "04-organisms/04-messaging/02-modal-with-alert.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "04-organisms/04-messaging/04-scrollable-modal.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "04-organisms/04-messaging/05-info-alert.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "04-organisms/04-messaging/06-success-alert.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "04-organisms/04-messaging/07-warning-alert.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "04-organisms/04-messaging/08-error-alert.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "04-organisms/04-messaging/09-expandable-alerts.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "04-organisms/05-list-groups/00-sortable-list-group.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "04-organisms/05-list-groups/01-sortable-double-list.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "04-organisms/06-media/00-media-object.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/04-organisms-06-media-01-media-list/04-organisms-06-media-01-media-list.html",
+          "lineagePattern": "organisms-media-list"
+        }
+      },
+      {
+        "v": "04-organisms/06-media/01-media-list.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "05-templates/00-blocks/document-header.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/06-pages-super-ticket/06-pages-super-ticket.html",
+          "lineagePattern": "pages-super-ticket"
+        }
+      },
+      {
+        "v": "05-templates/00-blocks/full-screen-toggle.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/06-pages-rental/06-pages-rental.html",
+          "lineagePattern": "pages-rental"
+        }
+      },
+      {
+        "v": "05-templates/01-dashboards/dashboard-card-with-actions.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "05-templates/01-dashboards/dashboard-card-with-settings.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "05-templates/01-dashboards/field-ticket-card.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "05-templates/01-dashboards/progress-panel.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "05-templates/01-dashboards/single-count-panel.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "05-templates/01-dashboards/status-panel.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "05-templates/01-dashboards/user-cards.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "05-templates/02-data-grids/01-simple-list-page.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "05-templates/02-data-grids/02-error-handling-in-lists.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "05-templates/02-data-grids/03-advanced-filters.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "05-templates/02-data-grids/04-scrollable-list.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "05-templates/02-data-grids/05-paginated-list.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "05-templates/03-forms/01-responsive-form.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "05-templates/03-forms/__bulk-update.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "05-templates/03-forms/bulk-update-v2.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "05-templates/03-forms/bulk-update.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/06-pages-super-ticket/06-pages-super-ticket.html",
+          "lineagePattern": "pages-super-ticket"
+        }
+      },
+      {
+        "v": "05-templates/03-forms/contact-form.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "05-templates/03-forms/digital-signature.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "05-templates/03-forms/file-upload.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "05-templates/03-forms/form-validations.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "05-templates/03-forms/general-ledger-allocations.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "05-templates/03-forms/page-settings.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "05-templates/03-forms/panel-form.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "05-templates/03-forms/previous-values-in-forms.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "05-templates/03-forms/tokenfield-typeahead.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "05-templates/03-forms/typeahead-suggestions.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "05-templates/03-forms/typeahead.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "05-templates/04-navs-and-toolbars/invoice-toolbar.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "05-templates/04-navs-and-toolbars/left-aligned-tabs.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "05-templates/04-navs-and-toolbars/menu-button.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "05-templates/04-navs-and-toolbars/nav-wizard.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/06-pages-contract-workspace/06-pages-contract-workspace.html",
+          "lineagePattern": "pages-contract-workspace"
+        }
+      },
+      {
+        "v": "05-templates/04-navs-and-toolbars/sidebar-collapsed.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "05-templates/04-navs-and-toolbars/sidebar-expanded.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "05-templates/04-navs-and-toolbars/slide-in-panel.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/06-pages-service-account-dashboard/06-pages-service-account-dashboard.html",
+          "lineagePattern": "pages-service-account-dashboard"
+        }
+      },
+      {
+        "v": "05-templates/04-navs-and-toolbars/stepped-breadcrumbs.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "05-templates/05-feedback-and-messaging/auto-dismiss-dialog.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "05-templates/05-feedback-and-messaging/import-results-dialog.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "05-templates/05-feedback-and-messaging/resizable-modal.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "05-templates/05-feedback-and-messaging/time-out-dialog.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "05-templates/05-feedback-and-messaging/unknown-error-alert.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "05-templates/06-compliance/ticket-compliance.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "05-templates/07-lists/01-attachments-list.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/06-pages-rental/06-pages-rental.html",
+          "lineagePattern": "pages-rental"
+        }
+      },
+      {
+        "v": "05-templates/07-lists/02-comments-list.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/06-pages-contract-workspace/06-pages-contract-workspace.html",
+          "lineagePattern": "pages-contract-workspace"
+        }
+      },
+      {
+        "v": "05-templates/07-lists/03-document-journal.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/06-pages-rental/06-pages-rental.html",
+          "lineagePattern": "pages-rental"
+        }
+      },
+      {
+        "v": "05-templates/08-layouts/three-column-fluid-center.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "05-templates/08-layouts/three-column-fluid-left.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "05-templates/08-layouts/three-column-fluid-right.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "05-templates/09-charting/bar-chart.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "05-templates/09-charting/donut-chart.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/06-pages-service-account-dashboard/06-pages-service-account-dashboard.html",
+          "lineagePattern": "pages-service-account-dashboard"
+        }
+      },
+      {
+        "v": "05-templates/09-charting/gauge-chart.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/06-pages-service-account-dashboard/06-pages-service-account-dashboard.html",
+          "lineagePattern": "pages-service-account-dashboard"
+        }
+      },
+      {
+        "v": "05-templates/09-charting/line-chart.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "05-templates/09-charting/stacked-bar-chart.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/06-pages-service-account-dashboard/06-pages-service-account-dashboard.html",
+          "lineagePattern": "pages-service-account-dashboard"
+        }
+      },
+      {
+        "v": "05-templates/09-charting/world-map.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "06-pages/business-unit.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "06-pages/business-units-list.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "06-pages/contract-workspace.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "06-pages/error-page.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "06-pages/field-ticket-list.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "06-pages/field-ticket.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "06-pages/goods-receipt.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "06-pages/loading-page.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "06-pages/oildex-email.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "06-pages/openInvoice-dashboard.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "06-pages/openInvoice-email.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "06-pages/password-settings.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "06-pages/platform-dashboard.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "06-pages/purchase-order.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "06-pages/rental.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "06-pages/service-account-dashboard.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "06-pages/sign-in-page.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "06-pages/super-ticket.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "06-pages/supplier-link-configuration.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "06-pages/user-profile.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "/Users/shannonj/ghoildex/shannonj/patternlab/source/_meta/_00-head.mustache",
+        "value": {
+          "compileState": null
+        }
+      },
+      {
+        "v": "/Users/shannonj/ghoildex/shannonj/patternlab/source/_meta/_01-foot.mustache",
+        "value": {
+          "compileState": null
+        }
+      }
+    ],
+    "edges": [
+      {
+        "v": "00-home/02-messaging.mustache",
+        "w": "02-atoms/04-buttons/_00-btn.mustache",
+        "value": {}
+      },
+      {
+        "v": "02-atoms/04-buttons/00-button.mustache",
+        "w": "02-atoms/04-buttons/_00-btn.mustache",
+        "value": {}
+      },
+      {
+        "v": "02-atoms/04-buttons/01-icon-button.mustache",
+        "w": "02-atoms/04-buttons/_00-btn.mustache",
+        "value": {}
+      },
+      {
+        "v": "02-atoms/04-buttons/02-outline-button.mustache",
+        "w": "02-atoms/04-buttons/_00-btn.mustache",
+        "value": {}
+      },
+      {
+        "v": "02-atoms/04-buttons/03-link-button.mustache",
+        "w": "02-atoms/04-buttons/_00-btn.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-molecules/00-navigation/17-navbar-form.mustache",
+        "w": "02-atoms/04-buttons/_00-btn.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-molecules/02-form-elements/00-input-group.mustache",
+        "w": "02-atoms/05-form-elements/00-input.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-molecules/02-form-elements/02-input-group-checkbox.mustache",
+        "w": "02-atoms/05-form-elements/00-input.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-molecules/02-form-elements/03-input-group-radio.mustache",
+        "w": "02-atoms/05-form-elements/00-input.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-molecules/02-form-elements/06-button-group.mustache",
+        "w": "02-atoms/04-buttons/_00-btn.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-molecules/02-form-elements/11-button-dropdown-split.mustache",
+        "w": "02-atoms/04-buttons/00-button.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-molecules/02-form-elements/13-button-dropup.mustache",
+        "w": "02-atoms/04-buttons/00-button.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-molecules/06-list-groups/03-list-group.mustache",
+        "w": "02-atoms/07-media/00-badges.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-organisms/01-blocks/06-panel-with-footer-actions.mustache",
+        "w": "02-atoms/06-tables/00-table.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-organisms/02-form-elements/00-simple-form.mustache",
+        "w": "02-atoms/05-form-elements/00-input.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-organisms/02-form-elements/00-simple-form.mustache",
+        "w": "02-atoms/05-form-elements/01-radio-button.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-organisms/02-form-elements/00-simple-form.mustache",
+        "w": "02-atoms/05-form-elements/02-checkbox.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-organisms/02-form-elements/00-simple-form.mustache",
+        "w": "02-atoms/04-buttons/_00-btn.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-organisms/02-form-elements/01-inline-form.mustache",
+        "w": "02-atoms/05-form-elements/00-input.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-organisms/02-form-elements/01-inline-form.mustache",
+        "w": "02-atoms/04-buttons/00-button.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-organisms/02-form-elements/03-horizontal-form.mustache",
+        "w": "02-atoms/05-form-elements/02-checkbox.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-organisms/02-form-elements/04-multi-column-form.mustache",
+        "w": "02-atoms/05-form-elements/00-input.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-organisms/02-form-elements/04-multi-column-form.mustache",
+        "w": "02-atoms/04-buttons/_00-btn.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-organisms/02-form-elements/05-message-form.mustache",
+        "w": "02-atoms/04-buttons/_00-btn.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-organisms/02-form-elements/action-button-collapsed.mustache",
+        "w": "02-atoms/04-buttons/_00-btn.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-organisms/02-form-elements/action-button.mustache",
+        "w": "02-atoms/04-buttons/_00-btn.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-organisms/02-form-elements/currency-dropdown.mustache",
+        "w": "02-atoms/02-text/06-required-field-indicator.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-organisms/04-messaging/01-default-modal.mustache",
+        "w": "02-atoms/04-buttons/_00-btn.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-organisms/04-messaging/02-modal-with-alert.mustache",
+        "w": "02-atoms/04-buttons/_00-btn.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-organisms/06-media/00-media-object.mustache",
+        "w": "03-molecules/07-media/01-media.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-organisms/06-media/01-media-list.mustache",
+        "w": "04-organisms/06-media/00-media-object.mustache",
+        "value": {}
+      },
+      {
+        "v": "05-templates/01-dashboards/dashboard-card-with-actions.mustache",
+        "w": "02-atoms/06-tables/02-table-bordered.mustache",
+        "value": {}
+      },
+      {
+        "v": "05-templates/01-dashboards/dashboard-card-with-settings.mustache",
+        "w": "03-molecules/02-form-elements/08-multi-select.mustache",
+        "value": {}
+      },
+      {
+        "v": "05-templates/02-data-grids/01-simple-list-page.mustache",
+        "w": "02-atoms/04-buttons/_00-btn.mustache",
+        "value": {}
+      },
+      {
+        "v": "05-templates/02-data-grids/01-simple-list-page.mustache",
+        "w": "03-molecules/00-navigation/12-pagination.mustache",
+        "value": {}
+      },
+      {
+        "v": "05-templates/02-data-grids/03-advanced-filters.mustache",
+        "w": "02-atoms/02-text/06-required-field-indicator.mustache",
+        "value": {}
+      },
+      {
+        "v": "05-templates/02-data-grids/03-advanced-filters.mustache",
+        "w": "02-atoms/05-form-elements/00-input.mustache",
+        "value": {}
+      },
+      {
+        "v": "05-templates/02-data-grids/04-scrollable-list.mustache",
+        "w": "02-atoms/04-buttons/_00-btn.mustache",
+        "value": {}
+      },
+      {
+        "v": "05-templates/03-forms/01-responsive-form.mustache",
+        "w": "02-atoms/02-text/06-required-field-indicator.mustache",
+        "value": {}
+      },
+      {
+        "v": "05-templates/03-forms/form-validations.mustache",
+        "w": "02-atoms/02-text/06-required-field-indicator.mustache",
+        "value": {}
+      },
+      {
+        "v": "05-templates/03-forms/general-ledger-allocations.mustache",
+        "w": "02-atoms/02-text/06-required-field-indicator.mustache",
+        "value": {}
+      },
+      {
+        "v": "05-templates/03-forms/page-settings.mustache",
+        "w": "02-atoms/05-form-elements/02-checkbox.mustache",
+        "value": {}
+      },
+      {
+        "v": "05-templates/03-forms/panel-form.mustache",
+        "w": "02-atoms/02-text/06-required-field-indicator.mustache",
+        "value": {}
+      },
+      {
+        "v": "05-templates/03-forms/panel-form.mustache",
+        "w": "02-atoms/05-form-elements/00-input.mustache",
+        "value": {}
+      },
+      {
+        "v": "06-pages/business-unit.mustache",
+        "w": "04-organisms/00-navigation/00-navbar.mustache",
+        "value": {}
+      },
+      {
+        "v": "06-pages/business-unit.mustache",
+        "w": "04-organisms/00-navigation/03-secondary-navbar.mustache",
+        "value": {}
+      },
+      {
+        "v": "06-pages/business-unit.mustache",
+        "w": "02-atoms/02-text/06-required-field-indicator.mustache",
+        "value": {}
+      },
+      {
+        "v": "06-pages/business-units-list.mustache",
+        "w": "04-organisms/00-navigation/00-navbar.mustache",
+        "value": {}
+      },
+      {
+        "v": "06-pages/business-units-list.mustache",
+        "w": "04-organisms/00-navigation/03-secondary-navbar.mustache",
+        "value": {}
+      },
+      {
+        "v": "06-pages/business-units-list.mustache",
+        "w": "02-atoms/02-text/06-required-field-indicator.mustache",
+        "value": {}
+      },
+      {
+        "v": "06-pages/contract-workspace.mustache",
+        "w": "04-organisms/00-navigation/00-navbar.mustache",
+        "value": {}
+      },
+      {
+        "v": "06-pages/contract-workspace.mustache",
+        "w": "04-organisms/00-navigation/03-secondary-navbar.mustache",
+        "value": {}
+      },
+      {
+        "v": "06-pages/contract-workspace.mustache",
+        "w": "05-templates/04-navs-and-toolbars/nav-wizard.mustache",
+        "value": {}
+      },
+      {
+        "v": "06-pages/contract-workspace.mustache",
+        "w": "02-atoms/02-text/06-required-field-indicator.mustache",
+        "value": {}
+      },
+      {
+        "v": "06-pages/contract-workspace.mustache",
+        "w": "04-organisms/02-form-elements/currency-dropdown.mustache",
+        "value": {}
+      },
+      {
+        "v": "06-pages/contract-workspace.mustache",
+        "w": "05-templates/07-lists/02-comments-list.mustache",
+        "value": {}
+      },
+      {
+        "v": "06-pages/contract-workspace.mustache",
+        "w": "05-templates/07-lists/03-document-journal.mustache",
+        "value": {}
+      },
+      {
+        "v": "06-pages/contract-workspace.mustache",
+        "w": "03-molecules/02-form-elements/08-multi-select.mustache",
+        "value": {}
+      },
+      {
+        "v": "06-pages/error-page.mustache",
+        "w": "04-organisms/00-navigation/00-navbar.mustache",
+        "value": {}
+      },
+      {
+        "v": "06-pages/field-ticket-list.mustache",
+        "w": "04-organisms/00-navigation/00-navbar.mustache",
+        "value": {}
+      },
+      {
+        "v": "06-pages/field-ticket-list.mustache",
+        "w": "04-organisms/00-navigation/03-secondary-navbar.mustache",
+        "value": {}
+      },
+      {
+        "v": "06-pages/field-ticket-list.mustache",
+        "w": "02-atoms/04-buttons/_00-btn.mustache",
+        "value": {}
+      },
+      {
+        "v": "06-pages/field-ticket.mustache",
+        "w": "04-organisms/00-navigation/00-navbar.mustache",
+        "value": {}
+      },
+      {
+        "v": "06-pages/field-ticket.mustache",
+        "w": "04-organisms/00-navigation/03-secondary-navbar.mustache",
+        "value": {}
+      },
+      {
+        "v": "06-pages/field-ticket.mustache",
+        "w": "05-templates/00-blocks/document-header.mustache",
+        "value": {}
+      },
+      {
+        "v": "06-pages/field-ticket.mustache",
+        "w": "02-atoms/02-text/06-required-field-indicator.mustache",
+        "value": {}
+      },
+      {
+        "v": "06-pages/field-ticket.mustache",
+        "w": "02-atoms/05-form-elements/00-input.mustache",
+        "value": {}
+      },
+      {
+        "v": "06-pages/field-ticket.mustache",
+        "w": "05-templates/07-lists/01-attachments-list.mustache",
+        "value": {}
+      },
+      {
+        "v": "06-pages/field-ticket.mustache",
+        "w": "05-templates/07-lists/03-document-journal.mustache",
+        "value": {}
+      },
+      {
+        "v": "06-pages/field-ticket.mustache",
+        "w": "05-templates/00-blocks/full-screen-toggle.mustache",
+        "value": {}
+      },
+      {
+        "v": "06-pages/field-ticket.mustache",
+        "w": "04-organisms/00-navigation/05-centered-navbar.mustache",
+        "value": {}
+      },
+      {
+        "v": "06-pages/goods-receipt.mustache",
+        "w": "04-organisms/00-navigation/00-navbar.mustache",
+        "value": {}
+      },
+      {
+        "v": "06-pages/goods-receipt.mustache",
+        "w": "04-organisms/00-navigation/03-secondary-navbar.mustache",
+        "value": {}
+      },
+      {
+        "v": "06-pages/goods-receipt.mustache",
+        "w": "05-templates/00-blocks/document-header.mustache",
+        "value": {}
+      },
+      {
+        "v": "06-pages/goods-receipt.mustache",
+        "w": "05-templates/03-forms/bulk-update.mustache",
+        "value": {}
+      },
+      {
+        "v": "06-pages/goods-receipt.mustache",
+        "w": "04-organisms/00-navigation/05-centered-navbar.mustache",
+        "value": {}
+      },
+      {
+        "v": "06-pages/loading-page.mustache",
+        "w": "04-organisms/00-navigation/00-navbar.mustache",
+        "value": {}
+      },
+      {
+        "v": "06-pages/openInvoice-dashboard.mustache",
+        "w": "04-organisms/00-navigation/00-navbar.mustache",
+        "value": {}
+      },
+      {
+        "v": "06-pages/openInvoice-dashboard.mustache",
+        "w": "04-organisms/00-navigation/03-secondary-navbar.mustache",
+        "value": {}
+      },
+      {
+        "v": "06-pages/openInvoice-dashboard.mustache",
+        "w": "05-templates/04-navs-and-toolbars/slide-in-panel.mustache",
+        "value": {}
+      },
+      {
+        "v": "06-pages/password-settings.mustache",
+        "w": "04-organisms/00-navigation/00-navbar.mustache",
+        "value": {}
+      },
+      {
+        "v": "06-pages/password-settings.mustache",
+        "w": "04-organisms/00-navigation/03-secondary-navbar.mustache",
+        "value": {}
+      },
+      {
+        "v": "06-pages/platform-dashboard.mustache",
+        "w": "04-organisms/00-navigation/00-navbar.mustache",
+        "value": {}
+      },
+      {
+        "v": "06-pages/platform-dashboard.mustache",
+        "w": "02-atoms/02-text/07-page-header.mustache",
+        "value": {}
+      },
+      {
+        "v": "06-pages/platform-dashboard.mustache",
+        "w": "02-atoms/04-buttons/_00-btn.mustache",
+        "value": {}
+      },
+      {
+        "v": "06-pages/purchase-order.mustache",
+        "w": "04-organisms/00-navigation/00-navbar.mustache",
+        "value": {}
+      },
+      {
+        "v": "06-pages/purchase-order.mustache",
+        "w": "04-organisms/00-navigation/03-secondary-navbar.mustache",
+        "value": {}
+      },
+      {
+        "v": "06-pages/purchase-order.mustache",
+        "w": "05-templates/07-lists/01-attachments-list.mustache",
+        "value": {}
+      },
+      {
+        "v": "06-pages/purchase-order.mustache",
+        "w": "05-templates/07-lists/03-document-journal.mustache",
+        "value": {}
+      },
+      {
+        "v": "06-pages/rental.mustache",
+        "w": "04-organisms/00-navigation/00-navbar.mustache",
+        "value": {}
+      },
+      {
+        "v": "06-pages/rental.mustache",
+        "w": "05-templates/00-blocks/document-header.mustache",
+        "value": {}
+      },
+      {
+        "v": "06-pages/rental.mustache",
+        "w": "02-atoms/02-text/06-required-field-indicator.mustache",
+        "value": {}
+      },
+      {
+        "v": "06-pages/rental.mustache",
+        "w": "02-atoms/05-form-elements/00-input.mustache",
+        "value": {}
+      },
+      {
+        "v": "06-pages/rental.mustache",
+        "w": "05-templates/07-lists/01-attachments-list.mustache",
+        "value": {}
+      },
+      {
+        "v": "06-pages/rental.mustache",
+        "w": "05-templates/07-lists/03-document-journal.mustache",
+        "value": {}
+      },
+      {
+        "v": "06-pages/rental.mustache",
+        "w": "05-templates/00-blocks/full-screen-toggle.mustache",
+        "value": {}
+      },
+      {
+        "v": "06-pages/rental.mustache",
+        "w": "04-organisms/00-navigation/05-centered-navbar.mustache",
+        "value": {}
+      },
+      {
+        "v": "06-pages/service-account-dashboard.mustache",
+        "w": "04-organisms/00-navigation/00-navbar.mustache",
+        "value": {}
+      },
+      {
+        "v": "06-pages/service-account-dashboard.mustache",
+        "w": "04-organisms/00-navigation/03-secondary-navbar.mustache",
+        "value": {}
+      },
+      {
+        "v": "06-pages/service-account-dashboard.mustache",
+        "w": "05-templates/04-navs-and-toolbars/slide-in-panel.mustache",
+        "value": {}
+      },
+      {
+        "v": "06-pages/service-account-dashboard.mustache",
+        "w": "05-templates/09-charting/gauge-chart.mustache",
+        "value": {}
+      },
+      {
+        "v": "06-pages/service-account-dashboard.mustache",
+        "w": "05-templates/09-charting/stacked-bar-chart.mustache",
+        "value": {}
+      },
+      {
+        "v": "06-pages/service-account-dashboard.mustache",
+        "w": "05-templates/09-charting/donut-chart.mustache",
+        "value": {}
+      },
+      {
+        "v": "06-pages/super-ticket.mustache",
+        "w": "04-organisms/00-navigation/00-navbar.mustache",
+        "value": {}
+      },
+      {
+        "v": "06-pages/super-ticket.mustache",
+        "w": "04-organisms/00-navigation/03-secondary-navbar.mustache",
+        "value": {}
+      },
+      {
+        "v": "06-pages/super-ticket.mustache",
+        "w": "05-templates/00-blocks/document-header.mustache",
+        "value": {}
+      },
+      {
+        "v": "06-pages/super-ticket.mustache",
+        "w": "04-organisms/01-blocks/00-single-value-card.mustache",
+        "value": {}
+      },
+      {
+        "v": "06-pages/super-ticket.mustache",
+        "w": "04-organisms/01-blocks/01-tabular-card.mustache",
+        "value": {}
+      },
+      {
+        "v": "06-pages/super-ticket.mustache",
+        "w": "05-templates/03-forms/bulk-update.mustache",
+        "value": {}
+      },
+      {
+        "v": "06-pages/super-ticket.mustache",
+        "w": "04-organisms/00-navigation/05-centered-navbar.mustache",
+        "value": {}
+      },
+      {
+        "v": "06-pages/supplier-link-configuration.mustache",
+        "w": "04-organisms/00-navigation/00-navbar.mustache",
+        "value": {}
+      },
+      {
+        "v": "06-pages/supplier-link-configuration.mustache",
+        "w": "04-organisms/00-navigation/03-secondary-navbar.mustache",
+        "value": {}
+      },
+      {
+        "v": "06-pages/user-profile.mustache",
+        "w": "04-organisms/00-navigation/00-navbar.mustache",
+        "value": {}
+      },
+      {
+        "v": "06-pages/user-profile.mustache",
+        "w": "04-organisms/00-navigation/03-secondary-navbar.mustache",
+        "value": {}
+      },
+      {
+        "v": "06-pages/user-profile.mustache",
+        "w": "02-atoms/02-text/06-required-field-indicator.mustache",
+        "value": {}
+      }
+    ]
+  }
+}

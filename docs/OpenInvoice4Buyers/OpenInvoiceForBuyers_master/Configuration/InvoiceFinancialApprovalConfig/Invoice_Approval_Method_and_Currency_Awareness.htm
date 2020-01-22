@@ -1,0 +1,99 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+ <title>Invoice Approval Method and Currency Awareness</title>
+
+ <link rel="stylesheet" href="../../../OpenInvoiceForBuyers_master.css" type="text/css" />
+
+
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style>
+ <meta name="generator" content="Adobe FrameMaker 2017" />
+<script type="text/javascript" src="../../../template/scripts/rh.min.js"></script>
+<script type="text/javascript" src="../../../template/scripts/common.min.js"></script>
+<script type="text/javascript" src="../../../template/scripts/topic.min.js"></script>
+<script type="text/javascript" src="../../../template/scripts/constants.js"></script>
+<script type="text/javascript" src="../../../template/scripts/utils.js"></script>
+<script type="text/javascript" src="../../../template/scripts/mhutils.js"></script>
+<script type="text/javascript" src="../../../template/scripts/mhlang.js"></script>
+<script type="text/javascript" src="../../../template/scripts/mhver.js"></script>
+<script type="text/javascript" src="../../../template/scripts/settings.js"></script>
+<script type="text/javascript" src="../../../template/scripts/XmlJsReader.js"></script>
+<script type="text/javascript" src="../../../template/scripts/loadparentdata.js"></script>
+<script type="text/javascript" src="../../../template/scripts/loadscreen.js"></script>
+<script type="text/javascript" src="../../../template/scripts/loadprojdata.js"></script>
+<script type="text/javascript" src="../../../template/scripts/mhtopic.js"></script>
+ <link rel="stylesheet" type="text/css" href="../../../template/styles/topic.min.css">
+<script type="text/javascript" >
+gRootRelPath = "../../..";
+gCommonRootRelPath = "../../..";
+gTopicId = "";
+</script>
+ <meta name="brsprev" value="OpenInvoiceForBuyers_master/Configuration/InvoiceFinancialApprovalConfig/InvoiceFinancialApprovalConfig.htm">
+ <meta name="brsnext" value="OpenInvoiceForBuyers_master/Configuration/InvoiceFinancialApprovalConfig/Approval_Types.htm">
+ <meta name="topic-breadcrumbs" content="Administrator & User Guide for Buyers > Invoice Financial Approval Configuration" />
+</head>
+
+<body dir="ltr">
+<script type="text/javascript" src="../../../ehlpdhtm.js"></script>
+<div dir="ltr">
+  <p dir="ltr" class="FM_ADP_TG_Heading_1"><a name="TOC_Invoice_Approval_Method"></a><a name="XREF_29935_Invoice_Approval"></a>Invoice Approval Method and Currency Awareness</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Body_Style">The Invoice Approval Method determines the type of authorization level required by a financial approver when approving an invoice. The approval method is configured by an <span data-name="ADP_Company_Name" data-val="Oildex" data-showval="TRUE" data-format="ADP_Company_Name">Oildex</span>-controlled preference with two options:</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">GL Based Approvals:</span>&#160;to perform the final financial approval, the user must have an authorization level of sufficient dollar value for every general ledger code on the invoice. The user must have an authorization level for at least one general ledger code in order to add their signature (approval) to the invoice and forward for additional approval. By default, <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span> uses this option.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Total Invoice Amount:</span>&#160;all general ledger codes on the invoice are ignored for approval purposes and, to perform the final financial approval, the user must have a <span style="font-weight : bold; ">Total</span>&#160;authorization level of sufficient dollar value to cover the invoice amount.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Body_Style">Currency awareness determines whether or not the invoice currency is considered for financial approval purposes. The currency awareness is configured by an <span data-name="ADP_Company_Name" data-val="Oildex" data-showval="TRUE" data-format="ADP_Company_Name">Oildex</span>-controlled preference with two options:</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Currency Aware:</span>&#160;to add their signature (approval) to an invoice, a user must have an authorization level in the currency of the invoice.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Unit Based:</span>&#160;all authorization levels are defined in the “preferred” currency and the currency of the invoice is ignored. A user is able to add their signature (approval) to an invoice if they have an authorization level in the preferred currency.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Body_Style">By default, final financial approval requires a user to have an authorization level of sufficient dollar value to cover the cost of the products and services as well as the taxes. <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>&#160;can be configured to exclude a tax type from the approval process. If the tax type is excluded from the approval process, the user only needs an authorization level of sufficient dollar value to cover the cost of the products and services.</p>
+
+  <p dir="ltr" class="FM_Heading_2_HowTo">How to Configure Tax Type Approval Requirements</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Permission___Start"><span class="FM_Bold">Permission:<span style="padding-left: 18pt;" class="FMAutoNumber_1"></span></span>Corporate Modify</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Steps"><span class="FM_Bold">Steps:<span style="padding-left: 6pt;" class="FMAutoNumber_1"></span></span></p>
+
+  <ol dir="ltr" start="1">
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Start">Select <span style="font-weight : bold; ">Corporate &gt;&#160;COA Setup &gt; Tax Type Profile</span></p>
+</li>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Select the <span style="font-weight : bold; ">Exclude From Approval Requirements</span> checkboxes as needed for each tax type.</p>
+</li>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Click <span style="font-weight : bold; ">Submit</span>.</p>
+</li>
+  </ol>
+  </div>
+</body>
+</html>

@@ -1,0 +1,2609 @@
+<!DOCTYPE html>
+<html class="pl">
+    <head>
+        <title>Styleguide : Oildex Pattern Lab</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width" />
+        <link rel="shortcut icon" type="image/x-icon" href="../../images/favicon.ico">
+
+        <script src="https://rawgit.com/icebob/fakerator/master/dist/fakerator.js"></script>
+        <script>
+            var fakerator = new Fakerator();
+        </script>
+
+        <link rel="stylesheet" href="../../fonts/@fortawesome/fontawesome-pro/css/all.css" />
+        <link rel="stylesheet" href="../../css/vendor/animate.min.css"/>
+        <link rel="stylesheet" href="../../css/vendor/bootstrap-select.min.css"/>
+        <link rel="stylesheet" href="../../css/vendor/tokenfield-typeahead.min.css"/>
+        <link rel="stylesheet" href="../../css/vendor/bootstrap-tokenfield.min.css">
+        <link rel="stylesheet" href="../../css/pattern-scaffolding.css?1579126521816" media="all" />
+        <link rel="stylesheet" href="../../css/vendor/typeaheadjs.css" media="all" />
+        <link rel="stylesheet" href="../../css/vendor/dataTables.bootstrap.min.css" media="all" />
+        <link rel="stylesheet" href="../../css/vendor/dragula.min.css" media="all" />
+        <link rel="stylesheet" href="../../css/vendor/colReorder.bootstrap.min.css" media="all" />
+        <link rel="stylesheet" href="../../css/vendor/fixedHeader.bootstrap.min.css" media="all" />
+        <link rel="stylesheet" href="../../css/vendor/typeaheadjs.css" />
+        <link rel="stylesheet" href="../../css/vendor/tokenfield.css" />
+        <link rel="stylesheet" href="../../css/vendor/jquery-ui.min.css" />
+        <link rel="stylesheet" href="../../css/oildex-admin.css"/>
+        <link rel="stylesheet" href="../../css/theme/enverus/bootstrap.css" media="all" />
+
+
+        <!-- Load pattern specific CSS -->
+        <link rel="stylesheet" href="../../css/02-comments-list.css"></link>
+        <link rel="stylesheet" href="../../css/01-attachments-list.css"></link>
+        <link rel="stylesheet" href="../../css/03-document-journal.css"></link>
+        <link rel="stylesheet" href="../../css/07-tabbed-panel.css"/>
+        <link rel="stylesheet" href="../../css/00-navbar.css"/>
+        <link rel="stylesheet" href="../../css/04-standard-icons.css"/>
+        <link rel="stylesheet" href="../../css/05-centered-navbar.css"/>
+        <link rel="stylesheet" href="../../css/03-secondary-navbar.css"/>
+        <link rel="stylesheet" href="../../css/panel-with-ribbon.css" />
+        <link rel="stylesheet" href="../../css/alerts.css"/>
+        <link rel="stylesheet" href="../../css/01-alerts-with-icons.css"/>
+        <link rel="stylesheet" href="../../css/17-checkbox-lg.css" />
+        <link rel="stylesheet" href="../../css/18-radio-lg.css" />
+        <link rel="stylesheet" href="../../css/time-out-dialog.css"/>
+        <link rel="stylesheet" href="../../css/bulk-update.css"/>
+        <link rel="stylesheet" href="../../css/contract-workspace.css"/>
+        <link rel="stylesheet" href="../../css/dashboard-card-with-settings.css"/>
+        <link rel="stylesheet" href="../../css/donut-chart.css" />
+        <link rel="stylesheet" href="../../css/line-chart.css" />
+        <link rel="stylesheet" href="../../css/world-map.css" />
+        <link rel="stylesheet" href="../../css/stacked-bar-chart.css" />
+        <link rel="stylesheet" href="../../css/09-expandable-alerts.css" />
+        <link rel="stylesheet" href="../../css/import-results-dialog.css" />
+        <link rel="stylesheet" href="../../css/left-aligned-tabs.css"/>
+        <link rel="stylesheet" href="../../css/nav-wizard.css" />
+        <link rel="stylesheet" href="../../css/openInvoice-dashboard.css" />
+        <link rel="stylesheet" href="../../css/slide-in-panel.css"/>
+        <link rel="stylesheet" href="../../css/status-panel.css"/>
+        <link rel="stylesheet" href="../../css/stepped-breadcrumbs.css"/>
+        <link rel="stylesheet" href="../../css/three-column-fluid-center.css"/>
+        <link rel="stylesheet" href="../../css/three-column-fluid-left.css"/>
+        <link rel="stylesheet" href="../../css/three-column-fluid-right.css"/>
+        <link rel="stylesheet" href="../../css/two-column-fluid.css"/>
+        <link rel="stylesheet" href="../../css/vendor/bootstrap-multiselect.css" />
+        <link rel="stylesheet" href="../../css/bulk-update.css" />
+        <link rel="stylesheet" href="../../css/sign-in-page.css" />
+        <link rel="stylesheet" href="../../css/supplier-link-configuration.css" />
+
+        <!-- Alwsys load the patternlab override CSS last -->
+        <link rel="stylesheet" href="../../css/custom.css" media="all" />
+
+        <!-- Load third party scripts -->
+        <script type="text/javascript" src="../../js/vendor/jquery.min.js"></script>
+        <script type="text/javascript" src='../../js/vendor/jquery-ui.min.js'></script>
+        <script type="text/javascript" src="../../js/bootstrap.js"></script>
+        <script type="text/javascript" src="../../js/styleswitch.js"></script>
+        <script type="text/javascript" src="../../js/vendor/jquery.dataTables.min.js"></script>
+        <script type="text/javascript" src="../../js/vendor/dataTables.bootstrap.js"></script>
+        <script type="text/javascript" src="../../js/vendor/bloodhound.min.js"></script>
+        <script type="text/javascript" src="../../js/vendor/bootstrap-select.min.js"></script>
+        <script type="text/javascript" src="../../js/vendor/bootstrap-tokenfield.min.js"></script>
+        <script type="text/javascript" src="../../js/vendor/d3.min.js"></script>
+
+        <script type="text/javascript" src="../../js/vendor/dragula.min.js"></script>
+        <script type="text/javascript" src="../../js/vendor/fixedHeader.dataTables.min.js"></script>
+        <script type="text/javascript" src="../../js/vendor/dataTables.colReorder.min.js"></script>
+        <script type="text/javascript" src="../../js/vendor/typeahead.bundle.min.js"></script>
+        <script type="text/javascript" src="../../js/vendor/typeahead.jquery.min.js"></script>
+        <script type="text/javascript" src='../../js/vendor/handlebars.min.js'></script>
+        <script type="text/javascript" src="../../js/vendor/moment.min.js"></script>
+        <script type="text/javascript" src="../../js/vendor/mustache.min.js"></script>
+        <script type="text/javascript" src="../../js/vendor/bootstrap-multiselect.js"></script>
+        <script type="text/javascript" src="../../js/vendor/tokenfield.min.js"></script>
+        <script type="text/javascript" src="../../js/oildex-admin.js"></script>
+        <script type="text/javascript" src="../../js/oildex-patternlab-defaults.js"></script>
+        <script type="text/javascript" src="../../js/02-charting-colors.js"></script>
+        <script type="text/javascript" src="../../js/00-navbar.js"></script>
+
+        <!-- Load hogan js manually so that the custom search field links work properly -->
+        <script type="text/javascript" src="../../js/vendor/hogan-3.0.2.min.js"></script>
+
+        <script src="http://d3js.org/d3.v4.min.js"></script>
+        <script src="https://d3js.org/d3-array.v2.min.js"></script>
+        <script src="http://d3js.org/queue.v1.min.js"></script>
+        <script src="http://d3js.org/topojson.v1.min.js"></script>
+        <script src="http://bl.ocks.org/micahstubbs/raw/8e15870eb432a21f0bc4d3d527b2d14f/d3-tip.js"></script>
+        <script src="https://d3js.org/d3-color.v1.min.js"></script>
+        <script src="https://d3js.org/d3-interpolate.v1.min.js"></script>
+        <script src="https://d3js.org/d3-scale.v3.min.js"></script>
+        <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+
+
+
+        <!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
+        <!-- never cache patterns -->
+<meta http-equiv="cache-control" content="max-age=0" />
+<meta http-equiv="cache-control" content="no-cache" />
+<meta http-equiv="expires" content="0" />
+<meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
+<meta http-equiv="pragma" content="no-cache" />
+
+<title id="title">Styleguide : Oildex Pattern Lab</title>
+
+<link rel="stylesheet" href="../../styleguide/css/styleguide.min.css?1579126521816" media="all">
+<link rel="stylesheet" href="../../styleguide/css/prism-typeahead.min.css?1579126521816" media="all" />
+
+        <!-- End Pattern Lab -->
+
+    </head>
+    <body id="pl-body" class="container-fluid">
+        <!-- <div id="success-msg" class="alert alert-success center-block hide fade in out slide-out-top">
+            <a href="#" class="close" onclick="$('#success-msg').toggleClass('slide-out-top');" aria-label="close">&times;</a>
+            <span class="alertMessageContent"> </span>
+        </div> -->
+        <div class="alert-messages"></div>
+<!-- View All Patterns in a Pattern Sub-Type -->
+<div class="sg-main" role="main">
+  
+  <!-- Patterns -->
+  <div id="sg-patterns">
+<div id="viewall-organisms-navigation" class="sg-pattern-category">
+  <h2 class="sg-pattern-category-title"><a href="../../patterns/04-organisms-00-navigation&#x2F;index.html" class="patternLink" data-patternpartial="viewall-organisms-navigation">navigation</a></h2>
+
+  <div class="sg-pattern-category-body">
+    
+  </div><!--end sg-pattern-category-body-->
+  
+</div><!--end sg-pattern-category-->
+<div id="organisms-navbar" class="sg-pattern">
+  <div class="sg-pattern-head">
+    <h3 class="sg-pattern-title">
+      <a href="../../patterns/04-organisms-00-navigation-00-navbar&#x2F;04-organisms-00-navigation-00-navbar.html" class="patternLink" data-patternpartial="organisms-navbar" title="Link to Pattern">
+          NavBar
+      </a>
+    </h3>
+    <div class="sg-pattern-breadcrumb"></div>
+    <a href="#" data-patternpartial="organisms-navbar" title="View Pattern Info" id="sg-pattern-extra-toggle-organisms-navbar" class="sg-pattern-extra-toggle"><span>&#9660;</span></a>
+  </div>
+  <div class="sg-pattern-extra" id="sg-pattern-extra-organisms-navbar">
+    
+  </div>
+  <div class="sg-pattern-example">
+    <link href="../../css/00-navbar-alternate.css" rel="alternate stylesheet" type="text/css" title="alternate">
+<nav  id="defaultNavbar" role="navigation" class="navbar navbar-default ">
+    <div id="message"></div>
+    <div class="container-fluid">
+        <div class="navbar-header navbar-left pull-left">
+            <button type="button" data-toggle="collapse" data-target=".navbar-collapse" class="btn btn-default btn-sm navbar-btn pull-left">
+                Menu
+            </button>
+            <div class="navbar-brand hidden-xs hidden-sm">
+                <a class="logo-navbar"></a>
+            </div>
+        </div>
+        <div class="navbar-header navbar-right pull-right">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="hidden visible-xs pull-left">
+                    <a class="label-success navbar-link">
+                        <i class="fas fa-sack-dollar fa-fw"></i>
+                        <div class="pull-right" style="width: 60px; white-space: normal;float:right;line-height: 1;font-size: 13px; text-align: center;">Get Paid Faster! </div>
+                    </a>
+                </li>
+                <li class="hidden visible-xs visible-sm dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fas fa-search fa-fw"></i></a>
+                    <ul class="dropdown-menu dropdown-menu-right" style="padding: 15px;min-width: 250px;">
+                        <li>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <form>
+                                        <div class="input-group input-group-sm ">
+                                            <span class="input-group-addon dropdown-toggle" data-toggle="dropdown"
+                                                aria-haspopup="true" aria-expanded="false">
+                                                <span class="caret"></span>
+                                            </span>
+                                            <ul class="dropdown-menu dropdown-menu-left">
+                                                <li onclick="setGlobalSearchPlaceholder($(this).first().text());"><a>Invoice #</a></li>
+                                                <li onclick="setGlobalSearchPlaceholder($(this).first().text());"><a href="#">Pricebook #</a></li>
+                                                <li onclick="setGlobalSearchPlaceholder($(this).first().text());"><a href="#">Field Ticket #</a></li>
+                                                <li onclick="setGlobalSearchPlaceholder($(this).first().text());"><a href="#">Purchase Order #</a></li>
+                                            </ul>
+
+                                            <input class="form-control" id="globalSearch" placeholder="Invoice #">
+
+                                            <span class="input-group-btn">
+                                                <button class="btn btn-default"><i class="fas fa-search fa-fw"></i></button>
+                                            </span>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a title="Message Centre" class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <span class="badge badge-xs">49</span>
+                        <i class="fas fa-bell fa-fw"></i>
+                        <!-- <span class="hidden-xs hide">Messages</span> -->
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-right">
+                        <li>
+                            <a title="Message Centre" href="#">
+                                <span class="fa-fw">
+                                    <i class="fas fa-envelope"></i>
+                                    Messages
+                                </span>
+                                <sup class="badge" style="background:#BE3A34">41</sup>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="fa-fw">
+                                    <i class="fas fa-file-alt"></i>
+                                    Completed Reports
+                                </span>
+                                <sup class="badge" style="background:#BE3A34">8</sup>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a title="Help Center" class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fas fa-question-circle fa-fw"></i> <span class="hidden-xs hide">Help</span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-right">
+                        <li><a href="#"><i class="fas fa-life-ring fa-fw"></i> Contact Support</a></li>
+                        <li><a href="#"><i class="fas fa-book fa-fw"></i> Resource Center</a></li>
+                        <li><a href="#"><i class="fas fa-comment fa-fw"></i> Feedback</a></li>
+                        <li><a href="#"><i class="fas fa-users fa-fw"></i> About</a></li>
+                        <li><a href="#"><i class="fas fa-user-secret fa-fw"></i> Privacy</a></li>
+                        <li><a href="#"><i class="fas fa-gavel fa-fw"></i> Terms</a></li>
+                        <li><a href="#"><i class="fas fa-globe fa-fw"></i> Browsers</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a title="My Profile" class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fas fa-user fa-fw"></i> <span class="hidden-xs hide">Profile</span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-right">
+                        <li><a href="#"><i class="fas fa-user fa-fw"></i> Christopher Schwartzenberg</a></li>
+                        <li><a href="#"><i class="fas fa-cog fa-fw"></i> Preferences</a></li>
+                        <li><a href="#"><i class="fas fa-font fa-fw"></i> Font Size</a></li>
+                    </ul>
+                </li>
+                <li><a title="Sign Out" href="#"><i class="fas fa-sign-out fa-fw"></i></a></li>
+            </ul>
+        </div>
+        <ul class="nav navbar-nav navbar-left">
+            <li class="pull-left">
+                <p class="navbar-text hide-overflow small hidden-sm hidden-xs" style="max-width: 225px;">Tetratrex
+                    Oilfield Services Incorporated Ltd.
+                </p>
+            </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right visible-sm visible-md visible-lg hidden-xs">
+            <li class="pull-left">
+                <a class="label-success navbar-link">
+                    <i class="fas fa-sack-dollar fa-fw"></i>
+                    <div class="pull-right" style="width: 60px; white-space: normal;float:right;line-height: 1;font-size: 13px; text-align: center;">Get Paid Faster! </div>
+                </a>
+            </li>
+            <li>
+                <form class="navbar-form navbar-right">
+                    <div class="form-group">
+                        <div class="input-group">
+                            <span class="input-group-addon dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">
+                                <span class="caret"></span>
+                            </span>
+                            <ul class="dropdown-menu dropdown-menu-left">
+                                <li onclick="setGlobalSearchPlaceholder($(this).first().text());"><a href="#">Invoice #</a></li>
+                                <li onclick="setGlobalSearchPlaceholder($(this).first().text());"><a href="#">Pricebook #</a></li>
+                                <li onclick="setGlobalSearchPlaceholder($(this).first().text());"><a href="#">Field Ticket #</a></li>
+                                <li onclick="setGlobalSearchPlaceholder($(this).first().text());"><a href="#">Purchase Order #</a></li>
+                            </ul>
+
+                            <input class="form-control" id="globalSearch" placeholder="Invoice #">
+
+                            <span class="input-group-btn">
+                                <button class="btn btn-default"><i class="fas fa-search fa-fw"></i></button>
+                            </span>
+                        </div>
+                    </div>
+                </form>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+  </div>
+  <script type="text/json" id="sg-pattern-data-organisms-navbar" class="sg-pattern-data">
+    {"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":true,"patternLineagesR":[{"lineagePattern":"pages-business-unit","lineagePath":"../../patterns/06-pages-business-unit/06-pages-business-unit.html"},{"lineagePattern":"pages-business-units-list","lineagePath":"../../patterns/06-pages-business-units-list/06-pages-business-units-list.html"},{"lineagePattern":"pages-contract-workspace","lineagePath":"../../patterns/06-pages-contract-workspace/06-pages-contract-workspace.html"},{"lineagePattern":"pages-error-page","lineagePath":"../../patterns/06-pages-error-page/06-pages-error-page.html"},{"lineagePattern":"pages-field-ticket-list","lineagePath":"../../patterns/06-pages-field-ticket-list/06-pages-field-ticket-list.html"},{"lineagePattern":"pages-field-ticket","lineagePath":"../../patterns/06-pages-field-ticket/06-pages-field-ticket.html"},{"lineagePattern":"pages-goods-receipt","lineagePath":"../../patterns/06-pages-goods-receipt/06-pages-goods-receipt.html"},{"lineagePattern":"pages-loading-page","lineagePath":"../../patterns/06-pages-loading-page/06-pages-loading-page.html"},{"lineagePattern":"pages-openInvoice-dashboard","lineagePath":"../../patterns/06-pages-openInvoice-dashboard/06-pages-openInvoice-dashboard.html"},{"lineagePattern":"pages-password-settings","lineagePath":"../../patterns/06-pages-password-settings/06-pages-password-settings.html"},{"lineagePattern":"pages-platform-dashboard","lineagePath":"../../patterns/06-pages-platform-dashboard/06-pages-platform-dashboard.html"},{"lineagePattern":"pages-purchase-order","lineagePath":"../../patterns/06-pages-purchase-order/06-pages-purchase-order.html"},{"lineagePattern":"pages-rental","lineagePath":"../../patterns/06-pages-rental/06-pages-rental.html"},{"lineagePattern":"pages-service-account-dashboard","lineagePath":"../../patterns/06-pages-service-account-dashboard/06-pages-service-account-dashboard.html"},{"lineagePattern":"pages-super-ticket","lineagePath":"../../patterns/06-pages-super-ticket/06-pages-super-ticket.html"},{"lineagePattern":"pages-supplier-link-configuration","lineagePath":"../../patterns/06-pages-supplier-link-configuration/06-pages-supplier-link-configuration.html"},{"lineagePattern":"pages-user-profile","lineagePath":"../../patterns/06-pages-user-profile/06-pages-user-profile.html"}],"lineageR":[{"lineagePattern":"pages-business-unit","lineagePath":"../../patterns/06-pages-business-unit/06-pages-business-unit.html"},{"lineagePattern":"pages-business-units-list","lineagePath":"../../patterns/06-pages-business-units-list/06-pages-business-units-list.html"},{"lineagePattern":"pages-contract-workspace","lineagePath":"../../patterns/06-pages-contract-workspace/06-pages-contract-workspace.html"},{"lineagePattern":"pages-error-page","lineagePath":"../../patterns/06-pages-error-page/06-pages-error-page.html"},{"lineagePattern":"pages-field-ticket-list","lineagePath":"../../patterns/06-pages-field-ticket-list/06-pages-field-ticket-list.html"},{"lineagePattern":"pages-field-ticket","lineagePath":"../../patterns/06-pages-field-ticket/06-pages-field-ticket.html"},{"lineagePattern":"pages-goods-receipt","lineagePath":"../../patterns/06-pages-goods-receipt/06-pages-goods-receipt.html"},{"lineagePattern":"pages-loading-page","lineagePath":"../../patterns/06-pages-loading-page/06-pages-loading-page.html"},{"lineagePattern":"pages-openInvoice-dashboard","lineagePath":"../../patterns/06-pages-openInvoice-dashboard/06-pages-openInvoice-dashboard.html"},{"lineagePattern":"pages-password-settings","lineagePath":"../../patterns/06-pages-password-settings/06-pages-password-settings.html"},{"lineagePattern":"pages-platform-dashboard","lineagePath":"../../patterns/06-pages-platform-dashboard/06-pages-platform-dashboard.html"},{"lineagePattern":"pages-purchase-order","lineagePath":"../../patterns/06-pages-purchase-order/06-pages-purchase-order.html"},{"lineagePattern":"pages-rental","lineagePath":"../../patterns/06-pages-rental/06-pages-rental.html"},{"lineagePattern":"pages-service-account-dashboard","lineagePath":"../../patterns/06-pages-service-account-dashboard/06-pages-service-account-dashboard.html"},{"lineagePattern":"pages-super-ticket","lineagePath":"../../patterns/06-pages-super-ticket/06-pages-super-ticket.html"},{"lineagePattern":"pages-supplier-link-configuration","lineagePath":"../../patterns/06-pages-supplier-link-configuration/06-pages-supplier-link-configuration.html"},{"lineagePattern":"pages-user-profile","lineagePath":"../../patterns/06-pages-user-profile/06-pages-user-profile.html"}],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternType":"organisms","patternSubtype":"navigation"},"patternExtension":"mustache","patternName":"NavBar","patternPartial":"organisms-navbar","patternState":"","patternEngineName":"mustache","extraOutput":{}}
+  </script>
+</div><!--end .sg-pattern-->
+<div id="organisms-secondary-navbar" class="sg-pattern">
+  <div class="sg-pattern-head">
+    <h3 class="sg-pattern-title">
+      <a href="../../patterns/04-organisms-00-navigation-03-secondary-navbar&#x2F;04-organisms-00-navigation-03-secondary-navbar.html" class="patternLink" data-patternpartial="organisms-secondary-navbar" title="Link to Pattern">
+          Secondary NavBar
+      </a>
+    </h3>
+    <div class="sg-pattern-breadcrumb"></div>
+    <a href="#" data-patternpartial="organisms-secondary-navbar" title="View Pattern Info" id="sg-pattern-extra-toggle-organisms-secondary-navbar" class="sg-pattern-extra-toggle"><span>&#9660;</span></a>
+  </div>
+  <div class="sg-pattern-extra" id="sg-pattern-extra-organisms-secondary-navbar">
+    
+  </div>
+  <div class="sg-pattern-example">
+    <nav id="secondaryNavbar" class="navbar-default animated  " style="z-index: 1030">
+    <div class="container-fluid">
+        <div class="row">
+                <div class="col-xs-4">
+                        <div class="btn-group  pull-left">
+                            <button class="btn btn-link text-nowrap dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                <i class="fas fa-arrow-left fa-fw"></i> Back <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Supplier On-Ramping</a></li>
+                                <li><a href="#">Suppliers</a></li>
+                                <li><a href="#">Dashboard</a></li>
+                            </ul>
+                        </div>
+                </div>
+                <div class="col-xs-4 text-center hide-overflow">
+                    <div class="form-control-static">
+                        Page Title
+                    </div>
+                </div>
+                <div class="col-xs-4 text-right text-nowrap">
+                        <div class="btn-group  pull-right" style="display:flex;">
+                            <button type="button" class="btn btn-link" data-toggle="tooltip" data-placement="bottom" title="Previous in List"><span class="hidden-xs">Prev </span><i class="fas fa-arrow-up fa-fw"></i></button>
+                            <button type="button" class="btn btn-link" data-toggle="tooltip" data-placement="bottom" title="Next in List"><span class="hidden-xs">Next</span> <i class="fas fa-arrow-down fa-fw"></i></button>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+
+  </div>
+  <script type="text/json" id="sg-pattern-data-organisms-secondary-navbar" class="sg-pattern-data">
+    {"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":true,"patternLineagesR":[{"lineagePattern":"pages-business-unit","lineagePath":"../../patterns/06-pages-business-unit/06-pages-business-unit.html"},{"lineagePattern":"pages-business-units-list","lineagePath":"../../patterns/06-pages-business-units-list/06-pages-business-units-list.html"},{"lineagePattern":"pages-contract-workspace","lineagePath":"../../patterns/06-pages-contract-workspace/06-pages-contract-workspace.html"},{"lineagePattern":"pages-field-ticket-list","lineagePath":"../../patterns/06-pages-field-ticket-list/06-pages-field-ticket-list.html"},{"lineagePattern":"pages-field-ticket","lineagePath":"../../patterns/06-pages-field-ticket/06-pages-field-ticket.html"},{"lineagePattern":"pages-goods-receipt","lineagePath":"../../patterns/06-pages-goods-receipt/06-pages-goods-receipt.html"},{"lineagePattern":"pages-openInvoice-dashboard","lineagePath":"../../patterns/06-pages-openInvoice-dashboard/06-pages-openInvoice-dashboard.html"},{"lineagePattern":"pages-password-settings","lineagePath":"../../patterns/06-pages-password-settings/06-pages-password-settings.html"},{"lineagePattern":"pages-purchase-order","lineagePath":"../../patterns/06-pages-purchase-order/06-pages-purchase-order.html"},{"lineagePattern":"pages-service-account-dashboard","lineagePath":"../../patterns/06-pages-service-account-dashboard/06-pages-service-account-dashboard.html"},{"lineagePattern":"pages-super-ticket","lineagePath":"../../patterns/06-pages-super-ticket/06-pages-super-ticket.html"},{"lineagePattern":"pages-supplier-link-configuration","lineagePath":"../../patterns/06-pages-supplier-link-configuration/06-pages-supplier-link-configuration.html"},{"lineagePattern":"pages-user-profile","lineagePath":"../../patterns/06-pages-user-profile/06-pages-user-profile.html"}],"lineageR":[{"lineagePattern":"pages-business-unit","lineagePath":"../../patterns/06-pages-business-unit/06-pages-business-unit.html"},{"lineagePattern":"pages-business-units-list","lineagePath":"../../patterns/06-pages-business-units-list/06-pages-business-units-list.html"},{"lineagePattern":"pages-contract-workspace","lineagePath":"../../patterns/06-pages-contract-workspace/06-pages-contract-workspace.html"},{"lineagePattern":"pages-field-ticket-list","lineagePath":"../../patterns/06-pages-field-ticket-list/06-pages-field-ticket-list.html"},{"lineagePattern":"pages-field-ticket","lineagePath":"../../patterns/06-pages-field-ticket/06-pages-field-ticket.html"},{"lineagePattern":"pages-goods-receipt","lineagePath":"../../patterns/06-pages-goods-receipt/06-pages-goods-receipt.html"},{"lineagePattern":"pages-openInvoice-dashboard","lineagePath":"../../patterns/06-pages-openInvoice-dashboard/06-pages-openInvoice-dashboard.html"},{"lineagePattern":"pages-password-settings","lineagePath":"../../patterns/06-pages-password-settings/06-pages-password-settings.html"},{"lineagePattern":"pages-purchase-order","lineagePath":"../../patterns/06-pages-purchase-order/06-pages-purchase-order.html"},{"lineagePattern":"pages-service-account-dashboard","lineagePath":"../../patterns/06-pages-service-account-dashboard/06-pages-service-account-dashboard.html"},{"lineagePattern":"pages-super-ticket","lineagePath":"../../patterns/06-pages-super-ticket/06-pages-super-ticket.html"},{"lineagePattern":"pages-supplier-link-configuration","lineagePath":"../../patterns/06-pages-supplier-link-configuration/06-pages-supplier-link-configuration.html"},{"lineagePattern":"pages-user-profile","lineagePath":"../../patterns/06-pages-user-profile/06-pages-user-profile.html"}],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternType":"organisms","patternSubtype":"navigation"},"patternExtension":"mustache","patternName":"Secondary NavBar","patternPartial":"organisms-secondary-navbar","patternState":"","patternEngineName":"mustache","extraOutput":{}}
+  </script>
+</div><!--end .sg-pattern-->
+<div id="organisms-centered-navbar" class="sg-pattern">
+  <div class="sg-pattern-head">
+    <h3 class="sg-pattern-title">
+      <a href="../../patterns/04-organisms-00-navigation-05-centered-navbar&#x2F;04-organisms-00-navigation-05-centered-navbar.html" class="patternLink" data-patternpartial="organisms-centered-navbar" title="Link to Pattern">
+          Centered Navbar
+      </a>
+    </h3>
+    <div class="sg-pattern-breadcrumb"></div>
+    <a href="#" data-patternpartial="organisms-centered-navbar" title="View Pattern Info" id="sg-pattern-extra-toggle-organisms-centered-navbar" class="sg-pattern-extra-toggle"><span>&#9660;</span></a>
+  </div>
+  <div class="sg-pattern-extra" id="sg-pattern-extra-organisms-centered-navbar">
+    
+  </div>
+  <div class="sg-pattern-example">
+    <nav class="navbar navbar-inverse " style="border-top: 1px solid #ccc;">
+    <div class="container-fluid">
+        <div class="btn-toolbar btn-toolbar-centered" role="toolbar">
+            <div class="btn-group" role="group">
+
+                        <button class="btn btn-default">
+                            <div class="text-success">
+                                <i class="far fa-fw fa-thumbs-up"></i>
+                            </div>
+                            <div class="text-success">
+                                Approve
+                            </div>
+                        </button>
+                        <button class="btn btn-default">
+                            <div class="text-danger">
+                                <i class="far fa-fw fa-thumbs-down"></i>
+                            </div>
+                            <div class="text-danger">
+                                Dispute
+                            </div>
+                        </button>
+                        <button class="btn btn-default">
+                            <div class="">
+                                <i class="far fa-fw fa-print"></i>
+                            </div>
+                            <div class="">
+                                Print
+                            </div>
+                        </button>
+
+
+            </div>
+        </div>
+    </div>
+</nav>
+
+  </div>
+  <script type="text/json" id="sg-pattern-data-organisms-centered-navbar" class="sg-pattern-data">
+    {"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":true,"patternLineagesR":[{"lineagePattern":"pages-field-ticket","lineagePath":"../../patterns/06-pages-field-ticket/06-pages-field-ticket.html"},{"lineagePattern":"pages-goods-receipt","lineagePath":"../../patterns/06-pages-goods-receipt/06-pages-goods-receipt.html"},{"lineagePattern":"pages-rental","lineagePath":"../../patterns/06-pages-rental/06-pages-rental.html"},{"lineagePattern":"pages-super-ticket","lineagePath":"../../patterns/06-pages-super-ticket/06-pages-super-ticket.html"}],"lineageR":[{"lineagePattern":"pages-field-ticket","lineagePath":"../../patterns/06-pages-field-ticket/06-pages-field-ticket.html"},{"lineagePattern":"pages-goods-receipt","lineagePath":"../../patterns/06-pages-goods-receipt/06-pages-goods-receipt.html"},{"lineagePattern":"pages-rental","lineagePath":"../../patterns/06-pages-rental/06-pages-rental.html"},{"lineagePattern":"pages-super-ticket","lineagePath":"../../patterns/06-pages-super-ticket/06-pages-super-ticket.html"}],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternType":"organisms","patternSubtype":"navigation"},"patternExtension":"mustache","patternName":"Centered Navbar","patternPartial":"organisms-centered-navbar","patternState":"","patternEngineName":"mustache","extraOutput":{}}
+  </script>
+</div><!--end .sg-pattern-->
+<div id="viewall-organisms-blocks" class="sg-pattern-category">
+  <h2 class="sg-pattern-category-title"><a href="../../patterns/04-organisms-01-blocks&#x2F;index.html" class="patternLink" data-patternpartial="viewall-organisms-blocks">blocks</a></h2>
+
+  <div class="sg-pattern-category-body">
+    
+  </div><!--end sg-pattern-category-body-->
+  
+</div><!--end sg-pattern-category-->
+<div id="organisms-single-value-card" class="sg-pattern">
+  <div class="sg-pattern-head">
+    <h3 class="sg-pattern-title">
+      <a href="../../patterns/04-organisms-01-blocks-00-single-value-card&#x2F;04-organisms-01-blocks-00-single-value-card.html" class="patternLink" data-patternpartial="organisms-single-value-card" title="Link to Pattern">
+          Single Value Card
+      </a>
+    </h3>
+    <div class="sg-pattern-breadcrumb"></div>
+    <a href="#" data-patternpartial="organisms-single-value-card" title="View Pattern Info" id="sg-pattern-extra-toggle-organisms-single-value-card" class="sg-pattern-extra-toggle"><span>&#9660;</span></a>
+  </div>
+  <div class="sg-pattern-extra" id="sg-pattern-extra-organisms-single-value-card">
+    
+  </div>
+  <div class="sg-pattern-example">
+    <div class="panel panel-default">
+    <div class="panel-body">
+        <div class="panel-title">
+            Panel Title
+        </div>
+
+        <div class="text-center text-info">
+            <div class="h2">4</div>
+        </div>
+    </div>
+</div>
+
+  </div>
+  <script type="text/json" id="sg-pattern-data-organisms-single-value-card" class="sg-pattern-data">
+    {"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":true,"patternLineagesR":[{"lineagePattern":"pages-super-ticket","lineagePath":"../../patterns/06-pages-super-ticket/06-pages-super-ticket.html"}],"lineageR":[{"lineagePattern":"pages-super-ticket","lineagePath":"../../patterns/06-pages-super-ticket/06-pages-super-ticket.html"}],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternType":"organisms","patternSubtype":"blocks"},"patternExtension":"mustache","patternName":"Single Value Card","patternPartial":"organisms-single-value-card","patternState":"","patternEngineName":"mustache","extraOutput":{}}
+  </script>
+</div><!--end .sg-pattern-->
+<div id="organisms-tabular-card" class="sg-pattern">
+  <div class="sg-pattern-head">
+    <h3 class="sg-pattern-title">
+      <a href="../../patterns/04-organisms-01-blocks-01-tabular-card&#x2F;04-organisms-01-blocks-01-tabular-card.html" class="patternLink" data-patternpartial="organisms-tabular-card" title="Link to Pattern">
+          Tabular Card
+      </a>
+    </h3>
+    <div class="sg-pattern-breadcrumb"></div>
+    <a href="#" data-patternpartial="organisms-tabular-card" title="View Pattern Info" id="sg-pattern-extra-toggle-organisms-tabular-card" class="sg-pattern-extra-toggle"><span>&#9660;</span></a>
+  </div>
+  <div class="sg-pattern-extra" id="sg-pattern-extra-organisms-tabular-card">
+    
+  </div>
+  <div class="sg-pattern-example">
+    <div class="panel panel-default status-panel">
+    <div class="panel-heading">
+        <div class="panel-title">
+                Panel Title
+        </div>
+    </div>
+    <div class="panel-body">
+        <div class="table-responsive">
+
+
+        </div>
+
+        <!--  -->
+    </div>
+</div>
+
+  </div>
+  <script type="text/json" id="sg-pattern-data-organisms-tabular-card" class="sg-pattern-data">
+    {"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":true,"patternLineagesR":[{"lineagePattern":"pages-super-ticket","lineagePath":"../../patterns/06-pages-super-ticket/06-pages-super-ticket.html"}],"lineageR":[{"lineagePattern":"pages-super-ticket","lineagePath":"../../patterns/06-pages-super-ticket/06-pages-super-ticket.html"}],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternType":"organisms","patternSubtype":"blocks"},"patternExtension":"mustache","patternName":"Tabular Card","patternPartial":"organisms-tabular-card","patternState":"","patternEngineName":"mustache","extraOutput":{}}
+  </script>
+</div><!--end .sg-pattern-->
+<div id="organisms-small-card" class="sg-pattern">
+  <div class="sg-pattern-head">
+    <h3 class="sg-pattern-title">
+      <a href="../../patterns/04-organisms-01-blocks-02-small-card&#x2F;04-organisms-01-blocks-02-small-card.html" class="patternLink" data-patternpartial="organisms-small-card" title="Link to Pattern">
+          Small Card
+      </a>
+    </h3>
+    <div class="sg-pattern-breadcrumb"></div>
+    <a href="#" data-patternpartial="organisms-small-card" title="View Pattern Info" id="sg-pattern-extra-toggle-organisms-small-card" class="sg-pattern-extra-toggle"><span>&#9660;</span></a>
+  </div>
+  <div class="sg-pattern-extra" id="sg-pattern-extra-organisms-small-card">
+    
+  </div>
+  <div class="sg-pattern-example">
+    <div class="row">
+    <div class="col-md-3">
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-xs-9 text-left">
+                        <ul class="list-unstyled">
+                            <li class="text-nowrap hide-overflow text-primary">
+                                Left Side
+                            </li>
+                            <li class="text-nowrap hide-overflow text-primary ">
+
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-3 text-right">
+                        <ul class="list-unstyled">
+                            <li class="text-nowrap hide-overflow ">
+                                <i class="fas fa-lg fa-flag text-warning"></i>
+                            </li>
+                            <li class="text-nowrap hide-overflow text-muted small">
+                                Right Side
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 text-muted small">
+                        <i class="fas fa-clock"></i>  Updated Just Now
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+  </div>
+  <script type="text/json" id="sg-pattern-data-organisms-small-card" class="sg-pattern-data">
+    {"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":false,"patternDesc":"","patternBreadcrumb":{"patternType":"organisms","patternSubtype":"blocks"},"patternExtension":"mustache","patternName":"Small Card","patternPartial":"organisms-small-card","patternState":"","patternEngineName":"mustache","extraOutput":{}}
+  </script>
+</div><!--end .sg-pattern-->
+<div id="organisms-progress-cards" class="sg-pattern">
+  <div class="sg-pattern-head">
+    <h3 class="sg-pattern-title">
+      <a href="../../patterns/04-organisms-01-blocks-03-progress-cards&#x2F;04-organisms-01-blocks-03-progress-cards.html" class="patternLink" data-patternpartial="organisms-progress-cards" title="Link to Pattern">
+          Progress Cards
+      </a>
+    </h3>
+    <div class="sg-pattern-breadcrumb"></div>
+    <a href="#" data-patternpartial="organisms-progress-cards" title="View Pattern Info" id="sg-pattern-extra-toggle-organisms-progress-cards" class="sg-pattern-extra-toggle"><span>&#9660;</span></a>
+  </div>
+  <div class="sg-pattern-extra" id="sg-pattern-extra-organisms-progress-cards">
+    
+  </div>
+  <div class="sg-pattern-example">
+    <div class="row">
+    <div class="col-md-3">
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <span class="text-danger">
+                  Progress 1
+                  <span class="label label-danger pull-right">9%</span>
+                </span>
+                <div class="progress progress-sm">
+                    <div class="progress-bar progress-bar-danger" style="width:9%;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <span class="text-warning">
+                    Progress 2
+                    <span class="label label-warning pull-right">80%</span>
+                </span>
+                <div class="progress progress-sm">
+                    <div class="progress-bar progress-bar-warning" style="width:80%;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <span class="text-primary">
+                    Progress 3
+                    <span class="text-primary pull-right">78%</span>
+                </span>
+                <div class="progress progress-sm">
+                    <div class="progress-bar progress-bar-primary" style="width:78%;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <span class="text-success">
+                    Progress 4
+                    <span class="label label-success pull-right">+ 13%</span>
+                </span>
+                <div class="progress progress-sm">
+                    <div class="progress-bar progress-bar-success" style="width:13%;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+  </div>
+  <script type="text/json" id="sg-pattern-data-organisms-progress-cards" class="sg-pattern-data">
+    {"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":false,"patternDesc":"","patternBreadcrumb":{"patternType":"organisms","patternSubtype":"blocks"},"patternExtension":"mustache","patternName":"Progress Cards","patternPartial":"organisms-progress-cards","patternState":"","patternEngineName":"mustache","extraOutput":{}}
+  </script>
+</div><!--end .sg-pattern-->
+<div id="organisms-media-card" class="sg-pattern">
+  <div class="sg-pattern-head">
+    <h3 class="sg-pattern-title">
+      <a href="../../patterns/04-organisms-01-blocks-04-media-card&#x2F;04-organisms-01-blocks-04-media-card.html" class="patternLink" data-patternpartial="organisms-media-card" title="Link to Pattern">
+          Media Card
+      </a>
+    </h3>
+    <div class="sg-pattern-breadcrumb"></div>
+    <a href="#" data-patternpartial="organisms-media-card" title="View Pattern Info" id="sg-pattern-extra-toggle-organisms-media-card" class="sg-pattern-extra-toggle"><span>&#9660;</span></a>
+  </div>
+  <div class="sg-pattern-extra" id="sg-pattern-extra-organisms-media-card">
+    
+  </div>
+  <div class="sg-pattern-example">
+    <div class="row">
+    <div class="col-md-3">
+        <div class="panel panel-default">
+            <div class="panel-body">
+                  <div class="media">
+                      <div class="media-left">
+                          <img src="../../images/bootstrapthumb64.jpg" class="">
+                          <div class="small text-center">Media Left</div>
+                      </div>
+                      <div class="media-body">
+                          <p class="text-default h4">Media Body</p>
+                          <ul class="list-unstyled list-inline">
+                            <li><span class="label label-danger">Danger</span> </li>
+                            <li><span class="label label-success">Success</span></li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="panel panel-default">
+            <div class="panel-body">
+                  <div class="media">
+                      <div class="media-body">
+                          <p class="text-default h4">Media Body</p>
+                          <ul class="list-unstyled list-inline">
+                            <li><span class="label label-danger">Danger</span> </li>
+                            <li><span class="label label-success">Success</span></li>
+                          </ul>
+                      </div>
+                      <div class="media-right">
+                          <img src="../../images/bootstrapthumb64.jpg" class="">
+                          <div class="small text-center">Media Right</div>
+                      </div>
+                  </div>
+              </div>
+        </div>
+    </div>
+</div>
+
+  </div>
+  <script type="text/json" id="sg-pattern-data-organisms-media-card" class="sg-pattern-data">
+    {"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":false,"patternDesc":"","patternBreadcrumb":{"patternType":"organisms","patternSubtype":"blocks"},"patternExtension":"mustache","patternName":"Media Card","patternPartial":"organisms-media-card","patternState":"","patternEngineName":"mustache","extraOutput":{}}
+  </script>
+</div><!--end .sg-pattern-->
+<div id="organisms-panel-with-header-button" class="sg-pattern">
+  <div class="sg-pattern-head">
+    <h3 class="sg-pattern-title">
+      <a href="../../patterns/04-organisms-01-blocks-05-panel-with-header-button&#x2F;04-organisms-01-blocks-05-panel-with-header-button.html" class="patternLink" data-patternpartial="organisms-panel-with-header-button" title="Link to Pattern">
+          Panel with Header Button
+      </a>
+    </h3>
+    <div class="sg-pattern-breadcrumb"></div>
+    <a href="#" data-patternpartial="organisms-panel-with-header-button" title="View Pattern Info" id="sg-pattern-extra-toggle-organisms-panel-with-header-button" class="sg-pattern-extra-toggle"><span>&#9660;</span></a>
+  </div>
+  <div class="sg-pattern-extra" id="sg-pattern-extra-organisms-panel-with-header-button">
+    
+  </div>
+  <div class="sg-pattern-example">
+    <style>
+    .panel-heading .panel-title.has-button {
+        line-height: normal;
+        width: 75%;
+        padding-top: 0.5rem;
+    }
+</style>
+<div class="row">
+    <div class="col-xs-3">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <div class="panel-title pull-left has-button hide-overflow">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et elit at quam finibus lobortis.
+                </div>
+                <div class="btn-group pull-right">
+                    <button class="btn btn-default btn-sm">New</button>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <div class="panel-body">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et elit at quam finibus lobortis.
+            </div>
+        </div>
+    </div>
+</div>
+
+  </div>
+  <script type="text/json" id="sg-pattern-data-organisms-panel-with-header-button" class="sg-pattern-data">
+    {"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":false,"patternDesc":"","patternBreadcrumb":{"patternType":"organisms","patternSubtype":"blocks"},"patternExtension":"mustache","patternName":"Panel with Header Button","patternPartial":"organisms-panel-with-header-button","patternState":"","patternEngineName":"mustache","extraOutput":{}}
+  </script>
+</div><!--end .sg-pattern-->
+<div id="organisms-collapsable-panel" class="sg-pattern">
+  <div class="sg-pattern-head">
+    <h3 class="sg-pattern-title">
+      <a href="../../patterns/04-organisms-01-blocks-06-collapsable-panel&#x2F;04-organisms-01-blocks-06-collapsable-panel.html" class="patternLink" data-patternpartial="organisms-collapsable-panel" title="Link to Pattern">
+          Collapsable Panel
+      </a>
+    </h3>
+    <div class="sg-pattern-breadcrumb"></div>
+    <a href="#" data-patternpartial="organisms-collapsable-panel" title="View Pattern Info" id="sg-pattern-extra-toggle-organisms-collapsable-panel" class="sg-pattern-extra-toggle"><span>&#9660;</span></a>
+  </div>
+  <div class="sg-pattern-extra" id="sg-pattern-extra-organisms-collapsable-panel">
+    
+  </div>
+  <div class="sg-pattern-example">
+    
+<div class="row">
+    <div class="col-xs-12 col-sm-6">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <div class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#filterPanel">Collapsable Panel</a>
+                    <span class="pull-right" data-toggle="collapse" data-parent="#accordion" href="#collapsablePanel">
+                        <i class="panelExpandIcon glyphicon glyphicon-chevron-down"></i>
+                    </span>
+                </div>
+            </div>
+            <div id="collapsablePanel" class="panel-collapse collapse">
+                <div class="panel-body">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $('#collapsablePanel').on('shown.bs.collapse', function () {
+       $('.panelExpandIcon').toggleClass('glyphicon-chevron-up glyphicon-chevron-down');
+    });
+
+    $('#collapsablePanel').on('hidden.bs.collapse', function () {
+       $('.panelExpandIcon').toggleClass('glyphicon-chevron-up glyphicon-chevron-down');
+    });
+</script>
+
+  </div>
+  <script type="text/json" id="sg-pattern-data-organisms-collapsable-panel" class="sg-pattern-data">
+    {"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":false,"patternDesc":"","patternBreadcrumb":{"patternType":"organisms","patternSubtype":"blocks"},"patternExtension":"mustache","patternName":"Collapsable Panel","patternPartial":"organisms-collapsable-panel","patternState":"","patternEngineName":"mustache","extraOutput":{}}
+  </script>
+</div><!--end .sg-pattern-->
+<div id="organisms-panel-with-footer-actions" class="sg-pattern">
+  <div class="sg-pattern-head">
+    <h3 class="sg-pattern-title">
+      <a href="../../patterns/04-organisms-01-blocks-06-panel-with-footer-actions&#x2F;04-organisms-01-blocks-06-panel-with-footer-actions.html" class="patternLink" data-patternpartial="organisms-panel-with-footer-actions" title="Link to Pattern">
+          Panel with Footer Actions
+      </a>
+    </h3>
+    <div class="sg-pattern-breadcrumb"></div>
+    <a href="#" data-patternpartial="organisms-panel-with-footer-actions" title="View Pattern Info" id="sg-pattern-extra-toggle-organisms-panel-with-footer-actions" class="sg-pattern-extra-toggle"><span>&#9660;</span></a>
+  </div>
+  <div class="sg-pattern-extra" id="sg-pattern-extra-organisms-panel-with-footer-actions">
+    
+  </div>
+  <div class="sg-pattern-example">
+    <div class="row">
+    <div class="col-xs-6">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <div class="panel-title pull-left has-button hide-overflow">
+                    Lorem ipsum dolor sit
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <div class="panel-body">
+<div class="table-responsive">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Column 1</th>
+                <th>Column 2</th>
+                <th>Column 3</th>
+                <th>Column 4</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>row 1 cell 1</td>
+                <td>row 1 cell 2</td>
+                <td>row 1 cell 3</td>
+                <td>row 1 cell 4</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+
+            </div>
+            <div class="panel-footer">
+                <div class="btn-group pull-right">
+                    <button class="btn btn-default btn-sm">Approve</button>
+                    <button class="btn btn-default btn-sm">Dispute</button>
+                    <button class="btn btn-default btn-sm">Forward</button>
+                    <button class="btn btn-default btn-sm">Comment</button>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+  </div>
+  <script type="text/json" id="sg-pattern-data-organisms-panel-with-footer-actions" class="sg-pattern-data">
+    {"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"atoms-table","lineagePath":"../../patterns/02-atoms-06-tables-00-table/02-atoms-06-tables-00-table.html"}],"lineage":[{"lineagePattern":"atoms-table","lineagePath":"../../patterns/02-atoms-06-tables-00-table/02-atoms-06-tables-00-table.html"}],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternType":"organisms","patternSubtype":"blocks"},"patternExtension":"mustache","patternName":"Panel with Footer Actions","patternPartial":"organisms-panel-with-footer-actions","patternState":"","patternEngineName":"mustache","extraOutput":{}}
+  </script>
+</div><!--end .sg-pattern-->
+<div id="organisms-tabbed-panel" class="sg-pattern">
+  <div class="sg-pattern-head">
+    <h3 class="sg-pattern-title">
+      <a href="../../patterns/04-organisms-01-blocks-07-tabbed-panel&#x2F;04-organisms-01-blocks-07-tabbed-panel.html" class="patternLink" data-patternpartial="organisms-tabbed-panel" title="Link to Pattern">
+          Tabbed Panel
+      </a>
+    </h3>
+    <div class="sg-pattern-breadcrumb"></div>
+    <a href="#" data-patternpartial="organisms-tabbed-panel" title="View Pattern Info" id="sg-pattern-extra-toggle-organisms-tabbed-panel" class="sg-pattern-extra-toggle"><span>&#9660;</span></a>
+  </div>
+  <div class="sg-pattern-extra" id="sg-pattern-extra-organisms-tabbed-panel">
+    
+  </div>
+  <div class="sg-pattern-example">
+    <div class="row">
+    <div class="col-xs-12 col-sm-6">
+        <div class="panel panel-default panel-tab">
+            <div class="panel-heading">
+                <div class="panel-title">&nbsp;</div>
+            </div>
+            <div class="panel-body">
+                <div class="panel-wrapper">
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a href="#tab1" data-toggle="tab">Tab 1</a></li>
+                        <li><a href="#tab2" data-toggle="tab">Tab 2</a></li>
+                        <li><a href="#tab3" data-toggle="tab">Tab 3</a></li>
+                        <li><a href="#tab4" data-toggle="tab">Tab 4</a></li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="tab1">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus suscipit nisi tellus, viverra ultrices eros ullamcorper sit amet. Fusce porta libero sed nisi volutpat eleifend non non purus. Nullam ac massa gravida, fringilla diam eu, molestie nulla. Maecenas vehicula diam ac tristique iaculis. Phasellus a finibus nisi, vel lacinia purus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam tempor nec diam at mattis. Suspendisse potenti.
+                        </div>
+                        <div class="tab-pane" id="tab2">
+                            Curabitur scelerisque tristique mi, sit amet dictum augue. Pellentesque velit mauris, aliquet ac felis varius, suscipit tempor lectus. Praesent molestie ipsum ipsum, non lacinia massa semper quis. Curabitur posuere metus non sem dictum consectetur non sit amet erat. Cras porta sed odio ac interdum. Proin cursus diam sem, a consequat felis luctus id. Nam euismod nunc ligula, ut posuere nibh euismod quis. Sed semper, mi eu tristique aliquam, nibh arcu ultrices dui, sollicitudin malesuada augue elit id odio. Aenean vestibulum, lorem cursus facilisis convallis, urna sapien maximus nisl, ac fermentum quam justo quis turpis. Morbi nulla sem, consequat at bibendum at, fermentum ut ipsum. Nullam leo risus, rutrum et purus non, scelerisque pharetra augue. Fusce et blandit odio. Vivamus tristique rhoncus leo, ac tincidunt urna hendrerit eu. In dignissim, magna eget ultrices viverra, lorem neque feugiat nibh, in consectetur libero dui a nulla. Mauris id ipsum quam. Nunc non neque sollicitudin, venenatis mauris et, bibendum mauris.
+                        </div>
+
+                        <div class="tab-pane" id="tab3">
+                            Maecenas accumsan condimentum libero ut viverra. In ac malesuada leo. Vestibulum porttitor pharetra ex vitae venenatis. Phasellus hendrerit luctus mi, elementum scelerisque mi molestie sed. Vivamus dignissim pharetra urna eget tincidunt. Proin vehicula iaculis felis, non tristique libero tincidunt at. Aliquam sed eleifend nisi, sed sagittis dolor. Nullam pulvinar diam felis, eget elementum est pharetra eget. Vestibulum ac purus maximus, maximus massa at, fermentum turpis. Aliquam justo ante, mollis egestas dui at, sagittis tincidunt tortor. In venenatis maximus ante a bibendum. Pellentesque varius auctor rutrum. In hac habitasse platea dictumst.
+                        </div>
+
+                        <div class="tab-pane" id="tab4">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et elit at quam finibus lobortis.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+  </div>
+  <script type="text/json" id="sg-pattern-data-organisms-tabbed-panel" class="sg-pattern-data">
+    {"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":false,"patternDesc":"","patternBreadcrumb":{"patternType":"organisms","patternSubtype":"blocks"},"patternExtension":"mustache","patternName":"Tabbed Panel","patternPartial":"organisms-tabbed-panel","patternState":"","patternEngineName":"mustache","extraOutput":{}}
+  </script>
+</div><!--end .sg-pattern-->
+<div id="organisms-panel-with-ribbon" class="sg-pattern">
+  <div class="sg-pattern-head">
+    <h3 class="sg-pattern-title">
+      <a href="../../patterns/04-organisms-01-blocks-panel-with-ribbon&#x2F;04-organisms-01-blocks-panel-with-ribbon.html" class="patternLink" data-patternpartial="organisms-panel-with-ribbon" title="Link to Pattern">
+          Panel With Ribbon
+      </a>
+    </h3>
+    <div class="sg-pattern-breadcrumb"></div>
+    <a href="#" data-patternpartial="organisms-panel-with-ribbon" title="View Pattern Info" id="sg-pattern-extra-toggle-organisms-panel-with-ribbon" class="sg-pattern-extra-toggle"><span>&#9660;</span></a>
+  </div>
+  <div class="sg-pattern-extra" id="sg-pattern-extra-organisms-panel-with-ribbon">
+    
+  </div>
+  <div class="sg-pattern-example">
+    <br/>
+<div class="row">
+    <div class="col-xs-4">
+        <div class="panel panel-default">
+            <div class="ribbon left"><span> On The Left</span></div>
+            <div class="panel-heading">Panel Title</div>
+            <div class="panel-body"> Body </div>
+        </div>
+    </div>
+        <div class="col-xs-4">
+            <div class="panel panel-default">
+                <div class="ribbon"><span>On The Right</span></div>
+                <div class="panel-heading">Panel Title</div>
+                <div class="panel-body"> Body </div>
+            </div>
+    </div>
+</div>
+
+  </div>
+  <script type="text/json" id="sg-pattern-data-organisms-panel-with-ribbon" class="sg-pattern-data">
+    {"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":false,"patternDesc":"","patternBreadcrumb":{"patternType":"organisms","patternSubtype":"blocks"},"patternExtension":"mustache","patternName":"Panel With Ribbon","patternPartial":"organisms-panel-with-ribbon","patternState":"","patternEngineName":"mustache","extraOutput":{}}
+  </script>
+</div><!--end .sg-pattern-->
+<div id="viewall-organisms-form-elements" class="sg-pattern-category">
+  <h2 class="sg-pattern-category-title"><a href="../../patterns/04-organisms-02-form-elements&#x2F;index.html" class="patternLink" data-patternpartial="viewall-organisms-form-elements">form-elements</a></h2>
+
+  <div class="sg-pattern-category-body">
+    
+  </div><!--end sg-pattern-category-body-->
+  
+</div><!--end sg-pattern-category-->
+<div id="organisms-simple-form" class="sg-pattern">
+  <div class="sg-pattern-head">
+    <h3 class="sg-pattern-title">
+      <a href="../../patterns/04-organisms-02-form-elements-00-simple-form&#x2F;04-organisms-02-form-elements-00-simple-form.html" class="patternLink" data-patternpartial="organisms-simple-form" title="Link to Pattern">
+          Simple Form
+      </a>
+    </h3>
+    <div class="sg-pattern-breadcrumb"></div>
+    <a href="#" data-patternpartial="organisms-simple-form" title="View Pattern Info" id="sg-pattern-extra-toggle-organisms-simple-form" class="sg-pattern-extra-toggle"><span>&#9660;</span></a>
+  </div>
+  <div class="sg-pattern-extra" id="sg-pattern-extra-organisms-simple-form">
+    
+  </div>
+  <div class="sg-pattern-example">
+    <form>
+    <div class="form-group">
+        <label class="control-label">Field 1</label>
+        <input type="text" class="form-control"
+    
+    
+     placeholder="Placeholder" 
+    
+/>
+
+    </div>
+    <div class="form-group">
+        <label class="control-label">Field 2</label>
+        <input type="text" class="form-control"
+    
+    
+     placeholder="Placeholder" 
+    
+/>
+
+    </div>
+    <div class="form-group">
+        <div class="row">
+            <div class="col-xs-6">
+                <label for="organismsRadioButtons">Radio Buttons</label>
+                <div class="radio">
+    <label>
+        <input type="radio"     name="organismsRadioButtons"   >
+         option one 
+        
+    </label>
+</div>
+
+                <div class="radio">
+    <label>
+        <input type="radio"   checked    name="organismsRadioButtons"   >
+         option two 
+        
+    </label>
+</div>
+
+            </div>
+            <div class="col-xs-6">
+                <label for="optionRadios">Checkboxes</label>
+                <div class="checkbox" >
+    <label>
+        <input type="checkbox"    name="checkboxes"   >
+         checkbox one 
+    </label>
+</div>
+
+                <div class="checkbox" >
+    <label>
+        <input type="checkbox"  checked    name="checkboxes"   >
+         checkbox two 
+    </label>
+</div>
+
+            </div>
+        </div>
+    </div>
+    <div class="form-group text-right">
+        <button type="button" class="btn btn-default "  >
+
+            Cancel
+</button>
+
+        <button type="button" class="btn btn-success "  >
+
+            Submit
+</button>
+
+    </div>
+</form>
+
+  </div>
+  <script type="text/json" id="sg-pattern-data-organisms-simple-form" class="sg-pattern-data">
+    {"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"atoms-input","lineagePath":"../../patterns/02-atoms-05-form-elements-00-input/02-atoms-05-form-elements-00-input.html"},{"lineagePattern":"atoms-radio-button","lineagePath":"../../patterns/02-atoms-05-form-elements-01-radio-button/02-atoms-05-form-elements-01-radio-button.html"},{"lineagePattern":"atoms-checkbox","lineagePath":"../../patterns/02-atoms-05-form-elements-02-checkbox/02-atoms-05-form-elements-02-checkbox.html"},{"lineagePattern":"atoms-btn","lineagePath":"../../patterns/02-atoms-04-buttons-_00-btn/02-atoms-04-buttons-_00-btn.html"}],"lineage":[{"lineagePattern":"atoms-input","lineagePath":"../../patterns/02-atoms-05-form-elements-00-input/02-atoms-05-form-elements-00-input.html"},{"lineagePattern":"atoms-radio-button","lineagePath":"../../patterns/02-atoms-05-form-elements-01-radio-button/02-atoms-05-form-elements-01-radio-button.html"},{"lineagePattern":"atoms-checkbox","lineagePath":"../../patterns/02-atoms-05-form-elements-02-checkbox/02-atoms-05-form-elements-02-checkbox.html"},{"lineagePattern":"atoms-btn","lineagePath":"../../patterns/02-atoms-04-buttons-_00-btn/02-atoms-04-buttons-_00-btn.html"}],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternType":"organisms","patternSubtype":"form-elements"},"patternExtension":"mustache","patternName":"Simple Form","patternPartial":"organisms-simple-form","patternState":"","patternEngineName":"mustache","extraOutput":{}}
+  </script>
+</div><!--end .sg-pattern-->
+<div id="organisms-inline-form" class="sg-pattern">
+  <div class="sg-pattern-head">
+    <h3 class="sg-pattern-title">
+      <a href="../../patterns/04-organisms-02-form-elements-01-inline-form&#x2F;04-organisms-02-form-elements-01-inline-form.html" class="patternLink" data-patternpartial="organisms-inline-form" title="Link to Pattern">
+          Inline Form
+      </a>
+    </h3>
+    <div class="sg-pattern-breadcrumb"></div>
+    <a href="#" data-patternpartial="organisms-inline-form" title="View Pattern Info" id="sg-pattern-extra-toggle-organisms-inline-form" class="sg-pattern-extra-toggle"><span>&#9660;</span></a>
+  </div>
+  <div class="sg-pattern-extra" id="sg-pattern-extra-organisms-inline-form">
+    
+  </div>
+  <div class="sg-pattern-example">
+    <form class="form-inline">
+    <div class="form-group">
+        <label for="field1">Field 1: </label>
+        <input type="text" class="form-control"
+    
+    
+     placeholder="Placeholder" 
+    
+/>
+
+    </div>
+    <div class="form-group">
+        <label for="field2">Field 2: </label>
+        <input type="text" class="form-control"
+    
+    
+     placeholder="Placeholder" 
+    
+/>
+
+    </div>
+    <div class="form-group">
+        <button type="button" class="btn btn-default "  >
+
+            Button
+</button>
+
+
+    </div>
+</form>
+
+  </div>
+  <script type="text/json" id="sg-pattern-data-organisms-inline-form" class="sg-pattern-data">
+    {"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"atoms-input","lineagePath":"../../patterns/02-atoms-05-form-elements-00-input/02-atoms-05-form-elements-00-input.html"},{"lineagePattern":"atoms-button","lineagePath":"../../patterns/02-atoms-04-buttons-00-button/02-atoms-04-buttons-00-button.html"}],"lineage":[{"lineagePattern":"atoms-input","lineagePath":"../../patterns/02-atoms-05-form-elements-00-input/02-atoms-05-form-elements-00-input.html"},{"lineagePattern":"atoms-button","lineagePath":"../../patterns/02-atoms-04-buttons-00-button/02-atoms-04-buttons-00-button.html"}],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternType":"organisms","patternSubtype":"form-elements"},"patternExtension":"mustache","patternName":"Inline Form","patternPartial":"organisms-inline-form","patternState":"","patternEngineName":"mustache","extraOutput":{}}
+  </script>
+</div><!--end .sg-pattern-->
+<div id="organisms-horizontal-form" class="sg-pattern">
+  <div class="sg-pattern-head">
+    <h3 class="sg-pattern-title">
+      <a href="../../patterns/04-organisms-02-form-elements-03-horizontal-form&#x2F;04-organisms-02-form-elements-03-horizontal-form.html" class="patternLink" data-patternpartial="organisms-horizontal-form" title="Link to Pattern">
+          Horizontal Form
+      </a>
+    </h3>
+    <div class="sg-pattern-breadcrumb"></div>
+    <a href="#" data-patternpartial="organisms-horizontal-form" title="View Pattern Info" id="sg-pattern-extra-toggle-organisms-horizontal-form" class="sg-pattern-extra-toggle"><span>&#9660;</span></a>
+  </div>
+  <div class="sg-pattern-extra" id="sg-pattern-extra-organisms-horizontal-form">
+    
+  </div>
+  <div class="sg-pattern-example">
+    <form class="form-horizontal" role="form">
+    <div class="form-group">
+        <label for="inputName" class="col-sm-2 control-label">Name</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" id="inputName" placeholder="Full name">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+        <div class="col-sm-10">
+            <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+        <div class="col-sm-10">
+            <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+            <button type="submit" class="btn btn-success pull-right">Sign in</button>
+            <div class="checkbox" >
+    <label>
+        <input type="checkbox"     >
+         Remember Me 
+    </label>
+</div>
+
+        </div>
+    </div>
+</form>
+
+  </div>
+  <script type="text/json" id="sg-pattern-data-organisms-horizontal-form" class="sg-pattern-data">
+    {"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"atoms-checkbox","lineagePath":"../../patterns/02-atoms-05-form-elements-02-checkbox/02-atoms-05-form-elements-02-checkbox.html"}],"lineage":[{"lineagePattern":"atoms-checkbox","lineagePath":"../../patterns/02-atoms-05-form-elements-02-checkbox/02-atoms-05-form-elements-02-checkbox.html"}],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternType":"organisms","patternSubtype":"form-elements"},"patternExtension":"mustache","patternName":"Horizontal Form","patternPartial":"organisms-horizontal-form","patternState":"","patternEngineName":"mustache","extraOutput":{}}
+  </script>
+</div><!--end .sg-pattern-->
+<div id="organisms-multi-column-form" class="sg-pattern">
+  <div class="sg-pattern-head">
+    <h3 class="sg-pattern-title">
+      <a href="../../patterns/04-organisms-02-form-elements-04-multi-column-form&#x2F;04-organisms-02-form-elements-04-multi-column-form.html" class="patternLink" data-patternpartial="organisms-multi-column-form" title="Link to Pattern">
+          Multi Column Form
+      </a>
+    </h3>
+    <div class="sg-pattern-breadcrumb"></div>
+    <a href="#" data-patternpartial="organisms-multi-column-form" title="View Pattern Info" id="sg-pattern-extra-toggle-organisms-multi-column-form" class="sg-pattern-extra-toggle"><span>&#9660;</span></a>
+  </div>
+  <div class="sg-pattern-extra" id="sg-pattern-extra-organisms-multi-column-form">
+    
+  </div>
+  <div class="sg-pattern-example">
+    <form>
+    <div class="form-group ">
+        <div class="col-xs-12 col-sm-6">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <dl class="dl-horizontal">
+                        <dt class="text-left"><strong>Sender</strong></dt>
+                        <dd>
+                            <ul class="list-unstyled">
+                                <li><strong>Chaparral Energy Inc.</strong></li>
+                                <li>701 Cedar Lake Blvd</li>
+                                <li>Oklahoma City, OK, 73114</li>
+                                <li>UNITED STATES</li>
+                            </ul>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-xs-12 col-sm-6">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <dl class="dl-horizontal">
+                        <dt class="text-left">Recipient</dt>
+                        <dd>
+                            <ul class="list-unstyled">
+                                <li><strong>Ward Petroleum Corporation</strong></li>
+                                <li>502 S. Filmore</li>
+                                <li>Enid, OK, 73702</li>
+                                <li>UNITED STATES</li>
+                            </ul>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <p class="clearfix"></p>
+
+    <div class="row">
+        <div class="col-xs-12 col-md-6">
+            <label class="control-label" for="input1">Field 1</label>
+            <input type="text" class="form-control"
+    
+    
+     placeholder="Placeholder" 
+    
+/>
+
+        </div>
+
+        <div class="col-xs-12 col-md-6">
+            <label class="control-label" for="input4">Field 4</label>
+            <input type="text" class="form-control"
+    
+    
+     placeholder="Placeholder" 
+    
+/>
+
+        </div>
+    </div>
+
+    <p class="clearfix"></p>
+
+    <div class="row clearfix">
+        <div class="col-xs-12 col-md-6">
+            <label class="control-label" for="input1">Field 2</label>
+            <input type="text" class="form-control"
+    
+    
+     placeholder="Placeholder" 
+    
+/>
+
+        </div>
+
+        <div class="col-xs-12 col-md-6">
+            <label for="input2">Field 5</label>
+            <input type="text" class="form-control"
+    
+    
+     placeholder="Placeholder" 
+    
+/>
+
+        </div>
+    </div>
+
+    <p class="clearfix"></p>
+
+    <div class="row clearfix">
+        <div class="col-xs-12 col-md-6">
+            <label for="input3">Field 3</label>
+            <input type="text" class="form-control"
+    
+    
+     placeholder="Placeholder" 
+    
+/>
+
+        </div>
+
+        <div class="col-xs-12 col-md-6">
+            <label for="input3">Field 6</label>
+            <input type="text" class="form-control"
+    
+    
+     placeholder="Placeholder" 
+    
+/>
+
+        </div>
+    </div>
+    <p class="clearfix"></p>
+
+    <div class="form-group text-right">
+        <button type="button" class="btn btn-success "  >
+
+            Submit
+</button>
+
+        <button type="button" class="btn btn-default "  >
+
+            Cancel
+</button>
+
+    </div>
+</form>
+
+  </div>
+  <script type="text/json" id="sg-pattern-data-organisms-multi-column-form" class="sg-pattern-data">
+    {"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"atoms-input","lineagePath":"../../patterns/02-atoms-05-form-elements-00-input/02-atoms-05-form-elements-00-input.html"},{"lineagePattern":"atoms-btn","lineagePath":"../../patterns/02-atoms-04-buttons-_00-btn/02-atoms-04-buttons-_00-btn.html"}],"lineage":[{"lineagePattern":"atoms-input","lineagePath":"../../patterns/02-atoms-05-form-elements-00-input/02-atoms-05-form-elements-00-input.html"},{"lineagePattern":"atoms-btn","lineagePath":"../../patterns/02-atoms-04-buttons-_00-btn/02-atoms-04-buttons-_00-btn.html"}],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternType":"organisms","patternSubtype":"form-elements"},"patternExtension":"mustache","patternName":"Multi Column Form","patternPartial":"organisms-multi-column-form","patternState":"","patternEngineName":"mustache","extraOutput":{}}
+  </script>
+</div><!--end .sg-pattern-->
+<div id="organisms-message-form" class="sg-pattern">
+  <div class="sg-pattern-head">
+    <h3 class="sg-pattern-title">
+      <a href="../../patterns/04-organisms-02-form-elements-05-message-form&#x2F;04-organisms-02-form-elements-05-message-form.html" class="patternLink" data-patternpartial="organisms-message-form" title="Link to Pattern">
+          Message Form
+      </a>
+    </h3>
+    <div class="sg-pattern-breadcrumb"></div>
+    <a href="#" data-patternpartial="organisms-message-form" title="View Pattern Info" id="sg-pattern-extra-toggle-organisms-message-form" class="sg-pattern-extra-toggle"><span>&#9660;</span></a>
+  </div>
+  <div class="sg-pattern-extra" id="sg-pattern-extra-organisms-message-form">
+    
+  </div>
+  <div class="sg-pattern-example">
+    <form id="messageForm" role="form" class="form-horizontal ng-pristine ng-valid">
+    <div class="form-group">
+        <label class="col-sm-2" for="inputTo">To</label>
+        <div class="col-sm-10"><input type="email" class="form-control" id="inputTo" placeholder="comma separated list of recipients"></div>
+    </div>
+    <div class="form-group">
+        <label class="col-sm-2" for="inputSubject">Subject</label>
+        <div class="col-sm-10"><input type="text" class="form-control" id="inputSubject" placeholder="subject"></div>
+    </div>
+    <div class="form-group">
+        <label class="col-sm-12" for="inputBody">Message</label>
+        <div class="col-sm-12"><textarea class="form-control" id="inputBody" rows="8"></textarea></div>
+    </div>
+    <div class="form-group text-right">
+        <div class="col-xs-12">
+            <button type="button" class="btn btn-default "  >
+
+            Discard
+</button>
+
+            <button type="button" class="btn btn-success "  >
+
+            Send
+</button>
+
+        </div> 
+    </div>
+</form>
+
+  </div>
+  <script type="text/json" id="sg-pattern-data-organisms-message-form" class="sg-pattern-data">
+    {"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"atoms-btn","lineagePath":"../../patterns/02-atoms-04-buttons-_00-btn/02-atoms-04-buttons-_00-btn.html"}],"lineage":[{"lineagePattern":"atoms-btn","lineagePath":"../../patterns/02-atoms-04-buttons-_00-btn/02-atoms-04-buttons-_00-btn.html"}],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternType":"organisms","patternSubtype":"form-elements"},"patternExtension":"mustache","patternName":"Message Form","patternPartial":"organisms-message-form","patternState":"","patternEngineName":"mustache","extraOutput":{}}
+  </script>
+</div><!--end .sg-pattern-->
+<div id="organisms-action-button" class="sg-pattern">
+  <div class="sg-pattern-head">
+    <h3 class="sg-pattern-title">
+      <a href="../../patterns/04-organisms-02-form-elements-action-button&#x2F;04-organisms-02-form-elements-action-button.html" class="patternLink" data-patternpartial="organisms-action-button" title="Link to Pattern">
+          Action Button
+      </a>
+    </h3>
+    <div class="sg-pattern-breadcrumb"></div>
+    <a href="#" data-patternpartial="organisms-action-button" title="View Pattern Info" id="sg-pattern-extra-toggle-organisms-action-button" class="sg-pattern-extra-toggle"><span>&#9660;</span></a>
+  </div>
+  <div class="sg-pattern-extra" id="sg-pattern-extra-organisms-action-button">
+    
+  </div>
+  <div class="sg-pattern-example">
+    <div class="btn-group">
+    <button type="button" class="btn btn-default "  >
+
+            Actions...
+</button>
+
+    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+        aria-expanded="false">
+        <span class="caret"></span>
+            <span class="sr-only">Call To Action</span>
+    </button>
+    <ul class="dropdown-menu">
+            <li ><a href="#">Create a Ticket</a></li>
+            <li ><a href="#">Create a Ticket Stack</a></li>
+            <li ><a href="#">Create a Rental</a></li>
+            <li ><a href="#">Import Tickets</a></li>
+    </ul> 
+</div>
+
+  </div>
+  <script type="text/json" id="sg-pattern-data-organisms-action-button" class="sg-pattern-data">
+    {"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"atoms-btn","lineagePath":"../../patterns/02-atoms-04-buttons-_00-btn/02-atoms-04-buttons-_00-btn.html"}],"lineage":[{"lineagePattern":"atoms-btn","lineagePath":"../../patterns/02-atoms-04-buttons-_00-btn/02-atoms-04-buttons-_00-btn.html"}],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternType":"organisms","patternSubtype":"form-elements"},"patternExtension":"mustache","patternName":"Action Button","patternPartial":"organisms-action-button","patternState":"","patternEngineName":"mustache","extraOutput":{}}
+  </script>
+</div><!--end .sg-pattern-->
+<div id="organisms-action-button-collapsed" class="sg-pattern">
+  <div class="sg-pattern-head">
+    <h3 class="sg-pattern-title">
+      <a href="../../patterns/04-organisms-02-form-elements-action-button-collapsed&#x2F;04-organisms-02-form-elements-action-button-collapsed.html" class="patternLink" data-patternpartial="organisms-action-button-collapsed" title="Link to Pattern">
+          Action Button Collapsed
+      </a>
+    </h3>
+    <div class="sg-pattern-breadcrumb"></div>
+    <a href="#" data-patternpartial="organisms-action-button-collapsed" title="View Pattern Info" id="sg-pattern-extra-toggle-organisms-action-button-collapsed" class="sg-pattern-extra-toggle"><span>&#9660;</span></a>
+  </div>
+  <div class="sg-pattern-extra" id="sg-pattern-extra-organisms-action-button-collapsed">
+    
+  </div>
+  <div class="sg-pattern-example">
+    <div class="btn-toolbar">
+    <div class="btn-group">
+        <button type="button" class="btn btn-default "  >
+
+            Create Ticket
+</button>
+
+        <button type="button" class="btn btn-default "  >
+
+            Import Tickets
+</button>
+
+        <div class="btn-group">
+            <a href="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                Other Actions...
+                <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-right">
+                <li> <a href="#">Create a Stack</a></li>
+                <li> <a href="#">Create a SuperTicket</a></li>
+                <li> <a href="#">Create a Rental</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+  </div>
+  <script type="text/json" id="sg-pattern-data-organisms-action-button-collapsed" class="sg-pattern-data">
+    {"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"atoms-btn","lineagePath":"../../patterns/02-atoms-04-buttons-_00-btn/02-atoms-04-buttons-_00-btn.html"}],"lineage":[{"lineagePattern":"atoms-btn","lineagePath":"../../patterns/02-atoms-04-buttons-_00-btn/02-atoms-04-buttons-_00-btn.html"}],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternType":"organisms","patternSubtype":"form-elements"},"patternExtension":"mustache","patternName":"Action Button Collapsed","patternPartial":"organisms-action-button-collapsed","patternState":"","patternEngineName":"mustache","extraOutput":{}}
+  </script>
+</div><!--end .sg-pattern-->
+<div id="organisms-busy-input" class="sg-pattern">
+  <div class="sg-pattern-head">
+    <h3 class="sg-pattern-title">
+      <a href="../../patterns/04-organisms-02-form-elements-busy-input&#x2F;04-organisms-02-form-elements-busy-input.html" class="patternLink" data-patternpartial="organisms-busy-input" title="Link to Pattern">
+          Busy Input
+      </a>
+    </h3>
+    <div class="sg-pattern-breadcrumb"></div>
+    <a href="#" data-patternpartial="organisms-busy-input" title="View Pattern Info" id="sg-pattern-extra-toggle-organisms-busy-input" class="sg-pattern-extra-toggle"><span>&#9660;</span></a>
+  </div>
+  <div class="sg-pattern-extra" id="sg-pattern-extra-organisms-busy-input">
+    
+  </div>
+  <div class="sg-pattern-example">
+    <!-- the form-control-feedback div appears by nature of the form-group having the 'has-feedback' class -->
+<div id="busyInput" class="form-group has-feedback">
+    <input class="form-control" type="text">
+    <div class="form-control-feedback">
+        <i class="fas fa-spinner fa-spin fa-pulse text-info"></i>
+    </div>
+</div>
+
+
+  </div>
+  <script type="text/json" id="sg-pattern-data-organisms-busy-input" class="sg-pattern-data">
+    {"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":false,"patternDesc":"","patternBreadcrumb":{"patternType":"organisms","patternSubtype":"form-elements"},"patternExtension":"mustache","patternName":"Busy Input","patternPartial":"organisms-busy-input","patternState":"","patternEngineName":"mustache","extraOutput":{}}
+  </script>
+</div><!--end .sg-pattern-->
+<div id="organisms-currency-dropdown" class="sg-pattern">
+  <div class="sg-pattern-head">
+    <h3 class="sg-pattern-title">
+      <a href="../../patterns/04-organisms-02-form-elements-currency-dropdown&#x2F;04-organisms-02-form-elements-currency-dropdown.html" class="patternLink" data-patternpartial="organisms-currency-dropdown" title="Link to Pattern">
+          Currency Dropdown
+      </a>
+    </h3>
+    <div class="sg-pattern-breadcrumb"></div>
+    <a href="#" data-patternpartial="organisms-currency-dropdown" title="View Pattern Info" id="sg-pattern-extra-toggle-organisms-currency-dropdown" class="sg-pattern-extra-toggle"><span>&#9660;</span></a>
+  </div>
+  <div class="sg-pattern-extra" id="sg-pattern-extra-organisms-currency-dropdown">
+    
+  </div>
+  <div class="sg-pattern-example">
+    <label class="control-label">Currency <span class='text-danger'> * </span>
+
+</label>
+<div class="btn-group btn-block">
+    <a href="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+        <span class="currencyCodeDisplay"> USD </span>
+        <span class="caret"> </span>
+    </a>
+    <ul class="molecules-currency-dropdown-menu dropdown-menu"></ul>
+</div>
+<script>
+    $(".molecules-currency-dropdown-menu").ready(function() {
+        $.ajax({
+            url: "../../styleguide/data/currencies.json",
+            type: "GET",
+            success: function(response) {
+                var responseData = response;
+                $.each(responseData , function(i,obj) {
+                    var menuItem = '<li onclick="$(\'.currencyCodeDisplay\').html(\' ' +obj.code +' \')"><a id="' +obj.number +' href="#nogo">' +obj.code +'   <small class="text-muted">(' +obj.name +')</small></a></li>';
+                    $(menuItem).appendTo('.molecules-currency-dropdown-menu ');
+                });
+            }
+        });
+    });
+</script>
+
+  </div>
+  <script type="text/json" id="sg-pattern-data-organisms-currency-dropdown" class="sg-pattern-data">
+    {"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"atoms-required-field-indicator","lineagePath":"../../patterns/02-atoms-02-text-06-required-field-indicator/02-atoms-02-text-06-required-field-indicator.html"}],"lineage":[{"lineagePattern":"atoms-required-field-indicator","lineagePath":"../../patterns/02-atoms-02-text-06-required-field-indicator/02-atoms-02-text-06-required-field-indicator.html"}],"patternLineageRExists":true,"patternLineagesR":[{"lineagePattern":"pages-contract-workspace","lineagePath":"../../patterns/06-pages-contract-workspace/06-pages-contract-workspace.html"}],"lineageR":[{"lineagePattern":"pages-contract-workspace","lineagePath":"../../patterns/06-pages-contract-workspace/06-pages-contract-workspace.html"}],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternType":"organisms","patternSubtype":"form-elements"},"patternExtension":"mustache","patternName":"Currency Dropdown","patternPartial":"organisms-currency-dropdown","patternState":"","patternEngineName":"mustache","extraOutput":{}}
+  </script>
+</div><!--end .sg-pattern-->
+<div id="organisms-password-toggle" class="sg-pattern">
+  <div class="sg-pattern-head">
+    <h3 class="sg-pattern-title">
+      <a href="../../patterns/04-organisms-02-form-elements-password-toggle&#x2F;04-organisms-02-form-elements-password-toggle.html" class="patternLink" data-patternpartial="organisms-password-toggle" title="Link to Pattern">
+          Password Toggle
+      </a>
+    </h3>
+    <div class="sg-pattern-breadcrumb"></div>
+    <a href="#" data-patternpartial="organisms-password-toggle" title="View Pattern Info" id="sg-pattern-extra-toggle-organisms-password-toggle" class="sg-pattern-extra-toggle"><span>&#9660;</span></a>
+  </div>
+  <div class="sg-pattern-extra" id="sg-pattern-extra-organisms-password-toggle">
+    
+  </div>
+  <div class="sg-pattern-example">
+    <div class="form-group">
+    <label class="control-label">Password</label>
+    <div class="input-group" >
+        <input id="password-field" type="password" class="form-control" name="password" value="mySecretP@ssw0rd">
+        <span class="input-group-btn">
+            <button id="toggle-password-field" type="button" class="btn btn-default toggle-password" toggle="#password-field">
+                <span class="glyphicon glyphicon-eye-open"></span>
+                <span class="btnText">Show Password</span>
+            </button>
+        </span>
+    </div>
+</div>
+
+  </div>
+  <script type="text/json" id="sg-pattern-data-organisms-password-toggle" class="sg-pattern-data">
+    {"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":false,"patternDesc":"","patternBreadcrumb":{"patternType":"organisms","patternSubtype":"form-elements"},"patternExtension":"mustache","patternName":"Password Toggle","patternPartial":"organisms-password-toggle","patternState":"","patternEngineName":"mustache","extraOutput":{}}
+  </script>
+</div><!--end .sg-pattern-->
+<div id="viewall-organisms-messaging" class="sg-pattern-category">
+  <h2 class="sg-pattern-category-title"><a href="../../patterns/04-organisms-04-messaging&#x2F;index.html" class="patternLink" data-patternpartial="viewall-organisms-messaging">messaging</a></h2>
+
+  <div class="sg-pattern-category-body">
+    
+  </div><!--end sg-pattern-category-body-->
+  
+</div><!--end sg-pattern-category-->
+<div id="organisms-default-modal" class="sg-pattern">
+  <div class="sg-pattern-head">
+    <h3 class="sg-pattern-title">
+      <a href="../../patterns/04-organisms-04-messaging-01-default-modal&#x2F;04-organisms-04-messaging-01-default-modal.html" class="patternLink" data-patternpartial="organisms-default-modal" title="Link to Pattern">
+          Default Modal
+      </a>
+    </h3>
+    <div class="sg-pattern-breadcrumb"></div>
+    <a href="#" data-patternpartial="organisms-default-modal" title="View Pattern Info" id="sg-pattern-extra-toggle-organisms-default-modal" class="sg-pattern-extra-toggle"><span>&#9660;</span></a>
+  </div>
+  <div class="sg-pattern-extra" id="sg-pattern-extra-organisms-default-modal">
+    
+  </div>
+  <div class="sg-pattern-example">
+    <div class="modal fade in" style="display: block; position:static">
+    <div class="modal-dialog">
+        <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <div class="lead modal-title">
+                        Lorem ipsum dolor sit
+                    </div>
+                </div>
+            <div class="modal-body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
+            </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default "  >
+
+            No
+</button>
+
+                    <button type="button" class="btn btn-success "  >
+
+            Yes
+</button>
+
+                </div>
+        </div>
+    </div>
+</div>
+
+  </div>
+  <script type="text/json" id="sg-pattern-data-organisms-default-modal" class="sg-pattern-data">
+    {"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"atoms-btn","lineagePath":"../../patterns/02-atoms-04-buttons-_00-btn/02-atoms-04-buttons-_00-btn.html"}],"lineage":[{"lineagePattern":"atoms-btn","lineagePath":"../../patterns/02-atoms-04-buttons-_00-btn/02-atoms-04-buttons-_00-btn.html"}],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternType":"organisms","patternSubtype":"messaging"},"patternExtension":"mustache","patternName":"Default Modal","patternPartial":"organisms-default-modal","patternState":"","patternEngineName":"mustache","extraOutput":{}}
+  </script>
+</div><!--end .sg-pattern-->
+<div id="organisms-modal-with-alert" class="sg-pattern">
+  <div class="sg-pattern-head">
+    <h3 class="sg-pattern-title">
+      <a href="../../patterns/04-organisms-04-messaging-02-modal-with-alert&#x2F;04-organisms-04-messaging-02-modal-with-alert.html" class="patternLink" data-patternpartial="organisms-modal-with-alert" title="Link to Pattern">
+          Modal With Alert
+      </a>
+    </h3>
+    <div class="sg-pattern-breadcrumb"></div>
+    <a href="#" data-patternpartial="organisms-modal-with-alert" title="View Pattern Info" id="sg-pattern-extra-toggle-organisms-modal-with-alert" class="sg-pattern-extra-toggle"><span>&#9660;</span></a>
+  </div>
+  <div class="sg-pattern-extra" id="sg-pattern-extra-organisms-modal-with-alert">
+    
+  </div>
+  <div class="sg-pattern-example">
+    <div class="modal fade in" style="display: block; position:static">
+    <div class="modal-dialog">
+        <div class="modal-content">
+                <div class="modal-header">
+                    <div class="alert alert-warning" role="alert" style="position: fixed; top: 5px; width: 95%; z-index: 1;">
+                        <strong>Warning!:</strong>  A condition exists that we&#39;d like to warn you about.
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span
+                                    aria-hidden="true">&times;</span></button>
+                    </div>
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <div class="lead modal-title">
+                        Lorem ipsum dolor sit
+                    </div>
+                </div>
+            <div class="modal-body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
+            </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default "  >
+
+            No
+</button>
+
+                    <button type="button" class="btn btn-success "  >
+
+            Yes
+</button>
+
+                </div>
+        </div>
+    </div>
+</div>
+
+  </div>
+  <script type="text/json" id="sg-pattern-data-organisms-modal-with-alert" class="sg-pattern-data">
+    {"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"atoms-btn","lineagePath":"../../patterns/02-atoms-04-buttons-_00-btn/02-atoms-04-buttons-_00-btn.html"}],"lineage":[{"lineagePattern":"atoms-btn","lineagePath":"../../patterns/02-atoms-04-buttons-_00-btn/02-atoms-04-buttons-_00-btn.html"}],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternType":"organisms","patternSubtype":"messaging"},"patternExtension":"mustache","patternName":"Modal With Alert","patternPartial":"organisms-modal-with-alert","patternState":"","patternEngineName":"mustache","extraOutput":{}}
+  </script>
+</div><!--end .sg-pattern-->
+<div id="organisms-scrollable-modal" class="sg-pattern">
+  <div class="sg-pattern-head">
+    <h3 class="sg-pattern-title">
+      <a href="../../patterns/04-organisms-04-messaging-04-scrollable-modal&#x2F;04-organisms-04-messaging-04-scrollable-modal.html" class="patternLink" data-patternpartial="organisms-scrollable-modal" title="Link to Pattern">
+          Scrollable Modal
+      </a>
+    </h3>
+    <div class="sg-pattern-breadcrumb"></div>
+    <a href="#" data-patternpartial="organisms-scrollable-modal" title="View Pattern Info" id="sg-pattern-extra-toggle-organisms-scrollable-modal" class="sg-pattern-extra-toggle"><span>&#9660;</span></a>
+  </div>
+  <div class="sg-pattern-extra" id="sg-pattern-extra-organisms-scrollable-modal">
+    
+  </div>
+  <div class="sg-pattern-example">
+    
+<style>
+    .scrollable-modal-body {
+        max-height: 400px;
+        overflow-y: auto;
+    }
+</style>
+<div class="modal fade in" style="display: block; position:static">
+    <div class="modal-dialog" style="overflow-y: initial !important">
+        <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <div class="lead modal-title">
+                        Lorem ipsum dolor sit
+                    </div>
+                </div>
+            <div class="modal-body scrollable-modal-body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus suscipit nisi tellus, viverra ultrices eros ullamcorper sit amet. Fusce porta libero sed nisi volutpat eleifend non non purus. Nullam ac massa gravida, fringilla diam eu, molestie nulla. Maecenas vehicula diam ac tristique iaculis. Phasellus a finibus nisi, vel lacinia purus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam tempor nec diam at mattis. Suspendisse potenti.</p>
+                <p>Curabitur scelerisque tristique mi, sit amet dictum augue. Pellentesque velit mauris, aliquet ac felis varius, suscipit tempor lectus. Praesent molestie ipsum ipsum, non lacinia massa semper quis. Curabitur posuere metus non sem dictum consectetur non sit amet erat. Cras porta sed odio ac interdum. Proin cursus diam sem, a consequat felis luctus id. Nam euismod nunc ligula, ut posuere nibh euismod quis. Sed semper, mi eu tristique aliquam, nibh arcu ultrices dui, sollicitudin malesuada augue elit id odio. Aenean vestibulum, lorem cursus facilisis convallis, urna sapien maximus nisl, ac fermentum quam justo quis turpis. Morbi nulla sem, consequat at bibendum at, fermentum ut ipsum. Nullam leo risus, rutrum et purus non, scelerisque pharetra augue. Fusce et blandit odio. Vivamus tristique rhoncus leo, ac tincidunt urna hendrerit eu. In dignissim, magna eget ultrices viverra, lorem neque feugiat nibh, in consectetur libero dui a nulla. Mauris id ipsum quam. Nunc non neque sollicitudin, venenatis mauris et, bibendum mauris.</p>
+                <p>Maecenas accumsan condimentum libero ut viverra. In ac malesuada leo. Vestibulum porttitor pharetra ex vitae venenatis. Phasellus hendrerit luctus mi, elementum scelerisque mi molestie sed. Vivamus dignissim pharetra urna eget tincidunt. Proin vehicula iaculis felis, non tristique libero tincidunt at. Aliquam sed eleifend nisi, sed sagittis dolor. Nullam pulvinar diam felis, eget elementum est pharetra eget. Vestibulum ac purus maximus, maximus massa at, fermentum turpis. Aliquam justo ante, mollis egestas dui at, sagittis tincidunt tortor. In venenatis maximus ante a bibendum. Pellentesque varius auctor rutrum. In hac habitasse platea dictumst.</p>
+            </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default">
+                           No
+                    </button>
+                    <button type="button" class="btn btn-success">
+                           Yes
+                    </button>
+                </div>
+        </div>
+    </div>
+</div>
+
+  </div>
+  <script type="text/json" id="sg-pattern-data-organisms-scrollable-modal" class="sg-pattern-data">
+    {"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":false,"patternDesc":"","patternBreadcrumb":{"patternType":"organisms","patternSubtype":"messaging"},"patternExtension":"mustache","patternName":"Scrollable Modal","patternPartial":"organisms-scrollable-modal","patternState":"","patternEngineName":"mustache","extraOutput":{}}
+  </script>
+</div><!--end .sg-pattern-->
+<div id="organisms-info-alert" class="sg-pattern">
+  <div class="sg-pattern-head">
+    <h3 class="sg-pattern-title">
+      <a href="../../patterns/04-organisms-04-messaging-05-info-alert&#x2F;04-organisms-04-messaging-05-info-alert.html" class="patternLink" data-patternpartial="organisms-info-alert" title="Link to Pattern">
+          Info Alerts
+      </a>
+    </h3>
+    <div class="sg-pattern-breadcrumb"></div>
+    <a href="#" data-patternpartial="organisms-info-alert" title="View Pattern Info" id="sg-pattern-extra-toggle-organisms-info-alert" class="sg-pattern-extra-toggle"><span>&#9660;</span></a>
+  </div>
+  <div class="sg-pattern-extra" id="sg-pattern-extra-organisms-info-alert">
+    
+  </div>
+  <div class="sg-pattern-example">
+    <div class="alert alert-info" role="alert">
+    <strong>FYI:</strong> Something of interest happened.
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+</div>
+
+  </div>
+  <script type="text/json" id="sg-pattern-data-organisms-info-alert" class="sg-pattern-data">
+    {"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":false,"patternDesc":"","patternBreadcrumb":{"patternType":"organisms","patternSubtype":"messaging"},"patternExtension":"mustache","patternName":"Info Alerts","patternPartial":"organisms-info-alert","patternState":"","patternEngineName":"mustache","extraOutput":{}}
+  </script>
+</div><!--end .sg-pattern-->
+<div id="organisms-success-alert" class="sg-pattern">
+  <div class="sg-pattern-head">
+    <h3 class="sg-pattern-title">
+      <a href="../../patterns/04-organisms-04-messaging-06-success-alert&#x2F;04-organisms-04-messaging-06-success-alert.html" class="patternLink" data-patternpartial="organisms-success-alert" title="Link to Pattern">
+          Success Alerts
+      </a>
+    </h3>
+    <div class="sg-pattern-breadcrumb"></div>
+    <a href="#" data-patternpartial="organisms-success-alert" title="View Pattern Info" id="sg-pattern-extra-toggle-organisms-success-alert" class="sg-pattern-extra-toggle"><span>&#9660;</span></a>
+  </div>
+  <div class="sg-pattern-extra" id="sg-pattern-extra-organisms-success-alert">
+    
+  </div>
+  <div class="sg-pattern-example">
+    
+<div class="alert alert-success alert-dismissable" role="alert">
+    <strong>Success!:</strong> Your changes were saved successfully.
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+</div>
+
+  </div>
+  <script type="text/json" id="sg-pattern-data-organisms-success-alert" class="sg-pattern-data">
+    {"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":false,"patternDesc":"","patternBreadcrumb":{"patternType":"organisms","patternSubtype":"messaging"},"patternExtension":"mustache","patternName":"Success Alerts","patternPartial":"organisms-success-alert","patternState":"","patternEngineName":"mustache","extraOutput":{}}
+  </script>
+</div><!--end .sg-pattern-->
+<div id="organisms-warning-alert" class="sg-pattern">
+  <div class="sg-pattern-head">
+    <h3 class="sg-pattern-title">
+      <a href="../../patterns/04-organisms-04-messaging-07-warning-alert&#x2F;04-organisms-04-messaging-07-warning-alert.html" class="patternLink" data-patternpartial="organisms-warning-alert" title="Link to Pattern">
+          Warning Alerts
+      </a>
+    </h3>
+    <div class="sg-pattern-breadcrumb"></div>
+    <a href="#" data-patternpartial="organisms-warning-alert" title="View Pattern Info" id="sg-pattern-extra-toggle-organisms-warning-alert" class="sg-pattern-extra-toggle"><span>&#9660;</span></a>
+  </div>
+  <div class="sg-pattern-extra" id="sg-pattern-extra-organisms-warning-alert">
+    
+  </div>
+  <div class="sg-pattern-example">
+    <div class="alert alert-warning" role="alert">
+    <strong>Warning!:</strong>   A condition exists that we&#39;d like to warn you about.
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+</div>
+
+  </div>
+  <script type="text/json" id="sg-pattern-data-organisms-warning-alert" class="sg-pattern-data">
+    {"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":false,"patternDesc":"","patternBreadcrumb":{"patternType":"organisms","patternSubtype":"messaging"},"patternExtension":"mustache","patternName":"Warning Alerts","patternPartial":"organisms-warning-alert","patternState":"","patternEngineName":"mustache","extraOutput":{}}
+  </script>
+</div><!--end .sg-pattern-->
+<div id="organisms-error-alert" class="sg-pattern">
+  <div class="sg-pattern-head">
+    <h3 class="sg-pattern-title">
+      <a href="../../patterns/04-organisms-04-messaging-08-error-alert&#x2F;04-organisms-04-messaging-08-error-alert.html" class="patternLink" data-patternpartial="organisms-error-alert" title="Link to Pattern">
+          Error Alerts
+      </a>
+    </h3>
+    <div class="sg-pattern-breadcrumb"></div>
+    <a href="#" data-patternpartial="organisms-error-alert" title="View Pattern Info" id="sg-pattern-extra-toggle-organisms-error-alert" class="sg-pattern-extra-toggle"><span>&#9660;</span></a>
+  </div>
+  <div class="sg-pattern-extra" id="sg-pattern-extra-organisms-error-alert">
+    
+  </div>
+  <div class="sg-pattern-example">
+    <div class="alert alert-danger" role="alert">
+    <strong>Error!:</strong>   We&#39;ve encountered error that requires your attention.
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+</div>
+
+  </div>
+  <script type="text/json" id="sg-pattern-data-organisms-error-alert" class="sg-pattern-data">
+    {"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":false,"patternDesc":"","patternBreadcrumb":{"patternType":"organisms","patternSubtype":"messaging"},"patternExtension":"mustache","patternName":"Error Alerts","patternPartial":"organisms-error-alert","patternState":"","patternEngineName":"mustache","extraOutput":{}}
+  </script>
+</div><!--end .sg-pattern-->
+<div id="organisms-expandable-alerts" class="sg-pattern">
+  <div class="sg-pattern-head">
+    <h3 class="sg-pattern-title">
+      <a href="../../patterns/04-organisms-04-messaging-09-expandable-alerts&#x2F;04-organisms-04-messaging-09-expandable-alerts.html" class="patternLink" data-patternpartial="organisms-expandable-alerts" title="Link to Pattern">
+          Expandable Alerts
+      </a>
+    </h3>
+    <div class="sg-pattern-breadcrumb"></div>
+    <a href="#" data-patternpartial="organisms-expandable-alerts" title="View Pattern Info" id="sg-pattern-extra-toggle-organisms-expandable-alerts" class="sg-pattern-extra-toggle"><span>&#9660;</span></a>
+  </div>
+  <div class="sg-pattern-extra" id="sg-pattern-extra-organisms-expandable-alerts">
+    
+  </div>
+  <div class="sg-pattern-example">
+    <div class="container-fluid" id="expandableAlerts">
+    <div class="alert alert-warning" role="alert">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <ol class="fa-ul">
+                <li>
+                    <span class="fa-li"><i class="fas fa-exclamation-circle"></i></span>
+                    We've encountered a problem that we were not expecting.  Click "Show Details" below to see additional information or <a class="alert-link" mailto="openinvoicesupport@oildex.com">email OpenInvoice support</a>.
+                </li>
+
+                <li><a class="alert-link" data-toggle="collapse" href="#expandableAlertDetails" onmousedown="if($(this).text() == 'Show Details...'){$(this).text('Hide Details');} else {$(this).text('Show Details...');}">Show Details...</a></li>
+                <li>
+                    <div id="expandableAlertDetails" class="collapse">
+                        <ul class="list-unstyled ">
+                            <li>
+                                <ul>
+                                    <li>Error parsing JSON property.  The lineItems/costAllocation[0]/afe/itemID '84,398,028,930' is not a valid number.</li>
+                                    <li>Error parsing JSON property.  The lineItems/costAllocation[0]/costCenter/itemID '84,398,028,930' is not a valid number.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ol>
+        </li>
+    </div>
+</div>
+
+  </div>
+  <script type="text/json" id="sg-pattern-data-organisms-expandable-alerts" class="sg-pattern-data">
+    {"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":false,"patternDesc":"","patternBreadcrumb":{"patternType":"organisms","patternSubtype":"messaging"},"patternExtension":"mustache","patternName":"Expandable Alerts","patternPartial":"organisms-expandable-alerts","patternState":"","patternEngineName":"mustache","extraOutput":{}}
+  </script>
+</div><!--end .sg-pattern-->
+<div id="viewall-organisms-list-groups" class="sg-pattern-category">
+  <h2 class="sg-pattern-category-title"><a href="../../patterns/04-organisms-05-list-groups&#x2F;index.html" class="patternLink" data-patternpartial="viewall-organisms-list-groups">list-groups</a></h2>
+
+  <div class="sg-pattern-category-body">
+    
+  </div><!--end sg-pattern-category-body-->
+  
+</div><!--end sg-pattern-category-->
+<div id="organisms-sortable-list-group" class="sg-pattern">
+  <div class="sg-pattern-head">
+    <h3 class="sg-pattern-title">
+      <a href="../../patterns/04-organisms-05-list-groups-00-sortable-list-group&#x2F;04-organisms-05-list-groups-00-sortable-list-group.html" class="patternLink" data-patternpartial="organisms-sortable-list-group" title="Link to Pattern">
+          Sortable List Group
+      </a>
+    </h3>
+    <div class="sg-pattern-breadcrumb"></div>
+    <a href="#" data-patternpartial="organisms-sortable-list-group" title="View Pattern Info" id="sg-pattern-extra-toggle-organisms-sortable-list-group" class="sg-pattern-extra-toggle"><span>&#9660;</span></a>
+  </div>
+  <div class="sg-pattern-extra" id="sg-pattern-extra-organisms-sortable-list-group">
+    
+  </div>
+  <div class="sg-pattern-example">
+    <style>
+    .sortable-list-group-item { cursor: move; }
+</style>
+<ul class="sortable-list-group list-group checked-list-group sortable-items">
+    <li sequence="1" class="sortable-list-group-item list-group-item" value="9">
+        <label><input type="checkbox"/> Check Number</label>
+        <p class="navbar-btn pull-right">
+            <i class="fas fa-ellipsis-v fa-lg fa-fw text-muted"></i>&nbsp;
+        </p>
+    </li>
+    <li sequence="2" class="sortable-list-group-item list-group-item" value="11">
+        <label><input type="checkbox"/> Check Date</label>
+        <p class="navbar-btn pull-right">
+            <i class="fas fa-ellipsis-v fa-lg fa-fw text-muted"></i>&nbsp;
+        </p>
+    </li>
+    <li sequence="3" class="sortable-list-group-item list-group-item" value="12">
+        <label><input type="checkbox"/> Sender Name</label>
+        <p class="navbar-btn pull-right">
+            <i class="fas fa-ellipsis-v fa-lg fa-fw text-muted"></i>&nbsp;
+        </p>
+    <li sequence="4" class="sortable-list-group-item list-group-item" value="22">
+        <label><input type="checkbox"/> Property Number</label>
+        <p class="navbar-btn pull-right">
+            <i class="fas fa-ellipsis-v fa-lg fa-fw text-muted"></i>&nbsp;
+        </p>    </li>
+    <li sequence="5" class="sortable-list-group-item list-group-item" value="13">
+        <label><input type="checkbox"/> Product Code</label>
+        <p class="navbar-btn pull-right">
+            <i class="fas fa-ellipsis-v fa-lg fa-fw text-muted"></i>&nbsp;
+        </p>
+    </li>
+    <li sequence="6" class="sortable-list-group-item list-group-item" value="55">
+        <label><input type="checkbox"/> Status</label>
+        <p class="navbar-btn pull-right">
+            <i class="fas fa-ellipsis-v fa-lg fa-fw text-muted"></i>&nbsp;
+        </p>
+    </li>
+</ul>
+<script>
+    // onclick handlers for the up/down buttons
+    $('.upbutton').on('click', function (event) {
+        var hook = $(this).closest('.sortable-list-group-item').prev('.sortable-list-group-item');
+        if (hook.length) {
+            //hook.addClass('slide-bottom');
+            var elementToMove = $(this).closest('.sortable-list-group-item').detach();
+            //elementToMove.addClass('slide-top');
+            hook.before(elementToMove);
+        }
+        event.stopPropagation();
+    });
+
+    $('.downbutton').on('click', function (event) {
+        var hook = $(this).closest('.sortable-list-group-item ').next('.sortable-list-group-item');
+        if (hook.length) {
+            var elementToMove = $(this).closest('.sortable-list-group-item').detach();
+            hook.after(elementToMove);
+        }
+        event.stopPropagation();
+    });
+
+    // onclick handler for each list item
+    $('.sortable-list-group-item').on('click', function (event) {
+        event.preventDefault();
+        var checkbox = $(this).find('input[type=checkbox]');
+        var isChecked = checkbox.prop('checked');
+        checkbox.prop('checked', !isChecked);
+        event.stopPropagation();
+    });
+
+    // onclick handler for each checkbox
+    $('input[type=checkbox').on('click', function (event) {
+        var isChecked = $(this).find('input[type=checkbox]').prop('checked');
+        $(this).find('input[type=checkbox]').prop('checked', !isChecked);
+        event.stopPropagation();
+    });
+
+    // enable drag/drop
+    $(function() {
+        $( ".sortable-items" ).sortable();
+    });
+
+</script>
+
+  </div>
+  <script type="text/json" id="sg-pattern-data-organisms-sortable-list-group" class="sg-pattern-data">
+    {"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":false,"patternDesc":"","patternBreadcrumb":{"patternType":"organisms","patternSubtype":"list-groups"},"patternExtension":"mustache","patternName":"Sortable List Group","patternPartial":"organisms-sortable-list-group","patternState":"","patternEngineName":"mustache","extraOutput":{}}
+  </script>
+</div><!--end .sg-pattern-->
+<div id="organisms-sortable-double-list" class="sg-pattern">
+  <div class="sg-pattern-head">
+    <h3 class="sg-pattern-title">
+      <a href="../../patterns/04-organisms-05-list-groups-01-sortable-double-list&#x2F;04-organisms-05-list-groups-01-sortable-double-list.html" class="patternLink" data-patternpartial="organisms-sortable-double-list" title="Link to Pattern">
+          Sortable Double List
+      </a>
+    </h3>
+    <div class="sg-pattern-breadcrumb"></div>
+    <a href="#" data-patternpartial="organisms-sortable-double-list" title="View Pattern Info" id="sg-pattern-extra-toggle-organisms-sortable-double-list" class="sg-pattern-extra-toggle"><span>&#9660;</span></a>
+  </div>
+  <div class="sg-pattern-extra" id="sg-pattern-extra-organisms-sortable-double-list">
+    
+  </div>
+  <div class="sg-pattern-example">
+    <div id="sortable-double-list" class="parent container-fluid">
+    <div class='row'>
+        <div class='h4 col-sm-5'>
+            Available
+        </div>
+        <div class='col-sm-1'>
+        </div>
+        <div class='h4 col-sm-5'>
+            Selected
+        </div>
+    </div>
+    <div class='row'>
+        <div class='dual-list list-left col-sm-5'>
+            <div class='form-group'>
+                <div class='row'>
+                    <div class='col-sm-12'>
+                        <div class='form-group'>
+                            <div class='input-group'>
+                                <input type='text' name='SearchDualList' class='form-control' placeholder='Type to filter' />
+                                <span class='input-group-addon'>
+                                        <i class="fas fa-search"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <ul class='list-group' id="list-left-group">
+                    <li class='list-group-item selector'>
+                    Ipsum lorem dolar sit
+                    </li>
+                    <li class='list-group-item selector'>
+                    Dapibus ac facilisis in
+                    </li>
+                    <li class='list-group-item selector'>
+                    Morbi leo risus
+                    </li>
+                    <li class='list-group-item selector'>
+                    Porta ac consectetur ac
+                    </li>
+                    <li class='list-group-item selector'>
+                    Vestibulum at eros
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class='list-arrows col-sm-1 text-center '>
+            <div class="row">
+                <div class="col-xs-12">
+                    <h1>&nbsp;</h1>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-xs-12">
+                    <a class='btn-block btn btn-default move-left'>
+                        <span class='fas fa-arrow-left'></span>
+                    </a>
+                    <a class='btn-block btn-default btn move-right'>
+                        <span class='fas fa-arrow-right'></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class='dual-list list-right col-sm-5'>
+            <div class='form-group'>
+                <div class='row'>
+                    <div class='col-sm-12'>
+                        <div class='form-group'>
+                            <div class='input-group'>
+                                <input type='text' name='SearchDualList' class='form-control' placeholder='Type to filter' />
+                                <span class='input-group-addon'>
+                                    <i class="fas fa-search"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <ul class='list-group' id="list-right-group">
+                    <li class='list-group-item selector'>
+                    Cras justo odio
+                    </li>
+                    <li class='list-group-item selector'>
+                    Dapibus ac facilisis in
+                    </li>
+                    <li class='list-group-item selector'>
+                    Morbi leo risus
+                    </li>
+                    <li class='list-group-item selector'>
+                    Bapipus ca sisilifac outis
+                    </li>
+                    <li class='list-group-item selector'>
+                    Vestibulum at eros
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+  </div>
+  <script type="text/json" id="sg-pattern-data-organisms-sortable-double-list" class="sg-pattern-data">
+    {"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":false,"patternDesc":"","patternBreadcrumb":{"patternType":"organisms","patternSubtype":"list-groups"},"patternExtension":"mustache","patternName":"Sortable Double List","patternPartial":"organisms-sortable-double-list","patternState":"","patternEngineName":"mustache","extraOutput":{}}
+  </script>
+</div><!--end .sg-pattern-->
+<div id="viewall-organisms-media" class="sg-pattern-category">
+  <h2 class="sg-pattern-category-title"><a href="../../patterns/04-organisms-06-media&#x2F;index.html" class="patternLink" data-patternpartial="viewall-organisms-media">media</a></h2>
+
+  <div class="sg-pattern-category-body">
+    
+  </div><!--end sg-pattern-category-body-->
+  
+</div><!--end sg-pattern-category-->
+<div id="organisms-media-object" class="sg-pattern">
+  <div class="sg-pattern-head">
+    <h3 class="sg-pattern-title">
+      <a href="../../patterns/04-organisms-06-media-00-media-object&#x2F;04-organisms-06-media-00-media-object.html" class="patternLink" data-patternpartial="organisms-media-object" title="Link to Pattern">
+          Media Object
+      </a>
+    </h3>
+    <div class="sg-pattern-breadcrumb"></div>
+    <a href="#" data-patternpartial="organisms-media-object" title="View Pattern Info" id="sg-pattern-extra-toggle-organisms-media-object" class="sg-pattern-extra-toggle"><span>&#9660;</span></a>
+  </div>
+  <div class="sg-pattern-extra" id="sg-pattern-extra-organisms-media-object">
+    
+  </div>
+  <div class="sg-pattern-example">
+    <div class="media">
+    <div class="media-left ">
+        <a href="www.oildex.com">
+        	<img class="media-object" src="..&#x2F;..&#x2F;images&#x2F;bootstrapthumb64.jpg" alt="Bootstrap Thumbnail">
+        </a>
+    </div>
+    <div class="media-body">
+      	<p class="h4 media-heading">Heading</p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    </div>
+</div>
+
+
+  </div>
+  <script type="text/json" id="sg-pattern-data-organisms-media-object" class="sg-pattern-data">
+    {"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"molecules-media","lineagePath":"../../patterns/03-molecules-07-media-01-media/03-molecules-07-media-01-media.html"}],"lineage":[{"lineagePattern":"molecules-media","lineagePath":"../../patterns/03-molecules-07-media-01-media/03-molecules-07-media-01-media.html"}],"patternLineageRExists":true,"patternLineagesR":[{"lineagePattern":"organisms-media-list","lineagePath":"../../patterns/04-organisms-06-media-01-media-list/04-organisms-06-media-01-media-list.html"}],"lineageR":[{"lineagePattern":"organisms-media-list","lineagePath":"../../patterns/04-organisms-06-media-01-media-list/04-organisms-06-media-01-media-list.html"}],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternType":"organisms","patternSubtype":"media"},"patternExtension":"mustache","patternName":"Media Object","patternPartial":"organisms-media-object","patternState":"","patternEngineName":"mustache","extraOutput":{}}
+  </script>
+</div><!--end .sg-pattern-->
+<div id="organisms-media-list" class="sg-pattern">
+  <div class="sg-pattern-head">
+    <h3 class="sg-pattern-title">
+      <a href="../../patterns/04-organisms-06-media-01-media-list&#x2F;04-organisms-06-media-01-media-list.html" class="patternLink" data-patternpartial="organisms-media-list" title="Link to Pattern">
+          Media List
+      </a>
+    </h3>
+    <div class="sg-pattern-breadcrumb"></div>
+    <a href="#" data-patternpartial="organisms-media-list" title="View Pattern Info" id="sg-pattern-extra-toggle-organisms-media-list" class="sg-pattern-extra-toggle"><span>&#9660;</span></a>
+  </div>
+  <div class="sg-pattern-extra" id="sg-pattern-extra-organisms-media-list">
+    
+  </div>
+  <div class="sg-pattern-example">
+    <!-- Media List -->
+<ul class="media-list">
+    <li>
+        <div class="media">
+    <div class="media-left ">
+        <a href="www.oildex.com">
+        	<img class="media-object" src="..&#x2F;..&#x2F;images&#x2F;bootstrapthumb64.jpg" alt="Bootstrap Thumbnail">
+        </a>
+    </div>
+    <div class="media-body">
+      	<p class="h4 media-heading">Heading</p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        <div class="media">
+    <div class="media-body">
+      	<p class="h4 media-heading">Heading</p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    </div>
+    <div class="media-right ">
+        <a href="www.oildex.com">
+        	<img class="media-object" src="..&#x2F;..&#x2F;images&#x2F;bootstrapthumb64.jpg" alt="Bootstrap Thumbnail">
+        </a>
+    </div>
+</div>
+
+        <div class="media">
+    <div class="media-left ">
+        <a href="www.oildex.com">
+        	<img class="media-object" src="..&#x2F;..&#x2F;images&#x2F;bootstrapthumb64.jpg" alt="Bootstrap Thumbnail">
+        </a>
+    </div>
+    <div class="media-body">
+      	<p class="h4 media-heading">Heading</p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    </div>
+</div>
+
+    </div>
+</div>
+
+
+    </li>
+    <li>
+        <div class="media">
+    <div class="media-left ">
+        <a href="www.oildex.com">
+        	<img class="media-object" src="..&#x2F;..&#x2F;images&#x2F;bootstrapthumb64.jpg" alt="Bootstrap Thumbnail">
+        </a>
+    </div>
+    <div class="media-body">
+      	<p class="h4 media-heading">Item 2</p>
+        This is the second item that is not nested.
+        <div class="media">
+    <div class="media-left ">
+        <a href="www.oildex.com">
+        	<img class="media-object" src="..&#x2F;..&#x2F;images&#x2F;bootstrapthumb64.jpg" alt="Bootstrap Thumbnail">
+        </a>
+    </div>
+    <div class="media-body">
+      	<p class="h4 media-heading">Nested Item 1</p>
+        This is the first nested item of the list.
+    </div>
+</div>
+
+        <div class="media">
+    <div class="media-body">
+      	<p class="h4 media-heading">Nested Item 2</p>
+        This is the second nested item of the list
+    </div>
+    <div class="media-right ">
+        <a href="www.oildex.com">
+        	<img class="media-object" src="..&#x2F;..&#x2F;images&#x2F;bootstrapthumb64.jpg" alt="Bootstrap Thumbnail">
+        </a>
+    </div>
+</div>
+
+    </div>
+</div>
+
+
+    </li>
+</ul>
+
+  </div>
+  <script type="text/json" id="sg-pattern-data-organisms-media-list" class="sg-pattern-data">
+    {"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"organisms-media-object","lineagePath":"../../patterns/04-organisms-06-media-00-media-object/04-organisms-06-media-00-media-object.html"}],"lineage":[{"lineagePattern":"organisms-media-object","lineagePath":"../../patterns/04-organisms-06-media-00-media-object/04-organisms-06-media-00-media-object.html"}],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternType":"organisms","patternSubtype":"media"},"patternExtension":"mustache","patternName":"Media List","patternPartial":"organisms-media-list","patternState":"","patternEngineName":"mustache","extraOutput":{}}
+  </script>
+</div><!--end .sg-pattern-->
+  </div> <!--end #sg-patterns-->
+
+</div><!--end .sg-main-->
+    <div id="sample-modal" class="modal fade ">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                        <div class="lead modal-title">
+                            Default Modal
+                        </div>
+                    </div>
+                <div class="modal-body">
+                    Body
+                </div>
+                    <div class="modal-footer">
+                        Footer
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="sessionTimeOutDialog" class="modal fade" role="dialog" aria-labelledby="timedAlert" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <div class="lead modal-title">Are you still there?</div>
+                </div>
+                <div class="modal-body">
+                    <p class="h5">Your session is about to expire.</p>
+                    <p>
+                        For security reasons and for the protection of your corporate data, your session will expire
+                        <br />
+                        in <strong><span class="text-danger" id="timeOutCountdown"></span></strong> seconds.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal" aria-hidden="true">Extend My Session</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal" aria-hidden="true">Sign Out</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src='../../js/vendor/tota11y.min.js'></script>
+
+
+    <!-- local js files -->
+    <script type="text/javascript" src="../../js/05-paginated-list.js"></script>
+    <script type="text/javascript" src="../../js/auto-dismiss-dialog.js"></script>
+    <script type="text/javascript" src="../../js/time-out-dialog.js"></script>
+    <script type="text/javascript" src="../../js/contactForm.js"></script>
+    <script type="text/javascript" src="../../js/contract-workspace.js"></script>
+    <script type="text/javascript" src="../../js/01-sortable-double-list.js"></script>
+    <script type="text/javascript" src="../../js/02-comments-list.js"></script>
+    <script type="text/javascript" src="../../js/04-scrollable-list.js"></script>
+    <script type="text/javascript" src="../../js/user-profile.js"></script>
+    <script type="text/javascript" src="../../js/user-cards.js"></script>
+    <script type="text/javascript" src="../../js/01-simple-list-page.js"></script>
+    <script type="text/javascript" src="../../js/status-panel.js"></script>
+    <script type="text/javascript" src="../../js/stepped-breadcrumbs.js"></script>
+    <script type="text/javascript" src="../../js/dashboard-card-with-settings.js"></script>
+    <script type="text/javascript" src="../../js/nav-wizard.js"></script>
+    <script type="text/javascript" src="../../js/00-navbar.js"></script>
+    <script type="text/javascript" src="../../js/password-toggle.js"></script>
+    <script type="text/javascript" src="../../js/slide-in-panel.js"></script>
+    <script type="text/javascript" src="../../js/import-results-dialog.js"></script>
+    <script type="text/javascript" src="../../js/09-expandable-alerts.js"></script>
+    <script type="text/javascript" src="../../js/bar-chart.js"></script>
+    <script type="text/javascript" src="../../js/stacked-bar-chart.js"></script>
+    <script type="text/javascript" src="../../js/donut-chart.js"></script>
+    <script type="text/javascript" src="../../js/line-chart.js"></script>
+    <script type="text/javascript" src="../../js/expenditure-chart.js"></script>
+    <script type="text/javascript" src="../../js/service-account-dashboard.js"></script>
+    <script type="text/javascript" src="../../js/goods-receipt.js"></script>
+    <script type="text/javascript" src="../../js/world-map.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            // Initialize bootstrap tooltips and popovers
+            $('[data-toggle="tooltip"]').tooltip();
+            $('[data-toggle="popover"]').popover();
+
+            // Onclick handler for the notify me checkbox on dashboard card settings
+            $('#toggleNotificationsCheckbox').on('click', function(e) {
+                 $('#notifyIcon').toggleClass("hide");
+            });
+
+            // Datasets for Typeahead search fields
+            var afes = ['100 Location Prep', '110 Location Permit', '120 Survey', '130 Right of Way Permit', '140 Physical Location Prep',
+              '200 Drilling Rig and Tools', '210 Move In/Out', '220 Footage Bid', '230 Day Work Bid', '240 Fuel', '250 Water',
+              '260 Bits', '270 Completions', '300 Drilling Fluids', '320 Packer Fluids', '330 Completion Fluids', '400 Rental Equip.', '410 Well Control Equip.',
+              '420 Rotary Tools', '430 Mud Equip.', '440 Casing Tools', '450 Misc.'
+            ];
+
+            var requisitioners = ["Katherine Harrison","Linda Myers","Catherine Ferguson","Willie Fuller","Willie Martinez","Janice Robertson","Deborah Turner","Norma Brooks","Jesse Gordon","Bobby Reyes","Alice Willis","Jennifer Meyer","Joyce Lane","Dennis Rodriguez","Eric Hunter","Lillian Sims","Deborah Hayes","Helen Reyes","Roger Matthews","Irene Hansen","Kathryn Morris","Joseph Griffin","Jesse Mcdonald","Albert Martinez","Shirley Rogers","Ronald Hughes","Doris Franklin","Kathryn Burton","Joyce Hunt","Ralph Cook","Debra Reed","Scott Scott","Cynthia Stanley","Russell Alvarez","Sandra Price","Keith Burke","Ruth Harrison","Randy Patterson","Andrea Henry","Steve Elliott","Denise Daniels","Theresa Weaver","Benjamin Perez","Virginia Gordon","Karen Warren","Wanda Carroll","Eric Nguyen","Chris Hart","Jennifer Burns","Jose Fuller","Steve Harris","Martha Edwards","Jeremy Powell","Larry Stephens","Marie Reyes","Harry Garza","Amanda Cole","Jessica Oliver","Kenneth Mccoy","George Peters","Christine Scott","Alice Hamilton","Janice Bell","Anthony Hawkins","Harold Ferguson","Beverly Montgomery","Ann Armstrong","Marilyn Austin","Kathryn Chapman","Kathryn Lopez","Gregory Long","Sandra Rodriguez","Adam Lee","Janice Fernandez","Ralph Vasquez","Peter Holmes","Alan Romero","Frank Stephens","Mary Wallace","Julia Gardner","Benjamin Fernandez","Anna Wells","Carol Perez","Jessica Edwards","Julia Collins","Ruby Rivera","Terry Chavez","Peter Phillips","Louis Hunt","Lawrence Alexander","Lillian Medina","Carlos Howard","Kimberly Howard","Brenda Dunn","Kevin Owens","Aaron Carroll","Dorothy Baker","Walter Stephens","Ryan King","Henry Boyd","Marilyn Rivera","Tammy Mcdonald","Betty Sanders","Annie Howell","Gerald Austin","Justin Wright","Julie Kelley","Richard Greene","Jonathan Gilbert","Rose Weaver","Gary Peters","Mark Smith","Gregory Sanders","Shawn Armstrong","Catherine Morgan","Jason Fisher","Keith Rice","Wayne Howell","Stephen Mendoza","Michelle Williams","Billy Stephens","Barbara Porter","Dennis Ward","Ashley Kelly","Andrea Garrett","Gloria Simpson","Andrea Hunt","Antonio Pierce","Brian Anderson","Lois Russell","Kathy Henderson","Ernest Simmons","David Smith","Roger Frazier","Robin Cole","Samuel Martinez","Clarence Austin","Bobby Walker","Catherine Sullivan","Wanda Perkins","Mary Burns","Jesse Cunningham","Scott Burton","Jason Ortiz","Phyllis Reed","Lisa Arnold","Kathy Miller","Steve Lynch","Joan Hall","Carlos Thompson","Kenneth Rivera","Daniel Price","Cheryl Hayes","Aaron Green","Debra Reynolds","Cynthia Woods","Larry Jordan","Jesse Rodriguez","Betty Kelley","Bonnie Miller","Ronald Johnson","Dorothy Lee","Amy Chavez","Jack Nelson","Mary Castillo","Fred Berry","Jason Ryan","Martha Young","Frances Ellis","Ralph Butler","Donna Nichols","Paul Greene","Michael Morrison","Judy Rice","Jose Davis","Kelly Cunningham","Laura Williams","Tammy Carpenter","Harry Garcia","Louis Gutierrez","Jimmy Riley","Eric Kennedy","Stephen Franklin","Diana Banks","Joan Henry","William Day","Benjamin Kim","Ashley Johnson","Justin Scott","Chris Alexander","Catherine Lawrence","Melissa Reynolds","William Baker","Joe Perez","Donna Turner","Shawn Lawrence","Rachel Morrison","Keith Martinez","Terry Garrett","Karen Wells","Joan Hansen","Kathleen Gomez","Roy Ruiz","Steven Griffin","Ronald Hansen","William Robinson","Keith Ryan","Peter Cook","Sandra Payne","Louis Simpson","Shirley Wright","Henry Carroll","Kimberly Chavez","Craig Morrison","Melissa Kelly","Nicholas Franklin","Martha Cooper","Sharon Phillips","Patrick Snyder","Emily Elliott","Jose Mills","Heather Gibson","Eric Ray","Ashley Davis","Benjamin Cooper","Louise Wood","Terry Collins","Tammy Ellis","Ronald Harper","Randy Martin","Deborah Franklin","Joe Ford","Jeremy Alexander","Shirley Rice","Cheryl Richardson","Sandra Fuller","Harry Washington","Frank Peters","Ryan Brown","Patrick Romero","Marilyn Green","Jose Thompson","Robin Carroll","Earl Scott","Christina Bryant","Jerry Hudson","Tammy Murphy","Douglas Anderson","Beverly Carter","Jose Harper","Walter George","Martha Powell","Terry Frazier","David Wright","Howard Romero","Gary Stewart","Thomas Johnson","Michael Johnston","Bobby Jacobs","Christina Hayes","Roger Nichols","Heather Martin","Kelly Brown","Walter Bradley","Scott Wright","Annie Howard","Jack Green","Susan Sims","Diana Harvey","Johnny Ford","Diane Reid","Raymond Carr","Sandra Patterson","Patrick Perry","Debra Butler","Carolyn Jordan","Billy Stevens","Robin Greene","Dorothy Turner","Patricia Howard","Steven Harris","Pamela Wright","Rachel Phillips","Heather Dunn","Timothy Murray","Stephanie Rivera","Ruby Grant","Christopher Grant","Joshua Rose","Justin Garza","Joseph Burke","Phillip Stevens","Janet George","Clarence Bennett","Ronald Clark","Evelyn Perkins","Joshua Peters","Charles Nelson","Jacqueline Davis","Justin Rice","Harold Washington","Phyllis Lewis","Bonnie Frazier","Ronald Andrews","Ruby Sullivan","Larry Evans","Larry Lee","Mary Griffin","Lawrence Graham","Craig Palmer","Marie Perry","Laura Webb","Catherine Rivera","Fred Simmons","Judith Fowler","Sara Baker","Donald Little","Kimberly Burke","Susan Lee","Phillip Garza","Nicholas Chapman","Alice Dean","Wayne Wheeler","Rachel Gonzales","Bonnie Spencer","Melissa King","Phillip Long","Patricia Wallace","Paula Hunt","Theresa Bradley","Eugene Davis","Jerry Daniels","Anne James","Joan Smith","Maria Alexander","Kathleen Kim","Alan Porter","Jesse Davis","Jessica Perkins","Teresa Chavez","Martin Burns","Benjamin Murray","Joseph Hernandez","Melissa Johnson","Kenneth Pierce","Joe Dean","Julia Reid","Wanda Weaver","Roy Kelly","Victor Medina","Carl Jordan","Eric Butler","Alan Dixon","Lori Green","Patricia Bryant","Annie Graham","Ernest Torres","Jason Montgomery","Louis Hall","Anthony Nguyen","Julie George","Harry Coleman","Sara Green","Wayne Lopez","Scott Larson","Joan Reid","Annie Sanchez","Tina Perry","Patricia Ross","Harold Cook","Jennifer Murphy","Evelyn Jordan","Todd Lawrence","Walter Coleman","Douglas Stone","Patrick Ray","Victor Fox","Ernest Bell","Raymond Anderson","Jerry Roberts","Wanda Harper","Jason Grant","Sarah Knight","Marilyn Robertson","Mark Burns","Julia Woods","David Ortiz","Maria Garrett","Barbara Butler","Rebecca Robinson","Lori Carroll","Rose Reynolds","Russell Perez","Kelly Brown","Debra Olson","Donald Burns","Philip Simpson","Rose Williams","Amanda Lane","Dennis Lopez","Jennifer Daniels","Norma Nichols","Benjamin Cruz","Antonio Lynch","Emily Lewis","Ashley Walker","Rachel Ross","Barbara Hansen","Jose Smith","Walter Nelson","Rachel Gray","Mary Wilson","Walter Nichols","Bonnie Bell","Gerald Porter","Martha Mitchell","Patricia Lynch","Ann Carr","Jennifer Barnes","Jonathan Taylor","Willie Hanson","Annie Owens","Carol Dixon","Chris Reyes","Jennifer Dunn","Randy Romero","Keith Jackson","Bonnie Sims","Stephanie Flores","Jennifer Wood","Sarah Stone","Marie Evans","Jane Stephens","Julie Rogers","Peter Barnes","Billy Myers","Stephanie Lynch","Steven Weaver","Virginia Larson","Shawn Jordan","Roy Ellis","Louise Clark","Lillian Smith","Mildred Hansen","Helen Fisher","Kathryn Watson","Scott George","David Pierce","Roy Sullivan","Amanda Ford","Joshua Wood","Annie Howell","Shawn Lawson","Ronald Hunter","Joyce Ward","Janet Burke","Susan Vasquez","Paula Lawson","Kimberly Ruiz","Martin Morgan","Debra Jenkins","Gary Kim","Theresa Garza","Ernest Welch","Mildred Sanders","Roger Watson","Gerald Clark","Angela George","Anne Bowman","William Lewis","Theresa Elliott","Carolyn Frazier","Emily Washington","Raymond Hunter","Michelle Snyder","Henry Harris","Brian Graham","Diana Armstrong","Chris Ruiz","Teresa Mason","Jack Murphy","Harold Palmer","Joe Carroll","Samuel Peters","Steve Washington","Carlos Snyder","Carlos Williamson","Anne Thompson","Barbara Vasquez","Doris Schmidt","Janet Harvey","Phyllis Gibson","Linda Fisher","Sara Henderson","Susan Hughes","Janet Montgomery","Jennifer Duncan","Maria Jones","Brenda Kelley","Doris Fields","Christina Moore","Ruby Meyer","Gerald Dean","Sean Mccoy","David Bishop","Annie Murphy","Arthur Fuller","Aaron Nelson","Joyce Sims","Kathryn Cooper","Arthur Green","Jessica Wright","Angela Wagner","Nicole Lewis","Martha Duncan","Angela Hudson","Angela Freeman","Scott Martinez","Charles Palmer","Linda Ross","Gloria Romero","Rose Medina","Douglas Pierce","Antonio Wright","Joyce Davis","Nancy Scott","Juan Graham","Douglas Riley","Susan Kelly","Anna Knight","Peter Thompson","Phillip Crawford","Clarence Hanson","Edward Murphy","Evelyn Oliver","Jeffrey Little","Ashley Murray","Eugene Chavez","Sharon Cunningham","Lori Brown","Cynthia Harrison","Emily Reyes","Julia Morris","Lisa Wilson","Charles Cole","Terry Warren","Ronald Jackson","Andrew Greene","Nicholas Olson","Raymond Jackson","Jason Hall","Carol Lee","Lois Vasquez","Judy Carr","Richard Armstrong","Gary Ford","Joseph Rivera","Amanda Howard","Jeremy Gilbert","Wanda Matthews","Samuel Grant","Kathryn Lawrence","Charles Lawson","Todd Edwards","Stephanie Elliott","Julie Watkins","Doris Harvey","Janice Crawford","Philip Bryant","Carlos Berry","Virginia Sanchez","Shawn Elliott","Janice Andrews","Larry Cooper","Patricia Hughes","Patrick Jacobs","Catherine Turner","Katherine Dunn","Kenneth Peters","Heather Marshall","Richard Price","Diana Ramirez","Ralph Jacobs","Debra Wells","Michael Peters","Anna Griffin","Albert Matthews","Marie Henry","Kathryn Howard","Amanda Ellis","Mary Alexander","Martin Carroll","Marie Wilson","Michelle Johnson","Brandon Shaw","Betty Cook","Christopher Mason","Chris Hart","James Romero","David Johnston","Dennis Gonzalez","Jerry Harper","Diane Long","Joe Berry","Michelle Roberts","Jane Oliver","Andrea Jackson","Jeremy Burke","Mark Stevens","Kevin Diaz","Anthony Powell","Frank Palmer","Virginia Weaver","Albert Diaz","Christopher Gilbert","Julia Pierce","Patricia Fuller","Nicole Chavez","Heather Bradley","Patricia Hernandez","Scott Gray","Susan Young","Janet Henry","Brandon Jacobs","Bobby Little","Carlos Turner","Joshua Henry","Shawn Grant","Lisa Little","Lori Carter","Donald Simpson","Karen Marshall","Jesse Harris","Paul Moore","Rebecca Arnold","Bonnie West","Donna Taylor","Albert Ross","Paul Patterson","Stephen Nichols","Johnny Hamilton","Peter Ramos","Brandon Owens","Andrew Henderson","Jacqueline Alexander","Lori Gomez","Brenda Davis","Paul Crawford","Shirley Sims","Wayne Flores","Harold Lewis","Maria Nguyen","Eric Howell","Debra Ryan","Antonio Ward","Randy Dunn","Henry Chavez","Keith Marshall","Sara Allen","Diana Bell","Jesse Lee","Terry Gordon","Lawrence Owens","Johnny Myers","George Schmidt","Benjamin Greene","Billy Griffin","Amy Lawrence","Amanda Armstrong","Rachel Foster","William Jones","Joyce Reed","Aaron Richards","Arthur Mccoy","Kathryn Clark","Sarah Murphy","Kathryn Robinson","Phillip Wheeler","Joyce Hunter","Andrew Bailey","Jennifer Gilbert","Willie Reynolds","Ruth Carroll","Janet Ward","Billy Clark","Amy Bennett","Marie Fowler","Paula Smith","Gerald Vasquez","Marie Bowman","Jennifer Russell","Tina Welch","Eugene Price","Robert Bryant","Russell Jenkins","Jose Jones","Joyce George","Marilyn Pierce","Annie Russell","Anthony Carter","Catherine Lopez","Carol Garza","Roy Griffin","Irene Medina","Susan Ortiz","Jacqueline Morales","Jean Kelley","Earl Banks","Barbara Ryan","Justin Perez","Carolyn Dunn","Earl Bryant","Frances Black","Louis Gordon","Antonio Gonzales","Andrew Woods","Craig Brooks","Christine Mendoza","Douglas Day","Willie Sanchez","Douglas Bell","Raymond Bryant","Jose Cruz","Dennis Adams","Aaron Scott","Rebecca Nichols","Sara Montgomery","Dennis Thomas","Cynthia Fields","Jessica Jacobs","Todd Berry","Helen Bailey","Keith Cox","Aaron Olson","Paul Medina","Heather Stephens","Marilyn White","Donna Butler","Chris Morales","Donna Riley","Scott Flores","Carolyn Stevens","Victor Matthews","Janet Perry","Anthony Mills","Julie Barnes","Alan Ortiz","Kenneth Richards","Kelly Miller","Debra Snyder","Laura Fisher","Patricia Hanson","Julia Bailey","Ryan Lawson","Thomas Young","Anna Fox","Tina Cook","Justin Oliver","Gregory Burton","David Wheeler","Gerald Larson","Craig Burns","Wayne Miller","Justin Lee","Larry Henry","Carol Graham","Kathleen Martin","Donna Simmons","Annie Wood","Nicole Davis","Marilyn Harper","Rose Richards","Benjamin Moreno","Dennis Carr","Lori Garza","Doris Bishop","Mildred Vasquez","Jimmy Garza","Alan Diaz","Jerry Cox","Jeremy King","Bonnie Adams","Philip Willis","Mary Gray","Julie Harris","Jerry Jordan","Michael White","Brenda Davis","Barbara Ramirez","Bruce Watson","Rose Morales","Deborah Warren","Alice Pierce","Roy Carpenter","Albert Martinez","Maria Gonzales","Judith Welch","Wayne Ferguson","Joyce Evans","Doris Nelson","Roy Sanchez","Ronald Little","Samuel Martinez","Jean Robinson","Terry Dunn","Michelle Armstrong","Joe Powell","Laura Kelley","Johnny Dixon","Jeremy Weaver","Phyllis Griffin","Kelly Gutierrez","Catherine Burke","Paula Richardson","Tammy Miller","Laura Gilbert","William Harper","Martha Frazier","Kevin Dunn","Timothy Jacobs","Fred Carroll","Jose Hunter","Jessica Rice","Sean Diaz","Annie Daniels","Patrick Myers","Maria Lee","Teresa Burke","Willie Allen","Kathryn Harvey","Annie Harvey","Evelyn Harrison","William Peters","Katherine Hunter","Cynthia Frazier","Karen Brown","Kathy Watson","Philip Myers","Martha Mitchell","Rebecca Dunn","Barbara Taylor","Arthur Wood","Jane Perry","Daniel Reid","Ernest Washington","Fred Stephens","Donald Miller","Daniel Henry","Frances Richards","Andrea Hunter","Cynthia Flores","Alan Medina","Raymond Garrett","Susan Reyes","Lois Edwards","Matthew Walker","Katherine Simpson","Tina Sims","Brandon Harris","Roger Schmidt","Carl Griffin","Louis Wagner","Judith Fowler","Timothy Medina","Ruth Hill","Sarah Jones","Julie Murphy","Annie Mcdonald","Kathryn Alvarez","Lawrence Bennett","Walter Black","Raymond Harrison","Heather Anderson","Stephanie Mason","Albert Mendoza","Janet Lewis","Jacqueline Garza","Lisa Long","Eugene Matthews","Mary Thomas","David Edwards","Jean Larson","Jesse Webb","Jerry Watson","Jonathan Powell","Linda Gibson","Rachel Stevens","Howard Little","Daniel Carpenter","Jeremy Little","Justin Jacobs","Dorothy Adams","Lillian Gray","Judy Warren","Gloria Frazier","Kimberly Cunningham","Karen Kennedy","Christopher Rivera","David Payne","Juan Robinson","Louis Garrett","Cheryl Olson","Julia Marshall","Christopher Snyder","Harry Watkins","Kathryn Nichols","William Hanson","Angela Burton","Shawn Hamilton","Roger Stanley","Evelyn Pierce","Amy Hernandez","Andrea Knight","Louise Fisher","Randy Baker","Martin Patterson","Joseph Reid","Lillian Cook","Ruby Riley","John Hunt","Dennis Gomez","Shirley Weaver","Alice Bowman","Gary Cooper","Larry Bryant","Phyllis Brooks","Howard Medina","Mildred Price","Carl Frazier","Gloria Perkins","Robert Evans","Douglas Alexander","Phyllis Hansen","Patrick Lynch","Jane Franklin","Beverly Morgan","Henry Peterson","Johnny Stanley","Sarah Romero","Jimmy Ford","Janet Young","Dennis Bowman","Karen Patterson","Lillian Cooper","Joyce Henry","Lisa Fox","Katherine Webb","Wayne Kelly","Janice Patterson","Norma Spencer","Lois Bailey","Gary Morris","Russell Mendoza","Ruby Tucker","Gregory Ramirez","Catherine Morales","Beverly Harrison","Brenda Sullivan","Anne Jenkins","Carolyn Hayes","Katherine Woods","Tina Grant","Brian Watson","Deborah Cox","Emily Jenkins","Christina Alvarez","Peter Phillips","Cynthia Hudson","Amanda Mccoy","Laura Mccoy","Jonathan Hughes","Justin Boyd","Evelyn Black","Marie Alvarez","Sarah Burns","Gloria Carpenter","Frances Holmes","Clarence Vasquez","Ruth Reed","Diane Simmons","Norma Snyder","Elizabeth Russell","Jimmy Mccoy","Lillian Pierce","Rose Lawrence","Andrew Romero","Phillip Gray","Robert Clark","Brian Cox","Phillip Burke","Beverly Campbell","Marie Bradley","Eric Phillips","Alice Ross","Scott Fields","Donald Bennett","Carlos Martinez","Doris Hayes","Henry Chavez","Julie Greene"];
+
+            var beerData = {
+                "ales": [
+                    "Affligem Blonde", "Amsterdam Big Wheel", "Amsterdam Boneshaker IPA", "Amsterdam Downtown Brown", "Amsterdam Oranje Summer White",
+                    "Anchor Liberty Ale", "Beaus Lug Tread Lagered Ale", "Beerded Lady", "Belhaven Best Ale", "Big Rock Grasshopper Wheat",
+                    "Big Rock India Pale Ale", "Big Rock Traditional Ale", "Big Rock Warthog Ale", "Black Oak Nut Brown Ale", "Black Oak Pale Ale",
+                    "Boddingtons Pub Ale", "Boundary Ale", "Caffreys", "Camerons Auburn Ale", "Camerons Cream Ale", "Camerons Rye Pale Ale", "Ceres Strong Ale",
+                    "Cheval Blanc", "Crazy Canuck Pale Ale", "Creemore Springs Altbier", "Crosswind Pale Ale", "De Koninck", "Delirium Tremens",
+                    "Erdinger Dunkel Weissbier", "Erdinger Weissbier", "Export", "Flying Monkeys Amber Ale", "Flying Monkeys Antigravity",
+                    "Flying Monkeys Hoptical", "Flying Monkeys Netherworld", "Flying Monkeys Smashbomb", "Fruli", "Fullers Extra Spec Bitter",
+                    "Fullers London Pride", "Granville English Bay Pale", "Granville Robson Hefeweizen", "Griffon Pale Ale", "Griffon Red Ale",
+                    "Hacker-Pschorr Hefe Weisse", "Hacker-Pschorr Munchen Gold", "Hockley Dark Ale", "Hoegaarden", "Hops & Robbers IPA", "Houblon Chouffe",
+                    "James Ready Original Ale", "Kawartha Cream Ale", "Kawartha Nut Brown Ale", "Kawartha Premium Pale Ale", "Kawartha Raspberry Wheat",
+                    "Keiths", "Keiths Cascade Hop Ale", "Keiths Galaxy Hop Ale", "Keiths Hallertauer Hop Ale", "Keiths Hop Series Mixer",
+                    "Keiths Premium White", "Keiths Red", "Kilkenny Cream Ale", "Konig Ludwig Weissbier", "Kronenbourg 1664 Blanc", "La Chouffe",
+                    "La Messager Red Gluten Free", "Labatt 50 Ale", "Labatt Bass Pale Ale", "Lakeport Ale", "Leffe Blonde", "Leffe Brune",
+                    "Legendary Muskoka Oddity", "Liefmans Fruitesse", "Lions Winter Ale", "Maclays", "Mad Tom IPA", "Maisels Weisse Dunkel",
+                    "Maisels Weisse Original", "Maredsous Brune", "Matador 2.0 El Toro Bravo", "Mcauslan Apricot Wheat Ale", "Mcewans Scotch Ale",
+                    "Mill St Belgian Wit", "Mill St Coffee Porter", "Mill St Stock Ale", "Mill St Tankhouse Ale", "Molson Stock Ale", "Moosehead Pale Ale",
+                    "Mort Subite Kriek", "Muskoka Cream Ale", "Muskoka Detour IPA", "Muskoka Harvest Ale", "Muskoka Premium Dark Ale", "Newcastle Brown Ale",
+                    "Niagaras Best Blonde Prem", "Okanagan Spring Pale Ale", "Old Speckled Hen", "Ommegang Belgian Pale Ale", "Ommegang Hennepin", "PC IPA",
+                    "Palm Amber Ale", "Petrus Blonde", "Petrus Oud Bruin Aged Red", "Publican House Ale", "Red Cap", "Red Falcon Ale", "Rickards Dark",
+                    "Rickards Original White", "Rickards Red", "Rodenbach Grand Cru", "Schofferhofer Hefeweizen", "Shock Top Belgian White",
+                    "Shock Top Raspberry Wheat", "Shock Top Variety Pack", "Sleeman Cream Ale", "Sleeman Dark", "Sleeman India Pale Ale", "Smithwicks Ale",
+                    "Spark House Red Ale", "St. Ambroise India Pale Ale", "St. Ambroise Oatmeal Stout", "St. Ambroise Pale Ale", "Stereovision Kristall Wheat",
+                    "Stone Hammer Dark Ale", "Sunny & Share Citrus Saison", "Tetleys English Ale", "Thirsty Beaver Amber Ale", "True North Copper Altbier",
+                    "True North Cream Ale", "True North India Pale Ale", "True North Strong", "True North Wunder Weisse", "Twice As Mad Tom IPA",
+                    "Unibroue La Fin Du Monde", "Unibroue Maudite", "Unibroue Trois Pistoles", "Upper Canada Dark Ale", "Urthel Hop-It Tripel IPA",
+                    "Waterloo IPA", "Weihenstephan Kristalweiss", "Wellington Arkell Best Bitr", "Wellington County Dark Ale", "Wellington Special Pale", "Wells IPA"
+                ],
+                "lagers": [
+                    "AC-DC Premium Lager", "Alpine Lager", "Amstel Light", "Amsterdam (416) Local Lager", "Amsterdam Natural Blonde", "Anchor Steam Beer",
+                    "Barking Squirrel Lager", "Bavaria 8.6", "Bavaria 8.6 Red", "Bavaria Grapefruit Radler", "Bavaria Premium Beer", "Bavik Pils",
+                    "Baysville Rock Cut Lager", "Becks", "Belle Gueule", "Big Rock Brewmasters Selection", "Big Rock Light Lime", "Big Rock Saaz Republic Pilz",
+                    "Birra Castello", "Birra Moretti", "Bitburger", "Black Ice", "Black Label", "Blue", "Blue Light", "Bohemian", "Boris Beer",
+                    "Boris Bold Strong Beer", "Boxer Ice", "Boxer Lager", "Brava", "Brava 5.5", "Brava Light", "Brouczech Premium Lager", "Bud Light",
+                    "Bud Light Lime", "Bud Light Lime Labatt", "Bud Light Platinum", "Budweiser", "Budweiser Crown", "Budweiser Shot Labatt", "Busch Ice",
+                    "Busch Lager", "Busch Light", "Camerons Dark266", "Camerons Lager", "Canadian", "Canadian 67", "Canadian 67 Sublime", "Canadian Coldshots",
+                    "Carib Lager", "Carling Ice", "Carling Lager", "Carling Light", "Carlsberg", "Carlsberg Lite", "Cool Beer Lager", "Coors Banquet", "Coors Light",
+                    "Corona", "Corona Light", "Cracked Canoe", "Creemore Collection", "Creemore Kellerbier", "Creemore Lager", "Creemore Springs Combo Pack",
+                    "Creemore Trad Pilsner", "Creemore Urbock", "Crest Super", "Crystal", "Czechvar", "Dab Maibock", "Dab Original Lager", "Dead Frog Mixed Pack",
+                    "Desperados Tequila Beer", "Dos Equis Amber", "Dos Equis Lager", "Dunkel Weihenstephaner", "Faxe Amber Lager", "Faxe Extra Strong - 10",
+                    "Faxe Premium Lager - 5", "Faxe Red", "Faxe Strong", "Formosa Springs Draft", "Fosters Import", "Fuerstenberg Prem Pilsener", "Get2gether",
+                    "Granville Summer Mingler", "Grolsch Lager 450ml", "Grolsch Premium Lager", "Guinness Black Lager", "Hacker-Pschorr Kellerbier", "Harbin Beer",
+                    "Harp Lager", "Heineken", "Henninger Premium Lager", "Hockley Taster Pack", "Hofbraeu Muenchen Original", "Hogsback Vintage Lager",
+                    "Hollandia Pilsner", "Holsten Festbock", "Holsten Maibock", "Holsten Premium Bier", "Hopf Weisse", "Hops Bolts India Pale Lager",
+                    "James Ready 5.5", "James Ready Ice 6.0", "James Ready Lager", "James Ready Light", "Jever Pilsener", "Keiths Brewmaster", "Keiths Light",
+                    "Keystone Ice", "Keystone Lager", "Keystone Light", "King Brewery Dark Lager", "King Brewery Pilsner", "King Brewery Vienna Lager", "Kokanee",
+                    "Kozel", "Krombacher Dark", "Krombacher Pils", "Krombacher Weizen", "Kronenbourg 1664", "La Tabachera", "Labatt Extra Dry", "Labatt Genuine Lager",
+                    "Labatt Ice", "Lakeport Honey Lager", "Lakeport Ice", "Lakeport Light", "Lakeport Pilsener", "Lakeport Red", "Laker Extra Ice", "Laker Honey",
+                    "Laker Ice", "Laker Lager", "Laker Light", "Laker Red", "Laker Strong", "Lech Beer", "Lowenbrau", "Lucky Lager", "Maximum Ice", "Menabrea Blonda",
+                    "Michelob Ultra", "Mill St Original Organic", "Millennium Buzz Hemp Beer", "Miller Chill Domestic", "Miller Chill Import",
+                    "Miller Genuine Draft Clear", "Molson Canadian Wheat", "Molson Dry", "Molson M", "Molson XXX", "Mongozo Premium Pilsner", "Moosehead Lager",
+                    "Moosehead Light", "Moosehead Light Lime", "Moskato Life", "Moskato Life Rose", "Muskoka Craft Lager", "Muskoka Summer Weiss",
+                    "Muskoka Survival Pack", "Mythos Beer", "Negra Modelo", "Neustadt Lager", "Octane 7.0", "Okanagan Craft Pack", "Okanagan Springs 1516 Lager",
+                    "Okocim Pilsner", "Old Milwaukee", "Old Milwaukee", "Old Milwaukee Ice", "Old Milwaukee Light", "Old Style Pilsner", "Old Vienna",
+                    "PC Black Lager", "PC Cerveza", "PC Down Under Amber", "PC Dry", "PC Genuine Lager", "PC Honey Red", "PC Light", "PC Low Carb", "PC Plznr",
+                    "Pabst Blue Ribbon", "Pabst Blue Ribbon 5.9", "Pabst Blue Ribbon Light", "Paulaner Hefe-Weissbier", "Pedavena Birra Dolomiti",
+                    "Peroni Nastro Azzuro", "Pilsner Urquell", "Pistonhead Kustom Lager", "Poppers Party Pack", "Prison Break Pilsner", "Radeberger Pilsner",
+                    "Red Baron", "Red Baron Light", "Red Baron Lime", "Red Baron Platinum Light", "Red Bull", "Red Stripe", "Rickards Blonde", "Rickards Cardigan",
+                    "Rickards Fall Taster", "Rickards Lederhosen", "Rickards Oakhouse", "Rickards Shandy", "Rickards Summer Taster Pack", "Rickards Taster Pack",
+                    "Rickards Winter Taster Pack", "Rolling Rock Pale Lager", "Rosarda Rose", "Saint Andre", "Samuel Adams Boston Lager", "San Miguel Premium Lager",
+                    "Sapporo", "Schnitzerbrau Gluten Free Lager", "Schofferhofer Grapefruit Radlr", "Seagram Mixer Pack", "Shock Top Lemon Shandy", "Sleeman Clear 2.0",
+                    "Sleeman Honey Brown Lager", "Sleeman Light", "Sleeman Original Draught", "Sleeman Seasonal Selections", "Sleeman Selections",
+                    "Sleeman Silver Creek Lager", "Sol", "Spaten", "St Ambroise Premium Taster", "Staropramen", "Steam Whistle", "Steeler", "Stella Artois",
+                    "Stella Legere", "Stiegl Bier", "Stiegl Grapefruit Radler", "Stone Hammer Pilsner", "Stonewall Light", "Tecate", "Tennents Export Lager",
+                    "Thurn Taxis Lager", "Thurn Taxis Pilsener", "Thurn Taxis Wolfgang Dunkl", "Tiger Beer", "Trailhead Premium Lager", "True North Blonde Lager",
+                    "Tuborg Gold", "Tuborg Pilsner", "Tyskie", "Unibroue Blanche Dechambly", "Upper Canada Lager", "Warsteiner Premium Dunkel", "Warsteiner Premium Verum",
+                    "Waterloo Amber Lager", "Waterloo Dark", "Waterloo Grapefruit Radler", "Waterloo Kolsch Sampler", "Waterloo Pilsner", "Weihenstephan Vitus",
+                    "Weihenstephaner Hefeweiss", "Wernesgruner Pils", "Winter Mingler", "Wolfgangs German Style Beer", "Xingu Black Beer", "Yanjing Beer", "Zywiec Beer"
+                ]
+            };
+
+            var nhlData = [{ "team": "Devils", "city": "New Jersey" },{ "team": "Islanders", "city": "Brooklyn"  },{ "team": "Rangers", "city": "New York"  },{ "team": "Flyers", "city": "Philadelphia"  },{ "team": "Penguins", "city": "Pittsburgh" },{ "team": "Blackhawks", "city": "Chicago" },{ "team": "Blue Jackets", "city": "Columbus" },{ "team": "Red Wings", "city": "Detroit" },{ "team": "Predators", "city": "Nashville" },{ "team": "Blues", "city": "St. Louis " },{ "team": "Bruins", "city": "Boston" },{ "team": "Sabres", "city": "Buffalo" },{ "team": "Canadiens", "city": "Montreal" },{ "team": "Senators", "city": "Ottawa" },{ "team": "Maple Leafs", "city": "Toronto" },{ "team": "Flames", "city": "Calgary" },{ "team": "Avalanche", "city": "Colorado" },{ "team": "Oilers", "city": "Edmonton" },{ "team": "Wild", "city": "Minnesota" },{ "team": "Canucks", "city": "Vancouver" },{ "team": "Hurricanes", "city": "Carolina" },{ "team": "Panthers", "city": "Florida" },{ "team": "Lightning", "city": "Tampa Bay" },{ "team": "Capitals", "city": "Washington" },{ "team": "Jets", "city": "Winnipeg" },{ "team": "Ducks", "city": "Anaheim" },{ "team": "Stars", "city": "Dallas" },{ "team": "Kings", "city": "Los Angeles" },{ "team": "Coyotes", "city": "Phoenix" },{ "team": "Sharks", "city": "San Jose" }];
+            var nbaData = [{ "team": "Celtics", "city": "Boston" },{ "team": "Mavericks", "city": "Dallas" },{ "team": "Brooklyn Nets", "city": "Brooklyn" },{ "team": "Rockets", "city": "Houston" },{ "team": "Knicks", "city": "New York" },{ "team": "Grizzlies", "city": "Memphis" },{ "team": "76ers", "city": "Philadelphia" },{ "team": "Hornets", "city": "New Orleans" },{ "team": "Raptors", "city": "Toronto" },{ "team": "Spurs", "city": "San Antonio" },{ "team": "Bulls", "city": "Chicago" },{ "team": "Nuggets", "city": "Denver" },{ "team": "Cavaliers", "city": "Cleveland" },{ "team": "Timberwolves", "city": "Minnesota" },{ "team": "Pistons", "city": "Detroit" },{ "team": "Trail Blazers", "city": "Portland" },{ "team": "Pacers", "city": "Indiana" },{ "team": "Thunder", "city": "Oklahoma City" },{ "team": "Bucks", "city": "Milwaukee" },{ "team": "Jazz", "city": "Utah" },{ "team": "Hawks", "city": "Atlanta " },{ "team": "Warriors", "city": "Golden State" },{ "team": "Bobcats", "city": "Charlotte" },{ "team": "Clippers", "city": "Los Angeles" },{ "team": "Heat", "city": "Miami" },{ "team": "Lakers", "city": "Los Angeles" },{ "team": "Orlando Magic", "city": "Brooklyn" },{ "team": "Suns", "city": "Phoenix" },{ "team": "Wizards", "city": "Washington" },{ "team": "Kings", "city": "Sacramento" }];
+            // Substring matcher function for typeahead search fields
+            var substringMatcher = function(strs) {
+              return function findMatches(q, cb) {
+                var matches, substringRegex;
+
+                // an array that will be populated with substring matches
+                matches = [];
+
+                // regex used to determine if a string contains the substring `q`
+                substrRegex = new RegExp(q, 'i');
+
+                // iterate through the pool of strings and for any string that
+                // contains the substring `q`, add it to the `matches` array
+                $.each(strs, function(i, str) {
+                  if (substrRegex.test(str)) {
+                    matches.push(str);
+                  }
+                });
+
+                cb(matches);
+              };
+            };
+
+
+            // Bloodhound initializer for the multiple dataset typeahead search
+            var nbaTeams = new Bloodhound({
+              datumTokenizer: Bloodhound.tokenizers.obj.whitespace('team', 'city'),
+              queryTokenizer: Bloodhound.tokenizers.whitespace,
+              local: nbaData
+            });
+
+            var nhlTeams = new Bloodhound({
+              datumTokenizer: Bloodhound.tokenizers.obj.whitespace('team', 'city'),
+              queryTokenizer: Bloodhound.tokenizers.whitespace,
+              local: nhlData
+            });
+
+            $('#multiple-datasets .typeahead').typeahead({
+              highlight: true,
+              classNames: {
+                input: 'form-control',
+                hint: 'Typeahead-hint',
+                selectable: 'Typeahead-selectable'
+              }
+            },
+            {
+              name: 'nba-teams',
+              display: function(data) {
+                    return data.city +' ' +data.team;
+                },
+              source: nbaTeams,
+              templates: {
+                header: '<div class="tt-dataset-header text-primary">NBA Teams</div>',
+                suggestion: function(data) {
+                    return '<div>' + data.city +' ' +data.team +'</div>';
+                }
+              }
+            },
+            {
+              name: 'nhl-teams',
+              display: function(data) {
+                    return data.city +' ' +data.team;
+                },
+              source: nhlTeams,
+              templates: {
+                header: '<div class="tt-dataset-header text-primary">NHL Teams</div>',
+                suggestion: function(data) {
+                    return '<div>' + data.city +' ' +data.team +'</div>';
+                }
+              }
+            });
+
+            // Typeahead initializer for the AFE search
+            $('#afeTypeahead .typeahead').typeahead({
+              hint: true,
+              highlight: true,
+              minLength: 1
+            },
+            {
+              name: 'afes',
+              source: substringMatcher(afes),
+              footer: '<b><span class="fakeLink" id="fakeLink">Turn off autocomplete</span></b>'
+            });
+
+
+            // Typeahead initializer for the Requisitioner search
+            $('#requisitionerTypeahead .typeahead').typeahead({
+              hint: true,
+              highlight: true,
+              minLength: 1
+            },
+            {
+              name: 'requisitioners',
+              source: substringMatcher(requisitioners)
+            });
+
+            // Typeahead initializer for the typeahead with default suggestions
+            var nflTeams = new Bloodhound({
+              datumTokenizer: Bloodhound.tokenizers.obj.whitespace('team'),
+              queryTokenizer: Bloodhound.tokenizers.whitespace,
+              identify: function(obj) { return obj.team; },
+              prefetch: '../../styleguide/data/nflData.json'
+            });
+
+            // Typeahead initializer for the Requisitioner search
+            $('#typeahead-with-suggestions .typeahead').typeahead({
+              minLength: 0,
+              highlight: true
+            },
+            {
+              name: 'nfl-teams',
+              display: 'team',
+              source: nflTeamsWithDefaults
+            });
+
+            function nflTeamsWithDefaults(q, sync) {
+              if (q === '') {
+                sync(nflTeams.get('Philadelphia Eagles', 'Green Bay Packers', 'Chicago Bears'));
+              }
+
+              else {
+                nflTeams.search(q, sync);
+              }
+            }
+
+
+            // Typeahead initializer for the grouped results typeahead search
+            $('.js-typeahead .typeahead').typeahead({
+                input: ".js-typeahead",
+                minLength: 1,
+                maxItem: 5,
+                order: "asc",
+                hint: false,
+                group: {
+                    template: " beers!"
+                },
+                maxItemPerGroup: 5,
+                href: "#",
+                dropdownFilter: "all beers",
+                emptyTemplate: "<li data-search-group='footer'><a href='javascript:;' tabindex='-1'>No Results</a></li>",
+                source: {
+                    Ale: {
+                        data: beerData.ales
+                    },
+                    lager: {
+                        data: beerData.lagers
+                    }
+                },
+                callback: {
+                    onReady: function (node) {
+                        this.container.find('.' + this.options.selector.dropdownItem + '.group-ale a').trigger('click')
+                    }
+                },
+                debug: true
+            });
+
+        }
+     );
+
+    </script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-147981672-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-147981672-1');
+    </script>
+    <!--DO NOT REMOVE-->
+    <script type="text/json" id="sg-pattern-data-footer" class="sg-pattern-data">
+  {"patternPartial":"viewall-organisms-all"}
+</script>
+
+<script>
+  /*!
+   * scriptLoader - v0.1
+   *
+   * Copyright (c) 2014 Dave Olsen, http://dmolsen.com
+   * Licensed under the MIT license
+   *
+   */
+  
+  var scriptLoader = {
+    
+    run: function(js,cb,target) {
+      var s  = document.getElementById(target+'-'+cb);
+      for (var i = 0; i < js.length; i++) {
+        var src = (typeof js[i] != 'string') ? js[i].src : js[i];
+        var c   = document.createElement('script');
+        c.src   = '../../'+src+'?'+cb;
+        if (typeof js[i] != 'string') {
+          if (js[i].dep !== undefined) {
+            c.onload = function(dep,cb,target) {
+              return function() {
+                scriptLoader.run(dep,cb,target);
+              }
+            }(js[i].dep,cb,target);
+          }
+        }
+        s.parentNode.insertBefore(c,s);
+      }
+    }
+    
+  }
+</script>
+
+<script id="pl-js-polyfill-insert-1579126521816">
+  (function() {
+    if (self != top) {
+      var cb = '1579126521816';
+      var js = [];
+      if (typeof document !== 'undefined' && !('classList' in document.documentElement)) {
+        js.push('styleguide/bower_components/classList.min.js');
+      }
+      scriptLoader.run(js,cb,'pl-js-polyfill-insert');
+    }
+  })();
+</script>
+
+<script id="pl-js-insert-1579126521816">
+  (function() {
+    if (self != top) {
+      var cb = '1579126521816';
+      var js = [ { 'src': 'styleguide/bower_components/jwerty.min.js', 'dep': [ 'styleguide/js/patternlab-pattern.min.js' ] } ];
+      scriptLoader.run(js,cb,'pl-js-insert');
+    }
+  })();
+</script>
+
+
+    </body>
+</html>

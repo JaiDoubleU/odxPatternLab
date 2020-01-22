@@ -1,0 +1,1 @@
+gXMLBuffer ="<?xml version=\"1.0\" encoding=\"utf-8\" ?><data ><book name=\"Administrator &amp; User Guide for Buyers\" url=\"OpenInvoiceForBuyers_master/OI_MasterAdminUserGuide_TitlePage/OI_MasterAdminUserGuide_TitlePage.htm\" src=\"toc1.js\" /><item name=\"Appendix\" url=\"OpenInvoiceForBuyers_master/Appendix/Appendix/Appendix.htm\" /></data>";

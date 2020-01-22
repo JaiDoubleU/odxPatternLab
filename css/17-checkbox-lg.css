@@ -1,0 +1,48 @@
+.checkbox.checkbox-lg {
+    margin: 0;
+    padding: 0;
+}
+
+.checkbox.checkbox-lg label {
+    padding: 0;
+}
+.checkbox.checkbox-lg label:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.checkbox .checkboxRadioLg {
+    position: relative;
+    display: inline-block;
+    border: 1px solid #a9a9a9;
+    border-radius: .25em;
+    width: 1.5em;
+    height: 1.5em;
+    float: left;
+    padding: 0;
+    margin:0 ;
+}
+
+.checkbox .checkboxRadioLg .fas {
+    position: absolute;
+    line-height: 0;
+    top: 0.7rem;
+    left: 0.2rem;
+}
+
+.checkbox.checkbox-lg label input[type="checkbox"] {
+    display: none;
+}
+
+.checkbox.checkbox-lg label input[type="checkbox"]+.checkboxRadioLg>.fas {
+    opacity: 0;
+}
+
+.checkbox.checkbox-lg label input[type="checkbox"]:checked+.checkboxRadioLg>.fas {
+    opacity: 1;
+}
+
+.checkbox.checkbox-lg label input[type="checkbox"]:disabled+.checkboxRadioLg {
+    opacity: .5;
+}

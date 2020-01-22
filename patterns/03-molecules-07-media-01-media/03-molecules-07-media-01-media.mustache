@@ -1,0 +1,20 @@
+<div class="media">
+    {{# mediaLeft }}
+    <div class="media-left {{ mediaClass }}">
+        <a href="{{ url }}">
+        	<img class="media-object" src="{{ mediaImage }}" alt="{{ alt }}">
+        </a>
+    </div>
+    {{/ mediaLeft }}
+    <div class="media-body">
+      	<p class="h4 media-heading">{{ heading }}</p>
+        {{ text }}
+    </div>
+    {{# mediaRight }}
+    <div class="media-right {{ mediaClass }}">
+        <a href="{{ url }}">
+        	<img class="media-object" src="{{ mediaImage }}" alt="{{ alt }}">
+        </a>
+    </div>
+    {{/ mediaRight }}
+</div>

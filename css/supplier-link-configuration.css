@@ -1,0 +1,9 @@
+.supplier-link-mapping-table .has-feedback .help-block {
+    line-height: 0;
+    position: relative;
+    float: right;
+    top: -1.2rem;
+    right: 5px;
+    display: inline-block;
+    margin: 0px;
+}

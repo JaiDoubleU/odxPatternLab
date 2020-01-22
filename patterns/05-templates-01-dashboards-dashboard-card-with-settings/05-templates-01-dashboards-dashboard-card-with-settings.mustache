@@ -1,0 +1,192 @@
+<div class="row">
+    <div class="col-xs-12 col-sm-6">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <div class="row">
+                    <div class="col-xs-9">
+                        Invoice Counts
+                    </div>
+                    <div class="col-xs-3 text-right">
+                        <button class="btn btn-link dropdown-toggle close btn-sm " style="font-size: 14px !important;" type="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="true">
+                            <span class="fas fa-cog text-muted"></span>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-right" id="dropdown">
+                            <li href="#cardSettings" data-toggle="tab" onclick="$(this).removeClass('active');">
+                                <a href="#cardSettings" data-toggle="tab">Edit Settings</a>
+                            </li>
+                            <li onclick="console.log('in onclick'); return $('#confirmDeleteModal').modal();">
+                                <a href="#home" data-toggle="tab">Delete Widget</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="panel-body">
+                <div id="myTabContent" class="tab-content" style="border:none;">
+                    <div class="tab-pane fade in active" id="home">
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <div class="table-responsive">
+                                    <table class="table table-condensed table-striped table-bordered table-hover"   id="widget-invoice_count-table">
+                                        <a class="btn btn-link btn-sm text-info" href="#nogo;" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Filtered By Sites : Western Basin AP, Offshore Operations">
+                                            <i class="fas fa-info-circle fa-fw text-info"></i> Filters Applied
+                                        </a>
+                                        <thead >
+                                            <tr  id="widget-invoice_count-thead-0-tr">
+                                                <th id="widget-invoice_count-thead-0-th-0" >
+                                                    &nbsp;</th>
+                                                <th id="widget-invoice_count-thead-0-th-1" >
+                                                    0-10 Days
+                                                </th>
+                                                <th id="widget-invoice_count-thead-0-th-2" >
+                                                    11-30 Days
+                                                </th>
+                                                <th id="widget-invoice_count-thead-0-th-3" >
+                                                    Over 30 Days
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody  >
+                                            <tr  id="widget-invoice_count-tbody-0-tr-0">
+                                                <td  id="widget-invoice_count-tbody-0-tr-0-td-0">
+                                                    Ready to Code
+                                                </td>
+                                                <td  id="widget-invoice_count-tbody-0-tr-0-td-1">
+                                                    <a  class="no-underline link ng-star-inserted">10</a>
+                                                    <br  >1,951,301.31
+                                                </td>
+                                                <td  id="widget-invoice_count-tbody-0-tr-0-td-2">
+                                                <a  class="no-underline link ng-star-inserted">25</a>
+                                                <br  >3,351,022.62
+                                                </td>
+
+                                                <td  id="widget-invoice_count-tbody-0-tr-0-td-3">
+                                                    <a  class="no-underline link ng-star-inserted">512</a>
+                                                    <br  >1,403,749.00
+                                                </td>
+                                            </tr>
+                                            <tr  id="widget-invoice_count-tbody-0-tr-1" >
+                                                <td  id="widget-invoice_count-tbody-0-tr-1-td-0">
+                                                    Ready to Approve
+                                                </td>
+                                                <td  id="widget-invoice_count-tbody-0-tr-1-td-1">
+                                                    <a class="no-underline link ng-star-inserted"
+                                                        href="">1</a>
+                                                    <br>1,299.41
+                                                </td>
+                                                <td  id="widget-invoice_count-tbody-0-tr-1-td-2">
+                                                    <a class="no-underline link ng-star-inserted"
+                                                    href="">0</a>
+                                                    <br>0.00
+                                                </td>
+                                                <td  id="widget-invoice_count-tbody-0-tr-1-td-3">
+                                                    <a  class="no-underline link ng-star-inserted"
+                                                        href="./oi_target/openInvoice/main/statusListInputAction?view=V_ADMIN_APPROVER&amp;status=Submitted&amp;age=3&amp;currencyCode=Total&amp;currentSite=">16</a>
+                                                    <br  >31,492.48
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade " id="cardSettings">
+                        <div class="form-group">
+                            <label>Site:</label>
+                            {{>molecules-multi-select("multiSelectButtonText":"Western Basin AP, Offshore Operations","showSiteOptions": "true")}}
+                        </div>
+                        <div class="form-group">
+                            <label>Criterion:</label>
+                            <div class="input-group">
+                                <select class="selectpicker form-control">
+                                    <option>AFE</option>
+                                    <option>CC</option>
+                                    <option>Requisitioner</option>
+                                    <option>Location</option>
+                                </select>
+                                <div class="input-group-btn">
+                                    <button class="btn btn-default" onclick="return $('#defaultModal').modal();">
+                                        <i class="fas fa-trash-alt"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="afeTypeahead" class="form-group has-feedback">
+                            <label>Value:</label>
+                            <div id="dashboard-card-typeahead-1">
+                                <div class="input-group">
+                                    <input class="typeahead form-control" type="text" placeholder="Type to Search">
+                                    <span class="input-group-addon">
+                                        <i class="fas fa-search"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group  text-right" id="addCriteriaBtn">
+                            <button class="btn btn-default" onclick="toggleAdditionalCriteria()">Add Another Criterion</button>
+                        </div>
+
+                        <div id="additionalCriteria1" class="hide">
+                            <div class="form-group">
+                                <label>Criterion 2:</label>
+                                <div class="input-group">
+                                    <select class="selectpicker form-control">
+                                        <option>AFE</option>
+                                        <option>CC</option>
+                                        <option selected>Requisitioner</option>
+                                        <option>Location</option>
+                                    </select>
+                                    <div class="input-group-btn">
+                                        <button class="btn btn-default" onclick="toggleAdditionalCriteria()">
+                                            <i class="fas fa-trash-alt"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="requisitionerTypeahead" class="form-group has-feedback">
+                                <label>Value:</label>
+                                <div id="dashboard-card-typeahead-2">
+                                    <div class="input-group">
+                                        <input class="typeahead form-control" type="text" placeholder="Type to Search">
+                                        <span class="input-group-addon">
+                                            <i class="fas fa-search"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group text-center">
+                            <button class="btn btn-default" href="#home" data-toggle="tab">Cancel</button>
+                            <button class="btn btn-success " href="#home" data-toggle="tab"
+                                aria-expanded="false">Save</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div id="confirmDeleteModal" class="modal fade" role="dialog">
+    <div class="modal-dialog modal-md">
+        <div class="modal-content">
+            <div class="modal-header ">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title"><i class="fas fa-fw fa-exclamation-circle text-danger"></i> Are You Sure? </h4>
+            </div>
+            <div class="modal-body">
+                <p>Are you sure you want to permanantly delete this card?</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">No, Take me back</button>
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Yes, I'm sure</button>
+            </div>
+        </div>
+    </div>
+</div>

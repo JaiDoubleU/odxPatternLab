@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+ <title>Automatic Code Verification</title>
+
+ <link rel="stylesheet" href="../../../OpenInvoiceForBuyers_master.css" type="text/css" />
+
+
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style>
+ <meta name="generator" content="Adobe FrameMaker 2017" />
+<script type="text/javascript" src="../../../template/scripts/rh.min.js"></script>
+<script type="text/javascript" src="../../../template/scripts/common.min.js"></script>
+<script type="text/javascript" src="../../../template/scripts/topic.min.js"></script>
+<script type="text/javascript" src="../../../template/scripts/constants.js"></script>
+<script type="text/javascript" src="../../../template/scripts/utils.js"></script>
+<script type="text/javascript" src="../../../template/scripts/mhutils.js"></script>
+<script type="text/javascript" src="../../../template/scripts/mhlang.js"></script>
+<script type="text/javascript" src="../../../template/scripts/mhver.js"></script>
+<script type="text/javascript" src="../../../template/scripts/settings.js"></script>
+<script type="text/javascript" src="../../../template/scripts/XmlJsReader.js"></script>
+<script type="text/javascript" src="../../../template/scripts/loadparentdata.js"></script>
+<script type="text/javascript" src="../../../template/scripts/loadscreen.js"></script>
+<script type="text/javascript" src="../../../template/scripts/loadprojdata.js"></script>
+<script type="text/javascript" src="../../../template/scripts/mhtopic.js"></script>
+ <link rel="stylesheet" type="text/css" href="../../../template/styles/topic.min.css">
+<script type="text/javascript" >
+gRootRelPath = "../../..";
+gCommonRootRelPath = "../../..";
+gTopicId = "";
+</script>
+ <meta name="brsprev" value="OpenInvoiceForBuyers_master/Configuration/InvoiceWorkflowConfig/Automatic_Dispute_Prevent_Invoice_Submission.htm">
+ <meta name="brsnext" value="OpenInvoiceForBuyers_master/Configuration/InvoiceWorkflowConfig/Automatic_Financial_Approval.htm">
+ <meta name="topic-breadcrumbs" content="Administrator & User Guide for Buyers > Invoice Workflow Configuration" />
+</head>
+
+<body dir="ltr">
+<script type="text/javascript" src="../../../ehlpdhtm.js"></script>
+<div dir="ltr">
+  <p dir="ltr" class="FM_ADP_TG_Heading_1"><a name="TOC_Automatic_Code"></a><a name="XREF_48756_Automatic_Code"></a>Automatic Code Verification</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Body_Style"><span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>&#160;can be configured to automatically mark invoices as code verified using the invoice workflow rules. Depending on your company’s workflow sequence, your code verification rules will be considered either upon invoice submission or the final financial approval.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Note___Start"><span class="FM_Bold">Note:<span style="padding-left: 12pt;" class="FMAutoNumber_1"></span></span>If you are using the Approve Only invoice workflow, Code Verify rules will be ignored.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Body_Style"><span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>&#160;will code verify an invoice only if all associated business rules and coding validations are met. Invoices that are code verified by <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>&#160;are identified in the Invoice Journal by a Code Verified action completed by <span style="font-weight : bold; ">the System </span>and a corresponding comment. You can report on invoices that were automatically code verified by searching for invoices code verified by <span style="font-weight : bold; ">the System</span>.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Body_Style">Refer to <a href="Invoice_Workflow_Rules.htm#XREF_58564_Invoice_Workflow">Invoice Workflow Rules</a>&#160;for more details about configuring automatic invoice code verification and system processing. </p>
+
+  <p dir="ltr" class="FM_ADP_TG_Heading_2">Invoice Auto-Code Verification and the Code then Approve Workflow</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Body_Style">If you are using the Code then Approve invoice workflow, <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>&#160;will evaluate the Code Verify invoice workflow rules when the invoice is submitted. If the invoice qualifies for a Code Verify rule the invoice will be routed to the <span data-name="ADP_Software_Name" data-val="OpenInvoice Platform" data-showval="TRUE" data-format="ADP_Software_Name">OpenInvoice Platform</span>&#160;for processing and <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>&#160;will process any configured recipient routing rules. If all business rules and coding validations are met, the invoice will be code verified by<span style="font-weight : bold; "> the System</span>&#160;and the invoice status will be Submitted. If the invoice is not code verified by <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>, a user must code verify the invoice.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Heading_2">Invoice Auto-Code Verification and the Approve then Code Workflow</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Body_Style">If you are using the Approve then Code invoice workflow, <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>&#160;will evaluate the Code Verify invoice workflow rules when the invoice receives final financial approval (either by a user clicking the <span style="font-weight : bold; ">Approve</span>&#160;button on an invoice or automatically based on the invoice workflow rules). If the invoice qualifies for a Code Verify rule and all business rules and coding validations are met, the invoice will be code verified by <span style="font-weight : bold; ">the System</span>&#160;and the invoice status will be changed to Approved. If the invoice is not code verified by <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>, a user must code verify the invoice.</p>
+
+  </div>
+</body>
+</html>

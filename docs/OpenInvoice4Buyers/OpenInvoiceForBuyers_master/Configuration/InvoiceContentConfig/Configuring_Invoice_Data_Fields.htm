@@ -1,0 +1,412 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+ <title>Configuring Invoice Data Fields</title>
+
+ <link rel="stylesheet" href="../../../OpenInvoiceForBuyers_master.css" type="text/css" />
+
+
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style>
+ <meta name="generator" content="Adobe FrameMaker 2017" />
+<script type="text/javascript" src="../../../template/scripts/rh.min.js"></script>
+<script type="text/javascript" src="../../../template/scripts/common.min.js"></script>
+<script type="text/javascript" src="../../../template/scripts/topic.min.js"></script>
+<script type="text/javascript" src="../../../template/scripts/constants.js"></script>
+<script type="text/javascript" src="../../../template/scripts/utils.js"></script>
+<script type="text/javascript" src="../../../template/scripts/mhutils.js"></script>
+<script type="text/javascript" src="../../../template/scripts/mhlang.js"></script>
+<script type="text/javascript" src="../../../template/scripts/mhver.js"></script>
+<script type="text/javascript" src="../../../template/scripts/settings.js"></script>
+<script type="text/javascript" src="../../../template/scripts/XmlJsReader.js"></script>
+<script type="text/javascript" src="../../../template/scripts/loadparentdata.js"></script>
+<script type="text/javascript" src="../../../template/scripts/loadscreen.js"></script>
+<script type="text/javascript" src="../../../template/scripts/loadprojdata.js"></script>
+<script type="text/javascript" src="../../../template/scripts/mhtopic.js"></script>
+ <link rel="stylesheet" type="text/css" href="../../../template/styles/topic.min.css">
+<script type="text/javascript" >
+gRootRelPath = "../../..";
+gCommonRootRelPath = "../../..";
+gTopicId = "";
+</script>
+ <meta name="brsprev" value="OpenInvoiceForBuyers_master/Configuration/InvoiceContentConfig/InvoiceContentConfig.htm">
+ <meta name="brsnext" value="OpenInvoiceForBuyers_master/Configuration/InvoiceContentConfig/AFE.htm">
+ <meta name="topic-breadcrumbs" content="Administrator & User Guide for Buyers > Invoice Content Configuration" />
+</head>
+
+<body dir="ltr">
+<script type="text/javascript" src="../../../ehlpdhtm.js"></script>
+<div dir="ltr">
+  <p dir="ltr" class="FM_ADP_TG_Heading_1"><a name="TOC_Configuring_Invoice_Data"></a><a name="XREF_42390_Configuring"></a>Configuring Invoice Data Fields</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Body_Style">Invoices have core fields that appear on every invoice. You can define the type of access that your users and your suppliers have to these core fields. Custom fields (called ADEs or Additional Data Elements) can be added to correspond to your company’s business practices. Users may populate your custom fields from a list of possible field responses that you define using the <span style="font-weight : bold; ">Corporate</span>&#160;&gt; <span style="font-weight : bold; ">Reference Data</span>&#160;function in <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>. Custom fields and their possible responses will appear on your company’s <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>&#160;sites and the supplier <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span> sites.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Note___Start"><span class="FM_Bold">Note:<span style="padding-left: 12pt;" class="FMAutoNumber_1"></span></span><span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>&#160;does not validate whether a field’s access setting is consistent with company preferences and other field configurations. To ensure invoices meet validation requirements to move through the workflow, consult your company’s current invoice content configuration and coding rules before configuring access. </p>
+
+  <p dir="ltr" class="FM_ADP_TG_Note___Next"><span class="FM_Bold"><span style="padding-left: 36pt;" class="FMAutoNumber_1"></span></span>Changes to the visibility of invoice data fields must be communicated to your suppliers to avoid non-compliance of any required fields. To send a message to one or more supplier sites, refer to <a href="../SupplierMgmt/Sending_a_Message_to_Suppliers.htm#XREF_20244_Sending_a_Message">Sending a Message to Suppliers</a>. If an imported invoice, purchase order, or ticket specifies a value for an unmodifiable or hidden field, access configuration for that field will be ignored and the value will saved with the invoice and be included on the exports.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Heading_2">Invoice Element Types</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Restricted: </span>fields displayed in the invoice header. Mandatory fields cannot be created. These fields can only be modified by a user with the Invoice Add Data permission.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Header: </span>fields displayed in the invoice header. Mandatory fields can be created.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Line Item Detail: </span>fields can only have one value per line item and cannot be the basis of a split allocation.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 12pt;" class="FMAutoNumber_2"></span></span>The service date can be defined as a date range or a single date. If defined as a single date, <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span> will assume that service was delivered beginning and ending on the same day.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Line Item Coding: </span>fields added to the coding records. General ledger codes can be mapped to some of these fields.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 12pt;" class="FMAutoNumber_2"></span></span>Setting the <span style="font-weight : bold; ">AFE</span>&#160;and <span style="font-weight : bold; ">Cost Center</span>&#160;fields to <span style="font-weight : bold; ">None</span> will also hide the property information on the invoice.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Heading_2_HowTo">How to <a name="XREF_35993_How_to_Add_or_Edit"></a>Add a Restricted Invoice Data Field</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Permission___Start"><span class="FM_Bold">Permission:<span style="padding-left: 18pt;" class="FMAutoNumber_1"></span></span>Corporate Admin</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Prerequisite___Start"><span class="FM_Bold">Prerequisite:<span style="padding-left: 12pt;" class="FMAutoNumber_1"></span></span>If you are configuring a custom reference data type, the custom reference data types are entered by going to <span style="font-weight : bold; ">Corporate</span>&nbsp;&gt;&nbsp;<span style="font-weight : bold; ">Reference Data</span>. See <a href="../CorporateConfig/CorporateConfig.htm#XREF_71150_Managing_Reference">Managing Reference Data</a>&#160;for more information. </p>
+
+  <p dir="ltr" class="FM_ADP_TG_Steps"><span class="FM_Bold">Steps:<span style="padding-left: 6pt;" class="FMAutoNumber_1"></span></span></p>
+
+  <ol dir="ltr" start="1">
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Start">Select <span style="font-weight : bold; ">Corporate &gt; Workflow Configuration</span>.</p>
+</li>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Click <span style="font-weight : bold; ">Data Fields</span>.</p>
+</li>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Click the <span style="font-weight : bold; ">Restricted</span> tab.</p>
+</li>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Click <span style="font-weight : bold; ">Add Record</span> to add a field.</p>
+</li>
+   <div align="center"><img alt="InvoiceContentConfig_restrictedfield.jpg" id="image112" src="../../../assets/InvoiceContentConfig_restrictedfield.jpg" style="max-width: 100% ;height: auto" />
+   </div>
+   <p dir="ltr" class="FM_ADP_TG_Screenshot_Anchor">&nbsp;</p>
+
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Enter the field values. </p>
+</li>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Click <span style="font-weight : bold; ">Submit</span>.</p>
+</li>
+  </ol>
+  <p dir="ltr" class="FM_ADP_TG_Heading_2_HowTo">How to Add a Header Invoice Data Field</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Permission___Start"><span class="FM_Bold">Permission:<span style="padding-left: 18pt;" class="FMAutoNumber_1"></span></span>Corporate Admin</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Prerequisite___Start"><span class="FM_Bold">Prerequisite:<span style="padding-left: 12pt;" class="FMAutoNumber_1"></span></span>If you are configuring a custom reference data type, the custom reference data types are entered by going to <span style="font-weight : bold; ">Corporate</span>&nbsp;&gt;&nbsp;<span style="font-weight : bold; ">Reference Data</span>. See <a href="../CorporateConfig/CorporateConfig.htm#XREF_71150_Managing_Reference">Managing Reference Data</a>&#160;for more information. </p>
+
+  <p dir="ltr" class="FM_ADP_TG_Steps"><span class="FM_Bold">Steps:<span style="padding-left: 6pt;" class="FMAutoNumber_1"></span></span></p>
+
+  <ol dir="ltr" start="1">
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Start">Select <span style="font-weight : bold; ">Corporate &gt; Workflow Configuration</span>.</p>
+</li>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Click <span style="font-weight : bold; ">Data Fields</span>.</p>
+</li>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Click the <span style="font-weight : bold; ">Header</span> tab.</p>
+</li>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Click <span style="font-weight : bold; ">Add Record</span> to add a field.</p>
+</li>
+   <div align="center"><img alt="InvoiceContentConfig_headerfield.jpg" id="image113" src="../../../assets/InvoiceContentConfig_headerfield.jpg" style="max-width: 100% ;height: auto" />
+   </div>
+   <p dir="ltr" class="FM_ADP_TG_Screenshot_Anchor">&nbsp;</p>
+
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Enter the field values. </p>
+</li>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Click <span style="font-weight : bold; ">Submit</span>.</p>
+</li>
+  </ol>
+  <p dir="ltr" class="FM_ADP_TG_Heading_2_HowTo">How to Add a Line Item Detail Invoice Data Field</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Permission___Start"><span class="FM_Bold">Permission:<span style="padding-left: 18pt;" class="FMAutoNumber_1"></span></span>Corporate Admin</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Prerequisite___Start"><span class="FM_Bold">Prerequisite:<span style="padding-left: 12pt;" class="FMAutoNumber_1"></span></span>If you are configuring a custom reference data type, the custom reference data types are entered by going to <span style="font-weight : bold; ">Corporate</span>&nbsp;&gt;&nbsp;<span style="font-weight : bold; ">Reference Data</span>. See <a href="../CorporateConfig/CorporateConfig.htm#XREF_71150_Managing_Reference">Managing Reference Data</a>&#160;for more information. </p>
+
+  <p dir="ltr" class="FM_ADP_TG_Steps"><span class="FM_Bold">Steps:<span style="padding-left: 6pt;" class="FMAutoNumber_1"></span></span></p>
+
+  <ol dir="ltr" start="1">
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Start">Select <span style="font-weight : bold; ">Corporate &gt; Workflow Configuration</span>.</p>
+</li>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Click <span style="font-weight : bold; ">Data Fields</span>.</p>
+</li>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Click the <span style="font-weight : bold; ">Line Item Detail</span> tab.</p>
+</li>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Click <span style="font-weight : bold; ">Add Record</span>.</p>
+</li>
+   <div align="center"><img alt="InvoiceContentConfig_lineitemdetailadd.jpg" id="image114" src="../../../assets/InvoiceContentConfig_lineitemdetailadd.jpg" style="max-width: 100% ;height: auto" />
+   </div>
+   <p dir="ltr" class="FM_ADP_TG_Screenshot_Anchor">&nbsp;</p>
+
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Enter the field values. </p>
+</li>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Click <span style="font-weight : bold; ">Submit</span>.</p>
+</li>
+  </ol>
+  <p dir="ltr" class="FM_ADP_TG_Heading_2_HowTo">How to Add a Line Item Coding Invoice Data Field</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Permission___Start"><span class="FM_Bold">Permission:<span style="padding-left: 18pt;" class="FMAutoNumber_1"></span></span>Corporate Admin</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Prerequisite___Start"><span class="FM_Bold">Prerequisite:<span style="padding-left: 12pt;" class="FMAutoNumber_1"></span></span>If you are configuring a custom reference data type, the custom reference data types are entered by going to <span style="font-weight : bold; ">Corporate</span>&nbsp;&gt;&nbsp;<span style="font-weight : bold; ">Reference Data</span>. See <a href="../CorporateConfig/CorporateConfig.htm#XREF_71150_Managing_Reference">Managing Reference Data</a>&#160;for more information. </p>
+
+  <p dir="ltr" class="FM_ADP_TG_Steps"><span class="FM_Bold">Steps:<span style="padding-left: 6pt;" class="FMAutoNumber_1"></span></span></p>
+
+  <ol dir="ltr" start="1">
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Start">Select <span style="font-weight : bold; ">Corporate &gt; Workflow Configuration</span>.</p>
+</li>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Click <span style="font-weight : bold; ">Data Fields</span>.</p>
+</li>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Click the <span style="font-weight : bold; ">Line Item Coding</span> tab.</p>
+</li>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Click <span style="font-weight : bold; ">Add Record</span>.</p>
+</li>
+   <div align="center"><img alt="InvoiceContentConfig_lineitemcodingadd.jpg" id="image115" src="../../../assets/InvoiceContentConfig_lineitemcodingadd.jpg" style="max-width: 100% ;height: auto" />
+   </div>
+   <p dir="ltr" class="FM_ADP_TG_Screenshot_Anchor">&nbsp;</p>
+
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Enter the field values. </p>
+</li>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Click <span style="font-weight : bold; ">Submit</span>.</p>
+</li>
+  </ol>
+  <p dir="ltr" class="FM_ADP_TG_Heading_2_HowTo">How to Edit a Line Item Detail Invoice Data Field</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Permission___Start"><span class="FM_Bold">Permission:<span style="padding-left: 18pt;" class="FMAutoNumber_1"></span></span>Corporate Admin</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Prerequisite___Start"><span class="FM_Bold">Prerequisite:<span style="padding-left: 12pt;" class="FMAutoNumber_1"></span></span>If you are editing a custom reference data type, the custom reference data types are entered by going to <span style="font-weight : bold; ">Corporate</span>&nbsp;&gt;&nbsp;<span style="font-weight : bold; ">Reference Data</span>. See <a href="../CorporateConfig/CorporateConfig.htm#XREF_71150_Managing_Reference">Managing Reference Data</a>&#160;for more information. </p>
+
+  <p dir="ltr" class="FM_ADP_TG_Steps"><span class="FM_Bold">Steps:<span style="padding-left: 6pt;" class="FMAutoNumber_1"></span></span></p>
+
+  <ol dir="ltr" start="1">
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Start">Select <span style="font-weight : bold; ">Corporate &gt; Workflow Configuration</span>.</p>
+</li>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Click <span style="font-weight : bold; ">Data Fields</span>.</p>
+</li>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Click the <span style="font-weight : bold; ">Line Item Detail</span> tab.</p>
+</li>
+   <div align="center"><img alt="InvoiceContentConfig_lineitemdetail.jpg" id="image116" src="../../../assets/InvoiceContentConfig_lineitemdetail.jpg" style="max-width: 100% ;height: auto" />
+   </div>
+   <p dir="ltr" class="FM_ADP_TG_Screenshot_Anchor">&nbsp;</p>
+
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Click the <span style="font-weight : bold; ">Name</span> to edit the line item detail’s configuration.</p>
+</li>
+   <div align="center"><img alt="InvoiceContentConfig_lineitemdetailedit.jpg" id="image117" src="../../../assets/InvoiceContentConfig_lineitemdetailedit.jpg" style="max-width: 100% ;height: auto" />
+   </div>
+   <p dir="ltr" class="FM_ADP_TG_Screenshot_Anchor">&nbsp;</p>
+
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Update the fields. </p>
+</li>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Click <span style="font-weight : bold; ">Submit</span>.</p>
+</li>
+  </ol>
+  <p dir="ltr" class="FM_ADP_TG_Heading_2_HowTo">How to Edit a Line Item Coding Invoice Data Field</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Permission___Start"><span class="FM_Bold">Permission:<span style="padding-left: 18pt;" class="FMAutoNumber_1"></span></span>Corporate Admin</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Steps"><span class="FM_Bold">Steps:<span style="padding-left: 6pt;" class="FMAutoNumber_1"></span></span></p>
+
+  <ol dir="ltr" start="1">
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Start">Select <span style="font-weight : bold; ">Corporate &gt; Workflow Configuration</span>.</p>
+</li>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Click <span style="font-weight : bold; ">Data Fields</span>.</p>
+</li>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Click the <span style="font-weight : bold; ">Line Item Coding</span> tab.</p>
+</li>
+   <div align="center"><img alt="InvoiceContentConfig_lineitemcoding.jpg" id="image118" src="../../../assets/InvoiceContentConfig_lineitemcoding.jpg" style="max-width: 100% ;height: auto" />
+   </div>
+   <p dir="ltr" class="FM_ADP_TG_Screenshot_Anchor">&nbsp;</p>
+
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Click the <span style="font-weight : bold; ">Name</span> to edit the line item coding’s configuration.</p>
+</li>
+   <div align="center"><img alt="InvoiceContentConfig_lineitemcodingedit.jpg" id="image119" src="../../../assets/InvoiceContentConfig_lineitemcodingedit.jpg" style="max-width: 100% ;height: auto" />
+   </div>
+   <p dir="ltr" class="FM_ADP_TG_Screenshot_Anchor">&nbsp;</p>
+
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Update the fields.</p>
+</li>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Click <span style="font-weight : bold; ">Submit</span>.</p>
+</li>
+  </ol>
+  <p dir="ltr" class="FM_ADP_TG_Heading_2_HowTo">How to Edit a Custom Line Item Coding Invoice Data Field</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Permission___Start"><span class="FM_Bold">Permission:<span style="padding-left: 18pt;" class="FMAutoNumber_1"></span></span>Corporate Admin</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Prerequisite___Start"><span class="FM_Bold">Prerequisite:<span style="padding-left: 12pt;" class="FMAutoNumber_1"></span></span>If you are editing a custom reference data type, the custom reference data types are entered by going to <span style="font-weight : bold; ">Corporate</span>&nbsp;&gt;&nbsp;<span style="font-weight : bold; ">Reference Data</span>. See <a href="../CorporateConfig/CorporateConfig.htm#XREF_71150_Managing_Reference">Managing Reference Data</a>&#160;for more information. </p>
+
+  <p dir="ltr" class="FM_ADP_TG_Steps"><span class="FM_Bold">Steps:<span style="padding-left: 6pt;" class="FMAutoNumber_1"></span></span></p>
+
+  <ol dir="ltr" start="1">
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Start">Select <span style="font-weight : bold; ">Corporate &gt; Workflow Configuration</span>.</p>
+</li>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Click <span style="font-weight : bold; ">Data Fields</span>.</p>
+</li>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Click the <span style="font-weight : bold; ">Line Item Coding</span> tab.</p>
+</li>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Click the <span style="font-weight : bold; ">Name</span> to edit the line item coding’s configuration.</p>
+</li>
+   <div align="center"><img alt="InvoiceContentConfig_lineitemcodingcustomedit.jpg" id="image120" src="../../../assets/InvoiceContentConfig_lineitemcodingcustomedit.jpg" style="max-width: 100% ;height: auto" />
+   </div>
+   <p dir="ltr" class="FM_ADP_TG_Screenshot_Anchor">&nbsp;</p>
+
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Update the fields.</p>
+</li>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Click <span style="font-weight : bold; ">Submit</span>.</p>
+</li>
+  </ol>
+  <p dir="ltr" class="FM_ADP_TG_Heading_2_HowTo">How to Delete a Header Data Field</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Permission___Start"><span class="FM_Bold">Permission:<span style="padding-left: 18pt;" class="FMAutoNumber_1"></span></span>Corporate Admin</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Prerequisite___Start"><span class="FM_Bold">Prerequisite:<span style="padding-left: 12pt;" class="FMAutoNumber_1"></span></span>If you are configuring a custom reference data type, the custom reference data types are entered by going to <span style="font-weight : bold; ">Corporate</span>&nbsp;&gt;&nbsp;<span style="font-weight : bold; ">Reference Data</span>. See <a href="../CorporateConfig/CorporateConfig.htm#XREF_71150_Managing_Reference">Managing Reference Data</a>&#160;for more information. </p>
+
+  <p dir="ltr" class="FM_ADP_TG_Steps"><span class="FM_Bold">Steps:<span style="padding-left: 6pt;" class="FMAutoNumber_1"></span></span></p>
+
+  <ol dir="ltr" start="1">
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Start">Select <span style="font-weight : bold; ">Corporate &gt; Workflow Configuration</span>.</p>
+</li>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Click <span style="font-weight : bold; ">Data Fields</span>.</p>
+</li>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Click the <span style="font-weight : bold; ">Header</span> tab.</p>
+</li>
+   <div align="center"><img alt="DeleteHeaderDataField.jpg" id="image121" src="../../../assets/DeleteHeaderDataField.jpg" style="max-width: 100% ;height: auto" />
+   </div>
+   <p dir="ltr" class="FM_ADP_TG_Screenshot_Anchor">&nbsp;</p>
+
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Click the <span style="font-weight : bold; ">Delete</span>&#160;icon for the data field name you want to remove. </p>
+</li>
+  </ol>
+  <p dir="ltr" class="FM_ADP_TG_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 12pt;" class="FMAutoNumber_2"></span></span>Custom data fields that have been deleted will not be available on any new field tickets. Field Tickets created and submitted prior to the deletion of the custom field will still display the values and allows users to modify the field. </p>
+
+  <p dir="ltr" class="FM_ADP_TG_Heading_2">Data Field Details</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Body_Style">Depending on the invoice element type, your field profile will include: </p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Name:</span> appears on the invoice and on invoice list pages</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Data Type: </span>includes a selection of system responses as well as customized reference data. System choices include <span style="font-weight : bold; ">Date</span>, <span style="font-weight : bold; ">Integer</span>&#160;(whole numbers), <span style="font-weight : bold; ">Number</span>&#160;(including decimals), and <span style="font-weight : bold; ">Text</span>.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 12pt;" class="FMAutoNumber_2"></span></span>The core <span style="font-weight : bold; ">Work Order</span> field allows users to enter free text (<span style="font-weight : bold; ">Text</span>) or to select from a drop-down of values (<span style="font-weight : bold; ">List</span>) which are defined as customized reference data. </p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1" style="font-weight : bold;"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>Display Type: This field appears when you are using a custom data type. Choose between List or Searchable Text. Use the Searchable Text&#160;option for large sets of data where a pick list is not easy to use. &#160;The Searchable Text&#160;field allows free text entry and also comes with a search function. The Searchable Text will be validated to ensure the entered text is valid and ‘Active’. Search results will only include valid and ‘Active’ records.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Internal Code:</span>&#160;code designated by your ERP. </p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Sequence:</span>&#160;order in which the custom fields appear on the invoice. The sequence numbers apply to all the invoice element types, even if some are in the header and some are on line items.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Max Length:</span>&#160;defined character limit for this data field. A max length is not required for <span style="font-weight : bold; ">Date (MM/DD/YYYY)</span>&#160;or custom data types.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 12pt;" class="FMAutoNumber_2"></span></span>If the core <span style="font-weight : bold; ">Work Order</span>&#160;field’s data type has been changed from <span style="font-weight : bold; ">List</span>&#160;to <span style="font-weight : bold; ">Text</span>, the max length value will be considered invalid and cause errors. </p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Required:</span>&#160;</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 12pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Please Select: </span>makes the field optional. </p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 12pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">On Submit Only:</span> makes the field mandatory for completion before a detail invoice can be submitted.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 12pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">On Code-Verify &amp; On Approve: </span>makes the field mandatory for completion before a detail invoice can be code verified.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 12pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">On Approve Only:</span> makes the field mandatory for completion before a detail invoice can be approved.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 12pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Always:</span> makes the field mandatory at all times throughout the invoice’s workflow.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 12pt;" class="FMAutoNumber_2"></span></span>If<span style="font-weight : bold; "> On Code-Verify &amp; On Approve,</span>&#160;<span style="font-weight : bold; ">On Approve</span>, or <span style="font-weight : bold; ">Always</span>&#160;is selected, all mandatory fields must contain values for the system to automatically code verify and/or automatically approve the invoice.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Supplier Access:</span>&#160;</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 12pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">None:</span> cannot view or modify the data field.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 12pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">View: </span>has read-only access to the data field.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 12pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Modify:</span> can enter data in the data field.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 12pt;" class="FMAutoNumber_2"></span></span>Selecting <span style="font-weight : bold; ">None</span>&#160;or <span style="font-weight : bold; ">View</span>&#160;will prevent suppliers from being able to populate data in the field. For the <span style="font-weight : bold; ">AFE</span>&#160;and <span style="font-weight : bold; ">Cost Center</span>&#160;fields, the suppliers will not have access to the search controls. <br />Select<span style="font-weight : bold; ">&#160;Modify </span>to allow suppliers to complete the required data field <span style="font-weight : bold; ">On Submit</span>. </p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1" style="font-weight : bold;"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>Buyer Access:</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 12pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">None:</span> cannot view or modify the data field.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 12pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">View: </span>has read-only access to the data field.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 12pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Modify:</span> can enter data in the data field.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Unique Per Invoice: </span>restricting to one or allowing more responses to populate the data field. This applies to Restricted and Header<span style="font-weight : bold; ">&#160;</span>data types only. Selecting this checkbox will allow the user to only select one response. Deselecting this checkbox will allow the user to select more than one response. </p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Editable: </span>allows users with the Invoice Add Data permission to edit<span style="font-weight : bold; ">&#160;</span>Restricted data types after they have been added. Deselecting this checkbox will only permit the original field creator or a user with the Invoice Admin permission to edit the field. </p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Include on Notifications: </span>specifies whether the field response should appear on email notifications.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Exclude from Exports:</span>&#160;specifies whether this field’s response should be included in the export file. </p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Coding Validations: </span>specifies whether the field can be mapped to the general ledger. </p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Include in Smart Coding:</span>&#160;specifies whether this field is included in the Smart Coding. This field only appears for custom reference data fields (also referred to as “flex fields”). </p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Show Description in Allocation Summary:</span>&#160;specifies whether the description for this custom reference data field appears in the Allocation Summary section of the Line Item on the Invoice. </p>
+
+  </div>
+</body>
+</html>

@@ -1,0 +1,9 @@
+<div class="form-group">
+    <input type="file" name="img[]" class="file hide" onchange="$(this).parent().find('.form-control').val($(this).val().replace(/C:\\fakepath\\/i, ''));">
+    <div class="input-group">
+        <input type="text" class="form-control" disabled placeholder="Upload File">
+        <span class="input-group-btn">
+            <button class="browse btn btn-default" type="button" onclick="var file = $(this).parent().parent().parent().find('.file'); file.trigger('click');"><i class="fas fa-search"></i> Browse</button>
+        </span>
+    </div>
+</div>

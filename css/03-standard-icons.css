@@ -1,0 +1,22 @@
+/* rotate the ticket icon 135 degrees */
+.fa-stack {
+    height: 20px;
+    line-height: 1.42857143;
+    width: 1.25em;
+}
+
+.fa-ticket, .fa-ticket-alt {
+     transform: rotate(135deg);
+}
+
+.fa-stack .fa-xs {
+    font-size: 0.6rem;
+    height: 20px;
+    line-height: 20px;
+}
+
+/* adjustment for compliance icons, which have icons appearing on top of fa-shield icons */
+.fa-shield.fa-stack-2x ~ .fa-stack-1x {
+    left: 0.35rem
+}
+

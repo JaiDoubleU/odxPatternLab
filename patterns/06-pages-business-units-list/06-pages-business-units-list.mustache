@@ -1,0 +1,176 @@
+
+{{> organisms-navbar("extraClass":"navbar-fixed-top")}}
+{{> organisms-secondary-navbar("extraClass":"navbar-fixed-top", "pageTitle": "Business Units","hideNextPreviousButtons": true)}}
+
+<div class="container-fluid page-top-padding">
+    <style>
+        .childBusinessUnit td:first-child { text-indent: 2em; }
+    </style>
+
+    <div class="panel panel-default">
+        <div class="panel-body text-right">
+            <button class="btn btn-default" data-toggle="modal" data-target="#addEditBusinessUnitModal">Add a Business Unit</button>
+        </div>
+        <div class="panel-body">
+            <div class="table-responsive">
+                <table class="table table-bordered table-striped table-hover">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Contact Name</th>
+                            <th>Address</th>
+                            <th>City</th>
+                            <th>State/Province</th>
+                            <th>Zip/Postal Code</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><a>ABC Energy Holdings</a></td>
+                            <td>Ed Thompson</td>
+                            <td>6500 Lakeside Blvd</td>
+                            <td>Cheyenne</td>
+                            <td>Wyoming</td>
+                            <td>82001</td>
+                        </tr>
+                        <tr class="childBusinessUnit">
+                            <td><a>ABC Energy Production</a></td>
+                            <td>Greg Winters</td>
+                            <td>76500 South Vista Road</td>
+                            <td>Laurel</td>
+                            <td>Montana</td>
+                            <td>59044</td>
+                        </tr>
+                        <tr class="childBusinessUnit">
+                            <td><a>ABC Energy Midstream</a></td>
+                            <td>Wanda Trelliston</td>
+                            <td>771 Pakside Drive East</td>
+                            <td>Freeport</td>
+                            <td>Maine</td>
+                            <td>04032</td>
+                        </tr>
+
+                        <tr>
+                            <td><a>XYZ Petroleum Sercices, an ABC Energy Company</a></td>
+                            <td>Darren Routers</td>
+                            <td>St. Catherines Street</td>
+                            <td>Camden</td>
+                            <td>South Carolina</td>
+                            <td>29020</td>
+                        </tr>
+                        <tr class="childBusinessUnit">
+                            <td><a>XYZ Appalachia Regional Services</a></td>
+                            <td>Harry Thomas</td>
+                            <td>88501 Barnett Boulevard</td>
+                            <td>Logan</td>
+                            <td>Utah</td>
+                            <td>84321</td>
+                        </tr>
+
+                        <tr>
+                            <td><a>ABC Energy West</a></td>
+                            <td>Waynt Roust</td>
+                            <td>Wintergreen Street</td>
+                            <td>Beaver</td>
+                            <td>West Virginia</td>
+                            <td>25813</td>
+                        </tr>
+                        <tr class="childBusinessUnit">
+                            <td><a>AP Western Region</a></td>
+                            <td>Harry Thomas</td>
+                            <td>88501 Barnett Boulevard</td>
+                            <td>Pinedale</td>
+                            <td>Wyoming</td>
+                            <td>82941</td>
+                        </tr>
+                        <tr class="childBusinessUnit">
+                            <td><a>AR Western Region</a></td>
+                            <td>Prim Tradeston</td>
+                            <td>801 Parnsworth Road</td>
+                            <td>Bellevue</td>
+                            <td>Washington</td>
+                            <td>99004</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div id="addEditBusinessUnitModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg ">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Add/Edit Business Unit</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group has-feedback">
+                        <label class="control-label">Business Unit Name {{>atoms-required-field-indicator}}</label>
+                        <input id="companyName" class="form-control" type="text">
+                        <div class="help-block hide" >A value is required</div>
+                        <span class="fas fa-exclamation-triangle form-control-feedback hide" data-toggle="popover" data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." data-original-title="" title="" ></span>
+                    </div>
+                    <div class="form-group has-feedback">
+                        <label class="control-label">Parent Business Unit {{>atoms-required-field-indicator}}</label>
+                        <select class="form-control" id="sel1">
+                            <option selected>None</option>
+                            <option>ABC Energy Holdings</option>
+                            <option>XYZ Petroleum Sercices, an ABC Energy Company</option>
+                            <option>ABC Energy West</option>
+                        </select>
+                        <div class="help-block hide" >A value is required</div>
+                        <span class="fas fa-exclamation-triangle form-control-feedback hide" data-toggle="popover" data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." data-original-title="" title="" ></span>
+                    </div>
+
+                    <div class="form-group has-feedback">
+                        <label class="control-label">Contact Name  {{>atoms-required-field-indicator}}</label>
+                        <input id="contactName" class="form-control" type="text">
+                        <div class="help-block hide" >A value is required</div>
+
+                        <span class="fas fa-exclamation-triangle form-control-feedback hide" data-toggle="popover" data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." data-original-title="" title="" ></span>
+                    </div>
+                    <div class="form-group has-feedback">
+                        <label class="control-label">Address {{>atoms-required-field-indicator}}</label>
+                        <input id="address" class="form-control" type="text">
+                        <div class="help-block hide" >A value is required</div>
+
+                        <span class="fas fa-exclamation-triangle form-control-feedback hide" data-toggle="popover" data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." data-original-title="" title="" ></span>
+                    </div>
+                    <div class="form-group has-feedback">
+                        <label class="control-label">City {{>atoms-required-field-indicator}}</label>
+                        <input id="city" class="form-control" type="text">
+                        <div class="help-block hide" >A value is required</div>
+
+                        <span class="fas fa-exclamation-triangle form-control-feedback hide" data-toggle="popover" data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." data-original-title="" title="" ></span>
+                    </div>
+                    <div class="form-group has-feedback">
+                        <label class="control-label">State/Province {{>atoms-required-field-indicator}}</label>
+                        <input id="stateProv" class="form-control" type="text">
+                        <div class="help-block hide" >A value is required</div>
+
+                        <span class="fas fa-exclamation-triangle form-control-feedback hide" data-toggle="popover" data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." data-original-title="" title="" ></span>
+                    </div>
+                    <div class="form-group has-feedback">
+                        <label class="control-label">Zip/Postal Code {{>atoms-required-field-indicator}}</label>
+                        <input id="zipPostalCode" class="form-control" type="text">
+                        <div class="help-block hide" >A value is required</div>
+
+                        <span class="fas fa-exclamation-triangle form-control-feedback hide" data-toggle="popover" data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." data-original-title="" title="" ></span>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button id="showErrors" onclick="$('.form-group.has-feedback').toggleClass('has-error'); $('.form-control-feedback').toggleClass('hide'); $('.help-block').toggleClass('hide'); return false;"  type="button" class="btn btn-outline-danger">Toggle Errors</button>
+
+                    <button id="addEditAccountSaveBtn"  data-dismiss="modal" onclick="showAlertDialog('success','The new business unit was added successfully.', true); return false;"  type="button" class="btn btn-success">Save</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $('body').addClass('page-bg');
+</script>

@@ -1,0 +1,417 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+ <title>CodingConfig</title>
+
+ <link rel="stylesheet" href="../../../OpenInvoiceForBuyers_master.css" type="text/css" />
+
+
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style>
+ <meta name="generator" content="Adobe FrameMaker 2017" />
+<script type="text/javascript" src="../../../template/scripts/rh.min.js"></script>
+<script type="text/javascript" src="../../../template/scripts/common.min.js"></script>
+<script type="text/javascript" src="../../../template/scripts/topic.min.js"></script>
+<script type="text/javascript" src="../../../template/scripts/constants.js"></script>
+<script type="text/javascript" src="../../../template/scripts/utils.js"></script>
+<script type="text/javascript" src="../../../template/scripts/mhutils.js"></script>
+<script type="text/javascript" src="../../../template/scripts/mhlang.js"></script>
+<script type="text/javascript" src="../../../template/scripts/mhver.js"></script>
+<script type="text/javascript" src="../../../template/scripts/settings.js"></script>
+<script type="text/javascript" src="../../../template/scripts/XmlJsReader.js"></script>
+<script type="text/javascript" src="../../../template/scripts/loadparentdata.js"></script>
+<script type="text/javascript" src="../../../template/scripts/loadscreen.js"></script>
+<script type="text/javascript" src="../../../template/scripts/loadprojdata.js"></script>
+<script type="text/javascript" src="../../../template/scripts/mhtopic.js"></script>
+ <link rel="stylesheet" type="text/css" href="../../../template/styles/topic.min.css">
+<script type="text/javascript" >
+gRootRelPath = "../../..";
+gCommonRootRelPath = "../../..";
+gTopicId = "1.0_6";
+</script>
+ <meta name="brsprev" value="OpenInvoiceForBuyers_master/Configuration/ChartAccountsConfig/ChartAccountsConfig.htm">
+ <meta name="brsnext" value="OpenInvoiceForBuyers_master/Configuration/SupplierMgmt/SupplierMgmt.htm">
+ <meta name="topic-breadcrumbs" content="Administrator & User Guide for Buyers" />
+</head>
+
+<body dir="ltr">
+<script type="text/javascript" src="../../../ehlpdhtm.js"></script>
+
+ <div dir="ltr">
+  <p dir="ltr" class="FM_Chapter_Title"><a name="XREF_46101_Coding"></a>Coding Configuration</p>
+
+  <p dir="ltr" class="FM_Body_Style">This section provides instructions on how to define the relationships between coding elements. Valid combinations of coding elements are created and applied to tickets and invoices. This section also provides instructions on how general ledger coding is applied to tickets and invoices.</p>
+
+  <p dir="ltr" class="FM_Body_Style">The following topics are applicable to company administrators who oversee configuration of the cost allocation functionalities in <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>:</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><a href="#XREF_73463_Mapping_Cost"><span class="FM_ADP_TG__Link">Mapping Cost Centers to AFEs</span></a></p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><a href="#XREF_40439_Mapping_Cost"><span class="FM_ADP_TG__Link">Mapping Cost Objects to the General Ledger</span></a></p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><a href="#XREF_13173_Mapping_Cost"><span class="FM_ADP_TG__Link">Mapping Cost Object Types to the General Ledger</span></a></p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><a href="#XREF_18624_Configuring_Smart"><span class="FM_ADP_TG__Link">Configuring Smart Coding</span></a></p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><a href="#XREF_38673_Supplier_Coding"><span class="FM_ADP_TG__Link">Supplier Coding</span></a></p>
+
+  <p dir="ltr" class="FM_Heading_1"><a name="XREF_73463_Mapping_Cost"></a>Mapping Cost Centers to AFEs</p>
+
+  <p dir="ltr" class="FM_Body_Style">Limit the cost centers that can be applied to a document by mapping cost centers to AFEs. If an AFE is referenced on a document, only its associated cost centers can be applied.</p>
+
+  <p dir="ltr" class="FM_Heading_2_HowTo">How to Modify the Cost Centers Mapped to an AFE</p>
+
+  <p dir="ltr" class="FM_Permission___Start"><span class="FM_Bold">Permission:<span style="padding-left: 18pt;" class="FMAutoNumber_1"></span></span>Corporate Modify</p>
+
+  <p dir="ltr" class="FM_Prerequisite___Start"><span class="FM_Bold">Prerequisite:<span style="padding-left: 12pt;" class="FMAutoNumber_1"></span></span>AFEs and cost centers must be configured.</p>
+
+  <p dir="ltr" class="FM_Steps"><span class="FM_Bold">Steps:<span style="padding-left: 6pt;" class="FMAutoNumber_1"></span></span></p>
+
+  <p dir="ltr" class="FM_Number_List_1___Start"><span class="FM_Bullet4">1.<span style="padding-left: 11pt;" class="FMAutoNumber_1"></span></span>Select <span style="font-weight : bold; ">Corporate &gt; AFEs</span>. </p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">2.<span style="padding-left: 11pt;" class="FMAutoNumber_1"></span></span>Perform a search for AFEs.</p>
+
+  <p dir="ltr" class="FM_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 12pt;" class="FMAutoNumber_2"></span></span>If criteria is unknown, click <span style="font-weight : bold; ">Apply Filter</span> to return a complete list.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">3.<span style="padding-left: 11pt;" class="FMAutoNumber_1"></span></span>Click the <span style="font-weight : bold; ">Configure Cost Center</span>&#160;icon in the <span style="font-weight : bold; ">Cost Centers</span>&#160;column. </p>
+
+  <div align="center"><img alt="CodingConfig_configurecostcenter.png" id="image70" src="../../../assets/CodingConfig_configurecostcenter.png" style="max-width: 100% ;height: auto" />
+  </div>
+  <p dir="ltr" class="FM_Screenshot_Anchor">&nbsp;</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">4.<span style="padding-left: 11pt;" class="FMAutoNumber_1"></span></span>Do one of the following:</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 12pt;" class="FMAutoNumber_1"></span></span>To add a cost center, enter a <span style="font-weight : bold; ">Cost Center Number</span>&#160;and click <span style="font-weight : bold; ">Add</span>&#160;<span style="font-weight : bold; ">&gt;</span>.</p>
+
+  <p dir="ltr" class="FM_Note_Indent2___Start"><span class="FM_Bold"><span style="padding-left: 36pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 12pt;" class="FMAutoNumber_2"></span></span>If only part of the cost center number is known, an asterisk (*) must be used to denote the unknown part of the number. Click <span style="font-weight : bold; ">Search</span>, select from a list of matching cost centers, and click <span style="font-weight : bold; ">Submit</span>.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 12pt;" class="FMAutoNumber_1"></span></span>To unmap a cost center, select a <span style="font-weight : bold; ">Cost Center Number</span>&#160;in the <span style="font-weight : bold; ">Mapped Cost Centers</span>&#160;column and click <span style="font-weight : bold; ">&lt;&nbsp;Remove</span>.</p>
+
+  <p dir="ltr" class="FM_Note_Indent2___Start"><span class="FM_Bold"><span style="padding-left: 36pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 12pt;" class="FMAutoNumber_2"></span></span>To select multiple items, hold the <span style="font-weight : bold; ">Ctrl</span>&#160;key and select the items. Alternatively, you can hold the <span style="font-weight : bold; ">Shift</span> key to select a range of items.</p>
+
+  <div align="center"><img alt="CodingConfig_mapcostcenter.png" id="image71" src="../../../assets/CodingConfig_mapcostcenter.png" style="max-width: 100% ;height: auto" />
+  </div>
+  <p dir="ltr" class="FM_Screenshot_Anchor">&nbsp;</p>
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">5.<span style="padding-left: 11pt;" class="FMAutoNumber_1"></span></span>Repeat step 4 for each cost center to be added or removed. </p>
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">6.<span style="padding-left: 11pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Submit</span>.</p>
+
+  <p dir="ltr" class="FM_Heading_1"><a name="XREF_40439_Mapping_Cost"></a>Mapping Cost Objects to the General Ledger</p>
+
+  <p dir="ltr" class="FM_Body_Style">Limit the general ledger codes that can be applied to a document by mapping major and minor combinations to an AFE or cost center. If an AFE or cost center is referenced on a document, only its associated general ledger codes can be applied.</p>
+
+  <p dir="ltr" class="FM_Heading_2_HowTo">How to Modify the General Ledger Accounts Mapped to Cost Objects</p>
+
+  <p dir="ltr" class="FM_Permission___Start"><span class="FM_Bold">Permission:<span style="padding-left: 18pt;" class="FMAutoNumber_1"></span></span>Corporate Modify</p>
+
+  <p dir="ltr" class="FM_Prerequisite___Start"><span class="FM_Bold">Prerequisite:<span style="padding-left: 12pt;" class="FMAutoNumber_1"></span></span>Cost objects and the chart of accounts must be configured.</p>
+
+  <p dir="ltr" class="FM_Steps"><span class="FM_Bold">Steps:<span style="padding-left: 6pt;" class="FMAutoNumber_1"></span></span></p>
+
+  <p dir="ltr" class="FM_Number_List_1___Start"><span class="FM_Bullet4">1.<span style="padding-left: 11pt;" class="FMAutoNumber_1"></span></span>Select <span style="font-weight : bold; ">Corporate </span>&gt; <span style="font-weight : bold; ">AFEs</span>&#160;or <span style="font-weight : bold; ">Corporate </span>&gt; <span style="font-weight : bold; ">Cost Centers.</span></p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">2.<span style="padding-left: 11pt;" class="FMAutoNumber_1"></span></span>Perform a search for the cost object.</p>
+
+  <p dir="ltr" class="FM_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 12pt;" class="FMAutoNumber_2"></span></span>If criteria is unknown, type an asterisk (*) into one of the fields and click <span style="font-weight : bold; ">Apply Filter</span>.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">3.<span style="padding-left: 11pt;" class="FMAutoNumber_1"></span></span>Click the <span style="font-weight : bold; ">Configure Major Accounts</span>&#160;icon in the <span style="font-weight : bold; ">Major/Minor</span> column.</p>
+
+  <div align="center"><img alt="CodingConfig_configuremajorcostcenter.png" id="image72" src="../../../assets/CodingConfig_configuremajorcostcenter.png" style="max-width: 100% ;height: auto" />
+  </div>
+  <p dir="ltr" class="FM_Screenshot_Anchor">&nbsp;</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">4.<span style="padding-left: 11pt;" class="FMAutoNumber_1"></span></span>Do one of the following:</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 12pt;" class="FMAutoNumber_1"></span></span>To add an account mapping, select an account in the <span style="font-weight : bold; ">Major Accounts</span>&#160;column, select one or more accounts in the <span style="font-weight : bold; ">Minor Accounts</span>&#160;column, and click <span style="font-weight : bold; ">Add &gt;</span>.</p>
+
+  <p dir="ltr" class="FM_Note_Indent2___Start"><span class="FM_Bold"><span style="padding-left: 36pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 12pt;" class="FMAutoNumber_2"></span></span>If general ledger accounts have been mapped to cost object types, only the accounts mapped to the cost object’s assigned type will be available for mapping.</p>
+
+  <p dir="ltr" class="FM_Note_Indent2___Next"><span class="FM_Bold"><span style="padding-left: 72pt;" class="FMAutoNumber_1"></span></span>Select the asterisk (*) to map the entire major account. </p>
+
+  <p dir="ltr" class="FM_Note_Indent2___Next"><span class="FM_Bold"><span style="padding-left: 72pt;" class="FMAutoNumber_1"></span></span>To select multiple items at once, hold the<span style="font-weight : bold; "> Ctrl</span>&#160;key and select the items. Alternatively, hold the <span style="font-weight : bold; ">Shift </span>key to select a range of items. </p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 12pt;" class="FMAutoNumber_1"></span></span>To unmap an account, select an account in the <span style="font-weight : bold; ">Mapped</span>&#160;column and click <span style="font-weight : bold; ">&lt; Remove</span>.</p>
+
+  <div align="center"><img alt="CodingConfig_mapmajorcostcenter.png" id="image73" src="../../../assets/CodingConfig_mapmajorcostcenter.png" style="max-width: 100% ;height: auto" />
+  </div>
+  <p dir="ltr" class="FM_Screenshot_Anchor">&nbsp;</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">5.<span style="padding-left: 11pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Submit</span>.</p>
+
+  <p dir="ltr" class="FM_Heading_1"><a name="XREF_13173_Mapping_Cost"></a>Mapping Cost Object Types to the General Ledger</p>
+
+  <p dir="ltr" class="FM_Body_Style">Limit the general codes that can be applied to a document by mapping major and minor combinations to an AFE type or cost center type. If an AFE or cost center is referenced on a document, only the general ledger codes associated with the AFE or cost center’s assigned type can be applied.</p>
+
+  <p dir="ltr" class="FM_Heading_2_HowTo">How to Modify the General Ledger Accounts Mapped to Cost Object Types</p>
+
+  <p dir="ltr" class="FM_Body_Style">This section describes how to modify the general ledger accounts mapped to cost object types for AFE Types and Cost Center Types. </p>
+
+  <p dir="ltr" class="FM_Heading_4">To modify the general ledger accounts mapped to cost object types for AFE Type: </p>
+
+  <p dir="ltr" class="FM_Permission___Start"><span class="FM_Bold">Permission:<span style="padding-left: 18pt;" class="FMAutoNumber_1"></span></span>Corporate Modify</p>
+
+  <p dir="ltr" class="FM_Prerequisite___Start"><span class="FM_Bold">Prerequisite:<span style="padding-left: 12pt;" class="FMAutoNumber_1"></span></span>Cost object types and the chart of accounts must be configured.</p>
+
+  <p dir="ltr" class="FM_Steps"><span class="FM_Bold">Steps:<span style="padding-left: 6pt;" class="FMAutoNumber_1"></span></span></p>
+
+  <p dir="ltr" class="FM_Number_List_1___Start"><span class="FM_Bullet4">1.<span style="padding-left: 11pt;" class="FMAutoNumber_1"></span></span>Select <span style="font-weight : bold; ">Corporate &gt; COA Setup</span>.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">2.<span style="padding-left: 11pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Coding Validation</span>.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">3.<span style="padding-left: 11pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">AFE Type</span>&#160;under the <span style="font-weight : bold; ">Validation Type</span>&#160;column. &#160;</p>
+
+  <div align="center"><img alt="CodingConfig_codingvalidation.png" id="image74" src="../../../assets/CodingConfig_codingvalidation.png" style="max-width: 100% ;height: auto" />
+  </div>
+  <p dir="ltr" class="FM_Screenshot_Anchor">&nbsp;</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">4.<span style="padding-left: 11pt;" class="FMAutoNumber_1"></span></span>Click one of the AFE types under the <span style="font-weight : bold; ">AFE Type</span> column.</p>
+
+  <div align="center"><img alt="inset_0.jpg" id="image75" src="../../../assets/inset_0.jpg" style="max-width: 100% ;height: auto" />
+  </div>
+  <p dir="ltr" class="FM_Screenshot_Anchor">&nbsp;</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">5.<span style="padding-left: 11pt;" class="FMAutoNumber_1"></span></span>Do one of the following:</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 12pt;" class="FMAutoNumber_1"></span></span>To map an account, select an account in the <span style="font-weight : bold; ">Major Accounts</span>&#160;column, select one or more accounts in the <span style="font-weight : bold; ">Minor Accounts</span>&#160;column, and click <span style="font-weight : bold; ">Add &gt;</span>.</p>
+
+  <p dir="ltr" class="FM_Note_Indent2___Start"><span class="FM_Bold"><span style="padding-left: 36pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 12pt;" class="FMAutoNumber_2"></span></span>Select the asterisk (*) to map the entire major account.</p>
+
+  <p dir="ltr" class="FM_Note_Indent2___Next"><span class="FM_Bold"><span style="padding-left: 72pt;" class="FMAutoNumber_1"></span></span>To select multiple items at once, hold the<span style="font-weight : bold; "> Ctrl</span>&#160;key and select the items. Alternatively, hold the <span style="font-weight : bold; ">Shift </span>key to select a range of items. </p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 12pt;" class="FMAutoNumber_1"></span></span>To unmap an account, select an account in the <span style="font-weight : bold; ">Mapped</span>&#160;column and click <span style="font-weight : bold; ">&lt; Remove</span>.</p>
+
+  <div align="center"><img alt="CodingConfig_mapcostcentertype.png" id="image76" src="../../../assets/CodingConfig_mapcostcentertype.png" style="max-width: 100% ;height: auto" />
+  </div>
+  <p dir="ltr" class="FM_Screenshot_Anchor">&nbsp;</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">6.<span style="padding-left: 11pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Submit.</span></p>
+
+  <p dir="ltr" class="FM_Heading_4">To modify the general ledger accounts mapped to cost object types for Cost Center Type: </p>
+
+  <p dir="ltr" class="FM_Permission___Start"><span class="FM_Bold">Permission:<span style="padding-left: 18pt;" class="FMAutoNumber_1"></span></span>Corporate Modify</p>
+
+  <p dir="ltr" class="FM_Prerequisite___Start"><span class="FM_Bold">Prerequisite:<span style="padding-left: 12pt;" class="FMAutoNumber_1"></span></span>Cost object types and the chart of accounts must be configured.</p>
+
+  <p dir="ltr" class="FM_Steps"><span class="FM_Bold">Steps:<span style="padding-left: 6pt;" class="FMAutoNumber_1"></span></span></p>
+
+  <p dir="ltr" class="FM_Number_List_1___Start"><span class="FM_Bullet4">1.<span style="padding-left: 11pt;" class="FMAutoNumber_1"></span></span>Select <span style="font-weight : bold; ">Corporate &gt; COA Setup</span>.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">2.<span style="padding-left: 11pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Coding Validation</span>.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">3.<span style="padding-left: 11pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Cost Center Type</span>&#160;under the <span style="font-weight : bold; ">Validation Type</span>&#160;column. &#160;</p>
+
+  <div align="center"><img alt="CodingConfig_codingvalidation.png" id="image77" src="../../../assets/CodingConfig_codingvalidation.png" style="max-width: 100% ;height: auto" />
+  </div>
+  <p dir="ltr" class="FM_Screenshot_Anchor">&nbsp;</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">4.<span style="padding-left: 11pt;" class="FMAutoNumber_1"></span></span>Click one of the cost center types under the <span style="font-weight : bold; ">Cost Center Type</span> column.</p>
+
+  <div align="center"><img alt="CodingConfig_configurecostcentertype.png" id="image78" src="../../../assets/CodingConfig_configurecostcentertype.png" style="max-width: 100% ;height: auto" />
+  </div>
+  <p dir="ltr" class="FM_Screenshot_Anchor">&nbsp;</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">5.<span style="padding-left: 11pt;" class="FMAutoNumber_1"></span></span>Do one of the following:</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 12pt;" class="FMAutoNumber_1"></span></span>To map an account, select an account in the <span style="font-weight : bold; ">Major Accounts</span>&#160;column, select one or more accounts in the <span style="font-weight : bold; ">Minor Accounts</span>&#160;column, and click <span style="font-weight : bold; ">Add &gt;</span>.</p>
+
+  <p dir="ltr" class="FM_Note_Indent2___Start"><span class="FM_Bold"><span style="padding-left: 36pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 12pt;" class="FMAutoNumber_2"></span></span>Select the asterisk (*) to map the entire major account.</p>
+
+  <p dir="ltr" class="FM_Note_Indent2___Next"><span class="FM_Bold"><span style="padding-left: 72pt;" class="FMAutoNumber_1"></span></span>To select multiple items at once, hold the<span style="font-weight : bold; "> Ctrl</span>&#160;key and select the items. Alternatively, hold the <span style="font-weight : bold; ">Shift </span>key to select a range of items. </p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 12pt;" class="FMAutoNumber_1"></span></span>To unmap an account, select an account in the <span style="font-weight : bold; ">Mapped</span>&#160;column and click <span style="font-weight : bold; ">&lt; Remove</span>.</p>
+
+  <div align="center"><img alt="CodingConfig_mapcostcentertype.png" id="image79" src="../../../assets/CodingConfig_mapcostcentertype.png" style="max-width: 100% ;height: auto" />
+  </div>
+  <p dir="ltr" class="FM_Screenshot_Anchor">&nbsp;</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">6.<span style="padding-left: 11pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Submit.</span></p>
+
+  <p dir="ltr" class="FM_Heading_1"><a name="XREF_18624_Configuring_Smart"></a>Configuring Smart Coding</p>
+
+  <p dir="ltr" class="FM_Body_Style">Smart Coding automatically codes invoices based on either:</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>the coding applied in previously saved approved or code-verified invoices, or</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>smart coding rules that you import into OpenInvoice</p>
+
+  <p dir="ltr" class="FM_Body_Style">There are two steps to configuring Smart Coding:</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Start"><span class="FM_Bullet4">1.<span style="padding-left: 11pt;" class="FMAutoNumber_1"></span></span>A user with the Corporate Admin permission configures the data elements that are available to Smart Code an invoice.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">2.<span style="padding-left: 11pt;" class="FMAutoNumber_1"></span></span>A user with the Corporate Partnership permission enables the <span style="font-weight : bold; ">Smart Coding</span> function for suppliers.</p>
+
+  <p dir="ltr" class="FM_Heading_2_HowTo">How to Configure the Smart Coding Data Elements</p>
+  <p dir="ltr" class="FM_Body_Style">Smart Coding uses the selected data elements (inputs) on an invoice line item and uses the selected data elements to decide the coding values to add (outputs) to the invoice line item. </p>
+
+  <p dir="ltr" class="FM_Permission___Start"><span class="FM_Bold">Permission:<span style="padding-left: 18pt;" class="FMAutoNumber_1"></span></span>Corporate Admin</p>
+
+  <p dir="ltr" class="FM_Steps"><span class="FM_Bold">Steps:<span style="padding-left: 6pt;" class="FMAutoNumber_1"></span></span></p>
+
+  <p dir="ltr" class="FM_Number_List_1___Start"><span class="FM_Bullet4">1.<span style="padding-left: 11pt;" class="FMAutoNumber_1"></span></span>Select <span style="font-weight : bold; ">Corporate &gt; Workflow Configuration</span>.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">2.<span style="padding-left: 11pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Configure Smart Coding</span>.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">3.<span style="padding-left: 11pt;" class="FMAutoNumber_1"></span></span>Select the data elements that are available for the automatic coding rules.</p>
+
+  <p dir="ltr" class="FM_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 12pt;" class="FMAutoNumber_2"></span></span>&#160;<span style="font-weight : bold; ">Product/Service</span>, <span style="font-weight : bold; ">Buyer Site</span>, <span style="font-weight : bold; ">AFE Type</span>, <span style="font-weight : bold; ">Cost Center Type</span>,<span style="font-weight : bold; ">&#160;</span>and <span style="font-weight : bold; ">OIR Activity Type</span> (<span style="font-style : italic; ">receipts only</span>) are used to compare elements on previously approved invoices with the ready-to-be-coded document.</p>
+  <p dir="ltr" class="FM_Note_Indent___Next"><span class="FM_Bold"><span style="padding-left: 54pt;" class="FMAutoNumber_1"></span></span>Supplier company is a system-required field and pre-selected for smart coding inputs. </p>
+  <p dir="ltr" class="FM_Note_Indent___Next"><span class="FM_Bold"><span style="padding-left: 54pt;" class="FMAutoNumber_1"></span></span>Major, Minor and Subcode fields are system-required fields and pre-selected for smart coding outputs. </p>
+
+  <div align="center"><img alt="CodingConfig_configuresmartcoding.png" id="image80" src="../../../assets/CodingConfig_configuresmartcoding.png" style="max-width: 100% ;height: auto" />
+  </div>
+  <p dir="ltr" class="FM_Screenshot_Anchor">&nbsp;</p>
+  <p dir="ltr" class="FM_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 12pt;" class="FMAutoNumber_2"></span></span>The OIR Activity Type only applies to OI receipts using smart coding rules. The OI receipts functionality is obsolete and no longer supported. This option will be removed from the platform in a future release. </p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">4.<span style="padding-left: 11pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Submit</span>.</p>
+
+  <p dir="ltr" class="FM_Heading_2_HowTo">How to Configure Smart Coding Static Rules</p>
+
+  <p dir="ltr" class="FM_Body_Style">You can set static smart coding rules by importing Smart Coding rules into OpenInvoice. These rules will always override historical Smart Coding settings. </p>
+
+  <p dir="ltr" class="FM_Prerequisite___Start"><span class="FM_Bold">Prerequisite:<span style="padding-left: 12pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Company Preferences</span>&#160;&gt; <span style="font-weight : bold; ">Populate Smart-Coding From Invoice</span>&#160;must be set to <span style="font-weight : bold; ">Never</span>&#160;</p>
+
+  <p dir="ltr" class="FM_Permission___Start"><span class="FM_Bold">Permission:<span style="padding-left: 18pt;" class="FMAutoNumber_1"></span></span>Corporate Admin</p>
+
+  <p dir="ltr" class="FM_Steps"><span class="FM_Bold">Steps:<span style="padding-left: 6pt;" class="FMAutoNumber_1"></span></span></p>
+
+  <p dir="ltr" class="FM_Number_List_1___Start"><span class="FM_Bullet4">1.<span style="padding-left: 11pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Export</span>&#160;to download and save a copy of your existing Smart Coding rules in a file. The downloaded file will be in TSV format.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">2.<span style="padding-left: 11pt;" class="FMAutoNumber_1"></span></span>In the file, add new smart coding rules, modify or delete existing rules.</p>
+
+  <p dir="ltr" class="FM_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 12pt;" class="FMAutoNumber_2"></span></span>Actions are Add, Modify, or Delete. For rules you do not want to change the Action column should remain Leave.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">3.<span style="padding-left: 11pt;" class="FMAutoNumber_1"></span></span>To upload a file to <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>, click <span style="font-weight : bold; ">Import</span>, navigate to the file on your computer, and click <span style="font-weight : bold; ">Open</span>.</p>
+
+  <p dir="ltr" class="FM_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 12pt;" class="FMAutoNumber_2"></span></span>The uploaded file must be in TSV format.</p>
+
+  <p dir="ltr" class="FM_Heading_2_HowTo">How to <a name="XREF_82327_How_to_Configure"></a>Configure Smart Coding for Supplier Sites</p>
+
+  <p dir="ltr" class="FM_Body_Style">You can modify the Smart Coding setting for supplier sites across multiple companies or within a single company. </p>
+
+  <p dir="ltr" class="FM_Heading_4">To modify the Smart Coding setting for supplier sites across multiple companies:</p>
+
+  <p dir="ltr" class="FM_Permission___Start"><span class="FM_Bold">Permission:<span style="padding-left: 18pt;" class="FMAutoNumber_1"></span></span>Corporate Partnership</p>
+
+  <p dir="ltr" class="FM_Prerequisite___Start"><span class="FM_Bold">Prerequisite:<span style="padding-left: 12pt;" class="FMAutoNumber_1"></span></span>The supplier site must be enabled for transactions.</p>
+
+  <p dir="ltr" class="FM_Steps"><span class="FM_Bold">Steps:<span style="padding-left: 6pt;" class="FMAutoNumber_1"></span></span></p>
+
+  <p dir="ltr" class="FM_Number_List_1___Start"><span class="FM_Bullet4">1.<span style="padding-left: 11pt;" class="FMAutoNumber_1"></span></span>Select <span style="font-weight : bold; ">Corporate &gt; Suppliers</span>.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">2.<span style="padding-left: 11pt;" class="FMAutoNumber_1"></span></span>In the <span style="font-weight : bold; ">Suppliers</span>&#160;section, click the <span style="font-weight : bold; ">Enabled</span> counter.</p>
+
+  <p dir="ltr" class="FM_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 12pt;" class="FMAutoNumber_2"></span></span>Apply a filter to narrow the list of supplier sites. Sort the list by clicking a column header.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">3.<span style="padding-left: 11pt;" class="FMAutoNumber_1"></span></span>Select the checkbox for each site.</p>
+
+  <p dir="ltr" class="FM_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 12pt;" class="FMAutoNumber_2"></span></span>To select all sites, select the checkbox in the header.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">4.<span style="padding-left: 11pt;" class="FMAutoNumber_1"></span></span>Click the down arrow on the <span style="font-weight : bold; ">Select an Action </span>button.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">5.<span style="padding-left: 11pt;" class="FMAutoNumber_1"></span></span>Select either <span style="font-weight : bold; ">Enable Smart Coding</span>&#160;or <span style="font-weight : bold; ">Disable Smart Coding</span>.</p>
+
+  <div align="center"><img alt="CodingConfig_enablesmartcodingbatch.png" id="image81" src="../../../assets/CodingConfig_enablesmartcodingbatch.png" style="max-width: 100% ;height: auto" />
+  </div>
+  <p dir="ltr" class="FM_Screenshot_Anchor">&nbsp;</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">6.<span style="padding-left: 11pt;" class="FMAutoNumber_1"></span></span>To modify this setting for supplier sites that are on another page in the list, navigate to the page and repeat steps 3 through 5.</p>
+
+  <p dir="ltr" class="FM_Heading_4">To modify the Smart Coding setting for supplier sites within a single company:</p>
+
+  <p dir="ltr" class="FM_Permission___Start"><span class="FM_Bold">Permission:<span style="padding-left: 18pt;" class="FMAutoNumber_1"></span></span>Corporate Partnership</p>
+
+  <p dir="ltr" class="FM_Prerequisite___Start"><span class="FM_Bold">Prerequisite:<span style="padding-left: 12pt;" class="FMAutoNumber_1"></span></span>The supplier site must be enabled for transactions.</p>
+
+  <p dir="ltr" class="FM_Steps"><span class="FM_Bold">Steps:<span style="padding-left: 6pt;" class="FMAutoNumber_1"></span></span></p>
+
+  <p dir="ltr" class="FM_Number_List_1___Start"><span class="FM_Bullet4">1.<span style="padding-left: 11pt;" class="FMAutoNumber_1"></span></span>Select <span style="font-weight : bold; ">Corporate &gt; Suppliers</span>.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">2.<span style="padding-left: 11pt;" class="FMAutoNumber_1"></span></span>In the <span style="font-weight : bold; ">Suppliers</span>&#160;section, click the <span style="font-weight : bold; ">Enabled</span> counter.</p>
+
+  <p dir="ltr" class="FM_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 12pt;" class="FMAutoNumber_2"></span></span>Apply a filter to narrow the list of supplier sites. Sort the list by clicking a column header.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">3.<span style="padding-left: 11pt;" class="FMAutoNumber_1"></span></span>Click the <span style="font-weight : bold; ">Supplier Site</span>.</p>
+
+  <div align="center"><img alt="CodingConfig_enablesmartcodingbatchSupplierconfig.png" id="image82" src="../../../assets/CodingConfig_enablesmartcodingbatchSupplierconfig.png" style="max-width: 100% ;height: auto" />
+  </div>
+  <p dir="ltr" class="FM_Screenshot_Anchor">&nbsp;</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">4.<span style="padding-left: 11pt;" class="FMAutoNumber_1"></span></span>On the <span style="font-weight : bold; ">Supplier Configuration</span>&#160;page, click <span style="font-weight : bold; ">Edit</span>&#160;in the <span style="font-weight : bold; ">Early Pay Programs</span> section.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">5.<span style="padding-left: 11pt;" class="FMAutoNumber_1"></span></span>In the Settings section select the <span style="font-weight : bold; ">Enable Smart Coding</span> checkbox.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">6.<span style="padding-left: 11pt;" class="FMAutoNumber_1"></span></span>In the Supplier Sites section select the checkbox for each site to be modified.</p>
+
+  <p dir="ltr" class="FM_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 12pt;" class="FMAutoNumber_2"></span></span>Select the checkbox in the list header to select all sites in the list.</p>
+
+  <p dir="ltr" class="FM_Note_Indent___Next"><span class="FM_Bold"><span style="padding-left: 54pt;" class="FMAutoNumber_1"></span></span>All settings, including the <span style="font-weight : bold; ">Supplier Number</span>, are applied to the selected sites.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">7.<span style="padding-left: 11pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Apply to Selected</span>.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">8.<span style="padding-left: 11pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Done</span>.</p>
+
+  <p dir="ltr" class="FM_Heading_1"><a name="XREF_38673_Supplier_Coding"></a>Supplier Coding</p>
+
+  <p dir="ltr" class="FM_Body_Style">Supplier coding allows suppliers to enter general ledger coding on the tickets and invoices they submit. Suppliers only have the ability to enter the values that you provide to them. They do not have the ability to search through your chart of accounts.</p>
+
+  <p dir="ltr" class="FM_Heading_2_HowTo">How to Allow Supplier Coding for Sites in a Single Supplier Company</p>
+
+  <p dir="ltr" class="FM_Permission___Start"><span class="FM_Bold">Permission:<span style="padding-left: 18pt;" class="FMAutoNumber_1"></span></span>Corporate Partnership</p>
+
+  <p dir="ltr" class="FM_Prerequisite___Start"><span class="FM_Bold">Prerequisite:<span style="padding-left: 12pt;" class="FMAutoNumber_1"></span></span>The supplier must be registered and enabled for transactions.</p>
+
+  <p dir="ltr" class="FM_Steps"><span class="FM_Bold">Steps:<span style="padding-left: 6pt;" class="FMAutoNumber_1"></span></span></p>
+
+  <p dir="ltr" class="FM_Number_List_1___Start"><span class="FM_Bullet4">1.<span style="padding-left: 11pt;" class="FMAutoNumber_1"></span></span>Select <span style="font-weight : bold; ">Corporate &gt; Suppliers</span>.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">2.<span style="padding-left: 11pt;" class="FMAutoNumber_1"></span></span>In the <span style="font-weight : bold; ">Suppliers </span>section, click the <span style="font-weight : bold; ">Enabled</span> counter.</p>
+
+  <p dir="ltr" class="FM_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 12pt;" class="FMAutoNumber_2"></span></span>Apply a filter to narrow the list of supplier sites. Sort the list by clicking a column header.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">3.<span style="padding-left: 11pt;" class="FMAutoNumber_1"></span></span>Click the <span style="font-weight : bold; ">Supplier Site</span> name.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">4.<span style="padding-left: 11pt;" class="FMAutoNumber_1"></span></span>In the <span style="font-weight : bold; ">Early Pay Programs</span>&#160;section, click <span style="font-weight : bold; ">Edit</span>.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">5.<span style="padding-left: 11pt;" class="FMAutoNumber_1"></span></span>In the Settings section select the <span style="font-weight : bold; ">Allow Supplier Coding</span> checkbox.</p>
+
+  <div align="center"><img alt="CodingConfig_allowsuppliercoding.png" id="image83" src="../../../assets/CodingConfig_allowsuppliercoding.png" style="max-width: 100% ;height: auto" />
+  </div>
+  <p dir="ltr" class="FM_Screenshot_Anchor">&nbsp;</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">6.<span style="padding-left: 11pt;" class="FMAutoNumber_1"></span></span>In the Supplier Sites section, select the checkbox for each site.</p>
+
+  <p dir="ltr" class="FM_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 12pt;" class="FMAutoNumber_2"></span></span>To select all sites, select the checkbox in the header.</p>
+
+  <p dir="ltr" class="FM_Note_Indent___Next"><span class="FM_Bold"><span style="padding-left: 54pt;" class="FMAutoNumber_1"></span></span>All settings, including the <span style="font-weight : bold; ">Supplier Number,</span> will be applied to your selected sites.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">7.<span style="padding-left: 11pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Apply to Selected</span>.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">8.<span style="padding-left: 11pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Done</span>.</p>
+  <p dir="ltr" class="FM_Body_Style">&nbsp;</p>
+ </div>
+</body>
+
+</html>
+

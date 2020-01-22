@@ -1,0 +1,32 @@
+<!-- Content -->
+<link preload rel="stylesheet" href="../../css/digital-signature.css" media="all">
+<div class="row">
+    <div class="col-sm-12">
+        <p>Sign in the canvas below and save your signature as an image!</p>
+    </div>
+</div>
+<div class="form-group">
+    <div class="row">
+        <div class="col-sm-4">
+            <canvas id="sig-canvas">
+                Your browser is obsolete.
+            </canvas>    
+        </div>
+        <div class="col-sm-4">
+            <img id="sig-image" class="clearfix" style="display:none;" src=""/>
+        </div>
+    </div>
+</div>
+<div class="form-group">
+    <button class="btn btn-primary" id="sig-submitBtn">Submit Signature</button>
+    <button class="btn btn-default" id="sig-clearBtn">Clear Signature</button>
+</div>
+<div class="form-group">
+    <div class="row">
+        <div class="col-sm-4">
+            <label class="control-label">Encoded Signature Data:</label>
+            <textarea id="sig-dataUrl" class="form-control" rows="5">Data URL for your signature will go here!</textarea>
+        </div>
+    </div>
+</div>
+<script src="../../js/digital-signature.js"></script>

@@ -1,0 +1,677 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+ <title>InvoiceCoding</title>
+
+ <link rel="stylesheet" href="../../../../OpenInvoiceForBuyers_master.css" type="text/css" />
+
+
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style>
+ <meta name="generator" content="Adobe FrameMaker 2017" />
+<script type="text/javascript" src="../../../../template/scripts/rh.min.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/common.min.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/topic.min.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/constants.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/utils.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/mhutils.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/mhlang.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/mhver.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/settings.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/XmlJsReader.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/loadparentdata.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/loadscreen.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/loadprojdata.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/mhtopic.js"></script>
+ <link rel="stylesheet" type="text/css" href="../../../../template/styles/topic.min.css">
+<script type="text/javascript" >
+gRootRelPath = "../../../..";
+gCommonRootRelPath = "../../../..";
+gTopicId = "1.8_4";
+</script>
+ <meta name="brsprev" value="OpenInvoiceForBuyers_master/Invoices/Invoice_Workflow/InvoiceWorkflow/InvoiceWorkflow.htm">
+ <meta name="brsnext" value="OpenInvoiceForBuyers_master/Invoices/Transaction_Upload/TransactionUpload/TransactionUpload.htm">
+ <meta name="topic-breadcrumbs" content="Administrator & User Guide for Buyers" />
+</head>
+
+<body dir="ltr">
+<script type="text/javascript" src="../../../../ehlpdhtm.js"></script>
+
+ <div dir="ltr">
+  <p dir="ltr" class="FM_Chapter_Title">Invoice Coding</p>
+
+  <p dir="ltr" class="FM_Body_Style">Coding is the process of allocating the costs (expenses) associated with invoices to the appropriate cost objects and general ledger codes.</p>
+
+  <p dir="ltr" class="FM_Body_Style">The following topics are applicable to users who review invoices for approval:</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><a href="#XREF_15886_Automatic_Invoice"><span class="FM_ADP_TG__Link">Automatic Invoice Coding</span></a></p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><a href="#XREF_97271_Invoice_Coding"><span class="FM_ADP_TG__Link">Invoice Coding Page Overview</span></a></p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><a href="#XREF_78129_Applying_Coding_to"><span class="FM_ADP_TG__Link">Applying Coding to Coding Records</span></a></p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><a href="#XREF_69377_Coding_Image"><span class="FM_ADP_TG__Link">Coding Image Invoice Taxes</span></a></p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><a href="#XREF_57000_Split_Coding"><span class="FM_ADP_TG__Link">Split Coding</span></a></p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><a href="#XREF_32086_Coding_Templates"><span class="FM_ADP_TG__Link">Coding Templates</span></a></p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><a href="#XREF_22754_Check_Coding"><span class="FM_ADP_TG__Link">Check Coding</span></a></p>
+
+  <p dir="ltr" class="FM_Heading_2">Coding Process</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>Coding is added to line items and verified before the invoice is approved for payment. Depending on the workflow your company uses, this may be before or after the financial approval process.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>Based on your company configuration, suppliers may add cost objects and general ledger coding to the invoice prior to submitting the invoice. If the supplier enters values on an invoice that do not exist in the platform, they will be removed when the invoice is submitted. <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>&#160;does not notify the buyer or supplier when invalid coding is removed.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>During the invoice submission process, <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>&#160;will attempt to automatically apply cost objects and general ledger coding to the invoice based on your configuration, the documents (field tickets and/or purchase order) linked to the invoice, and/or the supplier entered values.</p>
+
+  <p dir="ltr" class="FM_Heading_2">Coding Business Rules</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>Your company administrator has configured the chart of accounts and business rules to determine when the cost objects, general ledger coding, field/lease, asset, location, operational categories, and purchase order information are required and the relationships between their data values. You can enter and save data that violates the rules, but you will not be able to code verify the invoice until the invoice passes all rules.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>A tax can be mapped to a general ledger code so the code is automatically applied to the line for the tax. The general ledger codes applied to mapped taxes cannot be modified and additional cost objects cannot be added to the tax.</p>
+
+  <p dir="ltr" class="FM_Heading_1"><span style="font-weight : normal; font-size  : 10.0pt; "><a name="XREF_15886_Automatic_Invoice"></a></span>Automatic Invoice Coding</p>
+
+  <p dir="ltr" class="FM_Body_Style">As suppliers submit invoices, either through integration or by <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>&#160;entry, the platform will attempt to apply cost objects (AFE and cost center) and general ledger coding (major, minor and subcode) values to the invoice’s lines. The AFE, cost center, and general ledger coding fields are all processed independently of one another, so an invoice line may take the AFE from one source and general ledger coding from another, for example. Any coding that is applied from a field ticket, purchase order, or supplier is validated before the platform submits the invoice.</p>
+
+  <p dir="ltr" class="FM_Body_Style">The platform will give priority to cost object and general ledger coding values you have previously reviewed or provided for the specific invoice. If your company has enabled supplier sites with the <span style="font-weight : bold; ">Enable Smart Coding </span>setting, the platform will attempt to use general ledger coding values from previously approved or code verified invoices with the same attributes. </p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>The major/minor/subcode string must be a valid chart of accounts mapping in your platform. </p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>If the company preference <span style="font-weight : bold; ">Parse Format for Supplier Coding</span>&#160;is enabled, the general ledger coding on invoices submitted through integration must adhere to the configured format.</p>
+
+  <p dir="ltr" class="FM_Body_Style">The following diagram illustrates the platform’s process of determining the initial coding source when an invoice is created. The process also includes general ledger coding validity and how to populate missing general ledger coding during the invoice submission process.</p>
+  <div align="center"><img alt="InvoiceCoding_autocodinginvoice_new.png" id="image330" src="../../../../assets/InvoiceCoding_autocodinginvoice_new.png" style="max-width: 100% ;height: auto" />
+  </div>
+  <p dir="ltr" class="FM_Heading_2">Cost Objects</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Start"><span class="FM_Bullet4">1.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Field Ticket:</span>&#160;If the invoice line refers to a field ticket, the platform will try to apply the AFE and cost center on the field ticket line. </p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">2.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Purchase Order: </span>If the invoice line does not refer to a field ticket or the field ticket line does not include a cost object, the platform will try to apply the cost objects on the purchase order line referenced on the invoice line.</p>
+
+  <p dir="ltr" class="FM_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 13pt;" class="FMAutoNumber_2"></span></span>If the supplier modifies the PO and PO line reference on an invoice line, the cost objects on the PO line will overwrite the cost objects on the invoice line regardless of whether the invoice line refers to a field ticket or not.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">3.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Supplier (user interface):</span>&#160;If the supplier modifies the AFE and/or cost center from the values taken from the field ticket or purchase order, the supplier entered values are submitted to the buyer. The platform does not revert the values back to the values on the field ticket or purchase order.</p>
+
+  <p dir="ltr" class="FM_Body_Indent"><span style="font-weight : bold; ">Supplier (integration):</span>&#160;If the invoice line does not refer to a field ticket or purchase order line or the referenced document does not include cost objects, the platform uses the AFE and/or cost center contained in the invoice file. The invoice file may contain cost objects in the header or on the individual lines. The platform will use the cost objects on the individual lines first. If there is no cost object on a line, the cost object in the header will be applied.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">4.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>The platform validates the applied AFE and cost center. If they do not exist on the buyer’s side, they are removed. If valid cost objects cannot be found in any of the above sources, the invoice line is submitted to the buyer without cost objects.</p>
+
+  <p dir="ltr" class="FM_Heading_2">General Ledger Coding</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Start"><span class="FM_Bullet4">1.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Field Ticket:</span>&#160;If the invoice refers to a field ticket, the platform will try to apply the general ledger coding on the field ticket line. </p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">2.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Purchase Order: </span>If the invoice does not refer to a field ticket or the field ticket does not include general ledger coding, the platform will try to apply the general ledger coding on the purchase order line referenced on the invoice line.</p>
+
+  <p dir="ltr" class="FM_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 13pt;" class="FMAutoNumber_2"></span></span>If the supplier modifies the PO and PO line reference on an invoice line, the general ledger coding on the PO line will overwrite the general ledger coding on the invoice line regardless of whether the invoice line refers to a field ticket or not.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">3.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Supplier (user interface):</span>&#160;If the supplier modifies the general ledger coding from the values taken from the field ticket or purchase order line, the supplier entered values are submitted to the buyer. The platform does not revert the values back to the values on the field ticket or purchase order. </p>
+
+  <p dir="ltr" class="FM_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 13pt;" class="FMAutoNumber_2"></span></span>The supplier configuration setting <span style="font-weight : bold; ">Allow Supplier Coding </span>must be selected for the supplier to view or modify the general ledger codes.</p>
+
+  <p dir="ltr" class="FM_Body_Indent"><span style="font-weight : bold; ">Supplier (integration):</span>&#160;If the invoice does not refer to a field ticket or purchase order line, or the referenced document does not include general ledger coding and the supplier configuration setting <span style="font-weight : bold; ">Allow Supplier Coding</span>&#160;is selected, the platform uses the general ledger coding contained in the invoice file. The invoice file may contain general ledger coding in the header or on the individual lines. The platform will try to use the general ledger coding on the individual lines first. If there is no general ledger coding on a line, the general ledger coding in the header will be applied. If the supplier configuration setting <span style="font-weight : bold; ">Allow Supplier Coding </span>is not selected, any general ledger coding from the supplier will be ignored.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">4.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>The platform validates the applied general ledger coding. If the general ledger coding is not a valid combination in the chart of accounts, it is removed.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">5.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Previously Approved Invoice:</span>&#160;If the supplier configuration setting <span style="font-weight : bold; ">Enable Smart Coding</span>&#160;is selected and the invoice does not have general ledger coding, the platform will try to apply the general ledger coding from the last approved invoice or last code verified invoice with the same configured attributes. &#160;</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">6.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>If valid general ledger coding cannot be found in any of the above sources, the invoice line is submitted to the buyer with no general ledger coding applied.</p>
+
+  <p dir="ltr" class="FM_Heading_1"><a name="XREF_97271_Invoice_Coding"></a>Invoice Coding Page Overview</p>
+
+  <p dir="ltr" class="FM_Body_Style">An invoice can be coded from the <span style="font-weight : bold; ">Coding </span>tab when viewing an invoice. This tab includes an allocation summary (if applicable) and invoice fields to enter values that can be applied to multiple line items. Visible fields will depend on your company administrator’s configurations. The <span style="font-weight : bold; ">Coding</span>&#160;tab also directs users to the <span style="font-weight : bold; ">Split Coding</span>&#160;function and coding templates. </p>
+
+  <p dir="ltr" class="FM_Note___Start"><span class="FM_Bold">Note:<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>On the Coding and Split Coding pages the type-ahead functionality works with the AFE and Cost Center fields. The results list is filtered by the AFE/Cost Center and Properties.<span style="font-size: small;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+
+<div width="100%" align="left">
+  <table border-spacing="0" dir="ltr" class="table48" border-collapse="collapse" style="max-width: 100% ;height: auto">
+   <tr class="tr222">
+   <td class="td50">
+   <p dir="ltr" style="display:inline"><img alt="InvoiceCoding_codingtab.png" id="image331" src="../../../../assets/InvoiceCoding_codingtab.png" style="max-width: 100% ;height: auto" />&nbsp;</p>
+</td>
+</tr>
+  </table>
+</div>
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Allocation Summary:</span>&#160;may include AFE, cost center, location, field/lease, major/minor/subcode, asset number, purchase order, work order, and custom reference data fields. A column is only displayed if it is applied to at least one line item on the invoice. The coding records are grouped according to all of the fields and the amount is the sum of the coding records for each group.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Split: </span>allows the coder to split the costs associated with a single invoice line across multiple cost object and general ledger coding combinations.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Select Template:</span> reduces data entry by saving and applying a copy of frequently used cost allocations.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Line Items:</span> include product/service description, quantity, unit of measure, rate, and any applicable discounts.</p>
+  <p dir="ltr" class="FM_Heading_1"><a name="XREF_78129_Applying_Coding_to"></a>Applying Coding to Coding Records</p>
+
+  <p dir="ltr" class="FM_Body_Style">You can apply coding to coding records in two ways: manually, or by copying existing coding from a record. </p>
+
+  <p dir="ltr" class="FM_Heading_2_HowTo">How to Code an Invoice Manually</p>
+
+  <p dir="ltr" class="FM_Permission___Start"><span class="FM_Bold">Permission:<span style="padding-left: 21pt;" class="FMAutoNumber_1"></span></span>Invoice Modify</p>
+
+  <p dir="ltr" class="FM_Steps"><span class="FM_Bold">Steps:<span style="padding-left: 8pt;" class="FMAutoNumber_1"></span></span></p>
+
+  <p dir="ltr" class="FM_Number_List_1___Start"><span class="FM_Bullet4">1.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Do one of the following:</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Select <span style="font-weight : bold; ">Invoice &gt; Dashboard</span> and click one of the dashboard counters.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Perform a search by <span style="font-weight : bold; ">Invoice # </span>using the <span style="font-weight : bold; ">Global Search</span> field in the main navigation bar.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Perform a search with multiple criteria by going to <span style="font-weight : bold; ">Invoice</span>&#160;&gt; <span style="font-weight : bold; ">Invoice Search</span>.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">2.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click the <span style="font-weight : bold; ">Invoice #</span>.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">3.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click the <span style="font-weight : bold; ">Coding </span>tab.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">4.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Enter coding information. </p>
+
+  <p dir="ltr" class="FM_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 13pt;" class="FMAutoNumber_2"></span></span>If only part of a value is known, type an asterisk (<span style="font-weight : bold; ">*)</span>&#160;into the field and click the lookup icon. </p>
+  <div align="center"><img alt="InvoiceCoding_codingtab.png" id="image332" src="../../../../assets/InvoiceCoding_codingtab.png" style="max-width: 100% ;height: auto" />
+  </div>
+  <p dir="ltr" class="FM_Screenshot_Anchor">&nbsp;</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">5.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Select the checkbox next to the line items you want to apply the coding.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">6.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Apply to Selected</span>.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">7.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Save</span> on the toolbar.</p>
+
+  <p dir="ltr" class="FM_Heading_2_HowTo">How to Code an Invoice by Copying Existing Coding</p>
+
+  <p dir="ltr" class="FM_Permission___Start"><span class="FM_Bold">Permission:<span style="padding-left: 21pt;" class="FMAutoNumber_1"></span></span>Invoice Modify</p>
+
+  <p dir="ltr" class="FM_Steps"><span class="FM_Bold">Steps:<span style="padding-left: 8pt;" class="FMAutoNumber_1"></span></span></p>
+
+  <p dir="ltr" class="FM_Number_List_1___Start"><span class="FM_Bullet4">1.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Do one of the following:</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Select <span style="font-weight : bold; ">Invoice &gt; Dashboard</span> and click one of the dashboard counters.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Perform a search by <span style="font-weight : bold; ">Invoice # </span>using the <span style="font-weight : bold; ">Global Search</span> field in the main navigation bar.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Perform a search with multiple criteria by going to <span style="font-weight : bold; ">Invoice</span>&#160;&gt; <span style="font-weight : bold; ">Invoice Search</span>.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">2.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click the <span style="font-weight : bold; ">Invoice #</span>.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">3.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click the <span style="font-weight : bold; ">Coding </span>tab.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">4.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click the <span style="font-weight : bold; ">Copy Coding</span> icon in the line item row that you want to copy.</p>
+  <div align="center"><img alt="InvoiceCoding_copycoding.png" id="image333" src="../../../../assets/InvoiceCoding_copycoding.png" style="max-width: 100% ;height: auto" />
+  </div>
+  <p dir="ltr" class="FM_Screenshot_Anchor">&nbsp;</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">5.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Make any necessary changes.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">6.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Select the checkboxes next to the line items you want to apply the coding.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">7.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Apply to Selected</span>.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">8.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Save</span> on the toolbar.</p>
+
+  <p dir="ltr" class="FM_Heading_2">Referencing a Purchase Order and Purchase Order Line</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>A line item may be associated with a purchase order and purchase order line. By default, if valid purchase orders exist in <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>&#160;for the supplier, the referenced purchase order must be one of the purchase orders in platform. </p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>A quick-view list of matching purchase order numbers will appear as you enter the number into the <span style="font-weight : bold; ">PO</span>&#160;field. A quick-view list of matching purchase order line numbers will appear as you enter the line number into the <span style="font-weight : bold; ">PO Line</span> field. You must enter the purchase order number in order to change the line number.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>By default, if the referenced purchase order has been entered in the platform all invoice lines must reference the same purchase order.</p>
+
+  <p dir="ltr" class="FM_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 13pt;" class="FMAutoNumber_2"></span></span>To reference multiple purchase orders on a single invoice, enable the <span style="font-weight : bold; ">Allow Multiple PO Reference(s)</span> company preference.</p>
+
+  <p dir="ltr" class="FM_Note_Indent___Next"><span class="FM_Bold"><span style="padding-left: 54pt;" class="FMAutoNumber_1"></span></span>To allow one or more invoice lines to have no purchase order reference, enable the <span style="font-weight : bold; ">Allow Blank PO Reference(s) </span>company preference.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>If the selected purchase order line includes any coding, it will automatically be populated in the coding fields.</p>
+
+  <p dir="ltr" class="FM_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 13pt;" class="FMAutoNumber_2"></span></span>To modify the AFE and Cost Center that is copied from a purchase order, enable the <span style="font-weight : bold; ">PO Coding Override </span>company preference.</p>
+
+  <p dir="ltr" class="FM_Heading_2">Additional Information</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>By default,<span style="font-weight : bold; "> Leave</span>&#160;is in each field indicating that the existing value on selected coding records should not be modified when the coding is applied to that record. Removing the word <span style="font-weight : bold; ">Leave</span>&#160;from a field will result in the existing value being removed from the coding records.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>When modifying general ledger coding, modify or reenter the values in both the <span style="font-weight : bold; ">Major</span>&#160;and <span style="font-weight : bold; ">Minor</span>&#160;fields even if the major is unchanged. The subcode can be left as <span style="font-weight : bold; ">Leave</span>&#160;if adding a new major and minor. If a new major is applied to the line, the current minor and subcodes will be deleted.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>Some fields and data values may result in related fields being automatically applied. For example, an AFE may be associated with a location, so if there is only one location or if one has been set as the default, the location is automatically applied. At this stage, the platform will check that values are valid (if a major.minor.subcode string is applied) and the platform will verify that those codes have been mapped.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>To remove a field from a coding record, delete any text in the field, select the coding record, and click <span style="font-weight : bold; ">Apply to Selected</span>. For general ledger codes, apply another code to the coding record.</p>
+
+  <p dir="ltr" class="FM_Heading_1"><a name="XREF_57000_Split_Coding"></a>Split Coding</p>
+
+  <p dir="ltr" class="FM_Body_Style">Split coding allows the coder to split the costs associated with a single invoice line across multiple cost objects (two or more AFEs). Coding cannot be split across sites or departments.<span style="font-size: small;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+
+  <p dir="ltr" class="FM_Heading_2_HowTo">How to Create a Split Allocation for an Invoice</p>
+
+  <p dir="ltr" class="FM_Permission___Start"><span class="FM_Bold">Permission:<span style="padding-left: 21pt;" class="FMAutoNumber_1"></span></span>Invoice Modify</p>
+
+  <p dir="ltr" class="FM_Prerequisite___Start"><span class="FM_Bold">Prerequisite:<span style="padding-left: 18pt;" class="FMAutoNumber_1"></span></span>The invoice status is Submitted or Resubmitted.</p>
+
+  <p dir="ltr" class="FM_Steps"><span class="FM_Bold">Steps:<span style="padding-left: 8pt;" class="FMAutoNumber_1"></span></span></p>
+
+  <p dir="ltr" class="FM_Number_List_1___Start"><span class="FM_Bullet4">1.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Do one of the following:</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Select <span style="font-weight : bold; ">Invoice &gt; Dashboard</span> and click one of the dashboard counters.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Perform a search by invoice number using the Global Search field in the main navigation bar.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Perform a search with multiple criteria by going to <span style="font-weight : bold; ">Invoice</span>&#160;&gt; <span style="font-weight : bold; ">Invoice Search</span>.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">2.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click the invoice number.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">3.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click the <span style="font-weight : bold; ">Coding </span>tab.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">4.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Split</span>.</p>
+
+<div width="100%" align="left">
+  <table border-spacing="0" dir="ltr" class="table22" border-collapse="collapse" style="max-width: 100% ;height: auto">
+   <tr class="tr223">
+   <td class="td24">
+   <p dir="ltr" style="display:inline"><img alt="InvoiceCoding_splitcodingwizard.png" id="image334" src="../../../../assets/InvoiceCoding_splitcodingwizard.png" style="max-width: 100% ;height: auto" />&nbsp;</p>
+</td>
+</tr>
+  </table>
+</div>
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">5.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Enter the number of split lines.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">6.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Select the allocation type.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">7.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Apply</span>.</p>
+
+  <p dir="ltr" class="FM_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 13pt;" class="FMAutoNumber_2"></span></span> By default, the amount/percentage will be split evenly across the number of split lines.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">8.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>If necessary, modify the split allocation by doing one or more of the following:</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Click the edit icon in the <span style="font-weight : bold; ">Amount</span>&#160;or <span style="font-weight : bold; ">%</span>&#160;column and adjust the values. Click <span style="font-weight : bold; ">Submit</span>.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Click the edit icon to change the coding values in a row or column and click <span style="font-weight : bold; ">Continue</span>&#160;when done. Click <span style="font-weight : bold; ">Submit</span>.</p>
+
+  <p dir="ltr" class="FM_Note_Indent2___Start"><span class="FM_Bold"><span style="padding-left: 36pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 13pt;" class="FMAutoNumber_2"></span></span>By default,<span style="font-weight : bold; "> Leave</span>&#160;is in each field, indicating that the current value in the field should stay. Removing the word <span style="font-weight : bold; ">Leave</span>&#160;from a field will result in the existing value being removed from the coding records.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Select the checkbox(es) of one or more records and click <span style="font-weight : bold; ">Delete Selected</span>.</p>
+
+  <p dir="ltr" class="FM_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 13pt;" class="FMAutoNumber_2"></span></span>When using the <span style="font-weight : bold; ">Amount</span>&#160;allocation type, enter the amount of a single invoice line not including taxes. If the last split was by amount and there is only one line item on the invoice, the Split Coding Wizard will open with the field auto-populated with the pretax amount of the invoice. The splits must total the amount entered. <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span> will accept up to two decimal places for amounts.</p>
+
+  <p dir="ltr" class="FM_Note_Indent___Next"><span class="FM_Bold"><span style="padding-left: 54pt;" class="FMAutoNumber_1"></span></span>When using the <span style="font-weight : bold; ">Percentage</span>&#160;allocation type, the split must total 100%. <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>&#160;will accept up to six decimal places for percentages.</p>
+
+  <p dir="ltr" class="FM_Note_Indent___Next"><span class="FM_Bold"><span style="padding-left: 54pt;" class="FMAutoNumber_1"></span></span>When using the <span style="font-weight : bold; ">Mixed</span>&#160;allocation type, the amount portion is taken from the total and the remainder is split according to the percentages. The percentage splits must total 100%.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">9.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Submit</span> to return to the invoice.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">10.<span style="padding-left: 5pt;" class="FMAutoNumber_1"></span></span>Select the checkboxes next to one or more lines.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">11.<span style="padding-left: 5pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Apply to Selected</span>.</p>
+
+  <p dir="ltr" class="FM_Heading_2_HowTo">How to Apply an Existing Split Template</p>
+
+  <p dir="ltr" class="FM_Permission___Start"><span class="FM_Bold">Permission:<span style="padding-left: 21pt;" class="FMAutoNumber_1"></span></span>Invoice Modify</p>
+
+  <p dir="ltr" class="FM_Prerequisite___Start"><span class="FM_Bold">Prerequisite:<span style="padding-left: 18pt;" class="FMAutoNumber_1"></span></span>The invoice status is Submitted or Resubmitted.</p>
+
+  <p dir="ltr" class="FM_Steps"><span class="FM_Bold">Steps:<span style="padding-left: 8pt;" class="FMAutoNumber_1"></span></span></p>
+
+  <p dir="ltr" class="FM_Number_List_1___Start"><span class="FM_Bullet4">1.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Do one of the following:</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Select <span style="font-weight : bold; ">Invoice &gt; Dashboard</span> and click one of the dashboard counters.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Perform a search by invoice number using the Global Search field in the main navigation bar.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Perform a search with multiple criteria by going to <span style="font-weight : bold; ">Invoice</span>&#160;&gt; <span style="font-weight : bold; ">Invoice Search</span>.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">2.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click the invoice number.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">3.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click the <span style="font-weight : bold; ">Coding </span>tab.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">4.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Do one of the following:</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>To use a template saved in OpenInvoice:</p>
+
+  <p dir="ltr" class="FM_Number_List_3___Start">1.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span>Click the down arrow next to <span style="font-weight : bold; ">Select Template</span>&#160;and select <span style="font-weight : bold; ">Saved</span>. </p>
+
+  <p dir="ltr" class="FM_Number_List_3___Next">2.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span>Select a template.</p>
+
+  <p dir="ltr" class="FM_Number_List_3___Next">3.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span>Click <span style="font-weight : bold; ">Submit</span>. </p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>To import and apply a template from outside OpenInvoice:</p>
+
+  <p dir="ltr" class="FM_Number_List_3___Start">1.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span>Click the down arrow next to <span style="font-weight : bold; ">Select Template</span>&#160;and select <span style="font-weight : bold; ">New</span>. </p>
+
+  <p dir="ltr" class="FM_Number_List_3___Next">2.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span>Do one of the following:</p>
+
+  <p dir="ltr" style="margin-left : 72.000pt; text-indent : -18.000pt;">-To upload a file saved on your desktop, select <span style="font-weight : bold; ">File</span>&#160;as the import method, click <span style="font-weight : bold; ">Choose File</span>, navigate to the file on your computer, and click <span style="font-weight : bold; ">Open</span>. </p>
+
+  <p dir="ltr" class="FM_Body" style="margin-left : 72.000pt; text-indent : -18.000pt;">-To copy the contents of a spreadsheet, select <span style="font-weight : bold; ">Copy/Paste</span>&#160;as the import method, copy the informaiton in your file, and paste it into the box.</p>
+
+  <p dir="ltr" class="FM_Number_List_3___Next">3.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span>Click <span style="font-weight : bold; ">Upload</span>.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">5.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>If necessary, modify the split allocation by doing one or more of the following:</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Modify the number of split lines and allocation type, then click <span style="font-weight : bold; ">Apply</span>.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Click the edit icon in the <span style="font-weight : bold; ">Amount</span>&#160;or <span style="font-weight : bold; ">%</span>&#160;column and adjust the values. Click <span style="font-weight : bold; ">Submit</span>.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Click the edit icon to change the coding values in a row or column and click <span style="font-weight : bold; ">Continue</span>&#160;when done. Click <span style="font-weight : bold; ">Submit</span>.</p>
+
+  <p dir="ltr" class="FM_Note_Indent2___Start"><span class="FM_Bold"><span style="padding-left: 36pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 13pt;" class="FMAutoNumber_2"></span></span>By default,<span style="font-weight : bold; "> Leave</span>&#160;is in each field, indicating that the current value in the field should stay. Removing the word <span style="font-weight : bold; ">Leave</span>&#160;from a field will result in the existing value being removed from the coding records.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Select the checkbox(es) of one or more records and click <span style="font-weight : bold; ">Delete Selected</span>.</p>
+
+  <p dir="ltr" class="FM_Note_Indent2___Start"><span class="FM_Bold"><span style="padding-left: 36pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 13pt;" class="FMAutoNumber_2"></span></span>When using the <span style="font-weight : bold; ">Amount</span>&#160;allocation type, enter the amount of a single invoice line not including taxes. If the last split was by amount and there is only one line item on the invoice, the Split Coding Wizard will open with the field auto-populated with the pretax amount of the invoice. The splits must total the amount entered. <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span> will accept up to two decimal places for amounts.</p>
+
+  <p dir="ltr" class="FM_Note_Indent2___Next"><span class="FM_Bold"><span style="padding-left: 72pt;" class="FMAutoNumber_1"></span></span>When using the <span style="font-weight : bold; ">Percentage</span>&#160;allocation type, the split must total 100%. <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>&#160;will accept up to six decimal places for percentages.</p>
+
+  <p dir="ltr" class="FM_Note_Indent2___Next"><span class="FM_Bold"><span style="padding-left: 72pt;" class="FMAutoNumber_1"></span></span>When using the <span style="font-weight : bold; ">Mixed</span>&#160;allocation type, the amount portion is taken from the total and the remainder is split according to the percentages. The percentage splits must total 100%.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">6.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Submit</span> to return to the invoice.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">7.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Select the checkboxes next to one or more lines.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">8.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Apply to Selected.</span></p>
+
+  <p dir="ltr" class="FM_Heading_1"><a name="XREF_69377_Coding_Image"></a>Coding Image Invoice Taxes</p>
+  <p dir="ltr" class="FM_Body_Style">This section describes how to include taxes on image invoices. </p>
+
+  <p dir="ltr" class="FM_Permission___Start"><span class="FM_Bold">Permission:<span style="padding-left: 21pt;" class="FMAutoNumber_1"></span></span>Code Taxes on Image Invoices</p>
+
+  <p dir="ltr" class="FM_Permission___Next"><span class="FM_Bold"><span style="padding-left: 72pt;" class="FMAutoNumber_1"></span></span>Invoice Modify</p>
+
+  <p dir="ltr" class="FM_Prerequisite___Start"><span class="FM_Bold">Prerequisite:<span style="padding-left: 18pt;" class="FMAutoNumber_1"></span></span>The invoice status is Submitted or Resubmitted.</p>
+
+  <p dir="ltr" class="FM_Steps"><span class="FM_Bold">Steps:<span style="padding-left: 8pt;" class="FMAutoNumber_1"></span></span></p>
+
+  <p dir="ltr" class="FM_Number_List_1___Start"><span class="FM_Bullet4">1.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Do one of the following:</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Select <span style="font-weight : bold; ">Invoice &gt; Dashboard</span> and click one of the dashboard counters.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Perform a search by invoice number using the Global Search field in the main navigation bar.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Perform a search with multiple criteria by going to <span style="font-weight : bold; ">Invoice</span>&#160;&gt; <span style="font-weight : bold; ">Invoice Search</span>.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">2.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click the invoice number.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">3.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click the <span style="font-weight : bold; ">Coding </span>tab.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">4.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Select the tax type.</p>
+
+  <p dir="ltr" class="FM_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 13pt;" class="FMAutoNumber_2"></span></span>A tax can be mapped to a general ledger code so the code is automatically applied to the line for the tax. The general ledger codes applied to mapped taxes cannot be modified and additional cost objects cannot be added to the tax.</p>
+
+  <div align="center"><img alt="InvoiceCoding_codetaxesimageinvoice.png" id="image335" src="../../../../assets/InvoiceCoding_codetaxesimageinvoice.png" style="max-width: 100% ;height: auto" />
+  </div>
+  <p dir="ltr" class="FM_Screenshot_Anchor">&nbsp;</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">5.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Enter the tax amount in the <span style="font-weight : bold; ">Line amount</span> field.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">6.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Enter any other applicable coding information.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">7.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Select the checkbox next to the line items you wish to apply the coding.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">8.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Apply to Selected</span>.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">9.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Save</span>.</p>
+
+  <p dir="ltr" class="FM_Heading_1">Self Assess Taxes</p>
+
+  <p dir="ltr" class="FM_Body_Style">Your company is responsible for ensuring proper payment of taxes based on your use of the product or service delivered. The <span style="font-weight : bold; ">Self Assess Tax</span>&#160;function allows you to create entries in the general ledger for the new tax. The amount coded to the general ledger account of the product/service is increased by the amount of the tax, then offset to an accrual account for the new tax. The total of the invoice does not change. Processing and accounting of refunded taxes is performed outside of the <span data-name="ADP_Software_Name" data-val="OpenInvoice Platform" data-showval="TRUE" data-format="ADP_Software_Name">OpenInvoice Platform</span>.</p>
+
+  <p dir="ltr" class="FM_Heading_2_HowTo">How to Enter Self Assess Taxes</p>
+
+  <p dir="ltr" class="FM_Permission___Start"><span class="FM_Bold">Permission:<span style="padding-left: 21pt;" class="FMAutoNumber_1"></span></span>Invoice Modify</p>
+
+  <p dir="ltr" class="FM_Prerequisite___Start"><span class="FM_Bold">Prerequisite:<span style="padding-left: 18pt;" class="FMAutoNumber_1"></span></span>The invoice must be fully coded and validated as defined by the configured Custom Business Rules.</p>
+
+  <p dir="ltr" class="FM_Prerequisite___Next"><span class="FM_Bold"><span style="padding-left: 72pt;" class="FMAutoNumber_1"></span></span>The invoice status is Submitted or Resubmitted.</p>
+
+  <p dir="ltr" class="FM_Steps"><span class="FM_Bold">Steps:<span style="padding-left: 8pt;" class="FMAutoNumber_1"></span></span></p>
+
+  <p dir="ltr" class="FM_Number_List_1___Start"><span class="FM_Bullet4">1.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Do one of the following:</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Select <span style="font-weight : bold; ">Invoice &gt; Dashboard</span> and click one of the dashboard counters.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Perform a search by invoice number using the Global Search field in the main navigation bar.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Perform a search with multiple criteria by going to <span style="font-weight : bold; ">Invoice</span>&#160;&gt; <span style="font-weight : bold; ">Invoice Search</span>.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">2.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click the invoice number.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">3.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click the <span style="font-weight : bold; ">Self Assess</span>&#160;<span style="font-weight : bold; ">Tax </span>tab.</p>
+
+  <p dir="ltr" class="FM_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 13pt;" class="FMAutoNumber_2"></span></span>The debit account is the product/service account; the credit accounts are the new taxes.</p>
+
+  <div align="center"><img alt="InvoiceCoding_selfassesstax.png" id="image336" src="../../../../assets/InvoiceCoding_selfassesstax.png" style="max-width: 100% ;height: auto" />
+  </div>
+  <p dir="ltr" class="FM_Screenshot_Anchor">&nbsp;</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">4.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>In the <span style="font-weight : bold; ">Number of Liability/Clearing/Accrual Accounts (Credit)</span>&#160;field, enter the number of accrual accounts (i.e., the number of new taxes being added).</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">5.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Next</span>.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">6.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>In the <span style="font-weight : bold; ">Rate</span>&#160;field for the <span style="font-weight : bold; ">Coding Account (Debit)</span> row, enter the total percentage of the new taxes.</p>
+
+  <p dir="ltr" class="FM_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 13pt;" class="FMAutoNumber_2"></span></span>This is the sum of all new tax rates. For example, when adding two new taxes, one with a tax rate of 4% and one with a tax rate of 6%, enter 10 in this field.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">7.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>In the <span style="font-weight : bold; ">Rate</span> field for each<span style="font-weight : bold; "> Accrual Account (Credit)</span>&#160;row, enter the percentages to be applied towards the new tax accounts. </p>
+
+  <p dir="ltr" class="FM_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 13pt;" class="FMAutoNumber_2"></span></span>The sum of the credit percentages must match the debit percentage.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">8.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Enter the general ledger codes for the new tax accounts. Enter at least the major account. </p>
+
+  <p dir="ltr" class="FM_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 13pt;" class="FMAutoNumber_2"></span></span>Only major accounts that do not require a cost object will be returned. </p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">9.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Select the checkboxes next to the line items for which the change should apply. </p>
+
+  <p dir="ltr" class="FM_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 13pt;" class="FMAutoNumber_2"></span></span>Only non-tax coding records can be selected.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">10.<span style="padding-left: 5pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Apply to Selected</span>.</p>
+
+  <p dir="ltr" class="FM_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 13pt;" class="FMAutoNumber_2"></span></span>The platform will generate one debit record (positive value) using the defined default coding account and one credit record (negative value) for each accrual account specified. The net sum of all records generated is zero, so the overall value of the invoice remains the same.<span style="font-weight : bold; ">&#160;</span></p>
+
+  <p dir="ltr" class="FM_Note_Indent___Next"><span class="FM_Bold"><span style="padding-left: 54pt;" class="FMAutoNumber_1"></span></span>If the line was split coded, the generated lines are repeated once per split.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">11.<span style="padding-left: 5pt;" class="FMAutoNumber_1"></span></span>Make any required changes to the general ledger accounts on the generated records.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">12.<span style="padding-left: 5pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Next</span> or<span style="font-weight : bold; "> Submit</span>.</p>
+
+  <p dir="ltr" class="FM_Heading_1"><a name="XREF_32086_Coding_Templates"></a>Coding Templates</p>
+
+  <p dir="ltr" class="FM_Heading_2_HowTo">How to <span style="font-weight : normal; font-size  : 10.0pt; color   : #000000; "></span>Save a Split Coding Allocation as a Template</p>
+
+  <p dir="ltr" class="FM_Permission___Start"><span class="FM_Bold">Permission:<span style="padding-left: 21pt;" class="FMAutoNumber_1"></span></span>Invoice Admin</p>
+
+  <p dir="ltr" class="FM_Steps"><span class="FM_Bold">Steps:<span style="padding-left: 8pt;" class="FMAutoNumber_1"></span></span></p>
+
+  <p dir="ltr" class="FM_Number_List_1___Start"><span class="FM_Bullet4">1.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Refer to <a href="#XREF_57000_Split_Coding">Split Coding</a> to split code an invoice.</p>
+
+  <p dir="ltr" class="FM_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 13pt;" class="FMAutoNumber_2"></span></span>Do not click <span style="font-weight : bold; ">Submit</span> on the Split Coding Wizard.</p>
+
+  <p dir="ltr" class="FM_Note_Indent___Next"><span class="FM_Bold"><span style="padding-left: 54pt;" class="FMAutoNumber_1"></span></span>Only <span style="font-weight : bold; ">Amount</span>&#160;or <span style="font-weight : bold; ">Percent</span>&#160;split allocations can be saved as a template. <span style="font-weight : bold; ">Mixed</span>&#160;allocations cannot be saved.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">2.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>In the Split Coding Wizard window, click <span style="font-weight : bold; ">Save Template</span>. </p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">3.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Do one of the following:</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Enter a name for your template and select a scope, site, and department.</p>
+
+  <p dir="ltr" class="FM_Note_Indent2___Start"><span class="FM_Bold"><span style="padding-left: 36pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 13pt;" class="FMAutoNumber_2"></span></span>If <span style="font-weight : bold; ">Public</span> is selected, choose the site and department that will have access to your template.</p>
+
+  <p dir="ltr" class="FM_Note_Indent2___Next"><span class="FM_Bold"><span style="padding-left: 72pt;" class="FMAutoNumber_1"></span></span>Users must have the Invoice Admin permission to access your template.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Select an existing saved template from the list to replace it with your new split coding allocation.</p>
+
+  <div align="center"><img alt="InvoiceCoding_savecodingtemplate.png" id="image337" src="../../../../assets/InvoiceCoding_savecodingtemplate.png" style="max-width: 100% ;height: auto" />
+  </div>
+  <p dir="ltr" class="FM_Screenshot_Anchor">&nbsp;</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">4.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Submit</span>.</p>
+
+  <p dir="ltr" class="FM_Heading_2_HowTo">How to Create a Split Coding Template from a File</p>
+
+  <p dir="ltr" class="FM_Permission___Start"><span class="FM_Bold">Permission:<span style="padding-left: 21pt;" class="FMAutoNumber_1"></span></span>Invoice Admin</p>
+
+  <p dir="ltr" class="FM_Steps"><span class="FM_Bold">Steps:<span style="padding-left: 8pt;" class="FMAutoNumber_1"></span></span></p>
+
+  <p dir="ltr" class="FM_Number_List_1___Start"><span class="FM_Bullet4">1.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Refer to <a href="#XREF_57000_Split_Coding">Split Coding</a> to split code an invoice.</p>
+
+  <p dir="ltr" class="FM_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 13pt;" class="FMAutoNumber_2"></span></span>Do not click <span style="font-weight : bold; ">Submit</span> on the Split Coding Wizard.</p>
+
+  <p dir="ltr" class="FM_Note_Indent___Next"><span class="FM_Bold"><span style="padding-left: 54pt;" class="FMAutoNumber_1"></span></span>Only <span style="font-weight : bold; ">Amount</span>&#160;or <span style="font-weight : bold; ">Percent</span>&#160;split allocations can be saved as a template. <span style="font-weight : bold; ">Mixed</span>&#160;allocations cannot be saved.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">2.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>In the Split Coding Wizard window, click <span style="font-weight : bold; ">Export Template</span>&#160;to download and save a copy of the coding template. </p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">3.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>In the file, modify your split coding information. For more information about the column headings, refer to <a href="../../../Appendix/Appendix/Appendix.htm#XREF_85488_Coding_Template">Coding Template </a>.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">4.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>In the main <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>&#160;window, click the down arrow next to <span style="font-weight : bold; ">Select Template</span>&#160;and select <span style="font-weight : bold; ">New</span>.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">5.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Do one of the following:</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>To upload a file saved on your desktop, select <span style="font-weight : bold; ">File </span>as the import method, click <span style="font-weight : bold; ">Choose File</span>, navigate to the file on your computer, and click <span style="font-weight : bold; ">Open</span>.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>To copy the contents of a spreadsheet, select <span style="font-weight : bold; ">Copy/Paste</span>&#160;as the import method, copy the information in your file, and paste it into the box.</p>
+
+  <div align="center"><img alt="InvoiceCoding_importcodingtemplate.png" id="image338" src="../../../../assets/InvoiceCoding_importcodingtemplate.png" style="max-width: 100% ;height: auto" />
+  </div>
+  <p dir="ltr" class="FM_Screenshot_Anchor">&nbsp;</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">6.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click<span style="font-weight : bold; "> Upload</span>.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">7.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Submit</span> to populate the fields in the Split coding Wizard.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">8.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Make any necessary coding changes.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">9.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Save Template</span> to save the template in the platform.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">10.<span style="padding-left: 5pt;" class="FMAutoNumber_1"></span></span>Enter a name for your template.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">11.<span style="padding-left: 5pt;" class="FMAutoNumber_1"></span></span>Select a scope. If <span style="font-weight : bold; ">Public</span> is selected, choose the site and department that will have access to your template.</p>
+
+  <p dir="ltr" class="FM_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 13pt;" class="FMAutoNumber_2"></span></span>Users must have the Invoice Admin permission to access your template.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">12.<span style="padding-left: 5pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Submit</span>.</p>
+
+  <p dir="ltr" class="FM_Heading_2_HowTo">How to Edit or Delete a Coding Template</p>
+
+  <p dir="ltr" class="FM_Permission___Start"><span class="FM_Bold">Permission:<span style="padding-left: 21pt;" class="FMAutoNumber_1"></span></span>Invoice Admin</p>
+
+  <p dir="ltr" class="FM_Steps"><span class="FM_Bold">Steps:<span style="padding-left: 8pt;" class="FMAutoNumber_1"></span></span></p>
+
+  <p dir="ltr" class="FM_Number_List_1___Start"><span class="FM_Bullet4">1.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Do one of the following:</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Select <span style="font-weight : bold; ">Invoice &gt; Dashboard</span> and click one of the dashboard counters.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Perform a search by invoice number using the Global Search field in the main navigation bar.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Perform a search with multiple criteria by going to <span style="font-weight : bold; ">Invoice</span>&#160;&gt; <span style="font-weight : bold; ">Invoice Search</span>.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">2.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click the invoice number.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">3.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click the <span style="font-weight : bold; ">Coding </span>tab.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">4.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Select Template</span>.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">5.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Do one of the following:</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>To edit a coding template:</p>
+
+  <p dir="ltr" class="FM_Number_List_3___Start">1.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span>Select a template from the list and click <span style="font-weight : bold; ">Submit</span>. </p>
+
+  <div align="center"><img alt="InvoiceCoding_selectcodingtemplate.png" id="image339" src="../../../../assets/InvoiceCoding_selectcodingtemplate.png" style="max-width: 100% ;height: auto" />
+  </div>
+  <p dir="ltr" class="FM_Screenshot_Anchor">&nbsp;</p>
+
+  <p dir="ltr" class="FM_Number_List_3___Next">2.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span>Edit your split coding information.</p>
+
+  <p dir="ltr" class="FM_Number_List_3___Next">3.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span>Click <span style="font-weight : bold; ">Save Template</span>. </p>
+
+  <p dir="ltr" class="FM_Number_List_3___Next">4.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span>Edit the name and scope as necessary. </p>
+
+  <p dir="ltr" class="FM_Number_List_3___Next">5.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span>Click <span style="font-weight : bold; ">Submit</span>. </p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>To delete a coding template click the delete icon in the row of the template you wish to delete. </p>
+
+  <p dir="ltr" class="FM_Heading_2">Additional Information</p>
+
+  <p dir="ltr" class="FM_Body_Style">The following columns are available for modification in the exported coding template: </p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>ALLOC (for percentage splits) or AMOUNT<span style="font-weight : bold; ">&#160;</span>(for amount splits)</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>AFE</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>COST_CENTER</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>MAJOR</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>MINOR</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>SUB_CODE</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>WORK_ORDER</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>PURCHASE_ORDER</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>ASSET_NUMBER</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>LOCATION<span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span></p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>FIELD_LEASE</p>
+
+  <p dir="ltr" class="FM_Body_Style">Additional data elements can be added, provided they are entered exactly as they appear in <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>&#160;(same spelling, same mix of upper and lower case characters, etc.). No other fields will be accepted. If additional fields are required, add them as additional data elements first. </p>
+
+  <p dir="ltr" class="FM_Body_Style">The columns do not need to be in any specific order.</p>
+
+  <p dir="ltr" class="FM_Heading_1"><a name="XREF_22754_Check_Coding"></a>Check Coding</p>
+
+  <p dir="ltr" class="FM_Body_Style">The <span style="font-weight : bold; ">Check Coding</span>&#160;function runs the configured coding business rules validations on the fields that have already been applied. It does not check for fields that are required on code verify or on approve. If there is an error, the whole coding record is highlighted. It will display a validation number and an error icon. The validation number can be used to reference the error messages at the top of the page. <span style="font-weight : bold; ">No coding problems found</span>&#160;will be displayed at the top of the page when all coding records have been validated.</p>
+
+  <p dir="ltr" class="FM_Heading_2_HowTo">How to Check Coding</p>
+
+  <p dir="ltr" class="FM_Permission___Start"><span class="FM_Bold">Permission:<span style="padding-left: 21pt;" class="FMAutoNumber_1"></span></span>Invoice Modify</p>
+
+  <p dir="ltr" class="FM_Steps"><span class="FM_Bold">Steps:<span style="padding-left: 8pt;" class="FMAutoNumber_1"></span></span></p>
+
+  <p dir="ltr" class="FM_Number_List_1___Start"><span class="FM_Bullet4">1.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Do one of the following:</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Select <span style="font-weight : bold; ">Invoice &gt; Dashboard</span> and click one of the dashboard counters.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Perform a search by invoice number using the Global Search field in the main navigation bar.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Perform a search with multiple criteria by going to <span style="font-weight : bold; ">Invoice</span>&#160;&gt; <span style="font-weight : bold; ">Invoice Search</span>.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">2.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click the invoice number.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">3.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click the <span style="font-weight : bold; ">Coding </span>tab.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">4.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Check Coding</span>. </p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">5.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click any error icons to display validation messages for the coding record.</p>
+
+  <div align="center"><img alt="InvoiceCoding_validationerror.png" id="image340" src="../../../../assets/InvoiceCoding_validationerror.png" style="max-width: 100% ;height: auto" />
+  </div>
+  <p dir="ltr" class="FM_Screenshot_Anchor">&nbsp;</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">6.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Modify coding as necessary and repeat steps 4 to 6 as needed.</p>
+
+  <p dir="ltr" class="FM_Body_Style">&nbsp;</p>
+ </div>
+</body>
+
+</html>
+

@@ -1,0 +1,83 @@
+
+<div id="errors-msg" class="alert alert-dismissible alert-sm alert-danger">
+    <a href="#" class="close" onclick="$('#errors-msg').toggleClass('slide-out-top');" aria-label="close">×</a>
+    <i class="fas fa-exclamation-triangle fa-fw"></i> <span class="" id="messageContent">Gereric Message: errors exist in the page.  See the highlighted rows/cells below for details.</span>
+</div>
+
+<h5>Option 1</h5>
+<h6>Highlight rows that contain errors:</h6>
+
+<div class="table-responsive">
+    <table class="table table-striped table-bordered">
+        <thead>
+            <tr>
+                <th width="10">Alert</th>
+                <th>Firstname</th>
+                <th>Lastname</th>
+                <th width="10">Age</th>
+                <th>Address</th>
+                <th>City</th>
+                <th>Country</th>
+            </tr>
+        </thead> 
+        <tbody>
+            <tr>
+                <td class="text-center"></td>
+                <td>Angela</td>
+                <td>Pitt</td>
+                <td class="text-center">35</td>
+                <td>228 Park Ave S</td>
+                <td>New York</td>
+                <td>USA</td>
+            </tr>
+            <tr class="danger">
+                <td class="text-center"><i class="fas fa-exclamation-triangle text-danger" data-placement="top" data-toggle="popover" title="This row contains the following errors:"  data-html="true" data-content="<ul><li>Lorem ipsum dolor sit amet, consectetur adipiscing.</li><li> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et elit at quam finibus lobortis.</li></ul></ul>"></i></td>
+                <td>Tricia</td>
+                <td>Roberts</td>
+                <td class="text-center">21</td>
+                <td>3800 North Mill Road</td>
+                <td>New Jersey</td>
+                <td>USA</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<h5>Option 2</h5>
+<h6>Highlight individual cells that contain changes:</h6>
+
+<div class="table-responsive">
+    <table class="table table-striped table-bordered">
+        <thead>
+            <tr>
+                <th width="10">Alert</th>
+                <th>Firstname</th>
+                <th>Lastname</th>
+                <th width="10">Age</th>
+                <th>Address</th>
+                <th>City</th>
+                <th>Country</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="text-center"></td>
+                <td>Angela</td>
+                <td>Pitt</td>
+                <td class="text-center">35</td>
+                <td>228 Park Ave S</td>
+                <td>New York</td>
+                <td>USA</td>
+            </tr>
+            <tr>
+                <td class="danger text-center"><i class="fas fa-exclamation-triangle text-danger" data-placement="top" data-toggle="popover" title="This row contains the following errors:"  data-html="true" data-content="<ul><li>Lorem ipsum dolor sit amet, consectetur adipiscing.</li><li> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et elit at quam finibus lobortis.</li></ul></ul>"></i></td>
+                <td>Tricia</td>
+                <td class="danger">Roberts</td>
+                <td class="text-center danger">21</td>
+                <td>3800 North Mill Road</td>
+                <td>New Jersey</td>
+                <td>USA</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

@@ -1,0 +1,105 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+ <title>IntegrationOverview_CommunicationProtocols</title>
+
+ <link rel="stylesheet" href="../../../../OpenInvoiceForBuyers_master.css" type="text/css" />
+
+
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style>
+ <meta name="generator" content="Adobe FrameMaker 2017" />
+<script type="text/javascript" src="../../../../template/scripts/rh.min.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/common.min.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/topic.min.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/constants.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/utils.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/mhutils.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/mhlang.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/mhver.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/settings.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/XmlJsReader.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/loadparentdata.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/loadscreen.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/loadprojdata.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/mhtopic.js"></script>
+ <link rel="stylesheet" type="text/css" href="../../../../template/styles/topic.min.css">
+<script type="text/javascript" >
+gRootRelPath = "../../../..";
+gCommonRootRelPath = "../../../..";
+gTopicId = "1.9.0_2";
+</script>
+ <meta name="brsprev" value="OpenInvoiceForBuyers_master/Integrations/Integration_Overview/IntegrationOverview_IntegrationServices/IntegrationOverview_IntegrationServices.htm">
+ <meta name="brsnext" value="OpenInvoiceForBuyers_master/Integrations/Integration_Overview/IntegrationOverview_Routing_Security/IntegrationOverview_Routing_Security.htm">
+ <meta name="topic-breadcrumbs" content="Administrator & User Guide for Buyers > Integration Overview" />
+</head>
+
+<body dir="ltr">
+<script type="text/javascript" src="../../../../ehlpdhtm.js"></script>
+
+ <div dir="ltr">
+  
+  <p dir="ltr" class="FM_ADP_TG_Heading_1"><a name="XREF_43782_Communication"></a>Communication Protocols</p>
+  <p dir="ltr" class="FM_ADP_TG_Body_Style">All integration communication with the <span data-name="ADP_Software_Name" data-val="OpenInvoice Platform" data-showval="TRUE" data-format="ADP_Software_Name">OpenInvoice Platform</span>&#160;is enabled with HTTPS and two-way certificate-based authentication. The transmitted messages are XML-based. XML files carry data in a self-descriptive structure. The XML files may have a SOAP, MIME or RNIF wrapper for the purposes of routing and security. MIME and RNIF wrappers add the ability to include attachments in the file transfer. </p>
+  <p dir="ltr" class="FM_ADP_TG_Heading_2">Acknowledgments</p>
+  <p dir="ltr" class="FM_ADP_TG_Body_Style">The <span data-name="ADP_Software_Name" data-val="OpenInvoice Platform" data-showval="TRUE" data-format="ADP_Software_Name">OpenInvoice Platform</span>&#160;will post directly to the client back-end system using RNIF with two-way SSL conversation. The conversation will be asynchronous with the return of an HTTP Status Code as 202. This means the message was successfully received, understood, and accepted. <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>&#160;will then wait for the Acknowledgment or Exception from the receiver. A Positive Acknowledgment indicates the business document has been successfully processed. A Negative Acknowledgment or Exception indicates the receiver fails to process the document.</p>
+  <p dir="ltr" class="FM_ADP_TG_Body_Style">Whenever a file in any format, except RNIF, is imported into the <span data-name="ADP_Software_Name" data-val="OpenInvoice Platform" data-showval="TRUE" data-format="ADP_Software_Name">OpenInvoice Platform</span>, <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>&#160;sends out an acknowledgment file in return. There are two kinds: </p>
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Synchronous:</span>&#160;When a file enters the <span data-name="ADP_Software_Name" data-val="OpenInvoice Platform" data-showval="TRUE" data-format="ADP_Software_Name">OpenInvoice Platform</span>, <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>&#160;acknowledges that the file has been received within the same conversation (connection between computers). HTTP status codes indicate the success or failure of the document transfer. A successful transaction will be indicated with the return of an HTTP Status Code in the 200 class. This means the message was successfully received, understood, and accepted. A failed transaction will be indicated with the return of an HTTP Status Code in the 400 or 500 classes.</p>
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Asynchronous:</span>&#160;For certain types of file transfers, a new conversation will be initiated and <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>&#160;will post a message back to your company indicating whether <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>&#160;has processed (imported) the request successfully. </p>
+  <p dir="ltr" class="FM_ADP_TG_Heading_2">Errors and Warnings</p>
+  <p dir="ltr" class="FM_ADP_TG_Body_Style">An error is a condition that prevents successful import or export of a document. If an error is present in the response, the document cannot be imported or exported. The error must be resolved and the document must be resent. For example, errors in documents may be a result of the XML not validating against its designated schema or the platform cannot establish the identity of the supplier or buyer.</p>
+  <p dir="ltr" class="FM_ADP_TG_Body_Style">Warnings present possible issues, but they will not prevent a document from importing or exporting. If the possible issues are not corrected, the same warnings will appear on subsequent imports and exports. For example, warnings may appear if multiple price book names are referenced on an invoice or if a referenced AFE on an invoice is not listed as one of the buyer's AFEs.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Heading_3">Retries on Imports</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Body_Style">Imports may fail due to:</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>Broken connectivity between the <span data-name="ADP_Software_Name" data-val="OpenInvoice Platform" data-showval="TRUE" data-format="ADP_Software_Name">OpenInvoice Platform</span> and the client.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>The business document fails on schema or business rules.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Body_Style">If a document update batch import fails, <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>&#160;will send a DOResponse.xsd schema within the SOAP body of the DeliveryInformation referencing the original post. A Failure status in the main part of the DOResponse indicates that the file was not processed. No information is known about the content. Once the problem is rectified, the client may resubmit the file.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Heading_2">Retries on Exports</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Body_Style">Exports may fail due to:</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>Broken connectivity between the <span data-name="ADP_Software_Name" data-val="OpenInvoice Platform" data-showval="TRUE" data-format="ADP_Software_Name">OpenInvoice Platform</span> and the client server.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>The exported file cannot be saved on the secure server.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>The client back-end URL is down.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Body_Style">The number of <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>&#160;export attempts will depend on the type of file. Most exports are configured to allow five attempts with a five minute interval between each attempt. Ticket exports may have a different frequency. </p>
+  <p dir="ltr" class="FM_ADP_TG_Body_Style">If all attempts are unsuccessful, the file is parked. <span data-name="_OpenInvoice_Support" data-val="OpenInvoice Support" data-showval="TRUE" data-format="_OpenInvoice_Support">OpenInvoice Support</span>&#160;receives a parked status report from Trading Networks (integration software) at regular intervals so they can work with the appropriate contact to investigate and resolve communication issues.</p>
+  <p dir="ltr" class="FM_ADP_TG_Heading_2">Troubleshooting</p>
+  <p dir="ltr" class="FM_ADP_TG_Body_Style"><span data-name="_OpenInvoice_Support" data-val="OpenInvoice Support" data-showval="TRUE" data-format="_OpenInvoice_Support">OpenInvoice Support</span>&#160;can view all transmissions in Trading Networks. Integration messages (such as purchase order XML files, field ticket XML files, etc.) will persist in Trading Networks for 45 days in production and seven days in the test environment for retrieval by <span data-name="_OpenInvoice_Support" data-val="OpenInvoice Support" data-showval="TRUE" data-format="_OpenInvoice_Support">OpenInvoice Support</span>&#160;for troubleshooting. Attachments are not kept in Trading Networks. </p>
+ </div>
+</body>
+
+</html>
+

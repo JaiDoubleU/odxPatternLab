@@ -1,0 +1,181 @@
+<div class="bg-gradient">
+    <div class="company-logo"></div>
+    <div class="panel panel-default center-block" style="width: 650px;">
+        <div class="panel-body">
+            <div class="form-group h2 text-center product-name">
+                Product Name
+            </div>
+            <div class="alert alert-warning alert-dismissible">
+                <button type="button" class="close" data-dismiss="alert">&times;</button>
+                <i class="fas fa-fw fa-exclamation-triangle"></i> Alert Messages Show Here
+            </div>
+            <ul class="nav nav-tabs">
+                <li class="active"><a href="#home" data-toggle="tab" aria-expanded="false">Sign In</a></li>
+                <li><a href="#joinNow" data-toggle="tab" aria-expanded="true">Join Now</a></li>
+                <li><a href="#needHelp" data-toggle="tab">Need Help?</a></li>
+            </ul>
+
+            <div id="myTabContent" class="form-group tab-content">
+                <div class="tab-pane active fade in" id="home">
+                    <p>
+                        <form>
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-xs-6">
+                                        <label class="control-label" for="exampleInputEmail1">User Name:</label>
+                                    </div>
+                                    <div class="col-xs-6 text-right small">
+                                        <a href="#">Forgot User Name?</a>
+                                    </div>
+                                </div>
+                                <input type="text" class="form-control" id="exampleInputEmail1"
+                                    placeholder="Enter User Name">
+                            </div>
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-xs-6">
+                                        <label class="control-label" for="exampleInputEmail1">Password:</label>
+                                    </div>
+                                    <div class="col-xs-6 text-right small">
+                                        <a href="#">Forgot Password?</a>
+                                    </div>
+                                </div>
+                                <input type="password" class="form-control" id="exampleInputPassword1"
+                                    placeholder="Enter Password">
+                            </div>
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-xs-6 text-right">
+                                        <div class="checkbox">
+                                            <label>
+                                                <input tabindex="3" id="rememberMyUserName" name="rememberMyUserName"
+                                                    type="checkbox">Remember User Name
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6 text-left ">
+                                        <div class="checkbox">
+                                            <label>
+                                                <input tabindex="3" id="rememberMyUserName" name="rememberMyUserName"
+                                                    type="checkbox">
+                                                Keep Me Signed In
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-4 col-xs-offset-4">
+                                    <div class="btn-group btn-block">
+                                        <a type="submit" class="btn btn-success btn-block text-uppercase"
+                                            style="background-color: #56BC2F; border-color: #56BC2F; color: #000;">
+                                            <strong>Sign In</strong>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </p>
+                </div>
+                <div class="tab-pane fade in" id="joinNow">
+                    <p>
+                        <div class="panel-body white-bg">
+                            <h4 class="text-center light">Join Our Supplier Network</h4>
+                            <div class="form-group">
+                                <p>
+                                    Bring your business improved visibility, efficiency and cash flow by connecting with
+                                    your customers.
+                                </p>
+                                <p>
+                                    We invite you to join the thousands of suppliers already connected with their
+                                    customers in OpenInvoice.
+                                </p>
+                                <ul class="list-unstyled">
+                                    <li>
+                                        Recently or already joined?
+                                    </li>
+                                    <li>
+                                        <a id="onramping_email"
+                                            href="mailto:DL-PayablesDevelopment@oildex.com?subject=OpenInvoice%20Supplier%20Network">
+                                            Contact our On-Ramping Team.
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-4 col-xs-offset-4">
+                                    <div class="btn-group btn-block">
+                                        <a type="submit" class="btn btn-success btn-block text-uppercase"
+                                            style="background-color: #56BC2F; border-color: #56BC2F; color: #000;">
+                                            <strong>Join Now</strong>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </p>
+                </div>
+                <div class="tab-pane fade in" id="needHelp">
+                    <p>
+                        <div class="panel-heading white-bg">
+                            <h4 class="text-center light">Need Assistance?</h4>
+                            <h5 class="text-center light">We are here for you.</h5>
+                            <div class="form-group clearfix">
+                                <div class="col-xs-12 text-center">
+                                    <p class="h5 light">
+                                        Email us at
+                                        <a id="support_email"
+                                            href="mailto:DL-PayablesDevelopment@oildex.com?subject=OpenInvoice%20Support:%20Login%20Page">
+                                            DL-PayablesDevelopment@oildex.com
+                                        </a>
+                                    </p>
+                                    <p class="h5 light">Or call 1-866-627-3287</p>
+                                </div>
+                            </div>
+                        </div>
+                    </p>
+                </div>
+            </div>
+
+            <div class="alert alert-info" style="">
+                <ul class="fa-ul">
+                    <li>
+                        <span class="fa-li"><i class="fas fa-fw fa-info-circle text-info"></i></span>
+                        <strong> Mind your device, Mind your data! </strong> If others have access to this device, clear
+                        all of your temporary browsing data after you sign out.
+                    </li>
+                </ul>
+            </div>
+
+            <div class="form-group">
+                <div class="text-center">
+                    <button type="button" class="btn btn-link"
+                        onclick="var aboutWindow = window.open('http://qa-oi.transzap.com', 'menubar=no,scrollbars=yes,resizable=yes,titlebar=no,toolbar=no,status=no,width=900,height=670');aboutWindow.focus();return false;">
+                        About
+                    </button>
+                    |
+                    <button type="button" class="btn btn-link"
+                        onclick="var privacyWindow = window.open('https://www.oildex.com/privacy/', 'menubar=no,scrollbars=yes,resizable=yes,titlebar=no,toolbar=no,status=no,width=900,height=670');privacyWindow.focus();return false;">
+                        Privacy
+                    </button>
+                    |
+                    <button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal3">Terms
+                    </button>
+                    |
+
+                    <button type="button" class="btn btn-link"
+                        onclick="window.location = 'https://www.oildex.com/wp-content/uploads/2017/02/SSP-EULA-OpenInvoice-and-Spendworks-Supplier-Service-Agreement-1.pdf';">
+                        Agreement
+                    </button>
+                    |
+
+                    <button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal4">
+                        Browsers
+                    </button>
+                </div>
+            </div>
+
+            <div class="small text-center text-muted">Copyright © 1999 - 2019 | Enverus Inc.</div>
+        </div>
+    </div>
+</div>

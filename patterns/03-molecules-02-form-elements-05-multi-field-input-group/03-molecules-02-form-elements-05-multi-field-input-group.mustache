@@ -1,0 +1,13 @@
+<style>
+    /* negative margins to overlap the left hand borders on each of the inputs following the first - avoids double borders */
+    .input-group.multi-input { width: 100%; }
+    .input-group.multi-input input:nth-child(3n):not(:first-child) { margin-left: -1px; }
+    .input-group.multi-input input:nth-child(5n):not(:first-child) { margin-left: -3px; }
+</style>
+<div class="input-group multi-input">
+  <input type="text" class="form-control" value="Input 1"/>
+  <span class="input-group-btn" style="width:0px;"></span>
+  <input type="text" class="form-control" value="Input 2"/>
+  <span class="input-group-btn" style="width:0px;"></span>
+  <input type="text" class="form-control" value="Input 3"  />
+</div>

@@ -1,0 +1,46 @@
+<nav id="secondaryNavbar" class="navbar-default animated {{extraClass}} {{^extraClass}}{{styleClass}}{{/extraClass}}" style="z-index: 1030">
+    <div class="container-fluid">
+        <div class="row">
+                <div class="col-xs-4">
+                    {{#showBackButton}}
+                        <div class="btn-group  pull-left">
+                            <button class="btn btn-link text-nowrap dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                <i class="fas fa-arrow-left fa-fw"></i> Back <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Supplier On-Ramping</a></li>
+                                <li><a href="#">Suppliers</a></li>
+                                <li><a href="#">Dashboard</a></li>
+                            </ul>
+                        </div>
+                    {{/showBackButton}}
+                </div>
+                <div class="col-xs-4 text-center hide-overflow">
+                    <div class="form-control-static">
+                        {{pageTitle}}{{^pageTitle}}Page Title{{/pageTitle}}
+                    </div>
+                </div>
+                <div class="col-xs-4 text-right text-nowrap">
+                    {{^hideNextPreviousButtons}}
+                        <div class="btn-group  pull-right" style="display:flex;">
+                            <button type="button" class="btn btn-link" data-toggle="tooltip" data-placement="bottom" title="Previous in List"><span class="hidden-xs">Prev </span><i class="fas fa-arrow-up fa-fw"></i></button>
+                            <button type="button" class="btn btn-link" data-toggle="tooltip" data-placement="bottom" title="Next in List"><span class="hidden-xs">Next</span> <i class="fas fa-arrow-down fa-fw"></i></button>
+                        </div>
+                    {{/hideNextPreviousButtons}}
+                    {{#showConfigureButton}}
+                        <div class="form-control-static">
+                            <div class="btn-group btn-group-sm pull-right">
+                                <button id="editDashboardBtn" class="btn-link" data-target="#rightSlideInPanel" onclick="toggleRightSlideInPanel(); toggleDashboardEditability();">
+                                    <i class="fas fa-cog fa-fw"></i> Customize
+                                </button>
+                                <button id="saveDashboardBtn" class="btn-link hide" data-target="#rightSlideInPanel" onclick="toggleRightSlideInPanel(); toggleDashboardEditability();">
+                                    <i class="fas fa-save fa-fw"></i> Save Dashboard
+                                </button>
+                            </div>
+                        </div>
+                    {{/showConfigureButton}}
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>

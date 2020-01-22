@@ -1,0 +1,11 @@
+.wrapper3ColFluidLeft {
+    display: grid;
+    grid-gap: 0px;
+    grid-template-columns: minmax(150px, 1fr) 150px 150px;
+}
+
+.box {
+    background-color: #eee;
+    border: 1px solid #ccc; 
+    padding: 10px;
+}

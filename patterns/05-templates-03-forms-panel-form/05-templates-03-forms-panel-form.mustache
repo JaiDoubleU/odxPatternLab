@@ -1,0 +1,75 @@
+<br/>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <div class="panel-title pull-left hide-overflow">
+            Panel Form
+        </div>
+        <div id="panelFormHeaderButtons" class="btn-group pull-right">
+            <button class="btn btn-default edit" onclick="$(this).siblings('.saveCancel').toggleClass('hide');  $(this).toggleClass('hide'); $('#panelForm-Form > fieldset').prop('disabled',false);">Edit</button>
+            <button class="btn btn-success saveCancel hide" onclick="$(this).toggleClass('hide'); $(this).siblings('.saveCancel').toggleClass('hide');  $(this).siblings('.edit').toggleClass('hide'); $('#panelForm-Form > fieldset').prop('disabled',true);">Save</button>
+            <button class="btn btn-default saveCancel hide" onclick="$(this).toggleClass('hide'); $(this).siblings('.saveCancel').toggleClass('hide');  $(this).siblings('.edit').toggleClass('hide');$('#panelForm-Form > fieldset').prop('disabled',true);">Cancel</button>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+    <div class="panel-body">
+        <form id="panelForm-Form">
+            <fieldset disabled>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <label>Label 1 {{> atoms-required-field-indicator}} </label>
+                                {{> atoms-input("placeholder": "Placeholder Text 1", "value": "")}}
+                            </div>
+                            <div class="col-sm-6">
+                                <label>Label 2 {{> atoms-required-field-indicator}} </label>
+                                {{> atoms-input("placeholder": "Placeholder Text 2", "value": "")}}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <label>Label 3 {{> atoms-required-field-indicator}} </label>
+                                <div class="input-group">
+                                    {{> atoms-input("placeholder": "", "value": "240")}}
+                                    <span class="input-group-addon">/</span> {{> atoms-input("placeholder": "", "value": "360")}}
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <label>Label 4</label>
+                                {{> atoms-input("placeholder" : "", "value": "initial value")}}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6 form-group">
+                            <label class="control-label">Radio Buttons </label>
+                            <div class="radio">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <label>
+                                            <input type="radio" name="optionsRadios" value="option1" checked=""> Option One
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label>
+                                            <input type="radio" name="optionsRadios" value="option2"> Option Two
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 form-group">
+                            <label for="inputPassword" class="control-label">Checkbox</label>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox"> Checkbox
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+        </form>
+    </div>
+</div>

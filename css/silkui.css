@@ -1,0 +1,978 @@
+/* --------------------------------------------------------
+
+    Mobile Theme Customizer Customization
+    
+    How to generate a theme for your company: 
+    
+    1 - Go to https://silkui.outsystems.com/SilkUIMobileCustomizer/?ApplyTheme=true
+    2 - Generate Theme
+    3 - Click on the 'Apply Theme' button
+    
+    Note: All the CSS in this Theme will be replaced, custom CSS needs to be added again or moved to a new Theme
+    
+-------------------------------------------------------- */
+.phoenix a,
+.phoenix a:link,
+.phoenix a:visited {
+    color:#005cb8;
+}
+
+
+.phoenix .btn,
+.phoenix .btn:hover,
+.phoenix .btn:focus {
+    border: 1px solid #ccc;
+    color: #555555;
+}
+
+.phoenix .btn-primary,
+.phoenix .btn-primary:hover,
+.phoenix .btn-primary:focus {
+    background-color: #005cb8;
+    color: #fff;
+}
+
+.phoenix .btn-success,
+.phoenix .btn-success:hover,
+.phoenix .btn-success:focus,
+.phoenix .btn-danger,
+.phoenix .btn-danger:hover,
+.phoenix .btn-danger:focus {
+    border: none;
+    color: #fff;
+}
+
+.phoenix .btn-link,
+.phoenix .btn-link:hover,
+.phoenix .btn-link:focus {
+    color: #005cb8;
+    border: 2px solid transparent; 
+}
+
+.phoenix .card-action {
+    background-color: #005cb8;
+}
+
+.phoenix .header-content button.button-group-item.button-group-selected-item {
+    color: #005cb8;
+}
+
+.phoenix .header-content button.button-group-item.button-group-selected-item:after {
+    background-color: #005cb8;
+    bottom: 1px;
+}
+
+.phoenix .header-content button.button-group-item.button-group-item .badge.background-primary-color {
+    margin-top: -2px;
+    font-size: 10px;
+    margin-right: 0;    
+}
+
+.phoenix [data-dropdown] > div.dropdown-display:after {
+    border-color: #005cb8;
+}
+
+.phoenix [data-dropdown] div.dropdown-popup-row-selected {
+    color: #005cb8;
+}
+
+.phoenix button.button-group-item.button-group-selected-item {
+    background-color: #005cb8;
+}
+
+.phoenix [data-upload].upload-image-withoverlay .change-image {
+    background-color: #005cb8;
+}
+
+.phoenix .bottom-bar > a.active .bottom-bar-item-text, 
+.phoenix .bottom-bar > a:active .bottom-bar-item-text, 
+.phoenix .bottom-bar-items > a.active .bottom-bar-item-text, 
+.phoenix .bottom-bar-items > a:active .bottom-bar-item-text, 
+.phoenix .bottom-bar > a.active .bottom-bar-item-icon, 
+.phoenix .bottom-bar > a:active .bottom-bar-item-icon, 
+.phoenix .bottom-bar-items > a.active .bottom-bar-item-icon, 
+.phoenix .bottom-bar-items > a:active .bottom-bar-item-icon {
+    color: #005cb8; 
+}
+
+.phoenix .floating-actions .bottom-bar-item {
+    border-color: #005cb8;
+    color: #005cb8;
+}
+
+.phoenix .bottom-bar .floating-actions-items a, 
+.phoenix .bottom-bar .floating-actions-items a:link, 
+.phoenix .bottom-bar .floating-actions-items a:visited {
+    color: #005cb8;
+}
+
+.phoenix .list-item-action-primary {
+    background-color: #005cb8;
+}
+
+.phoenix .section-expandable-icon:before,
+.phoenix .section-expandable-icon:after {
+    background-color: #005cb8;
+}
+
+.phoenix .tabs-underline {
+    background-color: #005cb8;
+}
+
+.phoenix .tabs-header-tab.active {
+    color: #005cb8;
+}
+
+.phoenix .text-primary-color {
+    color: #005cb8;
+}
+
+.phoenix .icon-circle {
+    background-color: #005cb8;
+}
+
+.phoenix .background-primary-color {
+    background-color: #005cb8;
+}
+
+.phoenix .noUi-origin .noUi-handle-lower:before, 
+.phoenix .noUi-origin.noUi-connect .noUi-handle-lower:before, 
+.phoenix .noUi-origin .noUi-handle-lower:after, 
+.phoenix .noUi-origin.noUi-connect .noUi-handle-lower:after, 
+.phoenix .noUi-origin.noUi-background .noUi-handle-upper:before {
+    color: #005cb8;
+}
+
+.phoenix .noUi-origin.noUi-connect {
+    background-color: #005cb8;
+}
+
+.phoenix .noUi-base {
+    background-color: #005cb8;
+}
+
+.phoenix .btn.background-white, 
+.phoenix .btn.background-white:hover, 
+.phoenix .btn.background-white:focus {
+    color: #005cb8;
+}
+
+.phoenix input.checkbox:checked:before {
+    background-color: #005cb8;
+    border: 1px solid #005cb8;
+}
+
+
+.phoenix input.switch:checked:before {
+    background-color: #005cb8;
+    border-color: #005cb8;
+}
+
+.phoenix input.switch:checked:after {
+    border-color: #005cb8;
+}
+
+.phoenix .animated-label-input input[data-input]:focus {
+    border-bottom: 2px solid #005cb8;
+}
+
+.phoenix input[data-input]:focus, 
+.phoenix textarea[data-textarea]:focus {
+    border: 1px solid #005cb8;
+}
+
+.phoenix .double-input .form-control {
+    width: 33.3%;
+    border-right-width: 1px;
+}
+
+.phoenix .double-input .form-control:focus {
+    border-right-width: 1px;
+}
+
+.phoenix .section-expandable.open .section-expandable-title .dividers {
+    color: #005cb8;
+}
+
+.phoenix .wizard-item-wrapper.active .wizard-label {
+    color: #005cb8;
+}
+
+.phoenix .wizard-item-wrapper.past .wizard-item, 
+.phoenix .wizard-item-wrapper.active .wizard-item {
+    background-color: #005cb8;
+}
+
+.phoenix .wizard-item-wrapper.past:before {
+    background-color: #005cb8;
+}
+
+.phoenix .bottom-bar > a.active, .bottom-bar > a:active {
+    color: #005cb8;
+}
+
+.phoenix .tag.text-primary-color {
+    background-color: #005cb8;
+    border: 1px solid #005cb8;
+}
+
+.phoenix .tag.text-white {
+    color: #005cb8;
+}
+
+.phoenix .counter.background-white {
+    color: #005cb8;
+}
+
+.phoenix .badge.background-white {
+    color: #005cb8;
+}
+
+.phoenix .avatar.background-white {
+    color: #005cb8;
+}
+
+.phoenix .is-inrange .pika-button {
+    background-color:#005cb8;
+}
+
+.phoenix .is-endrange .pika-button,
+.phoenix .is-startrange .pika-button {
+    background-color: #005cb8;
+}
+
+.phoenix .is-selected .pika-button {
+    background-color: #005cb8;
+}
+.phoenix .calendar:not(.interval) .is-startrange:after,
+.phoenix .calendar:not(.interval) .is-endrange:after {
+    background-color: #005cb8;
+}
+
+.phoenix .pika-label {
+    color: #005cb8;
+}
+
+
+.phoenix .header a, 
+.phoenix .header a:link, 
+.phoenix .header a:visited {
+    color: #fff;
+}
+
+.phoenix .border-bottom-primary {
+    border-bottom-color: #005cb8;
+}
+
+
+
+.phoenix .header .button-group {
+    background-color: #fff;
+}    
+
+    
+.phoenix .header {
+    background-color: #ffffff;
+}    
+
+.phoenix .header-right .search-input {
+    background-color: #ffffff;
+}
+
+.phoenix .background-secondary-color {
+    background-color: #ffffff;    
+}
+
+.phoenix .text-secondary-color {
+    color: #ffffff;     
+}
+
+
+
+
+.phoenix .header-top {
+    color: #000;
+}
+
+.phoenix .header-title {
+    color: #000;
+}
+
+.phoenix .header a.app-menu-back {
+    color: #000;
+}
+
+.phoenix .app-menu-line {
+    background-color: #000;
+}
+
+.phoenix .split-right-close a, 
+.phoenix .split-right-close a:link, 
+.phoenix .split-right-close a:visited {
+     color: #000;
+}
+
+.phoenix .header-content .search input[data-input], 
+.phoenix .header-content .search input[data-input]:empty {
+    background: #ffffff;
+    color: #000;
+}
+
+.phoenix .header-content .search-input:after {
+    color: #000;
+}
+
+.phoenix .header-content button.button-group-item.button-group-item {
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.phoenix .header-content button.button-group-item.button-group-selected-item {
+    color: #000;
+}
+
+
+
+.ios .btn, 
+.ios .btn:hover, 
+.ios .btn:focus {
+    border-radius: 13px;  
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.ios .btn-small, 
+.ios .btn-small:hover, 
+.ios .btn-small:focus {
+    min-height: 26px;
+    border-radius: 4px;
+    padding: 1px 10px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.ios .bottom .btn, 
+.ios .bottom .btn:hover, 
+.ios .bottom .btn:focus {
+    border-radius: 0;
+}
+
+.ios input.switch {
+    width: 51px;
+    height: 31px;
+    background-color: #fff;
+}
+
+.ios input.switch:empty:before {
+    width: 49px;
+    height: 29px;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.ios input.switch:checked:before {
+    background-color: #44db5e;
+    border: 1px solid #44db5e;    
+}
+
+.ios input.switch:empty:after {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.19), 0 2px 2px rgba(0, 0, 0, 0.02), 0 3px 1px rgba(0, 0, 0, 0.05);
+    width: 26px;
+    height: 26px;
+    left: 1px;
+    top: 1px;
+}
+
+.ios input.switch:checked:after {
+    left: 22px;
+} 
+
+.ios input.checkbox {
+    border-radius: 50px;
+    width: 22px;
+    height: 22px;
+}
+
+.ios input.checkbox:before {
+    width: 20px;
+    height: 20px;
+    border-radius: 50px;
+    background-color: transparent;
+    border: 1px solid #c7c7cd;
+}
+
+.ios input.checkbox:checked:after {    
+    width: 10px;    
+    border: 2px solid #fff;    
+    border-right: 0 !important;    
+    border-top: 0 !important;    
+    height: 4px;    
+    left: 5px;    
+    top: 7px;
+}
+
+.ios .button-group {
+    padding: 0;
+    background-color: transparent;
+    border-radius: 0;
+}
+
+.ios button.button-group-item {
+    color: #005cb8;
+    border-radius: 0;
+    padding: 6px 10px;
+    border: 1px solid  #005cb8; 
+    border-left-width: 0;
+    margin: 0;
+}
+
+.ios button.button-group-item:first-child {
+    border-left-width: 1px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+.ios button.button-group-item:last-child {
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.ios button.button-group-item.button-group-selected-item {
+    color: #fff;
+}
+
+.ios .header .button-group {
+    margin-bottom: 0;
+    background-color: transparent;
+    padding: 10px;
+}
+
+.ios .header-content button.button-group-item.button-group-item {
+    color: #005cb8;
+    padding: 6px 10px 4px;
+    border: 1px solid #005cb8;
+    border-left-width: 0;
+    text-transform: none;
+}
+
+.ios .header-content button.button-group-item.button-group-selected-item {
+    color: #fff;
+    background-color: #005cb8;
+}
+
+.ios .header-content button.button-group-item:first-child {
+    border-left-width: 1px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+.ios .header-content button.button-group-item:last-child {
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.ios .header-content button.button-group-item.button-group-selected-item:after,
+.ios .header-content button.button-group-item.button-group-item:after {
+    content: none;
+}
+
+.ios .bottom-bar-item {
+    padding: 10px 5px 2px;
+}
+
+.ios .bottom-bar-item-icon {
+    font-size: 0;
+}
+
+.ios .bottom-bar .bottom-bar-item-icon .icon {
+    font-size: 23px;
+} 
+
+.ios .header a,
+.ios .header a:link,
+.ios .header a:visited {
+    color: #005cb8;
+}
+
+.ios .action-sheet-cancel {
+    margin-top: 8px;
+}
+
+.ios .action-sheet-buttons {
+    border-radius: 13px;
+}
+
+.ios .action-sheet-buttons .btn, 
+.ios .action-sheet-buttons .btn:hover, 
+.ios .action-sheet-buttons .btn:focus {
+    min-height: 56px;
+}
+
+.ios .action-sheet-cancel .btn, 
+.ios .action-sheet-cancel .btn:hover, 
+.ios .action-sheet-cancel .btn:focus {
+    font-weight: 600;
+    min-height: 56px;
+}
+
+.ios .header-content .search {
+    padding: 8px;
+}
+
+.ios .header-content .search input[data-input], 
+.ios .header-content .search input[data-input]:empty {
+    height: 30px;
+    border-radius: 5px;
+    padding-left: 25px;
+}
+
+.ios .header-content .search-input:after {
+    top: 16px;
+}
+
+.ios .header-right .search-stick-bottom {
+    background-color: #000;
+}
+
+.ios .header-right .search-round {
+    box-shadow: inset 0 0 0 3px #000;
+}
+
+.ios .header-right .search-input {
+    background-color: #c9c9ce;    
+}
+
+.ios .card {
+    border-radius: 0;
+}
+
+.ios .card-title, 
+.ios .card-content, 
+.ios .card-bottom {
+    padding: 20px 15px;
+}
+
+.ios .card.card-detail {
+    padding: 8px 15px;    
+}
+
+.ios .tabs-header {
+    background-color: transparent;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.ios .tabs-underline {
+    display: none;
+}
+
+.ios .tabs-header-tab {
+    color: #005cb8;
+    padding: 6px 15px 4px;
+    border: 1px solid #005cb8;
+    border-left-width: 0;
+}
+
+.ios .tabs-header-tab:first-child {
+    border-left-width: 1px;
+}
+
+.ios .tabs-header-tab.active {
+    color: #fff;
+    background-color: #005cb8;
+}
+
+.android .btn, 
+.android .btn:hover, 
+.android .btn:focus {
+    border-radius: 2px;  
+    font-size: 14px;
+    font-weight: 400;
+    min-height: 36px;
+    border: none;
+}
+
+.android .btn-primary, 
+.android .btn-primary:hover, 
+.android .btn-primary:focus {
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.24), 0 0 2px rgba(0, 0, 0, 0.12);    
+}
+
+.android .bottom .btn, 
+.android .bottom .btn:hover, 
+.android .bottom .btn:focus {
+    border-radius: 0;
+    box-shadow: none;
+    min-height: 60px;
+}
+
+.btn-primary:active {
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.24), 0 0 8px rgba(0, 0, 0, 0.12);
+    -webkit-filter: none;
+}
+
+.android .btn[class*="background-"], 
+.android .btn[class*="background-"]:hover, 
+.android .btn[class*="background-"]:focus {
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.24), 0 0 2px rgba(0, 0, 0, 0.12); 
+}
+    
+.android .btn[class*="background-"]:active {
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.24), 0 0 8px rgba(0, 0, 0, 0.12);
+}
+
+.android input.switch {
+    width: 34px;
+    height: 14px;
+    background-color: transparent;
+}
+
+.android input.switch:empty:before {
+    width: 34px;
+    height: 14px;
+    border: 0;
+    background-color: rgba(34, 31, 31, 0.26);
+}
+
+.android input.switch:checked:before {
+    background-color: #005cb8;
+    border: 1px solid #005cb8; 
+    opacity: 0.5;
+}
+
+.android input.switch:empty:after {
+    border: none;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.24), 0 0 1px rgba(0, 0, 0, 0.12);
+    width: 20px;
+    height: 20px;
+    left: -1px;
+    top: -2px;
+    background-color:#005cb8;
+}
+
+.android input.switch:checked:after {
+    left: 17px;
+    border: none;
+} 
+
+.android input.checkbox {
+    border-radius: 50px;
+    width: 18px;
+    height: 18px;
+}
+
+.android input.checkbox:before {
+    width: 16px;
+    height: 16px;
+    border-radius: 2px;
+}
+
+.android input.checkbox:checked:after {
+    width: 10px;
+    border: 2px solid #fff;
+    border-right: 0 ;
+    border-top: 0 ;
+    height: 4px;
+    left: 3px;
+    top: 5px;
+}
+
+.android .button-group {
+    padding: 0;
+    background-color: #005cb8;
+    border-radius: 0;
+}
+
+.android button.button-group-item {
+    padding: 13px 10px;
+    border-radius: 0;
+    border-bottom: 2px solid transparent;
+    font-weight: 500;
+    font-size: 14px;
+    color: rgba(255,255,255,0.7);
+    margin: 0;
+}
+
+.android button.button-group-item.button-group-selected-item {
+    border-bottom: 2px solid #fff;
+    color: #fff;
+}
+
+.android .header .button-group {
+    background-color: transparent;
+}
+
+.android .tabs-header {
+    background-color: #ffffff;
+}
+
+.android .tabs-header-tab.active {
+    color: #fff;
+}
+
+.android .tabs-header-tab {
+    color: rgba(255,255,255,0.7);    
+}
+
+.android .bottom-bar-wrapper {
+    border-top: 0;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1), 0 0 2px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+}
+
+.android .header {
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.24), 0 0 4px rgba(0, 0, 0, 0.12);
+}
+
+.android .header-left {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 40px;
+        flex: 0 0 40px;
+    width: 40px;
+}
+
+.android .header-left:empty {
+    display: none;
+}
+
+.android .header-title {
+    padding-left: 10px;
+    text-align: left;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+}
+
+.android .action-sheet {
+    padding: 0;
+}
+
+.android .action-sheet-cancel {
+    display: none;
+}
+
+.android .action-sheet-buttons {
+    border-radius: 0;
+}
+
+.android .action-sheet-buttons .btn, 
+.android .action-sheet-buttons .btn:hover, 
+.android .action-sheet-buttons .btn:focus {
+    min-height: 56px;
+    text-align: left;
+    padding: 10px 20px;
+    border-top: 0;
+    color: rgba(0, 0, 0, 0.54);
+}
+
+.android .action-sheet-actions a, 
+.android .action-sheet-actions a:link, 
+.android .action-sheet-actions a:visited
+.android .action-sheet-actions a:focus, 
+.android .action-sheet-actions .btn[class*="background-"], 
+.android .action-sheet-actions .btn[class*="background-"]:hover, 
+.android .action-sheet-actions .btn[class*="background-"]:focus,
+.android .action-sheet-actions .btn[class*="background-"]:active {
+    border-top: 0;
+    box-shadow: none;
+}
+
+.android .action-sheet-cancel .btn, 
+.android .action-sheet-cancel .btn:hover, 
+.android .action-sheet-cancel .btn:focus {
+    border-radius: 0;
+    text-align: left;
+    padding: 10px 20px;
+    min-height: 56px;
+    color: rgba(0, 0, 0, 0.54);
+}
+
+.android .card {    
+    border-radius: 2px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.24), 0 0 2px rgba(0, 0, 0, 0.12); 
+}
+
+.android [data-list-item] {
+    border-bottom: 0;
+}
+
+
+
+.ios [data-list-item] a, 
+.ios [data-list-item] a:link, 
+.ios [data-list-item] a:visited {
+    color: #263238;
+}
+
+.ios .bottom-bar-wrapper {
+    background-color: #f7f7f8;
+    border-top: 1px solid #acacac;
+}
+
+.ios .bottom-bar > a, 
+.ios .bottom-bar > a:link, 
+.ios .bottom-bar > a:visited {
+    color: #8c8c8c;
+}
+
+.android [data-list-item] a, 
+.android [data-list-item] a:link, 
+.android [data-list-item] a:visited {
+    color: #263238;
+}
+        
+    
+
+.android .bottom-bar > a, 
+.android .bottom-bar > a:link, 
+.android .bottom-bar > a:visited {
+    color: rgba(0,0,0,0.7);
+}
+
+.android .bottom-bar > a.active .bottom-bar-item-text, 
+.android .bottom-bar > a:active .bottom-bar-item-text,
+.android .bottom-bar > a.active .bottom-bar-item-icon, 
+.android .bottom-bar > a:active .bottom-bar-item-icon {
+    color: #000;
+}
+
+.android .header-content button.button-group-item.button-group-item {
+    color: rgba(0,0,0,0.7);
+}
+
+.android .header-content button.button-group-item.button-group-selected-item {
+    color: #000;
+    border-bottom: 0;
+}
+
+.android .header-content button.button-group-item.button-group-selected-item:after {
+    background-color: #000;    
+}
+
+
+body,
+.content {
+    background-color: #ffffff;
+} 
+
+.button-group {
+    background-color: #ffffff;
+}
+
+
+
+body {
+    font-size:16px;
+}
+
+a, 
+a:link, 
+a:visited {
+    font-size:16px;
+}
+
+h1, 
+.h1, 
+.heading1 {
+    font-size: 1.75em;    
+}
+
+h2, 
+.h2, 
+.heading2 {
+    font-size: 1.375em;    
+}
+
+h3,
+.h3,
+.heading3 {
+    font-size: 1.125em;    
+}
+
+h4,
+.h4,
+.heading4 {
+    font-size: 1em;
+}
+
+h5,
+.h5,
+.heading5 {
+    font-size: 0.875em;     
+}
+
+h6,
+.h6,
+.heading6 {
+    font-size: 0.75em;     
+}
+    
+.bottom-bar-item-text {
+    font-size: 0.625em;
+}
+
+.splash-screen,
+.login-screen {
+    background-color: #ffffff;
+    background-image: none;    
+}
+
+
+.login-screen, 
+.splash-screen {
+    color: #000;
+}
+
+.login-screen a,
+.login-screen a:visited,
+.login-screen a:link {
+    color: #000;
+    font-weight: bold;
+}
+
+.login-screen input[data-input],
+.login-screen input[data-input]:focus,
+.login-screen input[data-input]:empty,
+.login-screen .animated-label-input input[data-input], 
+.login-screen .animated-label-input input[data-input]:empty {
+    border-bottom: 1px solid #000;
+    color: #000;
+}
+
+.login-screen .validation-message {
+    color: #000;
+}
+
+.login-screen .animated-label-text {
+    color: #000;
+}
+
+.login-screen .animated-label-input input[data-input]:focus {
+    border-bottom: 2px solid #000;
+}
+
+
+.login-logo span {
+    display: none;
+}
+
+.login-logo:after {
+    content: 'phoenix';
+}
+
+.login-logo img {
+    display: none;
+}
+
+.login-logo:before {
+    background-image: url(https://silkui.outsystems.com/SilkUIMobileCustomizerImageURL/GetImageURL.aspx?ImageID=1808&version=1);
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    content: '';
+    width: 100px;
+    height: 100px;
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+}

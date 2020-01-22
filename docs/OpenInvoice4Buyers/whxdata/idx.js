@@ -1,0 +1,1 @@
+gXMLBuffer ="<?xml version=\"1.0\" encoding=\"utf-8\" ?><index>  <chunkinfo url=\"idata1.js\" first=\"Company Preferences\" last=\"Tax Type Profile Settings\" num=\"31\" />  </index>";

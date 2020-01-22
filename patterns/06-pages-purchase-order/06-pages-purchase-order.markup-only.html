@@ -1,0 +1,1128 @@
+<link href="../../css/00-navbar-alternate.css" rel="alternate stylesheet" type="text/css" title="alternate">
+<nav  id="defaultNavbar" role="navigation" class="navbar navbar-default navbar-fixed-top">
+    <div id="message"></div>
+    <div class="container-fluid">
+        <div class="navbar-header navbar-left pull-left">
+            <button type="button" data-toggle="collapse" data-target=".navbar-collapse" class="btn btn-default btn-sm navbar-btn pull-left">
+                Menu
+            </button>
+            <div class="navbar-brand hidden-xs hidden-sm">
+                <a class="logo-navbar"></a>
+            </div>
+        </div>
+        <div class="navbar-header navbar-right pull-right">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="hidden visible-xs pull-left">
+                    <a class="label-success navbar-link">
+                        <i class="fas fa-sack-dollar fa-fw"></i>
+                        <div class="pull-right" style="width: 60px; white-space: normal;float:right;line-height: 1;font-size: 13px; text-align: center;">Get Paid Faster! </div>
+                    </a>
+                </li>
+                <li class="hidden visible-xs visible-sm dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fas fa-search fa-fw"></i></a>
+                    <ul class="dropdown-menu dropdown-menu-right" style="padding: 15px;min-width: 250px;">
+                        <li>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <form>
+                                        <div class="input-group input-group-sm ">
+                                            <span class="input-group-addon dropdown-toggle" data-toggle="dropdown"
+                                                aria-haspopup="true" aria-expanded="false">
+                                                <span class="caret"></span>
+                                            </span>
+                                            <ul class="dropdown-menu dropdown-menu-left">
+                                                <li onclick="setGlobalSearchPlaceholder($(this).first().text());"><a>Invoice #</a></li>
+                                                <li onclick="setGlobalSearchPlaceholder($(this).first().text());"><a href="#">Pricebook #</a></li>
+                                                <li onclick="setGlobalSearchPlaceholder($(this).first().text());"><a href="#">Field Ticket #</a></li>
+                                                <li onclick="setGlobalSearchPlaceholder($(this).first().text());"><a href="#">Purchase Order #</a></li>
+                                            </ul>
+
+                                            <input class="form-control" id="globalSearch" placeholder="Invoice #">
+
+                                            <span class="input-group-btn">
+                                                <button class="btn btn-default"><i class="fas fa-search fa-fw"></i></button>
+                                            </span>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a title="Message Centre" class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <span class="badge badge-xs">49</span>
+                        <i class="fas fa-bell fa-fw"></i>
+                        <!-- <span class="hidden-xs hide">Messages</span> -->
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-right">
+                        <li>
+                            <a title="Message Centre" href="#">
+                                <span class="fa-fw">
+                                    <i class="fas fa-envelope"></i>
+                                    Messages
+                                </span>
+                                <sup class="badge" style="background:#BE3A34">41</sup>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="fa-fw">
+                                    <i class="fas fa-file-alt"></i>
+                                    Completed Reports
+                                </span>
+                                <sup class="badge" style="background:#BE3A34">8</sup>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a title="Help Center" class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fas fa-question-circle fa-fw"></i> <span class="hidden-xs hide">Help</span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-right">
+                        <li><a href="#"><i class="fas fa-life-ring fa-fw"></i> Contact Support</a></li>
+                        <li><a href="#"><i class="fas fa-book fa-fw"></i> Resource Center</a></li>
+                        <li><a href="#"><i class="fas fa-comment fa-fw"></i> Feedback</a></li>
+                        <li><a href="#"><i class="fas fa-users fa-fw"></i> About</a></li>
+                        <li><a href="#"><i class="fas fa-user-secret fa-fw"></i> Privacy</a></li>
+                        <li><a href="#"><i class="fas fa-gavel fa-fw"></i> Terms</a></li>
+                        <li><a href="#"><i class="fas fa-globe fa-fw"></i> Browsers</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a title="My Profile" class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fas fa-user fa-fw"></i> <span class="hidden-xs hide">Profile</span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-right">
+                        <li><a href="#"><i class="fas fa-user fa-fw"></i> Christopher Schwartzenberg</a></li>
+                        <li><a href="#"><i class="fas fa-cog fa-fw"></i> Preferences</a></li>
+                        <li><a href="#"><i class="fas fa-font fa-fw"></i> Font Size</a></li>
+                    </ul>
+                </li>
+                <li><a title="Sign Out" href="#"><i class="fas fa-sign-out fa-fw"></i></a></li>
+            </ul>
+        </div>
+        <ul class="nav navbar-nav navbar-left">
+            <li class="pull-left">
+                <p class="navbar-text hide-overflow small hidden-sm hidden-xs" style="max-width: 225px;">Tetratrex
+                    Oilfield Services Incorporated Ltd.
+                </p>
+            </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right visible-sm visible-md visible-lg hidden-xs">
+            <li class="pull-left">
+                <a class="label-success navbar-link">
+                    <i class="fas fa-sack-dollar fa-fw"></i>
+                    <div class="pull-right" style="width: 60px; white-space: normal;float:right;line-height: 1;font-size: 13px; text-align: center;">Get Paid Faster! </div>
+                </a>
+            </li>
+            <li>
+                <form class="navbar-form navbar-right">
+                    <div class="form-group">
+                        <div class="input-group">
+                            <span class="input-group-addon dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">
+                                <span class="caret"></span>
+                            </span>
+                            <ul class="dropdown-menu dropdown-menu-left">
+                                <li onclick="setGlobalSearchPlaceholder($(this).first().text());"><a href="#">Invoice #</a></li>
+                                <li onclick="setGlobalSearchPlaceholder($(this).first().text());"><a href="#">Pricebook #</a></li>
+                                <li onclick="setGlobalSearchPlaceholder($(this).first().text());"><a href="#">Field Ticket #</a></li>
+                                <li onclick="setGlobalSearchPlaceholder($(this).first().text());"><a href="#">Purchase Order #</a></li>
+                            </ul>
+
+                            <input class="form-control" id="globalSearch" placeholder="Invoice #">
+
+                            <span class="input-group-btn">
+                                <button class="btn btn-default"><i class="fas fa-search fa-fw"></i></button>
+                            </span>
+                        </div>
+                    </div>
+                </form>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<nav id="secondaryNavbar" class="navbar-default animated navbar-fixed-top " style="z-index: 1030">
+    <div class="container-fluid">
+        <div class="row">
+                <div class="col-xs-4">
+                        <div class="btn-group  pull-left">
+                            <button class="btn btn-link text-nowrap dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                <i class="fas fa-arrow-left fa-fw"></i> Back <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Supplier On-Ramping</a></li>
+                                <li><a href="#">Suppliers</a></li>
+                                <li><a href="#">Dashboard</a></li>
+                            </ul>
+                        </div>
+                </div>
+                <div class="col-xs-4 text-center hide-overflow">
+                    <div class="form-control-static">
+                        Purchase Order #4500000249
+                    </div>
+                </div>
+                <div class="col-xs-4 text-right text-nowrap">
+                        <div class="btn-group  pull-right" style="display:flex;">
+                            <button type="button" class="btn btn-link" data-toggle="tooltip" data-placement="bottom" title="Previous in List"><span class="hidden-xs">Prev </span><i class="fas fa-arrow-up fa-fw"></i></button>
+                            <button type="button" class="btn btn-link" data-toggle="tooltip" data-placement="bottom" title="Next in List"><span class="hidden-xs">Next</span> <i class="fas fa-arrow-down fa-fw"></i></button>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+
+
+<div class="container-fluid  page-top-padding  page-bottom-padding">
+<ul class="nav nav-tabs">
+    <li class="active" onclick="$('#currentPOToolbar').toggleClass('hide');$('#proposedPOToolbar').toggleClass('hide');">
+        <a href="#currentPOTab" data-toggle="tab" >Current</a>
+    </li>
+    <li onclick="$('#currentPOToolbar').toggleClass('hide');$('#proposedPOToolbar').toggleClass('hide');">
+        <a href="#proposedPOTab" data-toggle="tab" alt="$(this).text();" >Proposed</a>
+    </li>
+</ul>
+<div class="tab-content">
+    <div class="tab-pane active fade in" id="currentPOTab">
+        <div class="row">
+            <div class="col-sm-9">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <div class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#poHeader">PO Header</a>
+                            <span class="pull-right" data-toggle="collapse" data-parent="#accordion" href="#poHeader">
+                                <i class="panelExpandIcon glyphicon glyphicon-chevron-down"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div id="poHeader" class="panel-collapse in">
+                        <div class="panel-body">
+                            <form>
+                                <div class="form-group">
+                                    <div class="row">
+                                        <div class="col-xs-6">
+                                            <div class="form-group">
+                                                <label class="control-label" for="buyer">Buyer</label>
+                                                <input class="form-control" type="text" id="buyer" value="ABC Petroleum Corp.">
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="control-label" for="buyerSite">Buyer Site</label>
+                                                <input class="form-control" type="text"  id="buyerSite" value="Northern Regional">
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-6">
+                                            <div class="form-group">
+                                                <label class="control-label" for="supplier">Supplier</label>
+                                                <input class="form-control" type="text" id="supplier"  value="Acme Field Services Ltd">
+                                            </div>
+                                            <div class="form-group"><label class="control-label" for="supplierSite">Supplier Site</label>
+                                                <input class="form-control" type="text"  id="supplierSite"  value="Calgary, AB">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="row">
+                                        <div class="col-xs-6">
+                                            <div class="form-group">
+                                                <label class="control-label" for="poNumber">PO Number</label>
+                                                <input class="form-control" type="text"  id="poNumber"  value="4500000249">
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="control-label" for="poDate">PO Date</label>
+                                                <input class="form-control" type="text"  id="poDate"  value="03/20/2012">
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="control-label" for="poStatus">PO Status</label>
+                                                <input class="form-control" type="text"  id="poStatus"  value="Accepted">
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="control-label" for="receiptFulfillment">Receipt Fulfillment</label>
+                                                <input class="form-control" type="text"  id="receiptFulfillment" value="Not Received">
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-6">
+                                            <div class="form-group">
+                                                <label class="control-label" for="changeRequestNumber">Change Request Number</label>
+                                                <input  class="form-control" type="text" id="changeRequestNumber"  value="00000000">
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="control-label" for="changeRequestDate">Change Request Date</label>
+                                                <input  class="form-control" type="text" id="changeRequestDate" value="03/20/2012">
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="control-label" for="invoiceFulfillment">Invoice Fulfillment</label>
+                                                <input class="form-control" type="text"  id="invoiceFulfillment"  value="Partially Invoiced">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel panel-default" id="addresses-section">
+                    <div class="panel-heading">
+                        <div class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#poAddresses">Addresses and Contacts</a>
+                            <span class="pull-right" data-toggle="collapse" data-parent="#accordion" href="#poAddresses">
+                                <i class="panelExpandIcon glyphicon glyphicon-chevron-down"></i>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="panel-body panel-collapse collapse" id="poAddresses" aria-expanded="false" aria-hidden="true">
+                        <div class="table-responsive">
+                            <table class="table table-condensed">
+                                <thead>
+                                    <tr>
+                                        <th>Address Type</th>
+                                        <th>Address</th>
+                                        <th>Contact Information</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td id="contactType_0">Bill To</td>
+                                        <td id="address_0">
+                                            <div>ABC Petroleum Corp.</div>
+                                            <div>Head Office</div>
+                                            <div>5500 3rd Avenue</d>
+                                                <div>Houston, Tx</div>
+                                                <div>USA</span>
+                                        </td>
+                                        <td id="phoneFaxEmail_0">
+                                            <div> Phone:(403) 555-2864</div>
+                                            <div> Fax: (403) 455-4444</div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td id="contactType_1">Ship To</td>
+                                        <td id="address_1">
+                                            <div> ABC Petroleum Corp.</div>
+                                            <div> East District Office</div>
+                                            <div> Edgar Industrial Bend Rd</d>
+                                                <div> Smallville, NY</div>
+                                                <div> USA</span>
+                                        </td>
+                                        <td id="phoneFaxEmail_1">
+                                            <div> Phone:(687) 321-2846</div>
+                                            <div> Fax: (547) 511-3791</div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td id="contactType_2">Recipient</td>
+                                        <td id="address_2">
+                                            <div>Acme Field Services Ltd</div>
+                                        </td>
+                                        <td id="phoneFaxEmail_2">
+                                            <div> Email: nobody@localhost
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td id="contactType_3">Non-Billing Inquiries</td>
+                                        <td id="address_3">
+                                            <div> Acme Field Services Ltd</span>
+                                                <div> Shane Hauser</div>
+                                        </td>
+                                        <td id="phoneFaxEmail_3">
+                                            <div> Phone:(403) 111-1111</div>
+                                            <div> Fax: (403) 999-9999</div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel panel-default" id="line-items-section">
+                    <div class="panel-heading">
+                        <div class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#poLineItems">Line Items</a>
+                            <span class="pull-right" data-toggle="collapse" data-parent="#accordion" href="#poLineItems">
+                                <i class="panelExpandIcon glyphicon glyphicon-chevron-down"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div id="poLineItems" class="panel-body panel-collapse collapse in">
+                        <div class="form-group">
+                            <div class="table-responsive">
+                                <table class="table table-striped table-bordered">
+                                    <thead>
+                                        <tr>
+
+                                            <th class=""><input id="selectAll" type="checkbox"></th>
+                                            <th>Item</th>
+                                            <th>Type</th>
+                                            <th>Supplier Code</th>
+                                            <th>Supplier Product/Service</th>
+                                            <th>Buyer Description</th>
+                                            <th>MFTR Code</th>
+                                            <th>Qty</th>
+                                            <th>Units</th>
+                                            <th>Rate</th>
+                                            <th>Total</th>
+                                        </tr>
+                                    </thead>
+
+                                    <tbody>
+                                        <tr>
+                                            <td><input type="checkbox" id="selectCheckbox_0" class="ng-untouched ng-pristine ng-valid"></td>
+                                            <td id="lineNumber_0">00010</td>
+                                            <td id="poType_0">Detail</td>
+                                            <td id="productServiceCode_0">PRODUCT</td>
+                                            <td id="productServiceDescription_0"></td>
+                                            <td id="lineDescription_0">Services</td>
+                                            <td id="manufacturerCode_0"></td>
+                                            <td id="quantity_0">
+                                                <p class="text-right">1</p>
+                                            </td>
+                                            <td id="unitOfMeasure_0">AU</td>
+                                            <td id="rate_0">
+                                                <p class="text-right">200,001.00</p>
+                                            </td>
+                                            <td id="totalAmount_0">
+                                                <p class="text-right">200,001.00</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="11">
+                                                <div aria-controls="collapse" class="text-muted" name="showHide" aria-expanded="false">
+                                                    <i class="fa fa-chevron-down"></i> Show Details
+                                                </div>
+                                                <div class="card card-block card-header collapse" id="collapse" aria-expanded="false"
+                                                    aria-hidden="true">
+                                                    <div class="panel-body ">
+                                                        <table class="table table-bordered">
+                                                            <caption>Delivery Details</caption>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <th>Quantity</th>
+                                                                    <th>Start Date</th>
+                                                                    <th>End Date</th>
+                                                                    <th>Ship To</th>
+                                                                    <th>Contact Information</th>
+                                                                    <th>Buyer Comment</th>
+                                                                </tr>
+
+                                                                <tr class="">
+                                                                    <td nowrap="" id="deliveryDetailQuantity_0_0">1</td>
+                                                                    <td nowrap="" id="deliveryDetailStartDateTime_0_0">
+                                                                        03/20/2012 12:00:00 AM </td>
+                                                                    <td nowrap="" id="deliveryDetailEndDateTime_0_0">
+                                                                        02/27/2013 11:00:00 PM </td>
+
+
+                                                                    <td class="">
+                                                                        <ul></ul>
+                                                                    </td>
+                                                                    <td id="deliveryDetailContactInfo_0_0">
+
+                                                                    </td>
+                                                                    <td id="deliveryDetailBuyerComment_0_0">Services</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+
+                                                    <div class="panel-body ">
+                                                        <table class="table table-bordered">
+                                                            <caption>Coding Details</caption>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <th>Item Master</th>
+                                                                    <th>AFE</th>
+                                                                    <th>Cost Center</th>
+                                                                    <th>Work Order</th>
+                                                                    <th>GL account</th>
+                                                                </tr>
+
+                                                                <tr class="">
+                                                                    <td nowrap="" id="itemMaster_0_0">361</td>
+                                                                    <td nowrap="" id="afe_0_0"></td>
+                                                                    <td nowrap="" id="costCenter_0_0"></td>
+                                                                    <td nowrap="" id="workOrder_0_0"></td>
+
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+
+                                                    <div class="panel-body ">
+                                                        <table class="table table-bordered">
+                                                            <caption>Fulfillment Details</caption>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <th>Type</th>
+                                                                    <th>Total Quantity</th>
+                                                                    <th>Total Amount</th>
+                                                                    <th>Fulfilled Quantity</th>
+                                                                    <th>Fulfilled Amount</th>
+                                                                    <th>Remaining Quantity</th>
+                                                                    <th>Remaining Amount</th>
+                                                                </tr>
+
+                                                                <tr class="">
+                                                                    <td nowrap="">Receipt</td>
+                                                                    <td nowrap="" id="receiptQuantity_0">1</td>
+                                                                    <td nowrap="" id="receiptTotal_0">
+                                                                        <p class="text-right">200,001.00</p>
+                                                                    </td>
+                                                                    <td nowrap="" id="receiptFulfillmentQuantity_0">0</td>
+                                                                    <td nowrap="" id="receiptFulfillmentAmount_0">
+                                                                        <p class="text-right">0.00</p>
+                                                                    </td>
+                                                                    <td nowrap="" id="receiptRemainingQuantity_0">1</td>
+                                                                    <td nowrap="" id="receiptRemainingAmountt_0">
+                                                                        <p class="text-right">200,001.00</p>
+                                                                    </td>
+                                                                </tr>
+
+                                                                <tr class="">
+                                                                    <td nowrap="">Invoice</td>
+                                                                    <td nowrap="" id="invoiceQuantity_0">1</td>
+                                                                    <td nowrap="" id="invoiceTotal_0">
+                                                                        <p class="text-right">200,001.00</p>
+                                                                    </td>
+                                                                    <td nowrap="" id="invoiceFulfillmentQuantity_0">1015.4</td>
+                                                                    <td nowrap="" id="invoiceFulfillmentAmount_0">
+                                                                        <p class="text-right">6,298.12</p>
+                                                                    </td>
+                                                                    <td nowrap="" id="invoiceRemainingQuantity_0">-1014.4</td>
+                                                                    <td nowrap="" id="invoiceRemainingAmount_0">
+                                                                        <p class="text-right">193,702.88</p>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                    <tfoot>
+                                        <tr>
+                                            <th class="text-right" colspan="10">PO Total Amount (Current)</th>
+                                            <th class="border-bottom border-top text-right" name="poTotal"> 200,001.00 </th>
+                                        </tr>
+                                        <tr>
+                                            <th class="text-right" colspan="10">Receipt Total</th>
+                                            <th class="text-right" name="receiptTotal"> </th>
+                                        </tr>
+                                        <tr>
+                                            <th class="text-right" colspan="10">Invoice Total</th>
+                                            <th class="text-right" name="invoiceTotal"> 6,298.12 </th>
+                                        </tr>
+                                    </tfoot>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="panel panel-default" id="attachment-section">
+                    <div class="panel-heading">
+                        <div class="panel-title"> Attachments </div>
+                    </div>
+                    <div class="panel-body" id="poAttachments">
+                        <div class="container-fluid">
+    <form>
+
+
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="panel panel-default attachment-panel">
+                   <div class="media">
+                        <div class="media-left media-middle well well-sm">
+                            <div class="media-object">PNG</div>
+                        </div>
+                        <div class="media-body media-middle well-sm">
+                            <div class="media-heading">Attachment1.png</div>
+                            <div class="small text-muted">395.5 KB</div>
+                        </div>
+
+                        <div class="media-right media-middle">
+                            <a class="btn btn-block" href="#nogo">
+                                <i class="fas fas fa-trash-alt fa-fw"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12">
+                <div class="panel panel-default attachment-panel">
+                   <div class="media">
+                        <div class="media-left media-middle well well-sm">
+                            <div class="media-object">PDF</div>
+                        </div>
+                        <div class="media-body media-middle well-sm">
+                            <div class="media-heading">Attachment2.pdf</div>
+                            <div class="small text-muted">892.4 KB</div>
+                        </div>
+
+                        <div class="media-right media-middle">
+                            <a class="btn btn-block" href="#nogo">
+                                <i class="fas fas fa-trash-alt fa-fw"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+
+                    </div>
+                </div>
+
+                <div class="panel panel-default" id="journal-section">
+                    <div class="panel-heading">
+                        <div class="panel-title">
+                            Journal
+                        </div>
+                    </div>
+                    <div class="panel-body" id="poJournal">
+                        <ul class="media-list">
+    <li class="media flexbox-container">
+        <div class="media-left" >
+            <i class="fas fa-check-circle fa-fw text-success"></i>
+        </div>
+        <div class="media-body">
+            <p class="media-heading"><strong>Submitted</strong> <small>12/21/2017 8:23 by Thomas Erikson</small></p>
+            <i>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et elit at quam finibus lobortis."</i>
+        </div>
+    </li>
+
+    <li class="media">
+        <div class="media-left">
+            <i class="fas fa-check-circle fa-fw text-success"></i>
+        </div>
+        <div class="media-body">
+            <p class="media-heading"><strong>Verified</strong> <small>12/21/2017 14:03 by Pat Redmond</small></p>
+        </div>
+    </li>
+
+    <li class="media">
+        <div class="media-left">
+            <i class="fas fa-check-circle fa-fw text-success"></i>
+        </div>
+        <div class="media-body">
+            <p class="media-heading"><strong>Approved </strong><small>12/12/2017 19:23 by Johnathan Goodwin </small></p>
+        </div>
+    </li>
+</ul>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tab-pane fade" id="proposedPOTab">
+                <div class="row">
+                    <div class="col-sm-9">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <div class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#proposedPOHeader">Proposed PO Header</a>
+                                    <span class="pull-right" data-toggle="collapse" data-parent="#accordion" href="#proposedPOHeader">
+                                        <i class="panelExpandIcon glyphicon glyphicon-chevron-down"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            <div id="proposedPOHeader" class="panel-collapse in">
+                                <div class="panel-body">
+                                    <form>
+                                        <div class="form-group">
+                                            <div class="row">
+                                                <div class="col-xs-6">
+                                                    <div class="form-group">
+                                                        <label class="control-label" for="buyer">Buyer</label>
+                                                        <input class="form-control" type="text" value="ABC Petroleum Corp.">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="control-label" for="buyerSite">Buyer Site</label>
+                                                        <input class="form-control" type="text" value="Northern Regional">
+                                                    </div>
+                                                </div>
+                                                <div class="col-xs-6">
+                                                    <div class="form-group">
+                                                        <label class="control-label">Supplier</label>
+                                                        <input class="form-control" type="text"  value="Acme Field Services Ltd">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="control-label" >Supplier Site</label>
+                                                        <input class="form-control" type="text"  value="Calgary, AB">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="row">
+                                                <div class="col-xs-6">
+                                                    <div class="form-group">
+                                                        <label class="control-label">PO Number</label>
+                                                        <input class="form-control" type="text"  value="4500000249">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="control-label">PO Date</label>
+                                                        <input class="form-control" type="text"  value="03/20/2012">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="control-label">PO Status</label>
+                                                        <input class="form-control" type="text" value="Accepted">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="control-label">Receipt Fulfillment</label>
+                                                        <input class="form-control" type="text"  value="Not Received">
+                                                    </div>
+                                                </div>
+                                                <div class="col-xs-6">
+                                                    <div class="form-group">
+                                                        <label class="control-label" >Change Request Number</label>
+                                                        <input  class="form-control" type="text" value="00000000">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="control-label">Change Request Date</label>
+                                                        <input  class="form-control" type="text" value="03/20/2012">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="control-label">Invoice Fulfillment</label>
+                                                        <input class="form-control" type="text" value="Partially Invoiced">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <div class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#proposedPOAddresses">Addresses and Contacts</a>
+                                    <span class="pull-right" data-toggle="collapse" data-parent="#accordion" href="#proposedPOAddresses">
+                                        <i class="panelExpandIcon glyphicon glyphicon-chevron-down"></i>
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="panel-body panel-collapse collapse" id="proposedPOAddresses" aria-expanded="false" aria-hidden="true">
+                                <div class="table-responsive">
+                                    <table class="table table-condensed">
+                                        <thead>
+                                            <tr>
+                                                <th>Address Type</th>
+                                                <th>Address</th>
+                                                <th>Contact Information</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Bill To</td>
+                                                <td>
+                                                    <div>ABC Petroleum Corp.</div>
+                                                    <div>Head Office</div>
+                                                    <div>5500 3rd Avenue</d>
+                                                        <div>Houston, Tx</div>
+                                                        <div>USA</span>
+                                                </td>
+                                                <td>
+                                                    <div> Phone:(403) 555-2864</div>
+                                                    <div> Fax: (403) 455-4444</div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Ship To</td>
+                                                <td>
+                                                    <div> ABC Petroleum Corp.</div>
+                                                    <div> East District Office</div>
+                                                    <div> Edgar Industrial Bend Rd</d>
+                                                        <div> Smallville, NY</div>
+                                                        <div> USA</span>
+                                                </td>
+                                                <td>
+                                                    <div> Phone:(687) 321-2846</div>
+                                                    <div> Fax: (547) 511-3791</div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Recipient</td>
+                                                <td>
+                                                    <div>Acme Field Services Ltd</div>
+                                                </td>
+                                                <td>
+                                                    <div> Email: nobody@localhost
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Non-Billing Inquiries</td>
+                                                <td>
+                                                    <div> Acme Field Services Ltd</span>
+                                                        <div> Shane Hauser</div>
+                                                </td>
+                                                <td>
+                                                    <div> Phone:(403) 111-1111</div>
+                                                    <div> Fax: (403) 999-9999</div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="panel panel-default" id="line-items-section">
+                            <div class="panel-heading">
+                                <div class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#proposedPOLineItems">Line Items</a>
+                                    <span class="pull-right" data-toggle="collapse" data-parent="#accordion" href="#proposedPOLineItems">
+                                        <i class="panelExpandIcon glyphicon glyphicon-chevron-down"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            <div id="proposedPOLineItems" class="panel-body panel-collapse collapse in">
+                                <div class="form-group">
+                                    <div class="table-responsive">
+                                        <table class="table table-striped table-bordered">
+                                            <thead>
+                                                <tr>
+
+                                                    <th class=""><input id="selectAllProposed" type="checkbox"></th>
+                                                    <th>Item</th>
+                                                    <th>Type</th>
+                                                    <th>Supplier Code</th>
+                                                    <th>Supplier Product/Service</th>
+                                                    <th>Buyer Description</th>
+                                                    <th>MFTR Code</th>
+                                                    <th>Qty</th>
+                                                    <th>Units</th>
+                                                    <th>Rate</th>
+                                                    <th>Total</th>
+                                                </tr>
+                                            </thead>
+
+                                            <tbody>
+                                                <tr>
+                                                    <td><input type="checkbox" id="proposedSelectCheckbox_0" class="ng-untouched ng-pristine ng-valid"></td>
+                                                    <td>00010</td>
+                                                    <td >Detail</td>
+                                                    <td >PRODUCT</td>
+                                                    <td ></td>
+                                                    <td >Services</td>
+                                                    <td ></td>
+                                                    <td >
+                                                        <p class="text-right">1</p>
+                                                    </td>
+                                                    <td >AU</td>
+                                                    <td >
+                                                        <p class="text-right">200,001.00</p>
+                                                    </td>
+                                                    <td >
+                                                        <p class="text-right">200,001.00</p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="11">
+                                                        <div aria-controls="collapse" class="text-muted" name="showHide" aria-expanded="false">
+                                                            <i class="fa fa-chevron-down"></i> Show Details
+                                                        </div>
+                                                        <div class="card card-block card-header collapse" id="collapse" aria-expanded="false"
+                                                            aria-hidden="true">
+                                                            <div class="panel-body ">
+                                                                <table class="table table-bordered">
+                                                                    <caption>Delivery Details</caption>
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <th>Quantity</th>
+                                                                            <th>Start Date</th>
+                                                                            <th>End Date</th>
+                                                                            <th>Ship To</th>
+                                                                            <th>Contact Information</th>
+                                                                            <th>Buyer Comment</th>
+                                                                        </tr>
+
+                                                                        <tr class="">
+                                                                            <td nowrap="" >1</td>
+                                                                            <td nowrap="" >
+                                                                                03/20/2012 12:00:00 AM </td>
+                                                                            <td nowrap="" >
+                                                                                02/27/2013 11:00:00 PM </td>
+
+
+                                                                            <td class="">
+                                                                                <ul></ul>
+                                                                            </td>
+                                                                            <td >
+
+                                                                            </td>
+                                                                            <td >Services</td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+
+                                                            <div class="panel-body ">
+                                                                <table class="table table-bordered">
+                                                                    <caption>Coding Details</caption>
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <th>Item Master</th>
+                                                                            <th>AFE</th>
+                                                                            <th>Cost Center</th>
+                                                                            <th>Work Order</th>
+                                                                            <th>GL account</th>
+                                                                        </tr>
+
+                                                                        <tr class="">
+                                                                            <td nowrap="" >361</td>
+                                                                            <td nowrap="" ></td>
+                                                                            <td nowrap="" ></td>
+                                                                            <td nowrap="" ></td>
+
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+
+                                                            <div class="panel-body ">
+                                                                <table class="table table-bordered">
+                                                                    <caption>Fulfillment Details</caption>
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <th>Type</th>
+                                                                            <th>Total Quantity</th>
+                                                                            <th>Total Amount</th>
+                                                                            <th>Fulfilled Quantity</th>
+                                                                            <th>Fulfilled Amount</th>
+                                                                            <th>Remaining Quantity</th>
+                                                                            <th>Remaining Amount</th>
+                                                                        </tr>
+
+                                                                        <tr class="">
+                                                                            <td nowrap="">Receipt</td>
+                                                                            <td nowrap="" >1</td>
+                                                                            <td nowrap="" >
+                                                                                <p class="text-right">200,001.00</p>
+                                                                            </td>
+                                                                            <td nowrap="" >0</td>
+                                                                            <td nowrap="" >
+                                                                                <p class="text-right">0.00</p>
+                                                                            </td>
+                                                                            <td nowrap="" >1</td>
+                                                                            <td nowrap="" >
+                                                                                <p class="text-right">200,001.00</p>
+                                                                            </td>
+                                                                        </tr>
+
+                                                                        <tr class="">
+                                                                            <td nowrap="">Invoice</td>
+                                                                            <td nowrap="" >1</td>
+                                                                            <td nowrap="" >
+                                                                                <p class="text-right">200,001.00</p>
+                                                                            </td>
+                                                                            <td nowrap="" >1015.4</td>
+                                                                            <td nowrap="" >
+                                                                                <p class="text-right">6,298.12</p>
+                                                                            </td>
+                                                                            <td nowrap="" >-1014.4</td>
+                                                                            <td nowrap="" >
+                                                                                <p class="text-right">193,702.88</p>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                            <tfoot>
+                                                <tr>
+                                                    <th class="text-right" colspan="10">PO Total Amount (Current)</th>
+                                                    <th class="border-bottom border-top text-right" name="poTotal"> 200,001.00 </th>
+                                                </tr>
+                                                <tr>
+                                                    <th class="text-right" colspan="10">Receipt Total</th>
+                                                    <th class="text-right" name="receiptTotal"> </th>
+                                                </tr>
+                                                <tr>
+                                                    <th class="text-right" colspan="10">Invoice Total</th>
+                                                    <th class="text-right" name="invoiceTotal"> 6,298.12 </th>
+                                                </tr>
+                                            </tfoot>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="panel panel-default" >
+                            <div class="panel-heading">
+                                <div class="panel-title"> Attachments </div>
+                            </div>
+                            <div class="panel-body" >
+                                <div class="container-fluid">
+    <form>
+
+
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="panel panel-default attachment-panel">
+                   <div class="media">
+                        <div class="media-left media-middle well well-sm">
+                            <div class="media-object">PNG</div>
+                        </div>
+                        <div class="media-body media-middle well-sm">
+                            <div class="media-heading">Attachment1.png</div>
+                            <div class="small text-muted">395.5 KB</div>
+                        </div>
+
+                        <div class="media-right media-middle">
+                            <a class="btn btn-block" href="#nogo">
+                                <i class="fas fas fa-trash-alt fa-fw"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12">
+                <div class="panel panel-default attachment-panel">
+                   <div class="media">
+                        <div class="media-left media-middle well well-sm">
+                            <div class="media-object">PDF</div>
+                        </div>
+                        <div class="media-body media-middle well-sm">
+                            <div class="media-heading">Attachment2.pdf</div>
+                            <div class="small text-muted">892.4 KB</div>
+                        </div>
+
+                        <div class="media-right media-middle">
+                            <a class="btn btn-block" href="#nogo">
+                                <i class="fas fas fa-trash-alt fa-fw"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+
+                            </div>
+                        </div>
+
+                        <div class="panel panel-default" >
+                            <div class="panel-heading">
+                                <div class="panel-title">
+                                    Journal
+                                </div>
+                            </div>
+                            <div class="panel-body" >
+                                <ul class="media-list">
+    <li class="media flexbox-container">
+        <div class="media-left" >
+            <i class="fas fa-check-circle fa-fw text-success"></i>
+        </div>
+        <div class="media-body">
+            <p class="media-heading"><strong>Submitted</strong> <small>12/21/2017 8:23 by Thomas Erikson</small></p>
+            <i>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et elit at quam finibus lobortis."</i>
+        </div>
+    </li>
+
+    <li class="media">
+        <div class="media-left">
+            <i class="fas fa-check-circle fa-fw text-success"></i>
+        </div>
+        <div class="media-body">
+            <p class="media-heading"><strong>Verified</strong> <small>12/21/2017 14:03 by Pat Redmond</small></p>
+        </div>
+    </li>
+
+    <li class="media">
+        <div class="media-left">
+            <i class="fas fa-check-circle fa-fw text-success"></i>
+        </div>
+        <div class="media-body">
+            <p class="media-heading"><strong>Approved </strong><small>12/12/2017 19:23 by Johnathan Goodwin </small></p>
+        </div>
+    </li>
+</ul>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    </div>
+</div>
+<nav class="navbar navbar-default navbar-fixed-bottom" style="border-top: 1px solid #ccc;">
+    <div class="container-fluid">
+        <div class="btn-toolbar btn-toolbar-centered" role="toolbar">
+            <div id="currentPOToolbar" class="btn-group" role="group">
+                    <button class="btn btn-default">
+                        <div>
+                            <i class="far fa-fw fa-plus-circle text-success"></i>
+                        </div>
+                        <div>
+                            Create Ticket
+                        </div>
+                    </button>
+                    <button class="btn btn-default">
+                        <div>
+                            <i class="far fa-fw fa-window-close text-warning"></i>
+                        </div>
+                        <div>
+                            Close PO
+                        </div>
+                    </button>
+                    <button class="btn btn-default">
+                        <div>
+                            <i class="fas fa-fw fa-print"></i>
+                        </div>
+                        <div>
+                            Print
+                        </div>
+                    </button>
+            </div>
+            <div id="proposedPOToolbar" class="btn-group hide" role="group">
+                    <button class="btn btn-default">
+                        <div>
+                            <i class="fas fa-thumbs-up text-success"></i>
+                        </div>
+                        <div>
+                            Accept
+                        </div>
+                    </button>
+                    <button class="btn btn-default">
+                        <div>
+                            <i class="fas fa-thumbs-down text-danger"></i>
+                        </div>
+                        <div>
+                            Reject
+                        </div>
+                    </button>
+                    <button class="btn btn-default">
+                        <div>
+                            <i class="fas fa-print"></i>
+                        </div>
+                        <div>
+                            Print
+                        </div>
+                    </button>
+            </div>
+        </div>
+    </div>
+</nav>
+<script>
+    $('body').addClass('page-bg');
+</script>

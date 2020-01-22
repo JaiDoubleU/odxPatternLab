@@ -1,0 +1,71 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="btn-group">
+                <a  class="btn btn-sm btn-default" href="{{link.home-home}}"><i class="fas fa-arrow-left"></i> Back to Home</a>
+            </div>
+        </div>
+    </div>
+<h3 class="page-header sg-custom-page-title">
+        Building Forms <div class="clearfix"/>
+        <small>The skinny on building forms and form pages</small>
+    </h3>
+    <div class="well well-sm">
+        <div>
+            <span class="fa-stack">
+                <i class="fas fa-circle fa-stack-1x text-info" ></i>
+                <i class="fas fa-bookmark fa-stack-1x fa-xs fa-inverse"></i>
+            </span>
+            <strong>Supporting Principles</strong>
+        </div>
+        <div class="row">
+            <div class="col-xs-6">
+                <ul>
+                    <li>Provide feedback at the earliest reasonable point, but not before</li>
+                    <li>Pre-populate/auto-populate fields when appropriate</li>
+                    <li>Automatically put focus in the first field when the page loads</li>
+                    <li>Use input types that are appropriate for the data being captured (i.e. type="text", type="email", etc.)</li>
+                </ul>
+            </div>
+            <div class="col-xs-6">
+                <ul>
+                    <li>Use a single-column form whenever possible </li>
+                    <li>Divide large forms into semantic groups using whitespace or section titles</li>
+                    <li>Decrease the likelyhood of mistakes by adding constraints on what can be inputted into each field
+                        (such as min and max length, input formats, data types, etc.)</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-xs-6">
+            <div class="h5">
+                <strong>Labels</strong>
+            </div>
+            <ul>
+                <li>Every control that accepts input should have an associated<code>label</code></li>
+                <li>Connect an input to its associated label using the input’s<code>id</code>and the label’s<code>for</code>attributes</li>
+            </ul>
+
+            <div class="h5">
+                <strong>Checkboxes and Radio Buttons</strong>
+            </div>
+            <ul>
+                <li>Use the <code>.checkbox</code> and <code>.radio</code> classes to provide appropriate spacing around checkboxs and radio buttons</li>
+                <li>Wrap each checkbox or radio button in a label to make them easier to click</li>
+            </ul>
+        </div>
+        <div class="col-xs-6">
+            <div class="h5">
+                <strong>Placeholders & Help Text</strong>
+            </div>
+            <ul>
+                <li>Use the<code>placeholder</code>attribute to display a short hint to provide extra guidance when filling out a field</li>
+                <li>Unlike labels, placeholders are optional and shouldn’t be used everywhere. Just because the placeholder attribute exists doesn’t mean we have to use it. </li>
+                    <ul><li class="text-muted">For example, you don’t need a placeholder of “Enter your first name” when the label is “First Name” — that’s needless duplication.</li></ul>
+                <li>To provide longer, more descriptive assistance position it below the input field inside a<code>.help-block</code></li>
+            </ul>
+        </div>
+    </div>
+</div>

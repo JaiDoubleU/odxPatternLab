@@ -1,0 +1,10 @@
+#fileImportResults .list-group {
+    margin-bottom: 0;
+}
+
+#fileImportResults .list-group .list-group-item {
+
+    background-color: transparent;
+    border-color: transparent;
+    padding: 3px 2em;
+}

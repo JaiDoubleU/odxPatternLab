@@ -1,0 +1,86 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+ <title>Automatic Financial Approval</title>
+
+ <link rel="stylesheet" href="../../../OpenInvoiceForBuyers_master.css" type="text/css" />
+
+
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style>
+ <meta name="generator" content="Adobe FrameMaker 2017" />
+<script type="text/javascript" src="../../../template/scripts/rh.min.js"></script>
+<script type="text/javascript" src="../../../template/scripts/common.min.js"></script>
+<script type="text/javascript" src="../../../template/scripts/topic.min.js"></script>
+<script type="text/javascript" src="../../../template/scripts/constants.js"></script>
+<script type="text/javascript" src="../../../template/scripts/utils.js"></script>
+<script type="text/javascript" src="../../../template/scripts/mhutils.js"></script>
+<script type="text/javascript" src="../../../template/scripts/mhlang.js"></script>
+<script type="text/javascript" src="../../../template/scripts/mhver.js"></script>
+<script type="text/javascript" src="../../../template/scripts/settings.js"></script>
+<script type="text/javascript" src="../../../template/scripts/XmlJsReader.js"></script>
+<script type="text/javascript" src="../../../template/scripts/loadparentdata.js"></script>
+<script type="text/javascript" src="../../../template/scripts/loadscreen.js"></script>
+<script type="text/javascript" src="../../../template/scripts/loadprojdata.js"></script>
+<script type="text/javascript" src="../../../template/scripts/mhtopic.js"></script>
+ <link rel="stylesheet" type="text/css" href="../../../template/styles/topic.min.css">
+<script type="text/javascript" >
+gRootRelPath = "../../..";
+gCommonRootRelPath = "../../..";
+gTopicId = "";
+</script>
+ <meta name="brsprev" value="OpenInvoiceForBuyers_master/Configuration/InvoiceWorkflowConfig/Automatic_Code_Verification.htm">
+ <meta name="brsnext" value="OpenInvoiceForBuyers_master/Configuration/InvoiceWorkflowConfig/Invoice_Workflow_Rules.htm">
+ <meta name="topic-breadcrumbs" content="Administrator & User Guide for Buyers > Invoice Workflow Configuration" />
+</head>
+
+<body dir="ltr">
+<script type="text/javascript" src="../../../ehlpdhtm.js"></script>
+<div dir="ltr">
+  <p dir="ltr" class="FM_ADP_TG_Heading_1"><a name="TOC_Automatic_Financial"></a><a name="XREF_69693_Automatic_Invoice"></a>Automatic Financial Approval</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Body_Style"><span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>&#160;can be configured to automatically mark invoices as financially approved using the invoice workflow rules. Depending on your company’s workflow sequence, your financial approval rules will be considered either upon invoice submission or code verification.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Body_Style"><span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>&#160;will financially approve an invoice only if all associated business rules and coding validations have been met. Invoices that are financially approved by <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>&#160;are identified in the Invoice Journal by an Approve action completed by <span style="font-weight : bold; ">the System</span>&#160;and a corresponding comment. You can report on invoices that were automatically approved by searching for invoices approved by <span style="font-weight : bold; ">the System</span>.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Body_Style">Refer to <a href="Invoice_Workflow_Rules.htm#XREF_58564_Invoice_Workflow">Invoice Workflow Rules</a>&#160;for more details about configuring automatic invoice approval and system processing. </p>
+
+  <p dir="ltr" class="FM_ADP_TG_Heading_2">Invoice Auto-Approval and the Code then Approve Workflow</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Body_Style">If you are using the Code then Approve invoice workflow, <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>&#160;will evaluate the Approve invoice workflow rules when the invoice is code verified (either by a user clicking the <span style="font-weight : bold; ">Verify Coding</span>&#160;or the <span style="font-weight : bold; ">Verify and Approve</span>&#160;buttons on an invoice or automatically based on the invoice workflow rules). If the invoice qualifies for an Approve rule and all business rules and coding validations are met, the invoice will be financially approved by <span style="font-weight : bold; ">the System</span>&#160;and the invoice status will be changed to Approved. If the invoice is not financially approved by <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>, the user must forward the invoice for approval.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Heading_2">Invoice Auto-Approval and the Approve Only Workflow</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Body_Style">If you are using the Approve Only invoice workflow, <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>&#160;will evaluate the Approve invoice workflow rules when the invoice is submitted. If the invoice qualifies for an Approve rule the invoice will be routed to the <span data-name="ADP_Software_Name" data-val="OpenInvoice Platform" data-showval="TRUE" data-format="ADP_Software_Name">OpenInvoice Platform</span>&#160;for processing and <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>&#160;will process any configured recipient routing rules. If all business rules and coding validations are met, the invoice will be financially approved by <span style="font-weight : bold; ">the System</span>&#160;and the invoice status will be changed to Approved. If the invoice is not financially approved by <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>, a user must approve the invoice.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Heading_2">Invoice Auto-Approval and the Approve then Code Workflow</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Body_Style">If you are using the Approve then Code invoice workflow, <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>&#160;will evaluate the Approve invoice workflow rules when the invoice is submitted. If the invoice qualifies for an Approve rule the invoice will be routed to the <span data-name="ADP_Software_Name" data-val="OpenInvoice Platform" data-showval="TRUE" data-format="ADP_Software_Name">OpenInvoice Platform</span>&#160;for processing and <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>&#160;will process any configured recipient routing rules. If all business rules and coding validations are met, the invoice will be financially approved by <span style="font-weight : bold; ">the System</span>, the invoice status will be Submitted, and the invoice will be ready for coding. If the invoice is not financially approved by <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>, a user must approve the invoice.</p>
+
+  </div>
+</body>
+</html>

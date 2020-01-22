@@ -1,0 +1,27 @@
+<div class="row">
+    <div class="col-xs-6">
+        <ul class="list-unstyled">
+            {{#documentNumber}}
+            <li class="hide-overflow no-margin text-primary"><span class="lead">{{documentNumber}}</span>&nbsp; {{#showDocumentAlert}}<span style="vertical-align: text-top;" class="label label-warning">Paused</span> {{/showDocumentAlert}}
+            </li>
+            {{/documentNumber}} {{#documentStatus}}
+            <li class="hide-overflow"><strong>{{documentStatus}}</strong></li>{{/documentStatus}} {{#documentType}}
+            <li class="hide-overflow"><strong>{{documentType}}</strong></li>{{/documentType}} {{#requisitioner}}
+            <li class="hide-overflow"><strong>{{requisitioner}}</strong></li>{{/requisitioner}}
+        </ul>
+    </div>
+
+    <div class="col-xs-6">
+        <ul class="list-unstyled text-right">
+            {{#documentCompanyName}}
+            <li class="hide-overflow lead no-margin text-primary">{{documentCompanyName}}</li>{{/documentCompanyName}} {{#documentDate}}
+            <li><strong>{{documentDate}}</strong></li>{{/documentDate}} {{#documentCount}}
+            <li class="hide-overflow"><strong>{{documentCount}}</strong></li>{{/documentCount}} {{#documentAmount}}
+            <li>
+                {{#documentCurrency}}<strong name="currency-code" class="small">{{documentCurrency}}</strong>{{/documentCurrency}}
+                <strong name="total-amount">{{documentAmount}}</strong>
+            </li>
+            {{/documentAmount}}
+        </ul>
+    </div>
+</div>

@@ -1,0 +1,26 @@
+<div class="container-fluid" id="expandableAlerts">
+    <div class="alert alert-warning" role="alert">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <ol class="fa-ul">
+                <li>
+                    <span class="fa-li"><i class="fas fa-exclamation-circle"></i></span>
+                    We've encountered a problem that we were not expecting.  Click "Show Details" below to see additional information or <a class="alert-link" mailto="openinvoicesupport@oildex.com">email OpenInvoice support</a>.
+                </li>
+
+                <li><a class="alert-link" data-toggle="collapse" href="#expandableAlertDetails" onmousedown="if($(this).text() == 'Show Details...'){$(this).text('Hide Details');} else {$(this).text('Show Details...');}">Show Details...</a></li>
+                <li>
+                    <div id="expandableAlertDetails" class="collapse">
+                        <ul class="list-unstyled ">
+                            <li>
+                                <ul>
+                                    <li>Error parsing JSON property.  The lineItems/costAllocation[0]/afe/itemID '84,398,028,930' is not a valid number.</li>
+                                    <li>Error parsing JSON property.  The lineItems/costAllocation[0]/costCenter/itemID '84,398,028,930' is not a valid number.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ol>
+        </li>
+    </div>
+</div>

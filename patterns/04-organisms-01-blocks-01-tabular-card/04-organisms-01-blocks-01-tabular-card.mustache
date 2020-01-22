@@ -1,0 +1,91 @@
+<div class="panel panel-default status-panel">
+    <div class="panel-heading">
+        <div class="panel-title">
+                {{panelTitle}}{{^panelTitle}}Panel Title{{/panelTitle}}
+        </div>
+    </div>
+    <div class="panel-body">
+        <div class="table-responsive">
+            {{#isDefaultData}}
+                {{# tabularCardTable }}
+                    <table id="{{tableId}}" class="table table-hover">
+                        {{# thead }}
+                            <thead>
+                                <tr>
+                                    {{# th }}
+                                        <th>{{ title }}</th>
+                                    {{/ th }}
+                                </tr>
+                            </thead>
+                        {{/ thead }}
+                        {{# tbody }}
+                            <tbody>
+                                {{# tr }}
+                                    <tr>
+                                        {{# td }}
+                                            <td>{{ text }}</td>
+                                        {{/ td }}
+                                    </tr>
+                                {{/ tr}}
+                            </tbody>
+                        {{/ tbody }}
+                    </table>
+                {{/ tabularCardTable }}
+            {{/isDefaultData}}
+
+            {{#isSuperTicketStatusData}}
+                {{#superTicketStatusData}}
+                    <table id="{{tableId}}" class="table table-hover">
+                        {{# thead }}
+                            <thead>
+                                <tr>
+                                    {{# th }}
+                                    <th class="text-center">{{ title }}</th>
+                                    {{/ th }}
+                                </tr>
+                            </thead>
+                        {{/ thead }}
+                        {{# tbody }}
+                            <tbody>
+                                <!-- data is populated dynamically -->
+                            </tbody>
+                        {{/ tbody }}
+                    </table>
+                {{/superTicketStatusData}}
+            {{/isSuperTicketStatusData}}
+
+            {{#isSuperTicketVolumeData}}
+                {{#superTicketVolumeData}}
+                    <table id="{{tableId}}"  class="table table-hover">
+                        {{# thead }}
+                            <thead>
+                                <tr>
+                                    {{# th }}
+                                    <th>{{ title }}</th>
+                                    {{/ th }}
+                                </tr>
+                            </thead>
+                        {{/ thead }}
+                        {{# tbody }}
+                            <tbody>
+                                {{# tr }}
+                                    <tr>
+                                        {{# td }}
+                                            <td id="{{id}}">{{ text }}</td>
+                                        {{/ td }}
+                                    </tr>
+                                {{/ tr}}
+                            </tbody>
+                        {{/ tbody }}
+                    </table>
+                {{/superTicketVolumeData}}
+            {{/isSuperTicketVolumeData}}
+        </div>
+
+        <!-- {{#hasFooter}}
+            <p>
+                <span class="averageCost">Average Cost: </span><span class="averageUOM"></span>
+            </p>
+        {{/hasFooter}} -->
+    </div>
+</div>

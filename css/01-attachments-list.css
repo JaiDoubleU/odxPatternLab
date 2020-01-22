@@ -1,0 +1,13 @@
+.attachment-panel {
+    border: 1px solid #ddd;
+}
+
+.attachment-panel > .media {
+    line-height: 1;
+}
+
+.attachment-panel > .media > .media-left.well {
+    border: none;
+    border-right: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+}

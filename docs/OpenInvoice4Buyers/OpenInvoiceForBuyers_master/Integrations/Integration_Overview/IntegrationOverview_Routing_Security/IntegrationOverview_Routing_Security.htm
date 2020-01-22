@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+ <title>IntegrationOverview_Routing_Security</title>
+
+ <link rel="stylesheet" href="../../../../OpenInvoiceForBuyers_master.css" type="text/css" />
+
+
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style>
+ <meta name="generator" content="Adobe FrameMaker 2017" />
+<script type="text/javascript" src="../../../../template/scripts/rh.min.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/common.min.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/topic.min.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/constants.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/utils.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/mhutils.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/mhlang.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/mhver.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/settings.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/XmlJsReader.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/loadparentdata.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/loadscreen.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/loadprojdata.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/mhtopic.js"></script>
+ <link rel="stylesheet" type="text/css" href="../../../../template/styles/topic.min.css">
+<script type="text/javascript" >
+gRootRelPath = "../../../..";
+gCommonRootRelPath = "../../../..";
+gTopicId = "1.9.0_3";
+</script>
+ <meta name="brsprev" value="OpenInvoiceForBuyers_master/Integrations/Integration_Overview/IntegrationOverview_CommunicationProtocols/IntegrationOverview_CommunicationProtocols.htm">
+ <meta name="brsnext" value="OpenInvoiceForBuyers_master/Integrations/Integration_Overview/IntegrationOverview_TransmissionOptions/IntegrationOverview_TransmissionOptions.htm">
+ <meta name="topic-breadcrumbs" content="Administrator & User Guide for Buyers > Integration Overview" />
+</head>
+
+<body dir="ltr">
+<script type="text/javascript" src="../../../../ehlpdhtm.js"></script>
+
+ <div dir="ltr">
+  
+  <p dir="ltr" class="FM_ADP_TG_Heading_1"><a name="XREF_30962_Routing_and"></a>Routing and Security</p>
+  <p dir="ltr" class="FM_ADP_TG_Body_Style">All communications between the <span data-name="ADP_Software_Name" data-val="OpenInvoice Platform" data-showval="TRUE" data-format="ADP_Software_Name">OpenInvoice Platform</span>&#160;and client servers will be enabled through HTTP version 1.1 over SSL. Conversations will be secured using two-way SSL and will only be established with servers supporting a strong encryption algorithm with a minimum key length of 128 bits. </p>
+  <p dir="ltr" class="FM_ADP_TG_Heading_2">Non-Repudiation</p>
+  <p dir="ltr" class="FM_ADP_TG_Body_Style">Non-repudiation ensures that a transferred message has been sent and received. A comprehensive non-repudiation plan includes authentication, authorization, data integrity, and auditing.</p>
+  <p dir="ltr" class="FM_ADP_TG_Heading_2">Authentication</p>
+  <p dir="ltr" class="FM_ADP_TG_Body_Style">Authentication verifies the identity of the sender of a message. The <span data-name="ADP_Software_Name" data-val="OpenInvoice Platform" data-showval="TRUE" data-format="ADP_Software_Name">OpenInvoice Platform</span> uses two-way certificate-based authentication, which requires the sender to present their digital certificate to negotiate the conversation. The certificate presented is then verified against a copy of the client public certificate residing in the <span data-name="ADP_Software_Name" data-val="OpenInvoice Platform" data-showval="TRUE" data-format="ADP_Software_Name">OpenInvoice Platform</span>.</p>
+  <p dir="ltr" class="FM_ADP_TG_Heading_2">Authorization</p>
+  <p dir="ltr" class="FM_ADP_TG_Body_Style">Authorization ensures that the authenticated client is permitted to perform the service they are requesting. The <span data-name="ADP_Software_Name" data-val="OpenInvoice Platform" data-showval="TRUE" data-format="ADP_Software_Name">OpenInvoice Platform</span>&#160;allows access to various resources based on the client’s identity. Entry points to the <span data-name="ADP_Software_Name" data-val="OpenInvoice Platform" data-showval="TRUE" data-format="ADP_Software_Name">OpenInvoice Platform</span>&#160;are secured through the use of Access Control Lists (ACLs). The client’s identity is assigned to one or more ACLs.</p>
+  <p dir="ltr" class="FM_ADP_TG_Heading_2">Data Integrity</p>
+  <p dir="ltr" class="FM_ADP_TG_Body_Style">The <span data-name="ADP_Software_Name" data-val="OpenInvoice Platform" data-showval="TRUE" data-format="ADP_Software_Name">OpenInvoice Platform</span>&#160;achieves data integrity by not altering the document XML that is contained in the SOAP body of the transmitted message. It will parse the MIME message apart to obtain the attachments and save them on the file system, but will not alter the document XML.</p>
+  <p dir="ltr" class="FM_ADP_TG_Body_Style">&nbsp;</p>
+ </div>
+</body>
+
+</html>
+

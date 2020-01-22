@@ -1,0 +1,129 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+ <title>Payment Journal</title>
+
+ <link rel="stylesheet" href="../../../OpenInvoiceForBuyers_master.css" type="text/css" />
+
+
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style>
+ <meta name="generator" content="Adobe FrameMaker 2017" />
+<script type="text/javascript" src="../../../template/scripts/rh.min.js"></script>
+<script type="text/javascript" src="../../../template/scripts/common.min.js"></script>
+<script type="text/javascript" src="../../../template/scripts/topic.min.js"></script>
+<script type="text/javascript" src="../../../template/scripts/constants.js"></script>
+<script type="text/javascript" src="../../../template/scripts/utils.js"></script>
+<script type="text/javascript" src="../../../template/scripts/mhutils.js"></script>
+<script type="text/javascript" src="../../../template/scripts/mhlang.js"></script>
+<script type="text/javascript" src="../../../template/scripts/mhver.js"></script>
+<script type="text/javascript" src="../../../template/scripts/settings.js"></script>
+<script type="text/javascript" src="../../../template/scripts/XmlJsReader.js"></script>
+<script type="text/javascript" src="../../../template/scripts/loadparentdata.js"></script>
+<script type="text/javascript" src="../../../template/scripts/loadscreen.js"></script>
+<script type="text/javascript" src="../../../template/scripts/loadprojdata.js"></script>
+<script type="text/javascript" src="../../../template/scripts/mhtopic.js"></script>
+ <link rel="stylesheet" type="text/css" href="../../../template/styles/topic.min.css">
+<script type="text/javascript" >
+gRootRelPath = "../../..";
+gCommonRootRelPath = "../../..";
+gTopicId = "1.12.0_3";
+</script>
+ <meta name="brsprev" value="OpenInvoiceForBuyers_master/Payments/PaymentOverview_Introduction/Payment_Search.htm">
+ <meta name="brsnext" value="OpenInvoiceForBuyers_master/Payments/PaymentOverview_Introduction/Payment_Notifications.htm">
+ <meta name="topic-breadcrumbs" content="Administrator & User Guide for Buyers > Payment Overview" />
+</head>
+
+<body dir="ltr">
+<script type="text/javascript" src="../../../ehlpdhtm.js"></script>
+<div dir="ltr">
+  <p dir="ltr" class="FM_ADP_TG_Heading_1"><a name="XREF_65834_Payment_Journal"></a>Payment Journal</p>
+  <p dir="ltr" class="FM_ADP_TG_Body_Style">The Payment Journal displays actions that have been performed against the payment. Journal entries are displayed with the most recent entry at the top and the oldest at the bottom.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Heading_2">Workflow Actions Visible in the Payment Journal</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Body_Style">Workflow actions and comments associated with the workflow actions are displayed in the Payment Journal. Workflow actions are also displayed in the Invoice Journal.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Heading_3">Actions Visible on Debits</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Body_Style">The following actions apply for both check and ACH payments.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1" style="font-weight : bold;"><span class="FM_Bullet1">·<span style="padding-left: 12pt;" class="FMAutoNumber_1"></span></span>Scheduled:&#160;<span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>&#160;has scheduled the payment based on your company’s configuration and the invoice’s eligibility for an Early Pay discount.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1" style="font-weight : bold;"><span class="FM_Bullet1">·<span style="padding-left: 12pt;" class="FMAutoNumber_1"></span></span>Re-scheduled: a user from your company changed the payment date.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1" style="font-weight : bold;"><span class="FM_Bullet1">·<span style="padding-left: 12pt;" class="FMAutoNumber_1"></span></span>Held:&#160;the payment was either removed from the workflow by <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>&#160;based on your company’s configuration or a user from your company manually removed the payment from the workflow. The payment will not be processed until it is released.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1" style="font-weight : bold;"><span class="FM_Bullet1">·<span style="padding-left: 12pt;" class="FMAutoNumber_1"></span></span>Released:&#160;a user from your company released a previously held payment and it has returned to the workflow.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1" style="font-weight : bold;"><span class="FM_Bullet1">·<span style="padding-left: 12pt;" class="FMAutoNumber_1"></span></span>Posted:&#160;payment details were sent to the <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span> money movement partner for processing.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1" style="font-weight : bold;"><span class="FM_Bullet1">·<span style="padding-left: 12pt;" class="FMAutoNumber_1"></span></span>Cancelled:&#160;a user from your company requested a stop payment before <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>’s money movement partner completed processing the payment.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1" style="font-weight : bold;"><span class="FM_Bullet1">·<span style="padding-left: 12pt;" class="FMAutoNumber_1"></span></span>Re-submitted:&#160;a user from your company restarted the payment process for an invoice with a previously cancelled or stopped payment.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1" style="font-weight : bold;"><span class="FM_Bullet1">·<span style="padding-left: 12pt;" class="FMAutoNumber_1"></span></span>Terminated:&#160;a user from your company marked the payment as end-of-life and the invoice will not be paid through <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 12pt;" class="FMAutoNumber_2"></span></span>The associated invoice can be returned to workflow, adjusted, and once approved OpenInvoice will generate a new payment.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1" style="font-weight : bold;"><span class="FM_Bullet1">·<span style="padding-left: 12pt;" class="FMAutoNumber_1"></span></span>Credit Applied: the original payment amount was reduced by applying a credit. The action comment identifies the amount of credit applied and the credit invoice that was used. Any amount remaining will be paid on the scheduled payment date.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1" style="font-weight : bold;"><span class="FM_Bullet1">·<span style="padding-left: 12pt;" class="FMAutoNumber_1"></span></span>Paid:&#160;either the entire amount of the invoice was covered by applying a credit or an ACH payment was processed and funds have been transferred. The action comment indicates if the invoice was paid by applying a credit or paid by ACH. </p>
+
+  <p dir="ltr" class="FM_ADP_TG_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 12pt;" class="FMAutoNumber_2"></span></span>Invoices paid by check do not have a paid action.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Body_Style">The following actions apply to ACH payments only.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1" style="font-weight : bold;"><span class="FM_Bullet1">·<span style="padding-left: 12pt;" class="FMAutoNumber_1"></span></span>ACH Payment Returned:&#160;funds cannot be transferred to the supplier’s bank account due to a configuration error.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Body_Style">The following actions apply to check payments only.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1" style="font-weight : bold;"><span class="FM_Bullet1">·<span style="padding-left: 12pt;" class="FMAutoNumber_1"></span></span>Check Issued:&#160;<span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>’s money movement partner issued and printed a check for the payment. </p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1" style="font-weight : bold;"><span class="FM_Bullet1">·<span style="padding-left: 12pt;" class="FMAutoNumber_1"></span></span>Check Voided:&#160;a user from your company requested a stop payment before the check was mailed or the check was returned by the post office as undeliverable. Once the check is voided, the payment is available for a user from your company to reschedule or terminate.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1" style="font-weight : bold;"><span class="FM_Bullet1">·<span style="padding-left: 12pt;" class="FMAutoNumber_1"></span></span>Check Stop Requested:&#160;a user from your company requested a stop payment after the check was mailed. <span data-name="_OpenInvoice_Support" data-val="OpenInvoice Support" data-showval="TRUE" data-format="_OpenInvoice_Support">OpenInvoice Support</span>&#160;will forward the stop request to the bank; however, a stop cannot be guaranteed.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1" style="font-weight : bold;"><span class="FM_Bullet1">·<span style="padding-left: 12pt;" class="FMAutoNumber_1"></span></span>Check Stop Denied:&#160;the bank indicated that your company’s stop check request was not successful.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1" style="font-weight : bold;"><span class="FM_Bullet1">·<span style="padding-left: 12pt;" class="FMAutoNumber_1"></span></span>Check Stopped: the bank has indicated that your company’s stop check request was successful.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1" style="font-weight : bold;"><span class="FM_Bullet1">·<span style="padding-left: 12pt;" class="FMAutoNumber_1"></span></span>Check Settled: the supplier has cashed the check and the funds have been transferred.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Heading_3">Actions Visible on Credits</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Body_Style">The following actions only apply to credit invoices.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1" style="font-weight : bold;"><span class="FM_Bullet1">·<span style="padding-left: 12pt;" class="FMAutoNumber_1"></span></span>Credit Applied: the credit was used to reduce the payment amount of a debit invoice. The action comment identifies the amount of the credit applied and the debit invoice that it was applied to. If the credit is more than the debit invoice, the amount remaining can be applied to another invoice.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1" style="font-weight : bold;"><span class="FM_Bullet1">·<span style="padding-left: 12pt;" class="FMAutoNumber_1"></span></span>Credit Un-applied:&#160;a user from your company terminated a payment associated with a debit invoice that the credit was applied to. The action comment identifies the amount of the terminated payment and the debit invoice where the credit was applied.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1" style="font-weight : bold;"><span class="FM_Bullet1">·<span style="padding-left: 12pt;" class="FMAutoNumber_1"></span></span>Payment Settled Externally:&#160;the credit was dealt with outside of the <span data-name="ADP_Software_Name" data-val="OpenInvoice platform" data-showval="TRUE" data-format="ADP_Software_Name">OpenInvoice platform</span>&#160;and a user from your company removed the credit from workflow. The credit is no longer available to be applied to debits.</p>
+
+  </div>
+</body>
+</html>

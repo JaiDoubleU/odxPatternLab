@@ -1,0 +1,33 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-3">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <span class="text-success">
+                    <span id="progress-panel-day-of-month"></span>
+                    <span id="progress-panel-label" class="label label-success pull-right">9%</span>
+                    </span>
+                    <div class="progress progress-sm">
+                        <div id="progress-panel-bar" class="progress-bar progress-bar-success" style="width:9%;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    function setProgress() {
+        var sinceMonthStart = moment().startOf('month').fromNow();
+        var now = moment();
+        var startDate = moment().startOf('month');
+        var endDate = moment().endOf('month');
+        var currentDate = moment().format("Do");
+        var percentage_complete = (now - startDate) / (endDate - startDate) * 100;
+        var percentage_rounded = (Math.round(percentage_complete * 100) / 100);
+
+        $('#progress-panel-day-of-month').html(currentDate +" Day of the Month");
+        $('#progress-panel-bar').css('width', percentage_rounded +'%');
+        $('#progress-panel-label').html(percentage_rounded +'%');
+    }
+    setProgress();
+</script>

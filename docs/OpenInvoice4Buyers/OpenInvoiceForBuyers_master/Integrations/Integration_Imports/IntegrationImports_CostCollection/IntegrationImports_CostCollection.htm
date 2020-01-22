@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+ <title>IntegrationImports_CostCollection</title>
+
+ <link rel="stylesheet" href="../../../../OpenInvoiceForBuyers_master.css" type="text/css" />
+
+
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style>
+ <meta name="generator" content="Adobe FrameMaker 2017" />
+<script type="text/javascript" src="../../../../template/scripts/rh.min.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/common.min.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/topic.min.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/constants.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/utils.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/mhutils.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/mhlang.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/mhver.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/settings.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/XmlJsReader.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/loadparentdata.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/loadscreen.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/loadprojdata.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/mhtopic.js"></script>
+ <link rel="stylesheet" type="text/css" href="../../../../template/styles/topic.min.css">
+<script type="text/javascript" >
+gRootRelPath = "../../../..";
+gCommonRootRelPath = "../../../..";
+gTopicId = "";
+</script>
+ <meta name="brsprev" value="OpenInvoiceForBuyers_master/Integrations/Integration_Imports/IntegrationImports_CostCenter/IntegrationImports_CostCenter.htm">
+ <meta name="brsnext" value="OpenInvoiceForBuyers_master/Integrations/Integration_Imports/IntegrationImports_User/IntegrationImports_User.htm">
+ <meta name="topic-breadcrumbs" content="Administrator & User Guide for Buyers > Integration Imports" />
+</head>
+
+<body dir="ltr">
+<script type="text/javascript" src="../../../../ehlpdhtm.js"></script>
+
+ <div dir="ltr">
+  
+  <p dir="ltr" class="FM_ADP_TG_Heading_1"><a name="TOC_Cost_Collection_Import"></a><a name="XREF_86655_Cost_Collection"></a>Cost Collection Import</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Body_Style">Transfer your back office’s AFEs, cost centers, locations, major codes, minor codes, subcodes, work orders, and associated business rules. Unlike the AFE Import and Cost Center Import, the Cost Collection Import file defines the relationships between objects.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Body_Style">Cost Collection messages are SOAP wrapped. The maximum size of each message is 3 MB. Larger files may time out and result in a failed import.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Body_Style">The Cost Collection Import is not a scheduled service. Instead, you will post the files as necessary. The file is not saved on the secure server but is, instead, redirected to the <span data-name="ADP_Software_Name" data-val="OpenInvoice Platform" data-showval="TRUE" data-format="ADP_Software_Name">OpenInvoice Platform</span> if not posted there directly.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Body_Style"><span style="font-weight : bold; ">Schema: </span>CostCollection.xsd (v. 1.0) </p>
+
+  <p dir="ltr" class="FM_ADP_TG_Body_Style"><span style="font-weight : bold; ">See also: </span>CostCollectionImport_IG.pdf (implementation guide) and CostCollectionImport_TRP.pdf (transport, routing and packaging).&#160;</p>
+ </div>
+</body>
+
+</html>
+

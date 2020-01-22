@@ -1,0 +1,124 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+ <title>Number of Financial Approvals Required</title>
+
+ <link rel="stylesheet" href="../../../OpenInvoiceForBuyers_master.css" type="text/css" />
+
+
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style>
+ <meta name="generator" content="Adobe FrameMaker 2017" />
+<script type="text/javascript" src="../../../template/scripts/rh.min.js"></script>
+<script type="text/javascript" src="../../../template/scripts/common.min.js"></script>
+<script type="text/javascript" src="../../../template/scripts/topic.min.js"></script>
+<script type="text/javascript" src="../../../template/scripts/constants.js"></script>
+<script type="text/javascript" src="../../../template/scripts/utils.js"></script>
+<script type="text/javascript" src="../../../template/scripts/mhutils.js"></script>
+<script type="text/javascript" src="../../../template/scripts/mhlang.js"></script>
+<script type="text/javascript" src="../../../template/scripts/mhver.js"></script>
+<script type="text/javascript" src="../../../template/scripts/settings.js"></script>
+<script type="text/javascript" src="../../../template/scripts/XmlJsReader.js"></script>
+<script type="text/javascript" src="../../../template/scripts/loadparentdata.js"></script>
+<script type="text/javascript" src="../../../template/scripts/loadscreen.js"></script>
+<script type="text/javascript" src="../../../template/scripts/loadprojdata.js"></script>
+<script type="text/javascript" src="../../../template/scripts/mhtopic.js"></script>
+ <link rel="stylesheet" type="text/css" href="../../../template/styles/topic.min.css">
+<script type="text/javascript" >
+gRootRelPath = "../../..";
+gCommonRootRelPath = "../../..";
+gTopicId = "";
+</script>
+ <meta name="brsprev" value="OpenInvoiceForBuyers_master/Configuration/InvoiceFinancialApprovalConfig/Authorization_Levels.htm">
+ <meta name="brsnext" value="OpenInvoiceForBuyers_master/Configuration/PaymentConfiguration_Introduction/PaymentConfiguration_Introduction.htm">
+ <meta name="topic-breadcrumbs" content="Administrator & User Guide for Buyers > Invoice Financial Approval Configuration" />
+</head>
+
+<body dir="ltr">
+<script type="text/javascript" src="../../../ehlpdhtm.js"></script>
+<div dir="ltr">
+  <p dir="ltr" class="FM_ADP_TG_Heading_1"><a name="TOC_Number_of_Financial"></a><a name="XREF_83462_Number_of"></a>Number of Financial Approvals Required</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Body_Style">When a user financially approves an invoice, <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>&#160;determines if additional approvals are required or if the user is able to perform the final approval. To determine if you are able to perform a final financial approval, the answer must be <span style="font-weight : bold; ">Yes</span>&#160;to all of the following questions; if the answer is <span style="font-weight : bold; ">No</span>&#160;for any question, the invoice must be forwarded to another user for additional financial approval.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>Has the invoice received the minimum number of signatures needed for final financial approval?</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>If you are the requisitioner, are requisitioners allowed to perform final financial approvals?</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>Do you have a sufficient financial limit for all approval types associated with the invoice?</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>Was the invoice submitted by another user? (You cannot final approve an invoice you submitted.)</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Body_Style">If the user is able to perform the final financial approval in the Code then Approve or Approve Only invoice workflow processes, the invoice status is changed to Approved and the next invoice on the invoice list page is automatically displayed. If the user is able to perform the final financial approval in the Approve then Code workflow, the invoice status does not change and the user must forward the invoice to another user for code verification. Once the invoice is forwarded for code verification, the next invoice on the invoice list page is automatically displayed.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Body_Style">A minimum number of signatures can be specified for final financial approval. The invoice must be forwarded to another user for approval if the minimum number of signatures has not been met.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Body_Style">By default, requisitioners are allowed to perform a final financial approval. Enable the company preference <span style="font-weight : bold; ">Invoice Approval - Requisitioner May Not Final Approve Invoice</span>&#160;if you require the final approval to be performed by a different user.</p>
+
+  <p dir="ltr" class="FM_Heading_2_HowTo">How to Configure the Minimum Number of Signatures Required</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Permission___Start"><span class="FM_Bold">Permission:<span style="padding-left: 18pt;" class="FMAutoNumber_1"></span></span>Corporate Modify</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Steps"><span class="FM_Bold">Steps:<span style="padding-left: 6pt;" class="FMAutoNumber_1"></span></span></p>
+
+  <ol dir="ltr" start="1">
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Start">Select <span style="font-weight : bold; ">Corporate</span>&#160;&gt; <span style="font-weight : bold; ">Workflow Configuration</span>.</p>
+</li>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Click <span style="font-weight : bold; ">Configure Number of Approvals Rules</span>.</p>
+</li>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Click <span style="font-weight : bold; ">Export</span> to download and save a copy of the template.</p>
+</li>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">In the file, modify the rules regarding the minimum number of signatures required. For more information about the column headings, refer to <a href="../../Appendix/Appendix/Appendix.htm#XREF_27379_Number_of">Number of Financial Approval Template</a>.</p>
+</li>
+   <p dir="ltr" class="FM_ADP_TG_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 12pt;" class="FMAutoNumber_2"></span></span>The modified file will completely replace all existing rules. Any records not in the file will be deleted during the import.</p>
+
+   <p dir="ltr" class="FM_ADP_TG_Note_Indent___Next"><span class="FM_Bold"><span style="padding-left: 54pt;" class="FMAutoNumber_1"></span></span>The rules are evaluated in order from the top to bottom of the file. The first rule that the invoice qualifies for will be used.</p>
+
+   <p dir="ltr" class="FM_ADP_TG_Note_Indent___Next"><span class="FM_Bold"><span style="padding-left: 54pt;" class="FMAutoNumber_1"></span></span>Values in the <span style="font-weight : bold; ">Amount To</span>&#160;column are not required. If the <span style="font-weight : bold; ">Amount To</span>&#160;is blank, there is no upper limit to the rule.</p>
+
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">In <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>, click <span style="font-weight : bold; ">Import</span>.</p>
+</li>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Do one of the following:</p>
+</li>
+   <p dir="ltr" class="FM_ADP_TG_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 12pt;" class="FMAutoNumber_1"></span></span>To upload a file saved on your desktop, select <span style="font-weight : bold; ">File </span>as the import method, click <span style="font-weight : bold; ">Choose File</span>, navigate to the file on your computer, and click <span style="font-weight : bold; ">Open</span>.</p>
+
+   <p dir="ltr" class="FM_ADP_TG_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 12pt;" class="FMAutoNumber_1"></span></span>To copy the contents of a spreadsheet, select <span style="font-weight : bold; ">Copy/Paste</span>&#160;as the import method, copy the information in your file, and paste it into the box.</p>
+
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Click<span style="font-weight : bold; "> Upload</span>.</p>
+</li>
+  </ol>
+  <p dir="ltr" class="FM_ADP_TG_Body_Style">&nbsp;</p>
+ </div>
+</body>
+</html>

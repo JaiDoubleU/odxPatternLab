@@ -1,0 +1,4 @@
+(function() {
+var toc =  [{"type":"item","name":"Invoice Approval Method and Currency Awareness","url":"OpenInvoiceForBuyers_master/Configuration/InvoiceFinancialApprovalConfig/Invoice_Approval_Method_and_Currency_Awareness.htm#TOC_Invoice_Approval_Method"},{"type":"item","name":"Approval Types","url":"OpenInvoiceForBuyers_master/Configuration/InvoiceFinancialApprovalConfig/Approval_Types.htm#TOC_Approval_Types"},{"type":"item","name":"Authorization Levels","url":"OpenInvoiceForBuyers_master/Configuration/InvoiceFinancialApprovalConfig/Authorization_Levels.htm#TOC_Authorization_Levels"},{"type":"item","name":"Number of Financial Approvals Required","url":"OpenInvoiceForBuyers_master/Configuration/InvoiceFinancialApprovalConfig/Number_of_Financial_Approvals_Required.htm#TOC_Number_of_Financial"}];
+window.rh.model.publish(rh.consts('KEY_TEMP_DATA'), toc, { sync:true });
+})();

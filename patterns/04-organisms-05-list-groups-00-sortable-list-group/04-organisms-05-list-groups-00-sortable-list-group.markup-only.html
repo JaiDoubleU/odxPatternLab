@@ -1,0 +1,83 @@
+<style>
+    .sortable-list-group-item { cursor: move; }
+</style>
+<ul class="sortable-list-group list-group checked-list-group sortable-items">
+    <li sequence="1" class="sortable-list-group-item list-group-item" value="9">
+        <label><input type="checkbox"/> Check Number</label>
+        <p class="navbar-btn pull-right">
+            <i class="fas fa-ellipsis-v fa-lg fa-fw text-muted"></i>&nbsp;
+        </p>
+    </li>
+    <li sequence="2" class="sortable-list-group-item list-group-item" value="11">
+        <label><input type="checkbox"/> Check Date</label>
+        <p class="navbar-btn pull-right">
+            <i class="fas fa-ellipsis-v fa-lg fa-fw text-muted"></i>&nbsp;
+        </p>
+    </li>
+    <li sequence="3" class="sortable-list-group-item list-group-item" value="12">
+        <label><input type="checkbox"/> Sender Name</label>
+        <p class="navbar-btn pull-right">
+            <i class="fas fa-ellipsis-v fa-lg fa-fw text-muted"></i>&nbsp;
+        </p>
+    <li sequence="4" class="sortable-list-group-item list-group-item" value="22">
+        <label><input type="checkbox"/> Property Number</label>
+        <p class="navbar-btn pull-right">
+            <i class="fas fa-ellipsis-v fa-lg fa-fw text-muted"></i>&nbsp;
+        </p>    </li>
+    <li sequence="5" class="sortable-list-group-item list-group-item" value="13">
+        <label><input type="checkbox"/> Product Code</label>
+        <p class="navbar-btn pull-right">
+            <i class="fas fa-ellipsis-v fa-lg fa-fw text-muted"></i>&nbsp;
+        </p>
+    </li>
+    <li sequence="6" class="sortable-list-group-item list-group-item" value="55">
+        <label><input type="checkbox"/> Status</label>
+        <p class="navbar-btn pull-right">
+            <i class="fas fa-ellipsis-v fa-lg fa-fw text-muted"></i>&nbsp;
+        </p>
+    </li>
+</ul>
+<script>
+    // onclick handlers for the up/down buttons
+    $('.upbutton').on('click', function (event) {
+        var hook = $(this).closest('.sortable-list-group-item').prev('.sortable-list-group-item');
+        if (hook.length) {
+            //hook.addClass('slide-bottom');
+            var elementToMove = $(this).closest('.sortable-list-group-item').detach();
+            //elementToMove.addClass('slide-top');
+            hook.before(elementToMove);
+        }
+        event.stopPropagation();
+    });
+
+    $('.downbutton').on('click', function (event) {
+        var hook = $(this).closest('.sortable-list-group-item ').next('.sortable-list-group-item');
+        if (hook.length) {
+            var elementToMove = $(this).closest('.sortable-list-group-item').detach();
+            hook.after(elementToMove);
+        }
+        event.stopPropagation();
+    });
+
+    // onclick handler for each list item
+    $('.sortable-list-group-item').on('click', function (event) {
+        event.preventDefault();
+        var checkbox = $(this).find('input[type=checkbox]');
+        var isChecked = checkbox.prop('checked');
+        checkbox.prop('checked', !isChecked);
+        event.stopPropagation();
+    });
+
+    // onclick handler for each checkbox
+    $('input[type=checkbox').on('click', function (event) {
+        var isChecked = $(this).find('input[type=checkbox]').prop('checked');
+        $(this).find('input[type=checkbox]').prop('checked', !isChecked);
+        event.stopPropagation();
+    });
+
+    // enable drag/drop
+    $(function() {
+        $( ".sortable-items" ).sortable();
+    });
+
+</script>

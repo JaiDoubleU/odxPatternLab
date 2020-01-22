@@ -1,0 +1,73 @@
+<style>
+
+
+    /* compact the ticket panel a little bit as panel bodys have extra bottom padding  */
+    .user-card .panel-body, .user-card .panel-heading { padding: 10px 15px;}
+    .user-card .thumbnail { height: 80px; margin-bottom: 0; width: 80px; display: block; text-align: center; }
+    .user-card.disabled  { background-color: rgba(238, 238, 238, 0.6); border: 1px dashed #999; font-style: italic; }
+    .user-card.disabled .media  { color: rgba(51,51,51,0.6); }
+    .user-card.disabled .btn-default { font-style: normal; background-color: white !important;}
+
+</style>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-xs-12 col-md-6">
+            <div class="panel panel-default user-card">
+                <div class="panel-body">
+                    <div class="media">
+                        <div class="media-left">
+                            <a id="userImage" class="thumbnail" href="#">
+                                <img id="userImage1" src=""></img>
+                            </a>
+                        </div>
+                        <div class="media-body">
+                            <div class="row">
+                                <div class="col-xs-9">
+                                    <h4 class="media-heading">Firstname Lastname</h4>
+                                    <h5 class="media-heading">Vice President</h5>
+                                    <ul class="list-unstyled text-muted small">
+                                        <li>400 W Apache Dr - Hobbs, NM 88240</li>
+                                        <li>(575) 392-8489</li>
+                                        <li></li>
+                                    </ul>
+                                </div>
+                                <div class="col-xs-3 text-right">
+                                    <button class="btn btn-default text-nowrap hide-overflow"><i class="fas fa-pencil fa-lg"></i> Edit</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-6">
+            <div class="panel panel-default user-card disabled">
+                <div class="panel-body">
+                    <div class="media">
+                        <div class="media-left">
+                            <a class="thumbnail text-muted" href="#">
+                                <i class="fas fa-user fa-5x"></i>
+                            </a>
+                        </div>
+                        <div class="media-body">
+                            <div class="row">
+                                <div class="col-xs-9">
+                                    <h4 class="media-heading">Firstname Lastname</h4>
+                                    <h5 class="media-heading">Vice President</h5>
+                                    <ul class="h6 list-unstyled text-muted">
+                                        <li>Address</li>
+                                        <li>Phone</li>
+                                    </ul>
+                                </div>
+                                <div class="col-xs-3 text-right">
+                                    <button class="btn btn-default text-nowrap hide-overflow"><i class="fas fa-plus fa-lg"></i> Click to Add</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="../../js/user-cards.js"></script>

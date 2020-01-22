@@ -1,0 +1,11 @@
+.wrapper2ColFluidLeft {
+    display: grid;
+    grid-gap: 0px;
+    grid-template-columns: 1fr minmax(50px, 150px);
+}
+
+.wrapper2ColFluidRight {
+    display: grid;
+    grid-gap: 0px;
+    grid-template-columns: minmax(50px, 150px) 1fr;
+}

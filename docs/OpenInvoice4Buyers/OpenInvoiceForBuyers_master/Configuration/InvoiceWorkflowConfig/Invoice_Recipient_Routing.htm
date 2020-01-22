@@ -1,0 +1,169 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+ <title>Invoice Recipient Routing</title>
+
+ <link rel="stylesheet" href="../../../OpenInvoiceForBuyers_master.css" type="text/css" />
+
+
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style>
+ <meta name="generator" content="Adobe FrameMaker 2017" />
+<script type="text/javascript" src="../../../template/scripts/rh.min.js"></script>
+<script type="text/javascript" src="../../../template/scripts/common.min.js"></script>
+<script type="text/javascript" src="../../../template/scripts/topic.min.js"></script>
+<script type="text/javascript" src="../../../template/scripts/constants.js"></script>
+<script type="text/javascript" src="../../../template/scripts/utils.js"></script>
+<script type="text/javascript" src="../../../template/scripts/mhutils.js"></script>
+<script type="text/javascript" src="../../../template/scripts/mhlang.js"></script>
+<script type="text/javascript" src="../../../template/scripts/mhver.js"></script>
+<script type="text/javascript" src="../../../template/scripts/settings.js"></script>
+<script type="text/javascript" src="../../../template/scripts/XmlJsReader.js"></script>
+<script type="text/javascript" src="../../../template/scripts/loadparentdata.js"></script>
+<script type="text/javascript" src="../../../template/scripts/loadscreen.js"></script>
+<script type="text/javascript" src="../../../template/scripts/loadprojdata.js"></script>
+<script type="text/javascript" src="../../../template/scripts/mhtopic.js"></script>
+ <link rel="stylesheet" type="text/css" href="../../../template/styles/topic.min.css">
+<script type="text/javascript" >
+gRootRelPath = "../../..";
+gCommonRootRelPath = "../../..";
+gTopicId = "";
+</script>
+ <meta name="brsprev" value="OpenInvoiceForBuyers_master/Configuration/InvoiceWorkflowConfig/Dispute_Management.htm">
+ <meta name="brsnext" value="OpenInvoiceForBuyers_master/Configuration/InvoiceFinancialApprovalConfig/InvoiceFinancialApprovalConfig.htm">
+ <meta name="topic-breadcrumbs" content="Administrator & User Guide for Buyers > Invoice Workflow Configuration" />
+</head>
+
+<body dir="ltr">
+<script type="text/javascript" src="../../../ehlpdhtm.js"></script>
+<div dir="ltr">
+  <p dir="ltr" class="FM_ADP_TG_Heading_1"><a name="TOC_Invoice_Recipient_Routing"></a><a name="XREF_98251_Invoice_Recipient"></a>Invoice Recipient Routing</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Body_Style">Invoice recipient routing rules allow invoices processed in the <span data-name="ADP_Software_Name" data-val="OpenInvoice Platform" data-showval="TRUE" data-format="ADP_Software_Name">OpenInvoice Platform</span> to be routed to:</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>A specific site and department. </p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>A specific site, department, and user. </p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>A requisitioner.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Body_Style">Invoices are submitted to the Remit To site and department as specified on the invoice by the supplier. Invoice recipient routing, performed only on initial invoice submission, forwards the invoice to a recipient who then becomes the invoice owner.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Note___Start"><span class="FM_Bold">Note:<span style="padding-left: 12pt;" class="FMAutoNumber_1"></span></span>If the invoice is disputed and then resubmitted, it will be resubmitted to the user who disputed it.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Heading_2">Recipient Routing Rules</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Body_Style">Each rule consists of two components: the criteria used to select the appropriate rule and the routing destination. When creating the criteria for rule selection, consider the following:</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>Criteria on submitted invoices must match a configured rule exactly for routing to occur. </p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>The rules are evaluated sequentially from top to bottom. The first matching rule will determine the recipient and subsequent rules will not be evaluated. Therefore, the rules at the top of file must be more specific than the rules at the bottom of the file.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>If the first matched routing specifies a destination that is no longer valid, the invoice is not routed. Subsequent rules are not evaluated.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>A default rule is not required. If no rules match or if the Remit To site and Department are the same as the routing destination determined by the rules, the invoice is not routed. The invoice remains in the Remit To site and Department as selected by the supplier.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>A Department is a valid recipient in the Code then Approve workflow if there is at least one user in the department with the Invoice Modify permission. A Department is a valid recipient in the Approve Only or Approve then Code workflow processes if there is at least one user in the department with either the Invoice Modify permission or Invoice Approve permission.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>You must provide suppliers with this routing code. If the supplier enters a routing code that is not configured and there are no other criteria in the rule, the invoice is not routed.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>When defining the routing code, email addresses may be used. Spaces are permitted but will be ignored (the routing code for <span style="font-weight : bold; ">Send this to Jesse</span>&#160;is <span style="font-weight : bold; ">sendthistojesse)</span>. If the routing code includes a comma, the text in the TSV file must be copied and pasted into the <span style="font-weight : bold; ">Paste</span>&#160;field. If uploaded in a file, quotation marks will appear around the routing code because it contains a comma. The supplier must then input the routing code in quotation marks for the OpenInvoice platform to recognize it. </p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>A user is a valid recipient if they have the Invoice View permission in the destination site and department.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>When specifying a user as the valid recipient, the text in the TSV file must be copied and pasted into the <span style="font-weight : bold; ">Paste</span>&#160;field. The rules cannot be uploaded in an Excel TSV file. Excel will put quotation marks around the user’s name because the format contains a comma. The entry will then be rejected for not being formatted correctly.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>If routing to a requisitioner, all other values on the rule must be blank.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>If multiple requisitioners are listed on an invoice, the invoice is routed to the first requisitioner listed. If the invoice cannot be routed to the first requisitioner, the invoice is not routed. Any other requisitioners on the invoice are not considered.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 12pt;" class="FMAutoNumber_1"></span></span>If the first requisitioner on the invoice belongs to one site and multiple departments:</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_3"><span class="FM_Bullet3">-<span style="padding-left: 15pt;" class="FMAutoNumber_1"></span></span>The invoice is routed to the department where the requisitioner has the highest permission (an invoice would be routed to the department where the user has the<span style="font-weight : bold; ">&#160;</span>Invoice Code permission over the department where the user has the Invoice Modify permission).</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_3"><span class="FM_Bullet3">-<span style="padding-left: 15pt;" class="FMAutoNumber_1"></span></span>If the user has the highest permission in multiple departments, including the Remit To department specified by the supplier, the invoice is routed to the requisitioner in the Remit To department specified by the supplier.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_3"><span class="FM_Bullet3">-<span style="padding-left: 15pt;" class="FMAutoNumber_1"></span></span>If the user has the highest permission in multiple departments but is not a member of the Remit To department specified by the supplier, the invoice is routed to the requisitioner in the first department in alphabetical order.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 12pt;" class="FMAutoNumber_1"></span></span>If the requisitioner belongs to multiple sites:</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_3"><span class="FM_Bullet3">-<span style="padding-left: 15pt;" class="FMAutoNumber_1"></span></span>If the user is a member of the Remit To site and Department, the invoice is routed to the requisitioner in the Remit To site and Department.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_3"><span class="FM_Bullet3">-<span style="padding-left: 15pt;" class="FMAutoNumber_1"></span></span>Otherwise, the invoice is not routed.</p>
+
+  <p dir="ltr" class="FM_Heading_2_HowTo">How to Configure Recipient Routing Rules</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Permission___Start"><span class="FM_Bold">Permission:<span style="padding-left: 18pt;" class="FMAutoNumber_1"></span></span>Corporate View to view rules</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Permission___Next"><span class="FM_Bold"><span style="padding-left: 72pt;" class="FMAutoNumber_1"></span></span>Corporate Admin to configure rules</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Note___Start"><span class="FM_Bold">Note:<span style="padding-left: 12pt;" class="FMAutoNumber_1"></span></span>Existing rules will be replaced whenever a set of rules is imported. Any previous rule not included in a new import file will be deleted.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Steps"><span class="FM_Bold">Steps:<span style="padding-left: 6pt;" class="FMAutoNumber_1"></span></span></p>
+
+  <ol dir="ltr" start="1">
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Start">Select <span style="font-weight : bold; ">Corporate &gt; Workflow Configuration</span>.</p>
+</li>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Click <span style="font-weight : bold; ">Configure Invoice Recipient Rules</span>. </p>
+</li>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Click <span style="font-weight : bold; ">Export</span> to download and save the currently configured rules.</p>
+</li>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">In the file, enter the new routing rules. Save the file in TSV format. For more information about the column headings, refer to <a href="../../Appendix/Appendix/Appendix.htm#XREF_70064_Invoice_Recipient">Invoice Recipient Routing Rules Template</a>.</p>
+</li>
+   <p dir="ltr" class="FM_ADP_TG_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 12pt;" class="FMAutoNumber_2"></span></span>To disable workflow routing, create a file with no rules.</p>
+
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">In <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>, click <span style="font-weight : bold; ">Import</span>.</p>
+</li>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Do one of the following:</p>
+</li>
+   <p dir="ltr" class="FM_ADP_TG_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 12pt;" class="FMAutoNumber_1"></span></span>To upload a file saved on your desktop, select <span style="font-weight : bold; ">File </span>as the import method, click <span style="font-weight : bold; ">Choose File</span>, navigate to the file on your computer, and click <span style="font-weight : bold; ">Open</span>.</p>
+
+   <p dir="ltr" class="FM_ADP_TG_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 12pt;" class="FMAutoNumber_1"></span></span>To copy the contents of a spreadsheet, select <span style="font-weight : bold; ">Copy/Paste</span>&#160;as the import method, copy the information in your file, and paste it into the box.</p>
+
+<div width="100%" align="left">
+   <table border-spacing="0" dir="ltr" class="table14" border-collapse="collapse" style="max-width: 100% ;height: auto">
+    <tr class="tr54">
+    <td class="td21">
+    <p dir="ltr" class="FM_CellBody" style="display:inline"><img alt="InvoiceWorkflowConfig_importrecipientroutingrules.png" id="image143" src="../../../assets/InvoiceWorkflowConfig_importrecipientroutingrules.png" style="max-width: 100% ;height: auto" />&nbsp;</p>
+</td>
+</tr>
+   </table>
+</div>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Click<span style="font-weight : bold; "> Upload</span>.</p>
+</li>
+  </ol>
+  <p dir="ltr" class="FM_ADP_TG_Body_Style">&nbsp;</p>
+ </div>
+</body>
+</html>

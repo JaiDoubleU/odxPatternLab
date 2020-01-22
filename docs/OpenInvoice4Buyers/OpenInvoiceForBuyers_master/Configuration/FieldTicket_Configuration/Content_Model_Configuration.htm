@@ -1,0 +1,156 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+ <title>Content Model Configuration</title>
+
+ <link rel="stylesheet" href="../../../OpenInvoiceForBuyers_master.css" type="text/css" />
+
+
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style>
+ <meta name="generator" content="Adobe FrameMaker 2017" />
+<script type="text/javascript" src="../../../template/scripts/rh.min.js"></script>
+<script type="text/javascript" src="../../../template/scripts/common.min.js"></script>
+<script type="text/javascript" src="../../../template/scripts/topic.min.js"></script>
+<script type="text/javascript" src="../../../template/scripts/constants.js"></script>
+<script type="text/javascript" src="../../../template/scripts/utils.js"></script>
+<script type="text/javascript" src="../../../template/scripts/mhutils.js"></script>
+<script type="text/javascript" src="../../../template/scripts/mhlang.js"></script>
+<script type="text/javascript" src="../../../template/scripts/mhver.js"></script>
+<script type="text/javascript" src="../../../template/scripts/settings.js"></script>
+<script type="text/javascript" src="../../../template/scripts/XmlJsReader.js"></script>
+<script type="text/javascript" src="../../../template/scripts/loadparentdata.js"></script>
+<script type="text/javascript" src="../../../template/scripts/loadscreen.js"></script>
+<script type="text/javascript" src="../../../template/scripts/loadprojdata.js"></script>
+<script type="text/javascript" src="../../../template/scripts/mhtopic.js"></script>
+ <link rel="stylesheet" type="text/css" href="../../../template/styles/topic.min.css">
+<script type="text/javascript" >
+gRootRelPath = "../../..";
+gCommonRootRelPath = "../../..";
+gTopicId = "";
+</script>
+ <meta name="brsprev" value="OpenInvoiceForBuyers_master/Configuration/FieldTicket_Configuration/FieldTicket_Configuration.htm">
+ <meta name="brsnext" value="OpenInvoiceForBuyers_master/Configuration/FieldTicket_Configuration/Configure_Field_Ticket_Data_Fields.htm">
+ <meta name="topic-breadcrumbs" content="Administrator & User Guide for Buyers > Ticket Configuration" />
+</head>
+
+<body dir="ltr">
+<script type="text/javascript" src="../../../ehlpdhtm.js"></script>
+<div dir="ltr">
+  <p dir="ltr" class="FM_ADP_TG_Heading_1"><a name="TOC_Content_Model"></a>Content Model Configuration</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Body_Style">The content model determines which fields are read-only, optional entry, or required entry when submitting and approving tickets. Your company will need to consult with <span data-name="_OpenInvoice_Support" data-val="OpenInvoice Support" data-showval="TRUE" data-format="_OpenInvoice_Support">OpenInvoice Support</span>&#160;to create your content model for use in the <span data-name="ADP_Software_Name" data-val="OpenInvoice Platform" data-showval="TRUE" data-format="ADP_Software_Name">OpenInvoice Platform</span>. </p>
+
+  <p dir="ltr" class="FM_ADP_TG_Note___Start"><span class="FM_Bold">Note:<span style="padding-left: 12pt;" class="FMAutoNumber_1"></span></span>There are core application fields that are not configurable.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Body_Style">Content models define which fields are present: </p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>when a supplier submits a field ticket</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>when the buyer approves a pending field ticket</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Heading_2"><a name="XREF_52825_Configuration"></a>Configuration Process </p>
+
+  <p dir="ltr" class="FM_ADP_TG_Body_Style">Your company will submit to <span data-name="_OpenInvoice_Support" data-val="OpenInvoice Support" data-showval="TRUE" data-format="_OpenInvoice_Support">OpenInvoice Support</span>&#160;a document indicating the desired content model configuration. <span data-name="_OpenInvoice_Support" data-val="OpenInvoice Support" data-showval="TRUE" data-format="_OpenInvoice_Support">OpenInvoice Support</span>&#160;configures the fields in the platform and sets up the validation rules. The available options for each configurable field are:</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Required:</span>&#160;</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 12pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Not Required: </span>makes the field optional. </p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 12pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">On Submit Only:</span> makes the field mandatory for completion before a ticket can be submitted.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 12pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">On Approve Only:</span> makes the field mandatory for completion before a detail invoice can be approved.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Supplier Access:</span>&#160;</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 12pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">None:</span> cannot view or modify the data field.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 12pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">View: </span>has read-only access to the data field.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 12pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Modify:</span> can enter data in the data field.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 12pt;" class="FMAutoNumber_2"></span></span>Selecting <span style="font-weight : bold; ">None</span>&#160;or <span style="font-weight : bold; ">View</span>&#160;will prevent suppliers from being able to populate data in the field. For the <span style="font-weight : bold; ">AFE</span>&#160;and <span style="font-weight : bold; ">Cost Center</span>&#160;fields, the suppliers will not have access to the search controls. <br />Select<span style="font-weight : bold; ">&#160;Modify </span>to allow suppliers to complete the required data field <span style="font-weight : bold; ">On Submit</span>. </p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1" style="font-weight : bold;"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>Buyer Access:</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 12pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">None:</span> cannot view or modify the data field.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 12pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">View: </span>has read-only access to the data field.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 12pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Modify:</span> can enter data in the data field.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Heading_2">Field Ticket Data</p>
+  <p dir="ltr" class="FM_ADP_TG_Body_Style">Buyers can configure the fields available for suppliers to populate on a ticket. Suppliers will see ticket fields for each buyer based on the buyer’s configuration settings. Suppliers submitting through an API will be provided with each buyer’s field configuration when being on-boarded for the specific buyer. To learn more about configuring fields to hide/display on tickets go to <a href="#XREF_52825_Configuration"><span class="FM_ADP_TG__Link">Configuration Process</span></a>.</p>
+  <p dir="ltr" class="FM_ADP_TG_Body_Style">The following fields are available for content model configuration on tickets:</p>
+  <p dir="ltr" class="FM_ADP_TG_Heading_3">Header Data</p>
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">AFE:</span>&#160;provided by the requisitioner. The AFE can be entered at the header level for common coding (when the coding is the same for the entire ticket).</p>
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Cost Center:</span>&#160;provided by the requisitioner. The Cost Center can be entered at the header level for common coding (when the coding is the same for the entire ticket). </p>
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Requisitioner:</span>&#160;buyer contact who ordered the product or service. The requisitioner must be a valid user within OpenInvoice who can approve a field ticket (Field Ticket Modify). </p>
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Currency:</span> code for the currency (required).</p>
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Driver:</span> name of the driver for water hauling tickets.</p>
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Location:</span> the location of the service.</p>
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Office Approver:</span>&#160;the name of the person responsible for approving the invoice associated with the field ticket. If the field ticket approver includes the Office Approver on the field ticket it may speed up the process of routing the invoice to the correct approver.</p>
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1" style="font-weight : bold;"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>Superintendent:&#160;the name of the superintendent, who is an employee of the oil company. </p>
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Truck Number:</span> the number of the truck for water hauling and labor, equipment, material tickets.</p>
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Truck Capacity</span>: the capacity of the truck for water hauling tickets.</p>
+  <p dir="ltr" class="FM_ADP_TG_Heading_3">Line Data</p>
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Location:</span>&#160;location where the product was delivered or the service was performed. </p>
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">AFE:</span>&#160;provided by the requisitioner. The AFE can be entered at the header level for common coding (when the coding is the same for the entire ticket). The AFE must be valid for the buyer. </p>
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Cost Center:</span>&#160;provided by the requisitioner. The Cost Center can be entered at the header level for common coding (when the coding is the same for the entire ticket). The Cost Center must be valid for the buyer. </p>
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Disposal Location</span>: the disposal location for water hauling tickets.</p>
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Disposal Ticket</span>: the ticket number associated with the disposal.</p>
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Gauge Start Unit</span>: the initial reading of the gauge in feet for a water hauling ticket</p>
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Gauge Start Subunit</span>: the initial reading of the gauge in inches for a water hauling ticket</p>
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Gauge Finish Unit:</span> the final reading of the gauge in feet for a water hauling ticket</p>
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1" style="font-weight : bold;"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>Gauge Finish Subunit: the final reading of the gauge in inches for a water hauling ticket</p>
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1" style="font-weight : bold;"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>Hours Worked Unit: the number of hours worked for a water hauling ticket</p>
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1" style="font-weight : bold;"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>Hours Worked Subunit: the number of minutes worked for a water hauling ticket</p>
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Payload</span>: amount of payload for water hauling tickets. </p>
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">PO:</span>&#160;purchase order number. </p>
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">PO Line</span>: the appropriate line number on the purchase order. </p>
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Total:</span>&#160;the total for the line item. </p>
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">GL Coding:</span>&#160;provided by the requisitioner. The GL Coding must be valid for the buyer. </p>
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Quantity:</span>&#160;number of units bought. </p>
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Unit of Measure:</span>&#160;unit of measure for the product or service provided. </p>
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Rate:</span>&#160;rate charged for each unit of the product or service. </p>
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Volume:</span>&#160;the volume for water hauling tickets. The unit of measure for the volume must be selected from the drop-down list. </p>
+  <p dir="ltr" class="FM_ADP_TG_Heading_3">Field Ticket Journal</p>
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Submitted:</span> ticket has been submitted by the supplier to the buyer.</p>
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Approved:</span>&#160;ticket has been approved by the buyer. </p>
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Unapproved:</span> ticket has been unapproved by the buyer.</p>
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Disputed:</span>&#160;if a ticket has a red compliance alert it can be automatically disputed. Tickets that are manually disputed require a comment to be added to explain the reason for the dispute. </p>
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Cancelled:</span> ticket has been cancelled by the supplier.</p>
+  <p dir="ltr" class="FM_ADP_TG_Heading_2"><span style="font-size  : 10.0pt; color   : #000000; "></span>Configurable Details</p>
+  <p dir="ltr" class="FM_ADP_TG_Body_Style"><span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>&#160;allows buyers to configure the required data elements for tickets received from suppliers. Configurable fields on tickets include:</p>
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>AFE</p>
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>Cost Center</p>
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>Major / Minor / Subcode</p>
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>Requisitioner</p>
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>Location</p>
+  </div>
+</body>
+</html>

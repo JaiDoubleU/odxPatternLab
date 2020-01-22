@@ -1,0 +1,16 @@
+<button type="button" class="btn btn-link"
+    data-container="body"
+    data-html="true"
+    data-toggle="popover"
+    data-trigger="focus"
+    data-placement="{{popoverPlacement}}{{^popoverPlacement}}right{{/popoverPlacement}}"
+    data-content="{{popoverContent}}{{^popoverContent}}Popover:<ul><li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li><li> Phasellus suscipit nisi tellus, viverra ultrices eros ullamcorper sit amet.</li></ul> {{/ popoverContent}}"
+    title="">
+    {{#popoverIcon}}
+        <i class="fas {{popoverIconClass}}"></i>
+    {{/popoverIcon}}
+    {{^popoverIcon}}
+        <i class="fas fa-info-circle text-info"></i>
+    {{/popoverIcon}}
+</button>
+

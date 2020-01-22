@@ -1,0 +1,237 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+ <title>Payment Status</title>
+
+ <link rel="stylesheet" href="../../../OpenInvoiceForBuyers_master.css" type="text/css" />
+
+
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style>
+ <meta name="generator" content="Adobe FrameMaker 2017" />
+<script type="text/javascript" src="../../../template/scripts/rh.min.js"></script>
+<script type="text/javascript" src="../../../template/scripts/common.min.js"></script>
+<script type="text/javascript" src="../../../template/scripts/topic.min.js"></script>
+<script type="text/javascript" src="../../../template/scripts/constants.js"></script>
+<script type="text/javascript" src="../../../template/scripts/utils.js"></script>
+<script type="text/javascript" src="../../../template/scripts/mhutils.js"></script>
+<script type="text/javascript" src="../../../template/scripts/mhlang.js"></script>
+<script type="text/javascript" src="../../../template/scripts/mhver.js"></script>
+<script type="text/javascript" src="../../../template/scripts/settings.js"></script>
+<script type="text/javascript" src="../../../template/scripts/XmlJsReader.js"></script>
+<script type="text/javascript" src="../../../template/scripts/loadparentdata.js"></script>
+<script type="text/javascript" src="../../../template/scripts/loadscreen.js"></script>
+<script type="text/javascript" src="../../../template/scripts/loadprojdata.js"></script>
+<script type="text/javascript" src="../../../template/scripts/mhtopic.js"></script>
+ <link rel="stylesheet" type="text/css" href="../../../template/styles/topic.min.css">
+<script type="text/javascript" >
+gRootRelPath = "../../..";
+gCommonRootRelPath = "../../..";
+gTopicId = "1.13.0_1";
+</script>
+ <meta name="brsprev" value="OpenInvoiceForBuyers_master/Payments/PaymentWorkflow_Introduction/PaymentWorkflow_Introduction.htm">
+ <meta name="brsnext" value="OpenInvoiceForBuyers_master/Payments/PaymentWorkflow_Introduction/Payment_Workflow_Actions.htm">
+ <meta name="topic-breadcrumbs" content="Administrator & User Guide for Buyers > Payment Workflow" />
+</head>
+
+<body dir="ltr">
+<script type="text/javascript" src="../../../ehlpdhtm.js"></script>
+<div dir="ltr">
+  <p dir="ltr" class="FM_ADP_TG_Heading_1">Payment Status</p>
+  <p dir="ltr" class="FM_ADP_TG_Body_Style">This section contains the available payment status attributes within the OpenInvoice platform. </p>
+
+  <p dir="ltr" class="FM_ADP_TG_Screenshot_Anchor"><span style="font-size: small;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+
+<div width="100%" align="left">
+  <table border-spacing="0" dir="ltr" class="table225" border-collapse="collapse" style="max-width: 100% ;height: auto">
+   <tr class="tr62">
+   <th class="td226">
+   <p dir="ltr" style="font-weight : bold; font-size  : 12.0pt; color   : #ffffff;"><span class="FM_ADPTG_Cell_Heading">Status</span></p>
+</th>
+   <th class="td227">
+   <p dir="ltr" class="FM_ADP_TG_Screenshot_Anchor" style="font-weight : bold; font-size  : 12.0pt; color   : #ffffff;"><span class="FM_ADPTG_Cell_Heading">Description</span></p>
+</th>
+</tr>
+   <tr class="tr68">
+   <td class="td228">
+   <p dir="ltr" class="FM_ADP_TG_Body_Style">Scheduled</p>
+</td>
+   <td class="td229">
+   <p dir="ltr" class="FM_ADP_TG_Body_Style"><span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>&#160;has scheduled the payment according to the defined payment terms and your company has not made any adjustments to the payment date. Payment details have not been sent to <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>’s money movement partner for processing.</p>
+</td>
+</tr>
+   <tr class="tr69">
+   <td class="td228">
+   <p dir="ltr" class="FM_ADP_TG_Body_Style">Rescheduled</p>
+</td>
+   <td class="td229">
+   <p dir="ltr" class="FM_ADP_TG_Body_Style">A user from your company has manually adjusted the payment date. Payment details have not been sent to <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>’s money movement partner for processing.</p>
+</td>
+</tr>
+   <tr class="tr65">
+   <td class="td228">
+   <p dir="ltr" class="FM_ADP_TG_Body_Style">Held</p>
+</td>
+   <td class="td229">
+   <p dir="ltr" class="FM_ADP_TG_Body_Style">A condition has occurred that prevents the payment from being processed or a user from your company has manually removed the payment from workflow.</p>
+</td>
+</tr>
+   <tr class="tr230">
+   <td class="td228">
+   <p dir="ltr" class="FM_ADP_TG_Body_Style">Released</p>
+</td>
+   <td class="td229">
+   <p dir="ltr" class="FM_ADP_TG_Body_Style">A user from your company has manually returned the payment to workflow.</p>
+</td>
+</tr>
+   <tr class="tr65">
+   <td class="td228">
+   <p dir="ltr" class="FM_ADP_TG_Body_Style">Posted</p>
+</td>
+   <td class="td229">
+   <p dir="ltr" class="FM_ADP_TG_Body_Style">Payment details have been sent to <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>’s money movement partner for processing, but the transaction has not yet completed.</p>
+</td>
+</tr>
+   <tr class="tr65">
+   <td class="td228">
+   <p dir="ltr" class="FM_ADP_TG_Body_Style">Cancelled</p>
+</td>
+   <td class="td229">
+   <p dir="ltr" class="FM_ADP_TG_Body_Style">A user from your company has requested that payment to the supplier be stopped, but the payment has already been posted.</p>
+</td>
+</tr>
+   <tr class="tr65">
+   <td class="td228">
+   <p dir="ltr" class="FM_ADP_TG_Body_Style">Paid by ACH</p>
+</td>
+   <td class="td229">
+   <p dir="ltr" class="FM_ADP_TG_Body_Style"><span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>’s money movement partner has completed the payment transaction and funds have been transferred to the supplier via ACH.</p>
+</td>
+</tr>
+   <tr class="tr69">
+   <td class="td228">
+   <p dir="ltr" class="FM_ADP_TG_Body_Style">Check Issued</p>
+</td>
+   <td class="td229">
+   <p dir="ltr" class="FM_ADP_TG_Body_Style"><span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>’s money movement partner has completed the payment transaction and a check has been issued for payment. The supplier has not yet cashed the check and your company has not requested a check stop.</p>
+</td>
+</tr>
+   <tr class="tr69">
+   <td class="td228">
+   <p dir="ltr" class="FM_ADP_TG_Body_Style">Check Voided</p>
+</td>
+   <td class="td229">
+   <p dir="ltr" class="FM_ADP_TG_Body_Style">A user from your company has requested that the payment be stopped before the check was mailed or the check was returned by the post office as undeliverable.</p>
+</td>
+</tr>
+   <tr class="tr69">
+   <td class="td228">
+   <p dir="ltr" class="FM_ADP_TG_Body_Style">Check Stop Requested</p>
+</td>
+   <td class="td229">
+   <p dir="ltr" class="FM_ADP_TG_Body_Style">A user from your company has requested that the payment be stopped after the check was mailed. A stop payment request is sent to the bank, but the stop is not guaranteed.</p>
+</td>
+</tr>
+   <tr class="tr65">
+   <td class="td228">
+   <p dir="ltr" class="FM_ADP_TG_Body_Style">Check Stop Denied</p>
+</td>
+   <td class="td229">
+   <p dir="ltr" class="FM_ADP_TG_Body_Style">The stop payment request was unsuccessful, allowing the supplier to cash the check at the bank.</p>
+</td>
+</tr>
+   <tr class="tr65">
+   <td class="td228">
+   <p dir="ltr" class="FM_ADP_TG_Body_Style">Check Stopped</p>
+</td>
+   <td class="td229">
+   <p dir="ltr" class="FM_ADP_TG_Body_Style">The stop payment request was successful and the check cannot be cashed by the supplier at the bank.</p>
+</td>
+</tr>
+   <tr class="tr230">
+   <td class="td228">
+   <p dir="ltr" class="FM_ADP_TG_Body_Style">Check Settled</p>
+</td>
+   <td class="td229">
+   <p dir="ltr" class="FM_ADP_TG_Body_Style">The supplier has cashed the check and funds have been transferred.</p>
+</td>
+</tr>
+   <tr class="tr65">
+   <td class="td228">
+   <p dir="ltr" class="FM_ADP_TG_Body_Style">Returned</p>
+</td>
+   <td class="td229">
+   <p dir="ltr" class="FM_ADP_TG_Body_Style"><span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>’s money movement partner was unable to complete the payment transaction due to a configuration error.</p>
+</td>
+</tr>
+   <tr class="tr65">
+   <td class="td228">
+   <p dir="ltr" class="FM_ADP_TG_Body_Style">Resubmitted</p>
+</td>
+   <td class="td229">
+   <p dir="ltr" class="FM_ADP_TG_Body_Style">A user from your company has restarted the payment process for an invoice with a previously cancelled or stopped payment.</p>
+</td>
+</tr>
+   <tr class="tr231">
+   <td class="td228">
+   <p dir="ltr" class="FM_ADP_TG_Body_Style">Terminated</p>
+</td>
+   <td class="td229">
+   <p dir="ltr" class="FM_ADP_TG_Body_Style">The payment is marked as end-of-life and the invoice will not be paid through <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>.</p>
+   <p dir="ltr" class="FM_ADP_TG_Note___Start"><span class="FM_Bold">Note:<span style="padding-left: 12pt;" class="FMAutoNumber_1"></span></span>The associated invoice can be returned to workflow, adjusted, and once approved OpenInvoice will generate a new payment.</p>
+</td>
+</tr>
+   <tr class="tr69">
+   <td class="td228">
+   <p dir="ltr" class="FM_ADP_TG_Body_Style">Credit Applied</p>
+</td>
+   <td class="td229">
+   <p dir="ltr" class="FM_ADP_TG_Body_Style">The original payment amount has been reduced by applying a credit. The remaining amount due is reflected in the payment amount and the corresponding funds will be transferred on the scheduled dates.</p>
+</td>
+</tr>
+   <tr class="tr65">
+   <td class="td228">
+   <p dir="ltr" class="FM_ADP_TG_Body_Style">Paid by Applying Credit</p>
+</td>
+   <td class="td229">
+   <p dir="ltr" class="FM_ADP_TG_Body_Style">The entire payment amount has been paid by applying a credit. No funds will be transferred and no further processing is required.</p>
+</td>
+</tr>
+   <tr class="tr65">
+   <td class="td228">
+   <p dir="ltr" class="FM_ADP_TG_Body_Style">Payment Not Required</p>
+</td>
+   <td class="td229">
+   <p dir="ltr" class="FM_ADP_TG_Body_Style">Payment is for an invoice with zero value ($0.00). No further processing is required.</p>
+</td>
+</tr>
+  </table>
+</div>
+  <p dir="ltr" class="FM_ADP_TG_Screenshot_Anchor"><span style="font-size: small;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+  </div>
+</body>
+</html>

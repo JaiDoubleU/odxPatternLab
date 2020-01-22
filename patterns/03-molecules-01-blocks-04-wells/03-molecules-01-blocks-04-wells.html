@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html class="pl">
+    <head>
+        <title>Styleguide : Oildex Pattern Lab</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width" />
+        <link rel="shortcut icon" type="image/x-icon" href="../../images/favicon.ico">
+
+        <script src="https://rawgit.com/icebob/fakerator/master/dist/fakerator.js"></script>
+        <script>
+            var fakerator = new Fakerator();
+        </script>
+
+        <link rel="stylesheet" href="../../fonts/@fortawesome/fontawesome-pro/css/all.css" />
+        <link rel="stylesheet" href="../../css/vendor/animate.min.css"/>
+        <link rel="stylesheet" href="../../css/vendor/bootstrap-select.min.css"/>
+        <link rel="stylesheet" href="../../css/vendor/tokenfield-typeahead.min.css"/>
+        <link rel="stylesheet" href="../../css/vendor/bootstrap-tokenfield.min.css">
+        <link rel="stylesheet" href="../../css/pattern-scaffolding.css?1579126521816" media="all" />
+        <link rel="stylesheet" href="../../css/vendor/typeaheadjs.css" media="all" />
+        <link rel="stylesheet" href="../../css/vendor/dataTables.bootstrap.min.css" media="all" />
+        <link rel="stylesheet" href="../../css/vendor/dragula.min.css" media="all" />
+        <link rel="stylesheet" href="../../css/vendor/colReorder.bootstrap.min.css" media="all" />
+        <link rel="stylesheet" href="../../css/vendor/fixedHeader.bootstrap.min.css" media="all" />
+        <link rel="stylesheet" href="../../css/vendor/typeaheadjs.css" />
+        <link rel="stylesheet" href="../../css/vendor/tokenfield.css" />
+        <link rel="stylesheet" href="../../css/vendor/jquery-ui.min.css" />
+        <link rel="stylesheet" href="../../css/oildex-admin.css"/>
+        <link rel="stylesheet" href="../../css/theme/enverus/bootstrap.css" media="all" />
+
+
+        <!-- Load pattern specific CSS -->
+        <link rel="stylesheet" href="../../css/02-comments-list.css"></link>
+        <link rel="stylesheet" href="../../css/01-attachments-list.css"></link>
+        <link rel="stylesheet" href="../../css/03-document-journal.css"></link>
+        <link rel="stylesheet" href="../../css/07-tabbed-panel.css"/>
+        <link rel="stylesheet" href="../../css/00-navbar.css"/>
+        <link rel="stylesheet" href="../../css/04-standard-icons.css"/>
+        <link rel="stylesheet" href="../../css/05-centered-navbar.css"/>
+        <link rel="stylesheet" href="../../css/03-secondary-navbar.css"/>
+        <link rel="stylesheet" href="../../css/panel-with-ribbon.css" />
+        <link rel="stylesheet" href="../../css/alerts.css"/>
+        <link rel="stylesheet" href="../../css/01-alerts-with-icons.css"/>
+        <link rel="stylesheet" href="../../css/17-checkbox-lg.css" />
+        <link rel="stylesheet" href="../../css/18-radio-lg.css" />
+        <link rel="stylesheet" href="../../css/time-out-dialog.css"/>
+        <link rel="stylesheet" href="../../css/bulk-update.css"/>
+        <link rel="stylesheet" href="../../css/contract-workspace.css"/>
+        <link rel="stylesheet" href="../../css/dashboard-card-with-settings.css"/>
+        <link rel="stylesheet" href="../../css/donut-chart.css" />
+        <link rel="stylesheet" href="../../css/line-chart.css" />
+        <link rel="stylesheet" href="../../css/world-map.css" />
+        <link rel="stylesheet" href="../../css/stacked-bar-chart.css" />
+        <link rel="stylesheet" href="../../css/09-expandable-alerts.css" />
+        <link rel="stylesheet" href="../../css/import-results-dialog.css" />
+        <link rel="stylesheet" href="../../css/left-aligned-tabs.css"/>
+        <link rel="stylesheet" href="../../css/nav-wizard.css" />
+        <link rel="stylesheet" href="../../css/openInvoice-dashboard.css" />
+        <link rel="stylesheet" href="../../css/slide-in-panel.css"/>
+        <link rel="stylesheet" href="../../css/status-panel.css"/>
+        <link rel="stylesheet" href="../../css/stepped-breadcrumbs.css"/>
+        <link rel="stylesheet" href="../../css/three-column-fluid-center.css"/>
+        <link rel="stylesheet" href="../../css/three-column-fluid-left.css"/>
+        <link rel="stylesheet" href="../../css/three-column-fluid-right.css"/>
+        <link rel="stylesheet" href="../../css/two-column-fluid.css"/>
+        <link rel="stylesheet" href="../../css/vendor/bootstrap-multiselect.css" />
+        <link rel="stylesheet" href="../../css/bulk-update.css" />
+        <link rel="stylesheet" href="../../css/sign-in-page.css" />
+        <link rel="stylesheet" href="../../css/supplier-link-configuration.css" />
+
+        <!-- Alwsys load the patternlab override CSS last -->
+        <link rel="stylesheet" href="../../css/custom.css" media="all" />
+
+        <!-- Load third party scripts -->
+        <script type="text/javascript" src="../../js/vendor/jquery.min.js"></script>
+        <script type="text/javascript" src='../../js/vendor/jquery-ui.min.js'></script>
+        <script type="text/javascript" src="../../js/bootstrap.js"></script>
+        <script type="text/javascript" src="../../js/styleswitch.js"></script>
+        <script type="text/javascript" src="../../js/vendor/jquery.dataTables.min.js"></script>
+        <script type="text/javascript" src="../../js/vendor/dataTables.bootstrap.js"></script>
+        <script type="text/javascript" src="../../js/vendor/bloodhound.min.js"></script>
+        <script type="text/javascript" src="../../js/vendor/bootstrap-select.min.js"></script>
+        <script type="text/javascript" src="../../js/vendor/bootstrap-tokenfield.min.js"></script>
+        <script type="text/javascript" src="../../js/vendor/d3.min.js"></script>
+
+        <script type="text/javascript" src="../../js/vendor/dragula.min.js"></script>
+        <script type="text/javascript" src="../../js/vendor/fixedHeader.dataTables.min.js"></script>
+        <script type="text/javascript" src="../../js/vendor/dataTables.colReorder.min.js"></script>
+        <script type="text/javascript" src="../../js/vendor/typeahead.bundle.min.js"></script>
+        <script type="text/javascript" src="../../js/vendor/typeahead.jquery.min.js"></script>
+        <script type="text/javascript" src='../../js/vendor/handlebars.min.js'></script>
+        <script type="text/javascript" src="../../js/vendor/moment.min.js"></script>
+        <script type="text/javascript" src="../../js/vendor/mustache.min.js"></script>
+        <script type="text/javascript" src="../../js/vendor/bootstrap-multiselect.js"></script>
+        <script type="text/javascript" src="../../js/vendor/tokenfield.min.js"></script>
+        <script type="text/javascript" src="../../js/oildex-admin.js"></script>
+        <script type="text/javascript" src="../../js/oildex-patternlab-defaults.js"></script>
+        <script type="text/javascript" src="../../js/02-charting-colors.js"></script>
+        <script type="text/javascript" src="../../js/00-navbar.js"></script>
+
+        <!-- Load hogan js manually so that the custom search field links work properly -->
+        <script type="text/javascript" src="../../js/vendor/hogan-3.0.2.min.js"></script>
+
+        <script src="http://d3js.org/d3.v4.min.js"></script>
+        <script src="https://d3js.org/d3-array.v2.min.js"></script>
+        <script src="http://d3js.org/queue.v1.min.js"></script>
+        <script src="http://d3js.org/topojson.v1.min.js"></script>
+        <script src="http://bl.ocks.org/micahstubbs/raw/8e15870eb432a21f0bc4d3d527b2d14f/d3-tip.js"></script>
+        <script src="https://d3js.org/d3-color.v1.min.js"></script>
+        <script src="https://d3js.org/d3-interpolate.v1.min.js"></script>
+        <script src="https://d3js.org/d3-scale.v3.min.js"></script>
+        <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+
+
+
+        <!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
+        <!-- never cache patterns -->
+<meta http-equiv="cache-control" content="max-age=0" />
+<meta http-equiv="cache-control" content="no-cache" />
+<meta http-equiv="expires" content="0" />
+<meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
+<meta http-equiv="pragma" content="no-cache" />
+
+<title id="title">Styleguide : Oildex Pattern Lab</title>
+
+<link rel="stylesheet" href="../../styleguide/css/styleguide.min.css?1579126521816" media="all">
+<link rel="stylesheet" href="../../styleguide/css/prism-typeahead.min.css?1579126521816" media="all" />
+
+        <!-- End Pattern Lab -->
+
+    </head>
+    <body id="pl-body" class="container-fluid">
+        <!-- <div id="success-msg" class="alert alert-success center-block hide fade in out slide-out-top">
+            <a href="#" class="close" onclick="$('#success-msg').toggleClass('slide-out-top');" aria-label="close">&times;</a>
+            <span class="alertMessageContent"> </span>
+        </div> -->
+        <div class="alert-messages"></div>
+<div class="row">
+    <div class="col-md-3">
+        <div class="well ">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </div>
+    </div>
+</div>
+    <div id="sample-modal" class="modal fade ">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                        <div class="lead modal-title">
+                            Default Modal
+                        </div>
+                    </div>
+                <div class="modal-body">
+                    Body
+                </div>
+                    <div class="modal-footer">
+                        Footer
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="sessionTimeOutDialog" class="modal fade" role="dialog" aria-labelledby="timedAlert" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <div class="lead modal-title">Are you still there?</div>
+                </div>
+                <div class="modal-body">
+                    <p class="h5">Your session is about to expire.</p>
+                    <p>
+                        For security reasons and for the protection of your corporate data, your session will expire
+                        <br />
+                        in <strong><span class="text-danger" id="timeOutCountdown"></span></strong> seconds.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal" aria-hidden="true">Extend My Session</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal" aria-hidden="true">Sign Out</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src='../../js/vendor/tota11y.min.js'></script>
+
+
+    <!-- local js files -->
+    <script type="text/javascript" src="../../js/05-paginated-list.js"></script>
+    <script type="text/javascript" src="../../js/auto-dismiss-dialog.js"></script>
+    <script type="text/javascript" src="../../js/time-out-dialog.js"></script>
+    <script type="text/javascript" src="../../js/contactForm.js"></script>
+    <script type="text/javascript" src="../../js/contract-workspace.js"></script>
+    <script type="text/javascript" src="../../js/01-sortable-double-list.js"></script>
+    <script type="text/javascript" src="../../js/02-comments-list.js"></script>
+    <script type="text/javascript" src="../../js/04-scrollable-list.js"></script>
+    <script type="text/javascript" src="../../js/user-profile.js"></script>
+    <script type="text/javascript" src="../../js/user-cards.js"></script>
+    <script type="text/javascript" src="../../js/01-simple-list-page.js"></script>
+    <script type="text/javascript" src="../../js/status-panel.js"></script>
+    <script type="text/javascript" src="../../js/stepped-breadcrumbs.js"></script>
+    <script type="text/javascript" src="../../js/dashboard-card-with-settings.js"></script>
+    <script type="text/javascript" src="../../js/nav-wizard.js"></script>
+    <script type="text/javascript" src="../../js/00-navbar.js"></script>
+    <script type="text/javascript" src="../../js/password-toggle.js"></script>
+    <script type="text/javascript" src="../../js/slide-in-panel.js"></script>
+    <script type="text/javascript" src="../../js/import-results-dialog.js"></script>
+    <script type="text/javascript" src="../../js/09-expandable-alerts.js"></script>
+    <script type="text/javascript" src="../../js/bar-chart.js"></script>
+    <script type="text/javascript" src="../../js/stacked-bar-chart.js"></script>
+    <script type="text/javascript" src="../../js/donut-chart.js"></script>
+    <script type="text/javascript" src="../../js/line-chart.js"></script>
+    <script type="text/javascript" src="../../js/expenditure-chart.js"></script>
+    <script type="text/javascript" src="../../js/service-account-dashboard.js"></script>
+    <script type="text/javascript" src="../../js/goods-receipt.js"></script>
+    <script type="text/javascript" src="../../js/world-map.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            // Initialize bootstrap tooltips and popovers
+            $('[data-toggle="tooltip"]').tooltip();
+            $('[data-toggle="popover"]').popover();
+
+            // Onclick handler for the notify me checkbox on dashboard card settings
+            $('#toggleNotificationsCheckbox').on('click', function(e) {
+                 $('#notifyIcon').toggleClass("hide");
+            });
+
+            // Datasets for Typeahead search fields
+            var afes = ['100 Location Prep', '110 Location Permit', '120 Survey', '130 Right of Way Permit', '140 Physical Location Prep',
+              '200 Drilling Rig and Tools', '210 Move In/Out', '220 Footage Bid', '230 Day Work Bid', '240 Fuel', '250 Water',
+              '260 Bits', '270 Completions', '300 Drilling Fluids', '320 Packer Fluids', '330 Completion Fluids', '400 Rental Equip.', '410 Well Control Equip.',
+              '420 Rotary Tools', '430 Mud Equip.', '440 Casing Tools', '450 Misc.'
+            ];
+
+            var requisitioners = ["Katherine Harrison","Linda Myers","Catherine Ferguson","Willie Fuller","Willie Martinez","Janice Robertson","Deborah Turner","Norma Brooks","Jesse Gordon","Bobby Reyes","Alice Willis","Jennifer Meyer","Joyce Lane","Dennis Rodriguez","Eric Hunter","Lillian Sims","Deborah Hayes","Helen Reyes","Roger Matthews","Irene Hansen","Kathryn Morris","Joseph Griffin","Jesse Mcdonald","Albert Martinez","Shirley Rogers","Ronald Hughes","Doris Franklin","Kathryn Burton","Joyce Hunt","Ralph Cook","Debra Reed","Scott Scott","Cynthia Stanley","Russell Alvarez","Sandra Price","Keith Burke","Ruth Harrison","Randy Patterson","Andrea Henry","Steve Elliott","Denise Daniels","Theresa Weaver","Benjamin Perez","Virginia Gordon","Karen Warren","Wanda Carroll","Eric Nguyen","Chris Hart","Jennifer Burns","Jose Fuller","Steve Harris","Martha Edwards","Jeremy Powell","Larry Stephens","Marie Reyes","Harry Garza","Amanda Cole","Jessica Oliver","Kenneth Mccoy","George Peters","Christine Scott","Alice Hamilton","Janice Bell","Anthony Hawkins","Harold Ferguson","Beverly Montgomery","Ann Armstrong","Marilyn Austin","Kathryn Chapman","Kathryn Lopez","Gregory Long","Sandra Rodriguez","Adam Lee","Janice Fernandez","Ralph Vasquez","Peter Holmes","Alan Romero","Frank Stephens","Mary Wallace","Julia Gardner","Benjamin Fernandez","Anna Wells","Carol Perez","Jessica Edwards","Julia Collins","Ruby Rivera","Terry Chavez","Peter Phillips","Louis Hunt","Lawrence Alexander","Lillian Medina","Carlos Howard","Kimberly Howard","Brenda Dunn","Kevin Owens","Aaron Carroll","Dorothy Baker","Walter Stephens","Ryan King","Henry Boyd","Marilyn Rivera","Tammy Mcdonald","Betty Sanders","Annie Howell","Gerald Austin","Justin Wright","Julie Kelley","Richard Greene","Jonathan Gilbert","Rose Weaver","Gary Peters","Mark Smith","Gregory Sanders","Shawn Armstrong","Catherine Morgan","Jason Fisher","Keith Rice","Wayne Howell","Stephen Mendoza","Michelle Williams","Billy Stephens","Barbara Porter","Dennis Ward","Ashley Kelly","Andrea Garrett","Gloria Simpson","Andrea Hunt","Antonio Pierce","Brian Anderson","Lois Russell","Kathy Henderson","Ernest Simmons","David Smith","Roger Frazier","Robin Cole","Samuel Martinez","Clarence Austin","Bobby Walker","Catherine Sullivan","Wanda Perkins","Mary Burns","Jesse Cunningham","Scott Burton","Jason Ortiz","Phyllis Reed","Lisa Arnold","Kathy Miller","Steve Lynch","Joan Hall","Carlos Thompson","Kenneth Rivera","Daniel Price","Cheryl Hayes","Aaron Green","Debra Reynolds","Cynthia Woods","Larry Jordan","Jesse Rodriguez","Betty Kelley","Bonnie Miller","Ronald Johnson","Dorothy Lee","Amy Chavez","Jack Nelson","Mary Castillo","Fred Berry","Jason Ryan","Martha Young","Frances Ellis","Ralph Butler","Donna Nichols","Paul Greene","Michael Morrison","Judy Rice","Jose Davis","Kelly Cunningham","Laura Williams","Tammy Carpenter","Harry Garcia","Louis Gutierrez","Jimmy Riley","Eric Kennedy","Stephen Franklin","Diana Banks","Joan Henry","William Day","Benjamin Kim","Ashley Johnson","Justin Scott","Chris Alexander","Catherine Lawrence","Melissa Reynolds","William Baker","Joe Perez","Donna Turner","Shawn Lawrence","Rachel Morrison","Keith Martinez","Terry Garrett","Karen Wells","Joan Hansen","Kathleen Gomez","Roy Ruiz","Steven Griffin","Ronald Hansen","William Robinson","Keith Ryan","Peter Cook","Sandra Payne","Louis Simpson","Shirley Wright","Henry Carroll","Kimberly Chavez","Craig Morrison","Melissa Kelly","Nicholas Franklin","Martha Cooper","Sharon Phillips","Patrick Snyder","Emily Elliott","Jose Mills","Heather Gibson","Eric Ray","Ashley Davis","Benjamin Cooper","Louise Wood","Terry Collins","Tammy Ellis","Ronald Harper","Randy Martin","Deborah Franklin","Joe Ford","Jeremy Alexander","Shirley Rice","Cheryl Richardson","Sandra Fuller","Harry Washington","Frank Peters","Ryan Brown","Patrick Romero","Marilyn Green","Jose Thompson","Robin Carroll","Earl Scott","Christina Bryant","Jerry Hudson","Tammy Murphy","Douglas Anderson","Beverly Carter","Jose Harper","Walter George","Martha Powell","Terry Frazier","David Wright","Howard Romero","Gary Stewart","Thomas Johnson","Michael Johnston","Bobby Jacobs","Christina Hayes","Roger Nichols","Heather Martin","Kelly Brown","Walter Bradley","Scott Wright","Annie Howard","Jack Green","Susan Sims","Diana Harvey","Johnny Ford","Diane Reid","Raymond Carr","Sandra Patterson","Patrick Perry","Debra Butler","Carolyn Jordan","Billy Stevens","Robin Greene","Dorothy Turner","Patricia Howard","Steven Harris","Pamela Wright","Rachel Phillips","Heather Dunn","Timothy Murray","Stephanie Rivera","Ruby Grant","Christopher Grant","Joshua Rose","Justin Garza","Joseph Burke","Phillip Stevens","Janet George","Clarence Bennett","Ronald Clark","Evelyn Perkins","Joshua Peters","Charles Nelson","Jacqueline Davis","Justin Rice","Harold Washington","Phyllis Lewis","Bonnie Frazier","Ronald Andrews","Ruby Sullivan","Larry Evans","Larry Lee","Mary Griffin","Lawrence Graham","Craig Palmer","Marie Perry","Laura Webb","Catherine Rivera","Fred Simmons","Judith Fowler","Sara Baker","Donald Little","Kimberly Burke","Susan Lee","Phillip Garza","Nicholas Chapman","Alice Dean","Wayne Wheeler","Rachel Gonzales","Bonnie Spencer","Melissa King","Phillip Long","Patricia Wallace","Paula Hunt","Theresa Bradley","Eugene Davis","Jerry Daniels","Anne James","Joan Smith","Maria Alexander","Kathleen Kim","Alan Porter","Jesse Davis","Jessica Perkins","Teresa Chavez","Martin Burns","Benjamin Murray","Joseph Hernandez","Melissa Johnson","Kenneth Pierce","Joe Dean","Julia Reid","Wanda Weaver","Roy Kelly","Victor Medina","Carl Jordan","Eric Butler","Alan Dixon","Lori Green","Patricia Bryant","Annie Graham","Ernest Torres","Jason Montgomery","Louis Hall","Anthony Nguyen","Julie George","Harry Coleman","Sara Green","Wayne Lopez","Scott Larson","Joan Reid","Annie Sanchez","Tina Perry","Patricia Ross","Harold Cook","Jennifer Murphy","Evelyn Jordan","Todd Lawrence","Walter Coleman","Douglas Stone","Patrick Ray","Victor Fox","Ernest Bell","Raymond Anderson","Jerry Roberts","Wanda Harper","Jason Grant","Sarah Knight","Marilyn Robertson","Mark Burns","Julia Woods","David Ortiz","Maria Garrett","Barbara Butler","Rebecca Robinson","Lori Carroll","Rose Reynolds","Russell Perez","Kelly Brown","Debra Olson","Donald Burns","Philip Simpson","Rose Williams","Amanda Lane","Dennis Lopez","Jennifer Daniels","Norma Nichols","Benjamin Cruz","Antonio Lynch","Emily Lewis","Ashley Walker","Rachel Ross","Barbara Hansen","Jose Smith","Walter Nelson","Rachel Gray","Mary Wilson","Walter Nichols","Bonnie Bell","Gerald Porter","Martha Mitchell","Patricia Lynch","Ann Carr","Jennifer Barnes","Jonathan Taylor","Willie Hanson","Annie Owens","Carol Dixon","Chris Reyes","Jennifer Dunn","Randy Romero","Keith Jackson","Bonnie Sims","Stephanie Flores","Jennifer Wood","Sarah Stone","Marie Evans","Jane Stephens","Julie Rogers","Peter Barnes","Billy Myers","Stephanie Lynch","Steven Weaver","Virginia Larson","Shawn Jordan","Roy Ellis","Louise Clark","Lillian Smith","Mildred Hansen","Helen Fisher","Kathryn Watson","Scott George","David Pierce","Roy Sullivan","Amanda Ford","Joshua Wood","Annie Howell","Shawn Lawson","Ronald Hunter","Joyce Ward","Janet Burke","Susan Vasquez","Paula Lawson","Kimberly Ruiz","Martin Morgan","Debra Jenkins","Gary Kim","Theresa Garza","Ernest Welch","Mildred Sanders","Roger Watson","Gerald Clark","Angela George","Anne Bowman","William Lewis","Theresa Elliott","Carolyn Frazier","Emily Washington","Raymond Hunter","Michelle Snyder","Henry Harris","Brian Graham","Diana Armstrong","Chris Ruiz","Teresa Mason","Jack Murphy","Harold Palmer","Joe Carroll","Samuel Peters","Steve Washington","Carlos Snyder","Carlos Williamson","Anne Thompson","Barbara Vasquez","Doris Schmidt","Janet Harvey","Phyllis Gibson","Linda Fisher","Sara Henderson","Susan Hughes","Janet Montgomery","Jennifer Duncan","Maria Jones","Brenda Kelley","Doris Fields","Christina Moore","Ruby Meyer","Gerald Dean","Sean Mccoy","David Bishop","Annie Murphy","Arthur Fuller","Aaron Nelson","Joyce Sims","Kathryn Cooper","Arthur Green","Jessica Wright","Angela Wagner","Nicole Lewis","Martha Duncan","Angela Hudson","Angela Freeman","Scott Martinez","Charles Palmer","Linda Ross","Gloria Romero","Rose Medina","Douglas Pierce","Antonio Wright","Joyce Davis","Nancy Scott","Juan Graham","Douglas Riley","Susan Kelly","Anna Knight","Peter Thompson","Phillip Crawford","Clarence Hanson","Edward Murphy","Evelyn Oliver","Jeffrey Little","Ashley Murray","Eugene Chavez","Sharon Cunningham","Lori Brown","Cynthia Harrison","Emily Reyes","Julia Morris","Lisa Wilson","Charles Cole","Terry Warren","Ronald Jackson","Andrew Greene","Nicholas Olson","Raymond Jackson","Jason Hall","Carol Lee","Lois Vasquez","Judy Carr","Richard Armstrong","Gary Ford","Joseph Rivera","Amanda Howard","Jeremy Gilbert","Wanda Matthews","Samuel Grant","Kathryn Lawrence","Charles Lawson","Todd Edwards","Stephanie Elliott","Julie Watkins","Doris Harvey","Janice Crawford","Philip Bryant","Carlos Berry","Virginia Sanchez","Shawn Elliott","Janice Andrews","Larry Cooper","Patricia Hughes","Patrick Jacobs","Catherine Turner","Katherine Dunn","Kenneth Peters","Heather Marshall","Richard Price","Diana Ramirez","Ralph Jacobs","Debra Wells","Michael Peters","Anna Griffin","Albert Matthews","Marie Henry","Kathryn Howard","Amanda Ellis","Mary Alexander","Martin Carroll","Marie Wilson","Michelle Johnson","Brandon Shaw","Betty Cook","Christopher Mason","Chris Hart","James Romero","David Johnston","Dennis Gonzalez","Jerry Harper","Diane Long","Joe Berry","Michelle Roberts","Jane Oliver","Andrea Jackson","Jeremy Burke","Mark Stevens","Kevin Diaz","Anthony Powell","Frank Palmer","Virginia Weaver","Albert Diaz","Christopher Gilbert","Julia Pierce","Patricia Fuller","Nicole Chavez","Heather Bradley","Patricia Hernandez","Scott Gray","Susan Young","Janet Henry","Brandon Jacobs","Bobby Little","Carlos Turner","Joshua Henry","Shawn Grant","Lisa Little","Lori Carter","Donald Simpson","Karen Marshall","Jesse Harris","Paul Moore","Rebecca Arnold","Bonnie West","Donna Taylor","Albert Ross","Paul Patterson","Stephen Nichols","Johnny Hamilton","Peter Ramos","Brandon Owens","Andrew Henderson","Jacqueline Alexander","Lori Gomez","Brenda Davis","Paul Crawford","Shirley Sims","Wayne Flores","Harold Lewis","Maria Nguyen","Eric Howell","Debra Ryan","Antonio Ward","Randy Dunn","Henry Chavez","Keith Marshall","Sara Allen","Diana Bell","Jesse Lee","Terry Gordon","Lawrence Owens","Johnny Myers","George Schmidt","Benjamin Greene","Billy Griffin","Amy Lawrence","Amanda Armstrong","Rachel Foster","William Jones","Joyce Reed","Aaron Richards","Arthur Mccoy","Kathryn Clark","Sarah Murphy","Kathryn Robinson","Phillip Wheeler","Joyce Hunter","Andrew Bailey","Jennifer Gilbert","Willie Reynolds","Ruth Carroll","Janet Ward","Billy Clark","Amy Bennett","Marie Fowler","Paula Smith","Gerald Vasquez","Marie Bowman","Jennifer Russell","Tina Welch","Eugene Price","Robert Bryant","Russell Jenkins","Jose Jones","Joyce George","Marilyn Pierce","Annie Russell","Anthony Carter","Catherine Lopez","Carol Garza","Roy Griffin","Irene Medina","Susan Ortiz","Jacqueline Morales","Jean Kelley","Earl Banks","Barbara Ryan","Justin Perez","Carolyn Dunn","Earl Bryant","Frances Black","Louis Gordon","Antonio Gonzales","Andrew Woods","Craig Brooks","Christine Mendoza","Douglas Day","Willie Sanchez","Douglas Bell","Raymond Bryant","Jose Cruz","Dennis Adams","Aaron Scott","Rebecca Nichols","Sara Montgomery","Dennis Thomas","Cynthia Fields","Jessica Jacobs","Todd Berry","Helen Bailey","Keith Cox","Aaron Olson","Paul Medina","Heather Stephens","Marilyn White","Donna Butler","Chris Morales","Donna Riley","Scott Flores","Carolyn Stevens","Victor Matthews","Janet Perry","Anthony Mills","Julie Barnes","Alan Ortiz","Kenneth Richards","Kelly Miller","Debra Snyder","Laura Fisher","Patricia Hanson","Julia Bailey","Ryan Lawson","Thomas Young","Anna Fox","Tina Cook","Justin Oliver","Gregory Burton","David Wheeler","Gerald Larson","Craig Burns","Wayne Miller","Justin Lee","Larry Henry","Carol Graham","Kathleen Martin","Donna Simmons","Annie Wood","Nicole Davis","Marilyn Harper","Rose Richards","Benjamin Moreno","Dennis Carr","Lori Garza","Doris Bishop","Mildred Vasquez","Jimmy Garza","Alan Diaz","Jerry Cox","Jeremy King","Bonnie Adams","Philip Willis","Mary Gray","Julie Harris","Jerry Jordan","Michael White","Brenda Davis","Barbara Ramirez","Bruce Watson","Rose Morales","Deborah Warren","Alice Pierce","Roy Carpenter","Albert Martinez","Maria Gonzales","Judith Welch","Wayne Ferguson","Joyce Evans","Doris Nelson","Roy Sanchez","Ronald Little","Samuel Martinez","Jean Robinson","Terry Dunn","Michelle Armstrong","Joe Powell","Laura Kelley","Johnny Dixon","Jeremy Weaver","Phyllis Griffin","Kelly Gutierrez","Catherine Burke","Paula Richardson","Tammy Miller","Laura Gilbert","William Harper","Martha Frazier","Kevin Dunn","Timothy Jacobs","Fred Carroll","Jose Hunter","Jessica Rice","Sean Diaz","Annie Daniels","Patrick Myers","Maria Lee","Teresa Burke","Willie Allen","Kathryn Harvey","Annie Harvey","Evelyn Harrison","William Peters","Katherine Hunter","Cynthia Frazier","Karen Brown","Kathy Watson","Philip Myers","Martha Mitchell","Rebecca Dunn","Barbara Taylor","Arthur Wood","Jane Perry","Daniel Reid","Ernest Washington","Fred Stephens","Donald Miller","Daniel Henry","Frances Richards","Andrea Hunter","Cynthia Flores","Alan Medina","Raymond Garrett","Susan Reyes","Lois Edwards","Matthew Walker","Katherine Simpson","Tina Sims","Brandon Harris","Roger Schmidt","Carl Griffin","Louis Wagner","Judith Fowler","Timothy Medina","Ruth Hill","Sarah Jones","Julie Murphy","Annie Mcdonald","Kathryn Alvarez","Lawrence Bennett","Walter Black","Raymond Harrison","Heather Anderson","Stephanie Mason","Albert Mendoza","Janet Lewis","Jacqueline Garza","Lisa Long","Eugene Matthews","Mary Thomas","David Edwards","Jean Larson","Jesse Webb","Jerry Watson","Jonathan Powell","Linda Gibson","Rachel Stevens","Howard Little","Daniel Carpenter","Jeremy Little","Justin Jacobs","Dorothy Adams","Lillian Gray","Judy Warren","Gloria Frazier","Kimberly Cunningham","Karen Kennedy","Christopher Rivera","David Payne","Juan Robinson","Louis Garrett","Cheryl Olson","Julia Marshall","Christopher Snyder","Harry Watkins","Kathryn Nichols","William Hanson","Angela Burton","Shawn Hamilton","Roger Stanley","Evelyn Pierce","Amy Hernandez","Andrea Knight","Louise Fisher","Randy Baker","Martin Patterson","Joseph Reid","Lillian Cook","Ruby Riley","John Hunt","Dennis Gomez","Shirley Weaver","Alice Bowman","Gary Cooper","Larry Bryant","Phyllis Brooks","Howard Medina","Mildred Price","Carl Frazier","Gloria Perkins","Robert Evans","Douglas Alexander","Phyllis Hansen","Patrick Lynch","Jane Franklin","Beverly Morgan","Henry Peterson","Johnny Stanley","Sarah Romero","Jimmy Ford","Janet Young","Dennis Bowman","Karen Patterson","Lillian Cooper","Joyce Henry","Lisa Fox","Katherine Webb","Wayne Kelly","Janice Patterson","Norma Spencer","Lois Bailey","Gary Morris","Russell Mendoza","Ruby Tucker","Gregory Ramirez","Catherine Morales","Beverly Harrison","Brenda Sullivan","Anne Jenkins","Carolyn Hayes","Katherine Woods","Tina Grant","Brian Watson","Deborah Cox","Emily Jenkins","Christina Alvarez","Peter Phillips","Cynthia Hudson","Amanda Mccoy","Laura Mccoy","Jonathan Hughes","Justin Boyd","Evelyn Black","Marie Alvarez","Sarah Burns","Gloria Carpenter","Frances Holmes","Clarence Vasquez","Ruth Reed","Diane Simmons","Norma Snyder","Elizabeth Russell","Jimmy Mccoy","Lillian Pierce","Rose Lawrence","Andrew Romero","Phillip Gray","Robert Clark","Brian Cox","Phillip Burke","Beverly Campbell","Marie Bradley","Eric Phillips","Alice Ross","Scott Fields","Donald Bennett","Carlos Martinez","Doris Hayes","Henry Chavez","Julie Greene"];
+
+            var beerData = {
+                "ales": [
+                    "Affligem Blonde", "Amsterdam Big Wheel", "Amsterdam Boneshaker IPA", "Amsterdam Downtown Brown", "Amsterdam Oranje Summer White",
+                    "Anchor Liberty Ale", "Beaus Lug Tread Lagered Ale", "Beerded Lady", "Belhaven Best Ale", "Big Rock Grasshopper Wheat",
+                    "Big Rock India Pale Ale", "Big Rock Traditional Ale", "Big Rock Warthog Ale", "Black Oak Nut Brown Ale", "Black Oak Pale Ale",
+                    "Boddingtons Pub Ale", "Boundary Ale", "Caffreys", "Camerons Auburn Ale", "Camerons Cream Ale", "Camerons Rye Pale Ale", "Ceres Strong Ale",
+                    "Cheval Blanc", "Crazy Canuck Pale Ale", "Creemore Springs Altbier", "Crosswind Pale Ale", "De Koninck", "Delirium Tremens",
+                    "Erdinger Dunkel Weissbier", "Erdinger Weissbier", "Export", "Flying Monkeys Amber Ale", "Flying Monkeys Antigravity",
+                    "Flying Monkeys Hoptical", "Flying Monkeys Netherworld", "Flying Monkeys Smashbomb", "Fruli", "Fullers Extra Spec Bitter",
+                    "Fullers London Pride", "Granville English Bay Pale", "Granville Robson Hefeweizen", "Griffon Pale Ale", "Griffon Red Ale",
+                    "Hacker-Pschorr Hefe Weisse", "Hacker-Pschorr Munchen Gold", "Hockley Dark Ale", "Hoegaarden", "Hops & Robbers IPA", "Houblon Chouffe",
+                    "James Ready Original Ale", "Kawartha Cream Ale", "Kawartha Nut Brown Ale", "Kawartha Premium Pale Ale", "Kawartha Raspberry Wheat",
+                    "Keiths", "Keiths Cascade Hop Ale", "Keiths Galaxy Hop Ale", "Keiths Hallertauer Hop Ale", "Keiths Hop Series Mixer",
+                    "Keiths Premium White", "Keiths Red", "Kilkenny Cream Ale", "Konig Ludwig Weissbier", "Kronenbourg 1664 Blanc", "La Chouffe",
+                    "La Messager Red Gluten Free", "Labatt 50 Ale", "Labatt Bass Pale Ale", "Lakeport Ale", "Leffe Blonde", "Leffe Brune",
+                    "Legendary Muskoka Oddity", "Liefmans Fruitesse", "Lions Winter Ale", "Maclays", "Mad Tom IPA", "Maisels Weisse Dunkel",
+                    "Maisels Weisse Original", "Maredsous Brune", "Matador 2.0 El Toro Bravo", "Mcauslan Apricot Wheat Ale", "Mcewans Scotch Ale",
+                    "Mill St Belgian Wit", "Mill St Coffee Porter", "Mill St Stock Ale", "Mill St Tankhouse Ale", "Molson Stock Ale", "Moosehead Pale Ale",
+                    "Mort Subite Kriek", "Muskoka Cream Ale", "Muskoka Detour IPA", "Muskoka Harvest Ale", "Muskoka Premium Dark Ale", "Newcastle Brown Ale",
+                    "Niagaras Best Blonde Prem", "Okanagan Spring Pale Ale", "Old Speckled Hen", "Ommegang Belgian Pale Ale", "Ommegang Hennepin", "PC IPA",
+                    "Palm Amber Ale", "Petrus Blonde", "Petrus Oud Bruin Aged Red", "Publican House Ale", "Red Cap", "Red Falcon Ale", "Rickards Dark",
+                    "Rickards Original White", "Rickards Red", "Rodenbach Grand Cru", "Schofferhofer Hefeweizen", "Shock Top Belgian White",
+                    "Shock Top Raspberry Wheat", "Shock Top Variety Pack", "Sleeman Cream Ale", "Sleeman Dark", "Sleeman India Pale Ale", "Smithwicks Ale",
+                    "Spark House Red Ale", "St. Ambroise India Pale Ale", "St. Ambroise Oatmeal Stout", "St. Ambroise Pale Ale", "Stereovision Kristall Wheat",
+                    "Stone Hammer Dark Ale", "Sunny & Share Citrus Saison", "Tetleys English Ale", "Thirsty Beaver Amber Ale", "True North Copper Altbier",
+                    "True North Cream Ale", "True North India Pale Ale", "True North Strong", "True North Wunder Weisse", "Twice As Mad Tom IPA",
+                    "Unibroue La Fin Du Monde", "Unibroue Maudite", "Unibroue Trois Pistoles", "Upper Canada Dark Ale", "Urthel Hop-It Tripel IPA",
+                    "Waterloo IPA", "Weihenstephan Kristalweiss", "Wellington Arkell Best Bitr", "Wellington County Dark Ale", "Wellington Special Pale", "Wells IPA"
+                ],
+                "lagers": [
+                    "AC-DC Premium Lager", "Alpine Lager", "Amstel Light", "Amsterdam (416) Local Lager", "Amsterdam Natural Blonde", "Anchor Steam Beer",
+                    "Barking Squirrel Lager", "Bavaria 8.6", "Bavaria 8.6 Red", "Bavaria Grapefruit Radler", "Bavaria Premium Beer", "Bavik Pils",
+                    "Baysville Rock Cut Lager", "Becks", "Belle Gueule", "Big Rock Brewmasters Selection", "Big Rock Light Lime", "Big Rock Saaz Republic Pilz",
+                    "Birra Castello", "Birra Moretti", "Bitburger", "Black Ice", "Black Label", "Blue", "Blue Light", "Bohemian", "Boris Beer",
+                    "Boris Bold Strong Beer", "Boxer Ice", "Boxer Lager", "Brava", "Brava 5.5", "Brava Light", "Brouczech Premium Lager", "Bud Light",
+                    "Bud Light Lime", "Bud Light Lime Labatt", "Bud Light Platinum", "Budweiser", "Budweiser Crown", "Budweiser Shot Labatt", "Busch Ice",
+                    "Busch Lager", "Busch Light", "Camerons Dark266", "Camerons Lager", "Canadian", "Canadian 67", "Canadian 67 Sublime", "Canadian Coldshots",
+                    "Carib Lager", "Carling Ice", "Carling Lager", "Carling Light", "Carlsberg", "Carlsberg Lite", "Cool Beer Lager", "Coors Banquet", "Coors Light",
+                    "Corona", "Corona Light", "Cracked Canoe", "Creemore Collection", "Creemore Kellerbier", "Creemore Lager", "Creemore Springs Combo Pack",
+                    "Creemore Trad Pilsner", "Creemore Urbock", "Crest Super", "Crystal", "Czechvar", "Dab Maibock", "Dab Original Lager", "Dead Frog Mixed Pack",
+                    "Desperados Tequila Beer", "Dos Equis Amber", "Dos Equis Lager", "Dunkel Weihenstephaner", "Faxe Amber Lager", "Faxe Extra Strong - 10",
+                    "Faxe Premium Lager - 5", "Faxe Red", "Faxe Strong", "Formosa Springs Draft", "Fosters Import", "Fuerstenberg Prem Pilsener", "Get2gether",
+                    "Granville Summer Mingler", "Grolsch Lager 450ml", "Grolsch Premium Lager", "Guinness Black Lager", "Hacker-Pschorr Kellerbier", "Harbin Beer",
+                    "Harp Lager", "Heineken", "Henninger Premium Lager", "Hockley Taster Pack", "Hofbraeu Muenchen Original", "Hogsback Vintage Lager",
+                    "Hollandia Pilsner", "Holsten Festbock", "Holsten Maibock", "Holsten Premium Bier", "Hopf Weisse", "Hops Bolts India Pale Lager",
+                    "James Ready 5.5", "James Ready Ice 6.0", "James Ready Lager", "James Ready Light", "Jever Pilsener", "Keiths Brewmaster", "Keiths Light",
+                    "Keystone Ice", "Keystone Lager", "Keystone Light", "King Brewery Dark Lager", "King Brewery Pilsner", "King Brewery Vienna Lager", "Kokanee",
+                    "Kozel", "Krombacher Dark", "Krombacher Pils", "Krombacher Weizen", "Kronenbourg 1664", "La Tabachera", "Labatt Extra Dry", "Labatt Genuine Lager",
+                    "Labatt Ice", "Lakeport Honey Lager", "Lakeport Ice", "Lakeport Light", "Lakeport Pilsener", "Lakeport Red", "Laker Extra Ice", "Laker Honey",
+                    "Laker Ice", "Laker Lager", "Laker Light", "Laker Red", "Laker Strong", "Lech Beer", "Lowenbrau", "Lucky Lager", "Maximum Ice", "Menabrea Blonda",
+                    "Michelob Ultra", "Mill St Original Organic", "Millennium Buzz Hemp Beer", "Miller Chill Domestic", "Miller Chill Import",
+                    "Miller Genuine Draft Clear", "Molson Canadian Wheat", "Molson Dry", "Molson M", "Molson XXX", "Mongozo Premium Pilsner", "Moosehead Lager",
+                    "Moosehead Light", "Moosehead Light Lime", "Moskato Life", "Moskato Life Rose", "Muskoka Craft Lager", "Muskoka Summer Weiss",
+                    "Muskoka Survival Pack", "Mythos Beer", "Negra Modelo", "Neustadt Lager", "Octane 7.0", "Okanagan Craft Pack", "Okanagan Springs 1516 Lager",
+                    "Okocim Pilsner", "Old Milwaukee", "Old Milwaukee", "Old Milwaukee Ice", "Old Milwaukee Light", "Old Style Pilsner", "Old Vienna",
+                    "PC Black Lager", "PC Cerveza", "PC Down Under Amber", "PC Dry", "PC Genuine Lager", "PC Honey Red", "PC Light", "PC Low Carb", "PC Plznr",
+                    "Pabst Blue Ribbon", "Pabst Blue Ribbon 5.9", "Pabst Blue Ribbon Light", "Paulaner Hefe-Weissbier", "Pedavena Birra Dolomiti",
+                    "Peroni Nastro Azzuro", "Pilsner Urquell", "Pistonhead Kustom Lager", "Poppers Party Pack", "Prison Break Pilsner", "Radeberger Pilsner",
+                    "Red Baron", "Red Baron Light", "Red Baron Lime", "Red Baron Platinum Light", "Red Bull", "Red Stripe", "Rickards Blonde", "Rickards Cardigan",
+                    "Rickards Fall Taster", "Rickards Lederhosen", "Rickards Oakhouse", "Rickards Shandy", "Rickards Summer Taster Pack", "Rickards Taster Pack",
+                    "Rickards Winter Taster Pack", "Rolling Rock Pale Lager", "Rosarda Rose", "Saint Andre", "Samuel Adams Boston Lager", "San Miguel Premium Lager",
+                    "Sapporo", "Schnitzerbrau Gluten Free Lager", "Schofferhofer Grapefruit Radlr", "Seagram Mixer Pack", "Shock Top Lemon Shandy", "Sleeman Clear 2.0",
+                    "Sleeman Honey Brown Lager", "Sleeman Light", "Sleeman Original Draught", "Sleeman Seasonal Selections", "Sleeman Selections",
+                    "Sleeman Silver Creek Lager", "Sol", "Spaten", "St Ambroise Premium Taster", "Staropramen", "Steam Whistle", "Steeler", "Stella Artois",
+                    "Stella Legere", "Stiegl Bier", "Stiegl Grapefruit Radler", "Stone Hammer Pilsner", "Stonewall Light", "Tecate", "Tennents Export Lager",
+                    "Thurn Taxis Lager", "Thurn Taxis Pilsener", "Thurn Taxis Wolfgang Dunkl", "Tiger Beer", "Trailhead Premium Lager", "True North Blonde Lager",
+                    "Tuborg Gold", "Tuborg Pilsner", "Tyskie", "Unibroue Blanche Dechambly", "Upper Canada Lager", "Warsteiner Premium Dunkel", "Warsteiner Premium Verum",
+                    "Waterloo Amber Lager", "Waterloo Dark", "Waterloo Grapefruit Radler", "Waterloo Kolsch Sampler", "Waterloo Pilsner", "Weihenstephan Vitus",
+                    "Weihenstephaner Hefeweiss", "Wernesgruner Pils", "Winter Mingler", "Wolfgangs German Style Beer", "Xingu Black Beer", "Yanjing Beer", "Zywiec Beer"
+                ]
+            };
+
+            var nhlData = [{ "team": "Devils", "city": "New Jersey" },{ "team": "Islanders", "city": "Brooklyn"  },{ "team": "Rangers", "city": "New York"  },{ "team": "Flyers", "city": "Philadelphia"  },{ "team": "Penguins", "city": "Pittsburgh" },{ "team": "Blackhawks", "city": "Chicago" },{ "team": "Blue Jackets", "city": "Columbus" },{ "team": "Red Wings", "city": "Detroit" },{ "team": "Predators", "city": "Nashville" },{ "team": "Blues", "city": "St. Louis " },{ "team": "Bruins", "city": "Boston" },{ "team": "Sabres", "city": "Buffalo" },{ "team": "Canadiens", "city": "Montreal" },{ "team": "Senators", "city": "Ottawa" },{ "team": "Maple Leafs", "city": "Toronto" },{ "team": "Flames", "city": "Calgary" },{ "team": "Avalanche", "city": "Colorado" },{ "team": "Oilers", "city": "Edmonton" },{ "team": "Wild", "city": "Minnesota" },{ "team": "Canucks", "city": "Vancouver" },{ "team": "Hurricanes", "city": "Carolina" },{ "team": "Panthers", "city": "Florida" },{ "team": "Lightning", "city": "Tampa Bay" },{ "team": "Capitals", "city": "Washington" },{ "team": "Jets", "city": "Winnipeg" },{ "team": "Ducks", "city": "Anaheim" },{ "team": "Stars", "city": "Dallas" },{ "team": "Kings", "city": "Los Angeles" },{ "team": "Coyotes", "city": "Phoenix" },{ "team": "Sharks", "city": "San Jose" }];
+            var nbaData = [{ "team": "Celtics", "city": "Boston" },{ "team": "Mavericks", "city": "Dallas" },{ "team": "Brooklyn Nets", "city": "Brooklyn" },{ "team": "Rockets", "city": "Houston" },{ "team": "Knicks", "city": "New York" },{ "team": "Grizzlies", "city": "Memphis" },{ "team": "76ers", "city": "Philadelphia" },{ "team": "Hornets", "city": "New Orleans" },{ "team": "Raptors", "city": "Toronto" },{ "team": "Spurs", "city": "San Antonio" },{ "team": "Bulls", "city": "Chicago" },{ "team": "Nuggets", "city": "Denver" },{ "team": "Cavaliers", "city": "Cleveland" },{ "team": "Timberwolves", "city": "Minnesota" },{ "team": "Pistons", "city": "Detroit" },{ "team": "Trail Blazers", "city": "Portland" },{ "team": "Pacers", "city": "Indiana" },{ "team": "Thunder", "city": "Oklahoma City" },{ "team": "Bucks", "city": "Milwaukee" },{ "team": "Jazz", "city": "Utah" },{ "team": "Hawks", "city": "Atlanta " },{ "team": "Warriors", "city": "Golden State" },{ "team": "Bobcats", "city": "Charlotte" },{ "team": "Clippers", "city": "Los Angeles" },{ "team": "Heat", "city": "Miami" },{ "team": "Lakers", "city": "Los Angeles" },{ "team": "Orlando Magic", "city": "Brooklyn" },{ "team": "Suns", "city": "Phoenix" },{ "team": "Wizards", "city": "Washington" },{ "team": "Kings", "city": "Sacramento" }];
+            // Substring matcher function for typeahead search fields
+            var substringMatcher = function(strs) {
+              return function findMatches(q, cb) {
+                var matches, substringRegex;
+
+                // an array that will be populated with substring matches
+                matches = [];
+
+                // regex used to determine if a string contains the substring `q`
+                substrRegex = new RegExp(q, 'i');
+
+                // iterate through the pool of strings and for any string that
+                // contains the substring `q`, add it to the `matches` array
+                $.each(strs, function(i, str) {
+                  if (substrRegex.test(str)) {
+                    matches.push(str);
+                  }
+                });
+
+                cb(matches);
+              };
+            };
+
+
+            // Bloodhound initializer for the multiple dataset typeahead search
+            var nbaTeams = new Bloodhound({
+              datumTokenizer: Bloodhound.tokenizers.obj.whitespace('team', 'city'),
+              queryTokenizer: Bloodhound.tokenizers.whitespace,
+              local: nbaData
+            });
+
+            var nhlTeams = new Bloodhound({
+              datumTokenizer: Bloodhound.tokenizers.obj.whitespace('team', 'city'),
+              queryTokenizer: Bloodhound.tokenizers.whitespace,
+              local: nhlData
+            });
+
+            $('#multiple-datasets .typeahead').typeahead({
+              highlight: true,
+              classNames: {
+                input: 'form-control',
+                hint: 'Typeahead-hint',
+                selectable: 'Typeahead-selectable'
+              }
+            },
+            {
+              name: 'nba-teams',
+              display: function(data) {
+                    return data.city +' ' +data.team;
+                },
+              source: nbaTeams,
+              templates: {
+                header: '<div class="tt-dataset-header text-primary">NBA Teams</div>',
+                suggestion: function(data) {
+                    return '<div>' + data.city +' ' +data.team +'</div>';
+                }
+              }
+            },
+            {
+              name: 'nhl-teams',
+              display: function(data) {
+                    return data.city +' ' +data.team;
+                },
+              source: nhlTeams,
+              templates: {
+                header: '<div class="tt-dataset-header text-primary">NHL Teams</div>',
+                suggestion: function(data) {
+                    return '<div>' + data.city +' ' +data.team +'</div>';
+                }
+              }
+            });
+
+            // Typeahead initializer for the AFE search
+            $('#afeTypeahead .typeahead').typeahead({
+              hint: true,
+              highlight: true,
+              minLength: 1
+            },
+            {
+              name: 'afes',
+              source: substringMatcher(afes),
+              footer: '<b><span class="fakeLink" id="fakeLink">Turn off autocomplete</span></b>'
+            });
+
+
+            // Typeahead initializer for the Requisitioner search
+            $('#requisitionerTypeahead .typeahead').typeahead({
+              hint: true,
+              highlight: true,
+              minLength: 1
+            },
+            {
+              name: 'requisitioners',
+              source: substringMatcher(requisitioners)
+            });
+
+            // Typeahead initializer for the typeahead with default suggestions
+            var nflTeams = new Bloodhound({
+              datumTokenizer: Bloodhound.tokenizers.obj.whitespace('team'),
+              queryTokenizer: Bloodhound.tokenizers.whitespace,
+              identify: function(obj) { return obj.team; },
+              prefetch: '../../styleguide/data/nflData.json'
+            });
+
+            // Typeahead initializer for the Requisitioner search
+            $('#typeahead-with-suggestions .typeahead').typeahead({
+              minLength: 0,
+              highlight: true
+            },
+            {
+              name: 'nfl-teams',
+              display: 'team',
+              source: nflTeamsWithDefaults
+            });
+
+            function nflTeamsWithDefaults(q, sync) {
+              if (q === '') {
+                sync(nflTeams.get('Philadelphia Eagles', 'Green Bay Packers', 'Chicago Bears'));
+              }
+
+              else {
+                nflTeams.search(q, sync);
+              }
+            }
+
+
+            // Typeahead initializer for the grouped results typeahead search
+            $('.js-typeahead .typeahead').typeahead({
+                input: ".js-typeahead",
+                minLength: 1,
+                maxItem: 5,
+                order: "asc",
+                hint: false,
+                group: {
+                    template: " beers!"
+                },
+                maxItemPerGroup: 5,
+                href: "#",
+                dropdownFilter: "all beers",
+                emptyTemplate: "<li data-search-group='footer'><a href='javascript:;' tabindex='-1'>No Results</a></li>",
+                source: {
+                    Ale: {
+                        data: beerData.ales
+                    },
+                    lager: {
+                        data: beerData.lagers
+                    }
+                },
+                callback: {
+                    onReady: function (node) {
+                        this.container.find('.' + this.options.selector.dropdownItem + '.group-ale a').trigger('click')
+                    }
+                },
+                debug: true
+            });
+
+        }
+     );
+
+    </script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-147981672-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-147981672-1');
+    </script>
+    <!--DO NOT REMOVE-->
+    <script type="text/json" id="sg-pattern-data-footer" class="sg-pattern-data">
+  {"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":false,"patternDesc":"","patternBreadcrumb":{"patternType":"molecules","patternSubtype":"blocks"},"patternExtension":"mustache","patternName":"Wells","patternPartial":"molecules-wells","patternState":"","patternEngineName":"mustache","extraOutput":{}}
+</script>
+
+<script>
+  /*!
+   * scriptLoader - v0.1
+   *
+   * Copyright (c) 2014 Dave Olsen, http://dmolsen.com
+   * Licensed under the MIT license
+   *
+   */
+  
+  var scriptLoader = {
+    
+    run: function(js,cb,target) {
+      var s  = document.getElementById(target+'-'+cb);
+      for (var i = 0; i < js.length; i++) {
+        var src = (typeof js[i] != 'string') ? js[i].src : js[i];
+        var c   = document.createElement('script');
+        c.src   = '../../'+src+'?'+cb;
+        if (typeof js[i] != 'string') {
+          if (js[i].dep !== undefined) {
+            c.onload = function(dep,cb,target) {
+              return function() {
+                scriptLoader.run(dep,cb,target);
+              }
+            }(js[i].dep,cb,target);
+          }
+        }
+        s.parentNode.insertBefore(c,s);
+      }
+    }
+    
+  }
+</script>
+
+<script id="pl-js-polyfill-insert-1579126521816">
+  (function() {
+    if (self != top) {
+      var cb = '1579126521816';
+      var js = [];
+      if (typeof document !== 'undefined' && !('classList' in document.documentElement)) {
+        js.push('styleguide/bower_components/classList.min.js');
+      }
+      scriptLoader.run(js,cb,'pl-js-polyfill-insert');
+    }
+  })();
+</script>
+
+<script id="pl-js-insert-1579126521816">
+  (function() {
+    if (self != top) {
+      var cb = '1579126521816';
+      var js = [ { 'src': 'styleguide/bower_components/jwerty.min.js', 'dep': [ 'styleguide/js/patternlab-pattern.min.js' ] } ];
+      scriptLoader.run(js,cb,'pl-js-insert');
+    }
+  })();
+</script>
+
+
+    </body>
+</html>

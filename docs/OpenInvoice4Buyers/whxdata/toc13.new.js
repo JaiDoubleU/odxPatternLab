@@ -1,0 +1,4 @@
+(function() {
+var toc =  [{"type":"item","name":"Payment Dashboard","url":"OpenInvoiceForBuyers_master/Payments/PaymentOverview_Introduction/Payment_Dashboard.htm#TOC_Payment_Dashboard"},{"type":"item","name":"Payment Search","url":"OpenInvoiceForBuyers_master/Payments/PaymentOverview_Introduction/Payment_Search.htm#TOC_Payment_Search"},{"type":"item","name":"Payment Journal","url":"OpenInvoiceForBuyers_master/Payments/PaymentOverview_Introduction/Payment_Journal.htm"},{"type":"item","name":"Payment Notifications","url":"OpenInvoiceForBuyers_master/Payments/PaymentOverview_Introduction/Payment_Notifications.htm#TOC_Payment_Notifications"}];
+window.rh.model.publish(rh.consts('KEY_TEMP_DATA'), toc, { sync:true });
+})();

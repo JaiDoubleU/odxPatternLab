@@ -1,0 +1,84 @@
+
+<div class="select-list btn-group">
+    <button type="button" class="title btn btn-default dropdown-toggle" data-toggle="dropdown" >
+        {{multiSelectButtonText}} &nbsp; <span class="{{ caret }}"></span>
+    </button>
+    <ul class="list-group dropdown-menu select-options" style="padding:0;">
+        {{#showContractOptions}}
+                {{#multiSelectOptions}}
+                    {{#contractRoles}}
+                    <li class="option list-group-item  text-nowrap">
+                        <label>
+                            <input type="checkbox" name="options" {{state}}/> {{text}}
+                        </label>
+                    </li>
+                    {{/contractRoles}}
+                {{/multiSelectOptions}}
+        {{/showContractOptions}}
+        {{^showContractOptions}}
+            {{#showSiteOptions}}
+                {{#multiSelectOptions}}
+                    {{#siteNames}}
+                        <li class="option list-group-item text-nowrap">
+                            <label>
+                                <input type="checkbox" name="options" {{state}} /> {{text}}
+                            </label>
+                        </li>
+                    {{/siteNames}}
+                {{/multiSelectOptions}}
+            {{/showSiteOptions}}
+            {{^showSiteOptions}}
+                {{#multiSelectOptions}}
+                    {{#default}}
+                        <li class="option list-group-item  text-nowrap">
+                            <label>
+                                <input type="checkbox" name="options"/> {{text}}
+                            </label>
+                        </li>
+                    {{/default}}
+                {{/multiSelectOptions}}
+            {{/showSiteOptions}}
+        {{/showContractOptions}}
+    </ul>
+</div>
+
+<script type="text/javascript">
+    (function($){
+        $.fn.multiselect = function() {
+
+            var selector = this;
+            var options = $.extend({
+                onChange: function() {}
+            }, arguments[0] || {});
+
+            activate();
+
+            /////////
+
+            function activate() {
+
+            //events
+            $(selector).find('.title').on('click', function(e) {
+                $(this).parent().find('.select-options').toggle();
+            });
+
+            $(selector).find('input[type="checkbox"]').change(function(e){
+                options.onChange.call(this);
+            });
+
+            }
+        };
+
+}(jQuery));
+
+$(document).ready(function() {
+  $('.select-list').multiselect({
+    onChange: updateTable
+  });
+});
+
+function updateTable() {
+  var checkboxValue = $(this).val();
+  var isChecked = $(this).is(':checked');
+}
+</script>

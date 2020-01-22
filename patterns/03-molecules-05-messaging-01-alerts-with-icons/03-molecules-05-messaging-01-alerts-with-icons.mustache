@@ -1,0 +1,40 @@
+<div class="row">
+    <div class="col-xs-6">
+        <div class="alert alert-info alert-with-icon " style="position:relative">
+            <button type="button" data-dismiss="alert" aria-hidden="true" class="close">×</button>
+            <i class="icon fas fa-info-circle fa-inverse fa-fw"></i>
+            <strong>{{infoAlertHeadline}}:</strong>
+            {{infoAlertText}}
+        </div>
+    </div>
+    <div class="col-xs-6">
+        <div class="alert alert-success alert-with-icon ">
+            <button type="button" data-dismiss="alert" aria-hidden="true" class="close">×</button>
+            <span class="icon">
+                <i class="fas fa-check-circle fa-fw"></i>
+            </span>
+            <strong>{{successAlertHeadline}}</strong>
+            {{successAlertText}}
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-xs-6">
+        <div class="alert alert-warning alert-with-icon " style="position:relative">
+            <button type="button" data-dismiss="alert" aria-hidden="true" class="close">×</button>
+            <span class="icon">
+                <i class="fas fa-question-square fa-fw"></i>
+            </span>
+            <strong>{{warningAlertHeadline}}</strong>
+            {{warningAlertText}}
+        </div>
+    </div>
+    <div class="col-xs-6">
+        <div class="alert alert-danger alert-with-icon" style="position:relative">
+            <button type="button" data-dismiss="alert" aria-hidden="true" class="close">×</button>
+            <i class="icon fas fa-exclamation-triangle fa-fw"></i>
+            {{#alertHeadlineError}}<strong>{{alertHeadlineError}}</strong>{{/alertHeadlineError}}
+            {{alertTextError}}
+        </div>
+    </div>
+</div>

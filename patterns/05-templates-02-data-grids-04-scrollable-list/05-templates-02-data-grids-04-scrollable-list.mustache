@@ -1,0 +1,90 @@
+    <div class="row">
+        <div class="col-xs-6 form-group">
+            <div class="btn-group btn-group-sm hidden-xs hidden-sm visible-md visible-lg">
+                <a href="#" class="btn btn-default"><i class="fas fa-plus-circle"></i> {{addText}}</a>
+                <a href="#" class="btn btn-default"><i class="fas fa-download"></i> {{downloadText}}</a>
+                <a href="#" class="btn btn-default"><i class="fas fa-upload"></i> {{uploadText}}</a>
+                <a href="#" class="btn btn-default"><i class="fas fa-trash-alt"></i> {{deleteText}}</a>
+            </div>
+            <div class="btn-group btn-group-sm visible-xs visible-sm hidden-md hidden-lg">
+                {{> atoms-btn:btn-default ("buttonText": "Actions")}}
+
+                <aclass="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    {{# caret }}<span class="{{ caret }}"></span>{{/ caret }}
+                    <span class="sr-only"></span>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-left">
+                    <li><a href="#"><i class="fas fa-plus-circle"></i> {{addText}}</a></li>
+                    <li><a href="#"><i class="fas fa-download"></i> {{downloadText}}</a></li>
+                    <li><a href="#"><i class="fas fa-upload"></i> {{uploadText}}</a></li>
+                    <li><a href="#"><i class="fas fa-trash"></i> {{deleteText}}</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-xs-6 form-group text-right">
+            <div class="btn-group btn-group-sm text-nowrap">
+                <button class="btn btn-default" data-toggle="collapse" data-parent="#accordion" href="#scrollableListFilters">
+                    <i class="fas fa-filter"></i> {{advancedFilterText}}
+                </button>
+            </div>
+            
+            <div class="btn-group">
+                <button type="button" class="btn btn-sm btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    {{columnConfigText}} {{# caret }} <span class="{{ caret }}"></span>{{/ caret }}
+                </button>
+                <ul class="dropdown-menu dropdown-menu-right">
+                    {{# dropdownListTableColumns }}
+                        <li {{# separator }}role="separator"{{/ separator }} >
+                            <a href="{{ url }}"><input type="checkbox"> &nbsp;{{ text }}</a>
+                        </li>
+                    {{/ dropdownListTableColumns }}
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="scrollableListFilters" class="collapse">
+        <fieldset>
+            <legend class="small">Advanced Filters</legend>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label for="input1" class="control-label">Column 1: &nbsp;</label>
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Type to search">
+                            <span class="input-group-addon">
+                                <i class="fas fa-search"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label for="input2" class="control-label">Column 2: &nbsp;</label>
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Type to search">
+                            <span class="input-group-addon">
+                                <i class="fas fa-search"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+    </div>
+
+    <div class="table-responsive">
+        <table id="scrollableList" width="100%" class="display table table-striped table-bordered">
+            <thead>
+                <tr>
+                    <th width="45">Select</th>
+                    <th>Name</th>
+                    <th>Position</th>
+                    <th>Office</th>
+                    <th>Extn.</th>
+                    <th width="100">Start date</th>
+                    <th>Salary</th>
+                </tr>
+            </thead>
+        </table>
+    </div>

@@ -1,0 +1,23 @@
+<input type="text" id="tokenfield-typeahead" value="" placeholder="Type to add afes..."/>
+
+<script>
+    $('#tokenfield-typeahead').ready(function () {
+        var tokenfieldTypeAheadEngine = new Bloodhound({
+            datumTokenizer: Bloodhound.tokenizers.whitespace,
+            queryTokenizer: Bloodhound.tokenizers.whitespace,
+            remote: {
+                url: '../../styleguide/data/afeData.json',
+            }
+        });
+
+        tokenfieldTypeAheadEngine.initialize();
+
+        $('#tokenfield-typeahead').tokenfield({
+            typeahead: [null, {
+                limit: 10,
+                source: tokenfieldTypeAheadEngine.ttAdapter(),
+                displayKey: 'afeDesc'
+            }]
+        });
+    });
+</script>

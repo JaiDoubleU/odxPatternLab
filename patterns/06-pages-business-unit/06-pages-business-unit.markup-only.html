@@ -1,0 +1,660 @@
+<script>
+    function showAlert(alertID) {
+        var theAlert = $('#' + alertID);
+        theAlert.removeClass("in").removeClass("hide").show();
+	    theAlert.delay(SHOW_ANIMATION_DURATION).addClass("in").fadeOut(DEFAULT_WAIT_DURATION);
+    }
+
+    function validate() {
+        console.error($('#userId').value);
+        if(!$('#userId').text() || !$('#companyName').text()) {
+            console.error('those fields are rquired');
+            return false;
+        }
+        return true;
+    }
+
+    function toggleEditability(formId, button, isEditable) {
+        var btnName = button.attr("name");
+        var relatedBtns = $("button[name='" +btnName +"']");
+        if (isEditable) {
+            relatedBtns.toggleClass('hide');
+
+            $('#' + formId).removeAttr('disabled');
+            $('#' + formId + ' .form-control').removeAttr('disabled');
+            $('#' + formId + ' input[type="checkbox"]').removeAttr('disabled');
+        } else {
+            relatedBtns.toggleClass('hide');
+
+            $('#' + formId).attr('disabled', 'disabled');
+            $('#' + formId + ' .form-control').attr('disabled', 'disabled');
+            $('#' + formId + 'input[type="checkbox"]').attr('disabled', 'disabled');
+        }
+        return false;
+    }
+</script>
+
+<link href="../../css/00-navbar-alternate.css" rel="alternate stylesheet" type="text/css" title="alternate">
+<nav  id="defaultNavbar" role="navigation" class="navbar navbar-default navbar-fixed-top">
+    <div id="message"></div>
+    <div class="container-fluid">
+        <div class="navbar-header navbar-left pull-left">
+            <button type="button" data-toggle="collapse" data-target=".navbar-collapse" class="btn btn-default btn-sm navbar-btn pull-left">
+                Menu
+            </button>
+            <div class="navbar-brand hidden-xs hidden-sm">
+                <a class="logo-navbar"></a>
+            </div>
+        </div>
+        <div class="navbar-header navbar-right pull-right">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="hidden visible-xs pull-left">
+                    <a class="label-success navbar-link">
+                        <i class="fas fa-sack-dollar fa-fw"></i>
+                        <div class="pull-right" style="width: 60px; white-space: normal;float:right;line-height: 1;font-size: 13px; text-align: center;">Get Paid Faster! </div>
+                    </a>
+                </li>
+                <li class="hidden visible-xs visible-sm dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fas fa-search fa-fw"></i></a>
+                    <ul class="dropdown-menu dropdown-menu-right" style="padding: 15px;min-width: 250px;">
+                        <li>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <form>
+                                        <div class="input-group input-group-sm ">
+                                            <span class="input-group-addon dropdown-toggle" data-toggle="dropdown"
+                                                aria-haspopup="true" aria-expanded="false">
+                                                <span class="caret"></span>
+                                            </span>
+                                            <ul class="dropdown-menu dropdown-menu-left">
+                                                <li onclick="setGlobalSearchPlaceholder($(this).first().text());"><a>Invoice #</a></li>
+                                                <li onclick="setGlobalSearchPlaceholder($(this).first().text());"><a href="#">Pricebook #</a></li>
+                                                <li onclick="setGlobalSearchPlaceholder($(this).first().text());"><a href="#">Field Ticket #</a></li>
+                                                <li onclick="setGlobalSearchPlaceholder($(this).first().text());"><a href="#">Purchase Order #</a></li>
+                                            </ul>
+
+                                            <input class="form-control" id="globalSearch" placeholder="Invoice #">
+
+                                            <span class="input-group-btn">
+                                                <button class="btn btn-default"><i class="fas fa-search fa-fw"></i></button>
+                                            </span>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a title="Message Centre" class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <span class="badge badge-xs">49</span>
+                        <i class="fas fa-bell fa-fw"></i>
+                        <!-- <span class="hidden-xs hide">Messages</span> -->
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-right">
+                        <li>
+                            <a title="Message Centre" href="#">
+                                <span class="fa-fw">
+                                    <i class="fas fa-envelope"></i>
+                                    Messages
+                                </span>
+                                <sup class="badge" style="background:#BE3A34">41</sup>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="fa-fw">
+                                    <i class="fas fa-file-alt"></i>
+                                    Completed Reports
+                                </span>
+                                <sup class="badge" style="background:#BE3A34">8</sup>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a title="Help Center" class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fas fa-question-circle fa-fw"></i> <span class="hidden-xs hide">Help</span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-right">
+                        <li><a href="#"><i class="fas fa-life-ring fa-fw"></i> Contact Support</a></li>
+                        <li><a href="#"><i class="fas fa-book fa-fw"></i> Resource Center</a></li>
+                        <li><a href="#"><i class="fas fa-comment fa-fw"></i> Feedback</a></li>
+                        <li><a href="#"><i class="fas fa-users fa-fw"></i> About</a></li>
+                        <li><a href="#"><i class="fas fa-user-secret fa-fw"></i> Privacy</a></li>
+                        <li><a href="#"><i class="fas fa-gavel fa-fw"></i> Terms</a></li>
+                        <li><a href="#"><i class="fas fa-globe fa-fw"></i> Browsers</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a title="My Profile" class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fas fa-user fa-fw"></i> <span class="hidden-xs hide">Profile</span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-right">
+                        <li><a href="#"><i class="fas fa-user fa-fw"></i> Christopher Schwartzenberg</a></li>
+                        <li><a href="#"><i class="fas fa-cog fa-fw"></i> Preferences</a></li>
+                        <li><a href="#"><i class="fas fa-font fa-fw"></i> Font Size</a></li>
+                    </ul>
+                </li>
+                <li><a title="Sign Out" href="#"><i class="fas fa-sign-out fa-fw"></i></a></li>
+            </ul>
+        </div>
+        <ul class="nav navbar-nav navbar-left">
+            <li class="pull-left">
+                <p class="navbar-text hide-overflow small hidden-sm hidden-xs" style="max-width: 225px;">Tetratrex
+                    Oilfield Services Incorporated Ltd.
+                </p>
+            </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right visible-sm visible-md visible-lg hidden-xs">
+            <li class="pull-left">
+                <a class="label-success navbar-link">
+                    <i class="fas fa-sack-dollar fa-fw"></i>
+                    <div class="pull-right" style="width: 60px; white-space: normal;float:right;line-height: 1;font-size: 13px; text-align: center;">Get Paid Faster! </div>
+                </a>
+            </li>
+            <li>
+                <form class="navbar-form navbar-right">
+                    <div class="form-group">
+                        <div class="input-group">
+                            <span class="input-group-addon dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">
+                                <span class="caret"></span>
+                            </span>
+                            <ul class="dropdown-menu dropdown-menu-left">
+                                <li onclick="setGlobalSearchPlaceholder($(this).first().text());"><a href="#">Invoice #</a></li>
+                                <li onclick="setGlobalSearchPlaceholder($(this).first().text());"><a href="#">Pricebook #</a></li>
+                                <li onclick="setGlobalSearchPlaceholder($(this).first().text());"><a href="#">Field Ticket #</a></li>
+                                <li onclick="setGlobalSearchPlaceholder($(this).first().text());"><a href="#">Purchase Order #</a></li>
+                            </ul>
+
+                            <input class="form-control" id="globalSearch" placeholder="Invoice #">
+
+                            <span class="input-group-btn">
+                                <button class="btn btn-default"><i class="fas fa-search fa-fw"></i></button>
+                            </span>
+                        </div>
+                    </div>
+                </form>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<nav id="secondaryNavbar" class="navbar-default animated navbar-fixed-top " style="z-index: 1030">
+    <div class="container-fluid">
+        <div class="row">
+                <div class="col-xs-4">
+                        <div class="btn-group  pull-left">
+                            <button class="btn btn-link text-nowrap dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                <i class="fas fa-arrow-left fa-fw"></i> Back <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Supplier On-Ramping</a></li>
+                                <li><a href="#">Suppliers</a></li>
+                                <li><a href="#">Dashboard</a></li>
+                            </ul>
+                        </div>
+                </div>
+                <div class="col-xs-4 text-center hide-overflow">
+                    <div class="form-control-static">
+                        Business Unit - Accounts Payable
+                    </div>
+                </div>
+                <div class="col-xs-4 text-right text-nowrap">
+                        <div class="btn-group  pull-right" style="display:flex;">
+                            <button type="button" class="btn btn-link" data-toggle="tooltip" data-placement="bottom" title="Previous in List"><span class="hidden-xs">Prev </span><i class="fas fa-arrow-up fa-fw"></i></button>
+                            <button type="button" class="btn btn-link" data-toggle="tooltip" data-placement="bottom" title="Next in List"><span class="hidden-xs">Next</span> <i class="fas fa-arrow-down fa-fw"></i></button>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+
+
+<div class="container-fluid page-top-padding">
+    <div class="form-group">
+        <div class="row">
+            <div class="col-sm-6 ">
+                <!-- User Profile Panel -->
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <div class="form-group">
+                            <div class="panel-title">
+                                Business Unit
+                            </div>
+                        </div>
+
+                        <div id="saveProfileAlert" class="alert alert-success fade in out hide" role="alert">
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <strong>Right On!</strong> Your changes were saved!
+                        </div>
+
+                        <fieldset id="profileForm" class="fieldset" disabled>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="form-group">
+                                        <label class="control-label">Name</label>
+                                        <input type="text" class="form-control" value="Accounts Payable">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label class="control-label">Contact First Name</label>
+                                        <input type="text" class="form-control" value="Joe">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                    <label class="control-label">Contact Last Name</label>
+                                        <input type="text" class="form-control" value="Smith">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label class="control-label">Address</label>
+                                        <input type="text" class="form-control" value="Suite 200, 230 Center Street">
+
+                                    </div>
+                                </div>
+                            <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label class="control-label">City</label>
+                                        <input type="text" class="form-control" value="Middleton">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label class="control-label">State/Province</label>
+                                        <input type="text" class="form-control" value="Wisconsin">
+
+                                    </div>
+                                </div>
+                            <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label class="control-label">Postal Code</label>
+                                        <input type="text" class="form-control" value="53562">
+                                    </div>
+                                </div>
+                            </div>
+                        </fieldset>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="text-right">
+                                    <button name="profileButtons" class="btn btn-default pull-right" onclick="toggleEditability('profileForm', $(this), true);">Edit</button>
+                                    <button name="profileButtons" class="btn btn-default hide" onclick="toggleEditability('profileForm', $(this),false);">Cancel</button>
+                                    <button name="profileButtons" class="btn btn-success hide" onclick="toggleEditability('profileForm', $(this),false); showAlert('saveProfileAlert');">Save</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <!-- User Roles Panel -->
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="col-xs-6">
+                                    <div class="panel-title h3">Roles</div>
+                                </div>
+                                <div class="col-xs-6 text-right">
+                                    <button id="addAccountBtn" data-toggle="modal" data-target="#addEditRoleModal"  class="btn btn-default">Add</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="saveRoleAlert" class="alert alert-success fade in out hide" role="alert">
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <strong>Success!</strong> Your new role was created!
+                        </div>
+
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <label class="control-label">Document Type: </label>
+                                    <div class="btn-group ">
+                                        <a href="#" class="btn btn-default">Check Stub/Check Stub Property</a>
+                                        <a href="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#">Run Ticket (CODE)</a></li>
+                                            <li><a href="#">Owner Relations</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <fieldset id="rolesForm">
+                            <div class="table-responsive">
+                                <table class="table table-bordered table-striped">
+                                    <tr>
+                                        <th>Role Name</th>
+                                        <th>Rights</th>
+                                        <th class="text-center">Delete</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Viewer</td>
+                                        <td>Viewer, Exporter</td>
+                                        <td class="text-center"  data-toggle="modal" data-target="#areYouSureModal" ><i class="fas fa-trash-alt"></i></td>
+                                </tr>
+                                    <tr>
+                                        <td>Approver</td>
+                                        <td>Approver, Deleter</td>
+                                        <td class="text-center"  data-toggle="modal" data-target="#areYouSureModal" ><i class="fas fa-trash-alt"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Administrator</td>
+                                        <td>Viewer, Exporter, Importer, Deleter</td>
+                                        <td class="text-center"  data-toggle="modal" data-target="#areYouSureModal" ><i class="fas fa-trash-alt"></i></td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </fieldset>
+
+                        <!--div class="row">
+                            <div class="col-sm-12">
+                                <div class="form-group text-right">
+                                    <button name="rolesButtons" class="btn btn-default" onclick="toggleEditability('rolesForm', $(this), true);">Edit</button>
+                                    <button name="rolesButtons" class="btn btn-default hide" onclick="toggleEditability('rolesForm', $(this), false);">Cancel</button>
+                                    <button name="rolesButtons" class="btn btn-success hide" onclick="toggleEditability('rolesForm', $(this), false); showAlert('saveRolesAlert');">Save</button>
+                                </div>
+                            </div>
+                        </div-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-6">
+            <!-- User Accounts Panel -->
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-xs-6">
+                                <div class="panel-title h3">Users</div>
+                            </div>
+                            <div class="col-xs-6 text-right">
+                                <button id="addAccountBtn" data-toggle="modal" data-target="#addEditAccountModal"  class="btn btn-default">Add</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="saveAccountAlert" class="alert alert-success  fade in out hide" role="alert">
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <strong>Right On!</strong> Your changes were saved!
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-xs-12" id="rolesForm">
+                                <div class="form-group row">
+                                    <div class="col-sm-12 table-responsive">
+                                        <table class="table table-bordered table-hover table-striped">
+                                            <tr>
+                                                <th>First Name</th>
+                                                <th>Last Name</th>
+                                                <th>User ID</th>
+                                                <th width="10">Delete</div>
+                                            </tr>
+                                            <tr style="cursor: pointer;" >
+                                                <td data-toggle="modal" data-target="#addEditAccountModal" class="text-primary">John</td>
+                                                <td data-toggle="modal" data-target="#addEditAccountModal" class="text-primary">Smith</td>
+                                                <td data-toggle="modal" data-target="#addEditAccountModal">jsmith</td>
+                                                <td width="10" class="text-center" data-toggle="modal" data-target="#areYouSureModal" ><i class="fas fa-trash-alt"></i></td>
+                                            </tr>
+                                            <tr style="cursor: pointer;"  data-toggle="modal" data-target="#addEditAccountModal">
+                                                <td data-toggle="modal" data-target="#addEditAccountModal" class="text-primary">Jerry</td>
+                                                <td data-toggle="modal" data-target="#addEditAccountModal" class="text-primary">Smith</td>
+                                                <td data-toggle="modal" data-target="#addEditAccountModal">smithj</td>
+                                                <td width="10" class="text-center" data-toggle="modal" data-target="#areYouSureModal" ><i class="fas fa-trash-alt"></i></td>
+                                            </tr>
+                                            <tr style="cursor: pointer;" >
+                                                <td data-toggle="modal" data-target="#addEditAccountModal" class="text-primary">Edward</td>
+                                                <td data-toggle="modal" data-target="#addEditAccountModal" class="text-primary">Smithers</td>
+                                                <td data-toggle="modal" data-target="#addEditAccountModal">big-smitty</td>
+                                                <td width="10" class="text-center" data-toggle="modal" data-target="#areYouSureModal" ><i class="fas fa-trash-alt"></i></td>
+                                            </tr>
+                                            <tr style="cursor: pointer;" >
+                                                <td data-toggle="modal" data-target="#addEditAccountModal" class="text-primary">John</td>
+                                                <td data-toggle="modal" data-target="#addEditAccountModal" class="text-primary">Smith</td>
+                                                <td data-toggle="modal" data-target="#addEditAccountModal">smith-joe</td>
+                                                <td width="10" class="text-center" data-toggle="modal" data-target="#areYouSureModal" ><i class="fas fa-trash-alt"></i></td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modals -->
+
+<div id="areYouSureModal" class="modal fade" role="dialog">
+    <div class="modal-dialog modal-sm ">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Are you sure?</h4>
+            </div>
+            <div class="modal-body">
+                <div class="form-group ">
+                    Are you sure you want to delete that?
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" onclick="showAlert('saveCredentialsAlert')" data-dismiss="modal">No, Take me back</button>
+                <button type="button" class="btn btn-success" data-dismiss="modal">Yes, I'm sure</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+<div id="changePasswordModal" class="modal fade" role="dialog">
+    <div class="modal-dialog modal-lg ">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Modal Header</h4>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-xs-6">
+                        <div class="form-group ">
+                            <label class="control-label">Password</label>
+                            <input class="form-control" type="password">
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label">Confirm Password</label>
+                            <input class="form-control" type="password">
+                        </div>
+                    </div>
+                    <div class="col-xs-6">
+                        <ul class="list-unstyled">
+                            <li class="h5 text-muted">Password Requirements:</li>
+                            <li>
+                                <ul>
+                                    <li>Passwword must be <strong>8</strong> characters long</li>
+                                    <li>Passwword mus thave <strong>1</strong> digit</li>
+                                    <li>Password must have <strong>1</strong> uppercase character</li>
+                                    <li>Password must have <strong>1</strong> lowercsse character</li>
+                                    <li>Password must have <strong>1</strong> symbol</li>
+                                    <li>Password expiration time frame is <strong>90</strong> days</li>
+                                    <li>Number of new passwords that must be used before an old one is allowed: <strong>3</strong></li>
+                                    <li>Dictionary check: <strong>true</strong></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-12">
+
+                        <div class="form-group">
+                            <label class="control-label">Password Options</label>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="radio">
+                                        <label>
+                                            <input type="checkbox" name="emailPasswordCheckbox" value="option1"> Email Random Password
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12">
+                                    <div class="form-group">
+                                        <div class="radio">
+                                            <label>
+                                                <input type="checkbox" name="setRandomPasswordCheckbox" value="option1"> Set Password on Save
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-success" onclick="showAlert('saveCredentialsAlert')" data-dismiss="modal">Save</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div id="addEditAccountModal" class="modal fade" role="dialog">
+    <div class="modal-dialog modal-lg ">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Add/Edit User Account</h4>
+            </div>
+            <div class="modal-body">
+                <div class="form-group has-feedback  ">
+                    <label class="control-label">First Name <span class="text-danger">*</s></label>
+                    <input id="firstName" class="form-control" type="text">
+                    <div class="help-block hide" >A value is required</div>
+
+                    <span class="fas fa-exclamation-triangle form-control-feedback hide" data-toggle="popover" data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." data-original-title="" title="" ></span>
+
+                </div>
+                <div class="form-group has-feedback  ">
+                    <label class="control-label">Last Name <span class='text-danger'> * </span>
+
+</label>
+                    <input id="lastName" class="form-control" type="text">
+                    <div class="help-block hide" >A value is required</div>
+
+                    <span class="fas fa-exclamation-triangle form-control-feedback hide" data-toggle="popover" data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." data-original-title="" title="" ></span>
+
+                </div>
+                <div class="form-group has-feedback">
+                    <label class="control-label">User ID  <span class='text-danger'> * </span>
+
+</label>
+                    <input id="userId" class="form-control" type="text">
+                    <div class="help-block hide" >A value is required</div>
+                    <span class="fas fa-exclamation-triangle form-control-feedback hide" data-toggle="popover" data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." data-original-title="" title="" ></span>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button id="showErrors" onclick="$('.form-group.has-feedback').toggleClass('has-error'); $('.form-control-feedback').toggleClass('hide'); $('.help-block').toggleClass('hide'); return false;"  type="button" class="btn btn-outline-danger">Toggle Errors</button>
+
+                <button id="addEditAccountSaveBtn"  data-dismiss="modal" onclick="showAlert('saveAccountAlert'); return false;"  type="button" class="btn btn-success">Save</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="addEditRoleModal" class="modal fade" role="dialog">
+    <div class="modal-dialog modal-lg ">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Add/Edit Role</h4>
+            </div>
+            <div class="modal-body">
+                <div class="form-group has-feedback  ">
+                    <label class="control-label">Role Name <span class='text-danger'> * </span>
+
+</label>
+                    <input id="companyName" class="form-control" type="text">
+                    <div class="help-block hide" >A value is required</div>
+
+                    <span class="fas fa-exclamation-triangle form-control-feedback hide" data-toggle="popover" data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." data-original-title="" title="" ></span>
+
+                </div>
+                <div class="form-group has-feedback">
+                    <label class="control-label">Rights  <span class='text-danger'> * </span>
+
+</label>
+                    <div class="row">
+                        <div class="col-xs-4">
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox"> Approver
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox"> Deleter
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox"> Exporter
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-xs-4">
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox"> Importer
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox"> Viewer
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="help-block hide" >A value is required</div>
+                    <span class="fas fa-exclamation-triangle form-control-feedback hide" data-toggle="popover" data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." data-original-title="" title="" ></span>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button id="showErrors" onclick="$('.form-group.has-feedback').toggleClass('has-error'); $('.form-control-feedback').toggleClass('hide'); $('.help-block').toggleClass('hide'); return false;"  type="button" class="btn btn-outline-danger">Toggle Errors</button>
+
+                <button id="addEditAccountSaveBtn"  data-dismiss="modal" onclick="showAlert('saveRoleAlert'); return false;"  type="button" class="btn btn-success">Save</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $('body').addClass('page-bg');
+</script>

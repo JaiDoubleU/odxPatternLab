@@ -1,0 +1,121 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+ <title>IntegrationOverview_TransmissionOptions</title>
+
+ <link rel="stylesheet" href="../../../../OpenInvoiceForBuyers_master.css" type="text/css" />
+
+
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style>
+ <meta name="generator" content="Adobe FrameMaker 2017" />
+<script type="text/javascript" src="../../../../template/scripts/rh.min.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/common.min.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/topic.min.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/constants.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/utils.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/mhutils.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/mhlang.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/mhver.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/settings.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/XmlJsReader.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/loadparentdata.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/loadscreen.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/loadprojdata.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/mhtopic.js"></script>
+ <link rel="stylesheet" type="text/css" href="../../../../template/styles/topic.min.css">
+<script type="text/javascript" >
+gRootRelPath = "../../../..";
+gCommonRootRelPath = "../../../..";
+gTopicId = "1.9.0_4";
+</script>
+ <meta name="brsprev" value="OpenInvoiceForBuyers_master/Integrations/Integration_Overview/IntegrationOverview_Routing_Security/IntegrationOverview_Routing_Security.htm">
+ <meta name="brsnext" value="OpenInvoiceForBuyers_master/Integrations/Integration_Imports/IntegrationImports/IntegrationImports.htm">
+ <meta name="topic-breadcrumbs" content="Administrator & User Guide for Buyers > Integration Overview" />
+</head>
+
+<body dir="ltr">
+<script type="text/javascript" src="../../../../ehlpdhtm.js"></script>
+
+ <div dir="ltr">
+  
+  <p dir="ltr" class="FM_ADP_TG_Heading_1"><a name="XREF_60250_Transmission"></a>Transmission Options</p>
+  <p dir="ltr" class="FM_ADP_TG_Body_Style">Files can be posted directly to and from a URL in the <span data-name="ADP_Software_Name" data-val="OpenInvoice Platform" data-showval="TRUE" data-format="ADP_Software_Name">OpenInvoice Platform</span>&#160;and a URL in your company’s back office. Files can also be transferred between your back office and the <span data-name="ADP_Software_Name" data-val="OpenInvoice Platform" data-showval="TRUE" data-format="ADP_Software_Name">OpenInvoice Platform</span>&#160;via an <span data-name="ADP_Company_Name" data-val="Oildex" data-showval="TRUE" data-format="ADP_Company_Name">Oildex</span>-maintained secure server residing on your network. </p>
+
+  <p dir="ltr" class="FM_ADP_TG_Body_Style">As part of buyer company implementation, a transmission method is decided upon and <span data-name="_OpenInvoice_Support" data-val="OpenInvoice Support" data-showval="TRUE" data-format="_OpenInvoice_Support">OpenInvoice Support</span>&#160;and the company’s technical team will work together to configure secure communication between the <span data-name="ADP_Software_Name" data-val="OpenInvoice Platform" data-showval="TRUE" data-format="ADP_Software_Name">OpenInvoice Platform</span>, the company’s back office and, if applicable, the secure server. Once a method is established, the company will use the same method for all of their file transfers.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Heading_2">Using a Secure Server </p>
+
+  <p dir="ltr" class="FM_ADP_TG_Body_Style">Buyer companies can also use an <span data-name="ADP_Company_Name" data-val="Oildex" data-showval="TRUE" data-format="ADP_Company_Name">Oildex</span>-maintained secure server to support the secure transmission of data to and from the company’s back-office system (redirect method). The secure server can also serve as a temporary file repository. Files exported from the <span data-name="ADP_Software_Name" data-val="OpenInvoice Platform" data-showval="TRUE" data-format="ADP_Software_Name">OpenInvoice Platform</span>&#160;are saved to a predefined directory on the secure server for the client to retrieve for processing (save method).</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Body_Style">The secure server is software that is installed on the buyer company’s network in the DMZ between the buyer company’s network and the <span data-name="ADP_Software_Name" data-val="OpenInvoice Platform" data-showval="TRUE" data-format="ADP_Software_Name">OpenInvoice Platform</span>. This provides an additional level of security since messages are not being transferred in and out of the company’s network directly. </p>
+
+  <p dir="ltr" class="FM_ADP_TG_Body_Style"><span data-name="_OpenInvoice_Support" data-val="OpenInvoice Support" data-showval="TRUE" data-format="_OpenInvoice_Support">OpenInvoice Support</span>&#160;provides the Certificate Authority services required for the server-to-server communications. A Certificate Management Server (CMS) is used to perform Certificate Authority administrative functions such as generation of certificates, expiry/renewal, and the revocation of certificates. It issues and manages X.509 certificates. Certificates issued by all major Certificate Authorities, such as VeriSign, are also fully supported.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Heading_3">Imports </p>
+
+  <p dir="ltr" class="FM_ADP_TG_Body_Style">Files being transferred from the buyer’s back office to the <span data-name="ADP_Software_Name" data-val="OpenInvoice Platform" data-showval="TRUE" data-format="ADP_Software_Name">OpenInvoice Platform</span>&#160;are posted to the secure server, which then establishes the SSL conversation with the <span data-name="ADP_Software_Name" data-val="OpenInvoice Platform" data-showval="TRUE" data-format="ADP_Software_Name">OpenInvoice Platform</span>&#160;for the transfer of documents. The file system and the location in the <span data-name="ADP_Software_Name" data-val="OpenInvoice Platform" data-showval="TRUE" data-format="ADP_Software_Name">OpenInvoice Platform</span>&#160;are set up during the initial integration setup. The connection between the secure server and the buyer company back office URL is enabled through HTTP protocol with username/password authentication. The username and password will be provided by <span data-name="_OpenInvoice_Support" data-val="OpenInvoice Support" data-showval="TRUE" data-format="_OpenInvoice_Support">OpenInvoice Support</span>. </p>
+
+  <p dir="ltr" class="FM_ADP_TG_Body_Style">Some of the buyer imports that do not have associated scheduled services (ADE Import, Cost Collection Import, Document Status Update, Purchase Order Import, and User Import) are not saved on the secure server. The files must be redirected from the secure server or posted directly to the <span data-name="ADP_Software_Name" data-val="OpenInvoice Platform" data-showval="TRUE" data-format="ADP_Software_Name">OpenInvoice Platform</span>. </p>
+
+  <p dir="ltr" class="FM_ADP_TG_Heading_3">Exports </p>
+
+  <p dir="ltr" class="FM_ADP_TG_Body_Style">Two options are available for companies using a secure server to receive files. </p>
+
+  <p dir="ltr" class="FM_ADP_TG_Body_Style" style="font-weight : bold;">Save Option </p>
+
+  <p dir="ltr" class="FM_ADP_TG_Body_Style">Files are saved in a configured folder on the secure server. The file system and the location in the buyer’s back office are set up by <span data-name="_OpenInvoice_Support" data-val="OpenInvoice Support" data-showval="TRUE" data-format="_OpenInvoice_Support">OpenInvoice Support</span>&#160;as part of the electronic document configuration. Approved and unapproved invoices will also each have a folder for attachments and generated invoice PDFs. </p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>The MIME and SOAP wrappers are removed from the file. The buyer will retrieve the XML from the secure server. The encoded attachments are taken out, restored to their original format, and put in the designated attachment folder. </p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>A semaphore file will be written to the same directory as the XML file when the file transfer is complete. The semaphore file is given the same name as the XML file with the addition of a .done extension to indicate to the client that the XML and attachment files are ready to be retrieved. </p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>Folder maintenance and archiving of data are the responsibility of the client. <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>&#160;does not remove any files from the directory.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>The buyer company retrieves the XML files and the attachments (if any) from the secure server, extracts the XML data, and organizes it into the format required by their back office system.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Body_Style" style="font-weight : bold;">Redirect Option</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Body_Style">Files are streamed to the secure server which then routes the data stream to a buyer-specified server URL. The connection between the secure server and the buyer company back office URL is enabled through HTTP protocol with username/password authentication. The username and password are provided by the buyer company. Invoice attachments are unzipped and saved on the secure server.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Body_Style">The MIME and SOAP wrappers are not removed from the XML message in the redirect method. </p>
+
+  <p dir="ltr" class="FM_ADP_TG_Heading_2">Without a Secure Server </p>
+
+  <p dir="ltr" class="FM_ADP_TG_Body_Style">Documents can be transmitted directly to and from the <span data-name="ADP_Software_Name" data-val="OpenInvoice Platform" data-showval="TRUE" data-format="ADP_Software_Name">OpenInvoice Platform</span>&#160;using the company’s current infrastructure.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Body_Style">Exports are posted directly to a company-specified URL. Imports are posted from the company’s back office to a URL in the <span data-name="ADP_Software_Name" data-val="OpenInvoice Platform" data-showval="TRUE" data-format="ADP_Software_Name">OpenInvoice Platform</span>. Communication is via HTTPS/SSL protocol with two-way certificate exchange.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Body_Style">To successfully configure the connection between a company’s back end server and the <span data-name="ADP_Software_Name" data-val="OpenInvoice Platform" data-showval="TRUE" data-format="ADP_Software_Name">OpenInvoice Platform</span>, the following tasks must be completed. <span data-name="_OpenInvoice_Support" data-val="OpenInvoice Support" data-showval="TRUE" data-format="_OpenInvoice_Support">OpenInvoice Support</span> will provide a template file to the company for completion.</p>
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Exchange SSL certificates: </span>The <span data-name="ADP_Software_Name" data-val="OpenInvoice Platform" data-showval="TRUE" data-format="ADP_Software_Name">OpenInvoice Platform</span>&#160;is configured to perform two-way authentication. The company must install the appropriate (test or production) <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>&#160;public key and issuing CA (Certificate Authority) to the trusted store of their back office server. The company must also provide <span data-name="_OpenInvoice_Support" data-val="OpenInvoice Support" data-showval="TRUE" data-format="_OpenInvoice_Support">OpenInvoice Support</span>&#160;with copies of the public key and issuing CA that will be installed to the <span data-name="ADP_Software_Name" data-val="OpenInvoice Platform" data-showval="TRUE" data-format="ADP_Software_Name">OpenInvoice Platform</span>. <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>&#160;does not support the use of self-signed certificates. </p>
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Exchange IP address details:</span>&#160;<span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>’s test and production environments are fully independent of each other. Each environment features a unique IP address and URL. <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>’s security policy allows companies to specify one IP address to be configured for each environment (test and production). </p>
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Exchange DUNS numbers: </span>A unique nine-digit DUNS number is required to identify the trading partners involved in transactions. DUNS numbers can be obtained from Dun &amp; Bradstreet. Refer to the website <span class="FM_ADP_TG__Link"><a href="http://www.dnb.com/">www.dnb.com</a></span>&#160;for more information. </p>
+ </div>
+</body>
+
+</html>
+

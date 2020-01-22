@@ -1,0 +1,1073 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+ <title>PriceBookManagement</title>
+
+ <link rel="stylesheet" href="../../../OpenInvoiceForBuyers_master.css" type="text/css" />
+
+
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style>
+ <meta name="generator" content="Adobe FrameMaker 2017" />
+<script type="text/javascript" src="../../../template/scripts/rh.min.js"></script>
+<script type="text/javascript" src="../../../template/scripts/common.min.js"></script>
+<script type="text/javascript" src="../../../template/scripts/topic.min.js"></script>
+<script type="text/javascript" src="../../../template/scripts/constants.js"></script>
+<script type="text/javascript" src="../../../template/scripts/utils.js"></script>
+<script type="text/javascript" src="../../../template/scripts/mhutils.js"></script>
+<script type="text/javascript" src="../../../template/scripts/mhlang.js"></script>
+<script type="text/javascript" src="../../../template/scripts/mhver.js"></script>
+<script type="text/javascript" src="../../../template/scripts/settings.js"></script>
+<script type="text/javascript" src="../../../template/scripts/XmlJsReader.js"></script>
+<script type="text/javascript" src="../../../template/scripts/loadparentdata.js"></script>
+<script type="text/javascript" src="../../../template/scripts/loadscreen.js"></script>
+<script type="text/javascript" src="../../../template/scripts/loadprojdata.js"></script>
+<script type="text/javascript" src="../../../template/scripts/mhtopic.js"></script>
+ <link rel="stylesheet" type="text/css" href="../../../template/styles/topic.min.css">
+<script type="text/javascript" >
+gRootRelPath = "../../..";
+gCommonRootRelPath = "../../..";
+gTopicId = "1.6_3";
+</script>
+ <meta name="brsprev" value="OpenInvoiceForBuyers_master/Price_Books/PriceBook/PriceBook.htm">
+ <meta name="brsnext" value="OpenInvoiceForBuyers_master/Purchase_Orders/Purchase_Order_Overview/PO_Overview/PO_Overview.htm">
+ <meta name="topic-breadcrumbs" content="Administrator & User Guide for Buyers" />
+</head>
+
+<body dir="ltr">
+<script type="text/javascript" src="../../../ehlpdhtm.js"></script>
+
+ <div dir="ltr">
+  <p dir="ltr" class="FM_Chapter_Title">Price Book Management</p>
+  <p dir="ltr" class="FM_Body_Style">This section provides instructions on how to create, view,&#160;and update a price book. </p>
+  <p dir="ltr" class="FM_Body_Style">The following topics are applicable to users that have Price Book Modify permissions:</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><a href="#XREF_14312_Price_Book"><span class="FM_ADP_TG__Link">Price Book Approval Workflow</span></a></p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><a href="#XREF_20046_Viewing_the"><span class="FM_ADP_TG__Link">Viewing a Price Book</span></a></p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><a href="#XREF_42518_Creating_a_Price"><span class="FM_ADP_TG__Link">Creating a Price Book</span></a></p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><a href="#XREF_21538_Modifying_the"><span class="FM_ADP_TG__Link">Modifying the Price Book Summary Information</span></a></p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><a href="#XREF_16853_Removing_Early_Pay"><span class="FM_ADP_TG__Link">Removing Early Pay Terms on Price Books</span></a></p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><a href="#XREF_62330_Commenting_on_a"><span class="FM_ADP_TG__Link">Commenting on a Price Book</span></a></p>
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><a href="#XREF_23779_Printing_a_Price"><span class="FM_ADP_TG__Link">Printing a Price Book</span></a></p>
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><a href="#XREF_28475_Sending_a_Price"><span class="FM_ADP_TG__Link">Sending a Price Book Message</span></a></p>
+
+  <p dir="ltr" class="FM_Heading_1"><a name="XREF_14312_Price_Book"></a>Price Book Approval Workflow</p>
+
+  <p dir="ltr" class="FM_Body_Style">The Price Book Approval workflow provides the tools necessary to modify, review, and approve material changes to a price book. Each revision of the price book is archived and historical versions can be viewed through the Price Book Journal. All price books must go through the approval workflow at least once. Once the price book has been approved, any changes to the Price Book or the active and expiry dates must go through the approval workflow.</p>
+
+  <p dir="ltr" class="FM_Heading_2">Price Book Workflow</p>
+
+  <p dir="ltr" class="FM_Body_Style">Price books are created and amended in <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span> following the process below:</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Start"><span class="FM_Bullet4">1.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>A price book administrator creates a price book, configures its sites, adds roles, then places it into edit mode.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">2.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>A price book modifier enters price book details including the active and expiry dates, contacts, and documents. After all details have been entered, the price book modifier submits the price book for approval. </p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">3.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>A price book approver reviews the price book, then approves or disputes. If disputed, the price book is sent back to the modifier for revision and resubmission for approval. </p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">4.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Once the price book is approved, <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>&#160;activates the price book on the specified active date. </p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">5.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Once the price book is activated, suppliers can create invoices and/or field tickets referencing the price book.</p>
+
+  <p dir="ltr" class="FM_Heading_2">Price Book Workflow Optimization</p>
+
+  <p dir="ltr" class="FM_Body_Style"><span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span> optimizes price book workflow for users who have been granted multiple permissions:</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>A user who is both price book administrator and price book modifier can create and edit a price book in a single step. </p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>A user who is both price book modifier and price book approver can submit and approve a price book in a single step. </p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>If a price book does not have a price book approver assigned, <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>&#160;will automatically approve the price book after it is submitted by a price book modifier.</p>
+
+  <p dir="ltr" class="FM_Heading_2">Price Book Status</p>
+
+  <p dir="ltr" class="FM_Body_Style">The price book status determines when a price book is available for referencing on a ticket or invoice. </p>
+
+  <p dir="ltr" class="FM_Note___Start"><span class="FM_Bold">Note:<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>To reference a price book, the service date must be between the price book’s active and expiry dates.</p>
+
+<div width="100%" align="left">
+  <table border-spacing="0" dir="ltr" class="table130" border-collapse="collapse" style="max-width: 100% ;height: auto">
+   <tr class="tr71">
+   <th class="td131">
+   <p dir="ltr" class="FM_CellHeading">Status</p>
+</th>
+   <th class="td28">
+   <p dir="ltr" class="FM_CellHeading">Available for Reference</p>
+</th>
+   <th class="td132">
+   <p dir="ltr" class="FM_CellHeading">Description</p>
+</th>
+</tr>
+   <tr class="tr32">
+   <td class="td133">
+   <p dir="ltr" class="FM_Table_Text">New</p>
+</td>
+   <td class="td34">
+   <p dir="ltr" class="FM_Table_Text">&nbsp;</p>
+</td>
+   <td class="td134">
+   <p dir="ltr" class="FM_Table_Text">A new price book that has not been requested for edit.</p>
+</td>
+</tr>
+   <tr class="tr90">
+   <td class="td133">
+   <p dir="ltr" class="FM_Table_Text">Approved</p>
+</td>
+   <td class="td34">
+   <p dir="ltr" class="FM_Table_Text">&nbsp;</p>
+</td>
+   <td class="td134">
+   <p dir="ltr" class="FM_Table_Text">Price book has been reviewed and approved.</p>
+   <p dir="ltr" class="FM_Table_Text">If no revision is in progress, the price book and price book header are read-only and cannot be modified.</p>
+</td>
+</tr>
+   <tr class="tr95">
+   <td class="td133">
+   <p dir="ltr" class="FM_Table_Text">Active</p>
+</td>
+   <td class="td34">
+   <p dir="ltr" class="FM_Table_Text">X</p>
+</td>
+   <td class="td134">
+   <p dir="ltr" class="FM_Table_Text">Approved price book that is automatically activated once the current date is between the price book’s active and expiry dates. You are viewing the price book on a date within the price book’s active and expiry dates.</p>
+   <p dir="ltr" class="FM_Table_Text">If no revision is in progress, the price book and price book header are read-only and cannot be modified.</p>
+</td>
+</tr>
+   <tr class="tr95">
+   <td class="td133">
+   <p dir="ltr" class="FM_Table_Text">Expired</p>
+</td>
+   <td class="td34">
+   <p dir="ltr" class="FM_Table_Text">X</p>
+</td>
+   <td class="td134">
+   <p dir="ltr" class="FM_Table_Text">Active price book has expired. You are viewing the price book on a date that is past the expiry date.</p>
+   <p dir="ltr" class="FM_Table_Text">Expired price book can be renewed by editing the expiry date.</p>
+   <p dir="ltr" class="FM_Table_Text">If no revision is in progress, the price book and price book header are read-only and cannot be modified.</p>
+</td>
+</tr>
+   <tr class="tr100">
+   <td class="td133">
+   <p dir="ltr" class="FM_Table_Text">Terminated</p>
+</td>
+   <td class="td34">
+   <p dir="ltr" class="FM_Table_Text">X</p>
+</td>
+   <td class="td134">
+   <p dir="ltr" class="FM_Table_Text">Active price book has been terminated by a price book administrator.</p>
+   <p dir="ltr" class="FM_Table_Text">Entire price book is read-only and cannot be modified.</p>
+   <p dir="ltr" class="FM_Table_Text">Terminated price books can be reactivated using the amendment process (selecting Request for Edit).</p>
+</td>
+</tr>
+   <tr class="tr32">
+   <td class="td133">
+   <p dir="ltr" class="FM_Table_Text">Cancelled</p>
+</td>
+   <td class="td34">
+   <p dir="ltr" class="FM_Table_Text">&nbsp;</p>
+</td>
+   <td class="td134">
+   <p dir="ltr" class="FM_Table_Text">A price book that has been cancelled. </p>
+</td>
+</tr>
+  </table>
+</div>
+  <p dir="ltr" class="FM_Heading_2">Proposed Pricing Status</p>
+
+  <p dir="ltr" class="FM_Body_Style">A price book’s proposed pricing status does not affect whether the price book can be referenced on an invoice or field ticket. This status tracks the status of any proposed pricing request. </p>
+
+<div width="100%" align="left">
+  <table border-spacing="0" dir="ltr" class="table135" border-collapse="collapse" style="max-width: 100% ;height: auto">
+   <tr class="tr136">
+   <th class="td137">
+   <p dir="ltr" class="FM_CellHeading">Status</p>
+</th>
+   <th class="td138">
+   <p dir="ltr" class="FM_CellHeading">Description</p>
+</th>
+</tr>
+   <tr class="tr32">
+   <td class="td139">
+   <p dir="ltr" class="FM_Table_Text">Requested</p>
+</td>
+   <td class="td140">
+   <p dir="ltr" class="FM_Table_Text">The pricing has been requested. </p>
+</td>
+</tr>
+   <tr class="tr32">
+   <td class="td139">
+   <p dir="ltr" class="FM_Table_Text">Submitted</p>
+</td>
+   <td class="td140">
+   <p dir="ltr" class="FM_Table_Text">The price book pricing has been completed and the version is now waiting for review and approval. </p>
+</td>
+</tr>
+   <tr class="tr32">
+   <td class="td139">
+   <p dir="ltr" class="FM_Table_Text">Re-Submitted</p>
+</td>
+   <td class="td140">
+   <p dir="ltr" class="FM_Table_Text">The price book pricing has been updated and re-submitted to the approver. </p>
+</td>
+</tr>
+   <tr class="tr32">
+   <td class="td139">
+   <p dir="ltr" class="FM_Table_Text">Disputed</p>
+</td>
+   <td class="td140">
+   <p dir="ltr" class="FM_Table_Text">The price book pricing has been reviewed and disputed by the price book approver. </p>
+</td>
+</tr>
+   <tr class="tr32">
+   <td class="td139">
+   <p dir="ltr" class="FM_Table_Text">blank</p>
+</td>
+   <td class="td140">
+   <p dir="ltr" class="FM_Table_Text">The request for price book pricing has been cancelled, or an amendment has not been initiated. </p>
+</td>
+</tr>
+  </table>
+</div>
+  <p dir="ltr" class="FM_Heading_1"><a name="XREF_20046_Viewing_the"></a>Viewing a Price Book</p>
+  <p dir="ltr" class="FM_Body_Style">This section contains the procedure for viewing a price book in OpenInvoice. </p>
+  <p dir="ltr" class="FM_Heading_2_HowTo">How to View the Price Book</p>
+  <p dir="ltr" class="FM_Permission___Start"><span class="FM_Bold">Permission:<span style="padding-left: 21pt;" class="FMAutoNumber_1"></span></span>Price Book View in a role assigned to a price book</p>
+  <p dir="ltr" class="FM_Steps"><span class="FM_Bold">Steps:<span style="padding-left: 8pt;" class="FMAutoNumber_1"></span></span></p>
+
+  <p dir="ltr" class="FM_Number_List_1___Start"><span class="FM_Bullet4">1.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Do one of the following:</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Select <span style="font-weight : bold; ">Price Book &gt; Dashboard</span> and click a counter in one of the portlets.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Perform a search by <span style="font-weight : bold; ">Price Book Name</span>&#160;using the <span style="font-weight : bold; ">Global Search</span> field in the main navigation bar.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Perform a search with multiple criteria by going to <span style="font-weight : bold; ">Price Book</span>&#160;&gt; <span style="font-weight : bold; ">Search</span>, then click <span style="font-weight : bold; ">Submit</span>.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">2.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click the <span style="font-weight : bold; ">Price Book Name</span>.</p>
+
+  <div align="center"><img alt="PriceBookMgmt_viewBuyer.jpg" id="image203" src="../../../assets/PriceBookMgmt_viewBuyer.jpg" style="max-width: 100% ;height: auto" />
+  </div>
+  <p dir="ltr" class="FM_Screenshot_Anchor">&nbsp;</p>
+  <p dir="ltr" class="FM_Screenshot_Anchor">&nbsp;</p>
+  <p dir="ltr" class="FM_Note___Start"><span class="FM_Bold">Note:<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Conditional buttons may display on the bottom of the screen if Supplier Collaboration is turned on. </p>
+
+  <p dir="ltr" class="FM_Heading_1"><a name="XREF_96726_Modifying_the"></a><a name="XREF_42518_Creating_a_Price"></a>Creating a Price Book</p>
+
+  <p dir="ltr" class="FM_Body_Style">This section contains the procedure for creating a price book.</p>
+
+  <p dir="ltr" class="FM_Heading_2_HowTo">How to Create a Price Book</p>
+
+  <p dir="ltr" class="FM_Body_Style">A buyer must create the price book. Suppliers can modify a price book if the <span style="font-weight : bold; ">Supplier Collaboration</span>&#160;setting is <span style="font-weight : bold; ">On</span>. </p>
+
+  <p dir="ltr" class="FM_Permission___Start"><span class="FM_Bold">Permission:<span style="padding-left: 21pt;" class="FMAutoNumber_1"></span></span>Price Book Admin (Site or Corpor<span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span>ate)</p>
+
+  <p dir="ltr" class="FM_Steps"><span class="FM_Bold">Steps:<span style="padding-left: 8pt;" class="FMAutoNumber_1"></span></span></p>
+
+  <p dir="ltr" class="FM_Number_List_1___Start"><span class="FM_Bullet4">1.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Select <span style="font-weight : bold; ">Price Book &gt; Create</span>. </p>
+
+  <div align="center"><img alt="PriceBookMgmt_createpricebook.jpg" id="image204" src="../../../assets/PriceBookMgmt_createpricebook.jpg" style="max-width: 100% ;height: auto" />
+  </div>
+  <p dir="ltr" class="FM_Screenshot_Anchor">&nbsp;</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">2.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Select a <span style="font-weight : bold; ">Supplier Name</span>.</p>
+
+  <p dir="ltr" class="FM_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 13pt;" class="FMAutoNumber_2"></span></span>Price books can only be set up for registered suppliers.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">3.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Enter a <span style="font-weight : bold; ">Price Book Name</span>&#160;and <span style="font-weight : bold; ">Price Book Description</span>.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">4.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Select the <span style="font-weight : bold; ">Currency</span>.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">5.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>(<span style="font-style : italic; ">Optional</span>) If you want your supplier to collaborate on your price book:</p>
+
+  <p dir="ltr" class="FM_Number_List_2___Start">1.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span>Select <span style="font-weight : bold; ">On</span>&#160;for <span style="font-weight : bold; ">Supplier Collaboration</span>. </p>
+
+  <p dir="ltr" class="FM_Number_List_2___Next">2.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span>Select <span style="font-weight : bold; ">Yes</span>&#160;for <span style="font-weight : bold; ">Send Notification To Supplier</span>&#160;if you want your supplier to be notified that the price book has been created.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">6.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>(<span style="font-style : italic; ">Optional</span>) Enter additional field information. </p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">7.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Create </span>or <span style="font-weight : bold; ">Create and Edit</span>.</p>
+
+  <p dir="ltr" class="FM_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 13pt;" class="FMAutoNumber_2"></span></span>The <span style="font-weight : bold; ">Create and Edit</span>&#160;button is available only if you have the Price Book Modify and Price Book Admin permissions.</p>
+
+  <p dir="ltr" class="FM_Heading_3">Price Book Details</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Price Book Name:</span>&#160;must be unique for a supplier. </p>
+
+  <p dir="ltr" class="FM_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 13pt;" class="FMAutoNumber_2"></span></span>The Price Book Name can be reused for a different supplier.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Agreement Number:</span>&#160;can be reused for different price books for the same supplier, but cannot be the same for different suppliers.</p>
+
+  <p dir="ltr" class="FM_Important_Start"><span class="FM_Bold">Important!<span style="padding-left: 30pt;" class="FMAutoNumber_1"></span></span>The combination of a Price Book Name and Agreement Number must be unique.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Currency:</span> a price book must have a single currency used for all rates and amounts on the price book.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Estimated Value:</span>&#160;</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Price Book:</span>&#160;estimated total spend of all invoices referencing this price book. The spend threshold notification will be sent when the total of all approved invoices referencing the price book reaches 85% of this value.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Minimum</span>&#160;and <span style="font-weight : bold; ">Maximum:</span>&#160;lower and upper limits of the negotiated value of the price book. These values are for reference only.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Auto Assign Roles: </span><span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>&#160;will assign all roles that have one of the Price Book View, Price Book Modify, or Price Book Approve permissions. </p>
+
+  <p dir="ltr" class="FM_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 13pt;" class="FMAutoNumber_2"></span></span>If the price book is created by an administrator with the Price Book Admin (Site) permission only the price book roles in that site will be added.</p>
+
+  <p dir="ltr" class="FM_Note_Indent___Next"><span class="FM_Bold"><span style="padding-left: 54pt;" class="FMAutoNumber_1"></span></span>If the price book is created by an administrator with the Price Book Admin (Corporate) permission all price book roles in the company will be added.</p>
+
+  <p dir="ltr" class="FM_Note_Indent___Next"><span class="FM_Bold"><span style="padding-left: 54pt;" class="FMAutoNumber_1"></span></span>If this setting is not selected, price book administrators will need to manually assign roles before the price book can go through the editing process.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Supplier Collaboration:</span> allows suppliers to provide updates to price books.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Send Notification To Supplier:</span>&#160;if set to <span style="font-weight : bold; ">Yes</span>, then an email will be sent to the supplier when the price book is created. </p>
+
+  <p dir="ltr" class="FM_Heading_1">Granting Access to a Price Book</p>
+
+  <p dir="ltr" class="FM_Body_Style">This section describes how to assign roles to your price books.</p>
+
+  <p dir="ltr" class="FM_Heading_2_HowTo">How to Modify the Roles Assigned to a Price Book</p>
+
+  <p dir="ltr" class="FM_Permission___Start"><span class="FM_Bold">Permission:<span style="padding-left: 21pt;" class="FMAutoNumber_1"></span></span>Price Book Admin (Site or Corporate)</p>
+
+  <p dir="ltr" class="FM_Steps"><span class="FM_Bold">Steps:<span style="padding-left: 8pt;" class="FMAutoNumber_1"></span></span></p>
+
+  <p dir="ltr" class="FM_Number_List_1___Start"><span class="FM_Bullet4">1.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Do one of the following:</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Select <span style="font-weight : bold; ">Price Book &gt; Dashboard</span> and click a counter in one of the portlets.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Perform a search by <span style="font-weight : bold; ">Price Book</span>&#160;<span style="font-weight : bold; ">Name</span>&#160;using the <span style="font-weight : bold; ">Global Search</span> field in the main navigation bar.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Perform a search with multiple criteria by going to <span style="font-weight : bold; ">Price Book</span>&#160;&gt; <span style="font-weight : bold; ">Search</span>.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">2.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click the <span style="font-weight : bold; ">Price Book</span>&#160;<span style="font-weight : bold; ">Name</span>.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">3.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click the <span style="font-weight : bold; ">Administration</span> tab.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">4.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Do one of the following:</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>To assign roles to a price book, select <span style="font-weight : bold; ">Unassigned Roles</span>&#160;from the <span style="font-weight : bold; ">Display</span>&#160;drop-down list; then click <span style="font-weight : bold; ">Apply Filter</span>. The roles available to assign are displayed. </p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>To remove roles from a price book, select <span style="font-weight : bold; ">Assigned Roles</span>&#160;from the <span style="font-weight : bold; ">Display </span>drop-down list; then click <span style="font-weight : bold; ">Apply Filter</span>. The roles available for removal are displayed. </p>
+
+  <p dir="ltr" class="FM_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 13pt;" class="FMAutoNumber_2"></span></span>Only roles with Price Book View, Price Book Modify, or Price Book Approve permissions are displayed in the <span style="font-weight : bold; ">Administration</span>&#160;tab. </p>
+
+  <p dir="ltr" class="FM_Note_Indent___Next"><span class="FM_Bold"><span style="padding-left: 54pt;" class="FMAutoNumber_1"></span></span>Expand the number in the <span style="font-weight : bold; ">Users</span> column to display the users assigned to the role.</p>
+
+  <p dir="ltr" class="FM_Note_Indent___Next"><span class="FM_Bold"><span style="padding-left: 54pt;" class="FMAutoNumber_1"></span></span>In the <span style="font-weight : bold; ">Notifications</span> columns, a green checkmark indicates that notifications are enabled.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">5.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Select the checkbox next to the roles you want to assign or remove.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">6.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Add Roles</span>&#160;or <span style="font-weight : bold; ">Remove Roles</span>.</p>
+
+  <p dir="ltr" class="FM_Screenshot_Anchor"><span style="font-size: small;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+
+<div width="100%" align="left">
+  <table border-spacing="0" dir="ltr" class="table141" border-collapse="collapse" style="max-width: 100% ;height: auto">
+   <tr class="tr142">
+   <td class="td143">
+   <p dir="ltr" class="FM_Screenshot_Anchor" style="display:inline"><img alt="PriceBookOverview_modifyroles.png" id="image205" src="../../../assets/PriceBookOverview_modifyroles.png" style="max-width: 100% ;height: auto" />&nbsp;</p>
+</td>
+</tr>
+  </table>
+</div>
+  <p dir="ltr" class="FM_Screenshot_Anchor"><span style="font-size: small;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+
+  <p dir="ltr" class="FM_Heading_2_HowTo">How to Modify the Price Books Assigned to a Role</p>
+
+  <p dir="ltr" class="FM_Permission___Start"><span class="FM_Bold">Permission:<span style="padding-left: 21pt;" class="FMAutoNumber_1"></span></span>Price Book Admin (Site or Corporate)</p>
+
+  <p dir="ltr" class="FM_Steps"><span class="FM_Bold">Steps:<span style="padding-left: 8pt;" class="FMAutoNumber_1"></span></span></p>
+
+  <p dir="ltr" class="FM_Number_List_1___Start"><span class="FM_Bullet4">1.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Select <span style="font-weight : bold; ">Price Book &gt; Role Management</span>.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">2.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Select a role.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">3.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Do one of the following:</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>To assign price books to a role, select <span style="font-weight : bold; ">Unassigned Price Books</span>&#160;from the <span style="font-weight : bold; ">Display</span> drop-down list.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>To remove price books from a role, select <span style="font-weight : bold; ">Assigned Price Books</span>&#160;from the <span style="font-weight : bold; ">Display</span> drop-down list.</p>
+
+  <p dir="ltr" class="FM_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 13pt;" class="FMAutoNumber_2"></span></span>Price Books are listed if the role’s site is a configured price book site.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">4.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Filter the list of price books by:</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Configured Buyer Site to restrict the list to the price books associated with the site.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Supplier Name to restrict the list to the price books for that supplier.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">5.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Apply Filter</span>. </p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">6.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Select the checkbox next to the price books you want to assign or remove.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">7.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Add Price Books</span>&#160;or <span style="font-weight : bold; ">Remove Price Books</span>.</p>
+
+  <div align="center"><img alt="PriceBookOverview_modifypricebooks.jpg" id="image206" src="../../../assets/PriceBookOverview_modifypricebooks.jpg" style="max-width: 100% ;height: auto" />
+  </div>
+  <p dir="ltr" class="FM_Screenshot_Anchor">&nbsp;</p>
+
+  <p dir="ltr" class="FM_Table_Text">Example of removing price books from a role.</p>
+
+  <p dir="ltr" class="FM_Heading_2_HowTo">How to Configure Price Book Notifications</p>
+
+  <p dir="ltr" class="FM_Permission___Start"><span class="FM_Bold">Permission:<span style="padding-left: 21pt;" class="FMAutoNumber_1"></span></span>Price Book Admin (Site or Corporate).</p>
+
+  <p dir="ltr" class="FM_Steps"><span class="FM_Bold">Steps:<span style="padding-left: 8pt;" class="FMAutoNumber_1"></span></span></p>
+
+  <p dir="ltr" class="FM_Number_List_1___Start"><span class="FM_Bullet4">1.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Select <span style="font-weight : bold; ">Price Book &gt; Role Management</span>.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">2.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Filter the list of roles by:</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Supplier Name to narrow the list to the roles that are currently assigned a price book for that supplier.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>User to narrow the list to the roles in which that user is a member.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">3.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click a <span style="font-weight : bold; ">Role Name</span>. </p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">4.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click the <span style="font-weight : bold; ">Notifications</span>&#160;tab. </p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">5.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Select the checkbox next to the notifications that this role should receive.</p>
+
+  <div align="center"><img alt="PriceBookOverview_pricebooknotifications.jpg" id="image207" src="../../../assets/PriceBookOverview_pricebooknotifications.jpg" style="max-width: 100% ;height: auto" />
+  </div>
+  <p dir="ltr" class="FM_Screenshot_Anchor">&nbsp;</p>
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">6.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Submit</span>.</p>
+  <p dir="ltr" class="FM_Heading_2_HowTo">How to Place a Price Book into Edit Mode</p>
+  <p dir="ltr" class="FM_Permission___Start"><span class="FM_Bold">Permission:<span style="padding-left: 21pt;" class="FMAutoNumber_1"></span></span>Price Book Admin (Site or Corporate)</p>
+  <p dir="ltr" class="FM_Steps"><span class="FM_Bold">Steps:<span style="padding-left: 8pt;" class="FMAutoNumber_1"></span></span></p>
+
+  <p dir="ltr" class="FM_Number_List_1___Start"><span class="FM_Bullet4">1.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Do one of the following:</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Select <span style="font-weight : bold; ">Price Book &gt; Dashboard</span> and click a counter in one of the portlets.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Perform a search by <span style="font-weight : bold; ">Price Book Name</span>&#160;using the <span style="font-weight : bold; ">Global Search</span> field in the main navigation bar.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Perform a search with multiple criteria by going to <span style="font-weight : bold; ">Price Book</span>&#160;&gt; <span style="font-weight : bold; ">Search</span>.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">2.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click the <span style="font-weight : bold; ">Price Book</span>&#160;<span style="font-weight : bold; ">Name</span>.</p>
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">3.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click the <span style="font-weight : bold; ">Request for Edit</span> button.</p>
+
+  <div align="center"><img alt="PriceBook_pricebooktab.jpg" id="image208" src="../../../assets/PriceBook_pricebooktab.jpg" style="max-width: 100% ;height: auto" />
+  </div>
+  <p dir="ltr" class="FM_Screenshot_Anchor">&nbsp;</p>
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">4.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Enter an optional comment.</p>
+  <div align="center"><img alt="PriceBook_editcomments.jpg" id="image209" src="../../../assets/PriceBook_editcomments.jpg" style="max-width: 100% ;height: auto" />
+  </div>
+  <p dir="ltr" class="FM_Screenshot_Anchor">&nbsp;</p>
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">5.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Submit</span>.</p>
+  <p dir="ltr" class="FM_Note___Start"><span class="FM_Bold">Note:<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>When the price book is placed into edit mode, a new copy of the price book is created for editing. The existing copy of the price book continues to be referenced on invoices and tickets until the edited price book is approved and activated.</p>
+  <p dir="ltr" class="FM_Heading_2_HowTo">How to Add a Single Product or Service to a Price Book</p>
+  <p dir="ltr" class="FM_Permission___Start"><span class="FM_Bold">Permission:<span style="padding-left: 21pt;" class="FMAutoNumber_1"></span></span>Price Book Modify </p>
+
+  <p dir="ltr" class="FM_Note___Start"><span class="FM_Bold">Note:<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>A user with Price Book Modify permissions can only modify pricing if the role with the Price Book Modify permissions is assigned to the price book.</p>
+
+  <p dir="ltr" class="FM_Prerequisite___Start"><span class="FM_Bold">Prerequisite:<span style="padding-left: 18pt;" class="FMAutoNumber_1"></span></span>A price book administrator has initiated the Price Book Approval workflow.The price book status must be <span style="font-weight : bold; ">New</span>&#160;or <span style="font-weight : bold; ">Active</span>.</p>
+  <p dir="ltr" class="FM_Steps"><span class="FM_Bold">Steps:<span style="padding-left: 8pt;" class="FMAutoNumber_1"></span></span></p>
+
+  <p dir="ltr" class="FM_Number_List_1___Start"><span class="FM_Bullet4">1.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Do one of the following:</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Select <span style="font-weight : bold; ">Price Book &gt; Dashboard</span> and click a counter in one of the portlets.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Perform a search by <span style="font-weight : bold; ">Price Book Name</span>&#160;using the <span style="font-weight : bold; ">Global Search</span> field in the main navigation bar.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Perform a search with multiple criteria by going to <span style="font-weight : bold; ">Price Book</span>&#160;&gt; <span style="font-weight : bold; ">Search</span>.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">2.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click the <span style="font-weight : bold; ">Price Book Name</span>.</p>
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">3.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click the <span style="font-weight : bold; ">Price Entries </span>tab.</p>
+  <p dir="ltr" class="FM_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 13pt;" class="FMAutoNumber_2"></span></span>By default, all pricing records for all products and services are listed. Apply a filter to narrow the list. Enter all or part of the product/service and click <span style="font-weight : bold; ">Apply Filter</span>.</p>
+
+  <div align="center"><img alt="PriceBook_priceentries.jpg" id="image210" src="../../../assets/PriceBook_priceentries.jpg" style="max-width: 100% ;height: auto" />
+  </div>
+  <p dir="ltr" class="FM_Screenshot_Anchor">&nbsp;</p>
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">4.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span><span style="font-size  : 5.0pt; "></span>Click <span style="font-weight : bold; ">Request for Edit</span> to update the price book.</p>
+  <p dir="ltr" class="FM_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 13pt;" class="FMAutoNumber_2"></span></span>The price book is now locked by the user. </p>
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">5.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Add Product/Service</span> to add a new product/service to the price book.</p>
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">6.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span><span style="font-size  : 5.0pt; "></span>Enter all or part of a description in the <span style="font-weight : bold; ">Select Product/Service</span>&#160;field and click the <span style="font-weight : bold; ">Search</span>&#160;icon. Use an asterisk (*) to denote the unknown part of the description.</p>
+  <div align="center"><img alt="PriceBook_addProductService.jpg" id="image211" src="../../../assets/PriceBook_addProductService.jpg" style="max-width: 100% ;height: auto" />
+  </div>
+  <p dir="ltr" class="FM_Screenshot_Anchor">&nbsp;</p>
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">7.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Select the product/service from the list then click <span style="font-weight : bold; ">Submit</span>.</p>
+  <div align="center"><img alt="PriceBook_productsearch.jpg" id="image212" src="../../../assets/PriceBook_productsearch.jpg" style="max-width: 100% ;height: auto" />
+  </div>
+  <p dir="ltr" class="FM_Screenshot_Anchor">&nbsp;</p>
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">8.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span><span style="font-style : italic; ">(Optional) </span>Enter the <span style="font-weight : bold; ">Purchase Category</span>, <span style="font-weight : bold; ">Item Master</span>, and/or <span style="font-weight : bold; ">Detail Comments</span>.</p>
+
+  <p dir="ltr" class="FM_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 13pt;" class="FMAutoNumber_2"></span></span>The <span style="font-weight : bold; ">Purchase Category</span>&#160;is a buyer-managed list and supports a code and description. The field supports type-ahead entries and will display matches as you enter text. You can type *** to display the first 10 Purchase Categories.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">9.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Do one or more of the following:</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>If a blue circle alert appears, the supplier has modified the product/service in their catalog. Click <span style="font-weight : bold; ">Reconcile Price Book </span>to apply the supplier’s modification to the price book.</p>
+
+  <p dir="ltr" class="FM_Note_Indent2___Start"><span class="FM_Bold"><span style="padding-left: 36pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 13pt;" class="FMAutoNumber_2"></span></span>After reconciling, the alert and <span style="font-weight : bold; ">Reconcile Price Book</span> button will disappear.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Add Price Item</span>&#160;to add a blank pricing record. The record is added in edit mode. Click <span style="font-weight : bold; ">Continue</span>&#160;when done editing the pricing record.</p>
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Click the edit row or edit column icon to put a row or column in edit mode. Click <span style="font-weight : bold; ">Continue</span>&#160;when done editing the row or column.</p>
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Click the <span style="font-weight : bold; ">Delete</span> icon on a pricing record to remove that record.</p>
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Delete All Pricing</span> to remove all pricing records.</p>
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">10.<span style="padding-left: 5pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Submit</span>.</p>
+  <p dir="ltr" class="FM_Heading_2_HowTo">How to Modify the Pricing Record Using Batch Update</p>
+  <p dir="ltr" class="FM_Permission___Start"><span class="FM_Bold">Permission:<span style="padding-left: 21pt;" class="FMAutoNumber_1"></span></span>Price Book Modify </p>
+  <p dir="ltr" class="FM_Prerequisite___Start"><span class="FM_Bold">Prerequisite:<span style="padding-left: 18pt;" class="FMAutoNumber_1"></span></span>A price book administrator has initiated the Price Book Approval workflow.The price book status must be <span style="font-weight : bold; ">New</span>&#160;or <span style="font-weight : bold; ">Active</span>.</p>
+  <p dir="ltr" class="FM_Steps"><span class="FM_Bold">Steps:<span style="padding-left: 8pt;" class="FMAutoNumber_1"></span></span></p>
+
+  <p dir="ltr" class="FM_Number_List_1___Start"><span class="FM_Bullet4">1.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Do one of the following:</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Select <span style="font-weight : bold; ">Price Book &gt; Dashboard</span> and click a counter in one of the portlets.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Perform a search by <span style="font-weight : bold; ">Price Book Name</span>&#160;using the <span style="font-weight : bold; ">Global Search</span> field in the main navigation bar.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Perform a search with multiple criteria by going to <span style="font-weight : bold; ">Price Book</span>&#160;&gt; <span style="font-weight : bold; ">Search</span>.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">2.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click the <span style="font-weight : bold; ">Price Book Name</span>.</p>
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">3.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click the <span style="font-weight : bold; ">Price Entries </span>tab.</p>
+  <p dir="ltr" class="FM_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 13pt;" class="FMAutoNumber_2"></span></span>By default, all pricing records for all products and services are listed. Apply a filter to narrow the list. Enter all or part of the product/service and click <span style="font-weight : bold; ">Apply Filter</span>.</p>
+
+  <div align="center"><img alt="PriceBook_priceentries.jpg" id="image213" src="../../../assets/PriceBook_priceentries.jpg" style="max-width: 100% ;height: auto" />
+  </div>
+  <p dir="ltr" class="FM_Screenshot_Anchor">&nbsp;</p>
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">4.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span><span style="font-size  : 5.0pt; "></span>Enter the revised pricing information in the <span style="font-weight : bold; ">Batch Update </span>section.</p>
+  <p dir="ltr" class="FM_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 13pt;" class="FMAutoNumber_2"></span></span>Set the <span style="font-weight : bold; ">Date From</span>&#160;or <span style="font-weight : bold; ">Date To</span> values to a specific date.</p>
+  <p dir="ltr" class="FM_Note_Indent___Next"><span class="FM_Bold"><span style="padding-left: 54pt;" class="FMAutoNumber_1"></span></span>Modify the existing Min Rate and Max Rate by applying a percentage Increase or Decrease.</p>
+  <p dir="ltr" class="FM_Note_Indent___Next"><span class="FM_Bold"><span style="padding-left: 54pt;" class="FMAutoNumber_1"></span></span>Set the Adjustment (%) and Adjustment Type to a specific value.</p>
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">5.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Select the checkbox for each pricing record to be modified.</p>
+  <p dir="ltr" class="FM_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 13pt;" class="FMAutoNumber_2"></span></span>Select the checkbox in the list header to select all pricing records in the list.</p>
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">6.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Apply to Selected</span>.</p>
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">7.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">OK</span> to confirm.</p>
+  <p dir="ltr" class="FM_Heading_1"><a name="XREF_79406_Modifying_a_Price"></a>Modifying a Price Book Using File Upload</p>
+  <p dir="ltr" class="FM_Body_Style">This section provides the procedure for modifying a price book using a spreadsheet. </p>
+  <p dir="ltr" class="FM_Important_Start"><span class="FM_Bold">Important!<span style="padding-left: 30pt;" class="FMAutoNumber_1"></span></span>The export/import file is an XLSX file. We have aligned the column headers with those you see when you download a supplier’s catalog. If you have templates that you maintain outside of OpenInvoice, you will need to update them and then save the file in XLSX format. </p>
+  <p dir="ltr" class="FM_Heading_2_HowTo">How to Import and Export the Price Book</p>
+
+  <p dir="ltr" class="FM_Permission___Start"><span class="FM_Bold">Permission:<span style="padding-left: 21pt;" class="FMAutoNumber_1"></span></span>Price Book Modify in a role assigned to a price book</p>
+
+  <p dir="ltr" class="FM_Prerequisite___Start"><span class="FM_Bold">Prerequisite:<span style="padding-left: 18pt;" class="FMAutoNumber_1"></span></span>In order to import a price book a price book administrator must have initiated the Price Book Approval workflow.The price book status must be <span style="font-weight : bold; ">New</span>&#160;or <span style="font-weight : bold; ">Active</span>.</p>
+  <p dir="ltr" class="FM_Steps"><span class="FM_Bold">Steps:<span style="padding-left: 8pt;" class="FMAutoNumber_1"></span></span></p>
+
+  <p dir="ltr" class="FM_Number_List_1___Start"><span class="FM_Bullet4">1.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Do one of the following:</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Select <span style="font-weight : bold; ">Price Book &gt; Dashboard</span> and click a counter in one of the portlets.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Perform a search by <span style="font-weight : bold; ">Price Book Name</span>&#160;using the <span style="font-weight : bold; ">Global Search</span> field in the main navigation bar.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Perform a search with multiple criteria by going to <span style="font-weight : bold; ">Price Book</span>&#160;&gt; <span style="font-weight : bold; ">Search</span>.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">2.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click the<span style="font-weight : bold; "> Price Book Name</span>.</p>
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">3.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click the <span style="font-weight : bold; ">Price Entries </span>tab.</p>
+
+  <div align="center"><img alt="PriceBook_priceentries.jpg" id="image214" src="../../../assets/PriceBook_priceentries.jpg" style="max-width: 100% ;height: auto" />
+  </div>
+  <p dir="ltr" class="FM_Screenshot_Anchor">&nbsp;</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">4.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Do one of the following:</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Export Price Book</span>&#160;to download and save the existing price book products and services with their associated pricing records. Use this file to modify existing price book items.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Export Catalog</span>&#160;to download and save the existing price book products and services with their associated pricing records as well as every product/service in the supplier’s catalog that is not part of the price book. Use this file to modify existing price book items and/or add any additional products and services from the supplier’s catalog to the price book.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">5.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>In the exported file, modify the pricing records. For more information about the column headings, refer to <a href="../../Appendix/Appendix/Appendix.htm#XREF_47512_PriceBook_Template">Price Book Template or Price Book/Supplier Catalog Template </a>.</p>
+  <p dir="ltr" class="FM_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 13pt;" class="FMAutoNumber_2"></span></span>All existing pricing records must be in the final XLSX file or they will be deleted when the file is imported.</p>
+  <p dir="ltr" class="FM_Note_Indent___Next"><span class="FM_Bold"><span style="padding-left: 54pt;" class="FMAutoNumber_1"></span></span><span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>&#160;automatically determines if a record needs to be added or modified based on the data of the records in the XLSX file.</p>
+  <p dir="ltr" class="FM_Note_Indent___Next"><span class="FM_Bold"><span style="padding-left: 54pt;" class="FMAutoNumber_1"></span></span>Leave the <span style="font-weight : bold; ">Action</span>&#160;column blank for records that are added or modified. </p>
+  <p dir="ltr" class="FM_Note_Indent___Next"><span class="FM_Bold"><span style="padding-left: 54pt;" class="FMAutoNumber_1"></span></span>Enter <span style="font-weight : bold; ">Delete</span>&#160;in the <span style="font-weight : bold; ">Action </span>to remove the pricing record from the price book.</p>
+  <p dir="ltr" class="FM_Note_Indent___Next"><span class="FM_Bold"><span style="padding-left: 54pt;" class="FMAutoNumber_1"></span></span>Do not modify or delete values in the <span style="font-weight : bold; ">Row#(DO NOT MODIFY/DELETE) </span>column.</p>
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">6.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Save your updated file in XLSX format.</p>
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">7.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>In <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>, click <span style="font-weight : bold; ">Import/Update</span>&#160;on the <span style="font-weight : bold; ">Price Entries</span> tab of the price book to be modified.</p>
+  <div align="center"><img alt="PriceBook_importpricebook.jpg" id="image215" src="../../../assets/PriceBook_importpricebook.jpg" style="max-width: 100% ;height: auto" />
+  </div>
+  <p dir="ltr" class="FM_Screenshot_Anchor">&nbsp;</p>
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">8.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Do one of the following:</p>
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>To upload a file saved on your desktop, select <span style="font-weight : bold; ">File </span>as the import method, click <span style="font-weight : bold; ">Choose File</span>, navigate to the file on your computer, and click <span style="font-weight : bold; ">Open</span>.</p>
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>To copy the contents of a spreadsheet, select <span style="font-weight : bold; ">Copy/Paste</span>&#160;as the import method, copy all columns and rows with data in your file, and paste it into the box.</p>
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">9.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click<span style="font-weight : bold; "> Upload</span>.</p>
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">10.<span style="padding-left: 5pt;" class="FMAutoNumber_1"></span></span>In the <span style="font-weight : bold; ">Price Book Import Staging Area</span>, review the proposed changes to the price book.</p>
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Expand the <span style="font-weight : bold; ">Legend</span> for a description of the review symbols.</p>
+  <div align="center"><img alt="PriceBook_Importlegend.jpg" id="image216" src="../../../assets/PriceBook_Importlegend.jpg" style="max-width: 100% ;height: auto" />
+  </div>
+  <p dir="ltr" class="FM_Screenshot_Anchor">&nbsp;</p>
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Expand the rows to view previous values.</p>
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">11.<span style="padding-left: 5pt;" class="FMAutoNumber_1"></span></span>Select the changes to apply.</p>
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">12.<span style="padding-left: 5pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Apply Changes</span>.</p>
+
+  <p dir="ltr" class="FM_Heading_2_HowTo">How to Map GL Coding to Purchase Categories</p>
+
+  <p dir="ltr" class="FM_Permission___Start"><span class="FM_Bold">Permission:<span style="padding-left: 21pt;" class="FMAutoNumber_1"></span></span>Price Book Admin</p>
+
+  <p dir="ltr" class="FM_Steps"><span class="FM_Bold">Steps:<span style="padding-left: 8pt;" class="FMAutoNumber_1"></span></span></p>
+
+  <p dir="ltr" class="FM_Number_List_1___Start"><span class="FM_Bullet4">1.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Select <span style="font-weight : bold; ">Price Book &gt; Purchase Category</span>. </p>
+
+  <div align="center"><img alt="PriceBookMgmt_GLCodingPurchaseCategory.jpg" id="image217" src="../../../assets/PriceBookMgmt_GLCodingPurchaseCategory.jpg" style="max-width: 100% ;height: auto" />
+  </div>
+  <p dir="ltr" class="FM_Screenshot_Anchor">&nbsp;</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">2.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click the button to the right of <span style="font-weight : bold; ">Apply Purchase Category Coding</span>. </p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">3.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Download Template</span>. </p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">4.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Update the content of the Purchase_Category_Coding.xlsx file.</p>
+
+  <p dir="ltr" class="FM_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 13pt;" class="FMAutoNumber_2"></span></span>The content can contain any combination of Purchase Category, Item Master, AFE type, and Cost Center type to a combination of Major, Minor, Subcode. </p>
+
+  <div align="center"><img alt="PriceBookMgmt_UploadPurchaseCategory.jpg" id="image218" src="../../../assets/PriceBookMgmt_UploadPurchaseCategory.jpg" style="max-width: 100% ;height: auto" />
+  </div>
+  <p dir="ltr" class="FM_Screenshot_Anchor">&nbsp;</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">5.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">browse</span>&#160;to upload your file. </p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">6.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Select the appropriate file on your computer. </p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">7.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Open</span>. The filename appears in the Upload box. </p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">8.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Submit</span>.</p>
+
+  <p dir="ltr" class="FM_Heading_2_HowTo">How to Submit a Price Book for Approval</p>
+  <p dir="ltr" class="FM_Permission___Start"><span class="FM_Bold">Permission:<span style="padding-left: 21pt;" class="FMAutoNumber_1"></span></span>Price Book Modify</p>
+  <p dir="ltr" class="FM_Steps"><span class="FM_Bold">Steps:<span style="padding-left: 8pt;" class="FMAutoNumber_1"></span></span></p>
+
+  <p dir="ltr" class="FM_Number_List_1___Start"><span class="FM_Bullet4">1.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Do one of the following:</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Select <span style="font-weight : bold; ">Price Book &gt; Dashboard</span> and click a counter in one of the portlets.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Perform a search by <span style="font-weight : bold; ">Price Book Name</span>&#160;using the <span style="font-weight : bold; ">Global Search </span>field in the main navigation bar.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Perform a search with multiple criteria by going to <span style="font-weight : bold; ">Price Book</span>&#160;&gt; <span style="font-weight : bold; ">Search</span>.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">2.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click the <span style="font-weight : bold; ">Price Book</span>&#160;<span style="font-weight : bold; ">Name</span>.</p>
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">3.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Submit for Approval</span>.</p>
+
+  <p dir="ltr" class="FM_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 13pt;" class="FMAutoNumber_2"></span></span>If you have the <span style="font-size  : 11.0pt; ">Price Book</span>&#160;Approve permission, you may click <span style="font-weight : bold; ">Submit and Approve </span>instead.</p>
+
+  <div align="center"><img alt="PriceBookMgmt_pendingPBworkflowactions.jpg" id="image219" src="../../../assets/PriceBookMgmt_pendingPBworkflowactions.jpg" style="max-width: 100% ;height: auto" />
+  </div>
+  <p dir="ltr" class="FM_Screenshot_Anchor">&nbsp;</p>
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">4.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span><span style="font-size  : 5.0pt; "></span>Click <span style="font-weight : bold; ">Submit</span> to confirm.</p>
+
+  <p dir="ltr" class="FM_Heading_2_HowTo">How to Review Then Approve or Dispute a Price Book</p>
+
+  <p dir="ltr" class="FM_Permission___Start"><span class="FM_Bold">Permission:<span style="padding-left: 21pt;" class="FMAutoNumber_1"></span></span>Price Book Approve</p>
+
+  <p dir="ltr" class="FM_Prerequisite___Start"><span class="FM_Bold">Prerequisite:<span style="padding-left: 18pt;" class="FMAutoNumber_1"></span></span>The price book has been submitted for approval.</p>
+
+  <p dir="ltr" class="FM_Steps"><span class="FM_Bold">Steps:<span style="padding-left: 8pt;" class="FMAutoNumber_1"></span></span></p>
+
+  <p dir="ltr" class="FM_Number_List_1___Start"><span class="FM_Bullet4">1.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Do one of the following:</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Select <span style="font-weight : bold; ">Price Book &gt; Dashboard</span> and click a counter in one of the portlets.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Perform a search by <span style="font-weight : bold; ">Price Book Name</span>&#160;using the <span style="font-weight : bold; ">Global Search</span> field in the main navigation bar.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Perform a search with multiple criteria by going to <span style="font-weight : bold; ">Price Book</span>&#160;&gt; <span style="font-weight : bold; ">Search</span>.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">2.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click the <span style="font-weight : bold; ">Price Book Name</span>.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">3.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click the <span style="font-weight : bold; ">Price Book</span> tab.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">4.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Review Changes.</span></p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">5.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Expand the <span style="font-weight : bold; ">Legend</span> for a description of the review symbols.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">6.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Expand rows to view previous values.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">7.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Do one of the following:</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Approve</span>.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Select the <span style="font-weight : bold; ">Dispute</span>&#160;checkbox to flag a line as the reason for the dispute and click <span style="font-weight : bold; ">Dispute</span>.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">8.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Enter a comment (required for dispute, optional for approve).</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">9.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Submit</span>.</p>
+
+  <p dir="ltr" class="FM_Note___Start"><span class="FM_Bold">Note:<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Approving the changes completes the Price Book Approval workflow and changes the price book status to Approved.</p>
+
+  <p dir="ltr" class="FM_Note___Next"><span class="FM_Bold"><span style="padding-left: 36pt;" class="FMAutoNumber_1"></span></span>Disputing the changes sends the price book back to a modifier for additional changes. If the approver flagged an item for reason of the dispute, the modifier will see a yellow circle next to the disputed item on the <span style="font-weight : bold; ">Review Changes </span>page.</p>
+
+  <p dir="ltr" class="FM_Heading_2_HowTo">How to Approve or Dispute a Price Book</p>
+
+  <p dir="ltr" class="FM_Permission___Start"><span class="FM_Bold">Permission:<span style="padding-left: 21pt;" class="FMAutoNumber_1"></span></span>Price Book Approve</p>
+
+  <p dir="ltr" class="FM_Prerequisite___Start"><span class="FM_Bold">Prerequisite:<span style="padding-left: 18pt;" class="FMAutoNumber_1"></span></span>The price book has been submitted for approval.</p>
+
+  <p dir="ltr" class="FM_Steps"><span class="FM_Bold">Steps:<span style="padding-left: 8pt;" class="FMAutoNumber_1"></span></span></p>
+
+  <p dir="ltr" class="FM_Number_List_1___Start"><span class="FM_Bullet4">1.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Do one of the following:</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Select <span style="font-weight : bold; ">Price Book &gt; Dashboard</span> and click a counter in one of the portlets.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Perform a search by <span style="font-weight : bold; ">Price Book Name</span>&#160;using the <span style="font-weight : bold; ">Global Search</span> field in the main navigation bar.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Perform a search with multiple criteria by going to <span style="font-weight : bold; ">Price Book</span>&#160;&gt; <span style="font-weight : bold; ">Search</span>.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">2.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click the <span style="font-weight : bold; ">Price Book Name</span>.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">3.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click either <span style="font-weight : bold; ">Approve</span>&#160;or <span style="font-weight : bold; ">Dispute</span>.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">4.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Enter a comment (required for dispute, optional for approve).</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">5.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Submit</span>.</p>
+
+  <p dir="ltr" class="FM_Note___Start"><span class="FM_Bold">Note:<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Approving the changes completes the Price Book Approval workflow and changes the price book status to Approved.</p>
+
+  <p dir="ltr" class="FM_Note___Next"><span class="FM_Bold"><span style="padding-left: 36pt;" class="FMAutoNumber_1"></span></span>Disputing the changes sends the price book back to a modifier for additional changes. If the approver flagged an item for reason of the dispute, the modifier will see a yellow circle next to the disputed item on the <span style="font-weight : bold; ">Review Changes </span>page.</p>
+
+  <p dir="ltr" class="FM_Heading_2_HowTo">How to Cancel an Amendment</p>
+
+  <p dir="ltr" class="FM_Permission___Start"><span class="FM_Bold">Permission:<span style="padding-left: 21pt;" class="FMAutoNumber_1"></span></span>Price Book Admin (Site or Corporate)</p>
+
+  <p dir="ltr" class="FM_Steps"><span class="FM_Bold">Steps:<span style="padding-left: 8pt;" class="FMAutoNumber_1"></span></span></p>
+
+  <p dir="ltr" class="FM_Number_List_1___Start"><span class="FM_Bullet4">1.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Do one of the following:</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Select <span style="font-weight : bold; ">Price Book &gt; Dashboard</span> and click a counter in one of the portlets.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Perform a search by <span style="font-weight : bold; ">Price Book</span>&#160;<span style="font-weight : bold; ">Name</span>&#160;using the <span style="font-weight : bold; ">Global Search</span> field in the main navigation bar.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Perform a search with multiple criteria by going to <span style="font-weight : bold; ">Price Book</span>&#160;&gt; <span style="font-weight : bold; ">Search</span>.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">2.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Cancel Amendment</span>.</p>
+
+  <div align="center"><img alt="PriceBookMgmt_cancelamendment.jpg" id="image220" src="../../../assets/PriceBookMgmt_cancelamendment.jpg" style="max-width: 100% ;height: auto" />
+  </div>
+  <p dir="ltr" class="FM_Screenshot_Anchor">&#160;</p>
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">3.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span><span style="font-size  : 5.0pt; "></span>Enter a comment.</p>
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">4.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Submit</span>.</p>
+  <p dir="ltr" class="FM_Note___Start"><span class="FM_Bold">Note:<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>The price book changes are deleted, the existing copy of the price book is made current, and the price book is returned to read-only mode with no change to the current price book status.</p>
+
+  <p dir="ltr" class="FM_Heading_1">Terminating a Price Book</p>
+
+  <p dir="ltr" class="FM_Body_Style">This section provides the procedures for deleting and terminating price books.</p>
+
+  <p dir="ltr" class="FM_Heading_2_HowTo">How to Delete a Price Book</p>
+
+  <p dir="ltr" class="FM_Permission___Start"><span class="FM_Bold">Permission:<span style="padding-left: 21pt;" class="FMAutoNumber_1"></span></span>Price Book Admin</p>
+
+  <p dir="ltr" class="FM_Prerequisite___Start"><span class="FM_Bold">Prerequisite:<span style="padding-left: 18pt;" class="FMAutoNumber_1"></span></span>The price book is New and the pricing request has not been submitted or has been cancelled.</p>
+
+  <p dir="ltr" class="FM_Steps"><span class="FM_Bold">Steps:<span style="padding-left: 8pt;" class="FMAutoNumber_1"></span></span></p>
+
+  <p dir="ltr" class="FM_Number_List_1___Start"><span class="FM_Bullet4">1.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Do one of the following:</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Select <span style="font-weight : bold; ">Price Book &gt; Dashboard</span> and click a counter in one of the portlets.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Perform a search by <span style="font-weight : bold; ">Price Book</span>&#160;<span style="font-weight : bold; ">Name</span>&#160;using the <span style="font-weight : bold; ">Global Search</span> field in the main navigation bar.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Perform a search with multiple criteria by going to <span style="font-weight : bold; ">Price Book</span>&#160;&gt; <span style="font-weight : bold; ">Search</span>.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">2.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click the <span style="font-weight : bold; ">Price Book</span>&#160;<span style="font-weight : bold; ">Name</span>.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">3.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Delete Price Book</span>. </p>
+
+  <p dir="ltr" class="FM_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 13pt;" class="FMAutoNumber_2"></span></span>Deleted price books are removed from the platform.</p>
+
+  <p dir="ltr" class="FM_Heading_2_HowTo">How to Terminate a Price Book</p>
+
+  <p dir="ltr" class="FM_Permission___Start"><span class="FM_Bold">Permission:<span style="padding-left: 21pt;" class="FMAutoNumber_1"></span></span>Price Book Admin</p>
+
+  <p dir="ltr" class="FM_Prerequisite___Start"><span class="FM_Bold">Prerequisite:<span style="padding-left: 18pt;" class="FMAutoNumber_1"></span></span>The price book is in either Active or Expired status.</p>
+
+  <p dir="ltr" class="FM_Steps"><span class="FM_Bold">Steps:<span style="padding-left: 8pt;" class="FMAutoNumber_1"></span></span></p>
+
+  <p dir="ltr" class="FM_Number_List_1___Start"><span class="FM_Bullet4">1.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Do one of the following:</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Select Price Book &gt; Dashboard and click a counter in one of the portlets.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Perform a search by Price Book Name using the Global Search field in the main navigation bar.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Perform a search with multiple criteria by going to Price Book &gt; Search.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">2.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click the <span style="font-weight : bold; ">Price Book</span>&#160;<span style="font-weight : bold; ">Name</span>.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">3.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Terminate Price Book</span>.</p>
+
+  <p dir="ltr" class="FM_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 13pt;" class="FMAutoNumber_2"></span></span>Tickets and invoices can still reference the terminated price book as long as the service date entered by the supplier overlaps the price book’s active period.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">4.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Enter a comment.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">5.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Submit</span>.</p>
+
+  <div align="center"><img alt="PriceBookMgmt_terminate.jpg" id="image221" src="../../../assets/PriceBookMgmt_terminate.jpg" style="max-width: 100% ;height: auto" />
+  </div>
+  <p dir="ltr" class="FM_Screenshot_Anchor">&nbsp;</p>
+
+  <p dir="ltr" class="FM_Heading_1"><a name="XREF_21538_Modifying_the"></a>Modifying the Price Book Summary Information</p>
+
+  <p dir="ltr" class="FM_Heading_2_HowTo">How to Edit the Price Book Details</p>
+
+  <p dir="ltr" class="FM_Permission___Start"><span class="FM_Bold">Permission:<span style="padding-left: 21pt;" class="FMAutoNumber_1"></span></span>Price Book Modify</p>
+
+  <p dir="ltr" class="FM_Prerequisite___Start"><span class="FM_Bold">Prerequisite:<span style="padding-left: 18pt;" class="FMAutoNumber_1"></span></span>A price book administrator has initiated the Price Book Approval workflow.</p>
+
+  <p dir="ltr" class="FM_Steps"><span class="FM_Bold">Steps:<span style="padding-left: 8pt;" class="FMAutoNumber_1"></span></span></p>
+
+  <p dir="ltr" class="FM_Number_List_1___Start"><span class="FM_Bullet4">1.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Do one of the following:</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Select <span style="font-weight : bold; ">Price Book &gt; Dashboard</span> and click a counter in one of the portlets.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Perform a search by <span style="font-weight : bold; ">Price Book Name</span>&#160;using the <span style="font-weight : bold; ">Global Search</span> field in the main navigation bar.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Perform a search with multiple criteria by going to <span style="font-weight : bold; ">Price Book</span>&#160;&gt; <span style="font-weight : bold; ">Search</span>.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">2.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click the<span style="font-weight : bold; "> Price Book Name</span>.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">3.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click the <span style="font-weight : bold; ">Summary</span> tab.</p>
+
+  <div align="center"><img alt="PriceBookMgmt_editdetails.png" id="image222" src="../../../assets/PriceBookMgmt_editdetails.png" style="max-width: 100% ;height: auto" />
+  </div>
+  <p dir="ltr" style="font-family : Arial; font-size  : 5.0pt;">&nbsp;</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">4.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Edit Header</span>.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">5.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Update the header information.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">6.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Submit</span>.</p>
+
+  <p dir="ltr" class="FM_Heading_2_HowTo">How to Edit the Price Book Activation Dates</p>
+
+  <p dir="ltr" class="FM_Permission___Start"><span class="FM_Bold">Permission:<span style="padding-left: 21pt;" class="FMAutoNumber_1"></span></span>Price Book Modify</p>
+
+  <p dir="ltr" class="FM_Prerequisite___Start"><span class="FM_Bold">Prerequisite:<span style="padding-left: 18pt;" class="FMAutoNumber_1"></span></span>A price book administrator has initiated the Price Book Approval workflow.</p>
+
+  <p dir="ltr" class="FM_Steps"><span class="FM_Bold">Steps:<span style="padding-left: 8pt;" class="FMAutoNumber_1"></span></span></p>
+
+  <p dir="ltr" class="FM_Number_List_1___Start"><span class="FM_Bullet4">1.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Do one of the following:</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Select <span style="font-weight : bold; ">Price Book &gt; Dashboard</span> and click a counter in one of the portlets.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Perform a search by <span style="font-weight : bold; ">Price Book Name</span>&#160;using the <span style="font-weight : bold; ">Global Search</span> field in the main navigation bar.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Perform a search with multiple criteria by going to <span style="font-weight : bold; ">Price Book</span>&#160;&gt; <span style="font-weight : bold; ">Search</span>.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">2.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click the<span style="font-weight : bold; "> Price Book Name</span>.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">3.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click the <span style="font-weight : bold; ">Summary</span> tab</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">4.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Edit Header</span>.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">5.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Enter the active date and expiry date.</p>
+
+  <p dir="ltr" class="FM_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 13pt;" class="FMAutoNumber_2"></span></span>A blank expiry date indicates that the price book will be active indefinitely.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">6.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Submit</span>. </p>
+
+  <p dir="ltr" class="FM_Note___Start"><span class="FM_Bold">Note:<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>The price book will not be activated until the dates for the price book are specified.</p>
+
+  <p dir="ltr" class="FM_Note___Next"><span class="FM_Bold"><span style="padding-left: 36pt;" class="FMAutoNumber_1"></span></span>A price book cannot be referenced if the invoice or ticket service date entered by the supplier is before the price book’s active date. </p>
+
+  <p dir="ltr" class="FM_Note___Next"><span class="FM_Bold"><span style="padding-left: 36pt;" class="FMAutoNumber_1"></span></span>After the price book has expired or been terminated, tickets and invoices can still reference the price book as long as the service date entered by the supplier overlaps the price book’s active period.</p>
+
+  <p dir="ltr" class="FM_Heading_2_HowTo">How to Configure Buyer and Supplier Sites</p>
+
+  <p dir="ltr" class="FM_Permission___Start"><span class="FM_Bold">Permission:<span style="padding-left: 21pt;" class="FMAutoNumber_1"></span></span>Price Book Admin (Site or Corporate)</p>
+
+  <p dir="ltr" class="FM_Note___Start"><span class="FM_Bold">Note:<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>You can configure buyer and supplier sites without putting the price book through the approval workflow.</p>
+
+  <p dir="ltr" class="FM_Steps"><span class="FM_Bold">Steps:<span style="padding-left: 8pt;" class="FMAutoNumber_1"></span></span></p>
+
+  <p dir="ltr" class="FM_Number_List_1___Start"><span class="FM_Bullet4">1.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Do one of the following:</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Select <span style="font-weight : bold; ">Price Book &gt; Dashboard</span> and click a counter in one of the portlets.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Perform a search by <span style="font-weight : bold; ">Price Book Name</span>&#160;using the <span style="font-weight : bold; ">Global Search</span> field in the main navigation bar.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Perform a search with multiple criteria by going to <span style="font-weight : bold; ">Price Book</span>&#160;&gt; <span style="font-weight : bold; ">Search</span>.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">2.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click the<span style="font-weight : bold; "> Price Book Name</span>.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">3.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click the <span style="font-weight : bold; ">Summary</span> tab</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">4.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Do one of the following:</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Click the <span style="font-weight : bold; ">Configured Buyer Sites</span> edit icon</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Click the <span style="font-weight : bold; ">Configured Supplier Sites</span> edit icon.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">5.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Do one of the following:</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Select <span style="font-weight : bold; ">All sites (plus future sites)</span> to apply the price book to all current and future sites.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Select <span style="font-weight : bold; ">Selected Sites</span>&#160;and select the checkbox next to the current site(s) that can reference the price book.</p>
+
+  <div align="center"><img alt="PriceBookMgmt_buyersites.png" id="image223" src="../../../assets/PriceBookMgmt_buyersites.png" style="max-width: 100% ;height: auto" />
+  </div>
+  <p dir="ltr" class="FM_Screenshot_Anchor">&nbsp;</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">6.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Submit</span>. </p>
+
+  <p dir="ltr" class="FM_Note___Start"><span class="FM_Bold">Note:<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>The configured buyer sites control whether the price book can be referenced based on the buyer site the supplier has selected. </p>
+
+  <p dir="ltr" class="FM_Note___Next"><span class="FM_Bold"><span style="padding-left: 36pt;" class="FMAutoNumber_1"></span></span>The supplier site configuration controls which supplier sites submitting invoices can reference the price book. </p>
+
+  <p dir="ltr" class="FM_Note___Next"><span class="FM_Bold"><span style="padding-left: 36pt;" class="FMAutoNumber_1"></span></span>Configured buyer and supplier sites are not subject to the Price Book Approval workflow process. They can be modified at any time as long as the price book is not terminated. </p>
+
+  <p dir="ltr" class="FM_Note___Next"><span class="FM_Bold"><span style="padding-left: 36pt;" class="FMAutoNumber_1"></span></span>Only supplier sites that the buyer has enabled for transactions appear in the list of configurable sites. By default, all buyer and enabled supplier sites are included in the price book.</p>
+
+  <p dir="ltr" class="FM_Heading_1"><a name="XREF_16853_Removing_Early_Pay"></a>Removing Early Pay Terms on Price Books</p>
+
+  <p dir="ltr" class="FM_Body_Style">Early Pay programs are replacing the existing Early Pay terms configured in price books. Existing Early Pay price books with a supplier will continue to be used until you assign an Early Pay program to that supplier. Once an Early Pay program is assigned to a supplier all price books with that supplier that include Early Pay terms are disabled. Refer to <a href="../../Configuration/CorporateConfig/CorporateConfig.htm#XREF_40513_Configuring_Early">Configuring Early Pay Programs</a>. </p>
+
+  <p dir="ltr" class="FM_Heading_2_HowTo">How to Remove Early Pay Terms on a Price Book</p>
+
+  <p dir="ltr" class="FM_Permission___Start"><span class="FM_Bold">Permission:<span style="padding-left: 21pt;" class="FMAutoNumber_1"></span></span>Price Book Modify and the OI EarlyPay license</p>
+
+  <p dir="ltr" class="FM_Steps"><span class="FM_Bold">Steps:<span style="padding-left: 8pt;" class="FMAutoNumber_1"></span></span></p>
+
+  <p dir="ltr" class="FM_Number_List_1___Start"><span class="FM_Bullet4">1.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Do one of the following:</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Select <span style="font-weight : bold; ">Price Book &gt; Dashboard</span> and click a counter in one of the portlets.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Perform a search by <span style="font-weight : bold; ">Price Book</span>&#160;<span style="font-weight : bold; ">Name</span>&#160;using the <span style="font-weight : bold; ">Global Search</span> field in the main navigation bar.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Perform a search with multiple criteria by going to <span style="font-weight : bold; ">Price Book</span>&#160;&gt; <span style="font-weight : bold; ">Search</span>.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">2.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click the <span style="font-weight : bold; ">Price Book Name</span>.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">3.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click the <span style="font-weight : bold; ">Early Pay</span> tab.</p>
+
+<div width="100%" align="left">
+  <table border-spacing="0" dir="ltr" class="table144" border-collapse="collapse" style="max-width: 100% ;height: auto">
+   <tr class="tr145">
+   <td class="td146">
+   <p dir="ltr" style="display:inline"><img alt="PriceBookMgmt_removeEPterms.png" id="image224" src="../../../assets/PriceBookMgmt_removeEPterms.png" style="max-width: 100% ;height: auto" />&nbsp;</p>
+</td>
+</tr>
+  </table>
+</div>
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">4.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Remove</span>.</p>
+
+  <p dir="ltr" class="FM_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 13pt;" class="FMAutoNumber_2"></span></span>This change is permanent and cannot be reversed or cancelled. You will not be asked to confirm this action. </p>
+
+  <p dir="ltr" class="FM_Heading_1"><a name="XREF_62330_Commenting_on_a"></a>Commenting on a Price Book</p>
+  <p dir="ltr" class="FM_Body_Style">This section provides the procedures for adding comments to a price book and price book documents. </p>
+  <p dir="ltr" class="FM_Heading_2_HowTo">How to Add a Comment to a Price Book</p>
+  <p dir="ltr" class="FM_Permission___Start"><span class="FM_Bold">Permission:<span style="padding-left: 21pt;" class="FMAutoNumber_1"></span></span>Price Book View</p>
+  <p dir="ltr" class="FM_Prerequisite___Start"><span class="FM_Bold">Prerequisite:<span style="padding-left: 18pt;" class="FMAutoNumber_1"></span></span>Price book must be Active and all changes approved.</p>
+  <p dir="ltr" class="FM_Steps"><span class="FM_Bold">Steps:<span style="padding-left: 8pt;" class="FMAutoNumber_1"></span></span></p>
+
+  <p dir="ltr" class="FM_Number_List_1___Start"><span class="FM_Bullet4">1.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Do one of the following:</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Select <span style="font-weight : bold; ">Price Book &gt; Dashboard</span> and click a counter in one of the portlets.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Perform a search by <span style="font-weight : bold; ">Price Book</span>&#160;<span style="font-weight : bold; ">Name</span>&#160;using the <span style="font-weight : bold; ">Global Search</span> field in the main navigation bar.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Perform a search with multiple criteria by going to <span style="font-weight : bold; ">Price Book</span>&#160;&gt; <span style="font-weight : bold; ">Search</span>.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">2.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click the <span style="font-weight : bold; ">Price Book Name</span>.</p>
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">3.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Comment</span>.</p>
+
+  <div align="center"><img alt="PriceBookMgmt_PBcomment.jpg" id="image225" src="../../../assets/PriceBookMgmt_PBcomment.jpg" style="max-width: 100% ;height: auto" />
+  </div>
+  <p dir="ltr" class="FM_Screenshot_Anchor">&nbsp;</p>
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">4.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Enter a comment.</p>
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">5.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Submit</span> to display your comment in the Price Book Journal.</p>
+
+  <p dir="ltr" class="FM_Heading_2_HowTo">How to Add or Edit Comments About Price Book Documents</p>
+
+  <p dir="ltr" class="FM_Permission___Start"><span class="FM_Bold">Permission:<span style="padding-left: 21pt;" class="FMAutoNumber_1"></span></span>Price Book View</p>
+
+  <p dir="ltr" class="FM_Steps"><span class="FM_Bold">Steps:<span style="padding-left: 8pt;" class="FMAutoNumber_1"></span></span></p>
+
+  <p dir="ltr" class="FM_Number_List_1___Start"><span class="FM_Bullet4">1.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Do one of the following:</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Select <span style="font-weight : bold; ">Price Book &gt; Dashboard</span> and click a counter in one of the portlets.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Perform a search by <span style="font-weight : bold; ">Price Book</span>&#160;<span style="font-weight : bold; ">Name</span>&#160;using the <span style="font-weight : bold; ">Global Search</span> field in the main navigation bar.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Perform a search with multiple criteria by going to <span style="font-weight : bold; ">Price Book</span>&#160;&gt; <span style="font-weight : bold; ">Search</span>.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">2.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click the <span style="font-weight : bold; ">Price Book Name</span>.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">3.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click the <span style="font-weight : bold; ">Documents</span> tab.</p>
+
+  <div align="center"><img alt="PriceBookMgmt_documentcomments.jpg" id="image226" src="../../../assets/PriceBookMgmt_documentcomments.jpg" style="max-width: 100% ;height: auto" />
+  </div>
+  <p dir="ltr" class="FM_Screenshot_Anchor">&nbsp;</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">4.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Do one of the following:</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Add Comments</span> to create a new comment that is not associated with one of the attached documents.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Edit</span> to modify an existing comment.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">5.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Next</span>.</p>
+
+  <p dir="ltr" class="FM_Heading_1"><a name="XREF_23779_Printing_a_Price"></a>Printing a Price Book</p>
+  <p dir="ltr" class="FM_Body_Style">This section contains the procedure for printing the components of a price book. </p>
+  <p dir="ltr" class="FM_Heading_2_HowTo">How to Print Components of a Price Book</p>
+  <p dir="ltr" class="FM_Permission___Start"><span class="FM_Bold">Permission:<span style="padding-left: 21pt;" class="FMAutoNumber_1"></span></span>Price Book View</p>
+  <p dir="ltr" class="FM_Steps"><span class="FM_Bold">Steps:<span style="padding-left: 8pt;" class="FMAutoNumber_1"></span></span></p>
+
+  <p dir="ltr" class="FM_Number_List_1___Start"><span class="FM_Bullet4">1.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Do one of the following:</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Select <span style="font-weight : bold; ">Price Book &gt; Dashboard</span> and click a counter in one of the portlets.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Perform a search by <span style="font-weight : bold; ">Price Book</span>&#160;<span style="font-weight : bold; ">Name</span>&#160;using the <span style="font-weight : bold; ">Global Search</span> field in the main navigation bar.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Perform a search with multiple criteria by going to <span style="font-weight : bold; ">Price Book</span>&#160;&gt; <span style="font-weight : bold; ">Search</span>.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">2.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click the <span style="font-weight : bold; ">Price Book Name</span>.</p>
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">3.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click the tab with the price book information you want to print.</p>
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">4.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Print Preview</span>.</p>
+
+  <div align="center"><img alt="PriceBookMgmt_PBcomment.jpg" id="image227" src="../../../assets/PriceBookMgmt_PBcomment.jpg" style="max-width: 100% ;height: auto" />
+  </div>
+  <p dir="ltr" class="FM_Screenshot_Anchor">&nbsp;</p>
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">5.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Use the print function in the pop-up window.</p>
+  <p dir="ltr" class="FM_Heading_1"><a name="XREF_28475_Sending_a_Price"></a>Sending a Price Book Message</p>
+  <p dir="ltr" class="FM_Body_Style">This section contains the procedure for sending a price book message. </p>
+  <p dir="ltr" class="FM_Heading_2_HowTo">How to Send a Price Book Message</p>
+  <p dir="ltr" class="FM_Permission___Start"><span class="FM_Bold">Permission:<span style="padding-left: 21pt;" class="FMAutoNumber_1"></span></span>Price Book View</p>
+  <p dir="ltr" class="FM_Steps"><span class="FM_Bold">Steps:<span style="padding-left: 8pt;" class="FMAutoNumber_1"></span></span></p>
+
+  <p dir="ltr" class="FM_Number_List_1___Start"><span class="FM_Bullet4">1.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Do one of the following:</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Select <span style="font-weight : bold; ">Price Book &gt; Dashboard</span> and click a counter in one of the portlets.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Perform a search by <span style="font-weight : bold; ">Price Book</span>&#160;<span style="font-weight : bold; ">Name</span>&#160;using the <span style="font-weight : bold; ">Global Search</span> field in the main navigation bar.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Perform a search with multiple criteria by going to <span style="font-weight : bold; ">Price Book</span>&#160;&gt; <span style="font-weight : bold; ">Search</span>.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">2.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click the <span style="font-weight : bold; ">Price Book Name</span>.</p>
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">3.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Send Message</span>.</p>
+
+  <div align="center"><img alt="PriceBookMgmt_sendmessage.jpg" id="image228" src="../../../assets/PriceBookMgmt_sendmessage.jpg" style="max-width: 100% ;height: auto" />
+  </div>
+  <p dir="ltr" class="FM_Screenshot_Anchor">&nbsp;</p>
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">4.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Select a recipient from the <span style="font-weight : bold; ">To</span>&#160;drop-down list. </p>
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">5.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Select a priority.</p>
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">6.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Select whether you want the message to be <span style="font-weight : bold; ">Public or Private</span>.</p>
+  <p dir="ltr" class="FM_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 13pt;" class="FMAutoNumber_2"></span></span>Public messages are visible by all users who have access to the price book, but only the recipient can reply to the message.</p>
+  <p dir="ltr" class="FM_Note_Indent___Next"><span class="FM_Bold"><span style="padding-left: 54pt;" class="FMAutoNumber_1"></span></span>Private messages are only visible to the sender and recipient.</p>
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">7.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Enter your message.</p>
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">8.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Submit</span>.</p>
+  <p dir="ltr" class="FM_Body_Style">&nbsp;</p>
+ </div>
+</body>
+
+</html>
+

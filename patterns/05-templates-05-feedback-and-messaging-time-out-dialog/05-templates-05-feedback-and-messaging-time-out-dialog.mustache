@@ -1,0 +1,28 @@
+<p>
+<button type="button" class="btn btn-default" data-toggle="modal" data-target="#sessionTimeOutDialog">
+        Click to open time out dialog
+    </button>
+</p>
+
+<div tabindex="-1" class="modal fade" role="dialog" aria-hidden="true" style="position:static">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <div class="lead modal-title">Are you still there?</div>
+            </div>
+            <div class="modal-body">
+                <p class="h5">Your session is about to expire.</p>
+                <p>
+                    For security reasons and protection of your corporate data, your session will expire in
+                    <br/>
+                    <strong><span class="text-danger" id="timeOutCountdown"></span></strong> seconds.
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-outline-success" (click)="okHandler()">Extend My Session</button>
+                <button type="button" class="btn btn-outline-danger" (click)="cancelHandler()">Sign Out</button>
+            </div>
+        </div>
+    </div>
+</div>

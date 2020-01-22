@@ -1,0 +1,244 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+ <title>PO_Collaboration</title>
+
+ <link rel="stylesheet" href="../../../../OpenInvoiceForBuyers_master.css" type="text/css" />
+
+
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style>
+ <meta name="generator" content="Adobe FrameMaker 2017" />
+<script type="text/javascript" src="../../../../template/scripts/rh.min.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/common.min.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/topic.min.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/constants.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/utils.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/mhutils.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/mhlang.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/mhver.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/settings.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/XmlJsReader.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/loadparentdata.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/loadscreen.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/loadprojdata.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/mhtopic.js"></script>
+ <link rel="stylesheet" type="text/css" href="../../../../template/styles/topic.min.css">
+<script type="text/javascript" >
+gRootRelPath = "../../../..";
+gCommonRootRelPath = "../../../..";
+gTopicId = "1.6_5";
+</script>
+ <meta name="brsprev" value="OpenInvoiceForBuyers_master/Purchase_Orders/Purchase_Order_Overview/PO_Overview/PO_Overview.htm">
+ <meta name="brsnext" value="OpenInvoiceForBuyers_master/Field_Tickets/FieldTicketOverview/FieldTicketOverview.htm">
+ <meta name="topic-breadcrumbs" content="Administrator & User Guide for Buyers" />
+</head>
+
+<body dir="ltr">
+<script type="text/javascript" src="../../../../ehlpdhtm.js"></script>
+
+ <div dir="ltr">
+  <p dir="ltr" class="FM_Chapter_Title">Purchase Order Collaboration</p>
+  <p dir="ltr" class="FM_Body_Style">This section outlines the buyer and supplier collaboration activities that move a purchase order through its life cycle. These topics are limited to the activities that prepare a purchase order to be referenced on an invoice or ticket.</p>
+  <p dir="ltr" class="FM_Note___Start"><span class="FM_Bold">Note:<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span><span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>&#160;assumes that the buyer has completed their internal approval process prior to posting the purchase order or change request to the <span data-name="ADP_Software_Name" data-val="OpenInvoice Platform" data-showval="TRUE" data-format="ADP_Software_Name">OpenInvoice Platform</span>. All purchase orders and change requests submitted to the <span data-name="ADP_Software_Name" data-val="OpenInvoice Platform" data-showval="TRUE" data-format="ADP_Software_Name">OpenInvoice Platform</span> are assumed to be approved by the buyer.</p>
+  <p dir="ltr" class="FM_Body_Style">The following topics are applicable to users who work with purchase orders as part of the collaboration process:</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><a href="#XREF_72885_Submitting_a"><span class="FM_ADP_TG__Link">Submitting a Purchase Order or Change Request</span></a></p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><a href="#XREF_80275_Removing_a"><span class="FM_ADP_TG__Link">Removing a Purchase Order from the Workflow</span></a></p>
+  <p dir="ltr" class="FM_Heading_2">Buyer and Registered Supplier Collaboration</p>
+  <p dir="ltr" class="FM_Body_Style">The general purchase order collaboration process is:</p>
+  <p dir="ltr" class="FM_Number_List_1___Start"><span class="FM_Bullet4">1.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>The buyer submits the purchase order or change request to <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>, with or without the auto-accept flag on.</p>
+  <p dir="ltr" class="FM_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 13pt;" class="FMAutoNumber_2"></span></span>Change requests have no direct impact on the current purchase order or workflow. A change request must be accepted for it to be used when validating tickets and invoices.</p>
+  <p dir="ltr" class="FM_Note_Indent___Next"><span class="FM_Bold"><span style="padding-left: 54pt;" class="FMAutoNumber_1"></span></span>To view the change request, click the <span style="font-weight : bold; ">Proposed</span>&#160;tab. All changes from the last accepted version of the purchase order are identified by icons and red text.</p>
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">2.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>If the auto-accept flag is not on, the supplier responds by accepting or rejecting the purchase order or change request.</p>
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">3.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>At any time, the supplier may create a counter offer.</p>
+  <p dir="ltr" class="FM_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 13pt;" class="FMAutoNumber_2"></span></span>Counter offers have no direct impact on the current purchase order, change request, or workflow. To accept a counter offer, the buyer must submit a corresponding change request.</p>
+  <p dir="ltr" class="FM_Note_Indent___Next"><span class="FM_Bold"><span style="padding-left: 54pt;" class="FMAutoNumber_1"></span></span>To view the counter offer, click <span style="font-weight : bold; ">Countered</span>&#160;in the PO Journal. Deleted lines will appear with <span style="font-weight : bold; ">0.00</span>&#160;in the <span style="font-weight : bold; ">Quantity</span>&#160;and <span style="font-weight : bold; ">Total</span>&#160;columns. Added lines will appear at the bottom of the <span style="font-weight : bold; ">Item</span>&#160;column with <span style="font-weight : bold; ">New</span>&#160;next to the new line number.</p>
+
+  <p dir="ltr" class="FM_Note_Indent___Next"><span class="FM_Bold"><span style="padding-left: 54pt;" class="FMAutoNumber_1"></span></span>The company preference <span style="font-weight : bold; ">Enable PO Counter Offers</span>&#160;must be enabled to permit suppliers to counter offer.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">4.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Once all of the requested goods and services have been invoiced, the supplier closes the purchase order to mark it complete.</p>
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">5.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>At any time, the buyer may cancel the purchase order.</p>
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">6.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Either the buyer or the supplier can reopen a closed or cancelled purchase order.</p>
+
+  <p dir="ltr" class="FM_Heading_2">Buyer and Unregistered Supplier Collaboration</p>
+
+  <p dir="ltr" class="FM_Body_Style">As a buyer working with an unregistered supplier all collaboration activities are performed by you. The collaboration actions you can perform are:</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Start"><span class="FM_Bullet4">1.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Submit the purchase order or change request to <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>, with the auto-accept flag on.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">2.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Once all of the requested goods and services have been invoiced cancel the purchase order to mark it complete.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">3.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>At any time, cancel the purchase order.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">4.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Reopen a cancelled purchase order.</p>
+
+  <p dir="ltr" class="FM_Heading_1"><a name="XREF_72885_Submitting_a"></a>Submitting a Purchase Order or Change Request</p>
+
+  <p dir="ltr" class="FM_Body_Style"><span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>&#160;facilitates purchase order collaboration and distribution and, as such, assumes that you have completed your internal approval process prior to posting the purchase order or change request to the <span data-name="ADP_Software_Name" data-val="OpenInvoice Platform" data-showval="TRUE" data-format="ADP_Software_Name">OpenInvoice Platform</span>. All purchase orders and change requests submitted to the <span data-name="ADP_Software_Name" data-val="OpenInvoice Platform" data-showval="TRUE" data-format="ADP_Software_Name">OpenInvoice Platform</span>&#160;are assumed to be approved by your company.</p>
+
+  <p dir="ltr" class="FM_Body_Style">A purchase order is submitted to the <span data-name="ADP_Software_Name" data-val="OpenInvoice Platform" data-showval="TRUE" data-format="ADP_Software_Name">OpenInvoice Platform</span>&#160;through integration using the PIDX OrderCreate schema and a change request is submitted using the PIDX OrderChange schema.</p>
+
+  <p dir="ltr" class="FM_Heading_2">Associating the Purchase Order to a Buyer Site</p>
+
+  <p dir="ltr" class="FM_Body_Style">A purchase order can only be associated with a single buyer site. When the purchase order or change request is imported, <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>&#160;will attempt to associate the purchase order with a buyer site using one of the following methods:</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>Derive the buyer site from the <span style="font-weight : bold; ">Non-Billing Inquiries</span> address.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>Derive the buyer site from the <span style="font-weight : bold; ">Bill To</span> address.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>Use the default e-site for the company (if configured).</p>
+
+  <p dir="ltr" class="FM_Body_Style">A site is derived from an address using either (in order of precedence): </p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>The DUNS+4 number in the purchase order address matching a configured DUNS+4 number for a site or department</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>The zip/postal code in the purchase order address matching a zip/postal code for a site address.</p>
+
+  <p dir="ltr" class="FM_Heading_2">Associating the Purchase Order with a Supplier</p>
+
+  <p dir="ltr" class="FM_Body_Style">A purchase order can be associated with one or more supplier sites. When the purchase order or change request is imported, <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>&#160;will attempt to associate the purchase order with an existing supplier and supplier site using the supplier number specified in the input file.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>If the supplier number matches one or more specific supplier sites, the purchase order is associated with only those sites.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>If the supplier number matches a supplier company identifier, the purchase order is associated with all sites for the supplier.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>If the supplier number does not match any supplier company identifiers, a new unregistered supplier with one site is created. There must be a supplier name and full address in the purchase order file. <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>&#160;will create a site using the city name for a site name. </p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>If the supplier number is associated with multiple suppliers, the purchase order is rejected.</p>
+
+  <p dir="ltr" class="FM_Note___Start"><span class="FM_Bold">Note:<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>If a user with the Corporate Partnership permission modifies the supplier number assigned to the supplier’s sites, all purchase orders associated with that supplier number are automatically updated with the modified sites.</p>
+
+  <p dir="ltr" class="FM_Heading_2">Auto-Accept</p>
+
+  <p dir="ltr" class="FM_Body_Style">Purchase orders and change requests can be posted using an auto-accept flag in the PIDX schema. Activating the auto-accept flag will result in the purchase order or change request being imported with a status of Accepted. Registered suppliers will not be able to accept or reject your proposed purchase order. Purchase orders and change requests with unregistered suppliers must be posted with the auto-accept flag activated in order for the purchase order to be available in the interface.</p>
+
+  <p dir="ltr" class="FM_Heading_2">Associating the Purchase Order with a Job Site and Activity</p>
+
+  <p dir="ltr" class="FM_Body_Style">A purchase order can be associated with a single Ticket job site and activity. During the purchase order import, <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>&#160;will attempt to associate the purchase order with a job site and activity using the activity business identifier specified in the input file.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>All purchase order lines must have the same activity business identifier.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>The activity business identifier must be preconfigured on a ticket activity and unique across all activities.</p>
+
+  <p dir="ltr" class="FM_Heading_2">Applying a Change Request to a Purchase Order</p>
+
+  <p dir="ltr" class="FM_Body_Style">A change request will fully replace the current (last accepted) purchase order. All elements intended to be on the final purchase order (net result of the current purchase order and the change request) must be included on the change request even if they have not been modified.</p>
+
+  <p dir="ltr" class="FM_Heading_3">Change Request Sequence</p>
+
+  <p dir="ltr" class="FM_Body_Style">All change requests must be sequenced to ensure that the net result of two or more changes is calculated properly. There are two methods of sequencing change requests:</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>Specify an integer value in the PIDX change request sequence element, and/or</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>Specify a transmission date and time in the SOAP header.</p>
+
+  <p dir="ltr" class="FM_Note___Start"><span class="FM_Bold">Note:<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Any change requests out of sequence will not be imported or presented to the supplier. </p>
+
+  <p dir="ltr" class="FM_Body_Style">In the absence of an original purchase order, the first change request received will be treated as an original purchase order. If an original purchase order arrives after a change request it will be deemed to have arrived out of sequence and will not be imported.</p>
+
+  <p dir="ltr" class="FM_Heading_3">Reconciliation of Elements</p>
+
+  <p dir="ltr" class="FM_Body_Style"><span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>&#160;will compare the change request line numbers to the line numbers of the current purchase order and update the lines accordingly:</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>If a line number on the change request does not exist on the current purchase order, a new line will be added to the purchase order.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>If a line number exists on the change request and the current purchase order, the purchase order line will be modified.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>If a line does not exist on the change request but does exist on the purchase order, the purchase order line will be deleted. </p>
+
+  <p dir="ltr" class="FM_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 13pt;" class="FMAutoNumber_2"></span></span>A deleted purchase order line will be represented in <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>&#160;by replacing the quantity (for a detail line) or amount (for a limit order line) with zero (<span style="font-weight : bold; ">0</span>).</p>
+
+  <p dir="ltr" class="FM_Heading_3">Modifying Values with a Change Request</p>
+
+  <p dir="ltr" class="FM_Body_Style">Most values on a purchase order can be modified with the exception of these elements: Buyer, Buyer Site, Purchase Order Number, Purchase Order Date, Supplier, and Supplier Site. </p>
+
+  <p dir="ltr" class="FM_Heading_2">Validation of Posted Purchase Order and Change Requests</p>
+
+  <p dir="ltr" class="FM_Body_Style"><span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>&#160;will perform the following validation checks when a purchase order or change request is posted. The purchase order or change request will not be imported or presented to the supplier if any of the following rules are violated:</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>The purchase order number must be unique to the buyer and supplier.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>The change request cannot modify the purchase order number, purchase order date, supplier or buyer.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>A change request must be received by <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span> in the sequence it was transmitted by the buyer.</p>
+
+  <p dir="ltr" class="FM_Body_Style">If a value in the import file is not found in the corresponding reference data look up (AFE or cost center), the file is still imported but without the value. <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>&#160;does not validate that the cost center is valid for the AFE, just that the AFE and cost center numbers exist in the system. However, any major.minor or major.minor.subcode strings must be valid. </p>
+
+  <p dir="ltr" class="FM_Heading_1"><a name="XREF_80275_Removing_a"></a>Removing a Purchase Order from the Workflow</p>
+  <p dir="ltr" class="FM_Body_Style">Once all of the purchase order’s products and services have been invoiced, a supplier can close the purchase order to mark it complete. At any time, a buyer can cancel a purchase order. Existing references to a closed or cancelled purchase order on a ticket or invoice are still valid, however, new references cannot be added. A closed or cancelled purchase order can be reopened by either the buyer or supplier.</p>
+
+  <p dir="ltr" class="FM_Heading_2_HowTo">How to Cancel a Purchase Order</p>
+
+  <p dir="ltr" class="FM_Body_Style">Use this procedure to cancel a purchase order. </p>
+
+  <p dir="ltr" class="FM_Permission___Start"><span class="FM_Bold">Permission:<span style="padding-left: 21pt;" class="FMAutoNumber_1"></span></span>PO Modify</p>
+
+  <p dir="ltr" class="FM_Steps"><span class="FM_Bold">Steps:<span style="padding-left: 8pt;" class="FMAutoNumber_1"></span></span></p>
+
+  <p dir="ltr" class="FM_Number_List_1___Start"><span class="FM_Bullet4">1.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Do one of the following:</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Select <span style="font-weight : bold; ">Invoice </span>&gt; <span style="font-weight : bold; ">Dashboard</span>&#160;and click one of the <span style="font-weight : bold; ">Pending</span>&#160;or <span style="font-weight : bold; ">Accepted</span>&#160;counters in the <span style="font-weight : bold; ">Purchase Orders </span>portlet.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Select <span style="font-weight : bold; ">Invoice &gt; PO Search</span>; enter search criteria; then click <span style="font-weight : bold; ">Apply Filter</span>.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">2.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click the <span style="font-weight : bold; ">PO number</span>.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">3.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Cancel PO</span>.</p>
+
+  <div align="center"><img alt="PO_Collaboration_cancel.png" id="image243" src="../../../../assets/PO_Collaboration_cancel.png" style="max-width: 100% ;height: auto" />
+  </div>
+  <p dir="ltr" class="FM_Screenshot_Anchor">&nbsp;</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">4.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Enter a <span style="font-weight : bold; ">Comment</span>.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">5.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Submit</span>.</p>
+
+  <p dir="ltr" class="FM_Heading_2_HowTo">How to Reopen a Purchase Order</p>
+  <p dir="ltr" class="FM_Body_Style">Use this procedure to reopen a purchase order. </p>
+  <p dir="ltr" class="FM_Permission___Start"><span class="FM_Bold">Permission:<span style="padding-left: 21pt;" class="FMAutoNumber_1"></span></span>PO Modify</p>
+
+  <p dir="ltr" class="FM_Steps"><span class="FM_Bold">Steps:<span style="padding-left: 8pt;" class="FMAutoNumber_1"></span></span></p>
+
+  <p dir="ltr" class="FM_Number_List_1___Start"><span class="FM_Bullet4">1.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Select <span style="font-weight : bold; ">Invoice &gt; PO Search</span>.</p>
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">2.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Enter the search criteria.</p>
+  <p dir="ltr" class="FM_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 13pt;" class="FMAutoNumber_2"></span></span>If you want to return all purchase orders, leave all fields blank.</p>
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">3.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Apply Filter</span>. </p>
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">4.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click the <span style="font-weight : bold; ">PO number</span>.</p>
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">5.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Re-Open PO</span>.</p>
+  <div align="center"><img alt="PO_Collaboration_reopen_Supplier.jpg" id="image244" src="../../../../assets/PO_Collaboration_reopen_Supplier.jpg" style="max-width: 100% ;height: auto" />
+  </div>
+  <p dir="ltr" class="FM_Screenshot_Anchor">&nbsp;</p>
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">6.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Enter a <span style="font-weight : bold; ">Comment</span>.</p>
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">7.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Submit</span>.</p>
+  <p dir="ltr" class="FM_Body_Style">&nbsp;</p>
+ </div>
+</body>
+
+</html>
+

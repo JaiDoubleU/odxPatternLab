@@ -1,0 +1,67 @@
+
+<div class="table-responsive multi-row-header">
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th width="15">&nbsp;</th>
+                <th colspan=2>Column 1</th>
+                <th colspan=2>Column 2</th>
+                <th colspan=2>Column 3</th>
+                <th colspan=2>Column 4</th>
+            </tr>
+            <tr>
+                 <th width="15">&nbsp;</th>
+                <th>Column 5</th>
+                <th>Column 6</th>
+                <th>Column 7</th>
+                <th>Column 8</th>
+                <th>Column 9</th>
+                <th>Column 10</th>
+                <th>Column 11</th>
+                <th>Column 12</th>
+            </tr>
+        </thead>
+        <tbody>
+              <tr data-toggle="collapse" data-target="#toggle1" class="accordion-toggle">
+                <td width="15">
+                    <a class="btn btn-default btn-xs fas fa-chevron-down" onmouseup="$(this).toggleClass('fa-chevron-down'); $(this).addClass('fa-chevron-up');"></a>
+                </td>
+                <td colspan=2>row 1 cell 1</td>
+                <td colspan=2>row 1 cell 2</td>
+                <td colspan=2>row 1 cell 3</td>
+                <td colspan=2>row 1 cell 4</td>
+            </tr>
+            <tr class="accordian-body collapse out" id="toggle1">
+                <td></td>
+                <td>row 2 cell 1</td>
+                <td>row 2 cell 2</td>
+                <td>row 2 cell 3</td>
+                <td>row 2 cell 4</td>
+                <td>row 2 cell 5</td>
+                <td>row 2 cell 6</td>
+                <td>row 2 cell 7</td>
+                <td>row 2 cell 8</td>
+            </tr>
+        </tbody>
+        <tbody>
+              <tr data-toggle="collapse" data-target="#toggle2" class="accordion-toggle">
+                <td width="15"><a class="btn btn-default btn-xs fas fa-chevron-down" onmouseup="$(this).toggleClass('fa-chevron-down'); $(this).addClass('fa-chevron-up');"></a></td>
+                <td colspan=2>row 3 cell 1</td>
+                <td colspan=2>row 3 cell 2</td>
+                <td colspan=2>row 3 cell 3</td>
+                <td colspan=2>row 3 cell 4</td>
+            </tr>
+              <tr  class="accordian-body collapse out" id="toggle2">
+                <td></td>
+                <td>row 2 cell 1</td>
+                <td>row 2 cell 2</td>
+                <td>row 2 cell 3</td>
+                <td>row 2 cell 4</td>
+                <td>row 2 cell 5</td>
+                <td>row 2 cell 6</td>
+                <td>row 2 cell 7</td>
+                <td>row 2 cell 8</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

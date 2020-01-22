@@ -1,0 +1,375 @@
+<div class="container-fluid">
+    <div class="form-group">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="btn-group">
+                    <a  class="btn btn-sm btn-default" href="&#x2F;patterns&#x2F;00-home-00-home&#x2F;00-home-00-home.html"><i class="fas fa-arrow-left"></i> Back to Home</a>
+                </div>
+                <h3 class="page-header sg-custom-page-title">Messaging Guidelines</h3>
+            </div>
+        </div>
+        <div class="well">
+            <div>
+                <span class="fa-stack">
+                    <i class="fas fa-circle fa-stack-1x text-info" ></i>
+                    <i class="fas fa-bookmark fa-stack-1x fa-xs fa-inverse"></i>
+                </span>
+                <strong>Supporting Principles</strong>
+            </div>
+            <ul>
+                <li>Colour should not be the only element used to convey information</li>
+                <li>Using standard bootstrap classes for alerts will ensure that text and background have a high enough contrast to comply with the <a href="https://www.w3.org/TR/WCAG20-TECHS/G18.html">W3C standards for color contrast</a></li>
+            </ul>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-12">
+                <p>
+                    Feedback messages can be given in three ways: <strong>Help Blocks</strong>, <strong>Inline Alerts</strong>, or <strong>Modal Dialogs</strong>.
+                </p>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="row">
+                <div class="col-xs-3">
+                <h5 class="text-info"><strong>Use Help Blocks:</strong></h5>
+                    <ul>
+                        <li>To associate messages with a particular element or section of the screen.</li>
+                        <li>To display feedback messages (i.e. error, warning, success) related to validating user input.</li>
+                        <li>To give tips for inputting information in a form element</li>
+                    </ul>
+                </div>
+
+                <div class="col-xs-push-1 col-xs-3">
+                    <h5 class="text-info"><strong>Use Inline Alerts:</strong></h5>
+                    <ul>
+                        <li>To inform the user of a situation without interrupting their focus.</li>
+                        <li>To associate a message with a specific section of a page.</li>
+                        <li>To give unintrusive feedback about an action just performed</li>
+                    </ul>
+                </div>
+
+                <div class="col-xs-push-2 col-xs-3">
+                    <h5 class="text-info"><strong>Use Modal Dialogs:</strong></h5>
+                    <ul>
+                        <li>To interrupt the users&apos; workflow to inform them of a situation or prompt them for input.</li>
+                        <li>To confirm changes in flow or direction, for example to confirm the movement from one page or form to another.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+        <ul class="nav nav-tabs">
+            <li class="active">
+                <a href="#4" data-toggle="tab"><strong>Help Blocks</strong></a>
+            </li>
+            <li>
+                <a href="#2" data-toggle="tab"><strong>Inline Alerts</strong></a>
+            </li>
+            <li>
+                <a href="#3" data-toggle="tab"><strong>Modal Dialogs</strong></a>
+            </li>
+        </ul>
+
+        <div class="tab-content ">
+        <div class="tab-pane active" id="4">
+            <div class="row form-group">
+                <div class="col-xs-12">
+                    <h5><strong>Usage Guidelines:</strong></h5>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <ul>
+                    <li>Use to guide user input or to communicate feedback related to the input (i.e. validation messages)</li>
+                    <li>Should clearly communicate the message as succictly as possible</li>
+                    <li>Can specify a small text size if vertical space is a concern</li>
+                </ul>
+            </div>
+
+            <div class="row">
+                <fieldset class="col-xs-6">
+                    <legend style="font-size: 14px">
+                        <span>Help Blocks</span>
+                    </legend>
+                    <div class="form-group">
+                        <ul>
+                            <li>Should be placed inside a <code>.form-group</code>, placed immediately following input fields with a class of <code>.form-control</code></li>
+                            <li>Should not include icons as we do not want any added visual emphasis for help text</li>
+                        </ul>
+                        <ul>
+                            <li>Can be made contextual by adding the <code>.text-info</code>, <code>.text-success</code>, <code>.text-warning</code>, or <code>.text-danger</code> classes.  For example:
+                                <ul class="fa-ul">
+                                    <li class='text-info'><i class="fas fa-info-circle"></i> This is an informational message</li>
+                                    <li class='text-success'><i class="fas fa-info-circle"></i> This is an success message</li>
+                                    <li class='text-warning'><i class="fas fa-info-circle"></i> This is an warning message</li>
+                                    <li class='text-danger'><i class="fas fa-info-circle"></i> This is an error message</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </fieldset>
+
+                <fieldset class="col-xs-6">
+                    <legend style="font-size: 14px">Validation Messages</legend>
+
+                    <div class="form-group">
+                        <ul>
+                            <li>Will automatically be formatted using the appropriate colors when the <code>.form-group</code> has the class <code>.has-feedback</code> and one of <code>.has-error</code>, <code>.has-warning</code>, or <code>.has-success</code> applied.</li>
+                            <li>Use a glyphicon (glyphicon-ok, glyphicon-warning-sign, or glyphicon-remove) with a class of <code>.form-control-feedback</code> to display an icon on the right side of the input field </li>
+                        </ul>
+                    </div>
+                </fieldset>
+            </div>
+
+            <div class="row">
+                <div class="col-xs-6">
+                    <div class="form-group">
+                         <h4>Example Form </h4>
+                         <div> <i class="fas fa-info-circle text-info"></i> All fields are required </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-6">
+                    <div class="form-group">
+                        <label class="control-label" for="emailInput">Email Address</label>
+                        <input class="form-control" id="emailInput" type="text" placeholder="yourname@domain.com" value="">
+                        <span class="small help-block">We will never share your address with anyone.</span>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="control-label" for="emailInput">Password</label>
+                        <input class="form-control" id="emailInput" type="text" placeholder="yourname@domain.com" value="">
+                        <span class="small help-block">Minimum 8 characters, with at least one uppercase and one special character</span>
+                    </div>
+                </div>
+                <div class="col-xs-6">
+                    <form class="form">
+                        <div class="form-group has-feedback has-success">
+                            <label class="control-label" for="inputSuccess">Input with success</label>
+                            <input type="text" class="form-control" id="inputSuccess">
+                            <div class="help-block">Success Message Here</div>
+                            <i class="glyphicon glyphicon-ok form-control-feedback"></i>
+                        </div>
+                        <div class="form-group has-warning has-feedback">
+                            <label class="control-label" for="inputSuccess">Input with warning</label>
+                            <input type="text" class="form-control" id="inputWarning">
+                            <div class="help-block">Warning Message Here</div>
+                            <i class="glyphicon glyphicon-warning-sign form-control-feedback"></i>
+                        </div>
+
+                        <div class="form-group has-error has-feedback">
+                            <label class="control-label" for="inputError">Input with error</label>
+                            <input type="text" class="form-control" id="inputError">
+                            <div class="help-block">Error Message Here</div>
+                            <span class="glyphicon glyphicon-remove form-control-feedback"></span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane" id="2">
+            <div class="row form-group">
+                <div class="col-xs-12">
+                    <h5><strong>Usage Guidelines for Inline Alerts:</strong></h5>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <p>
+                        All inline alerts should:
+                        <ul>
+                            <li>Use proper grammar and punctuation.</li>
+                            <li>Avoid the use of slang and/or technical jargon.</li>
+                            <li>Use language that is business-like and friendly</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-6">
+                    <div class="alert alert-success" role="alert">
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <strong>Success Alerts Should:</strong>
+                        <ul>
+                            <li>Appear immediately following an action performed by the user.</li>
+                            <li>Show a brief and succinct message to inform the user that an action completed successfully.</li>
+                            <li>Should automatically dismiss themselves after a period of time (typically 5 seconds).</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xs-6">
+                    <div class="alert alert-info" role="alert">
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+
+                        <strong>Information Alerts Should:</strong>
+                        <ul>
+                            <li>Present information that the user may want to be aware of.</li>
+                            <li>Be informative only and not require any direct action on the part of the user</li>
+                            <li>Should remain visible until the message is dismissed.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-6 clearfix">
+                    <div class="alert alert-warning" role="alert">
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+
+                        <strong>Warning Alerts Should:</strong>
+                        <ul>
+                            <li>Not be too strongly worded or imply blame.</li>
+                            <li>State the message, briefly and succinctly.</li>
+                            <li>Should remain visible until the message is dismissed.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xs-6">
+                    <div class="alert alert-danger" role="alert">
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+
+                        <strong>Error Alerts Should:</strong>
+                        <ul>
+                            <li>State that an error was encountered, briefly and succinctly.</li>
+                            <li>Be free of blame - the message should indicate that the system has encountered a problem, not the user.</li>
+                            <li>Should remain visible until the message is dismissed.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane" id="3">
+            <div class="row form-group">
+                <div class="col-xs-12">
+                    <h5><strong>Usage Guidelines for Modal Dialogs:</strong></h5>
+                </div>
+            </div>
+
+            <div class="row form-group">
+                <div class="col-xs-12">
+                    <p>Use a Modal Dialog when you want to:</p>
+                    <ul>
+                        <li>Display important information, as a way to prevent or correct critical errors.</li>
+                        <li>Request the user to enter information critical to continuing the current process.</li>
+                        <li>Fragment a complex workflow into simpler steps.</li>
+                    </ul>
+                </div>
+            </div>
+
+                <div class="row form-group">
+                <div class="col-xs-12">
+                    <h5><strong>Wording Guidelines:</strong></h5>
+                </div>
+            </div>
+
+            <div class="row form-group">
+                <div class="col-xs-12">
+                    <ul>
+                        <li>The modal header should display 1-3 short attention getting words in the header that hint at the purpose of the modal.</li>
+                        <li>The modal body should show a short succinct description of the situation.</li>
+                        <li>The modal footer should contain buttons for responding to the information presented. </li>
+
+                        <li class="h5"><strong>Default Modal Dialogs:</strong></li>
+                        <li class="list-unstyled">
+                            <ul>
+                                <li>Ask a question in the header (such as "Are you sure?").</li>
+                                <li>Word the question so that Yes, the default button, is the natural response. </li>
+                                <li>If the button that executes the modal states an action word (such as delete, add, move, or assign), then the confirmation should use the same action word.  For example...
+                                    <ul>
+                                        <li>Header Text: Are you Sure?</li>
+                                        <li>Confirmation Text: Are you sure you want to <strong>delete</strong> the selected items?</i>
+                                        <li>Button Text: Yes, <strong>Delete</strong> selected</li>
+                                    </ul>
+                                <li>Position the buttons so that the negative response is on the left and the positive response on the right</li>
+                                <li>The no or negative response should be the less likely choice, and positioned on the left. </li>
+                                <li>The yes or positive response should be the most likely choice, and be positioned on the right.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="modal modal-sm fade in" style="display: inline; position:static">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                                    <p class="lead modal-title">
+                                        Are you sure?
+                                    </p>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Are you sure you want to submit this ticket to the Buyer?</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default "  >
+
+            No, take me back
+</button>
+
+                                    <button type="button" class="btn btn-success "  >
+
+            Yes, Submit the Ticket
+</button>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row form-group">
+                <div class="col-xs-12">
+                    <ul>
+                        <li class="h5"><strong>If additional emphasis is desired:</strong></li>
+                        <li class="list-unstyled">
+                            <ul>
+                                <li>use the danger, warning or info classes on buttons or headers.</li>
+                                <li>include an icon in the header to the left of the title.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="modal modal-sm fade in" style="display: inline; position:static">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                                    <p class="lead modal-title ">
+                                        <i class="fas fa-exclamation-triangle text-danger"></i> Are You Sure?
+                                    </p>
+                                </div>
+                                <div class="modal-body">
+                                    <p>This file will no longer be accessible after it has deleted. Are you sure you want to delete it?  </p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default "  >
+
+            No, Take Me Back
+</button>
+
+                                    <button type="button" class="btn btn-danger "  >
+
+            Yes, Delete the File
+</button>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        </div>
+    </div>
+</div>

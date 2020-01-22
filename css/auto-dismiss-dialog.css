@@ -1,0 +1,105 @@
+.alert-with-arrow {
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    display: table;
+    width: 80%;
+    left: 10%;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 61px;
+    position: fixed;
+    top:2px;
+    z-index: 9999;
+}
+
+.alert-with-arrow.rounded .icon {
+    border-radius: 2px 0 0 2px;
+    -webkit-border-radius: 2px 0 0 2px;
+}
+
+.alert-with-arrow .icon {
+    text-align: center;
+    width: 40px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-top: 15px;
+}
+
+
+.alert-with-arrow .icon:after {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    display: block;
+    content: '';
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    border-left: 0;
+    border-bottom: 0;
+    top: 50%;
+    right: -5px;
+    margin-top: -3px;
+}
+
+.alert-with-arrow .icon i {
+    font-size: 18px;
+    color: #fff;
+    left: 9px;
+    margin-top: -9px;
+    position: absolute;
+    top: 50%;
+}
+
+/*============ colors ========*/
+// alert-success
+.alert-with-arrow.alert-success {
+    border: 1px solid #84c66a;
+}
+
+.alert-with-arrow.alert-success .icon,
+.alert-with-arrow.alert-success .icon:after {
+    border-color: #84c66a;
+    border-width: 0px 1px 0px 0px;
+    background: #60c060;
+}
+
+// alert-info
+.alert-with-arrow.alert-info {
+    border: 1px solid #5bb1dc;
+}
+.alert-with-arrow.alert-info .icon,
+.alert-with-arrow.alert-info .icon:after {
+    border-right: 1px solid #5bb1dc;
+    border-width: 0px 1px 0px 0px;
+    background: #5bb1dc;
+}
+
+// alert-warning
+.alert-with-arrow.alert-warning {
+    border: 1px solid #ff9e0e;
+    color: #a36100;
+}
+.alert-with-arrow.alert-warning .icon,
+.alert-with-arrow.alert-warning .icon:after {
+    border-color: #ff9e0e;
+    border-width: 0px 1px 0px 0px;
+    background: #fc9700;
+}
+
+// alert-danger
+.alert-with-arrow.alert-danger {
+    border: 1px solid #da4932;
+    color: #a94442;
+}
+.alert-with-arrow.alert-danger .icon,
+.alert-with-arrow.alert-danger .icon:after {
+    bordewith-arrowr-color: #ca452e;
+    border-width: 0px 1px 0px 0px;
+    background: #da4932;
+}
+

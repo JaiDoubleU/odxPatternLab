@@ -1,0 +1,340 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+ <title>FieldTicketOverview_FieldTicketComplianceAlerts</title>
+
+ <link rel="stylesheet" href="../../../OpenInvoiceForBuyers_master.css" type="text/css" />
+
+
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style>
+ <meta name="generator" content="Adobe FrameMaker 2017" />
+<script type="text/javascript" src="../../../template/scripts/rh.min.js"></script>
+<script type="text/javascript" src="../../../template/scripts/common.min.js"></script>
+<script type="text/javascript" src="../../../template/scripts/topic.min.js"></script>
+<script type="text/javascript" src="../../../template/scripts/constants.js"></script>
+<script type="text/javascript" src="../../../template/scripts/utils.js"></script>
+<script type="text/javascript" src="../../../template/scripts/mhutils.js"></script>
+<script type="text/javascript" src="../../../template/scripts/mhlang.js"></script>
+<script type="text/javascript" src="../../../template/scripts/mhver.js"></script>
+<script type="text/javascript" src="../../../template/scripts/settings.js"></script>
+<script type="text/javascript" src="../../../template/scripts/XmlJsReader.js"></script>
+<script type="text/javascript" src="../../../template/scripts/loadparentdata.js"></script>
+<script type="text/javascript" src="../../../template/scripts/loadscreen.js"></script>
+<script type="text/javascript" src="../../../template/scripts/loadprojdata.js"></script>
+<script type="text/javascript" src="../../../template/scripts/mhtopic.js"></script>
+ <link rel="stylesheet" type="text/css" href="../../../template/styles/topic.min.css">
+<script type="text/javascript" >
+gRootRelPath = "../../..";
+gCommonRootRelPath = "../../..";
+gTopicId = "1.7.0_7";
+</script>
+ <meta name="brsprev" value="OpenInvoiceForBuyers_master/Field_Tickets/FieldTicketOverview_DuplicateTicket/Data_Validation.htm">
+ <meta name="brsnext" value="OpenInvoiceForBuyers_master/Field_Tickets/FieldTicketOverview_FieldTicketComplianceAlerts/Field_Ticket_Compliance_Rules.htm">
+ <meta name="topic-breadcrumbs" content="Administrator & User Guide for Buyers > Field Tickets" />
+</head>
+
+<body dir="ltr">
+<script type="text/javascript" src="../../../ehlpdhtm.js"></script>
+<div dir="ltr">
+  
+  <p dir="ltr" class="FM_ADP_TG_Heading_1"><a name="XREF_36021_Alerts_Presented"></a>Compliance of a Field Ticket Reference on an Invoice</p>
+  <p dir="ltr" class="FM_ADP_TG_Body_Style">Field Ticket compliance alerts notify buyers and suppliers when an invoice is not in compliance with the ticket references. The alerts are categorized by severity—red, yellow or green—with red being the most severe and green being the least severe. An invoice that is compliant with the referenced tickets will have a green alert.</p>
+  <p dir="ltr" class="FM_ADP_TG_Screenshot_Anchor">.</p>
+<div width="100%" align="left">
+  <table border-spacing="0" dir="ltr" class="table147" border-collapse="collapse" style="max-width: 100% ;height: auto">
+   <tr class="tr136">
+   <th class="td165">
+   <p dir="ltr" class="FM_ADP_TG_CellHeading">Alert Name</p>
+</th>
+   <th class="td166">
+   <p dir="ltr" class="FM_ADP_TG_CellHeading">Alert</p>
+</th>
+   <th class="td167">
+   <p dir="ltr" class="FM_ADP_TG_CellHeading">Description</p>
+</th>
+</tr>
+   <tr class="tr168">
+   <td class="td169">
+   <p dir="ltr" class="FM_ADP_TG_Body_Style">Line Total Mismatch</p>
+</td>
+   <td class="td170">
+   <div align="center"><img alt="alert_RedFieldTicketIcon.jpg" id="image256" src="../../../assets/alert_RedFieldTicketIcon.jpg" style="max-width: 100% ;height: auto" />
+   </div>
+   <p dir="ltr" class="FM_ADP_TG_Screenshot_Anchor">&nbsp;</p>
+</td>
+   <td class="td171">
+   <p dir="ltr" class="FM_ADP_TG_Body_Style">An invoice line references a FT line, where the total is different than the invoice line total after discount, with the tolerance of +/- one cent multiplied by the quantity. The tolerance accounts for rounding differences.</p>
+   <p dir="ltr" class="FM_ADP_TG_Note___Start"><span class="FM_Bold">Note:<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Absence of rate on a FT line (and, therefore, absence of total) will not trigger this alert. </p>
+</td>
+</tr>
+   <tr class="tr172">
+   <td class="td169">
+   <p dir="ltr" class="FM_ADP_TG_Body_Style">Ticket in Disputed Status</p>
+</td>
+   <td class="td170">
+   <div align="center"><img alt="alert_RedFieldTicketIcon.jpg" id="image257" src="../../../assets/alert_RedFieldTicketIcon.jpg" style="max-width: 100% ;height: auto" />
+   </div>
+   <p dir="ltr" class="FM_ADP_TG_Screenshot_Anchor">&nbsp;</p>
+</td>
+   <td class="td171">
+   <p dir="ltr" class="FM_ADP_TG_Body_Style">An invoice line references a disputed FT or its line.</p>
+</td>
+</tr>
+   <tr class="tr173">
+   <td class="td169">
+   <p dir="ltr" class="FM_ADP_TG_Body_Style">Currency Mismatch</p>
+</td>
+   <td class="td170">
+   <div align="center"><img alt="alert_RedFieldTicketIcon.jpg" id="image258" src="../../../assets/alert_RedFieldTicketIcon.jpg" style="max-width: 100% ;height: auto" />
+   </div>
+   <p dir="ltr" class="FM_ADP_TG_Screenshot_Anchor">&nbsp;</p>
+</td>
+   <td class="td171">
+   <p dir="ltr" class="FM_ADP_TG_Body_Style">An invoice line references a FT line or an FT, where the currency is different than the invoice currency. </p>
+   <p dir="ltr" class="FM_ADP_TG_Note___Start"><span class="FM_Bold">Note:<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Currencies must be truly different. Absence of currency on a FT line will not trigger this alert. </p>
+</td>
+</tr>
+   <tr class="tr173">
+   <td class="td169">
+   <p dir="ltr" class="FM_ADP_TG_Body_Style">Product/Service Mismatch</p>
+</td>
+   <td class="td170">
+   <div align="center"><img alt="alert_RedFieldTicketIcon.jpg" id="image259" src="../../../assets/alert_RedFieldTicketIcon.jpg" style="max-width: 100% ;height: auto" />
+   </div>
+   <p dir="ltr" class="FM_ADP_TG_Screenshot_Anchor">&nbsp;</p>
+</td>
+   <td class="td171">
+   <p dir="ltr" class="FM_ADP_TG_Body_Style">An invoice line references a FT line with a product/service, where the product/service is different than the invoice line product/service. </p>
+   <p dir="ltr" class="FM_ADP_TG_Note___Start"><span class="FM_Bold">Note:<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>The product/service must be truly different - both invoice line and FT line have product/service.</p>
+</td>
+</tr>
+   <tr class="tr174">
+   <td class="td169">
+   <p dir="ltr" class="FM_ADP_TG_Body_Style">Quantity Mismatch</p>
+</td>
+   <td class="td170">
+   <div align="center"><img alt="alert_RedFieldTicketIcon.jpg" id="image260" src="../../../assets/alert_RedFieldTicketIcon.jpg" style="max-width: 100% ;height: auto" />
+   </div>
+   <p dir="ltr" class="FM_ADP_TG_Screenshot_Anchor">&nbsp;</p>
+</td>
+   <td class="td171">
+   <p dir="ltr" class="FM_ADP_TG_Body_Style">An invoice line references a FT line, where the quantity is different than the invoice line quantity. </p>
+   <p dir="ltr" class="FM_ADP_TG_Note___Start"><span class="FM_Bold">Note:<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Absence of quantity on a FT line will not trigger this alert. </p>
+   <p dir="ltr" class="FM_ADP_TG_Note___Next"><span class="FM_Bold"><span style="padding-left: 36pt;" class="FMAutoNumber_1"></span></span>The quantity may be positive or negative - does not matter.</p>
+</td>
+</tr>
+   <tr class="tr173">
+   <td class="td169">
+   <p dir="ltr" class="FM_ADP_TG_Body_Style">Rate Mismatch</p>
+</td>
+   <td class="td170">
+   <div align="center"><img alt="alert_RedFieldTicketIcon.jpg" id="image261" src="../../../assets/alert_RedFieldTicketIcon.jpg" style="max-width: 100% ;height: auto" />
+   </div>
+   <p dir="ltr" class="FM_ADP_TG_Screenshot_Anchor">&nbsp;</p>
+</td>
+   <td class="td171">
+   <p dir="ltr" class="FM_ADP_TG_Body_Style">An invoice line references a FT line, where the rate is different than the invoice line rate after the discount with the tolerance of +/- one cent to account for rounding differences. </p>
+   <p dir="ltr" class="FM_ADP_TG_Note___Start"><span class="FM_Bold">Note:<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Absence of a rate on a FT line will not trigger this alert.</p>
+</td>
+</tr>
+   <tr class="tr175">
+   <td class="td169">
+   <p dir="ltr" class="FM_ADP_TG_Body_Style">Unit of Measure Mismatch</p>
+</td>
+   <td class="td170">
+   <div align="center"><img alt="alert_RedFieldTicketIcon.jpg" id="image262" src="../../../assets/alert_RedFieldTicketIcon.jpg" style="max-width: 100% ;height: auto" />
+   </div>
+   <p dir="ltr" class="FM_ADP_TG_Screenshot_Anchor">&nbsp;</p>
+</td>
+   <td class="td171">
+   <p dir="ltr" class="FM_ADP_TG_Body_Style">An invoice line references a FT line, where the unit of measure is different than the invoice line unit of measure. </p>
+   <p dir="ltr" class="FM_ADP_TG_Note___Start"><span class="FM_Bold">Note:<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Absence of UoM on a FT line will not trigger this alert.</p>
+</td>
+</tr>
+   <tr class="tr172">
+   <td class="td169">
+   <p dir="ltr" class="FM_ADP_TG_Body_Style">Ticket and/or Ticket Line Invoiced Multiple Times</p>
+</td>
+   <td class="td170">
+   <div align="center"><img alt="alert_RedFieldTicketIcon.jpg" id="image263" src="../../../assets/alert_RedFieldTicketIcon.jpg" style="max-width: 100% ;height: auto" />
+   </div>
+   <p dir="ltr" class="FM_ADP_TG_Screenshot_Anchor">&nbsp;</p>
+</td>
+   <td class="td171">
+   <p dir="ltr" class="FM_ADP_TG_Body_Style">Ticket and/or ticket line is referenced on multiple invoices.</p>
+</td>
+</tr>
+   <tr class="tr168">
+   <td class="td169">
+   <p dir="ltr" class="FM_ADP_TG_Body_Style">Duplicate Ticket</p>
+</td>
+   <td class="td170">
+   <div align="center"><img alt="alert_RedFieldTicketIcon.jpg" id="image264" src="../../../assets/alert_RedFieldTicketIcon.jpg" style="max-width: 100% ;height: auto" />
+   </div>
+   <p dir="ltr" class="FM_ADP_TG_Screenshot_Anchor">&nbsp;</p>
+</td>
+   <td class="td171">
+   <p dir="ltr" class="FM_ADP_TG_Body_Style">A “new” FT referenced on an invoice line has the same number as a “new,” free-text or OIR FT specified on any other existing, non-cancelled, non-credit invoice line. </p>
+   <p dir="ltr" class="FM_ADP_TG_Body_Style">A free-text or OIR FT referenced on an invoice line has the same number as a “new” FT specified on any other existing, non-cancelled, non-credit invoice line. </p>
+</td>
+</tr>
+   <tr class="tr176">
+   <td class="td169">
+   <p dir="ltr" class="FM_ADP_TG_Body_Style">Ticket in Submitted Status</p>
+</td>
+   <td class="td170">
+   <div align="center"><img alt="alert_YellowFieldTicketIcon.jpg" id="image265" src="../../../assets/alert_YellowFieldTicketIcon.jpg" style="max-width: 100% ;height: auto" />
+   </div>
+   <p dir="ltr" class="FM_ADP_TG_Screenshot_Anchor">&nbsp;</p>
+</td>
+   <td class="td171">
+   <p dir="ltr" class="FM_ADP_TG_Body_Style">An invoice line references a submitted (non-approved) FT or its line.</p>
+</td>
+</tr>
+   <tr class="tr176">
+   <td class="td169">
+   <p dir="ltr" class="FM_ADP_TG_Body_Style">No Product/Service</p>
+</td>
+   <td class="td170">
+   <div align="center"><img alt="alert_YellowFieldTicketIcon.jpg" id="image266" src="../../../assets/alert_YellowFieldTicketIcon.jpg" style="max-width: 100% ;height: auto" />
+   </div>
+   <p dir="ltr" class="FM_ADP_TG_Screenshot_Anchor">&nbsp;</p>
+</td>
+   <td class="td171">
+   <p dir="ltr" class="FM_ADP_TG_Body_Style">An invoice line with a specific product/service references a FT line with no product/service or vice versa. </p>
+</td>
+</tr>
+   <tr class="tr177">
+   <td class="td169">
+   <p dir="ltr" class="FM_ADP_TG_Body_Style">Ticket Reference Missing</p>
+</td>
+   <td class="td170">
+   <div align="center"><img alt="alert_YellowFieldTicketIcon.jpg" id="image267" src="../../../assets/alert_YellowFieldTicketIcon.jpg" style="max-width: 100% ;height: auto" />
+   </div>
+   <p dir="ltr" class="FM_ADP_TG_Screenshot_Anchor">&nbsp;</p>
+</td>
+   <td class="td171">
+   <p dir="ltr" class="FM_ADP_TG_Body_Style">An invoice line does not reference a FT line, while there is another line on this invoice referencing a FT or a FT line (not just free-text or OIR FT).</p>
+</td>
+</tr>
+   <tr class="tr176">
+   <td class="td169">
+   <p dir="ltr" class="FM_ADP_TG_Body_Style">Ticket Uses Default Product/Service</p>
+</td>
+   <td class="td170">
+   <div align="center"><img alt="alert_YellowFieldTicketIcon.jpg" id="image268" src="../../../assets/alert_YellowFieldTicketIcon.jpg" style="max-width: 100% ;height: auto" />
+   </div>
+   <p dir="ltr" class="FM_ADP_TG_Screenshot_Anchor">&nbsp;</p>
+</td>
+   <td class="td171">
+   <p dir="ltr" class="FM_ADP_TG_Body_Style">Default product/service is used on a ticket.</p>
+</td>
+</tr>
+   <tr class="tr176">
+   <td class="td169">
+   <p dir="ltr" class="FM_ADP_TG_Body_Style">No Ticket Rate</p>
+</td>
+   <td class="td170">
+   <div align="center"><img alt="alert_YellowFieldTicketIcon.jpg" id="image269" src="../../../assets/alert_YellowFieldTicketIcon.jpg" style="max-width: 100% ;height: auto" />
+   </div>
+   <p dir="ltr" class="FM_ADP_TG_Screenshot_Anchor">&nbsp;</p>
+</td>
+   <td class="td171">
+   <p dir="ltr" class="FM_ADP_TG_Body_Style">An invoice line references a FT line, which has no rate. </p>
+</td>
+</tr>
+   <tr class="tr177">
+   <td class="td169">
+   <p dir="ltr" class="FM_ADP_TG_Body_Style">Service Date Mismatch</p>
+</td>
+   <td class="td170">
+   <div align="center"><img alt="alert_YellowFieldTicketIcon.jpg" id="image270" src="../../../assets/alert_YellowFieldTicketIcon.jpg" style="max-width: 100% ;height: auto" />
+   </div>
+   <p dir="ltr" class="FM_ADP_TG_Screenshot_Anchor">&nbsp;</p>
+</td>
+   <td class="td171">
+   <p dir="ltr" class="FM_ADP_TG_Body_Style">An invoice line references a FT line with a ‘service date from’ or ‘service date to’ different than the invoice line ‘service date from’ or ‘service date to’ or if an invoice line does not have service dates.</p>
+</td>
+</tr>
+   <tr class="tr177">
+   <td class="td169">
+   <p dir="ltr" class="FM_ADP_TG_Body_Style">Coding Mismatch</p>
+</td>
+   <td class="td170">
+   <div align="center"><img alt="alert_YellowFieldTicketIcon.jpg" id="image271" src="../../../assets/alert_YellowFieldTicketIcon.jpg" style="max-width: 100% ;height: auto" />
+   </div>
+   <p dir="ltr" class="FM_ADP_TG_Screenshot_Anchor">&nbsp;</p>
+</td>
+   <td class="td171">
+   <p dir="ltr" class="FM_ADP_TG_Body_Style">An invoice line references a FT line with an AFE or CC or major or minor or subcode different than the invoice line coding, or if an invoice line does not have coding, but the ticket does have it.</p>
+</td>
+</tr>
+   <tr class="tr176">
+   <td class="td169">
+   <p dir="ltr" class="FM_ADP_TG_Body_Style">No Ticket Quantity</p>
+</td>
+   <td class="td170">
+   <div align="center"><img alt="alert_YellowFieldTicketIcon.jpg" id="image272" src="../../../assets/alert_YellowFieldTicketIcon.jpg" style="max-width: 100% ;height: auto" />
+   </div>
+   <p dir="ltr" class="FM_ADP_TG_Screenshot_Anchor">&nbsp;</p>
+</td>
+   <td class="td171">
+   <p dir="ltr" class="FM_ADP_TG_Body_Style">An invoice line references a FT line, which has no quantity. </p>
+</td>
+</tr>
+   <tr class="tr176">
+   <td class="td169">
+   <p dir="ltr" class="FM_ADP_TG_Body_Style">No Ticket Unit of Measure</p>
+</td>
+   <td class="td170">
+   <div align="center"><img alt="alert_YellowFieldTicketIcon.jpg" id="image273" src="../../../assets/alert_YellowFieldTicketIcon.jpg" style="max-width: 100% ;height: auto" />
+   </div>
+   <p dir="ltr" class="FM_ADP_TG_Screenshot_Anchor">&nbsp;</p>
+</td>
+   <td class="td171">
+   <p dir="ltr" class="FM_ADP_TG_Body_Style">An invoice line with a unit of measure references a FT line, which has no unit of measure or vice versa. </p>
+</td>
+</tr>
+   <tr class="tr178">
+   <td class="td169">
+   <p dir="ltr" class="FM_ADP_TG_Body_Style">Ticket Compliant</p>
+</td>
+   <td class="td170">
+   <div align="center"><img alt="alert_GreenFieldTicketIcon.jpg" id="image274" src="../../../assets/alert_GreenFieldTicketIcon.jpg" style="max-width: 100% ;height: auto" />
+   </div>
+   <p dir="ltr" class="FM_ADP_TG_Screenshot_Anchor">&nbsp;</p>
+</td>
+   <td class="td171">
+   <p dir="ltr" class="FM_ADP_TG_Body_Style">An invoice line references a FT line and no amber or red TK alert conditions are triggered for this line.</p>
+</td>
+</tr>
+  </table>
+</div>
+  </div>
+</body>
+</html>

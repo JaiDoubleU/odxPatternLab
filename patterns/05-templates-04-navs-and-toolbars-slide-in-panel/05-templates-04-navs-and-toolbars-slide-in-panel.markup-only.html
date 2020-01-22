@@ -1,0 +1,34 @@
+
+<div class="modal right animated faster slideInRight slideOutRight" id="rightSlideInPanel" data-backdrop="false"
+    tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-target="#rightSlideInPanel" onclick="toggleRightSlideInPanel(); toggleDashboardEditability();">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h5 class="modal-title">
+                        Right Slide In
+                </h5>
+            </div>
+            <div class="modal-body">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et elit at quam finibus lobortis.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et elit at quam finibus lobortis.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et elit at quam finibus lobortis.</p>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-default pull-left"  data-target="#rightSlideInPanel" onclick="toggleRightSlideInPanel(); toggleDashboardEditability();">Close</button>
+            </div>
+        </div><!-- modal-content -->
+    </div><!-- modal-dialog -->
+</div><!-- modal -->
+<script>
+    $('#rightSlideInPanel').modal({
+        backdrop: false
+    });
+    $('#pl-body').removeClass('modal-open');
+</script>
+
+    <button type="button" class="btn btn-default" onclick="toggleRightSlideInPanel();">
+        Toggle Right Panel
+    </button>

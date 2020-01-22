@@ -1,0 +1,788 @@
+{{> organisms-navbar("extraClass":"navbar-fixed-top")}}
+{{> organisms-secondary-navbar("extraClass":"navbar-fixed-top", "pageTitle": "Purchase Order #4500000249","hideNextPreviousButtons": false)}}
+
+<div class="container-fluid  page-top-padding  page-bottom-padding">
+<ul class="nav nav-tabs">
+    <li class="active" onclick="$('#currentPOToolbar').toggleClass('hide');$('#proposedPOToolbar').toggleClass('hide');">
+        <a href="#currentPOTab" data-toggle="tab" >Current</a>
+    </li>
+    <li onclick="$('#currentPOToolbar').toggleClass('hide');$('#proposedPOToolbar').toggleClass('hide');">
+        <a href="#proposedPOTab" data-toggle="tab" alt="$(this).text();" >Proposed</a>
+    </li>
+</ul>
+<div class="tab-content">
+    <div class="tab-pane active fade in" id="currentPOTab">
+        <div class="row">
+            <div class="col-sm-9">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <div class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#poHeader">PO Header</a>
+                            <span class="pull-right" data-toggle="collapse" data-parent="#accordion" href="#poHeader">
+                                <i class="panelExpandIcon glyphicon glyphicon-chevron-down"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div id="poHeader" class="panel-collapse in">
+                        <div class="panel-body">
+                            <form>
+                                <div class="form-group">
+                                    <div class="row">
+                                        <div class="col-xs-6">
+                                            <div class="form-group">
+                                                <label class="control-label" for="buyer">Buyer</label>
+                                                <input class="form-control" type="text" id="buyer" value="ABC Petroleum Corp.">
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="control-label" for="buyerSite">Buyer Site</label>
+                                                <input class="form-control" type="text"  id="buyerSite" value="Northern Regional">
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-6">
+                                            <div class="form-group">
+                                                <label class="control-label" for="supplier">Supplier</label>
+                                                <input class="form-control" type="text" id="supplier"  value="Acme Field Services Ltd">
+                                            </div>
+                                            <div class="form-group"><label class="control-label" for="supplierSite">Supplier Site</label>
+                                                <input class="form-control" type="text"  id="supplierSite"  value="Calgary, AB">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="row">
+                                        <div class="col-xs-6">
+                                            <div class="form-group">
+                                                <label class="control-label" for="poNumber">PO Number</label>
+                                                <input class="form-control" type="text"  id="poNumber"  value="4500000249">
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="control-label" for="poDate">PO Date</label>
+                                                <input class="form-control" type="text"  id="poDate"  value="03/20/2012">
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="control-label" for="poStatus">PO Status</label>
+                                                <input class="form-control" type="text"  id="poStatus"  value="Accepted">
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="control-label" for="receiptFulfillment">Receipt Fulfillment</label>
+                                                <input class="form-control" type="text"  id="receiptFulfillment" value="Not Received">
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-6">
+                                            <div class="form-group">
+                                                <label class="control-label" for="changeRequestNumber">Change Request Number</label>
+                                                <input  class="form-control" type="text" id="changeRequestNumber"  value="00000000">
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="control-label" for="changeRequestDate">Change Request Date</label>
+                                                <input  class="form-control" type="text" id="changeRequestDate" value="03/20/2012">
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="control-label" for="invoiceFulfillment">Invoice Fulfillment</label>
+                                                <input class="form-control" type="text"  id="invoiceFulfillment"  value="Partially Invoiced">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel panel-default" id="addresses-section">
+                    <div class="panel-heading">
+                        <div class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#poAddresses">Addresses and Contacts</a>
+                            <span class="pull-right" data-toggle="collapse" data-parent="#accordion" href="#poAddresses">
+                                <i class="panelExpandIcon glyphicon glyphicon-chevron-down"></i>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="panel-body panel-collapse collapse" id="poAddresses" aria-expanded="false" aria-hidden="true">
+                        <div class="table-responsive">
+                            <table class="table table-condensed">
+                                <thead>
+                                    <tr>
+                                        <th>Address Type</th>
+                                        <th>Address</th>
+                                        <th>Contact Information</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td id="contactType_0">Bill To</td>
+                                        <td id="address_0">
+                                            <div>ABC Petroleum Corp.</div>
+                                            <div>Head Office</div>
+                                            <div>5500 3rd Avenue</d>
+                                                <div>Houston, Tx</div>
+                                                <div>USA</span>
+                                        </td>
+                                        <td id="phoneFaxEmail_0">
+                                            <div> Phone:(403) 555-2864</div>
+                                            <div> Fax: (403) 455-4444</div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td id="contactType_1">Ship To</td>
+                                        <td id="address_1">
+                                            <div> ABC Petroleum Corp.</div>
+                                            <div> East District Office</div>
+                                            <div> Edgar Industrial Bend Rd</d>
+                                                <div> Smallville, NY</div>
+                                                <div> USA</span>
+                                        </td>
+                                        <td id="phoneFaxEmail_1">
+                                            <div> Phone:(687) 321-2846</div>
+                                            <div> Fax: (547) 511-3791</div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td id="contactType_2">Recipient</td>
+                                        <td id="address_2">
+                                            <div>Acme Field Services Ltd</div>
+                                        </td>
+                                        <td id="phoneFaxEmail_2">
+                                            <div> Email: nobody@localhost
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td id="contactType_3">Non-Billing Inquiries</td>
+                                        <td id="address_3">
+                                            <div> Acme Field Services Ltd</span>
+                                                <div> Shane Hauser</div>
+                                        </td>
+                                        <td id="phoneFaxEmail_3">
+                                            <div> Phone:(403) 111-1111</div>
+                                            <div> Fax: (403) 999-9999</div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel panel-default" id="line-items-section">
+                    <div class="panel-heading">
+                        <div class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#poLineItems">Line Items</a>
+                            <span class="pull-right" data-toggle="collapse" data-parent="#accordion" href="#poLineItems">
+                                <i class="panelExpandIcon glyphicon glyphicon-chevron-down"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div id="poLineItems" class="panel-body panel-collapse collapse in">
+                        <div class="form-group">
+                            <div class="table-responsive">
+                                <table class="table table-striped table-bordered">
+                                    <thead>
+                                        <tr>
+
+                                            <th class=""><input id="selectAll" type="checkbox"></th>
+                                            <th>Item</th>
+                                            <th>Type</th>
+                                            <th>Supplier Code</th>
+                                            <th>Supplier Product/Service</th>
+                                            <th>Buyer Description</th>
+                                            <th>MFTR Code</th>
+                                            <th>Qty</th>
+                                            <th>Units</th>
+                                            <th>Rate</th>
+                                            <th>Total</th>
+                                        </tr>
+                                    </thead>
+
+                                    <tbody>
+                                        <tr>
+                                            <td><input type="checkbox" id="selectCheckbox_0" class="ng-untouched ng-pristine ng-valid"></td>
+                                            <td id="lineNumber_0">00010</td>
+                                            <td id="poType_0">Detail</td>
+                                            <td id="productServiceCode_0">PRODUCT</td>
+                                            <td id="productServiceDescription_0"></td>
+                                            <td id="lineDescription_0">Services</td>
+                                            <td id="manufacturerCode_0"></td>
+                                            <td id="quantity_0">
+                                                <p class="text-right">1</p>
+                                            </td>
+                                            <td id="unitOfMeasure_0">AU</td>
+                                            <td id="rate_0">
+                                                <p class="text-right">200,001.00</p>
+                                            </td>
+                                            <td id="totalAmount_0">
+                                                <p class="text-right">200,001.00</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="11">
+                                                <div aria-controls="collapse" class="text-muted" name="showHide" aria-expanded="false">
+                                                    <i class="fa fa-chevron-down"></i> Show Details
+                                                </div>
+                                                <div class="card card-block card-header collapse" id="collapse" aria-expanded="false"
+                                                    aria-hidden="true">
+                                                    <div class="panel-body ">
+                                                        <table class="table table-bordered">
+                                                            <caption>Delivery Details</caption>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <th>Quantity</th>
+                                                                    <th>Start Date</th>
+                                                                    <th>End Date</th>
+                                                                    <th>Ship To</th>
+                                                                    <th>Contact Information</th>
+                                                                    <th>Buyer Comment</th>
+                                                                </tr>
+
+                                                                <tr class="">
+                                                                    <td nowrap="" id="deliveryDetailQuantity_0_0">1</td>
+                                                                    <td nowrap="" id="deliveryDetailStartDateTime_0_0">
+                                                                        03/20/2012 12:00:00 AM </td>
+                                                                    <td nowrap="" id="deliveryDetailEndDateTime_0_0">
+                                                                        02/27/2013 11:00:00 PM </td>
+
+
+                                                                    <td class="">
+                                                                        <ul></ul>
+                                                                    </td>
+                                                                    <td id="deliveryDetailContactInfo_0_0">
+
+                                                                    </td>
+                                                                    <td id="deliveryDetailBuyerComment_0_0">Services</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+
+                                                    <div class="panel-body ">
+                                                        <table class="table table-bordered">
+                                                            <caption>Coding Details</caption>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <th>Item Master</th>
+                                                                    <th>AFE</th>
+                                                                    <th>Cost Center</th>
+                                                                    <th>Work Order</th>
+                                                                    <th>GL account</th>
+                                                                </tr>
+
+                                                                <tr class="">
+                                                                    <td nowrap="" id="itemMaster_0_0">361</td>
+                                                                    <td nowrap="" id="afe_0_0"></td>
+                                                                    <td nowrap="" id="costCenter_0_0"></td>
+                                                                    <td nowrap="" id="workOrder_0_0"></td>
+
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+
+                                                    <div class="panel-body ">
+                                                        <table class="table table-bordered">
+                                                            <caption>Fulfillment Details</caption>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <th>Type</th>
+                                                                    <th>Total Quantity</th>
+                                                                    <th>Total Amount</th>
+                                                                    <th>Fulfilled Quantity</th>
+                                                                    <th>Fulfilled Amount</th>
+                                                                    <th>Remaining Quantity</th>
+                                                                    <th>Remaining Amount</th>
+                                                                </tr>
+
+                                                                <tr class="">
+                                                                    <td nowrap="">Receipt</td>
+                                                                    <td nowrap="" id="receiptQuantity_0">1</td>
+                                                                    <td nowrap="" id="receiptTotal_0">
+                                                                        <p class="text-right">200,001.00</p>
+                                                                    </td>
+                                                                    <td nowrap="" id="receiptFulfillmentQuantity_0">0</td>
+                                                                    <td nowrap="" id="receiptFulfillmentAmount_0">
+                                                                        <p class="text-right">0.00</p>
+                                                                    </td>
+                                                                    <td nowrap="" id="receiptRemainingQuantity_0">1</td>
+                                                                    <td nowrap="" id="receiptRemainingAmountt_0">
+                                                                        <p class="text-right">200,001.00</p>
+                                                                    </td>
+                                                                </tr>
+
+                                                                <tr class="">
+                                                                    <td nowrap="">Invoice</td>
+                                                                    <td nowrap="" id="invoiceQuantity_0">1</td>
+                                                                    <td nowrap="" id="invoiceTotal_0">
+                                                                        <p class="text-right">200,001.00</p>
+                                                                    </td>
+                                                                    <td nowrap="" id="invoiceFulfillmentQuantity_0">1015.4</td>
+                                                                    <td nowrap="" id="invoiceFulfillmentAmount_0">
+                                                                        <p class="text-right">6,298.12</p>
+                                                                    </td>
+                                                                    <td nowrap="" id="invoiceRemainingQuantity_0">-1014.4</td>
+                                                                    <td nowrap="" id="invoiceRemainingAmount_0">
+                                                                        <p class="text-right">193,702.88</p>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                    <tfoot>
+                                        <tr>
+                                            <th class="text-right" colspan="10">PO Total Amount (Current)</th>
+                                            <th class="border-bottom border-top text-right" name="poTotal"> 200,001.00 </th>
+                                        </tr>
+                                        <tr>
+                                            <th class="text-right" colspan="10">Receipt Total</th>
+                                            <th class="text-right" name="receiptTotal"> </th>
+                                        </tr>
+                                        <tr>
+                                            <th class="text-right" colspan="10">Invoice Total</th>
+                                            <th class="text-right" name="invoiceTotal"> 6,298.12 </th>
+                                        </tr>
+                                    </tfoot>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="panel panel-default" id="attachment-section">
+                    <div class="panel-heading">
+                        <div class="panel-title"> Attachments </div>
+                    </div>
+                    <div class="panel-body" id="poAttachments">
+                        {{>templates-attachments-list}}
+                    </div>
+                </div>
+
+                <div class="panel panel-default" id="journal-section">
+                    <div class="panel-heading">
+                        <div class="panel-title">
+                            Journal
+                        </div>
+                    </div>
+                    <div class="panel-body" id="poJournal">
+                        {{> templates-document-journal }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tab-pane fade" id="proposedPOTab">
+                <div class="row">
+                    <div class="col-sm-9">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <div class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#proposedPOHeader">Proposed PO Header</a>
+                                    <span class="pull-right" data-toggle="collapse" data-parent="#accordion" href="#proposedPOHeader">
+                                        <i class="panelExpandIcon glyphicon glyphicon-chevron-down"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            <div id="proposedPOHeader" class="panel-collapse in">
+                                <div class="panel-body">
+                                    <form>
+                                        <div class="form-group">
+                                            <div class="row">
+                                                <div class="col-xs-6">
+                                                    <div class="form-group">
+                                                        <label class="control-label" for="buyer">Buyer</label>
+                                                        <input class="form-control" type="text" value="ABC Petroleum Corp.">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="control-label" for="buyerSite">Buyer Site</label>
+                                                        <input class="form-control" type="text" value="Northern Regional">
+                                                    </div>
+                                                </div>
+                                                <div class="col-xs-6">
+                                                    <div class="form-group">
+                                                        <label class="control-label">Supplier</label>
+                                                        <input class="form-control" type="text"  value="Acme Field Services Ltd">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="control-label" >Supplier Site</label>
+                                                        <input class="form-control" type="text"  value="Calgary, AB">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="row">
+                                                <div class="col-xs-6">
+                                                    <div class="form-group">
+                                                        <label class="control-label">PO Number</label>
+                                                        <input class="form-control" type="text"  value="4500000249">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="control-label">PO Date</label>
+                                                        <input class="form-control" type="text"  value="03/20/2012">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="control-label">PO Status</label>
+                                                        <input class="form-control" type="text" value="Accepted">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="control-label">Receipt Fulfillment</label>
+                                                        <input class="form-control" type="text"  value="Not Received">
+                                                    </div>
+                                                </div>
+                                                <div class="col-xs-6">
+                                                    <div class="form-group">
+                                                        <label class="control-label" >Change Request Number</label>
+                                                        <input  class="form-control" type="text" value="00000000">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="control-label">Change Request Date</label>
+                                                        <input  class="form-control" type="text" value="03/20/2012">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="control-label">Invoice Fulfillment</label>
+                                                        <input class="form-control" type="text" value="Partially Invoiced">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <div class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#proposedPOAddresses">Addresses and Contacts</a>
+                                    <span class="pull-right" data-toggle="collapse" data-parent="#accordion" href="#proposedPOAddresses">
+                                        <i class="panelExpandIcon glyphicon glyphicon-chevron-down"></i>
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="panel-body panel-collapse collapse" id="proposedPOAddresses" aria-expanded="false" aria-hidden="true">
+                                <div class="table-responsive">
+                                    <table class="table table-condensed">
+                                        <thead>
+                                            <tr>
+                                                <th>Address Type</th>
+                                                <th>Address</th>
+                                                <th>Contact Information</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Bill To</td>
+                                                <td>
+                                                    <div>ABC Petroleum Corp.</div>
+                                                    <div>Head Office</div>
+                                                    <div>5500 3rd Avenue</d>
+                                                        <div>Houston, Tx</div>
+                                                        <div>USA</span>
+                                                </td>
+                                                <td>
+                                                    <div> Phone:(403) 555-2864</div>
+                                                    <div> Fax: (403) 455-4444</div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Ship To</td>
+                                                <td>
+                                                    <div> ABC Petroleum Corp.</div>
+                                                    <div> East District Office</div>
+                                                    <div> Edgar Industrial Bend Rd</d>
+                                                        <div> Smallville, NY</div>
+                                                        <div> USA</span>
+                                                </td>
+                                                <td>
+                                                    <div> Phone:(687) 321-2846</div>
+                                                    <div> Fax: (547) 511-3791</div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Recipient</td>
+                                                <td>
+                                                    <div>Acme Field Services Ltd</div>
+                                                </td>
+                                                <td>
+                                                    <div> Email: nobody@localhost
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Non-Billing Inquiries</td>
+                                                <td>
+                                                    <div> Acme Field Services Ltd</span>
+                                                        <div> Shane Hauser</div>
+                                                </td>
+                                                <td>
+                                                    <div> Phone:(403) 111-1111</div>
+                                                    <div> Fax: (403) 999-9999</div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="panel panel-default" id="line-items-section">
+                            <div class="panel-heading">
+                                <div class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#proposedPOLineItems">Line Items</a>
+                                    <span class="pull-right" data-toggle="collapse" data-parent="#accordion" href="#proposedPOLineItems">
+                                        <i class="panelExpandIcon glyphicon glyphicon-chevron-down"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            <div id="proposedPOLineItems" class="panel-body panel-collapse collapse in">
+                                <div class="form-group">
+                                    <div class="table-responsive">
+                                        <table class="table table-striped table-bordered">
+                                            <thead>
+                                                <tr>
+
+                                                    <th class=""><input id="selectAllProposed" type="checkbox"></th>
+                                                    <th>Item</th>
+                                                    <th>Type</th>
+                                                    <th>Supplier Code</th>
+                                                    <th>Supplier Product/Service</th>
+                                                    <th>Buyer Description</th>
+                                                    <th>MFTR Code</th>
+                                                    <th>Qty</th>
+                                                    <th>Units</th>
+                                                    <th>Rate</th>
+                                                    <th>Total</th>
+                                                </tr>
+                                            </thead>
+
+                                            <tbody>
+                                                <tr>
+                                                    <td><input type="checkbox" id="proposedSelectCheckbox_0" class="ng-untouched ng-pristine ng-valid"></td>
+                                                    <td>00010</td>
+                                                    <td >Detail</td>
+                                                    <td >PRODUCT</td>
+                                                    <td ></td>
+                                                    <td >Services</td>
+                                                    <td ></td>
+                                                    <td >
+                                                        <p class="text-right">1</p>
+                                                    </td>
+                                                    <td >AU</td>
+                                                    <td >
+                                                        <p class="text-right">200,001.00</p>
+                                                    </td>
+                                                    <td >
+                                                        <p class="text-right">200,001.00</p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="11">
+                                                        <div aria-controls="collapse" class="text-muted" name="showHide" aria-expanded="false">
+                                                            <i class="fa fa-chevron-down"></i> Show Details
+                                                        </div>
+                                                        <div class="card card-block card-header collapse" id="collapse" aria-expanded="false"
+                                                            aria-hidden="true">
+                                                            <div class="panel-body ">
+                                                                <table class="table table-bordered">
+                                                                    <caption>Delivery Details</caption>
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <th>Quantity</th>
+                                                                            <th>Start Date</th>
+                                                                            <th>End Date</th>
+                                                                            <th>Ship To</th>
+                                                                            <th>Contact Information</th>
+                                                                            <th>Buyer Comment</th>
+                                                                        </tr>
+
+                                                                        <tr class="">
+                                                                            <td nowrap="" >1</td>
+                                                                            <td nowrap="" >
+                                                                                03/20/2012 12:00:00 AM </td>
+                                                                            <td nowrap="" >
+                                                                                02/27/2013 11:00:00 PM </td>
+
+
+                                                                            <td class="">
+                                                                                <ul></ul>
+                                                                            </td>
+                                                                            <td >
+
+                                                                            </td>
+                                                                            <td >Services</td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+
+                                                            <div class="panel-body ">
+                                                                <table class="table table-bordered">
+                                                                    <caption>Coding Details</caption>
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <th>Item Master</th>
+                                                                            <th>AFE</th>
+                                                                            <th>Cost Center</th>
+                                                                            <th>Work Order</th>
+                                                                            <th>GL account</th>
+                                                                        </tr>
+
+                                                                        <tr class="">
+                                                                            <td nowrap="" >361</td>
+                                                                            <td nowrap="" ></td>
+                                                                            <td nowrap="" ></td>
+                                                                            <td nowrap="" ></td>
+
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+
+                                                            <div class="panel-body ">
+                                                                <table class="table table-bordered">
+                                                                    <caption>Fulfillment Details</caption>
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <th>Type</th>
+                                                                            <th>Total Quantity</th>
+                                                                            <th>Total Amount</th>
+                                                                            <th>Fulfilled Quantity</th>
+                                                                            <th>Fulfilled Amount</th>
+                                                                            <th>Remaining Quantity</th>
+                                                                            <th>Remaining Amount</th>
+                                                                        </tr>
+
+                                                                        <tr class="">
+                                                                            <td nowrap="">Receipt</td>
+                                                                            <td nowrap="" >1</td>
+                                                                            <td nowrap="" >
+                                                                                <p class="text-right">200,001.00</p>
+                                                                            </td>
+                                                                            <td nowrap="" >0</td>
+                                                                            <td nowrap="" >
+                                                                                <p class="text-right">0.00</p>
+                                                                            </td>
+                                                                            <td nowrap="" >1</td>
+                                                                            <td nowrap="" >
+                                                                                <p class="text-right">200,001.00</p>
+                                                                            </td>
+                                                                        </tr>
+
+                                                                        <tr class="">
+                                                                            <td nowrap="">Invoice</td>
+                                                                            <td nowrap="" >1</td>
+                                                                            <td nowrap="" >
+                                                                                <p class="text-right">200,001.00</p>
+                                                                            </td>
+                                                                            <td nowrap="" >1015.4</td>
+                                                                            <td nowrap="" >
+                                                                                <p class="text-right">6,298.12</p>
+                                                                            </td>
+                                                                            <td nowrap="" >-1014.4</td>
+                                                                            <td nowrap="" >
+                                                                                <p class="text-right">193,702.88</p>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                            <tfoot>
+                                                <tr>
+                                                    <th class="text-right" colspan="10">PO Total Amount (Current)</th>
+                                                    <th class="border-bottom border-top text-right" name="poTotal"> 200,001.00 </th>
+                                                </tr>
+                                                <tr>
+                                                    <th class="text-right" colspan="10">Receipt Total</th>
+                                                    <th class="text-right" name="receiptTotal"> </th>
+                                                </tr>
+                                                <tr>
+                                                    <th class="text-right" colspan="10">Invoice Total</th>
+                                                    <th class="text-right" name="invoiceTotal"> 6,298.12 </th>
+                                                </tr>
+                                            </tfoot>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="panel panel-default" >
+                            <div class="panel-heading">
+                                <div class="panel-title"> Attachments </div>
+                            </div>
+                            <div class="panel-body" >
+                                {{>templates-attachments-list}}
+                            </div>
+                        </div>
+
+                        <div class="panel panel-default" >
+                            <div class="panel-heading">
+                                <div class="panel-title">
+                                    Journal
+                                </div>
+                            </div>
+                            <div class="panel-body" >
+                                {{> templates-document-journal }}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    </div>
+</div>
+<nav class="navbar navbar-default navbar-fixed-bottom" style="border-top: 1px solid #ccc;">
+    <div class="container-fluid">
+        <div class="btn-toolbar btn-toolbar-centered" role="toolbar">
+            <div id="currentPOToolbar" class="btn-group" role="group">
+                {{#poNavToolbarItems}}
+                    <button class="btn btn-default">
+                        <div>
+                            <i class="{{{icon}}}"></i>
+                        </div>
+                        <div>
+                            {{{ text }}}
+                        </div>
+                    </button>
+                {{/poNavToolbarItems}}
+            </div>
+            <div id="proposedPOToolbar" class="btn-group hide" role="group">
+                    <button class="btn btn-default">
+                        <div>
+                            <i class="fas fa-thumbs-up text-success"></i>
+                        </div>
+                        <div>
+                            Accept
+                        </div>
+                    </button>
+                    <button class="btn btn-default">
+                        <div>
+                            <i class="fas fa-thumbs-down text-danger"></i>
+                        </div>
+                        <div>
+                            Reject
+                        </div>
+                    </button>
+                    <button class="btn btn-default">
+                        <div>
+                            <i class="fas fa-print"></i>
+                        </div>
+                        <div>
+                            Print
+                        </div>
+                    </button>
+            </div>
+        </div>
+    </div>
+</nav>
+<script>
+    $('body').addClass('page-bg');
+</script>

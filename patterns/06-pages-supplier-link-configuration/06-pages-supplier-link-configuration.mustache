@@ -1,0 +1,526 @@
+{{> organisms-navbar("extraClass":"navbar-fixed-top", "pageTitle": "Super Ticket")}}
+{{> organisms-secondary-navbar("showBackButton":false,"hideNextPreviousButtons":true, "showConfigureButton":false, "extraClass":"navbar-fixed-top animated", "pageTitle":"Supplier Link Configuration")}}
+<div id="supplierLinkConfiguration" class="container-fluid animated page-top-padding">
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <ul id="supplierLinkConfigWizardSteps" class="nav nav-pills nav-wizard text-nowrap">
+                        <li id="configuration" class="hide-overflow stage current active" >
+                            <a href="#tab1" data-toggle="tab">
+                                Configure Import Method
+                            </a>
+                            <div class="nav-arrow"></div>
+                        </li>
+                        <li id="customerMapping" class="hide-overflow stage" >
+                            <div class="nav-wedge"></div>
+                            <a href="#tab2" data-toggle="tab" >
+                                Map Customers
+                            </a>
+                            <div class="nav-arrow"></div>
+                        </li>
+                        <li id="mapHeaderDataFields" class="hide-overflow stage">
+                            <div class="nav-wedge"></div>
+                            <a href="#tab3" data-toggle="tab">Map Header Fields</a>
+                            <div class="nav-arrow"></div>
+                        </li>
+                        <li id="mapLineDataFields" class="hide-overflow stage">
+                            <div class="nav-wedge"></div>
+                            <a href="#tab4" data-toggle="tab">Map Line Fields</a>
+                            <div class="nav-arrow"></div>
+                        </li>
+                        <li id="configureTaxes" class="hide-overflow stage">
+                            <div class="nav-wedge"></div>
+                            <a href="#tab5" data-toggle="tab">Configure Taxes</a>
+                            <div class="nav-arrow"></div>
+                        </li>
+                        <li id="summary" class="hide-overflow stage">
+                            <div class="nav-wedge"></div>
+                            <a href="#tab6" data-toggle="tab">Complete</a>
+                            <div class="nav-arrow"></div>
+                        </li>
+                    </ul>
+
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="tab1">
+                            <div class="form-group">
+                                <h4>How do you import your invoices:</h4>
+
+                                <div class="well-sm nav nav-pills" role="tablist">
+
+                                    <div class="radio">
+                                        <label onclick="$(this).first().attr('checked', true);">
+                                            <input id="QuickBooks Online" data-target="#qbOnlineConfig"
+                                                name="configurationOptions" type="radio" checked
+                                               onchange="$('#selectedImportMethod').text(this.id);">
+                                            QuickBooks Online
+                                        </label>
+                                    </div>
+                                    <div class="radio">
+                                        <label onclick="$(this).first().attr('checked', true);">
+                                            <input id="QuickBooks Desktop" data-target="#qbDesktopConfig"
+                                                name="configurationOptions"
+                                                onchange="$('#selectedImportMethod').text(this.id);"
+                                                type="radio"> QuickBooks Desktop
+                                        </label>
+                                    </div>
+                                    <div class="radio" >
+                                        <label onclick="$(this).first().attr('checked', true);">
+                                            <input id="File Import (CSV, TSV, TXT, Excel)" name="configurationOptions" type="radio"
+                                                data-target="#fileImportConfig" onchange="$('#selectedImportMethod').text(this.id);">
+                                            File Import (CSV, TSV, TXT, Excel)
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="tab-content" style="border: none;">
+                                        <div id="qbOnlineConfig" class="tab-pane active">
+                                            <fieldset class="fieldset">
+                                                <legend>
+                                                    <h5><strong>QuickBooks Online Configuration</strong></h5>
+                                                </legend>
+                                                <form>
+                                                    <div class="form-group">
+                                                        <p class="text-info">Click the button below to sign in to your
+                                                            QuickBooks Online account</p>
+                                                        <button class="btn btn-outline-success"
+                                                            onclick="openChildWindow('https://accounts.intuit.com/index.html', 'Intuit Sign In'); return false;">
+                                                            <img style="height: 1.4rem"
+                                                                src="https://icon-library.net/images/quickbooks-icon-download/quickbooks-icon-download-8.jpg">
+                                                            Connect My QuickBooks Online
+                                                        </button>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label>Company:</label>
+                                                        <input class="form-control form-control-static" disabled />
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label>Legal Name:</label>
+                                                        <input class="form-control" disabled />
+                                                    </div>
+                                                </form>
+                                            </fieldset>
+                                        </div>
+                                        <div id="qbDesktopConfig" class="tab-pane">
+                                            <fieldset>
+                                                <legend>
+                                                    <h5><strong>QuickBooks Desktop Configuration</strong></h5>
+                                                </legend>
+                                                <div class="form-group">
+                                                    <label>Company Name </label>
+                                                    <input class="form-control " type="text">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label> Invoice Attachments Path </label>
+
+                                                    <input class="form-control " type="text"
+                                                        placeholder="i.e. /path/to/folder/containing/QuickBooks/attachments">
+                                                </div>
+                                                <div class="form-group">
+                                                    <button class="btn btn-outline-success">
+                                                        <img style="height: 1.4rem"
+                                                            src="https://icon-library.net/images/quickbooks-icon-download/quickbooks-icon-download-8.jpg">
+                                                        Download QuickBooks Connector</button>
+                                                </div>
+                                            </fieldset>
+                                        </div>
+                                        <div id="fileImportConfig" class="tab-pane">
+                                            <fieldset>
+                                                <legend>
+                                                    <h5><strong>File Import Configuration</strong></h5>
+                                                </legend>
+                                                <div class="form-group col-xs-12">
+                                                    <div class="radio">
+                                                        <label>
+                                                            <input type="radio" name="fileImportRadio" checked
+                                                                onclick="$('#supplierLinkCustomTemplateOptions').addClass('hide');">
+                                                            Use OpenInvoice Standard Template
+                                                        </label>
+                                                    </div>
+                                                    <div class="radio">
+                                                        <label>
+                                                            <input type="radio" name="fileImportRadio"
+                                                                onclick="$('#supplierLinkCustomTemplateOptions').removeClass('hide');">
+                                                            Use a Custom Template
+                                                        </label>
+                                                    </div>
+
+                                                    <div class="form-group hide" id="supplierLinkCustomTemplateOptions">
+                                                        <label>Upload Custom Template: </label>
+                                                        <div class="input-group">
+                                                            <input class="form-control"
+                                                                accept=".csv, .tsv, .txt, .xls, .xlsx" type="file">
+                                                            <div class="input-group-btn">
+                                                                <button class="btn btn-default" type="submit">
+                                                                    <i class="fas fa-download"></i> Download Custom
+                                                                    Template
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </fieldset>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="tab2">
+                            <div class="form-group">
+                                <h4>Customer Mapping</h4>
+                            </div>
+                            <div class="row form-group">
+                                <div class="col-xs-6">
+
+                                </div>
+                                <div class="col-xs-6 text-right">
+                                    <div class="btn-group">
+                                        <button class="btn btn-success"
+                                            onclick="showAlertDialog('success',' Yeah Baby!  Your changes were successfully saved.', true);">Save</button>
+                                        <button class="btn btn-default">Cancel</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="table-responsive">
+                                <table class="table table-striped table-bordered table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th>QuickBooks Customer</th>
+                                            <th>OpenInvoice Customer</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                Acme Petroleum Inc.
+                                            </td>
+                                            <td>
+                                                <select class="form-control ">
+                                                    <option>Select a Customer</option>
+                                                    <option>Acme Petroleum Inc.</option>
+                                                </select>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Encana Corporation</td>
+                                            <td>
+                                                <select class="form-control ">
+                                                    <option>Select a Customer</option>
+                                                    <option>Encana Corporation</option>
+                                                </select>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                        </div>
+
+                        <div class="tab-pane" id="tab3">
+                            <div class="form-group">
+                                <h4>Map Header Fields</h4>
+                            </div>
+                            <div class="row form-group">
+                                <div class="col-xs-6">
+                                    <label>Customer Template</label>
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-default dropdown-toggle"
+                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Please
+                                            Select <span class="caret"></span></button>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#">Template 1</a></li>
+                                            <li><a href="#">Template 2</a></li>
+                                            <li><a href="#">Template 3</a></li>
+                                            <li><a href="#">Template 4</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-xs-6 text-right">
+                                    <div class="btn-group">
+                                        <button class="btn btn-success"
+                                            onclick="showAlertDialog('success',' Yeah Baby!  Your changes were successfully saved.', true);">Save</button>
+                                        <button class="btn btn-default">Cancel</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="supplier-link-mapping-table table-responsive">
+                                <table class="table table-striped table-bordered table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th>QuickBooks Field</th>
+                                            <th>OpenInvoice Field</th>
+                                            <th>Default Value</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td >
+                                                    <input type="text" class="form-control" value="Invoice Number">
+                                            </td>
+                                            <td class="has-feedback has-warning">
+                                                <p class="form-control-static"> Invoice Number </p>
+                                                <small class="help-block" >Required</small>
+                                            </td>
+                                            <td>
+                                                <input type="text" class="form-control" value="">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <select class="form-control">
+                                                    <option>Invoice Date</option>
+                                                    <option>Customer</option>
+                                                    <option>Requisitioner</option>
+                                                    <option>Customer Code</option>
+                                                </select>
+                                            </td>
+                                            <td class="has-feedback has-warning">
+                                                <p class="form-control-static"> Invoice Date </p>
+                                                <small class="help-block">Required</small>
+                                            </td>
+                                            <td>
+                                                <input type="text" class="form-control" value="">
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="tab4">
+                            <div class="form-group">
+                                <h4>Map Line Fields</h4>
+                            </div>
+                            <div class="row form-group">
+                                <div class="col-xs-6">
+                                    <label>Customer Template</label>
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                                            Please Select <span class="caret"></span>
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#">Template 1</a></li>
+                                            <li><a href="#">Template 2</a></li>
+                                            <li><a href="#">Template 3</a></li>
+                                            <li><a href="#">Template 4</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-xs-6 text-right">
+                                    <div class="btn-group">
+                                        <button class="btn btn-success"
+                                            onclick="showAlertDialog('success',' Yeah Baby!  Your changes were successfully saved.', true);">Save</button>
+                                        <button class="btn btn-default">Cancel</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="table-responsive">
+                                <table class="supplier-link-mapping-table table table-striped table-bordered table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th>QuickBooks Field</th>
+                                            <th>OpenInvoice Field</th>
+                                            <th>Default Value</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <input type="text" class="form-control" value="Line Number">
+                                            </td>
+                                            <td class="has-feedback has-warning">
+                                                <p class="form-control-static"> Line Number </p>
+                                                <small class="help-block">Required</small>
+                                            </td>
+                                            <td>
+                                                <input type="text" class="form-control" value="">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <select class="form-control">
+                                                    <option>Product/Service</option>
+                                                    <option>Quantity</option>
+                                                    <option>Units</option>
+                                                    <option>Rate</option>
+                                                </select>
+                                            </td>
+                                            <td class="has-feedback has-warning">
+                                                <p class="form-control-static"> Product/Service </p>
+                                                <small class="help-block">Required</small>
+                                            </td>
+                                            <td>
+                                                <input type="text" class="form-control" value="">
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane" id="tab5">
+                            <div class="form-group">
+                                <h4>Configure Taxes</h4>
+                            </div>
+                            <div class="row form-group">
+                                <div class="col-xs-6">
+
+                                </div>
+                                <div class="col-xs-6 text-right">
+                                    <div class="btn-group">
+                                        <button class="btn btn-success"
+                                            onclick="showAlertDialog('success',' Yeah Baby!  Your changes were successfully saved.', true);">Save</button>
+                                        <button class="btn btn-default">Cancel</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="table-responsive">
+                                <table class="table table-striped table-bordered  table-hover">
+                                    <thead>
+                                        <tr class="table-success">
+                                            <th>QuickBooks Online Tax</th>
+                                            <th>OpenInvoice Tax</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Group: Exempt</td>
+                                            <td>
+                                                <select class="form-control">
+                                                    <option>Please Select </option>
+                                                    <option value="GST">GST</option>
+                                                </select>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>GST ES</td>
+                                            <td>
+                                                <select class="form-control">
+                                                    <option>Please Select </option>
+                                                    <option value="GST">GST</option>
+                                                </select>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>GST</td>
+                                            <td>
+                                                <select class="form-control ">
+                                                    <option>Please Select </option>
+                                                    <option value="GST">GST</option>
+                                                </select>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="tab6">
+                            <p>
+                                <h4>Complete!</h4>
+
+                                <div class="form-group">
+                                    <strong>Your configuration is  complete!</strong>
+                                </div>
+
+                                <p>
+                                    <ul class="fa-ul">
+                                        <li class='h5 form-group'>
+                                            <span class="fa-li">
+                                                <i class="fas fa-check-circle text-success"></i>
+                                            </span>
+                                            <strong>Import Method:</strong> Invoices will be imported from
+                                            <strong id="selectedImportMethod">QuickBooks Online</strong>
+                                        </li>
+                                        <li class='h5 form-group'>
+                                            <span class="fa-li">
+                                                <i class="fas fa-check-circle text-success"></i>
+                                            </span>
+                                            <strong>Customers:</strong> 2 customers were mapped
+                                        </li>
+                                        <li class='h5 form-group'>
+                                            <span class="fa-li">
+                                                <i class="fas fa-check-circle text-success"></i>
+                                            </span>
+                                            <strong>Header Fields:</strong> 2 fields were mapped
+                                        </li>
+                                        <li class='h5 form-group'>
+                                            <span class="fa-li">
+                                                <i class="fas fa-check-circle text-success"></i>
+                                            </span>
+                                            <strong>Line Item Fields:</strong> 2 fields were mapped
+                                        </li>
+                                        <li class='h5 form-group'>
+                                            <span class="fa-li">
+                                                <i class="fas fa-check-circle text-success"></i>
+                                            </span>
+                                            <strong>Taxes:</strong> 2 taxes were configured
+                                        </li>
+                                    </ul>
+                                </p>
+                                <p>
+                                    Return to this page to make changes to your configuration at any time.
+                                </p>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="form-group pager">
+                        <button id="previousStep" class="btn btn-success pull-left disabled"
+                            onclick="$('.nav-wizard .active').removeClass('complete').prev('li').find('a').trigger('click');">
+                            << Previous
+                        </button>
+                        <button id="nextStep" class="btn btn-success pull-right"
+                                onclick="$('.nav-wizard .active').addClass('complete').next('li').find('a').trigger('click');">
+                                Next >>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+
+    $('#supplierLinkConfigWizardSteps a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+        var target = $(e.target);
+        var index = $(e.target).closest('li').index();
+        var itemsBefore = $("#supplierLinkConfigWizardSteps li:lt(" +index +")");
+        var itemsAfter = $("#supplierLinkConfigWizardSteps li:gt(" +index +")");
+
+        for (let i = 0; i < itemsBefore.length; i++) {
+            const element = itemsBefore[i];
+            element.classList.add('complete');
+        }
+
+        for (let i = 0; i < itemsAfter.length; i++) {
+            const element = itemsAfter[i];
+            element.classList.remove('complete');
+        }
+
+        if ((target.attr("href") == '#tab1')) {
+            $('#previousStep').addClass('disabled');
+            $(e.target).closest('li')[0].classList.remove('complete');
+        } else {
+            $('#previousStep').removeClass('disabled');
+        }
+
+         if ((target.attr("href") == '#tab6')) {
+            $('#nextStep').addClass('disabled');
+        } else {
+            $('#nextStep').removeClass('disabled');
+        }
+    });
+
+    function openChildWindow(url, windowTitle) {
+        var params =
+            `scrollbars=no,resizable=no,status=no,location=no,toolbar=no,menubar=no, width=600,height=450,left=-1000,top=-1000`;
+        open(url, windowTitle, params);
+    }
+    $(document).ready(function () {
+        $('body').addClass('page-bg');
+        $('input[name="configurationOptions"]').click(function () {
+            $(this).tab('show');
+            $(this).removeClass('active');
+        });
+    })
+
+</script>

@@ -1,0 +1,92 @@
+{{> organisms-navbar("extraClass":"navbar-fixed-top")}}
+{{> organisms-secondary-navbar("extraClass":"navbar-fixed-top", "pageTitle": "Goods Receipt #0000123456","hideNextPreviousButtons": false)}}
+
+<div class="container-fluid page-top-padding  page-bottom-padding">
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <div class="row">
+                <div class="col-sm-12">
+                    {{> templates-document-header("documentNumber":"Goods Receipt #0000123456", "documentCompanyName":"Acme Oilfield Supplies Ltd.")}}
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <table class="table table-hover ">
+                                <thead>
+                                    <tr>
+                                        <td><strong>Supplier Name</strong></th>
+                                        <td>Acme Oilfield Supplies Ltd.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Purchase Order</strong></th>
+                                        <td>7659876</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Bill of Lading</strong></th>
+                                        <td>00000574165</td>
+                                    </tr>
+                                </thead>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <table class="table table-hover ">
+                                <thead>
+                                    <tr>
+                                        <td><strong>Created Date</strong></td>
+                                        <td>10/15/2018</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Received Date</strong></td>
+                                        <td>10/16/2018</td>
+                                    </tr>
+                                </thead>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--div class="form-group">
+                <button class="btn btn-default" id="showBulkUpdate" >Bulk Update</button>
+            </div-->
+
+            <div class="form-group">
+                <div class="table-responsive">
+                    <table id="goodsReceiptLineItemsList" width="100%" class="table table-striped table-hover table-bordered">
+                        <thead>
+                            <tr>
+                                <th width="1" class="text-nowrap">Line</th>
+                                <th class="text-nowrap">Product Name</th>
+                                <th class="text-nowrap">PO Line</th>
+                                <th class="text-nowrap">Received Quantity</th>
+                                <th class="text-nowrap">Units</th>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{{> templates-bulk-update("idSuffix":"superTicket","hideModal":true)}}
+{{> organisms-centered-navbar("extraClass":"navbar-fixed-bottom")}}
+
+<script>
+    $(document).ready(function () {
+        $('body').addClass('page-bg');
+        $('html').addClass('page-bg');
+
+        // onclick listener for the bulk update button
+        $("#showBulkUpdate").click(function () {
+            $("#bulkUpdateModalsuperTicket").modal();
+        });
+
+        initGoodsReceiptDataTable();
+    });
+</script>

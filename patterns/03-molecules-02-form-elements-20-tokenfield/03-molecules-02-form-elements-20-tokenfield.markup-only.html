@@ -1,0 +1,13 @@
+<input class="text-input form-control" placeholder="Type to search employees by name..."/>
+
+<script>
+    var tokenfield  = new Tokenfield({
+        el: document.querySelector('.text-input'), // Attach Tokenfield to the input element with class "text-input"
+        remote: {
+            url: "../../styleguide/data/tokenfieldData.json"
+        },
+        itemData: 'name',
+        minChars: 1,
+        newItems: false,
+    });
+</script>

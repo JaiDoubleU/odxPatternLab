@@ -1,0 +1,4 @@
+(function() {
+var toc =  [{"type":"item","name":"Content Model Configuration","url":"OpenInvoiceForBuyers_master/Configuration/FieldTicket_Configuration/Content_Model_Configuration.htm#TOC_Content_Model"},{"type":"item","name":"Configure Field Ticket Data Fields","url":"OpenInvoiceForBuyers_master/Configuration/FieldTicket_Configuration/Configure_Field_Ticket_Data_Fields.htm#TOC_Configure_Field_Ticket"},{"type":"item","name":"Field Ticket Recipient Routing","url":"OpenInvoiceForBuyers_master/Configuration/FieldTicket_Configuration/Field_Ticket_Recipient_Routing.htm#TOC_Field_Ticket_Recipient"}];
+window.rh.model.publish(rh.consts('KEY_TEMP_DATA'), toc, { sync:true });
+})();

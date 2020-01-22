@@ -1,0 +1,77 @@
+<form class="navbar-form navbar-left visible-sm visible-md visible-lg" role="search"  style="float: none !important;">
+    <div class="form-group">
+        <div class="input-group">
+            <div class="input-group-btn">
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                    <span id="searchTypeBtnText">Invoice</span>
+                    <i class="fas fa-caret-down"></i>
+                </button>
+                <ul id="searchTypeOptions" class="dropdown-menu pull-left">
+                  <li>Invoice</li>
+                  <li>PO</li>
+                  <li>Ticket</li>
+                </ul>
+            </div>
+            <input type="text" class="form-control" placeholder="Search">
+            <span class="input-group-btn">
+                {{> atoms-btn:btn-default ("buttonIconClass": "fa-search") }}
+            </span>
+        </div>
+    </div>
+</form>
+
+<ul class="navbar-left list-inline list-unstyled pull-left visible-xs">
+    <li class="dropdown">
+        <a href="#nogo" class="btn {{btnClass}}" data-html="true" data-toggle="popover" data-placement="bottom" data-popover-content="#a1" >
+            <i class="fas fa-fw fa-search"></i>
+        </a>
+    </li>
+</ul>
+
+<!-- Content for in popup -->
+<div class="hidden" id="a1">
+    <div class="popover-heading">
+        Search
+    </div>
+
+    <div class="popover-body">
+        <form>
+            <div class='input-group'>
+                <div class='input-group-btn'>
+                    <button type='button' class='btn btn-default dropdown-toggle' data-toggle='dropdown'><span id='searchTypeBtnText2'>Invoice</span> <i class='fas fa-caret-down'></i></button>
+                    <ul id='searchTypeOptions2' class='dropdown-menu pull-left'>
+                        <li onclick="$('#searchTypeBtnText2').text('Invoice'); ">Invoice</li>
+                        <li onclick="$('#searchTypeBtnText2').text('PO'); ">PO</li>
+                        <li onclick="$('#searchTypeBtnText2').text('Ticket'); ">Ticket</li>
+                    </ul>
+                </div>
+                <input type='text' class='form-control' style="min-width: 125px;"placeholder='Search'><span class='input-group-btn'>{{> atoms-btn:btn-default ("buttonIconClass": "fa-search") }}</span>
+            </div>
+        </form>
+    </div>
+</div>
+<style>
+    .popover-body { width: 320px !important;}
+</style>
+<script>
+    $(document).ready(function(){
+        $('#searchTypeOptions li').click(function(){
+            $('#searchTypeBtnText').text($(this).text());
+        });
+    });
+
+
+    $(function(){
+        $("[data-toggle=popover]").popover({
+            html : true,
+            content: function() {
+              var content = $(this).attr("data-popover-content");
+              return $(content).children(".popover-body").html();
+            },
+            title: function() {
+              var title = $(this).attr("data-popover-content");
+              return $(title).children(".popover-heading").html();
+            }
+        });
+    });
+</script>

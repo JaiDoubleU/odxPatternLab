@@ -1,0 +1,57 @@
+.tabs-left { min-height: 180px;}
+.tabs-left .tab-content {
+    border: none;
+    width : calc(100% - 180px);
+    float : left;
+}
+.tabs-left > .nav-tabs {
+    border-bottom: 0;
+    min-width    : 74px;
+    max-width    : 160px;
+    float        : left;
+}
+
+.tab-content > .tab-pane {
+    display: none;
+}
+
+.tab-content > .active {
+    display: block;
+}
+
+.tabs-left > .nav-tabs > li {
+    float: none;
+}
+
+.tabs-left > .nav-tabs > li > a {
+    min-width    : 74px;
+    max-width    : 160px;
+    margin-right : 0;
+    margin-bottom: 3px;
+    overflow     : hidden;
+    text-overflow: ellipsis;
+}
+
+.tabs-left > .nav-tabs {
+    padding-left: 19px;
+    border-right: 1px solid #ddd;
+}
+
+.tabs-left > .nav-tabs > li > a {
+    margin-right         : -1px;
+    -webkit-border-radius: 4px 0 0 4px;
+    -moz-border-radius   : 4px 0 0 4px;
+    border-radius        : 4px 0 0 4px;
+}
+
+.tabs-left > .nav-tabs > li > a:hover,
+.tabs-left > .nav-tabs > li > a:focus {
+    border-bottom-color: #ddd;
+}
+
+.tabs-left > .nav-tabs .active > a,
+.tabs-left > .nav-tabs .active > a:hover,
+.tabs-left > .nav-tabs .active > a:focus {
+    border-color       : #ddd transparent #ddd #ddd;
+    *border-right-color: #ffffff;
+}

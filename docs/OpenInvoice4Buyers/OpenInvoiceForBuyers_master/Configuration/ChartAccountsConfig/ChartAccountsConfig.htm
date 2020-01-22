@@ -1,0 +1,280 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+ <title>ChartAccountsConfig</title>
+
+ <link rel="stylesheet" href="../../../OpenInvoiceForBuyers_master.css" type="text/css" />
+
+
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style>
+ <meta name="generator" content="Adobe FrameMaker 2017" />
+<script type="text/javascript" src="../../../template/scripts/rh.min.js"></script>
+<script type="text/javascript" src="../../../template/scripts/common.min.js"></script>
+<script type="text/javascript" src="../../../template/scripts/topic.min.js"></script>
+<script type="text/javascript" src="../../../template/scripts/constants.js"></script>
+<script type="text/javascript" src="../../../template/scripts/utils.js"></script>
+<script type="text/javascript" src="../../../template/scripts/mhutils.js"></script>
+<script type="text/javascript" src="../../../template/scripts/mhlang.js"></script>
+<script type="text/javascript" src="../../../template/scripts/mhver.js"></script>
+<script type="text/javascript" src="../../../template/scripts/settings.js"></script>
+<script type="text/javascript" src="../../../template/scripts/XmlJsReader.js"></script>
+<script type="text/javascript" src="../../../template/scripts/loadparentdata.js"></script>
+<script type="text/javascript" src="../../../template/scripts/loadscreen.js"></script>
+<script type="text/javascript" src="../../../template/scripts/loadprojdata.js"></script>
+<script type="text/javascript" src="../../../template/scripts/mhtopic.js"></script>
+ <link rel="stylesheet" type="text/css" href="../../../template/styles/topic.min.css">
+<script type="text/javascript" >
+gRootRelPath = "../../..";
+gCommonRootRelPath = "../../..";
+gTopicId = "1.0_5";
+</script>
+ <meta name="brsprev" value="OpenInvoiceForBuyers_master/Configuration/CostObjectConfig/CostObjectConfig.htm">
+ <meta name="brsnext" value="OpenInvoiceForBuyers_master/Configuration/CodingConfig/CodingConfig.htm">
+ <meta name="topic-breadcrumbs" content="Administrator & User Guide for Buyers" />
+</head>
+
+<body dir="ltr">
+<script type="text/javascript" src="../../../ehlpdhtm.js"></script>
+
+ <div dir="ltr">
+  <p dir="ltr" class="FM_Chapter_Title"><a name="XREF_28223_Chart_of_Accounts"></a>Chart of Accounts Configuration</p>
+
+  <p dir="ltr" class="FM_Body_Style">This section provides instructions on how to configure your company’s chart of accounts. Many of <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>’s time-saving features come from the ability to associate (or map) general ledger codes with various data, allowing buyers to control invoice coding and approvals.</p>
+
+  <p dir="ltr" class="FM_Body_Style">The following topics are applicable to company administrators who oversee configuration of the cost allocation functionalities in <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>:</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><a href="#XREF_13723_Creating_the"><span class="FM_ADP_TG__Link">Creating the General Ledger (GL)</span></a></p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><a href="#XREF_79831_Mapping_the"><span class="FM_ADP_TG__Link">Mapping the General Ledger (GL) to Taxes</span></a></p>
+
+  <p dir="ltr" class="FM_Heading_1"><a name="XREF_13723_Creating_the"></a>Creating the General Ledger (GL)</p>
+
+  <p dir="ltr" class="FM_Body_Style">Each major code is assigned a valid list of minor codes. Optionally, each minor code is assigned a valid list of subcodes. A minor code can be assigned to multiple major codes; a subcode can be assigned to multiple minor codes. Accounting strings identify the various combinations of major, minor, and subcodes. These account strings or mappings are unaffected if changes are made to one of the general ledger account codes or descriptions.</p>
+
+  <p dir="ltr" class="FM_Heading_2_HowTo">How to Map Minor Accounts to Major Accounts</p>
+
+  <p dir="ltr" class="FM_Body_Style">You can manually map or import your minor account mappings. </p>
+
+  <p dir="ltr" class="FM_Heading_4">To manually map your accounts:</p>
+
+  <p dir="ltr" class="FM_Permission___Start"><span class="FM_Bold">Permission:<span style="padding-left: 21pt;" class="FMAutoNumber_1"></span></span>Corporate Modify</p>
+
+  <p dir="ltr" class="FM_Prerequisite___Start"><span class="FM_Bold">Prerequisite:<span style="padding-left: 18pt;" class="FMAutoNumber_1"></span></span>Coding Level 1 - Major and Coding Level 2 - Minor data has been added under <span style="font-weight : bold; ">Corporate </span>&gt; <span style="font-weight : bold; ">Reference Data.</span></p>
+
+  <p dir="ltr" class="FM_Steps"><span class="FM_Bold">Steps:<span style="padding-left: 8pt;" class="FMAutoNumber_1"></span></span></p>
+
+  <p dir="ltr" class="FM_Number_List_1___Start"><span class="FM_Bullet4">1.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Select <span style="font-weight : bold; ">Corporate &gt; COA Setup </span></p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">2.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click<span style="font-weight : bold; "> Major Accounts</span>.</p>
+
+  <p dir="ltr" class="FM_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 13pt;" class="FMAutoNumber_2"></span></span>By default, all major accounts are listed. Apply a filter to narrow your list. If only part of the criteria is known, an asterisk (*) must be used to denote the unknown part of the criteria.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">3.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click the <span style="font-weight : bold; ">Configure Minor Accounts</span>&#160;icon in the <span style="font-weight : bold; ">Mapped Minor Accounts</span> column.</p>
+
+  <div align="center"><img alt="COAConfig_configureminormajor.png" id="image64" src="../../../assets/COAConfig_configureminormajor.png" style="max-width: 100% ;height: auto" />
+  </div>
+  <p dir="ltr" class="FM_Screenshot_Anchor">&nbsp;</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">4.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Add or remove minor accounts to be mapped by selecting the account name and clicking <span style="font-weight : bold; ">Add&nbsp;</span>&gt;<span style="font-weight : bold; ">&#160;</span>or<span style="font-weight : bold; ">&#160;</span>&lt;&nbsp;<span style="font-weight : bold; ">Remove</span>.</p>
+
+  <p dir="ltr" class="FM_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 13pt;" class="FMAutoNumber_2"></span></span>To select multiple items at once, hold the<span style="font-weight : bold; "> Ctrl</span>&#160;key and select the items. Alternatively, hold the <span style="font-weight : bold; ">Shift </span>key to select a range of items. </p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">5.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Submit</span>.</p>
+
+  <p dir="ltr" class="FM_Heading_4">To import your account mappings:</p>
+
+  <p dir="ltr" class="FM_Permission___Start"><span class="FM_Bold">Permission:<span style="padding-left: 21pt;" class="FMAutoNumber_1"></span></span>Corporate Modify</p>
+
+  <p dir="ltr" class="FM_Prerequisite___Start"><span class="FM_Bold">Prerequisite:<span style="padding-left: 18pt;" class="FMAutoNumber_1"></span></span>Coding Level 1 - Major and Coding Level 2 - Minor data has been added under <span style="font-weight : bold; ">Corporate </span>&gt; <span style="font-weight : bold; ">Reference Data.</span></p>
+
+  <p dir="ltr" class="FM_Steps"><span class="FM_Bold">Steps:<span style="padding-left: 8pt;" class="FMAutoNumber_1"></span></span></p>
+
+  <p dir="ltr" class="FM_Number_List_1___Start"><span class="FM_Bullet4">1.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Select <span style="font-weight : bold; ">Corporate &gt; COA Setup </span></p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">2.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click<span style="font-weight : bold; "> Major Accounts</span>.</p>
+
+  <p dir="ltr" class="FM_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 13pt;" class="FMAutoNumber_2"></span></span>By default, all major accounts are listed. Apply a filter to narrow your list. If only part of the criteria is known, an asterisk (*) must be used to denote the unknown part of the criteria.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">3.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Export</span> to download and save a copy of your existing records in a file.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">4.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>In the file, add your major and minor mappings. For more information about the column headings, refer to <a href="../../Appendix/Appendix/Appendix.htm#XREF_78147_Major_Minor">Major Minor Mapping Template </a>.</p>
+
+  <p dir="ltr" class="FM_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 13pt;" class="FMAutoNumber_2"></span></span>This method can only be used to add mappings. You must use the manual method to delete or modify existing mappings.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">5.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>In <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>, do one of the following:</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>To upload a file saved on your desktop, select <span style="font-weight : bold; ">File</span>&#160;as the import method, click <span style="font-weight : bold; ">Choose File</span>, navigate to the file on your computer, and click <span style="font-weight : bold; ">Open</span>.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>To copy the contents of a spreadsheet, select <span style="font-weight : bold; ">Copy/Paste</span>&#160;as the import method, copy the information in your file, and paste it into the box.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">6.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Upload</span>.</p>
+
+  <p dir="ltr" class="FM_Heading_2_HowTo">How to Map Subcode Accounts to Minor Accounts</p>
+
+  <p dir="ltr" class="FM_Body_Style">You can manually map or import your subcode account mappings.</p>
+
+  <p dir="ltr" class="FM_Heading_4">To manually map your accounts:</p>
+
+  <p dir="ltr" class="FM_Permission___Start"><span class="FM_Bold">Permission:<span style="padding-left: 21pt;" class="FMAutoNumber_1"></span></span>Corporate Modify</p>
+
+  <p dir="ltr" class="FM_Prerequisite___Start"><span class="FM_Bold">Prerequisite:<span style="padding-left: 18pt;" class="FMAutoNumber_1"></span></span>Coding Level 2 - Minor and Coding Level 3 - Subcode data has been added under <span style="font-weight : bold; ">Corporate </span>&gt; <span style="font-weight : bold; ">Reference Data.</span></p>
+
+  <p dir="ltr" class="FM_Steps"><span class="FM_Bold">Steps:<span style="padding-left: 8pt;" class="FMAutoNumber_1"></span></span></p>
+
+  <p dir="ltr" class="FM_Number_List_1___Start"><span class="FM_Bullet4">1.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Select <span style="font-weight : bold; ">Corporate &gt; COA Setup </span></p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">2.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click<span style="font-weight : bold; "> Minor Accounts</span>. </p>
+
+  <p dir="ltr" class="FM_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 13pt;" class="FMAutoNumber_2"></span></span>By default, all minor accounts are listed. Apply a filter to narrow your list. If only part of the criteria is known, an asterisk (*) must be used to denote the unknown part of the criteria.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">3.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click the <span style="font-weight : bold; ">Configure Subcode Accounts</span>&#160;icon in the <span style="font-weight : bold; ">Mapped Subcode Accounts</span> column.</p>
+
+  <div align="center"><img alt="COAConfig_configuresubcodeminor.png" id="image65" src="../../../assets/COAConfig_configuresubcodeminor.png" style="max-width: 100% ;height: auto" />
+  </div>
+  <p dir="ltr" class="FM_Screenshot_Anchor">&nbsp;</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">4.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Add or remove subcode accounts to be mapped by selecting the account name and clicking <span style="font-weight : bold; ">Add&nbsp;</span>&gt;<span style="font-weight : bold; ">&#160;</span>or<span style="font-weight : bold; ">&#160;</span>&lt;&nbsp;<span style="font-weight : bold; ">Remove</span>.</p>
+
+  <p dir="ltr" class="FM_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 13pt;" class="FMAutoNumber_2"></span></span>To select multiple items at once, hold the<span style="font-weight : bold; "> Ctrl</span>&#160;key and select the items. Alternatively, hold the <span style="font-weight : bold; ">Shift </span>key to select a range of items. </p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">5.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Submit</span>.</p>
+
+  <p dir="ltr" class="FM_Heading_4">To import your account mappings:</p>
+
+  <p dir="ltr" class="FM_Permission___Start"><span class="FM_Bold">Permission:<span style="padding-left: 21pt;" class="FMAutoNumber_1"></span></span>Corporate Modify</p>
+
+  <p dir="ltr" class="FM_Prerequisite___Start"><span class="FM_Bold">Prerequisite:<span style="padding-left: 18pt;" class="FMAutoNumber_1"></span></span>Coding Level 2 - Minor and Coding Level 3 - Subcode data has been added under <span style="font-weight : bold; ">Corporate </span>&gt; <span style="font-weight : bold; ">Reference Data.</span></p>
+
+  <p dir="ltr" class="FM_Steps"><span class="FM_Bold">Steps:<span style="padding-left: 8pt;" class="FMAutoNumber_1"></span></span></p>
+
+  <p dir="ltr" class="FM_Number_List_1___Start"><span class="FM_Bullet4">1.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Select <span style="font-weight : bold; ">Corporate &gt; COA Setup </span></p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">2.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click<span style="font-weight : bold; "> Minor Accounts</span>. </p>
+
+  <p dir="ltr" class="FM_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 13pt;" class="FMAutoNumber_2"></span></span>By default, all minor accounts are listed. Apply a filter to narrow your list. If only part of the criteria is known, an asterisk (*) must be used to denote the unknown part of the criteria.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">3.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Export</span> to download and save a copy of your existing records in a file.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">4.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>In the file, add your minor and subcode mappings. For more information about the column headings, refer to <a href="../../Appendix/Appendix/Appendix.htm#XREF_85245_Minor_Subcode">Minor Subcode Mapping Template</a>.</p>
+
+  <p dir="ltr" class="FM_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 13pt;" class="FMAutoNumber_2"></span></span>This method can only be used to add mappings. You must use the manual method to delete or modify existing mappings.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">5.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>In <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>, do one of the following:</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>To upload a file saved on your desktop, select <span style="font-weight : bold; ">File</span>&#160;as the import method, click <span style="font-weight : bold; ">Choose File</span>, navigate to the file on your computer, and click <span style="font-weight : bold; ">Open</span>.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>To copy the contents of a spreadsheet, select <span style="font-weight : bold; ">Copy/Paste</span>&#160;as the import method, copy the information in your file, and paste it into the box.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">6.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Upload</span>.</p>
+
+  <p dir="ltr" class="FM_Heading_1"><a name="XREF_79831_Mapping_the"></a>Mapping the General Ledger (GL) to Taxes</p>
+
+  <p dir="ltr" class="FM_Body_Style"><span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span> automatically codes taxes based on how they are mapped to the general ledger.</p>
+
+  <p dir="ltr" class="FM_Heading_2_HowTo">How to Map General Ledger Codes to Taxes</p>
+
+  <p dir="ltr" class="FM_Body_Style">You can add a new tax account, modify an existing tax account, or delete a tax account. </p>
+
+  <p dir="ltr" class="FM_Heading_4">To add a new tax account:</p>
+
+  <p dir="ltr" class="FM_Permission___Start"><span class="FM_Bold">Permission:<span style="padding-left: 21pt;" class="FMAutoNumber_1"></span></span>Corporate Modify</p>
+
+  <p dir="ltr" class="FM_Prerequisite___Start"><span class="FM_Bold">Prerequisite:<span style="padding-left: 18pt;" class="FMAutoNumber_1"></span></span>The general ledger must be created by mapping the major, minor, and subcodes.</p>
+
+  <p dir="ltr" class="FM_Steps"><span class="FM_Bold">Steps:<span style="padding-left: 8pt;" class="FMAutoNumber_1"></span></span></p>
+
+  <p dir="ltr" class="FM_Number_List_1___Start"><span class="FM_Bullet4">1.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Select <span style="font-weight : bold; ">Corporate &gt; COA Setup. </span></p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">2.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Tax Accounts</span>. </p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">3.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Add Tax Account</span>&#160;to create a new mapping. </p>
+
+  <div align="center"><img alt="COAConfig_addtaxaccounts.png" id="image66" src="../../../assets/COAConfig_addtaxaccounts.png" style="max-width: 100% ;height: auto" />
+  </div>
+  <p dir="ltr" class="FM_Screenshot_Anchor">&nbsp;</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">4.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Select the <span style="font-weight : bold; ">Tax Type</span>&#160;and <span style="font-weight : bold; ">Major Account</span> from the drop-down lists. Minor and subcode accounts are optional.</p>
+
+  <p dir="ltr" class="FM_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 13pt;" class="FMAutoNumber_2"></span></span>Invoice line items must be coded to at least the major.minor level. If a minor account is not mapped, it must be selected when coding the invoice.</p>
+
+  <div align="center"><img alt="COAConfig_taxtypemajor.png" id="image67" src="../../../assets/COAConfig_taxtypemajor.png" style="max-width: 100% ;height: auto" />
+  </div>
+  <p dir="ltr" class="FM_Screenshot_Anchor">&nbsp;</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">5.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Submit</span>.</p>
+
+  <p dir="ltr" class="FM_Heading_4">To modify an existing tax account:</p>
+
+  <p dir="ltr" class="FM_Permission___Start"><span class="FM_Bold">Permission:<span style="padding-left: 21pt;" class="FMAutoNumber_1"></span></span>Corporate Modify</p>
+
+  <p dir="ltr" class="FM_Prerequisite___Start"><span class="FM_Bold">Prerequisite:<span style="padding-left: 18pt;" class="FMAutoNumber_1"></span></span>The general ledger must be created by mapping the major, minor, and subcodes.</p>
+
+  <p dir="ltr" class="FM_Steps"><span class="FM_Bold">Steps:<span style="padding-left: 8pt;" class="FMAutoNumber_1"></span></span></p>
+
+  <p dir="ltr" class="FM_Number_List_1___Start"><span class="FM_Bullet4">1.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Select <span style="font-weight : bold; ">Corporate &gt; COA Setup. </span></p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">2.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Tax Accounts</span>. </p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">3.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click the link in the <span style="font-weight : bold; ">Tax Type</span> column to edit an existing mapping.</p>
+
+  <div align="center"><img alt="COAConfig_addtaxaccounts.png" id="image68" src="../../../assets/COAConfig_addtaxaccounts.png" style="max-width: 100% ;height: auto" />
+  </div>
+  <p dir="ltr" class="FM_Screenshot_Anchor">&nbsp;</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">4.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Select the <span style="font-weight : bold; ">Tax Type</span>&#160;and <span style="font-weight : bold; ">Major Account</span> from the drop-down lists. Minor and subcode accounts are optional.</p>
+
+  <p dir="ltr" class="FM_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 13pt;" class="FMAutoNumber_2"></span></span>Invoice line items must be coded to at least the major.minor level. If a minor account is not mapped, it must be selected when coding the invoice.</p>
+
+  <div align="center"><img alt="COAConfig_taxtypemajor.png" id="image69" src="../../../assets/COAConfig_taxtypemajor.png" style="max-width: 100% ;height: auto" />
+  </div>
+  <p dir="ltr" class="FM_Screenshot_Anchor">&nbsp;</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">5.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Submit</span>.</p>
+
+  <p dir="ltr" class="FM_Heading_4">To delete a tax account:</p>
+
+  <p dir="ltr" class="FM_Permission___Start"><span class="FM_Bold">Permission:<span style="padding-left: 21pt;" class="FMAutoNumber_1"></span></span>Corporate Modify</p>
+
+  <p dir="ltr" class="FM_Prerequisite___Start"><span class="FM_Bold">Prerequisite:<span style="padding-left: 18pt;" class="FMAutoNumber_1"></span></span>The general ledger must be created by mapping the major, minor, and subcodes.</p>
+
+  <p dir="ltr" class="FM_Steps"><span class="FM_Bold">Steps:<span style="padding-left: 8pt;" class="FMAutoNumber_1"></span></span></p>
+
+  <p dir="ltr" class="FM_Number_List_1___Start"><span class="FM_Bullet4">1.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Select <span style="font-weight : bold; ">Corporate &gt; COA Setup. </span></p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">2.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Tax Accounts</span>. </p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">3.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click the <span style="font-weight : bold; ">Delete</span> icon to remove an existing mapping.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">4.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">OK</span> to delete the tax account.</p>
+
+  <p dir="ltr" class="FM_Body_Style">&nbsp;</p>
+ </div>
+</body>
+
+</html>
+

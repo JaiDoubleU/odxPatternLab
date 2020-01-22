@@ -1,0 +1,362 @@
+
+<link href="../../css/00-navbar-alternate.css" rel="alternate stylesheet" type="text/css" title="alternate">
+<nav  id="defaultNavbar" role="navigation" class="navbar navbar-default navbar-fixed-top">
+    <div id="message"></div>
+    <div class="container-fluid">
+        <div class="navbar-header navbar-left pull-left">
+            <button type="button" data-toggle="collapse" data-target=".navbar-collapse" class="btn btn-default btn-sm navbar-btn pull-left">
+                Menu
+            </button>
+            <div class="navbar-brand hidden-xs hidden-sm">
+                <a class="logo-navbar"></a>
+            </div>
+        </div>
+        <div class="navbar-header navbar-right pull-right">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="hidden visible-xs pull-left">
+                    <a class="label-success navbar-link">
+                        <i class="fas fa-sack-dollar fa-fw"></i>
+                        <div class="pull-right" style="width: 60px; white-space: normal;float:right;line-height: 1;font-size: 13px; text-align: center;">Get Paid Faster! </div>
+                    </a>
+                </li>
+                <li class="hidden visible-xs visible-sm dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fas fa-search fa-fw"></i></a>
+                    <ul class="dropdown-menu dropdown-menu-right" style="padding: 15px;min-width: 250px;">
+                        <li>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <form>
+                                        <div class="input-group input-group-sm ">
+                                            <span class="input-group-addon dropdown-toggle" data-toggle="dropdown"
+                                                aria-haspopup="true" aria-expanded="false">
+                                                <span class="caret"></span>
+                                            </span>
+                                            <ul class="dropdown-menu dropdown-menu-left">
+                                                <li onclick="setGlobalSearchPlaceholder($(this).first().text());"><a>Invoice #</a></li>
+                                                <li onclick="setGlobalSearchPlaceholder($(this).first().text());"><a href="#">Pricebook #</a></li>
+                                                <li onclick="setGlobalSearchPlaceholder($(this).first().text());"><a href="#">Field Ticket #</a></li>
+                                                <li onclick="setGlobalSearchPlaceholder($(this).first().text());"><a href="#">Purchase Order #</a></li>
+                                            </ul>
+
+                                            <input class="form-control" id="globalSearch" placeholder="Invoice #">
+
+                                            <span class="input-group-btn">
+                                                <button class="btn btn-default"><i class="fas fa-search fa-fw"></i></button>
+                                            </span>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a title="Message Centre" class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <span class="badge badge-xs">49</span>
+                        <i class="fas fa-bell fa-fw"></i>
+                        <!-- <span class="hidden-xs hide">Messages</span> -->
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-right">
+                        <li>
+                            <a title="Message Centre" href="#">
+                                <span class="fa-fw">
+                                    <i class="fas fa-envelope"></i>
+                                    Messages
+                                </span>
+                                <sup class="badge" style="background:#BE3A34">41</sup>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="fa-fw">
+                                    <i class="fas fa-file-alt"></i>
+                                    Completed Reports
+                                </span>
+                                <sup class="badge" style="background:#BE3A34">8</sup>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a title="Help Center" class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fas fa-question-circle fa-fw"></i> <span class="hidden-xs hide">Help</span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-right">
+                        <li><a href="#"><i class="fas fa-life-ring fa-fw"></i> Contact Support</a></li>
+                        <li><a href="#"><i class="fas fa-book fa-fw"></i> Resource Center</a></li>
+                        <li><a href="#"><i class="fas fa-comment fa-fw"></i> Feedback</a></li>
+                        <li><a href="#"><i class="fas fa-users fa-fw"></i> About</a></li>
+                        <li><a href="#"><i class="fas fa-user-secret fa-fw"></i> Privacy</a></li>
+                        <li><a href="#"><i class="fas fa-gavel fa-fw"></i> Terms</a></li>
+                        <li><a href="#"><i class="fas fa-globe fa-fw"></i> Browsers</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a title="My Profile" class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fas fa-user fa-fw"></i> <span class="hidden-xs hide">Profile</span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-right">
+                        <li><a href="#"><i class="fas fa-user fa-fw"></i> Christopher Schwartzenberg</a></li>
+                        <li><a href="#"><i class="fas fa-cog fa-fw"></i> Preferences</a></li>
+                        <li><a href="#"><i class="fas fa-font fa-fw"></i> Font Size</a></li>
+                    </ul>
+                </li>
+                <li><a title="Sign Out" href="#"><i class="fas fa-sign-out fa-fw"></i></a></li>
+            </ul>
+        </div>
+        <ul class="nav navbar-nav navbar-left">
+            <li class="pull-left">
+                <p class="navbar-text hide-overflow small hidden-sm hidden-xs" style="max-width: 225px;">Tetratrex
+                    Oilfield Services Incorporated Ltd.
+                </p>
+            </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right visible-sm visible-md visible-lg hidden-xs">
+            <li class="pull-left">
+                <a class="label-success navbar-link">
+                    <i class="fas fa-sack-dollar fa-fw"></i>
+                    <div class="pull-right" style="width: 60px; white-space: normal;float:right;line-height: 1;font-size: 13px; text-align: center;">Get Paid Faster! </div>
+                </a>
+            </li>
+            <li>
+                <form class="navbar-form navbar-right">
+                    <div class="form-group">
+                        <div class="input-group">
+                            <span class="input-group-addon dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">
+                                <span class="caret"></span>
+                            </span>
+                            <ul class="dropdown-menu dropdown-menu-left">
+                                <li onclick="setGlobalSearchPlaceholder($(this).first().text());"><a href="#">Invoice #</a></li>
+                                <li onclick="setGlobalSearchPlaceholder($(this).first().text());"><a href="#">Pricebook #</a></li>
+                                <li onclick="setGlobalSearchPlaceholder($(this).first().text());"><a href="#">Field Ticket #</a></li>
+                                <li onclick="setGlobalSearchPlaceholder($(this).first().text());"><a href="#">Purchase Order #</a></li>
+                            </ul>
+
+                            <input class="form-control" id="globalSearch" placeholder="Invoice #">
+
+                            <span class="input-group-btn">
+                                <button class="btn btn-default"><i class="fas fa-search fa-fw"></i></button>
+                            </span>
+                        </div>
+                    </div>
+                </form>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<nav id="secondaryNavbar" class="navbar-default animated navbar-fixed-top " style="z-index: 1030">
+    <div class="container-fluid">
+        <div class="row">
+                <div class="col-xs-4">
+                        <div class="btn-group  pull-left">
+                            <button class="btn btn-link text-nowrap dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                <i class="fas fa-arrow-left fa-fw"></i> Back <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Supplier On-Ramping</a></li>
+                                <li><a href="#">Suppliers</a></li>
+                                <li><a href="#">Dashboard</a></li>
+                            </ul>
+                        </div>
+                </div>
+                <div class="col-xs-4 text-center hide-overflow">
+                    <div class="form-control-static">
+                        Business Units
+                    </div>
+                </div>
+                <div class="col-xs-4 text-right text-nowrap">
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+
+
+<div class="container-fluid page-top-padding">
+    <style>
+        .childBusinessUnit td:first-child { text-indent: 2em; }
+    </style>
+
+    <div class="panel panel-default">
+        <div class="panel-body text-right">
+            <button class="btn btn-default" data-toggle="modal" data-target="#addEditBusinessUnitModal">Add a Business Unit</button>
+        </div>
+        <div class="panel-body">
+            <div class="table-responsive">
+                <table class="table table-bordered table-striped table-hover">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Contact Name</th>
+                            <th>Address</th>
+                            <th>City</th>
+                            <th>State/Province</th>
+                            <th>Zip/Postal Code</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><a>ABC Energy Holdings</a></td>
+                            <td>Ed Thompson</td>
+                            <td>6500 Lakeside Blvd</td>
+                            <td>Cheyenne</td>
+                            <td>Wyoming</td>
+                            <td>82001</td>
+                        </tr>
+                        <tr class="childBusinessUnit">
+                            <td><a>ABC Energy Production</a></td>
+                            <td>Greg Winters</td>
+                            <td>76500 South Vista Road</td>
+                            <td>Laurel</td>
+                            <td>Montana</td>
+                            <td>59044</td>
+                        </tr>
+                        <tr class="childBusinessUnit">
+                            <td><a>ABC Energy Midstream</a></td>
+                            <td>Wanda Trelliston</td>
+                            <td>771 Pakside Drive East</td>
+                            <td>Freeport</td>
+                            <td>Maine</td>
+                            <td>04032</td>
+                        </tr>
+
+                        <tr>
+                            <td><a>XYZ Petroleum Sercices, an ABC Energy Company</a></td>
+                            <td>Darren Routers</td>
+                            <td>St. Catherines Street</td>
+                            <td>Camden</td>
+                            <td>South Carolina</td>
+                            <td>29020</td>
+                        </tr>
+                        <tr class="childBusinessUnit">
+                            <td><a>XYZ Appalachia Regional Services</a></td>
+                            <td>Harry Thomas</td>
+                            <td>88501 Barnett Boulevard</td>
+                            <td>Logan</td>
+                            <td>Utah</td>
+                            <td>84321</td>
+                        </tr>
+
+                        <tr>
+                            <td><a>ABC Energy West</a></td>
+                            <td>Waynt Roust</td>
+                            <td>Wintergreen Street</td>
+                            <td>Beaver</td>
+                            <td>West Virginia</td>
+                            <td>25813</td>
+                        </tr>
+                        <tr class="childBusinessUnit">
+                            <td><a>AP Western Region</a></td>
+                            <td>Harry Thomas</td>
+                            <td>88501 Barnett Boulevard</td>
+                            <td>Pinedale</td>
+                            <td>Wyoming</td>
+                            <td>82941</td>
+                        </tr>
+                        <tr class="childBusinessUnit">
+                            <td><a>AR Western Region</a></td>
+                            <td>Prim Tradeston</td>
+                            <td>801 Parnsworth Road</td>
+                            <td>Bellevue</td>
+                            <td>Washington</td>
+                            <td>99004</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div id="addEditBusinessUnitModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg ">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Add/Edit Business Unit</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group has-feedback">
+                        <label class="control-label">Business Unit Name <span class='text-danger'> * </span>
+
+</label>
+                        <input id="companyName" class="form-control" type="text">
+                        <div class="help-block hide" >A value is required</div>
+                        <span class="fas fa-exclamation-triangle form-control-feedback hide" data-toggle="popover" data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." data-original-title="" title="" ></span>
+                    </div>
+                    <div class="form-group has-feedback">
+                        <label class="control-label">Parent Business Unit <span class='text-danger'> * </span>
+
+</label>
+                        <select class="form-control" id="sel1">
+                            <option selected>None</option>
+                            <option>ABC Energy Holdings</option>
+                            <option>XYZ Petroleum Sercices, an ABC Energy Company</option>
+                            <option>ABC Energy West</option>
+                        </select>
+                        <div class="help-block hide" >A value is required</div>
+                        <span class="fas fa-exclamation-triangle form-control-feedback hide" data-toggle="popover" data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." data-original-title="" title="" ></span>
+                    </div>
+
+                    <div class="form-group has-feedback">
+                        <label class="control-label">Contact Name  <span class='text-danger'> * </span>
+
+</label>
+                        <input id="contactName" class="form-control" type="text">
+                        <div class="help-block hide" >A value is required</div>
+
+                        <span class="fas fa-exclamation-triangle form-control-feedback hide" data-toggle="popover" data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." data-original-title="" title="" ></span>
+                    </div>
+                    <div class="form-group has-feedback">
+                        <label class="control-label">Address <span class='text-danger'> * </span>
+
+</label>
+                        <input id="address" class="form-control" type="text">
+                        <div class="help-block hide" >A value is required</div>
+
+                        <span class="fas fa-exclamation-triangle form-control-feedback hide" data-toggle="popover" data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." data-original-title="" title="" ></span>
+                    </div>
+                    <div class="form-group has-feedback">
+                        <label class="control-label">City <span class='text-danger'> * </span>
+
+</label>
+                        <input id="city" class="form-control" type="text">
+                        <div class="help-block hide" >A value is required</div>
+
+                        <span class="fas fa-exclamation-triangle form-control-feedback hide" data-toggle="popover" data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." data-original-title="" title="" ></span>
+                    </div>
+                    <div class="form-group has-feedback">
+                        <label class="control-label">State/Province <span class='text-danger'> * </span>
+
+</label>
+                        <input id="stateProv" class="form-control" type="text">
+                        <div class="help-block hide" >A value is required</div>
+
+                        <span class="fas fa-exclamation-triangle form-control-feedback hide" data-toggle="popover" data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." data-original-title="" title="" ></span>
+                    </div>
+                    <div class="form-group has-feedback">
+                        <label class="control-label">Zip/Postal Code <span class='text-danger'> * </span>
+
+</label>
+                        <input id="zipPostalCode" class="form-control" type="text">
+                        <div class="help-block hide" >A value is required</div>
+
+                        <span class="fas fa-exclamation-triangle form-control-feedback hide" data-toggle="popover" data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." data-original-title="" title="" ></span>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button id="showErrors" onclick="$('.form-group.has-feedback').toggleClass('has-error'); $('.form-control-feedback').toggleClass('hide'); $('.help-block').toggleClass('hide'); return false;"  type="button" class="btn btn-outline-danger">Toggle Errors</button>
+
+                    <button id="addEditAccountSaveBtn"  data-dismiss="modal" onclick="showAlertDialog('success','The new business unit was added successfully.', true); return false;"  type="button" class="btn btn-success">Save</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $('body').addClass('page-bg');
+</script>

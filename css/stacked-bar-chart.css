@@ -1,0 +1,20 @@
+svg#stackedBarChart {
+    background: #ffffff !important;
+}
+
+.axis text {
+    font: 13px 'Proxima Nova', Arial, sans-serif;
+}
+
+.axis line,
+.axis path {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+}
+
+.path-line {
+    fill: none;
+    stroke: yellow;
+    stroke-width: 1.5px;
+}

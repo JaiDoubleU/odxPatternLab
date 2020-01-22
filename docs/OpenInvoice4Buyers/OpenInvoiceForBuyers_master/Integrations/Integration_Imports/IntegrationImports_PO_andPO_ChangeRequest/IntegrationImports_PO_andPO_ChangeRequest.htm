@@ -1,0 +1,93 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+ <title>IntegrationImports_PO_andPO_ChangeRequest</title>
+
+ <link rel="stylesheet" href="../../../../OpenInvoiceForBuyers_master.css" type="text/css" />
+
+
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style>
+ <meta name="generator" content="Adobe FrameMaker 2017" />
+<script type="text/javascript" src="../../../../template/scripts/rh.min.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/common.min.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/topic.min.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/constants.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/utils.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/mhutils.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/mhlang.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/mhver.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/settings.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/XmlJsReader.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/loadparentdata.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/loadscreen.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/loadprojdata.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/mhtopic.js"></script>
+ <link rel="stylesheet" type="text/css" href="../../../../template/styles/topic.min.css">
+<script type="text/javascript" >
+gRootRelPath = "../../../..";
+gCommonRootRelPath = "../../../..";
+gTopicId = "";
+</script>
+ <meta name="brsprev" value="OpenInvoiceForBuyers_master/Integrations/Integration_Imports/IntegrationImports_OpenImage_ImagePost/IntegrationImports_OpenImage_ImagePost.htm">
+ <meta name="brsnext" value="OpenInvoiceForBuyers_master/Integrations/Integration_Imports/IntegrationImports_TransactionUpload/IntegrationImports_TransactionUpload.htm">
+ <meta name="topic-breadcrumbs" content="Administrator & User Guide for Buyers > Integration Imports" />
+</head>
+
+<body dir="ltr">
+<script type="text/javascript" src="../../../../ehlpdhtm.js"></script>
+
+ <div dir="ltr">
+  
+  <p dir="ltr" class="FM_ADP_TG_Heading_1"><a name="TOC_Purchase_Order_and_PO"></a><a name="XREF_25557_Purchase_Order_and"></a>Purchase Order and PO Change Request</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Body_Style">Purchase orders and purchase order change requests are imported into the <span data-name="ADP_Software_Name" data-val="OpenInvoice Platform" data-showval="TRUE" data-format="ADP_Software_Name">OpenInvoice Platform</span>. The PIDX version 1.2 OrderCreate schema is used for sending the initial purchase order, and PIDX version 1.2 OrderChange is used for change requests. Once the purchase order has been created in the <span data-name="ADP_Software_Name" data-val="OpenInvoice Platform" data-showval="TRUE" data-format="ADP_Software_Name">OpenInvoice Platform</span>, subsequent changes made to the purchase order must be sent by Order Change. Order Change must be the complete purchase order. Any data not included in the Order Change will be assumed to have been deleted from the purchase order.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Body_Style">All Order Changes posted by a client must be sequenced to ensure that the net result of two or more changes are applied properly.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Body_Style">The message is SOAP wrapped if it does not include attachments, or in multipart MIME format if it does. </p>
+
+  <p dir="ltr" class="FM_ADP_TG_Body_Style"><span style="font-weight : bold; ">Schemas:</span> PIDX version 1.2 OrderCreate.xsd and OrderChange.xsd</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Body_Style"><span style="font-weight : bold; ">See also:</span>&#160;PurchaseOrderFromBuyer_IG.pdf </p>
+
+  <p dir="ltr" class="FM_ADP_TG_Heading_2"><a name="XREF_Auto_Accepted_Purchase"></a>Auto-Accepted Purchase Orders</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Body_Style">Purchase order responses are not sent from integrated suppliers. Buyers can post purchase orders and change requests to the system with a status of <span style="font-weight : bold; ">Accepted</span>&#160;by giving the <span style="font-weight : bold; ">SpecialInstructions </span>tag in the PIDX schema a value of<span style="font-weight : bold; "> Accepted</span>&#160;as follows: </p>
+
+  <p dir="ltr" class="FM_ADP_TG_Body_Style">&lt;pidx:SpecialInstructions instructionIndicator=”Other” definitionOfOther=”DocumentState”&gt;Accepted&lt;/pidx:SpecialInstructions&gt;</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Body_Style">If the flag is not turned on, the supplier must log in to the system and manually accept or reject the purchase order or change request.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Heading_2">Maximum Number of Purchase Order Lines</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Body_Style">For most suppliers, purchase orders should be kept to 500 lines or less due to potential performance issues during the flip process. The greater the number of products and services that a supplier has, the lower the number of lines that can be flipped before a system time out occurs. Suppliers with very large catalogs may only be able to flip purchase orders of 200 lines or less.&#160;</p>
+ </div>
+</body>
+
+</html>
+

@@ -1,0 +1,28 @@
+<form>
+    <div class="form-group">
+        <label class="control-label">Field 1</label>
+        {{> atoms-input("placeholder": "Placeholder", "disabled": "", "value": "")}}
+    </div>
+    <div class="form-group">
+        <label class="control-label">Field 2</label>
+        {{> atoms-input("placeholder": "Placeholder", "disabled": "", "value": "")}}
+    </div>
+    <div class="form-group">
+        <div class="row">
+            <div class="col-xs-6">
+                <label for="organismsRadioButtons">Radio Buttons</label>
+                {{> atoms-radio-button("label": "option one", "name": "organismsRadioButtons") }}
+                {{> atoms-radio-button("label": "option two", "name": "organismsRadioButtons", "checked": true) }}
+            </div>
+            <div class="col-xs-6">
+                <label for="optionRadios">Checkboxes</label>
+                {{> atoms-checkbox("checkbox-label": "checkbox one", "name": "checkboxes") }}
+                {{> atoms-checkbox("checkbox-label": "checkbox two", "name": "checkboxes", "checked": true) }}
+            </div>
+        </div>
+    </div>
+    <div class="form-group text-right">
+        {{> atoms-btn("buttonText": "Cancel", "styleModifier": "btn-default") }}
+        {{> atoms-btn("buttonText": "Submit", "styleModifier": "btn-success") }}
+    </div>
+</form>

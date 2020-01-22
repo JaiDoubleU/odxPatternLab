@@ -1,0 +1,74 @@
+<div class="container-fluid" id="fileImportResultsDialog">
+    <div class="alert alert-success" role="alert">
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <p><i class="fas fa-check-circle text-success"></i> Field Ticket Import Complete. 24 tickets were imported successfully.</p>
+    </div>
+
+    <div class="alert alert-warning" role="alert">
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <p>Field Ticket Import Complete.</p>
+        <ol class="fa-ul">
+            <li><span class="fa-li"><i class="fas fa-check-circle text-success"></i></span>21 tickets were imported successfully.</li>
+            <li class="form-group"><span class="fa-li"><i class="fas fa-exclamation-triangle text-danger"></i></span>3 tickets could not be imported.
+            <a class="alert-link" data-toggle="collapse" href="#fileImportResults" onmousedown="if($(this).text() == 'Show Details...'){$(this).text('Hide Details');} else {$(this).text('Show Details...');}">Show Details...</a></li>
+            <li>
+                <div id="fileImportResults" class="collapse">
+                    <div>Errors or warnings were encountered attempting to import the following rows.  Expand each to see detailed messages:</div>
+                    <ul class="list-group" class="collapse" id="list-group-accordion">
+                        <li class="list-group-item" onclick="">
+                            <div class="list-group-heading"  data-toggle="collapse" data-target="#row1" data-parent="#list-group-accordion">
+                                <i class="fas fa-plus-square"></i> Row 1
+                            </div>
+                            <div id="row1" class="collapse">
+                                <ol class="fa-ul" id="row1Messages">
+                                    <li>
+                                        <span class="fa-li"><i class="fas fa-exclamation-triangle text-danger"></i></span>
+                                        The specified <code class="text-primary">Supplier Category</code> for the service or product does not exist
+                                    </li>
+                                    <li>
+                                        <span class="fa-li"><i class="fas fa-question-circle text-warning"></i></span>
+                                        The <code  class="text-primary">Service Date</code> specified is after the date of the ticket.
+                                    </li>
+                                </ol>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="list-group-heading" data-toggle="collapse" data-target="#row4" data-parent="#list-group-accordion">
+                                <i class="fas fa-plus-square"></i> Row 4
+                            </div>
+                            <div id="row4" class="collapse">
+                                <ol class="fa-ul" id="row1Messages">
+                                    <li>
+                                        <span class="fa-li"><i class="fas fa-exclamation-triangle text-danger"></i></span>
+                                        The <code class="text-primary">Pricebook Name</code> specified is not valid for the <code  class="text-primary">Service Date</code>.
+                                    </li>
+                                    <li>
+                                        <span class="fa-li"><i class="fas fa-question-circle text-warning"></i></span>
+                                        The <code  class="text-primary">Unit of Measure</code> was not specified and is required.
+                                    </li>
+                                </ol>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="list-group-heading" data-toggle="collapse" data-target="#row9" data-parent="#list-group-accordion">
+                                <i class="fas fa-plus-square"></i> Row 9
+                            </div>
+                            <div id="row9" class="collapse">
+                                <ol class="fa-ul" id="row1Messages">
+                                    <li>
+                                        <span class="fa-li"><i class="fas fa-exclamation-triangle text-danger"></i></span>
+                                        The <code  class="text-primary">Pricebook Name</code> specified is not valid for the <code  class="text-primary">Service Date</code>.
+                                    </li>
+                                    <li>
+                                        <span class="fa-li"><i class="fas fa-question-circle text-warning"></i></span>
+                                        The <code  class="text-primary">Service Date</code> specified is after the date of the ticket.
+                                    </li>
+                                </ol>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+        </ol>
+    </div>
+</div>

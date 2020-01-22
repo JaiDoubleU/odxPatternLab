@@ -1,0 +1,195 @@
+.nav-pills.nav-wizard {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+}
+
+.nav-pills.nav-wizard>li {
+    position: relative;
+    overflow: visible;
+    border-right: 16px solid transparent;
+    border-left: 16px solid transparent;
+    margin-left: 0;
+}
+.nav-pills.nav-wizard li a {
+    padding: 10px 9px 10px 9px;
+}
+
+.nav-pills.nav-wizard > li a.btn {
+    background-color: #d0e9c6 !important;
+    border-width: 0px;
+    border-left: 1px solid #ccc !important;
+}
+.nav-pills.nav-wizard>li>a.btn-success {
+    background-color: #d0e9c6 !important;
+    color: #333;
+}
+
+.nav-pills.nav-wizard>li>a.btn-info {
+    background-color: #d9edf7 !important;
+    color: #333;
+}
+.nav-pills.nav-wizard>li>a.btn-success:hover,
+.nav-pills.nav-wizard>li>a.btn-success:focus {
+    color: #333;
+}
+.nav-pills.nav-wizard > li > a.btn-success:hover {
+    background-color: #d0e9c6;
+    color: #333;
+}
+.nav-pills.nav-wizard > li a:not(.btn) {
+    background-color: #eee;
+    color: #bbb;
+}
+
+.nav-pills.nav-wizard li.stage {
+    width: calc(75%/5);
+}
+
+/* --- arrow ---*/
+.nav-pills.nav-wizard>li .nav-arrow {
+    position: absolute;
+    top: 0px;
+    right: -16px;
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 21px 0 20px 20px;
+    border-color: #fff #fff #fff #eee;
+    z-index: 150;
+}
+
+/* --- wedge ---*/
+.nav-pills.nav-wizard>li .nav-wedge {
+    position: absolute;
+    top: 0px;
+    left: -16px;
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 21px 0 20px 20px;
+    border-color: #eee #eee #eee #fff;
+    z-index: 150;
+}
+
+/* --- focus ---*/
+.nav-pills.nav-wizard>li a:focus {
+    outline: none;
+}
+
+/* --- check icon (rendered transparent when not complete, not rendered in the mark complete button) ---*/
+.nav-pills.nav-wizard>li a:before {
+    content: '\f111';
+    font-family: "Font Awesome 5 Pro";
+    font-weight: 300;
+    color: #bbb;
+    padding-right: 4px;
+}
+.nav-pills.nav-wizard>li.activate a:before {
+    content: '\f111';
+    font-family: "Font Awesome 5 Pro";
+    font-weight: 300;
+    color: #fff;
+    padding-right: 4px;
+}
+
+.nav-pills.nav-wizard>li.complete a:before,
+.nav-pills.nav-wizard>li.current a:before {
+        color: #333;
+}
+.nav-pills.nav-wizard>li.complete a:before {
+    content: '\f058';
+    font-family: "Font Awesome 5 Pro";
+    font-weight: 900;
+    padding-right: 4px;
+}
+
+.nav-pills.nav-wizard>li:last-child a:before {
+    content: '';
+}
+
+.nav-pills.nav-wizard>li:first-child {
+    border-left: 0;
+}
+
+.nav-pills.nav-wizard>li:first-child a {
+    color: #333;
+}
+
+.nav-pills.nav-wizard>li:last-child {
+    border-right: 0;
+}
+
+.nav-pills.nav-wizard>li:last-child a {
+    border-width: 0 0 0 1px;
+    border-radius: 0;
+}
+
+
+
+/* --- hover ---*/
+.nav-pills.nav-wizard>li:hover .nav-arrow {
+    /*border-color: #fff #fff #fff #aaa;*/
+}
+
+.nav-pills.nav-wizard>li:hover .nav-wedge {
+    /*border-color: #aaa #aaa #aaa #fff;*/
+}
+
+.nav-pills.nav-wizard>li:hover a {
+    /*background-color: #aaa;*/
+}
+
+.nav-pills.nav-wizard>li.active a {
+    color: #333;
+    background-color: #dff0d8;
+}
+
+/* --- current ---*/
+.nav-pills.nav-wizard>li.current .nav-arrow {
+    border-color: #fff #fff #fff #dff0d8;
+}
+
+.nav-pills.nav-wizard>li.current .nav-wedge {
+    border-color: #dff0d8 #dff0d8 #dff0d8 #fff;
+}
+
+.nav-pills.nav-wizard>li.current a {
+    background-color: #dff0d8;
+    color: #333;
+}
+
+/* --- complete ---*/
+.nav-pills.nav-wizard>li.complete .nav-arrow {
+    border-color: #fff #fff #fff #d9edf7;
+}
+
+.nav-pills.nav-wizard>li.complete .nav-wedge {
+    border-color: #d9edf7 #d9edf7 #d9edf7 #fff;
+}
+
+.nav-pills.nav-wizard>li.complete a {
+    background-color: #d9edf7;
+    border-color: #d9edf7;
+    color: #333;
+}
+
+/* --- activate ---*/
+.nav-pills.nav-wizard>li.activate .nav-arrow,
+.nav-pills.nav-wizard>li.activate.complete .nav-arrow {
+    border-color: #fff #fff #fff #d0e9c6;
+}
+
+.nav-pills.nav-wizard>li.activate .nav-wedge,
+.nav-pills.nav-wizard>li.activate.complete .nav-wedge {
+    border-color: #d0e9c6 #d0e9c6 #d0e9c6 #fff;
+}
+
+.nav-pills.nav-wizard>li.activate a,
+.nav-pills.nav-wizard>li.activate.complete a {
+    background-color: #d0e9c6;
+    border-color: #d0e9c6;
+    color: #333;
+}
+
+

@@ -1,0 +1,169 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+ <title>Configuring Purchase Order References</title>
+
+ <link rel="stylesheet" href="../../../OpenInvoiceForBuyers_master.css" type="text/css" />
+
+
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style>
+ <meta name="generator" content="Adobe FrameMaker 2017" />
+<script type="text/javascript" src="../../../template/scripts/rh.min.js"></script>
+<script type="text/javascript" src="../../../template/scripts/common.min.js"></script>
+<script type="text/javascript" src="../../../template/scripts/topic.min.js"></script>
+<script type="text/javascript" src="../../../template/scripts/constants.js"></script>
+<script type="text/javascript" src="../../../template/scripts/utils.js"></script>
+<script type="text/javascript" src="../../../template/scripts/mhutils.js"></script>
+<script type="text/javascript" src="../../../template/scripts/mhlang.js"></script>
+<script type="text/javascript" src="../../../template/scripts/mhver.js"></script>
+<script type="text/javascript" src="../../../template/scripts/settings.js"></script>
+<script type="text/javascript" src="../../../template/scripts/XmlJsReader.js"></script>
+<script type="text/javascript" src="../../../template/scripts/loadparentdata.js"></script>
+<script type="text/javascript" src="../../../template/scripts/loadscreen.js"></script>
+<script type="text/javascript" src="../../../template/scripts/loadprojdata.js"></script>
+<script type="text/javascript" src="../../../template/scripts/mhtopic.js"></script>
+ <link rel="stylesheet" type="text/css" href="../../../template/styles/topic.min.css">
+<script type="text/javascript" >
+gRootRelPath = "../../..";
+gCommonRootRelPath = "../../..";
+gTopicId = "";
+</script>
+ <meta name="brsprev" value="OpenInvoiceForBuyers_master/Configuration/SupplierMgmt/Enabling_and_Configuring_Suppliers.htm">
+ <meta name="brsnext" value="OpenInvoiceForBuyers_master/Configuration/SupplierMgmt/Sending_a_Message_to_Suppliers.htm">
+ <meta name="topic-breadcrumbs" content="Administrator & User Guide for Buyers" />
+</head>
+
+<body dir="ltr">
+<script type="text/javascript" src="../../../ehlpdhtm.js"></script>
+<div dir="ltr">
+  <p dir="ltr" class="FM_ADP_TG_Heading_1"><a name="TOC_Configuring_Purchase"></a><a name="XREF_56508_Configuring"></a>Configuring Purchase Order References</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Body_Style">By default, if valid purchase orders exist in <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>&#160;for the supplier, the referenced purchase order on the invoice must be one of the purchase orders in the platform. You have the option to allow suppliers to enter purchase orders that are not in the platform.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Heading_2">How to Configure Supplier Sites for External Purchase Order References Across Multiple Companies</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Permission___Start"><span class="FM_Bold">Permission:<span style="padding-left: 21pt;" class="FMAutoNumber_1"></span></span>Corporate Partnership</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Steps"><span class="FM_Bold">Steps:<span style="padding-left: 8pt;" class="FMAutoNumber_1"></span></span></p>
+
+  <ol dir="ltr" start="1">
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Start">Select <span style="font-weight : bold; ">Corporate </span>&gt; <span style="font-weight : bold; ">Suppliers</span>.</p>
+</li>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Do one of the following:</p>
+</li>
+   <p dir="ltr" class="FM_ADP_TG_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Search Suppliers</span>&#160;in the <span style="font-weight : bold; ">Tasks </span>section and perform a search.</p>
+
+   <p dir="ltr" class="FM_ADP_TG_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Click the <span style="font-weight : bold; ">Enabled</span>&#160;counter in the <span style="font-weight : bold; ">Suppliers</span> section.</p>
+
+   <p dir="ltr" class="FM_ADP_TG_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 13pt;" class="FMAutoNumber_2"></span></span>Apply a filter to narrow the list of supplier sites. Sort the list by clicking a column header.</p>
+
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Select the checkbox for each site.</p>
+</li>
+   <p dir="ltr" class="FM_ADP_TG_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 13pt;" class="FMAutoNumber_2"></span></span>To select all sites, select the checkbox in the header.</p>
+
+   <p dir="ltr" class="FM_ADP_TG_Screenshot_Anchor"><span style="font-size: small;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+
+<div width="100%" align="left">
+   <table border-spacing="0" dir="ltr" class="table17" border-collapse="collapse" style="max-width: 100% ;height: auto">
+    <tr class="tr18">
+    <td class="td19">
+    <p dir="ltr" class="FM_CellBody" style="display:inline"><img alt="SupplierMgmt_batchallowexternalPO.png" id="image106" src="../../../assets/SupplierMgmt_batchallowexternalPO.png" style="max-width: 100% ;height: auto" />&nbsp;</p>
+</td>
+</tr>
+   </table>
+</div>
+   <p dir="ltr" class="FM_ADP_TG_Screenshot_Anchor"><span style="font-size: small;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Click the down arrow on the <span style="font-weight : bold; ">Select an Action</span> button.</p>
+</li>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Select either <span style="font-weight : bold; ">Allow External PO</span>&#160;or <span style="font-weight : bold; ">Don’t Allow External PO</span>.</p>
+</li>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">To configure this setting for supplier sites that are on another page in the list, navigate to the page and repeat the steps above.</p>
+</li>
+  </ol>
+  <p dir="ltr" class="FM_ADP_TG__How_to__Heading_2">How to Configure Supplier Sites for External Purchase Order References Within a Single Company</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Permission___Start"><span class="FM_Bold">Permission:<span style="padding-left: 21pt;" class="FMAutoNumber_1"></span></span>Corporate Partnership</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Steps"><span class="FM_Bold">Steps:<span style="padding-left: 8pt;" class="FMAutoNumber_1"></span></span></p>
+
+  <ol dir="ltr" start="1">
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Start">Select <span style="font-weight : bold; ">Corporate </span>&gt; <span style="font-weight : bold; ">Suppliers</span>.</p>
+</li>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Do one of the following:</p>
+</li>
+   <p dir="ltr" class="FM_ADP_TG_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Search Suppliers</span>&#160;in the <span style="font-weight : bold; ">Tasks </span>section and perform a search.</p>
+
+   <p dir="ltr" class="FM_ADP_TG_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Click the <span style="font-weight : bold; ">Enabled</span>&#160;counter in the <span style="font-weight : bold; ">Suppliers</span> section.</p>
+
+   <p dir="ltr" class="FM_ADP_TG_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 13pt;" class="FMAutoNumber_2"></span></span>Apply a filter to narrow the list of supplier sites. Sort the list by clicking a column header.</p>
+
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Click the supplier site.</p>
+</li>
+<div width="100%" align="left">
+   <table border-spacing="0" dir="ltr" class="table14" border-collapse="collapse" style="max-width: 100% ;height: auto">
+    <tr class="tr20">
+    <td class="td21">
+    <p dir="ltr" class="FM_CellBody" style="display:inline"><img alt="SupplierMgmt_allowexternalPO.png" id="image107" src="../../../assets/SupplierMgmt_allowexternalPO.png" style="max-width: 100% ;height: auto" />&nbsp;</p>
+    <p dir="ltr" class="FM_ADP_TG_Caption">Step 3: Configure external purchase order referencing for sites from a single supplier company.</p>
+</td>
+</tr>
+   </table>
+</div>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">On the <span style="font-weight : bold; ">Supplier Configuration</span>&#160;page, click <span style="font-weight : bold; ">Edit</span> below the<span style="font-weight : bold; "> Settings</span>&#160;and <span style="font-weight : bold; ">Early Pay Programs</span> sections.</p>
+</li>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">In the <span style="font-weight : bold; ">Settings</span>&#160;section, select the <span style="font-weight : bold; ">Allow External PO</span> checkbox.</p>
+</li>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Select the checkbox for each site to be modified.</p>
+</li>
+   <p dir="ltr" class="FM_ADP_TG_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 13pt;" class="FMAutoNumber_2"></span></span>Select the checkbox in the list header to select all sites in the list.</p>
+
+   <p dir="ltr" class="FM_ADP_TG_Note_Indent___Next"><span class="FM_Bold"><span style="padding-left: 54pt;" class="FMAutoNumber_1"></span></span>All settings, including the supplier number, will be applied to the selected sites.</p>
+
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Click <span style="font-weight : bold; ">Apply to Selected</span>.</p>
+</li>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Click <span style="font-weight : bold; ">Done</span>.</p>
+</li>
+  </ol>
+  </div>
+</body>
+</html>

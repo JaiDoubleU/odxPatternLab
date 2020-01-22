@@ -1,0 +1,200 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+ <title>Removing User Access</title>
+
+ <link rel="stylesheet" href="../../../OpenInvoiceForBuyers_master.css" type="text/css" />
+
+
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style>
+ <meta name="generator" content="Adobe FrameMaker 2017" />
+<script type="text/javascript" src="../../../template/scripts/rh.min.js"></script>
+<script type="text/javascript" src="../../../template/scripts/common.min.js"></script>
+<script type="text/javascript" src="../../../template/scripts/topic.min.js"></script>
+<script type="text/javascript" src="../../../template/scripts/constants.js"></script>
+<script type="text/javascript" src="../../../template/scripts/utils.js"></script>
+<script type="text/javascript" src="../../../template/scripts/mhutils.js"></script>
+<script type="text/javascript" src="../../../template/scripts/mhlang.js"></script>
+<script type="text/javascript" src="../../../template/scripts/mhver.js"></script>
+<script type="text/javascript" src="../../../template/scripts/settings.js"></script>
+<script type="text/javascript" src="../../../template/scripts/XmlJsReader.js"></script>
+<script type="text/javascript" src="../../../template/scripts/loadparentdata.js"></script>
+<script type="text/javascript" src="../../../template/scripts/loadscreen.js"></script>
+<script type="text/javascript" src="../../../template/scripts/loadprojdata.js"></script>
+<script type="text/javascript" src="../../../template/scripts/mhtopic.js"></script>
+ <link rel="stylesheet" type="text/css" href="../../../template/styles/topic.min.css">
+<script type="text/javascript" >
+gRootRelPath = "../../..";
+gCommonRootRelPath = "../../..";
+gTopicId = "1.6.0_5";
+</script>
+ <meta name="brsprev" value="OpenInvoiceForBuyers_master/User_Management/UserMgmt/Configuring_User_Access.htm">
+ <meta name="brsnext" value="OpenInvoiceForBuyers_master/User_Management/UserMgmt/Granting_Financial_Authority.htm">
+ <meta name="topic-breadcrumbs" content="Administrator & User Guide for Buyers > User Management" />
+</head>
+
+<body dir="ltr">
+<script type="text/javascript" src="../../../ehlpdhtm.js"></script>
+<div dir="ltr">
+  <p dir="ltr" class="FM_ADP_TG_Heading_1"><a name="XREF_21243_Removing_User"></a>Removing User Access</p>
+  <p dir="ltr" class="FM_ADP_TG_Body_Style">There are three ways of removing a user’s access to <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>:</p>
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>Deactivate a user - if they will be temporarily away from the company (short-term leave).</p>
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>Suspend a user - if they no longer need to sign in, but you want them to continue to be referenced on documents (as a requisitioner on an invoice). </p>
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>Delete a user - if they have left your company or have changed roles and will never need to access <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span> in the future.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Body_Style">If you have removed access from a user who owns invoices in workflow, the invoices will become stalled unless someone with the Invoice Admin permission forwards the invoices to other users. A user with the Membership Admin permission may delegate the invoices to another user.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Heading_2">Implications of Removing Access</p>
+  <p dir="ltr" class="FM_ADP_TG_Heading_3"><a name="XREF_43043_Deactivating_a_User"></a>Deactivating a User</p>
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>Deactivated users (Inactive status) cannot be referenced on documents.</p>
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>An<span style="font-weight : bold; ">&#160;</span>inactive user’s password and security questions are maintained in case the user is reactivated. If a user with a Current or Expired status is deactivated, reactivation will allow the user to immediately regain platform access. If a user with a Pending or Suspended status is deactivated, they will need to follow the registration process to be reactivated.</p>
+  <p dir="ltr" class="FM_ADP_TG_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 12pt;" class="FMAutoNumber_2"></span></span>If a user’s password expires while they are inactive, they will have 180 days to sign in and change their password before they are suspended. </p>
+  <p dir="ltr" class="FM_ADP_TG_Note___Start"><span class="FM_Bold">Note:<span style="padding-left: 12pt;" class="FMAutoNumber_1"></span></span>See the <a href="#XREF_43043_Deactivating_a_User"><span class="FM_ADP_TG__Link">Deactivating a User</span></a>&#160;section for more information. </p>
+  <p dir="ltr" class="FM_ADP_TG_Heading_3"><a name="XREF_59581_Suspending_a_User"></a>Suspending a User</p>
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>Suspended users can be referenced on documents (as a requisitioner on an invoice).</p>
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>A suspended user’s password and security questions are no longer valid and cannot be reused. The user will need to follow the registration process to regain access to the platform.</p>
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>If a user is suspended while they are in Inactive status, their status will remain Inactive. After they are reactivated, their status will change to Suspended. </p>
+  <p dir="ltr" class="FM_ADP_TG_Note___Start"><span class="FM_Bold">Note:<span style="padding-left: 12pt;" class="FMAutoNumber_1"></span></span>See the <a href="#XREF_59581_Suspending_a_User"><span class="FM_ADP_TG__Link">Suspending a User</span></a>&#160;section for more information. </p>
+  <p dir="ltr" class="FM_ADP_TG_Heading_3"><a name="XREF_36670_Deleting_a_User"></a>Deleting a User</p>
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>Deleted users cannot be reactivated. If a deleted user needs access to the <span data-name="ADP_Software_Name" data-val="OpenInvoice Platform" data-showval="TRUE" data-format="ADP_Software_Name">OpenInvoice Platform</span>, a new username and account must be created. </p>
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>Deleted users cannot be referenced on documents, but existing references will be maintained&#160;(as a requisitioner on an invoice).</p>
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>Deleted users do not appear in the user report. </p>
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>Department notification users cannot be deleted. The user must be unassigned as the department notification user before their profile can be deleted. An error message displays if you attempt to delete a notification user.</p>
+  <p dir="ltr" class="FM_ADP_TG_Note___Start"><span class="FM_Bold">Note:<span style="padding-left: 12pt;" class="FMAutoNumber_1"></span></span>See the <a href="#XREF_36670_Deleting_a_User"><span class="FM_ADP_TG__Link">Deleting a User</span></a>&#160;section for more information. </p>
+  <p dir="ltr" class="FM_ADP_TG_Heading_2_HowTo">How to Deactivate a User</p>
+  <p dir="ltr" class="FM_ADP_TG_Note___Start"><span class="FM_Bold">Note:<span style="padding-left: 12pt;" class="FMAutoNumber_1"></span></span>If you receive a message indicating you cannot deactivate a notification user, see the <a href="Modifying_a_Department’s_Notification_User.htm#XREF_98756_Modifying_a"><span class="FM_ADP_TG__Link">Modifying a Department’s Notification User</span></a>&#160;section for more information. </p>
+  <p dir="ltr" class="FM_ADP_TG_Body_Style">Use this procedure to deactivate a user. </p>
+  <p dir="ltr" class="FM_ADP_TG_Permission___Start"><span class="FM_Bold">Permission:<span style="padding-left: 18pt;" class="FMAutoNumber_1"></span></span>Membership Modify</p>
+  <p dir="ltr" class="FM_ADP_TG_Steps"><span class="FM_Bold">Steps:<span style="padding-left: 6pt;" class="FMAutoNumber_1"></span></span></p>
+  <ol dir="ltr" start="1">
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Start">Select <span style="font-weight : bold; ">Membership &gt; Users</span>. </p>
+</li>
+   <p dir="ltr" class="FM_ADP_TG_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 12pt;" class="FMAutoNumber_2"></span></span>By default, all users are listed. Apply a filter to narrow the list. If only part of the criteria is known, an asterisk (*) must be used to denote the unknown part of the criteria.</p>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Click either the <span style="font-weight : bold; ">Last Name</span>&#160;or <span style="font-weight : bold; ">First Name</span> of the user.</p>
+</li>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Click the <span style="font-weight : bold; ">Profile</span> tab.</p>
+</li>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Deselect the <span style="font-weight : bold; ">Active</span> checkbox.</p>
+</li>
+   <p dir="ltr" class="FM_ADP_TG_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 12pt;" class="FMAutoNumber_2"></span></span>To reactivate the user, select this checkbox.</p>
+
+   <div align="center"><img alt="UserMgmt_InactiveBuyer.jpg" id="image172" src="../../../assets/UserMgmt_InactiveBuyer.jpg" style="max-width: 100% ;height: auto" />
+   </div>
+   <p dir="ltr" class="FM_ADP_TG_Screenshot_Anchor">&nbsp;</p>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Click <span style="font-weight : bold; ">OK </span>to confirm.</p>
+</li>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Click <span style="font-weight : bold; ">Submit</span>.</p>
+</li>
+  </ol>
+  <p dir="ltr" class="FM_ADP_TG_Heading_2_HowTo">How to Suspend User Access</p>
+  <p dir="ltr" class="FM_ADP_TG_Body_Style">Use these procedures to suspend access for a single user or a group of users.</p>
+  <p dir="ltr" class="FM_ADP_TG_Heading_4">To suspend a single user:</p>
+  <p dir="ltr" class="FM_ADP_TG_Permission___Start"><span class="FM_Bold">Permission:<span style="padding-left: 18pt;" class="FMAutoNumber_1"></span></span>Membership Modify</p>
+  <p dir="ltr" class="FM_ADP_TG_Steps"><span class="FM_Bold">Steps:<span style="padding-left: 6pt;" class="FMAutoNumber_1"></span></span></p>
+  <ol dir="ltr" start="1">
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Start">Select <span style="font-weight : bold; ">Membership &gt; Users</span>. </p>
+</li>
+   <p dir="ltr" class="FM_ADP_TG_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 12pt;" class="FMAutoNumber_2"></span></span>By default, all users are listed. Apply a filter to narrow the list. If only part of the criteria is known, an asterisk (*) must be used to denote the unknown part of the criteria.</p>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Click either the last name or first name.</p>
+</li>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Click the <span style="font-weight : bold; ">Summary </span>tab.</p>
+</li>
+   <div align="center"><img alt="UserMgmt_SendRegEmailSingleBuyer.jpg" id="image173" src="../../../assets/UserMgmt_SendRegEmailSingleBuyer.jpg" style="max-width: 100% ;height: auto" />
+   </div>
+   <p dir="ltr" class="FM_ADP_TG_Screenshot_Anchor">&nbsp;</p>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next"><span style="font-size  : 5.0pt; "></span>Click <span style="font-weight : bold; ">Suspend Account</span>. </p>
+</li>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Click <span style="font-weight : bold; ">OK </span>to confirm.</p>
+</li>
+  </ol>
+  <p dir="ltr" class="FM_ADP_TG_Heading_4">To suspend multiple users:</p>
+  <p dir="ltr" class="FM_ADP_TG_Permission___Start"><span class="FM_Bold">Permission:<span style="padding-left: 18pt;" class="FMAutoNumber_1"></span></span>Membership Modify</p>
+  <p dir="ltr" class="FM_ADP_TG_Steps"><span class="FM_Bold">Steps:<span style="padding-left: 6pt;" class="FMAutoNumber_1"></span></span></p>
+  <ol dir="ltr" start="1">
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Start">Select <span style="font-weight : bold; ">Membership &gt; Users</span>. </p>
+</li>
+   <p dir="ltr" class="FM_ADP_TG_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 12pt;" class="FMAutoNumber_2"></span></span>By default, all users are listed. Apply a filter to narrow the list. If only part of the criteria is known, an asterisk (*) must be used to denote the unknown part of the criteria.</p>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Select the checkboxes next to the users’ names.</p>
+</li>
+   <div align="center"><img alt="UserMgmt_sendregemailbatchBuyer_1.png" id="image174" src="../../../assets/UserMgmt_sendregemailbatchBuyer_1.png" style="max-width: 100% ;height: auto" />
+   </div>
+   <p dir="ltr" class="FM_ADP_TG_Screenshot_Anchor">&nbsp;</p>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Click <span style="font-weight : bold; ">Suspend Users</span>.</p>
+</li>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Click <span style="font-weight : bold; ">Yes</span> to confirm.</p>
+</li>
+  </ol>
+  <p dir="ltr" class="FM_ADP_TG_Heading_2_HowTo">How to Delete a User</p>
+  <p dir="ltr" class="FM_ADP_TG_Important_Start"><span class="FM_Bold">Important!<span style="padding-left: 24pt;" class="FMAutoNumber_1"></span></span>Department notification users cannot be deleted. The user must be unassigned as the department notification user before their profile is deleted.</p>
+  <p dir="ltr" class="FM_ADP_TG_Body_Style">Use this procedure to delete a user. </p>
+  <p dir="ltr" class="FM_ADP_TG_Note___Start"><span class="FM_Bold">Note:<span style="padding-left: 12pt;" class="FMAutoNumber_1"></span></span>If you receive a message indicating you cannot delete a notification user, see the <a href="Modifying_a_Department’s_Notification_User.htm#XREF_98756_Modifying_a"><span class="FM_ADP_TG__Link">Modifying a Department’s Notification User</span></a>&#160;section for more information. </p>
+  <p dir="ltr" class="FM_ADP_TG_Permission___Start"><span class="FM_Bold">Permission:<span style="padding-left: 18pt;" class="FMAutoNumber_1"></span></span>Membership Modify</p>
+  <p dir="ltr" class="FM_ADP_TG_Steps"><span class="FM_Bold">Steps:<span style="padding-left: 6pt;" class="FMAutoNumber_1"></span></span></p>
+  <ol dir="ltr" start="1">
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Start">Select <span style="font-weight : bold; ">Membership &gt; Users</span>. </p>
+</li>
+   <p dir="ltr" class="FM_ADP_TG_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 12pt;" class="FMAutoNumber_2"></span></span>By default, all users are listed. Apply a filter to narrow the list. If only part of the criteria is known, an asterisk (*) must be used to denote the unknown part of the criteria.</p>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Click the delete icon to delete the user. </p>
+</li>
+   <p dir="ltr" class="FM_ADP_TG_Screenshot_Anchor"><span style="font-size: small;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+
+<div width="100%" align="left">
+   <table border-spacing="0" dir="ltr" class="table109" border-collapse="collapse" style="max-width: 100% ;height: auto">
+    <tr class="tr110">
+    <td class="td111">
+    <p dir="ltr" class="FM_CellBody" style="display:inline"><img alt="UserMgmt_deleteusersBuyers.png" id="image175" src="../../../assets/UserMgmt_deleteusersBuyers.png" style="max-width: 100% ;height: auto" />&nbsp;</p>
+</td>
+</tr>
+   </table>
+</div>
+   <p dir="ltr" class="FM_ADP_TG_Screenshot_Anchor"><span style="font-size: small;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Click <span style="font-weight : bold; ">OK </span>to confirm. </p>
+</li>
+  </ol>
+  </div>
+</body>
+</html>

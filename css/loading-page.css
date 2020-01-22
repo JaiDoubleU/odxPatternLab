@@ -1,0 +1,36 @@
+.loading {
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 5500;
+    margin: 0;
+    padding: 0;
+    left: 0;
+    top: 0;
+}
+
+.loading-overlay {
+    background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/317356/enverus-loading.svg") center top no-repeat;
+    background-size: contain;
+    display: flex;
+    height: 150px;
+    width: 150px;
+    margin: 100px auto 0;
+    position: relative;
+    top: 125px;
+}
+
+.loading-overlay:after {
+    content: "Loading Application";
+    display: flex;
+    font-size: 24px;
+    font-family: 'BentonSans-Regular !important';
+    white-space: nowrap;
+    text-align: center;
+    margin-top: 120px;
+    width: 200px;
+    z-index: 5501;
+}
+
+;

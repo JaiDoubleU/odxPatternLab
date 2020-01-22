@@ -1,0 +1,43 @@
+
+<nav class="navbar  btn-group btn-breadcrumb">
+    <a href="#nogo" onmousedown="setActiveCrumb(0);" class="btn btn-link navbar-btn">
+        <span class="badge">1</span>
+        <span class="hidden-xs">Created</span>
+    </a>
+    <a href="#nogo" onmousedown="setActiveCrumb(1);" class="btn btn-link navbar-btn active">
+        <span class="badge">2</span>
+        <span class="hidden-xs">Submitted</span>
+    </a>
+    <a href="#nogo" onmousedown="setActiveCrumb(2);" class="btn btn-link navbar-btn">
+        <span class="badge">3</span>
+        <span class="hidden-xs">Approved</span>
+    </a>
+    <a href="#nogo" onmousedown="setActiveCrumb(3);" class="btn btn-link  navbar-btn">
+        <span class="badge">4</span>
+        <span class="hidden-xs">Paid</span>
+    </a>
+</nav>
+
+<div id="breadcrumb-confirm-modal" class="modal fade in">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" onclick="return false;" data-dismiss="modal" aria-hidden="true">×</button>
+                <h4 class="modal-title">Are you sure?</h4>
+            </div>
+            <div class="modal-body">
+                <div class="form-group" id="optionalMessage"></div>
+
+                <div class="form-group">
+                    <div>Are you sure you want to set the contract stage to <b id="newStageName"></b></div>
+                    <input type="hidden" id="crumbNumberToSet">
+                </div>
+            </div>
+            <div class="modal-footer text-right">
+                <button type="button" class="btn btn-default" data-dismiss="modal" aria-hidden="true">No, take me back</button>
+                <button type="button" class="btn btn-success pull-right"  onclick="$('#contractWorkspaceAlertMessage').text('The contract stage was set successfully'); setActiveCrumb($('#crumbNumberToSet').val());" data-dismiss="modal" aria-hidden="true" >Yes, I'm sure</button>
+            </div>
+        </div>
+    </div>
+</div>
+

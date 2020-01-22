@@ -1,0 +1,272 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+ <title>SupplierMgmt</title>
+
+ <link rel="stylesheet" href="../../../OpenInvoiceForBuyers_master.css" type="text/css" />
+
+
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style>
+ <meta name="generator" content="Adobe FrameMaker 2017" />
+<script type="text/javascript" src="../../../template/scripts/rh.min.js"></script>
+<script type="text/javascript" src="../../../template/scripts/common.min.js"></script>
+<script type="text/javascript" src="../../../template/scripts/topic.min.js"></script>
+<script type="text/javascript" src="../../../template/scripts/constants.js"></script>
+<script type="text/javascript" src="../../../template/scripts/utils.js"></script>
+<script type="text/javascript" src="../../../template/scripts/mhutils.js"></script>
+<script type="text/javascript" src="../../../template/scripts/mhlang.js"></script>
+<script type="text/javascript" src="../../../template/scripts/mhver.js"></script>
+<script type="text/javascript" src="../../../template/scripts/settings.js"></script>
+<script type="text/javascript" src="../../../template/scripts/XmlJsReader.js"></script>
+<script type="text/javascript" src="../../../template/scripts/loadparentdata.js"></script>
+<script type="text/javascript" src="../../../template/scripts/loadscreen.js"></script>
+<script type="text/javascript" src="../../../template/scripts/loadprojdata.js"></script>
+<script type="text/javascript" src="../../../template/scripts/mhtopic.js"></script>
+ <link rel="stylesheet" type="text/css" href="../../../template/styles/topic.min.css">
+<script type="text/javascript" >
+gRootRelPath = "../../..";
+gCommonRootRelPath = "../../..";
+gTopicId = "1.0_7";
+</script>
+ <meta name="brsprev" value="OpenInvoiceForBuyers_master/Configuration/CodingConfig/CodingConfig.htm">
+ <meta name="brsnext" value="OpenInvoiceForBuyers_master/Configuration/SupplierMgmt/Managing_Unregistered_Suppliers_in_OpenInvoice.htm">
+ <meta name="topic-breadcrumbs" content="Administrator & User Guide for Buyers" />
+</head>
+
+<body dir="ltr">
+<script type="text/javascript" src="../../../ehlpdhtm.js"></script>
+<div dir="ltr">
+  <p dir="ltr" class="FM_Chapter_Title">Supplier Management</p>
+
+  <p dir="ltr" class="FM_Body_Style">Interaction with suppliers will differ depending on whether they are registered <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>&#160;companies or not. For instance, you can process invoices from any type of supplier, but only registered suppliers can submit tickets. This section provides instructions on how to manage supplier companies, both registered and unregistered. </p>
+
+  <p dir="ltr" class="FM_Body_Style">The following topics are applicable to company administrators who oversee relationship management with suppliers:</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><a href="#XREF_58160_Supplier_Search"><span class="FM_ADP_TG__Link">Supplier Search and Managing Supplier Lists</span></a></p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><a href="Managing_Unregistered_Suppliers_in_OpenInvoice.htm#XREF_39742_Adding"><span class="FM_ADP_TG__Link">Managing Unregistered Suppliers in OpenInvoice</span></a></p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><a href="Supplier_Registration.htm#XREF_87737_Initiating_the"><span class="FM_ADP_TG__Link">Supplier Registration</span></a></p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><a href="Inviting_the_Supplier_to_Register.htm#XREF_24721_Inviting_the"><span class="FM_ADP_TG__Link">Inviting the Supplier to Register</span></a></p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><a href="Enabling_and_Configuring_Suppliers.htm#XREF_78156_Enabling_and"><span class="FM_ADP_TG__Link">Enabling and Configuring Suppliers</span></a></p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><a href="Configuring_Purchase_Order_References.htm#XREF_56508_Configuring"><span class="FM_ADP_TG__Link">Configuring Purchase Order References</span></a></p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><a href="Sending_a_Message_to_Suppliers.htm#XREF_20244_Sending_a_Message"><span class="FM_ADP_TG__Link">Sending a Message to Suppliers</span></a></p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><a href="Supplier_Number_and_Secondary_Supplier_Number.htm#XREF_90408_Supplier_Number"><span class="FM_ADP_TG__Link">Supplier Number and Secondary Supplier Number</span></a></p>
+
+  <p dir="ltr" class="FM_Heading_2">Working with Suppliers</p>
+
+  <p dir="ltr" class="FM_Body_Style">To help increase productivity and reduce data entry time, the most efficient buyer-supplier relationship involves transacting with a registered supplier who has access to the same workflow processes as their buyer; however, some suppliers do not have the capacity to work on the platform so <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>&#160;allows buyer companies to perform some transactions on the supplier’s behalf. Registered suppliers are companies that have been set up and configured for their own users to work in the <span data-name="ADP_Software_Name" data-val="OpenInvoice Platform" data-showval="TRUE" data-format="ADP_Software_Name">OpenInvoice Platform</span>. Unregistered suppliers are companies that do not have access to the <span data-name="ADP_Software_Name" data-val="OpenInvoice Platform" data-showval="TRUE" data-format="ADP_Software_Name">OpenInvoice Platform</span>, but a company profile is still created for a buyer’s use.</p>
+
+  <p dir="ltr" class="FM_Heading_3">Registered Suppliers</p>
+
+  <p dir="ltr" class="FM_Body_Style">These companies have product and service catalogs that are mapped to the platform’s Supplier Service Index (SSI). Their catalogs, data set, and site information are visible to all buyer companies on the platform. Registered suppliers can send fully electronic tickets and detailed invoices to buyers who have enabled them for transactions. A registered supplier’s invoice expedites the approval process because the invoice can be automatically compared against purchase orders, tickets, and price books.</p>
+
+  <p dir="ltr" class="FM_Body_Style">Before business transactions can occur between a buyer and registered supplier in the <span data-name="ADP_Software_Name" data-val="OpenInvoice Platform" data-showval="TRUE" data-format="ADP_Software_Name">OpenInvoice Platform</span>, the buyer must enable the registered supplier’s site(s) for transactions. </p>
+
+  <p dir="ltr" class="FM_Note___Start"><span class="FM_Bold">Note:<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Supplier site profile information is visible to your company. Users with the Corporate Partnership permission will receive an email notification if a supplier modifies any of their site profile information.</p>
+
+  <p dir="ltr" class="FM_Heading_3">Unregistered Suppliers</p>
+
+  <p dir="ltr" class="FM_Body_Style">Unregistered supplier information is entered into the platform for one or more of the following reasons: </p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>Buyers can work on behalf of an unregistered supplier to submit documents such as invoices. This feature allows users from buyer companies to continue working in the <span data-name="ADP_Software_Name" data-val="OpenInvoice Platform" data-showval="TRUE" data-format="ADP_Software_Name">OpenInvoice Platform</span>&#160;regardless of whether the supplier uses <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>. </p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>Basic supplier information, such as site addresses, can be easily referenced on the buyer’s <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>&#160;documents.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>Buyers can automate check payments to unregistered suppliers.</p>
+
+  <p dir="ltr" class="FM_Body_Style">An unregistered supplier’s product and service catalogs are not available on the platform. Communication with unregistered suppliers is external as they do not have access to <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>. </p>
+
+  <p dir="ltr" class="FM_Body_Style">Unregistered supplier companies can become registered by going through an on-ramping process that includes verification that the company is new to the platform and basic company set up. If using <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>&#160;to pay an unregistered supplier, a user with the Corporate Partnership permission must manually update the necessary information on the supplier’s profile. </p>
+
+  <p dir="ltr" class="FM_Heading_3">Creating the Buyer-Supplier Relationship</p>
+
+  <p dir="ltr" class="FM_Body_Style">Before transacting with and/or referencing a supplier company on your <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>&#160;documents, check to see if your supplier is registered. </p>
+
+  <p dir="ltr" class="FM_Body_Style">If the supplier is registered:</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>Select the <span style="font-weight : bold; ">Supplier Configuration</span> page and enable their site(s) for transactions.</p>
+
+  <p dir="ltr" class="FM_Body_Style">If the supplier does not exist in the platform:</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Start"><span class="FM_Bullet4">1.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Import or upload the supplier’s information to create an unregistered supplier company profile.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">2.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Create an on-ramping request to begin the registration process for the supplier.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">3.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Send the unregistered supplier a link to complete the online registration.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">4.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Select the supplier’s configuration page and enable their site(s) for transactions.</p>
+
+  <p dir="ltr" class="FM_Heading_1">The Supplier Dashboard</p>
+
+  <p dir="ltr" class="FM_Body_Style">The Supplier Dashboard contains two sections: the <span style="font-weight : bold; ">Suppliers</span>&#160;section and the <span style="font-weight : bold; ">Tasks </span>section.</p>
+
+  <div align="center"><img alt="SupplierMgmt_supplierdashboard.png" id="image84" src="../../../assets/SupplierMgmt_supplierdashboard.png" style="max-width: 100% ;height: auto" />
+  </div>
+  <p dir="ltr" class="FM_Screenshot_Anchor">&nbsp;</p>
+
+  <p dir="ltr" class="FM_Body_Style">The <span style="font-weight : bold; ">Suppliers</span>&#160;section shows the number of suppliers that have been enabled for transactions and the number of suppliers that are pending setup due to incomplete company information. Click one of the counters to display a list of suppliers.</p>
+
+  <p dir="ltr" class="FM_Note___Start"><span class="FM_Bold">Note:<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Suppliers are pending setup if the user adding the company does not have the Corporate Partnership permission or does not have enough supplier information. Invoices can reference suppliers pending setup, but the invoice will be put on hold until setup is complete. </p>
+
+  <p dir="ltr" class="FM_Body_Style">The <span style="font-weight : bold; ">Tasks</span> section is used to manage suppliers and view supplier lists.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Search Suppliers:</span>&#160;generates a supplier list based on specific search criteria. Leave all fields blank and click <span style="font-weight : bold; ">Apply Filter</span> to return a list of all suppliers (registered, unregistered, and pending setup).</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Enable Supplier:</span>&#160;allows users to select and enable a supplier from a generated list of suppliers that are ready to be enabled. Apply a filter to narrow the list. If criteria is unknown, type an asterisk (*) into one of the fields to return a complete list of suppliers.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">On-Ramp Suppliers:</span> allows users to add or manage on-ramping requests</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Merge Suppliers:</span>&#160;allows users to create a merge request for an unregistered supplier. The merge process transfers all existing invoices and purchase orders (including fulfillment history) from the unregistered supplier record to the registered supplier record.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Export Unregistered Suppliers:</span> allows users to view and/or save a list of unregistered suppliers in a TSV file.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Import Unregistered Suppliers:</span>&#160;allows users to add suppliers or edit existing unregistered supplier company profiles using the exported TSV file.</p>
+
+  <p dir="ltr" class="FM_Heading_1"><a name="XREF_58160_Supplier_Search"></a>Supplier Search and Managing Supplier Lists</p>
+
+  <p dir="ltr" class="FM_Body_Style">Supplier searches are performed from either section on the Supplier Dashboard. Clicking a link or counter in one of the sections will direct you to the <span style="font-weight : bold; ">Supplier Search</span>&#160;page where you can apply a filter to search for suppliers. This page also allows users to save search criteria, use and delete saved search criteria, perform actions on a batch of suppliers, export the supplier list page, and customize how the supplier list is viewed.</p>
+
+  <p dir="ltr" class="FM_Note___Start"><span class="FM_Bold">Note:<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>For instructions on how to perform actions using the <span style="font-weight : bold; ">Select an Action</span>&#160;button, refer to <a href="../CodingConfig/CodingConfig.htm#XREF_18624_Configuring_Smart">Configuring Smart Coding</a>, <a href="Configuring_Purchase_Order_References.htm#XREF_56508_Configuring">Configuring Purchase Order References</a>, <a href="Supplier_Registration.htm#XREF_60533_How_to_Create_On">Create On-Ramping Requests for Existing Unregistered Suppliers</a>, and <a href="Sending_a_Message_to_Suppliers.htm#XREF_81000_How_to_Send_a">Send a Message to Suppliers</a>.</p>
+
+  <p dir="ltr" class="FM_ADP_TG__How_to__Heading_2">How to Search for Suppliers</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Permission___Start"><span class="FM_Bold">Permission:<span style="padding-left: 21pt;" class="FMAutoNumber_1"></span></span>Corporate View</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Steps"><span class="FM_Bold">Steps:<span style="padding-left: 8pt;" class="FMAutoNumber_1"></span></span></p>
+
+  <ol dir="ltr" start="1">
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Start">Select <span style="font-weight : bold; ">Corporate</span>&#160;&gt; <span style="font-weight : bold; ">Suppliers</span>.</p>
+</li>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Do one of the following:</p>
+</li>
+   <p dir="ltr" class="FM_ADP_TG_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Search Suppliers</span>&#160;in the <span style="font-weight : bold; ">Tasks </span>section.</p>
+
+   <p dir="ltr" class="FM_ADP_TG_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Click a counter in the <span style="font-weight : bold; ">Suppliers</span> section.</p>
+
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Do one of the following:</p>
+</li>
+  </ol>
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Enter search criteria or leave all fields blank and click <span style="font-weight : bold; ">Apply Filter.</span></p>
+
+  <p dir="ltr" class="FM_ADP_TG_Note_Indent2___Start"><span class="FM_Bold"><span style="padding-left: 36pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 13pt;" class="FMAutoNumber_2"></span></span>If only part of the criteria is known, an asterisk (*) must be used to denote the unknown part of the criteria.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Note_Indent2___Next"><span class="FM_Bold"><span style="padding-left: 72pt;" class="FMAutoNumber_1"></span></span>To save your search criteria for future searches, click the down arrow on the <span style="font-weight : bold; ">Apply Filter</span>&#160;button and click <span style="font-weight : bold; ">Save Filter</span>. Only one filter can be saved at a time.</p>
+  <p dir="ltr" class="FM_ADP_TG_Note_Indent2___Next"><span class="FM_Bold"><span style="padding-left: 72pt;" class="FMAutoNumber_1"></span></span>The first 1000 results will be displayed. If you do not see the supplier you are searching for, export and view the entire list of results or refine your search.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Click the down arrow on the <span style="font-weight : bold; ">Apply Filter </span>button and click <span style="font-weight : bold; ">Load Filter</span>&#160;to populate the fields and return a list with the most recently saved search criteria.</p>
+
+  <div align="center"><img alt="SupplierMgmt_suppliersearch.png" id="image85" src="../../../assets/SupplierMgmt_suppliersearch.png" style="max-width: 100% ;height: auto" />
+  </div>
+  <p dir="ltr" class="FM_Screenshot_Anchor">&nbsp;</p>
+
+  <p dir="ltr" class="FM_ADP_TG__How_to__Heading_2">How to Export a List of Suppliers</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Permission___Start"><span class="FM_Bold">Permission:<span style="padding-left: 21pt;" class="FMAutoNumber_1"></span></span>Corporate View</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Steps"><span class="FM_Bold">Steps:<span style="padding-left: 8pt;" class="FMAutoNumber_1"></span></span></p>
+
+  <ol dir="ltr" start="1">
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Start">Select <span style="font-weight : bold; ">Corporate</span>&#160;&gt; <span style="font-weight : bold; ">Suppliers</span>.</p>
+</li>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Do one of the following:</p>
+</li>
+   <p dir="ltr" class="FM_ADP_TG_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Search Suppliers</span>&#160;in the <span style="font-weight : bold; ">Tasks </span>section.</p>
+
+   <p dir="ltr" class="FM_ADP_TG_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Click a counter in the <span style="font-weight : bold; ">Suppliers</span> section.</p>
+
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Perform a search for suppliers.</p>
+</li>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Select the checkbox next to all the suppliers you want to export.</p>
+</li>
+   <p dir="ltr" class="FM_ADP_TG_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 13pt;" class="FMAutoNumber_2"></span></span>Select the checkbox in the table header to auto-select all suppliers.</p>
+
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Click <span style="font-weight : bold; ">Export Results</span>. A CSV file is exported and downloaded to your system. </p>
+</li>
+  </ol>
+  <p dir="ltr" class="FM_ADP_TG__How_to__Heading_2">How to Customize Your View of the Supplier List Page</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Permission___Start"><span class="FM_Bold">Permission:<span style="padding-left: 21pt;" class="FMAutoNumber_1"></span></span>Corporate View</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Steps"><span class="FM_Bold">Steps:<span style="padding-left: 8pt;" class="FMAutoNumber_1"></span></span></p>
+
+  <ol dir="ltr" start="1">
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Start">Select <span style="font-weight : bold; ">Corporate</span>&#160;&gt; <span style="font-weight : bold; ">Suppliers</span>.</p>
+</li>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Do one of the following:</p>
+</li>
+   <p dir="ltr" class="FM_ADP_TG_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Search Suppliers</span>&#160;in the <span style="font-weight : bold; ">Tasks </span>section.</p>
+
+   <p dir="ltr" class="FM_ADP_TG_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Click a counter in the <span style="font-weight : bold; ">Suppliers</span> section.</p>
+
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Perform a search for suppliers.</p>
+</li>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Click <span style="font-weight : bold; ">Configure Columns</span> to customize your view of the list page.</p>
+</li>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Do one or more of the following:</p>
+</li>
+   <p dir="ltr" class="FM_ADP_TG_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Add or remove column titles from the <span style="font-weight : bold; ">Configured Columns</span>&#160;box by selecting a column title and clicking <span style="font-weight : bold; ">Add </span>&gt; or &lt; <span style="font-weight : bold; ">Remove</span>.</p>
+
+   <p dir="ltr" class="FM_ADP_TG_Note_Indent2___Start"><span class="FM_Bold"><span style="padding-left: 36pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 13pt;" class="FMAutoNumber_2"></span></span>To select multiple column titles at once, hold the<span style="font-weight : bold; "> Ctrl</span>&#160;key and select the columns. Alternatively, hold the <span style="font-weight : bold; ">Shift </span>key to select a range of columns. </p>
+
+   <p dir="ltr" class="FM_ADP_TG_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Click the arrows to the right of the <span style="font-weight : bold; ">Configured Columns</span>&#160;box to determine the display order of your columns. </p>
+
+   <p dir="ltr" class="FM_ADP_TG_Note_Indent2___Start"><span class="FM_Bold"><span style="padding-left: 36pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 13pt;" class="FMAutoNumber_2"></span></span>Top-to-bottom order in the <span style="font-weight : bold; ">Configured Columns </span>box corresponds with left-to-right order on the list page.</p>
+
+   <p dir="ltr" class="FM_ADP_TG_Note_Indent2___Next"><span class="FM_Bold"><span style="padding-left: 72pt;" class="FMAutoNumber_1"></span></span>Move a column title one position at a time by clicking the single arrows; use the underlined arrows to move column titles directly to the top or directly to the bottom.</p>
+
+   <p dir="ltr" class="FM_ADP_TG_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Default</span> to restore the list page settings to your company default.</p>
+
+   <div align="center"><img alt="SupplierMgmt_suppliersearchconfigurecolumns.png" id="image86" src="../../../assets/SupplierMgmt_suppliersearchconfigurecolumns.png" style="max-width: 100% ;height: auto" />
+   </div>
+   <p dir="ltr" class="FM_Screenshot_Anchor">&nbsp;</p>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Click <span style="font-weight : bold; ">Submit</span>.</p>
+</li>
+  </ol>
+  </div>
+</body>
+</html>

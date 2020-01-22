@@ -1,0 +1,216 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+ <title>PriceBook</title>
+
+ <link rel="stylesheet" href="../../../OpenInvoiceForBuyers_master.css" type="text/css" />
+
+
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style>
+ <meta name="generator" content="Adobe FrameMaker 2017" />
+<script type="text/javascript" src="../../../template/scripts/rh.min.js"></script>
+<script type="text/javascript" src="../../../template/scripts/common.min.js"></script>
+<script type="text/javascript" src="../../../template/scripts/topic.min.js"></script>
+<script type="text/javascript" src="../../../template/scripts/constants.js"></script>
+<script type="text/javascript" src="../../../template/scripts/utils.js"></script>
+<script type="text/javascript" src="../../../template/scripts/mhutils.js"></script>
+<script type="text/javascript" src="../../../template/scripts/mhlang.js"></script>
+<script type="text/javascript" src="../../../template/scripts/mhver.js"></script>
+<script type="text/javascript" src="../../../template/scripts/settings.js"></script>
+<script type="text/javascript" src="../../../template/scripts/XmlJsReader.js"></script>
+<script type="text/javascript" src="../../../template/scripts/loadparentdata.js"></script>
+<script type="text/javascript" src="../../../template/scripts/loadscreen.js"></script>
+<script type="text/javascript" src="../../../template/scripts/loadprojdata.js"></script>
+<script type="text/javascript" src="../../../template/scripts/mhtopic.js"></script>
+ <link rel="stylesheet" type="text/css" href="../../../template/styles/topic.min.css">
+<script type="text/javascript" >
+gRootRelPath = "../../..";
+gCommonRootRelPath = "../../..";
+gTopicId = "1.6_2";
+</script>
+ <meta name="brsprev" value="OpenInvoiceForBuyers_master/Price_Books/PriceBookOverview/PriceBookOverview.htm">
+ <meta name="brsnext" value="OpenInvoiceForBuyers_master/Price_Books/PriceBookManagement/PriceBookManagement.htm">
+ <meta name="topic-breadcrumbs" content="Administrator & User Guide for Buyers" />
+</head>
+
+<body dir="ltr">
+<script type="text/javascript" src="../../../ehlpdhtm.js"></script>
+
+ <div dir="ltr">
+  <p dir="ltr" class="FM_Chapter_Title">Price Book Configuration</p>
+
+  <p dir="ltr" class="FM_Body_Style">A price book reflects agreed-upon pricing for specific products and services within the supplier’s catalog. This section provides instructions on how to configure the <span style="font-weight : bold; ">Price Book</span>&#160;functionality in <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>. </p>
+
+  <p dir="ltr" class="FM_Heading_1">Price Books and Catalogs</p>
+
+  <p dir="ltr" class="FM_Note___Start"><span class="FM_Bold">Note:<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>This functionality works for any supplier’s catalog through Price Book provided the supplier has not had a B2B transaction in the last 31 days.</p>
+
+  <p dir="ltr" class="FM_Body_Style">Suppliers can edit catalog items created by buyers through a Price Book. Any item being used on a Price Book or Purchase Order requires a confirmation prior to changes being saved. Items that are currently being used on Price Books cannot be deleted.</p>
+
+  <p dir="ltr" class="FM_Body_Style">During the TSV import of a price book, if there is no match found for the catalog item, then one will be created. Imported items are created only when the change is applied from the Price Book Import Staging Area. Items currently being used on price books cannot be deleted through a TSV import.</p>
+
+  <div align="center"><img alt="PriceBook_addCatalog.jpg" id="image195" src="../../../assets/PriceBook_addCatalog.jpg" style="max-width: 100% ;height: auto" />
+  </div>
+  <p dir="ltr" class="FM_Screenshot_Anchor">&nbsp;</p>
+
+  <p dir="ltr" class="FM_Note___Start"><span class="FM_Bold">Note:<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>These co-managed catalog items, <span style="font-weight : bold; ">without the pricing</span>, will be available for selection as line items for any customers by the supplier. </p>
+
+  <p dir="ltr" class="FM_Body_Style">When the catalog item is matched using Part # / Item ID the price book description may be different than the Catalog description.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>Price book will indicate when descriptions are different by displaying a blue informational icon. Click the icon to view the Catalog description.</p>
+
+  <div align="center"><img alt="PriceBook_DescriptionsDoNotMatch.jpg" id="image196" src="../../../assets/PriceBook_DescriptionsDoNotMatch.jpg" style="max-width: 100% ;height: auto" />
+  </div>
+  <p dir="ltr" class="FM_Screenshot_Anchor">&nbsp;</p>
+
+  <p dir="ltr" class="FM_Note___Start"><span class="FM_Bold">Note:<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Option to Reconcile:</span>&#160;If a buyer clicks the <span style="font-weight : bold; ">Reconcile</span>&#160;button the price book descriptions will be updated to match the catalog descriptions.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>When a Supplier selects a catalog item from the price book on an invoice then the price book description will be automatically populated on the invoice line item. The Supplier is warned against, but not restricted from, changing the price book description. </p>
+
+  <div align="center"><img alt="CatalogMgmt_PriceBookDescriptionWarning.jpg" id="image197" src="../../../assets/CatalogMgmt_PriceBookDescriptionWarning.jpg" style="max-width: 100% ;height: auto" />
+  </div>
+  <p dir="ltr" class="FM_Screenshot_Anchor">&nbsp;</p>
+
+  <p dir="ltr" class="FM_Heading_1">Supplier Catalogs</p>
+
+  <p dir="ltr" class="FM_Body_Style">Buyers who use price book can search and view any enabled supplier’s catalog without first creating or loading a price book. Buyers can also view the items that have (and have not) been used on your invoices, field tickets, purchase orders and price books. </p>
+
+  <div align="center"><img alt="PriceBook_SupplierCatalogs.jpg" id="image198" src="../../../assets/PriceBook_SupplierCatalogs.jpg" style="max-width: 100% ;height: auto" />
+  </div>
+  <p dir="ltr" class="FM_Screenshot_Anchor">&nbsp;</p>
+
+  <p dir="ltr" class="FM_Body_Style">Buyers can search for a specific supplier by entering a supplier’s name, or partial name, or search for a specific part #, category, or description of catalog items. Search results will start to auto-populate based on characters entered in the search field. When the desired result appears, click on the selection to populate all search results in the table below.</p>
+
+  <p dir="ltr" class="FM_Body_Style">Search results can be sorted by any column header. Click on the arrows next to the desired column to sort in either ascending or descending order. </p>
+
+  <p dir="ltr" class="FM_Body_Style">The results of a search of the supplier catalogs through price book can be downloaded to an XLSX file to accelerate the process of setting up, or negotiating, a new price book. </p>
+
+  <div align="center"><img alt="PriceBook_SupplierCatalogXLSXdownload.png" id="image199" src="../../../assets/PriceBook_SupplierCatalogXLSXdownload.png" style="max-width: 100% ;height: auto" />
+  </div>
+  <p dir="ltr" class="FM_Screenshot_Anchor">&nbsp;</p>
+
+  <p dir="ltr" class="FM_Heading_1">Pricing Records</p>
+
+  <p dir="ltr" class="FM_Body_Style">A price book contains products and services, each with one or more pricing records for the supplier to select and apply to invoices and field tickets. Suppliers can also manually enter values so they are not restricted to selecting a pricing record from your price book. Noncompliance of supplier pricing is indicated with a Price Book Compliance Alert. </p>
+
+  <p dir="ltr" class="FM_Heading_2"><a name="XREF_81746_Pricing_Record"></a>Pricing Record Configuration Options </p>
+
+  <p dir="ltr" class="FM_Body_Style">There are four configuration options that can be combined to increase the complexity of a pricing record. Each pricing record must have a unique combination of date range, unit of measure, qualifier, and quantity threshold.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Date From</span>&#160;and <span style="font-weight : bold; ">Date To: </span>defines the date range in which the pricing record will apply. The service date specified on the supplier’s document must overlap this date range for compliance. Pricing records without dates inherit the active and expiry dates of the price book.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Units:</span>&#160;defines the unit of measure required on the supplier’s document. By default, the unit of measure will be taken from the supplier’s catalog. If a unit is not stated in the catalog, you may enter a unit of measure. This field is case-sensitive. Pricing records without a unit of measure allow the supplier to specify any unit of measure on the invoice or ticket.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Qualifier:</span>&#160;information that differentiates price points based on conditions of product or service delivery (weekday vs. weekend pricing). </p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Quantity Threshold:</span>&#160;used to set up tiered pricing or bulk discounts. Enter the minimum quantity required for the specified price. If an invoice has multiple lines for the same product/service, <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>&#160;will use the total quantity across all invoice lines to find the appropriate pricing record for reconciliation.</p>
+
+  <p dir="ltr" class="FM_Heading_2">Rate Options</p>
+
+  <p dir="ltr" class="FM_Body_Style">The adjusted rate range is determined by the combination of a Min Rate, Max Rate, Adjustment&nbsp;%, and Adjustment Type. If the supplier’s rate is not within the price book’s adjusted rate range, an alert will be displayed on the document. </p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Min Rate</span>&#160;and <span style="font-weight : bold; ">Max Rate:</span>&#160;the lower and upper price points of the base price range. The Min Rate must be less than or equal to the Max Rate.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Fixed Price:</span>&#160;when the Min Rate and Max Rate are the same. A supplier’s document is reconciled to the price book only if the document’s rate (after discount) is the same as the price book adjusted values. </p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Price Range: </span>when the Min Rate and Max Rate are different. A supplier’s document is reconciled to the price book only if the document’s rate (after discount) is between the price book adjusted values. </p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">No Price: </span>when the Min Rate and Max Rate are blank. The product/service is considered valid for the price book but does not have a defined price. Price reconciliation must be done manually by a user. </p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Adjustment (%): </span>applied to the Min Rate and Max Rate to calculate the Minimum Adjusted Rate and Maximum Adjusted Rate.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Adjustment Type: </span>method<span style="font-weight : bold; ">&#160;</span>used to calculate the Minimum Adjusted Rate and Maximum Adjusted Rate. </p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Discount:</span>&#160;the <span style="font-weight : bold; ">Adjustment (%)</span>&#160;is discounted from the rate. </p>
+
+  <p dir="ltr" class="FM_Bullet_List_3"><span class="FM_Bullet3">-<span style="padding-left: 15pt;" class="FMAutoNumber_1"></span></span>Min Adj. Rate = Min Rate less the Adjustment (%)</p>
+
+  <p dir="ltr" class="FM_Bullet_List_3"><span class="FM_Bullet3">-<span style="padding-left: 15pt;" class="FMAutoNumber_1"></span></span>Max Adj. Rate = Max Rate less the Adjustment (%).</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Premium:</span>&#160;the <span style="font-weight : bold; ">Adjustment (%)</span>&#160;is added to the rate. </p>
+
+  <p dir="ltr" class="FM_Bullet_List_3"><span class="FM_Bullet3">-<span style="padding-left: 15pt;" class="FMAutoNumber_1"></span></span>Min Adj. Rate = Min Rate plus the Adjustment (%) </p>
+
+  <p dir="ltr" class="FM_Bullet_List_3"><span class="FM_Bullet3">-<span style="padding-left: 15pt;" class="FMAutoNumber_1"></span></span>Max Adj. Rate = Max Rate plus the Adjustment (%).</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Included:</span>&#160;the <span style="font-weight : bold; ">Adjustment (%)</span>&#160;is already included in the <span style="font-weight : bold; ">Min Rate</span>&#160;and <span style="font-weight : bold; ">Max Rate</span> fields.</p>
+
+  <p dir="ltr" class="FM_Heading_1"><a name="XREF_54342_Configuring"></a>Configuring Equivalent Units of Measure</p>
+
+  <p dir="ltr" class="FM_Body_Style"><a name="XREF_20263_PriceBook"></a>Define your preferred and equivalent unit of measure codes to help identify price book compliance on an invoice. </p>
+
+  <p dir="ltr" class="FM_Heading_2_HowTo">How to Configure Equivalent Units of Measure</p>
+
+  <p dir="ltr" class="FM_Permission___Start"><span class="FM_Bold">Permission:<span style="padding-left: 21pt;" class="FMAutoNumber_1"></span></span>Price Book Admin (Corporate)</p>
+
+  <p dir="ltr" class="FM_Note___Start"><span class="FM_Bold">Note:<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Up to 1000 preferred units can be added.</p>
+
+  <p dir="ltr" class="FM_Steps"><span class="FM_Bold">Steps:<span style="padding-left: 8pt;" class="FMAutoNumber_1"></span></span></p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">1.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Select <span style="font-weight : bold; ">Price Book</span>&#160;&gt; <span style="font-weight : bold; ">Units of Measure</span>.</p>
+
+  <div align="center"><img alt="PriceBookOverview_UOM.jpg" id="image200" src="../../../assets/PriceBookOverview_UOM.jpg" style="max-width: 100% ;height: auto" />
+  </div>
+  <p dir="ltr" class="FM_Screenshot_Anchor">&nbsp;</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">2.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Do one of the following:</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Add a Preferred Unit</span>.</p>
+
+  <div align="center"><img alt="PriceBook_addUOM.jpg" id="image201" src="../../../assets/PriceBook_addUOM.jpg" style="max-width: 100% ;height: auto" />
+  </div>
+  <p dir="ltr" class="FM_Screenshot_Anchor">&nbsp;</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>To edit an existing unit, click the unit’s row.</p>
+
+  <p dir="ltr" class="FM_Note_Indent2___Start"><span class="FM_Bold"><span style="padding-left: 36pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 13pt;" class="FMAutoNumber_2"></span></span>To search for a unit, enter the unit in the <span style="font-weight : bold; ">Search</span> field on the right.</p>
+
+  <p dir="ltr" class="FM_Note_Indent2___Next"><span class="FM_Bold"><span style="padding-left: 72pt;" class="FMAutoNumber_1"></span></span>To delete an existing unit, select <span style="font-weight : bold; ">Delete</span>&#160;in the Actions drop-down list. Click <span style="font-weight : bold; ">Yes, Delete the Unit of Measure</span>&#160;to confirm. </p>
+
+  <div align="center"><img alt="PriceBook_editunitofmeasure.png" id="image202" src="../../../assets/PriceBook_editunitofmeasure.png" style="max-width: 100% ;height: auto" />
+  </div>
+  <p dir="ltr" class="FM_Screenshot_Anchor">&nbsp;</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">3.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Enter the preferred unit.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">4.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>In the <span style="font-weight : bold; ">Equivalent Units</span> field, enter variations of how your preferred unit may appear.</p>
+
+  <p dir="ltr" class="FM_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 13pt;" class="FMAutoNumber_2"></span></span>Hit <span style="font-weight : bold; ">Enter</span> or the tab key to separate equivalent units.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">5.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>To ignore case of how units appear, switch the <span style="font-weight : bold; ">Ignore Case</span>&#160;toggle to <span style="font-weight : bold; ">ON</span>.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">6.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Save</span>.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">7.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Switch the <span style="font-weight : bold; ">Use Equivalent Units for Price Book Alerts</span>&#160;toggle to <span style="font-weight : bold; ">ON</span>.</p>
+
+  <p dir="ltr" class="FM_Body_Style">&nbsp;</p>
+ </div>
+</body>
+
+</html>
+

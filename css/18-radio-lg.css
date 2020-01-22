@@ -1,0 +1,53 @@
+.radio.radio-lg {
+    margin: 0;
+    padding: 0;
+}
+
+.radio.radio-lg label {
+    padding: 0;
+}
+
+.radio.radio-lg label:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.radio .checkboxRadioLg {
+    position: relative;
+    display: inline-block;
+    border: 1px solid #a9a9a9;
+    border-radius: .25em;
+    width: 1.5em;
+    height: 1.5em;
+    float: left;
+    padding: 0;
+    margin:0 ;
+}
+
+.radio .checkboxRadioLg {
+    border-radius: 50%;
+}
+
+.radio .checkboxRadioLg .fas {
+    position: absolute;
+    line-height: 0;
+    top: 0.7rem;
+    left: 0.2rem;
+}
+
+.radio.radio-lg label input[type="radio"] {
+    display: none;
+}
+
+.radio.radio-lg label input[type="radio"]+.checkboxRadioLg > .fas {
+    opacity: 0;
+}
+
+.radio.radio-lg label input[type="radio"]:checked+.checkboxRadioLg>.fas {
+    opacity: 1;
+}
+
+.radio.radio-lg label input[type="radio"]:disabled+.checkboxRadioLg {
+    opacity: .5;
+}

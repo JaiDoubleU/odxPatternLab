@@ -1,0 +1,121 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+ <title>IntegrationExports_UnapprovedInvoiceBatch</title>
+
+ <link rel="stylesheet" href="../../../../OpenInvoiceForBuyers_master.css" type="text/css" />
+
+
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style>
+ <meta name="generator" content="Adobe FrameMaker 2017" />
+<script type="text/javascript" src="../../../../template/scripts/rh.min.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/common.min.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/topic.min.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/constants.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/utils.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/mhutils.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/mhlang.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/mhver.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/settings.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/XmlJsReader.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/loadparentdata.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/loadscreen.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/loadprojdata.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/mhtopic.js"></script>
+ <link rel="stylesheet" type="text/css" href="../../../../template/styles/topic.min.css">
+<script type="text/javascript" >
+gRootRelPath = "../../../..";
+gCommonRootRelPath = "../../../..";
+gTopicId = "";
+</script>
+ <meta name="brsprev" value="OpenInvoiceForBuyers_master/Integrations/Integration_Exports/IntegrationExports/IntegrationExports.htm">
+ <meta name="brsnext" value="OpenInvoiceForBuyers_master/Integrations/Integration_Exports/IntegrationExports_ApprovedInvoices/IntegrationExports_ApprovedInvoices.htm">
+ <meta name="topic-breadcrumbs" content="Administrator & User Guide for Buyers > Integration Exports" />
+</head>
+
+<body dir="ltr">
+<script type="text/javascript" src="../../../../ehlpdhtm.js"></script>
+
+ <div dir="ltr">
+  
+  <p dir="ltr" class="FM_ADP_TG_Heading_1"><a name="TOC_Unapproved_Invoice_Batch"></a><a name="XREF_19823_Unapproved_Invoice"></a>Unapproved Invoice Batch Export</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Body_Style">The Unapproved Invoice Batch Export allows XML data for multiple invoices to be bundled in one XML file and delivered to the buyer. Exporting multiple invoices with one server connection minimizes the impact on overall system performance. The data can be used for internal reporting/cost estimation or for invoice adjudication purposes. </p>
+
+  <p dir="ltr" class="FM_ADP_TG_Body_Style">The buyer must be able to extract individual invoice data out of an invoice batch file.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Body_Style">Attachments are not included.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Body_Style">Messages are SOAP wrapped.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Body_Style">Both image and detail invoices can be exported. Tags in the XML are used to differentiate between image and detail invoices. You can enable an option to trigger the Unapproved Invoice Batch Export when an image invoice is deleted in <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>. Contact <span data-name="_OpenInvoice_Support" data-val="OpenInvoice Support" data-showval="TRUE" data-format="_OpenInvoice_Support">OpenInvoice Support</span> to enable this option.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Body_Style">Includes original submissions and resubmissions.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Body_Style"><span style="font-weight : bold; ">Scheduled Service: </span>Unapproved Invoice Batch Export</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Body_Style"><span style="font-weight : bold; ">Schema: </span>SupplierConnectInvoiceBatch.xsd</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Body_Style"><span style="font-weight : bold; ">See also: </span>Unapproved Invoice Batch Export.pdf</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Body_Style">To manually re-export invoices that were previously exported, click the action icon, then <span style="font-weight : bold; ">Select Invoices</span>&#160;to search for invoices you wish to export. On the <span style="font-weight : bold; ">Invoice Search Results</span> page, select the invoices and click<span style="font-weight : bold; "> Submit</span>&#160;to export the invoices immediately.<span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span></p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Schedule:</span> run at specified time(s) every day.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Triggers:</span>&#160;Any of the following actions can add an invoice to the pending export list so it is exported the next time the service is run. If none of the selected actions were performed on the invoice since the service was last run, it is not included in the next service.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Submit: </span>invoices are added to the next export service when they are submitted or resubmitted by the supplier. There is an option to have any invoices automatically disputed by <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>&#160;on your behalf excluded from the export.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Body_Indent">The rest of the options can be set as triggers only if the invoice is processed in the <span data-name="ADP_Software_Name" data-val="OpenInvoice Platform" data-showval="TRUE" data-format="ADP_Software_Name">OpenInvoice Platform</span>. The export will update the back office with the invoice’s processing stage.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Code Verify</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span></p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Financial Approval: includes the option to export on every approval action or just the final financial approval.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Cancel </p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Correct</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Dispute</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Filemask: </span>The location where the file will be sent and name of the created file.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Use legacy OI-XML file format for exported invoices:</span>&#160;This setting is for companies using an older <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span> invoice XML schema.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Use Legacy Entry Point: </span>This defines whether the invoices use the PIDX Invoice (version 1.2) schema or <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>’s SupplierConnect schema. </p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Export File Size: </span><span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>&#160;does not set file size limits (except on attachments). However, the system may time out on files larger than 3 MB, so companies may want to set a file size limit to reduce the number of failed transfers. If the invoice batch file size exceeds the size specified here, the invoices will be split into separate batches (i.e., this setting indicates the size at which the batch will be split into separate batches). For example, if <span style="font-weight : bold; ">200</span>&#160;is entered as the export file size and the submitted batch is over this amount, the batch will be split into separate batches of up to 200 KB. An invoice will not be split across batches.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Body_Style" style="margin-top  : 8.000pt; margin-bottom : 8.000pt; font-weight : bold; font-size  : 20.0pt;">&nbsp;</p>
+ </div>
+</body>
+
+</html>
+

@@ -1,0 +1,231 @@
+<style>
+
+    #invoice-buttonBar > .btn-group {
+        white-space: nowrap;
+        font-size: 0;
+        max-height: 70px !important;
+    }
+
+    #invoice-buttonBar > .btn-group .btn {
+        width: 58px;
+        height: 58px;
+        padding: 6px 4px;
+        display: inline-block;
+        float: none;
+        clear: none;
+    }
+
+    #invoice-buttonBar > .btn-group .btn .fa-stack {
+      line-height: 1.4em;
+    }
+
+    #invoice-buttonBar > .btn-group .btn .btn-text {
+      font-size: 9px !important;
+      height: 45%;
+      line-height: 1em;
+      text-align: center;
+      vertical-align: bottom;
+      white-space: normal;
+      width: 100%;
+      word-wrap: normal;
+    }
+
+    #invoice-buttonBar > .btn-group .btn .fa-fw {
+      height: 55%;
+      width: 100%;
+    }
+
+     #invoice-buttonBar > .btn-group .btn.payMeNow {
+       color: #fff;
+       background-color: #028726;
+       border-color: #026e1f;
+     }
+
+    .divider {
+        margin-right: 5px;
+    }
+</style>
+<div class="container-fluid" style="overflow:scroll;">
+
+
+    <div id="invoice-buttonBar" class="btn-toolbar">
+         <div class="btn-group" >
+             <!-- Code Verify Button -->
+             <button class="btn btn-default payMeNow" data-original-title="Pay Me Now">
+                 <i class="far fa-money-bill-alt fa-fw fa-lg"></i>
+                 <div class="btn-text small clearfix">Pay Me Now!</div>
+             </button>
+
+             <span class="divider"></span>
+             <!-- Code Verify Button -->
+            <button class="btn btn-default" data-original-title="Verify Coding">
+                <i class="fas fa-eye fa-lg"></i>
+                <div class="btn-text small clearfix">Verify Coding</div>
+            </button>
+
+            <!-- Code Verify And Approve Button -->
+            <button class="btn btn-default" data-original-title="Verify &amp; Approve">
+                  <i class="fas fa-thumbs-up fa-lg"></i>
+                <div class="btn-text small clearfix ">Verify &amp; Approve</div>
+            </button>
+
+            <!-- Check Coding Button -->
+            <button class="btn btn-default" data-original-title="Check Coding">
+                <i class="fas fa-check fa-lg"></i>
+                <div class="btn-text small clearfix">Check Coding</div>
+            </button>
+
+
+            <!-- Approve Button  -->
+            <button class="btn btn-default" data-original-title="Approve">
+                <i class="fas fa-fw fa-lg fa-thumbs-up"></i>
+                <div class="btn-text small clearfix">Approve</div>
+            </button>
+
+
+            <!-- Dispute Button  -->
+            <button class="btn btn-default text-center" data-original-title="Dispute">
+                <i class="fas fa-fw fa-lg fa-thumbs-down"></i>
+                <div class="btn-text small clearfix">Dispute</div>
+            </button>
+
+            <!-- Un Approve Button  -->
+            <button class="btn btn-default" data-original-title="Un-Approve">
+                <span class="fa-layers fa-fw fa-sm">
+                    <i class="fas fa-fw fa-thumbs-up"></i>
+                    <i class="fas fa-fw fa-ban text-danger " data-fa-transform="grow-16"></i>
+                </span>
+                <div class="btn-text small clearfix">Un-Approve</div>
+            </button>
+
+            <!-- Correct Button -->
+            <button class="btn btn-default" data-original-title="Correct">
+                <i class="fas fa-fw fa-lg fa-eraser"></i>
+                <div class="btn-text small clearfix">Correct</div>
+            </button>
+
+            <!-- Delete Button -->
+            <button class="btn btn-default" data-original-title="Delete">
+                <i class="fas fa-fw fa-lg fa-trash"></i>
+                <div class="btn-text small clearfix">Delete</div>
+            </button>
+
+            <!-- Cancel Button  -->
+            <button class="btn btn-default" data-original-title="Cancel">
+                <i class="fas fa-fw fa-lg fa-minus-circle"></i>
+                <div class="btn-text small clearfix">Cancel</div>
+            </button>
+
+            <!-- Save Button  -->
+            <button class="btn btn-default" data-original-title="Save">
+                <i class="fas fa-fw fa-lg fa-save"></i>
+                <div class="btn-text small clearfix">Save</div>
+            </button>
+
+            <!-- Itemize Button -->
+            <button class="btn btn-default" data-original-title="Itemize">
+                <i class="fas fa-fw fa-lg fa-list-ul"></i>
+                <div class="btn-text small clearfix">Itemize</div>
+            </button>
+
+
+            <!-- PostImage or OBOImage -->
+            <!-- ShortPay Button -->
+            <button class="btn btn-default" data-original-title="Short Pay">
+                <i class="fas fa-fw fa-lg fa-money-bill-alt"></i>
+                <div class="btn-text small clearfix">Short Pay</div>
+            </button>
+
+
+            <!-- Vendor only buttons  -->
+            <!-- Submit Button  -->
+            <button class="btn btn-default" data-original-title="Submit">
+                <i class="fas fa-fw fa-lg fa-paper-plane"></i>
+                <div class="btn-text small clearfix">Submit</div>
+            </button>
+
+
+            <!-- Buttons for BOTH operator and vendor  -->
+
+            <!-- Print Preview Button  -->
+            <button class="btn btn-default" data-original-title="Print Preview">
+                <i class="fas fa-fw fa-lg fa-print"></i>
+                <div class="btn-text small clearfix">Print Preview</div>
+            </button>
+
+            <!-- Forward Button  -->
+            <button class="btn btn-default" data-original-title="Forward">
+                <i class="fas fa-fw fa-lg fa-reply fa-flip-horizontal"></i>
+                <div class="btn-text small clearfix">Forward</div>
+            </button>
+
+            <!-- Export Button  -->
+            <button class="btn btn-default" data-original-title="Export">
+                <i class="fas fa-fw fa-lg fa-download"></i>
+                <div class="btn-text small clearfix">Export</div>
+            </button>
+
+            <!-- UnLock Button  -->
+            <button class="btn btn-default" data-original-title="Unlock">
+                <i class="fas fa-fw fa-lg fa-unlock"></i>
+                <div class="btn-text small clearfix">Unlock</div>
+            </button>
+
+
+            <!-- Comment Button  -->
+            <button class="btn btn-default" data-original-title="Comment">
+                <i class="fas fa-fw fa-lg fa-comment"></i>
+                <div class="btn-text small clearfix">Comment</div>
+            </button>
+
+            <!-- Attachment Button  -->
+            <button class="btn btn-default" data-original-title="Attach a File">
+                <i class="fas fa-fw fa-lg fa-paperclip"></i>
+                <div class="btn-text small clearfix">Attach a File</div>
+            </button>
+
+            <!-- Payment Button  -->
+            <button class="btn btn-default" data-original-title="Payment">
+                <i class="fas fa-fw fa-lg fa-credit-card"></i>
+                <div class="btn-text small clearfix">Payment</div>
+            </button>
+
+            <!-- Send Message Button  -->
+            <button class="btn btn-default" data-original-title="Send Message">
+                <i class="fas fa-fw fa-lg fa-envelope"></i>
+                <div class="btn-text small clearfix">Send Message</div>
+            </button>
+
+            <!-- More Operator only buttons  -->
+            <!-- Amend Invoice Button  -->
+            <button class="btn btn-default" data-original-title="Ammend">
+                <i class="fas fa-fw fa-lg fa-key"></i>
+                <div class="btn-text small clearfix">Ammend</div>
+            </button>
+
+            <!-- Amend Save Button  -->
+            <button class="btn btn-default" data-original-title="Save Ammendment">
+                <i class="fas fa-fw fa-lg fa-save"></i>
+                <div class="btn-text small clearfix">Save Ammend</div>
+            </button>
+
+            <!-- Amend Cancel Button  -->
+            <button class="btn btn-default" data-original-title="Cancel Ammendment">
+                <i class="fas fa-fw fa-lg fa-minus-circle"></i>
+                <div class="btn-text small clearfix">Cancel Ammend</div>
+            </button>
+
+            <!-- Schedule Payment Button -->
+            <button class="btn btn-default" data-original-title="Schedule a Payment">
+                <i class="fas fa-fw fa-lg fa-calendar"></i>
+                <div class="btn-text small clearfix">Schedule Payment</div>
+            </button>
+
+            <!-- Void Invoice Button -->
+            <button class="btn btn-default" data-original-title="Void Invoice">
+                <i class="fas fa-fw fa-lg fa-ban"></i>
+                <div class="btn-text small clearfix">Void Invoice</div>
+            </button>
+        </div>
+    </div>
+</div>

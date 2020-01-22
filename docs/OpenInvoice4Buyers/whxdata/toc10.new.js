@@ -1,0 +1,4 @@
+(function() {
+var toc =  [{"type":"item","name":"Integration Services","url":"OpenInvoiceForBuyers_master/Integrations/Integration_Overview/IntegrationOverview_IntegrationServices/IntegrationOverview_IntegrationServices.htm"},{"type":"item","name":"Communication Protocols","url":"OpenInvoiceForBuyers_master/Integrations/Integration_Overview/IntegrationOverview_CommunicationProtocols/IntegrationOverview_CommunicationProtocols.htm"},{"type":"item","name":"Routing and Security","url":"OpenInvoiceForBuyers_master/Integrations/Integration_Overview/IntegrationOverview_Routing_Security/IntegrationOverview_Routing_Security.htm"},{"type":"item","name":"Transmission Options","url":"OpenInvoiceForBuyers_master/Integrations/Integration_Overview/IntegrationOverview_TransmissionOptions/IntegrationOverview_TransmissionOptions.htm"}];
+window.rh.model.publish(rh.consts('KEY_TEMP_DATA'), toc, { sync:true });
+})();

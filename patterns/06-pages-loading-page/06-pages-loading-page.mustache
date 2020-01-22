@@ -1,0 +1,10 @@
+<link rel="stylesheet" href="../../css/loading-page.css" /> {{> organisms-navbar("extraClass":"navbar-fixed-top animated")}} {{> organisms-secondary-navbar("showBackButton":false,"hideNextPreviousButtons":true, "showConfigureButton":true, "extraClass":"navbar-fixed-top animated", "pageTitle":"OpenInvoice Dashboard")}}
+
+<div id="loadingContainer" class="loading hide">
+    <div class="loading-overlay"></div>
+</div>
+
+<button class="btn btn-default" style="margin-top: 125px; z-index: 6000;" onclick="$('#loadingContainer').toggleClass('hide');">Toggle Loading Overlay</button>
+<script>
+    $('body').addClass('page-bg');
+</script>

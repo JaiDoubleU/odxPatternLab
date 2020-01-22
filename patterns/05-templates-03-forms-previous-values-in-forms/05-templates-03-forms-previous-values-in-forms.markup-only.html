@@ -1,0 +1,93 @@
+<style>
+    .form-control-static {
+        display: block;
+        width: 100%;
+        height: 34px;
+        padding: 6px 12px;
+        font-size: 14px;
+        line-height: 1.42857143;
+        color: #555555;
+        background-color: #fff;
+        background-image: none;
+        border: none;
+        border-bottom: 1px solid #ccc !important;
+    }
+    .has-warning .form-control-static {
+        border-color: #806f00 !important;
+    }
+
+    .has-feedback label ~ .form-control-feedback {
+        top: 1.7rem;
+        right: 1rem;
+    }
+    #previousValuesTable tbody tr.collapsing { display: table-row-group !important;}
+</style>
+<form class="form has-feedback has-warning" id="formDifferences">
+    <div id="warning-msg" class="alert alert-dismissible alert-sm alert-warning">
+        <a href="#" class="close" onclick="$('#warning-msg').toggleClass('slide-out-top');" aria-label="close">×</a>
+        <i class="fas fa-info-circle fa-fw"></i>
+        <span class="" id="messageContent">This page contains changes. <a data-toggle="collapse" data-target=".help-block" onclick="$('#formDifferences').toggleClass('has-warning').toggleClass('has-feedback');"> Click here </a> to see what's changed.</span>
+    </div>
+    <div class="row">
+        <div class="col-xs-6">
+            <div class="form-group">
+                <label class="control-label">Enabled Field showing Previous Value</label>
+                <input type="text" class="form-control" id="inputWarning" value="XYZ-789">
+                <span class="glyphicon form-control-feedback" aria-hidden="true">
+                    <i class="fas fa-exclamation-circle text-warning"></i>
+                </span>
+                <div class="help-block text-muted small collapse changes"> Previously: ABC-123</div>
+            </div>
+        </div>
+        <div class="col-xs-6">
+            <div class="form-group">
+                <label class="control-label" for="staticWarning">Read-only Field showing Previous Value</label>
+                <p class="form-control-static" id="staticWarning">XYZ-789</p>
+                <span class="glyphicon form-control-feedback" aria-hidden="true">
+                    <i class="fas fa-exclamation-circle text-warning"></i>
+                </span>
+                <div class="help-block text-muted small collapse"> Previously: ABC-123</div>
+            </div>
+        </div>
+    </div>
+</form>
+<div class="table-responsive">
+    <table id="previousValuesTable"class="table">
+        <thead>
+            <tr>
+                <th></th>
+                <th>#</th>
+                <th>Product/Service Code</th>
+                <th>Product/Service Description</th>
+                <th>Service Date</th>
+                <th>Qty</th>
+                <th>Units</th>
+                <th>Rate</th>
+                <th>Total</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td data-toggle="collapse" data-target="tr.help-block"><i class="fas fa-plus-square"></i></td>
+                <td>1</td>
+                <td>101534000</td>
+                <td>Pump, Frac Additives</td>
+                <td>01/24/2019</td>
+                <td>10</td>
+                <td>Ea</td>
+                <td>250.00</td>
+                <td>2500.00</td>
+            </tr>
+            <tr id="previousRow1" class="help-block text-muted  collapse">
+                <td class="text-warning small" colspan="2">Previously:</td>
+                <td>101534000</td>
+                <td class="text-warning"><del>Pump, Downhole</del></td>
+                <td>01/24/2019</td>
+                <td>10</td>
+                <td>Ea</td>
+                <td>250.00</td>
+                <td>2500.00</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

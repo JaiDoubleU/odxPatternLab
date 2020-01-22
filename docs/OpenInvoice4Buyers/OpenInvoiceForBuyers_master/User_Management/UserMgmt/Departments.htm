@@ -1,0 +1,203 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+ <title>Departments</title>
+
+ <link rel="stylesheet" href="../../../OpenInvoiceForBuyers_master.css" type="text/css" />
+
+
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style>
+ <meta name="generator" content="Adobe FrameMaker 2017" />
+<script type="text/javascript" src="../../../template/scripts/rh.min.js"></script>
+<script type="text/javascript" src="../../../template/scripts/common.min.js"></script>
+<script type="text/javascript" src="../../../template/scripts/topic.min.js"></script>
+<script type="text/javascript" src="../../../template/scripts/constants.js"></script>
+<script type="text/javascript" src="../../../template/scripts/utils.js"></script>
+<script type="text/javascript" src="../../../template/scripts/mhutils.js"></script>
+<script type="text/javascript" src="../../../template/scripts/mhlang.js"></script>
+<script type="text/javascript" src="../../../template/scripts/mhver.js"></script>
+<script type="text/javascript" src="../../../template/scripts/settings.js"></script>
+<script type="text/javascript" src="../../../template/scripts/XmlJsReader.js"></script>
+<script type="text/javascript" src="../../../template/scripts/loadparentdata.js"></script>
+<script type="text/javascript" src="../../../template/scripts/loadscreen.js"></script>
+<script type="text/javascript" src="../../../template/scripts/loadprojdata.js"></script>
+<script type="text/javascript" src="../../../template/scripts/mhtopic.js"></script>
+ <link rel="stylesheet" type="text/css" href="../../../template/styles/topic.min.css">
+<script type="text/javascript" >
+gRootRelPath = "../../..";
+gCommonRootRelPath = "../../..";
+gTopicId = "1.6.0_1";
+</script>
+ <meta name="brsprev" value="OpenInvoiceForBuyers_master/User_Management/UserMgmt/UserMgmt.htm">
+ <meta name="brsnext" value="OpenInvoiceForBuyers_master/User_Management/UserMgmt/Roles.htm">
+ <meta name="topic-breadcrumbs" content="Administrator & User Guide for Buyers > User Management" />
+</head>
+
+<body dir="ltr">
+<script type="text/javascript" src="../../../ehlpdhtm.js"></script>
+<div dir="ltr">
+  <p dir="ltr" class="FM_ADP_TG_Heading_1"><a name="XREF_57038_Departments"></a>Departments</p>
+  <p dir="ltr" class="FM_ADP_TG_Body_Style">Your company consists of one or more sites. Each site consists of one or more departments. Each department consists of one or more roles. Each role has a unique set of permissions.</p>
+  <p dir="ltr" class="FM_ADP_TG_Heading_2">Implications of Editing or Deleting Departments</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Body_Style"><span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span> does not check if there are tickets against the department before deleting a department.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Body_Style">OpenInvoice does not automatically inform suppliers when a Remit To department has been modified or deleted. The buyer must inform suppliers about any changes to the Remit To department so they can update their records and any affected integration logic.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Body_Style">Users affected by a modified or deleted department will retain their current permissions until they sign out. Any altered assigned permissions will take effect the next time they sign in.</p>
+  <p dir="ltr" class="FM_ADP_TG_Heading_2">Department Details</p>
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Department Name:</span>&#160;must be unique within the selected site, but other sites may have departments with the same department name.</p>
+  <p dir="ltr" class="FM_ADP_TG_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 12pt;" class="FMAutoNumber_2"></span></span>The department name must be unique within each site, but the department name can exist in another site (multiple sites can have an Accounts Payable department, but a single site cannot have more than one Accounts Payable department). </p>
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Department Code:</span>&#160;must be unique among all sites and departments. The same code cannot be used for both a site and a department. The department code is used for routing Image Post invoices.</p>
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Site:</span> the company location where the department exists.</p>
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Description:</span>&#160;additional department information that is only displayed to users within your company on the <span style="font-weight : bold; ">Site</span>&#160;list page and <span style="font-weight : bold; ">Departments and Roles</span>&#160;list page. </p>
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Active:</span> indicates if the department is active.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Remit Invoices To:</span> select this option to make the department available to suppliers when submitting invoices.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">OI Receipt Department:</span>&#160;This preference is obsolete and no longer supported. It is scheduled to be removed from the platform in a future release. </p>
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-weight : bold; ">Notification:</span>&#160;the notification user who receives an email when certain activities occur on documents in a department. The notification user does not need to be assigned any roles in the department. </p>
+  <p dir="ltr" class="FM_ADP_TG_Heading_2">Notification Users</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>Notification users receive notifications about stalled invoices (based on last action), and they inherit invoice administrator capabilities (forward, dispute, etc.) if the invoice is stalled.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>The same notification user can be used for multiple departments and multiple sites.</p>
+  <p dir="ltr" style="margin-top  : 9.000pt; margin-bottom : 3.000pt; font-family : Arial; font-weight : bold; font-size  : 14.0pt; color   : #015db8;"><a name="IX_Add_1"></a>How to Add a New Department</p>
+  <p dir="ltr" class="FM_ADP_TG_Body_Style">Use this procedure to add a new department. </p>
+  <p dir="ltr" class="FM_ADP_TG_Permission___Start"><span class="FM_Bold">Permission:<span style="padding-left: 18pt;" class="FMAutoNumber_1"></span></span>Membership Admin</p>
+  <p dir="ltr" class="FM_ADP_TG_Steps"><span class="FM_Bold">Steps:<span style="padding-left: 6pt;" class="FMAutoNumber_1"></span></span></p>
+  <ol dir="ltr">
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Select <span style="font-weight : bold; ">Membership</span>&#160;&gt; <span style="font-weight : bold; ">Departments &amp; Roles</span>. </p>
+</li>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Click <span style="font-weight : bold; ">Add Department</span>.</p>
+</li>
+   <div align="center"><img alt="UserMgmt_deptsrolesBuyer.png" id="image154" src="../../../assets/UserMgmt_deptsrolesBuyer.png" style="max-width: 100% ;height: auto" />
+   </div>
+   <p dir="ltr" class="FM_ADP_TG_Screenshot_Anchor">&nbsp;</p>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next"><span style="font-size  : 5.0pt; "></span>Enter a department name, select a site, and select a notification user. All other fields are optional.</p>
+</li>
+   <div align="center"><img alt="UserMgmt_editdeptBuyer.png" id="image155" src="../../../assets/UserMgmt_editdeptBuyer.png" style="max-width: 100% ;height: auto" />
+   </div>
+   <p dir="ltr" class="FM_ADP_TG_Screenshot_Anchor">&nbsp;</p>
+   <p dir="ltr" class="FM_ADP_TG_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 12pt;" class="FMAutoNumber_2"></span></span><span style="font-size  : 5.0pt; "></span>To search for a notification user, enter all or part of the user’s name and click the search icon.</p>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Click <span style="font-weight : bold; ">Submit</span>.</p>
+</li>
+  </ol>
+  <p dir="ltr" style="margin-top  : 9.000pt; margin-bottom : 3.000pt; font-family : Arial; font-weight : bold; font-size  : 14.0pt; color   : #015db8;"><a name="IX_Edit_1"></a>How to Edit a Department</p>
+  <p dir="ltr" class="FM_ADP_TG_Body_Style">Use this procedure to edit an existing department. </p>
+  <p dir="ltr" class="FM_ADP_TG_Permission___Start"><span class="FM_Bold">Permission:<span style="padding-left: 18pt;" class="FMAutoNumber_1"></span></span>Membership Admin</p>
+  <p dir="ltr" class="FM_ADP_TG_Steps"><span class="FM_Bold">Steps:<span style="padding-left: 6pt;" class="FMAutoNumber_1"></span></span></p>
+  <ol dir="ltr" start="1">
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Start">Select <span style="font-weight : bold; ">Membership</span>&#160;&gt; <span style="font-weight : bold; ">Departments &amp; Roles</span>. </p>
+</li>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Click the department name.</p>
+</li>
+   <div align="center"><img alt="UserMgmt_deptsrolesBuyer.png" id="image156" src="../../../assets/UserMgmt_deptsrolesBuyer.png" style="max-width: 100% ;height: auto" />
+   </div>
+   <p dir="ltr" class="FM_ADP_TG_Screenshot_Anchor">&nbsp;</p>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next"><span style="font-size  : 5.0pt; "></span>Click the <span style="font-weight : bold; ">Settings</span> tab.</p>
+</li>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Click the department name.</p>
+</li>
+   <div align="center"><img alt="UserMgmt_editdeptBuyer.png" id="image157" src="../../../assets/UserMgmt_editdeptBuyer.png" style="max-width: 100% ;height: auto" />
+   </div>
+   <p dir="ltr" class="FM_ADP_TG_Screenshot_Anchor">&nbsp;</p>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next"><span style="font-size  : 5.0pt; "></span>Update the information.</p>
+</li>
+   <p dir="ltr" class="FM_ADP_TG_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 12pt;" class="FMAutoNumber_2"></span></span>To search for a notification user, enter all or part of the user’s name and click the <span style="font-weight : bold; ">Search</span> icon.</p>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Click <span style="font-weight : bold; ">Submit</span>.</p>
+</li>
+  </ol>
+  <p dir="ltr" style="margin-top  : 9.000pt; margin-bottom : 3.000pt; font-family : Arial; font-weight : bold; font-size  : 14.0pt; color   : #015db8;"><a name="IX_Delete_1"></a>How to Delete a Department</p>
+  <p dir="ltr" class="FM_ADP_TG_Body_Style">Use this procedure to delete an existing department. </p>
+  <p dir="ltr" class="FM_ADP_TG_Permission___Start"><span class="FM_Bold">Permission:<span style="padding-left: 18pt;" class="FMAutoNumber_1"></span></span>Membership Admin</p>
+  <p dir="ltr" class="FM_ADP_TG_Steps"><span class="FM_Bold">Steps:<span style="padding-left: 6pt;" class="FMAutoNumber_1"></span></span></p>
+  <ol dir="ltr" start="1">
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Start">Select <span style="font-weight : bold; ">Membership</span>&#160;&gt; <span style="font-weight : bold; ">Departments &amp; Roles</span>. </p>
+</li>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Ensure all documents assigned to the department have been processed or forwarded elsewhere. </p>
+</li>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Ensure all roles associated with the department have been removed from any assigned price books. </p>
+</li>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Click the delete icon.</p>
+</li>
+   <div align="center"><img alt="UserMgmt_deptsrolesBuyer.png" id="image158" src="../../../assets/UserMgmt_deptsrolesBuyer.png" style="max-width: 100% ;height: auto" />
+   </div>
+   <p dir="ltr" class="FM_ADP_TG_Screenshot_Anchor">&nbsp;</p>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Click <span style="font-weight : bold; ">OK</span> to confirm.</p>
+</li>
+  </ol>
+  <p dir="ltr" class="FM_ADP_TG_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 12pt;" class="FMAutoNumber_2"></span></span>All roles in the department are deleted.</p>
+  <p dir="ltr" style="margin-top  : 9.000pt; margin-bottom : 3.000pt; font-family : Arial; font-weight : bold; font-size  : 14.0pt; color   : #015db8;"><a name="IX_Deactivate_1"></a>How to Deactivate a Department</p>
+  <p dir="ltr" class="FM_ADP_TG_Body_Style">Use this procedure to deactivate an existing department. </p>
+  <p dir="ltr" class="FM_ADP_TG_Permission___Start"><span class="FM_Bold">Permission:<span style="padding-left: 18pt;" class="FMAutoNumber_1"></span></span>Membership Admin</p>
+  <p dir="ltr" class="FM_ADP_TG_Steps"><span class="FM_Bold">Steps:<span style="padding-left: 6pt;" class="FMAutoNumber_1"></span></span></p>
+  <ol dir="ltr" start="1">
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Start">Select <span style="font-weight : bold; ">Membership</span>&#160;&gt; <span style="font-weight : bold; ">Departments &amp; Roles</span>. </p>
+</li>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Click the department name.</p>
+</li>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Click the <span style="font-weight : bold; ">Settings</span> tab.</p>
+</li>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Click the department name.</p>
+</li>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Deselect the <span style="font-weight : bold; ">Active</span> checkbox.</p>
+</li>
+   <div align="center"><img alt="UserMgmt_editdeptBuyer.png" id="image159" src="../../../assets/UserMgmt_editdeptBuyer.png" style="max-width: 100% ;height: auto" />
+   </div>
+   <p dir="ltr" class="FM_ADP_TG_Screenshot_Anchor">&nbsp;</p>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Click <span style="font-weight : bold; ">Submit</span>.</p>
+</li>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">Click <span style="font-weight : bold; ">OK</span> to confirm.</p>
+</li>
+  </ol>
+  </div>
+</body>
+</html>

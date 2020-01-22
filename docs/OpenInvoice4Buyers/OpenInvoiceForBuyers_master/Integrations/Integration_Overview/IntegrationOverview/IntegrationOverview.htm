@@ -1,0 +1,86 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+ <title>IntegrationOverview</title>
+
+ <link rel="stylesheet" href="../../../../OpenInvoiceForBuyers_master.css" type="text/css" />
+
+
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style>
+ <meta name="generator" content="Adobe FrameMaker 2017" />
+<script type="text/javascript" src="../../../../template/scripts/rh.min.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/common.min.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/topic.min.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/constants.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/utils.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/mhutils.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/mhlang.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/mhver.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/settings.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/XmlJsReader.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/loadparentdata.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/loadscreen.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/loadprojdata.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/mhtopic.js"></script>
+ <link rel="stylesheet" type="text/css" href="../../../../template/styles/topic.min.css">
+<script type="text/javascript" >
+gRootRelPath = "../../../..";
+gCommonRootRelPath = "../../../..";
+gTopicId = "1.9";
+</script>
+ <meta name="brsprev" value="OpenInvoiceForBuyers_master/Invoices/Transaction_Upload/TransactionUpload/TransactionUpload.htm">
+ <meta name="brsnext" value="OpenInvoiceForBuyers_master/Integrations/Integration_Overview/IntegrationOverview_IntegrationServices/IntegrationOverview_IntegrationServices.htm">
+ <meta name="topic-breadcrumbs" content="Administrator & User Guide for Buyers" />
+</head>
+
+<body dir="ltr">
+<script type="text/javascript" src="../../../../ehlpdhtm.js"></script>
+
+ <div dir="ltr">
+  
+  <p dir="ltr" class="FM_ADP_TG_Chapter_Title">Integration Overview</p>
+  <p dir="ltr" class="FM_ADP_TG_Body_Style">Integration refers to the various methods of communication between your company’s internal financial system and the <span data-name="ADP_Software_Name" data-val="OpenInvoice Platform" data-showval="TRUE" data-format="ADP_Software_Name">OpenInvoice Platform</span>. <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>&#160;is the mediator or hub for integration; the process does not require direct integration between buyer and supplier. This allows each company to use a single method of transferring data to communicate with multiple trading partners who may have several different back office programs and methods of interacting with the <span data-name="ADP_Software_Name" data-val="OpenInvoice Platform" data-showval="TRUE" data-format="ADP_Software_Name">OpenInvoice Platform</span>.</p>
+  <p dir="ltr" class="FM_ADP_TG_Body_Style">Messages transmitted from the <span data-name="ADP_Software_Name" data-val="OpenInvoice Platform" data-showval="TRUE" data-format="ADP_Software_Name">OpenInvoice Platform</span>&#160;are kept in their original XML format before they are posted to the client. The document in its original form is retained for a period of time. Audit logs are also maintained. Attachments are not kept in the Trading Networks repository. If using a secure server, the location on the server and the naming convention for the particular file type are configured in the <span style="font-weight : bold; ">Integration Services</span>&#160;function. If not using a secure server, the URLs for file transfers are set up by <span data-name="_OpenInvoice_Support" data-val="OpenInvoice Support" data-showval="TRUE" data-format="_OpenInvoice_Support">OpenInvoice Support</span>&#160;in a different location and are not listed on the <span style="font-weight : bold; ">Integration Services </span>page. The file will be sent to the location established during the initial setup. </p>
+  <p dir="ltr" class="FM_ADP_TG_Body_Style">Naming conventions are also determined as part of the initial configuration process. The file mask consists of a file name plus variables that create a time stamp to ensure each file name is unique. For example, files transmitted from the <span data-name="ADP_Software_Name" data-val="OpenInvoice Platform" data-showval="TRUE" data-format="ADP_Software_Name">OpenInvoice Platform</span> to a company's back office in real time may have the month, day, hour, minute, and second stamp to ensure that files arriving in rapid succession have unique names. Buyer configuration file imports (AFE, Cost Center, ADE, Cost Collection, and User Imports) will have the file name plus the month and day (AFE_0830 for an AFE file posted on August 30). The <span data-name="ADP_Software_Name" data-val="OpenInvoice Platform" data-showval="TRUE" data-format="ADP_Software_Name">OpenInvoice Platform</span>&#160;will retrieve a file with the agreed-upon prefix/suffix and the current date. Files that do not follow the agreed-upon naming convention are not recognized and, therefore, will not be transmitted.</p>
+  <p dir="ltr" class="FM_ADP_TG_Body_Style">This section provides an overview of the integration process and the types of information that can be transferred between <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>&#160;and your company. During the integration process, <span data-name="_OpenInvoice_Support" data-val="OpenInvoice Support" data-showval="TRUE" data-format="_OpenInvoice_Support">OpenInvoice Support</span>&#160;will provide detailed documentation describing the different integration types and the business rules associated with each XML schema.</p>
+  <p dir="ltr" class="FM_ADP_TG_Body_Style">The following topics are applicable to users responsible for management of documents both in the <span data-name="ADP_Software_Name" data-val="OpenInvoice Platform" data-showval="TRUE" data-format="ADP_Software_Name">OpenInvoice Platform</span> and in your company’s back office:</p>
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><a href="../IntegrationOverview_IntegrationServices/IntegrationOverview_IntegrationServices.htm#XREF_88572_Integration"><span class="FM_ADP_TG__Link">Integration Services</span></a></p>
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><a href="../IntegrationOverview_CommunicationProtocols/IntegrationOverview_CommunicationProtocols.htm#XREF_43782_Communication"><span class="FM_ADP_TG__Link">Communication Protocols</span></a></p>
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><a href="../IntegrationOverview_Routing_Security/IntegrationOverview_Routing_Security.htm#XREF_30962_Routing_and"><span class="FM_ADP_TG__Link">Routing and Security</span></a></p>
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><a href="../IntegrationOverview_TransmissionOptions/IntegrationOverview_TransmissionOptions.htm#XREF_60250_Transmission"><span class="FM_ADP_TG__Link">Transmission Options</span></a></p>
+  <p dir="ltr" class="FM_ADP_TG_Note___Start"><span class="FM_Bold">Note:<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>References to importing and exporting are from <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>’s point of view. Importing involves a user from your company sending a file to <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>. Exporting involves a user from your company receiving a file from <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>.</p>
+  <p dir="ltr" class="FM_ADP_TG_Heading_2"><span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span> Processing Environment<span style="font-size: small;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+  <div align="center"><img alt="P2PBusinessProcessingEnvironment.jpg" id="image342" src="../../../../assets/P2PBusinessProcessingEnvironment.jpg" style="max-width: 100% ;height: auto" />
+  </div>
+  <p dir="ltr" class="FM_ADP_TG_Screenshot_Anchor">&nbsp;</p>
+  <p dir="ltr" class="FM_ADP_TG_Body_Style">&nbsp;</p>
+ </div>
+</body>
+
+</html>
+

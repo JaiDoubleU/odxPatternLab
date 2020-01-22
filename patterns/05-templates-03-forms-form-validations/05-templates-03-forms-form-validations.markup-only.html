@@ -1,0 +1,38 @@
+<div class="h3">Sample Form</div>
+<form class="form" id="formValidations">
+     <div class="form-group">
+         <label class="control-label" for="input">Input Label <span class='text-danger'> * </span>
+
+</label>
+         <input type="text" class="form-control" id="input">
+     </div>
+    <div class="form-group has-success has-feedback">
+        <label class="control-label" for="inputSuccess2">Input with Success <span class='text-danger'> * </span>
+
+</label>
+        <input type="text" class="form-control" id="inputSuccess2">
+        <span class="fas fa-check-circle form-control-feedback fa-fw fa-pull-left"></span>
+        <div class="help-block"><i class="fas fa-check-circle small"></i> Success Message Here</div>
+    </div>
+    <div class="form-group has-warning has-feedback">
+        <label class="control-label" for="inputWarning2">Input with Warning <span class='text-danger'> * </span>
+
+</label>
+        <input type="text" class="form-control" id="inputWarning2">
+        <span class="fas fa-question-circle form-control-feedback fa-fw fa-pull-left"></span>
+        <div class="help-block"><i class="fas fa-question-circle small"></i> Warning Message Here</div>
+    </div>
+    <div class="form-group has-error has-feedback">
+        <label class="control-label" for="inputError2">Input with Error <span class='text-danger'> * </span>
+
+</label>
+        <input type="text" class="form-control" id="inputError2" data-placement="top" data-trigger="manual" onclick="$('this').popover('show');" data-content="Must be at least 3 characters long, and must only contain letters.">
+        <span class="fas fa-exclamation-triangle form-control-feedback fa-fw fa-pull-left " data-toggle="popover" data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." data-original-title="" title="" ></span>
+        <div class="help-block "><i class="fas fa-exclamation-triangle small"></i> Error Message Here</div>
+    </div>
+    <div class="form-group  has-feedback">
+        <label class="control-label" for="busyInput">Busy Input </label>
+        <input id="busyInput" class="form-control">
+        <span class="fas fa-spinner fa-fw form-control-feedback fa-spin fa-pulse fa-pull-left"></span>
+    </div>
+</form>

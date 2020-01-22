@@ -1,0 +1,380 @@
+{{> organisms-navbar("extraClass":"navbar-fixed-top")}}
+{{> organisms-secondary-navbar("extraClass":"navbar-fixed-top", "pageTitle": "User Profile: Joe Smith","hideNextPreviousButtons": true)}}
+
+<div class="container-fluid  page-top-padding">
+    <div class="row">
+        <div class="col-sm-6 ">
+            <!-- User Profile Panel -->
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <div class="form-group">
+                        <div class="panel-title"><strong>Personal Info</strong></div>
+                    </div>
+
+                    <div id="saveProfileAlert" class="alert alert-success fade in out hide" role="alert">
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <strong>Right On!</strong> Your changes were saved!
+                    </div>
+
+                    <fieldset id="profileForm" class="fieldset" disabled>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label class="control-label">User ID</label>
+                                    <input type="text" class="form-control" value="joe_smith">
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label class="control-label">Email Address</label>
+                                    <input type="text" class="form-control" value="Joe.Smith@gmail.com">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label class="control-label">First Name</label>
+                                    <input type="text" class="form-control" value="Joe">
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label class="control-label">Phone Number</label>
+                                    <input type="text" class="form-control" value="888-555-5555">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label class="control-label">Last Name</label>
+                                    <input type="text" class="form-control" value="Smith">
+                                </div>
+                            </div>
+                        <div class="col-sm-6">
+                                <div class="form-group">
+                                    <div class="row">
+                                        <div class="col-xs-12">
+                                            <label class="control-label">Business Unit</label>
+                                        </div>
+                                        <div class="col-xs-12">
+                                            <div class="btn-group btn-block">
+                                                <a href="#" class="btn btn-default">Accounts Payable</a>
+                                                <a href="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a href="#">Accounts Receibable</a></li>
+                                                    <li><a href="#">HR</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="form-group">
+
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label class="control-label">Department</label>
+                                    <input type="text" class="form-control" value="Support">
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="text-right">
+                                <button type="button" class="btn btn-default pull-left" data-toggle="modal" data-target="#changePasswordModal">Change Password</button>
+                                <button name="profileButtons" class="btn btn-default pull-right" onclick="toggleEditability('profileForm', $(this), true);">Edit</button>
+                                <button name="profileButtons" class="btn btn-default hide" onclick="toggleEditability('profileForm', $(this),false);">Cancel</button>
+                                <button name="profileButtons" class="btn btn-success hide" onclick="toggleEditability('profileForm', $(this),false); showAlert('saveProfileAlert');">Save</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <!-- User Roles Panel -->
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <div class="form-group">
+                        <div class="panel-title"><strong>User Roles</strong>
+                            <button name="rolesButtons" class="btn btn-default btn-sm pull-right" onclick="toggleEditability('rolesForm', $(this), true);">Edit</button>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+
+                    <div id="saveRolesAlert" class="alert alert-success fade in out hide" role="alert">
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <strong>Right On!</strong> Your changes were saved!
+                    </div>
+
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <label class="control-label">Document Type</label>
+                            </div>
+                            <div class="col-xs-12">
+                                <div class="btn-group ">
+                                    <a href="#" class="btn btn-default">Check Stub/Check Stub Property</a>
+                                    <a href="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Run Ticket (CODE)</a></li>
+                                        <li><a href="#">Owner Relations</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <fieldset id="rolesForm">
+                        <div class="table-responsive">
+                            <table class="table table-bordered table-striped">
+                                <tr>
+                                    <th>
+
+                                    </th>
+                                    <th>Role Name</th>
+                                    <th>Rights</th>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" checked disabled>
+                                    </td>
+                                    <td>Viewer</td>
+                                    <td>Viewer, Exporter</td>
+                            </tr>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" checked disabled>
+                                    </td>
+                                    <td>Approver</td>
+                                    <td>Approver, Deleter</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" disabled>
+                                    </td>
+                                    <td>Administrator</td>
+                                    <td>Viewer, Exporter, Importer, Deleter</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </fieldset>
+
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="form-group text-right">
+                                <button name="rolesButtons" class="btn btn-default hide" onclick="toggleEditability('rolesForm', $(this), false);">Cancel</button>
+                                <button name="rolesButtons" class="btn btn-success hide" onclick="toggleEditability('rolesForm', $(this), false); showAlert('saveRolesAlert');">Save</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-6">
+            <!-- User Accounts Panel -->
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="panel-title col-xs-6"><strong>User Accounts</strong> </div>
+                            <div class="col-xs-6 text-right">
+                                <button id="addAccountBtn" data-toggle="modal" data-target="#addEditAccountModal"  class="btn btn-default btn-sm">Add</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="saveAccountAlert" class="alert alert-success fade in out hide" role="alert">
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <strong>Right On!</strong> Your changes were saved!
+                    </div>
+
+                    <div id="rolesForm">
+                        <div class="">
+                            <div class="table-responsive">
+                                <table class="table table-bordered table-hover table-striped">
+                                    <tr>
+                                        <th>Company Name</th>
+                                        <th>User ID</th>
+                                        <th>Status</th>
+                                        <th width="10">Delete</div>
+                                    </tr>
+                                    <tr style="cursor: pointer;" >
+                                        <td data-toggle="modal" data-target="#addEditAccountModal" class="text-primary">Western Gas Serices</td>
+                                        <td data-toggle="modal" data-target="#addEditAccountModal">jsmith</td>
+                                        <td data-toggle="modal" data-target="#addEditAccountModal">Active</td>
+                                        <td width="10" class="text-center" data-toggle="modal" data-target="#areYouSureModal" ><i class="fas fa-trash-alt"></i></td>
+                                    </tr>
+                                    <tr style="cursor: pointer;"  data-toggle="modal" data-target="#addEditAccountModal">
+                                        <td data-toggle="modal" data-target="#addEditAccountModal" class="text-primary">Acme Inc.</td>
+                                        <td data-toggle="modal" data-target="#addEditAccountModal">smithj</td>
+                                        <td data-toggle="modal" data-target="#addEditAccountModal">Pending</td>
+
+                                        <td width="10" class="text-center" data-toggle="modal" data-target="#areYouSureModal" ><i class="fas fa-trash-alt"></i></td>
+                                    </tr>
+                                    <tr style="cursor: pointer;" >
+                                        <td data-toggle="modal" data-target="#addEditAccountModal" class="text-primary">Kaboom Explosives</td>
+                                        <td data-toggle="modal" data-target="#addEditAccountModal">big-smitty</td>
+                                        <td data-toggle="modal" data-target="#addEditAccountModal">Active</td>
+                                        <td width="10" class="text-center" data-toggle="modal" data-target="#areYouSureModal" ><i class="fas fa-trash-alt"></i></td>
+                                    </tr>
+                                    <tr style="cursor: pointer;" >
+                                        <td data-toggle="modal" data-target="#addEditAccountModal" class="text-primary">Ed's Powerline Inc.</td>
+                                        <td data-toggle="modal" data-target="#addEditAccountModal">smith-joe</td>
+                                        <td data-toggle="modal" data-target="#addEditAccountModal">Active</td>
+                                        <td width="10" class="text-center" data-toggle="modal" data-target="#areYouSureModal" ><i class="fas fa-trash-alt"></i></td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modals -->
+    <div id="areYouSureModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-sm ">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Are you sure?</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group ">
+                        Are you sure you want to delete that?
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" onclick="showAlert('saveCredentialsAlert')" data-dismiss="modal">No, Take me back</button>
+                    <button type="button" class="btn btn-success" data-dismiss="modal">Yes, I'm sure</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="changePasswordModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg ">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Modal Header</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-xs-6">
+                            <div class="form-group ">
+                                <label class="control-label">Password</label>
+                                <input class="form-control" type="password">
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label">Confirm Password</label>
+                                <input class="form-control" type="password">
+                            </div>
+                        </div>
+                        <div class="col-xs-6">
+                            <ul class="list-unstyled">
+                                <li class="h5 text-muted">Password Requirements:</li>
+                                <li>
+                                    <ul>
+                                        <li>Passwword must be <strong>8</strong> characters long</li>
+                                        <li>Passwword mus thave <strong>1</strong> digit</li>
+                                        <li>Password must have <strong>1</strong> uppercase character</li>
+                                        <li>Password must have <strong>1</strong> lowercsse character</li>
+                                        <li>Password must have <strong>1</strong> symbol</li>
+                                        <li>Password expiration time frame is <strong>90</strong> days</li>
+                                        <li>Number of new passwords that must be used before an old one is allowed: <strong>3</strong></li>
+                                        <li>Dictionary check: <strong>true</strong></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-xs-12">
+
+                            <div class="form-group">
+                                <label class="control-label">Password Options</label>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <div class="radio">
+                                            <label>
+                                                <input type="checkbox" name="emailRandomPasswordOption" value="option1"> Email Random Password
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12">
+                                        <div class="form-group">
+                                            <div class="radio">
+                                                <label>
+                                                    <input type="checkbox" name="setPasswordOption" value="option1"> Set Password on Save
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success" onclick="showAlert('saveCredentialsAlert')" data-dismiss="modal">Save</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="addEditAccountModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg ">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Add/Edit User Account</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group has-feedback  ">
+                        <label class="control-label">Company {{> atoms-required-field-indicator}}</label>
+                        <input id="companyName" class="form-control" type="text">
+                        <div class="help-block hide" >A value is required</div>
+
+                        <span class="fas fa-exclamation-triangle form-control-feedback hide" data-toggle="popover" data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." data-original-title="" title="" ></span>
+
+                    </div>
+                    <div class="form-group has-feedback">
+                        <label class="control-label">User ID  {{> atoms-required-field-indicator}}</label>
+                        <input id="userId" class="form-control" type="text">
+                        <div class="help-block hide" >A value is required</div>
+                        <span class="fas fa-exclamation-triangle form-control-feedback hide" data-toggle="popover" data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." data-original-title="" title="" ></span>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button id="showErrors" onclick="$('.form-group.has-feedback').toggleClass('has-error'); $('.form-control-feedback').toggleClass('hide'); $('.help-block').toggleClass('hide'); return false;"  type="button" class="btn btn-outline-danger">Toggle Errors</button>
+
+                    <button id="addEditAccountSaveBtn"  data-dismiss="modal" onclick="showAlert('saveAccountAlert'); return false;"  type="button" class="btn btn-success">Save</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $('.alert').removeClass("in").show();
+    $('body').addClass('page-bg');
+</script>

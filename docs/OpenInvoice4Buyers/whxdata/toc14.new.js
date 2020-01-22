@@ -1,0 +1,4 @@
+(function() {
+var toc =  [{"type":"item","name":"Payment Status","url":"OpenInvoiceForBuyers_master/Payments/PaymentWorkflow_Introduction/Payment_Status.htm"},{"type":"item","name":"Payment Workflow Actions","url":"OpenInvoiceForBuyers_master/Payments/PaymentWorkflow_Introduction/Payment_Workflow_Actions.htm#TOC_Payment_Workflow_Actions"},{"type":"item","name":"Reports","url":"OpenInvoiceForBuyers_master/Reports/Reports/Reports.htm"},{"type":"item","name":"Field Ticket Reports","url":"OpenInvoiceForBuyers_master/Reports/Reports_FieldTicketReports/Reports_FieldTicketReports.htm"}];
+window.rh.model.publish(rh.consts('KEY_TEMP_DATA'), toc, { sync:true });
+})();

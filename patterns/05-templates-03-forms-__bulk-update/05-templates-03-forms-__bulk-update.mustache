@@ -1,0 +1,105 @@
+
+<div id="bulkUpdateModal{{idSuffix}}" class="modal fade in" role="dialog" size="lg" index="0" animate="animate" tabindex="-1" {{^hideModal}}style="display: contents;"{{/hideModal}}>
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">x</button>
+                <div class="lead modal-title" translate="receipt.bulkEdit.modal.title">Bulk Update</div>
+            </div>
+            <div class="modal-body">
+                <div name="ctrl.bulkEditForm" novalidate="">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6">
+                            <div class="form-group has-feedback">
+                                <label class="control-label">Add one or more field(s) to bulk update</label>
+                                <div class="btn-group">
+                                    <a href="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
+                                        Select a field
+                                        <span class="caret"></span>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li onclick="$('#poFld').toggleClass('hide');"><a href="#">Purchase Order</a></li>
+                                        <li onclick="$('#fieldApproverFld').toggleClass('hide');"><a href="#">Field Approver</a></li>
+                                        <li onclick="$('#afeFld').toggleClass('hide'); if(!$('#allocationsFld').hasClass('hide')){$('#allocationsFld').addClass('hide');}"><a href="#">AFE</a></li>
+                                        <li onclick="$('#ccFld').toggleClass('hide'); if(!$('#allocationsFld').hasClass('hide')){$('#allocationsFld').addClass('hide');}"><a href="#">Cost Center</a></li>
+                                        <li onclick="$('#codingFld').toggleClass('hide'); if(!$('#allocationsFld').hasClass('hide')){$('#allocationsFld').addClass('hide');}"><a href="#">Major/Minor/Subcode</a></li>
+                                        <li onclick="$('#allocationsFld').toggleClass('hide');if(!$('#afeFld').hasClass('hide')){$('#afeFld').addClass('hide');} if(!$('#ccFld').hasClass('hide')){$('#ccFld').addClass('hide')} if(!$('#codingFld').hasClass('hide')){$('#codingFld').addClass('hide')};;"><a href="#">Coding Allocations</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div id="poFld" class="col-xs-12 col-sm-6 hide">
+                            <div class="form-group has-feedback">
+                                <label class="control-label">Purchase Order</label>
+                                <div class="input-group"><input type="text" class="form-control"><span class="input-group-addon"><input type="checkbox">&nbsp;Clear</span></div>
+                            </div>
+                        </div>
+                        <div id="fieldApproverFld" class="col-xs-12 col-sm-6 hide">
+                            <div class="form-group has-feedback">
+                                <label class="control-label">Field Approver</label>
+                                <div class="input-group"><input type="text" class="form-control"><span class="input-group-addon"><input type="checkbox">&nbsp;Clear</span></div>
+                            </div>
+                        </div>
+                        <div id="afeFld" class="col-xs-12 col-sm-6 hide">
+                            <div class="form-group has-feedback">
+                                <label class="control-label">AFE</label>
+                                <div class="input-group"><input type="text" class="form-control"><span class="input-group-addon"><input type="checkbox">&nbsp;Clear</span></div>
+                            </div>
+                        </div>
+                        <div id="ccFld" class="col-xs-12 col-sm-6 hide">
+                            <div class="form-group has-feedback">
+                                <label class="control-label">Cost Center</label>
+                                <div class="input-group"><input type="text" class="form-control"><span class="input-group-addon"><input type="checkbox">&nbsp;Clear</span></div>
+                            </div>
+                        </div>
+                        <div id="codingFld" class="col-xs-12 col-sm-6 hide">
+                            <div class="form-group has-feedback">
+                                <label class="control-label">Major/Minor/Sub</label>
+                                <div class="input-group"><input type="text" class="form-control"><span class="input-group-addon"><input type="checkbox">&nbsp;Clear</span></div>
+                            </div>
+                        </div>
+                        <div id="allocationsFld" class="col-xs-12 hide">
+                            <div class="form-group has-feedback">
+                                <label class="control-label">Coding Allocations</label>
+                                <div class="table-responsive">
+                                    <table class="table" width="100%">
+                                        <thead>
+                                            <tr>
+                                                <td>AFE</td>
+                                                <td>Cost Center</td>
+                                                <td>Major</td>
+                                                <td>Minor</td>
+                                                <td>Subcode</td>
+                                                <td width="10%">Percentage</td>
+                                                <td width="10%">Amount</td>
+                                                <td width="5%">Delete</td>
+                                            </tr>
+
+                                            <tr id="allocationRow">
+                                                <td> <input type="text" class="form-control"></td>
+                                                <td> <input type="text" class="form-control"></td>
+                                                <td> <input type="text" class="form-control"></td>
+                                                <td> <input type="text" class="form-control"></td>
+                                                <td> <input type="text" class="form-control"></td>
+                                                <td> <input type="text" class="form-control"></td>
+                                                <td> <input type="text" class="form-control"></td>
+                                                <td class="text-center"> <button id="deleteRowBtn"onclick="$(this).parents('tr').remove();" class="btn btn-default btn-block"><i class="fas fa-trash-alt"></i></button> </td>
+                                            </tr>
+                                        </thead>
+                                    </table>
+                                </div>
+                                <button class="btn btn-default" onclick="$('#allocationRow').clone().insertAfter($('#allocationRow'));">Add an Allocation</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-default" data-dismiss="modal">Cancel</button>
+                <button class="btn btn-success" data-dismiss="modal">Update Tickets</button>
+            </div>
+        </div>
+    </div>
+</div>

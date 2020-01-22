@@ -1,0 +1,121 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+ <title>Automatic Dispute / Prevent Invoice Submission</title>
+
+ <link rel="stylesheet" href="../../../OpenInvoiceForBuyers_master.css" type="text/css" />
+
+
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style>
+ <meta name="generator" content="Adobe FrameMaker 2017" />
+<script type="text/javascript" src="../../../template/scripts/rh.min.js"></script>
+<script type="text/javascript" src="../../../template/scripts/common.min.js"></script>
+<script type="text/javascript" src="../../../template/scripts/topic.min.js"></script>
+<script type="text/javascript" src="../../../template/scripts/constants.js"></script>
+<script type="text/javascript" src="../../../template/scripts/utils.js"></script>
+<script type="text/javascript" src="../../../template/scripts/mhutils.js"></script>
+<script type="text/javascript" src="../../../template/scripts/mhlang.js"></script>
+<script type="text/javascript" src="../../../template/scripts/mhver.js"></script>
+<script type="text/javascript" src="../../../template/scripts/settings.js"></script>
+<script type="text/javascript" src="../../../template/scripts/XmlJsReader.js"></script>
+<script type="text/javascript" src="../../../template/scripts/loadparentdata.js"></script>
+<script type="text/javascript" src="../../../template/scripts/loadscreen.js"></script>
+<script type="text/javascript" src="../../../template/scripts/loadprojdata.js"></script>
+<script type="text/javascript" src="../../../template/scripts/mhtopic.js"></script>
+ <link rel="stylesheet" type="text/css" href="../../../template/styles/topic.min.css">
+<script type="text/javascript" >
+gRootRelPath = "../../..";
+gCommonRootRelPath = "../../..";
+gTopicId = "";
+</script>
+ <meta name="brsprev" value="OpenInvoiceForBuyers_master/Configuration/InvoiceWorkflowConfig/Invoice_Workflow_Sequence.htm">
+ <meta name="brsnext" value="OpenInvoiceForBuyers_master/Configuration/InvoiceWorkflowConfig/Automatic_Code_Verification.htm">
+ <meta name="topic-breadcrumbs" content="Administrator & User Guide for Buyers > Invoice Workflow Configuration" />
+</head>
+
+<body dir="ltr">
+<script type="text/javascript" src="../../../ehlpdhtm.js"></script>
+<div dir="ltr">
+  <p dir="ltr" class="FM_ADP_TG_Heading_1"><a name="TOC_Automatic_Dispute"></a><a name="XREF_15485_Invoice_Workflow"></a>Automatic Dispute / Prevent Invoice Submission</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Body_Style"><span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>&#160;allows you to configure the business rules and data validation requirements that defines a valid invoice you are willing to accept from your suppliers. Based on your configuration, <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>&#160;will prevent your indexers (Image OBO) and online suppliers (Direct Entry, Image Scan, and LIDO) from submitting invoices that are not valid. In addition, <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>&#160;will automatically dispute on your behalf invoices from your integrated suppliers (B2B) that are not valid.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Note___Start"><span class="FM_Bold">Note:<span style="padding-left: 12pt;" class="FMAutoNumber_1"></span></span>Some validation rules do not apply to B2B invoices.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Body_Style">You define your business rules and data validations using:</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>Company Preferences</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>Invoice Data Field settings</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>Coding Validations</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>Invoice Workflow Rules</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Body_Style">For information on how to make specific fields required as well as the options for validating one field based on other data elements please refer to <a href="../InvoiceContentConfig/InvoiceContentConfig.htm#XREF_13208_Invoice_Content">Invoice Content Configuration</a>.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Body_Style">For information on configuring invoice workflow rules, refer to <a href="Invoice_Workflow_Rules.htm#XREF_58564_Invoice_Workflow">Invoice Workflow Rules</a>.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Heading_2">Online Suppliers and Image OBO</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Body_Style">Direct Entry, LIDO CSV, LIDO XML, Image OBO, and Image Scan invoices are prevented from submission if:</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>The invoice is rejected based on your company’s invoice workflow rules.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>A value is missing for an invoice data field that is required on invoice submission.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>The supplier referenced a purchase order that is not in <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>&#160;(an external PO) even though they have a valid purchase order in <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>&#160;and you have not configured the supplier to allow external purchase order references.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>The price book on the invoice and the price book on the referenced purchase order do not match.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>The supplier referenced a purchase order that is associated with a price book, but the price book was not selected in the invoice header.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><span style="font-style : italic; ">(Direct entry, LIDO CSV, and LIDO XML only)</span>&#160;Your company has enabled the <span style="font-weight : bold; ">Prevent Invoice Submission on RED PO Compliance Alerts</span> company preference and the invoice has a red purchase order alert.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Heading_2">Integrated Suppliers and Image Post</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Body_Style">B2B and Image Post invoices will be auto-disputed if:</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Note___Start"><span class="FM_Bold">Note:<span style="padding-left: 12pt;" class="FMAutoNumber_1"></span></span>Image Post invoices will only be auto-disputed if you have configured Dispute Management rules. Refer to <a href="Dispute_Management.htm#XREF_36167_Dispute_Management">Dispute Management</a> for more information.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>The invoice is rejected based on your company’s invoice workflow rules.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>The supplier referenced a purchase order that is not in <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>&#160;(an external PO) even though they have a valid purchase order in <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>&#160;and you have not configured the supplier to allow external purchase order references.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>Your company has configured the <span style="font-weight : bold; ">Require PO</span>&#160;company preference and the invoice is missing a purchase order reference.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>Your company has configured the <span style="font-weight : bold; ">Require Explicit PO Line</span>&#160;company preference and at least one line on the invoice is missing a purchase order line reference.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>Your company has not enabled the <span style="font-weight : bold; ">Ignore PO mismatch on B2B invoice import</span>&#160;company preference and the supplier site listed on the invoice is not the same as the supplier site listed on the referenced purchase order. </p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>Your company has configured the <span style="font-weight : bold; ">Require Invoice Line Service Dates</span>&#160;company preference and at least one invoice line does not include the service dates.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>Your company has configured the <span style="font-weight : bold; ">Enable Units of Measure Compliance</span>&#160;company preference and at least one invoice line has a value that is not in the defined list.</p>
+  </div>
+</body>
+</html>

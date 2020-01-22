@@ -1,0 +1,27 @@
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#sample-modal">
+  Launch Sample Modal
+</button>
+
+<div id="molecules-modal" class="modal fade in" style="display:block; position:static;">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            {{#showModalHeader}}
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <div class="lead modal-title">
+                        Default Modal
+                    </div>
+                </div>
+            {{/showModalHeader}}
+            <div class="modal-body">
+                Body
+            </div>
+            {{#showModalFooter}}
+                <div class="modal-footer">
+                    Footer
+                </div>
+            {{/showModalFooter}}
+        </div>
+    </div>
+</div>

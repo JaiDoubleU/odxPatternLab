@@ -1,0 +1,3079 @@
+<!DOCTYPE html>
+<html class="pl">
+    <head>
+        <title>Styleguide : Oildex Pattern Lab</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width" />
+        <link rel="shortcut icon" type="image/x-icon" href="../../images/favicon.ico">
+
+        <script src="https://rawgit.com/icebob/fakerator/master/dist/fakerator.js"></script>
+        <script>
+            var fakerator = new Fakerator();
+        </script>
+
+        <link rel="stylesheet" href="../../fonts/@fortawesome/fontawesome-pro/css/all.css" />
+        <link rel="stylesheet" href="../../css/vendor/animate.min.css"/>
+        <link rel="stylesheet" href="../../css/vendor/bootstrap-select.min.css"/>
+        <link rel="stylesheet" href="../../css/vendor/tokenfield-typeahead.min.css"/>
+        <link rel="stylesheet" href="../../css/vendor/bootstrap-tokenfield.min.css">
+        <link rel="stylesheet" href="../../css/pattern-scaffolding.css?1579126521816" media="all" />
+        <link rel="stylesheet" href="../../css/vendor/typeaheadjs.css" media="all" />
+        <link rel="stylesheet" href="../../css/vendor/dataTables.bootstrap.min.css" media="all" />
+        <link rel="stylesheet" href="../../css/vendor/dragula.min.css" media="all" />
+        <link rel="stylesheet" href="../../css/vendor/colReorder.bootstrap.min.css" media="all" />
+        <link rel="stylesheet" href="../../css/vendor/fixedHeader.bootstrap.min.css" media="all" />
+        <link rel="stylesheet" href="../../css/vendor/typeaheadjs.css" />
+        <link rel="stylesheet" href="../../css/vendor/tokenfield.css" />
+        <link rel="stylesheet" href="../../css/vendor/jquery-ui.min.css" />
+        <link rel="stylesheet" href="../../css/oildex-admin.css"/>
+        <link rel="stylesheet" href="../../css/theme/enverus/bootstrap.css" media="all" />
+
+
+        <!-- Load pattern specific CSS -->
+        <link rel="stylesheet" href="../../css/02-comments-list.css"></link>
+        <link rel="stylesheet" href="../../css/01-attachments-list.css"></link>
+        <link rel="stylesheet" href="../../css/03-document-journal.css"></link>
+        <link rel="stylesheet" href="../../css/07-tabbed-panel.css"/>
+        <link rel="stylesheet" href="../../css/00-navbar.css"/>
+        <link rel="stylesheet" href="../../css/04-standard-icons.css"/>
+        <link rel="stylesheet" href="../../css/05-centered-navbar.css"/>
+        <link rel="stylesheet" href="../../css/03-secondary-navbar.css"/>
+        <link rel="stylesheet" href="../../css/panel-with-ribbon.css" />
+        <link rel="stylesheet" href="../../css/alerts.css"/>
+        <link rel="stylesheet" href="../../css/01-alerts-with-icons.css"/>
+        <link rel="stylesheet" href="../../css/17-checkbox-lg.css" />
+        <link rel="stylesheet" href="../../css/18-radio-lg.css" />
+        <link rel="stylesheet" href="../../css/time-out-dialog.css"/>
+        <link rel="stylesheet" href="../../css/bulk-update.css"/>
+        <link rel="stylesheet" href="../../css/contract-workspace.css"/>
+        <link rel="stylesheet" href="../../css/dashboard-card-with-settings.css"/>
+        <link rel="stylesheet" href="../../css/donut-chart.css" />
+        <link rel="stylesheet" href="../../css/line-chart.css" />
+        <link rel="stylesheet" href="../../css/world-map.css" />
+        <link rel="stylesheet" href="../../css/stacked-bar-chart.css" />
+        <link rel="stylesheet" href="../../css/09-expandable-alerts.css" />
+        <link rel="stylesheet" href="../../css/import-results-dialog.css" />
+        <link rel="stylesheet" href="../../css/left-aligned-tabs.css"/>
+        <link rel="stylesheet" href="../../css/nav-wizard.css" />
+        <link rel="stylesheet" href="../../css/openInvoice-dashboard.css" />
+        <link rel="stylesheet" href="../../css/slide-in-panel.css"/>
+        <link rel="stylesheet" href="../../css/status-panel.css"/>
+        <link rel="stylesheet" href="../../css/stepped-breadcrumbs.css"/>
+        <link rel="stylesheet" href="../../css/three-column-fluid-center.css"/>
+        <link rel="stylesheet" href="../../css/three-column-fluid-left.css"/>
+        <link rel="stylesheet" href="../../css/three-column-fluid-right.css"/>
+        <link rel="stylesheet" href="../../css/two-column-fluid.css"/>
+        <link rel="stylesheet" href="../../css/vendor/bootstrap-multiselect.css" />
+        <link rel="stylesheet" href="../../css/bulk-update.css" />
+        <link rel="stylesheet" href="../../css/sign-in-page.css" />
+        <link rel="stylesheet" href="../../css/supplier-link-configuration.css" />
+
+        <!-- Alwsys load the patternlab override CSS last -->
+        <link rel="stylesheet" href="../../css/custom.css" media="all" />
+
+        <!-- Load third party scripts -->
+        <script type="text/javascript" src="../../js/vendor/jquery.min.js"></script>
+        <script type="text/javascript" src='../../js/vendor/jquery-ui.min.js'></script>
+        <script type="text/javascript" src="../../js/bootstrap.js"></script>
+        <script type="text/javascript" src="../../js/styleswitch.js"></script>
+        <script type="text/javascript" src="../../js/vendor/jquery.dataTables.min.js"></script>
+        <script type="text/javascript" src="../../js/vendor/dataTables.bootstrap.js"></script>
+        <script type="text/javascript" src="../../js/vendor/bloodhound.min.js"></script>
+        <script type="text/javascript" src="../../js/vendor/bootstrap-select.min.js"></script>
+        <script type="text/javascript" src="../../js/vendor/bootstrap-tokenfield.min.js"></script>
+        <script type="text/javascript" src="../../js/vendor/d3.min.js"></script>
+
+        <script type="text/javascript" src="../../js/vendor/dragula.min.js"></script>
+        <script type="text/javascript" src="../../js/vendor/fixedHeader.dataTables.min.js"></script>
+        <script type="text/javascript" src="../../js/vendor/dataTables.colReorder.min.js"></script>
+        <script type="text/javascript" src="../../js/vendor/typeahead.bundle.min.js"></script>
+        <script type="text/javascript" src="../../js/vendor/typeahead.jquery.min.js"></script>
+        <script type="text/javascript" src='../../js/vendor/handlebars.min.js'></script>
+        <script type="text/javascript" src="../../js/vendor/moment.min.js"></script>
+        <script type="text/javascript" src="../../js/vendor/mustache.min.js"></script>
+        <script type="text/javascript" src="../../js/vendor/bootstrap-multiselect.js"></script>
+        <script type="text/javascript" src="../../js/vendor/tokenfield.min.js"></script>
+        <script type="text/javascript" src="../../js/oildex-admin.js"></script>
+        <script type="text/javascript" src="../../js/oildex-patternlab-defaults.js"></script>
+        <script type="text/javascript" src="../../js/02-charting-colors.js"></script>
+        <script type="text/javascript" src="../../js/00-navbar.js"></script>
+
+        <!-- Load hogan js manually so that the custom search field links work properly -->
+        <script type="text/javascript" src="../../js/vendor/hogan-3.0.2.min.js"></script>
+
+        <script src="http://d3js.org/d3.v4.min.js"></script>
+        <script src="https://d3js.org/d3-array.v2.min.js"></script>
+        <script src="http://d3js.org/queue.v1.min.js"></script>
+        <script src="http://d3js.org/topojson.v1.min.js"></script>
+        <script src="http://bl.ocks.org/micahstubbs/raw/8e15870eb432a21f0bc4d3d527b2d14f/d3-tip.js"></script>
+        <script src="https://d3js.org/d3-color.v1.min.js"></script>
+        <script src="https://d3js.org/d3-interpolate.v1.min.js"></script>
+        <script src="https://d3js.org/d3-scale.v3.min.js"></script>
+        <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+
+
+
+        <!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
+        <!-- never cache patterns -->
+<meta http-equiv="cache-control" content="max-age=0" />
+<meta http-equiv="cache-control" content="no-cache" />
+<meta http-equiv="expires" content="0" />
+<meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
+<meta http-equiv="pragma" content="no-cache" />
+
+<title id="title">Styleguide : Oildex Pattern Lab</title>
+
+<link rel="stylesheet" href="../../styleguide/css/styleguide.min.css?1579126521816" media="all">
+<link rel="stylesheet" href="../../styleguide/css/prism-typeahead.min.css?1579126521816" media="all" />
+
+        <!-- End Pattern Lab -->
+
+    </head>
+    <body id="pl-body" class="container-fluid">
+        <!-- <div id="success-msg" class="alert alert-success center-block hide fade in out slide-out-top">
+            <a href="#" class="close" onclick="$('#success-msg').toggleClass('slide-out-top');" aria-label="close">&times;</a>
+            <span class="alertMessageContent"> </span>
+        </div> -->
+        <div class="alert-messages"></div>
+<!-- View All Patterns in a Pattern Sub-Type -->
+<div class="sg-main" role="main">
+  
+  <!-- Patterns -->
+  <div id="sg-patterns">
+<div id="viewall-molecules-navigation" class="sg-pattern-category">
+  <h2 class="sg-pattern-category-title"><a href="../../patterns/03-molecules-00-navigation&#x2F;index.html" class="patternLink" data-patternpartial="viewall-molecules-navigation">navigation</a></h2>
+
+  <div class="sg-pattern-category-body">
+    
+  </div><!--end sg-pattern-category-body-->
+  
+</div><!--end sg-pattern-category-->
+<div id="molecules-breadcrumbs" class="sg-pattern">
+  <div class="sg-pattern-head">
+    <h3 class="sg-pattern-title">
+      <a href="../../patterns/03-molecules-00-navigation-00-breadcrumbs&#x2F;03-molecules-00-navigation-00-breadcrumbs.html" class="patternLink" data-patternpartial="molecules-breadcrumbs" title="Link to Pattern">
+          Breadcrumbs
+      </a>
+    </h3>
+    <div class="sg-pattern-breadcrumb"></div>
+    <a href="#" data-patternpartial="molecules-breadcrumbs" title="View Pattern Info" id="sg-pattern-extra-toggle-molecules-breadcrumbs" class="sg-pattern-extra-toggle"><span>&#9660;</span></a>
+  </div>
+  <div class="sg-pattern-extra" id="sg-pattern-extra-molecules-breadcrumbs">
+    
+  </div>
+  <div class="sg-pattern-example">
+    <ol class="breadcrumb">
+    <li><a href="#">Link 1</a></li>
+    <li><a href="#">Link 2</a></li>
+    <li><a href="#">Link 3</a></li>
+</ol>
+
+
+
+  </div>
+  <script type="text/json" id="sg-pattern-data-molecules-breadcrumbs" class="sg-pattern-data">
+    {"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":false,"patternDesc":"","patternBreadcrumb":{"patternType":"molecules","patternSubtype":"navigation"},"patternExtension":"mustache","patternName":"Breadcrumbs","patternPartial":"molecules-breadcrumbs","patternState":"","patternEngineName":"mustache","extraOutput":{}}
+  </script>
+</div><!--end .sg-pattern-->
+<div id="molecules-navs" class="sg-pattern">
+  <div class="sg-pattern-head">
+    <h3 class="sg-pattern-title">
+      <a href="../../patterns/03-molecules-00-navigation-01-navs&#x2F;03-molecules-00-navigation-01-navs.html" class="patternLink" data-patternpartial="molecules-navs" title="Link to Pattern">
+          Navs
+      </a>
+    </h3>
+    <div class="sg-pattern-breadcrumb"></div>
+    <a href="#" data-patternpartial="molecules-navs" title="View Pattern Info" id="sg-pattern-extra-toggle-molecules-navs" class="sg-pattern-extra-toggle"><span>&#9660;</span></a>
+  </div>
+  <div class="sg-pattern-extra" id="sg-pattern-extra-molecules-navs">
+    
+  </div>
+  <div class="sg-pattern-example">
+    <ul class="nav ">
+    <li ><a href="#">Home</a></li>
+    <li ><a href="#">Profile</a></li>
+    <li ><a href="#">Messages</a></li>
+</ul>
+
+
+
+  </div>
+  <script type="text/json" id="sg-pattern-data-molecules-navs" class="sg-pattern-data">
+    {"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":false,"patternDesc":"","patternBreadcrumb":{"patternType":"molecules","patternSubtype":"navigation"},"patternExtension":"mustache","patternName":"Navs","patternPartial":"molecules-navs","patternState":"","patternEngineName":"mustache","extraOutput":{}}
+  </script>
+</div><!--end .sg-pattern-->
+<div id="molecules-nav-tabs" class="sg-pattern">
+  <div class="sg-pattern-head">
+    <h3 class="sg-pattern-title">
+      <a href="../../patterns/03-molecules-00-navigation-02-nav-tabs&#x2F;03-molecules-00-navigation-02-nav-tabs.html" class="patternLink" data-patternpartial="molecules-nav-tabs" title="Link to Pattern">
+          Nav-Tabs
+      </a>
+    </h3>
+    <div class="sg-pattern-breadcrumb"></div>
+    <a href="#" data-patternpartial="molecules-nav-tabs" title="View Pattern Info" id="sg-pattern-extra-toggle-molecules-nav-tabs" class="sg-pattern-extra-toggle"><span>&#9660;</span></a>
+  </div>
+  <div class="sg-pattern-extra" id="sg-pattern-extra-molecules-nav-tabs">
+    
+  </div>
+  <div class="sg-pattern-example">
+    <p>Use the <code>.nav-tabs</code> class requires the <code>.nav</code> base class.</p>
+<ul class="nav nav-tabs">
+    <li role="presentation" class="active"><a href="#">Home</a></li>
+    <li role="presentation"><a href="#">Profile</a></li>
+    <li role="presentation"><a href="#">Messages</a></li>
+</ul>
+
+  </div>
+  <script type="text/json" id="sg-pattern-data-molecules-nav-tabs" class="sg-pattern-data">
+    {"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":false,"patternDesc":"","patternBreadcrumb":{"patternType":"molecules","patternSubtype":"navigation"},"patternExtension":"mustache","patternName":"Nav-Tabs","patternPartial":"molecules-nav-tabs","patternState":"","patternEngineName":"mustache","extraOutput":{}}
+  </script>
+</div><!--end .sg-pattern-->
+<div id="molecules-nav-tabs-left" class="sg-pattern">
+  <div class="sg-pattern-head">
+    <h3 class="sg-pattern-title">
+      <a href="../../patterns/03-molecules-00-navigation-02-nav-tabs-left&#x2F;03-molecules-00-navigation-02-nav-tabs-left.html" class="patternLink" data-patternpartial="molecules-nav-tabs-left" title="Link to Pattern">
+          Nav-Tabs Left
+            <span class="sg-pattern-state experimental">experimental</span>
+      </a>
+    </h3>
+    <div class="sg-pattern-breadcrumb"></div>
+    <a href="#" data-patternpartial="molecules-nav-tabs-left" title="View Pattern Info" id="sg-pattern-extra-toggle-molecules-nav-tabs-left" class="sg-pattern-extra-toggle"><span>&#9660;</span></a>
+  </div>
+  <div class="sg-pattern-extra" id="sg-pattern-extra-molecules-nav-tabs-left">
+    
+  </div>
+  <div class="sg-pattern-example">
+    <style>
+    .tabs-left {
+        display: table;
+    }
+    .tabs-left .tab-content {
+        border: none;
+    }
+    .tabs-left > .nav-tabs {
+        border-bottom: 0;
+    }
+
+    .tab-content > .tab-pane {
+        display: none;
+    }
+
+    .tab-content > .active {
+        display: block;
+    }
+
+    .tabs-left > .nav-tabs > li {
+        float: none;
+    }
+
+    .tabs-left > .nav-tabs > li > a {
+        min-width: 74px;
+        max-width: 160px;
+        margin-right: 0;
+        margin-bottom: 3px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .tabs-left > .nav-tabs {
+        float: left;
+        margin-right: 19px;
+        border-right: 1px solid #ddd;
+    }
+
+    .tabs-left > .nav-tabs > li > a {
+        margin-right: -1px;
+        -webkit-border-radius: 4px 0 0 4px;
+        -moz-border-radius: 4px 0 0 4px;
+        border-radius: 4px 0 0 4px;
+    }
+
+    .tabs-left > .nav-tabs > li > a:hover,
+    .tabs-left > .nav-tabs > li > a:focus {
+        border-bottom-color: #ddd;
+    }
+
+    .tabs-left > .nav-tabs .active > a,
+    .tabs-left > .nav-tabs .active > a:hover,
+    .tabs-left > .nav-tabs .active > a:focus {
+        border-color: #ddd transparent #ddd #ddd;
+        *border-right-color: #ffffff;
+    }
+</style>
+<!-- tabs -->
+<div class="tabbable tabs-left">
+    <ul class="nav nav-tabs pull-left">
+        <li class="active"><a href="#home" data-toggle="tab">Home</a></li>
+        <li><a href="#tabsLeftProfile" data-toggle="tab">Profile</a></li>
+        <li><a href="#tabsLeftMessages" data-toggle="tab" alt="$(this).text();">Messages</a></li>
+        <li><a href="#tabsLeftContact" data-toggle="tab">Contact</a></li>
+    </ul>
+    <div class="tab-content">
+        <div class="tab-pane active" id="home">
+            <div class="">
+                <h3>Home</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et elit at quam finibus lobortis.</p>
+            </div>
+        </div>
+        <div class="tab-pane" id="tabsLeftProfile">
+            <div class="">
+                <h3>Profile</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et elit at quam finibus lobortis.</p>
+            </div>
+        </div>
+
+        <div class="tab-pane" id="tabsLeftMessages">
+            <div class="">
+                <h3>Messages</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et elit at quam finibus lobortis.</p>
+            </div>
+        </div>
+
+        <div class="tab-pane" id="tabsLeftContact">
+            <div class="">
+                <h3>Contact</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et elit at quam finibus lobortis.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /tabs -->
+
+  </div>
+  <script type="text/json" id="sg-pattern-data-molecules-nav-tabs-left" class="sg-pattern-data">
+    {"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":false,"patternDesc":"","patternBreadcrumb":{"patternType":"molecules","patternSubtype":"navigation"},"patternExtension":"mustache","patternName":"Nav-Tabs Left","patternPartial":"molecules-nav-tabs-left","patternState":"experimental","patternEngineName":"mustache","extraOutput":{}}
+  </script>
+</div><!--end .sg-pattern-->
+<div id="molecules-nav-pills" class="sg-pattern">
+  <div class="sg-pattern-head">
+    <h3 class="sg-pattern-title">
+      <a href="../../patterns/03-molecules-00-navigation-03-nav-pills&#x2F;03-molecules-00-navigation-03-nav-pills.html" class="patternLink" data-patternpartial="molecules-nav-pills" title="Link to Pattern">
+          Nav-Pills
+      </a>
+    </h3>
+    <div class="sg-pattern-breadcrumb"></div>
+    <a href="#" data-patternpartial="molecules-nav-pills" title="View Pattern Info" id="sg-pattern-extra-toggle-molecules-nav-pills" class="sg-pattern-extra-toggle"><span>&#9660;</span></a>
+  </div>
+  <div class="sg-pattern-extra" id="sg-pattern-extra-molecules-nav-pills">
+    
+  </div>
+  <div class="sg-pattern-example">
+    
+<p>Use the same HTML as <code>.nav-tabs</code>, but use <code>.nav-pills</code> instead:</p>
+<ul class="nav nav-pills">
+    <li role="presentation" class="active"><a href="#">Home</a></li>
+    <li role="presentation"><a href="#">Profile</a></li>
+    <li role="presentation"><a href="#">Messages</a></li>
+</ul>
+
+  </div>
+  <script type="text/json" id="sg-pattern-data-molecules-nav-pills" class="sg-pattern-data">
+    {"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":false,"patternDesc":"","patternBreadcrumb":{"patternType":"molecules","patternSubtype":"navigation"},"patternExtension":"mustache","patternName":"Nav-Pills","patternPartial":"molecules-nav-pills","patternState":"","patternEngineName":"mustache","extraOutput":{}}
+  </script>
+</div><!--end .sg-pattern-->
+<div id="molecules-nav-variants" class="sg-pattern">
+  <div class="sg-pattern-head">
+    <h3 class="sg-pattern-title">
+      <a href="../../patterns/03-molecules-00-navigation-04-nav-variants&#x2F;03-molecules-00-navigation-04-nav-variants.html" class="patternLink" data-patternpartial="molecules-nav-variants" title="Link to Pattern">
+          Nav Variants
+      </a>
+    </h3>
+    <div class="sg-pattern-breadcrumb"></div>
+    <a href="#" data-patternpartial="molecules-nav-variants" title="View Pattern Info" id="sg-pattern-extra-toggle-molecules-nav-variants" class="sg-pattern-extra-toggle"><span>&#9660;</span></a>
+  </div>
+  <div class="sg-pattern-extra" id="sg-pattern-extra-molecules-nav-variants">
+    
+  </div>
+  <div class="sg-pattern-example">
+    <h2>Justified</h2>
+<ul class="nav nav-tabs nav-justified">
+    <li role="presentation" class="active"><a href="#">Home</a></li>
+    <li role="presentation"><a href="#">Profile</a></li>
+    <li role="presentation"><a href="#">Messages</a></li>
+</ul>
+
+
+<h2 id="nav-disabled-links">Disabled</h2>
+<ul class="nav nav-tabs">
+    <li role="presentation" class="active"><a href="#">Home</a></li>
+    <li role="presentation"><a href="#">Profile</a></li>
+    <li role="presentation" class="disabled"><a href="#">Disabled</a></li>
+</ul>
+
+<h2>Dropdowns</h2>
+<ul class="nav nav-tabs">
+    <li role="presentation" class="active"><a href="#">Home</a></li>
+    <li role="presentation"><a href="#">Profile</a></li>
+    <li role="presentation" class="dropdown">
+    	<a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+        	Dropdown <span class="caret"></span>
+        </a>
+        <ul class="dropdown-menu">
+        	<li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+        </ul>
+    </li>
+</ul>
+<h2 id="nav-pills">Vertically Stacked</h2>
+<ul class="nav nav-pills nav-stacked nav-pills-stacked-example">
+    <li role="presentation" class="active"><a href="#">Home</a></li>
+    <li role="presentation"><a href="#">Profile</a></li>
+    <li role="presentation"><a href="#">Messages</a></li>
+</ul>
+
+
+
+  </div>
+  <script type="text/json" id="sg-pattern-data-molecules-nav-variants" class="sg-pattern-data">
+    {"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":false,"patternDesc":"","patternBreadcrumb":{"patternType":"molecules","patternSubtype":"navigation"},"patternExtension":"mustache","patternName":"Nav Variants","patternPartial":"molecules-nav-variants","patternState":"","patternEngineName":"mustache","extraOutput":{}}
+  </script>
+</div><!--end .sg-pattern-->
+<div id="molecules-page-header-with-navigation" class="sg-pattern">
+  <div class="sg-pattern-head">
+    <h3 class="sg-pattern-title">
+      <a href="../../patterns/03-molecules-00-navigation-05-page-header-with-navigation&#x2F;03-molecules-00-navigation-05-page-header-with-navigation.html" class="patternLink" data-patternpartial="molecules-page-header-with-navigation" title="Link to Pattern">
+          Page Header with Navigation
+      </a>
+    </h3>
+    <div class="sg-pattern-breadcrumb"></div>
+    <a href="#" data-patternpartial="molecules-page-header-with-navigation" title="View Pattern Info" id="sg-pattern-extra-toggle-molecules-page-header-with-navigation" class="sg-pattern-extra-toggle"><span>&#9660;</span></a>
+  </div>
+  <div class="sg-pattern-extra" id="sg-pattern-extra-molecules-page-header-with-navigation">
+    
+  </div>
+  <div class="sg-pattern-example">
+    <div class="lead page-header">
+    Document #12345
+
+    <span class="pull-right">
+        <a class="btn btn-sm btn-link" href="#">&lt; Previous</a>
+        <a class="btn btn-sm btn-link" href="#">Next &gt;</a>
+    </span>
+</div>
+
+  </div>
+  <script type="text/json" id="sg-pattern-data-molecules-page-header-with-navigation" class="sg-pattern-data">
+    {"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":false,"patternDesc":"","patternBreadcrumb":{"patternType":"molecules","patternSubtype":"navigation"},"patternExtension":"mustache","patternName":"Page Header with Navigation","patternPartial":"molecules-page-header-with-navigation","patternState":"","patternEngineName":"mustache","extraOutput":{}}
+  </script>
+</div><!--end .sg-pattern-->
+<div id="molecules-pagination" class="sg-pattern">
+  <div class="sg-pattern-head">
+    <h3 class="sg-pattern-title">
+      <a href="../../patterns/03-molecules-00-navigation-12-pagination&#x2F;03-molecules-00-navigation-12-pagination.html" class="patternLink" data-patternpartial="molecules-pagination" title="Link to Pattern">
+          Pagination
+      </a>
+    </h3>
+    <div class="sg-pattern-breadcrumb"></div>
+    <a href="#" data-patternpartial="molecules-pagination" title="View Pattern Info" id="sg-pattern-extra-toggle-molecules-pagination" class="sg-pattern-extra-toggle"><span>&#9660;</span></a>
+  </div>
+  <div class="sg-pattern-extra" id="sg-pattern-extra-molecules-pagination">
+    
+  </div>
+  <div class="sg-pattern-example">
+    <ul class="pagination " style="margin-top: 0;">
+	<li>
+		<a href="www.oildex.com" aria-label="Previous">
+		<span aria-hidden="true">&laquo;</span>
+		</a>
+	</li>
+		<li><a href="#">1</a></li>
+		<li><a href="#">2</a></li>
+		<li><a href="#">3</a></li>
+	<li>
+		<a href="www.oildex.com" aria-label="Next">
+			<span aria-hidden="true">&raquo;</span>
+		</a>
+	</li>
+</ul>
+  </div>
+  <script type="text/json" id="sg-pattern-data-molecules-pagination" class="sg-pattern-data">
+    {"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":true,"patternLineagesR":[{"lineagePattern":"templates-simple-list-page","lineagePath":"../../patterns/05-templates-02-data-grids-01-simple-list-page/05-templates-02-data-grids-01-simple-list-page.html"}],"lineageR":[{"lineagePattern":"templates-simple-list-page","lineagePath":"../../patterns/05-templates-02-data-grids-01-simple-list-page/05-templates-02-data-grids-01-simple-list-page.html"}],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternType":"molecules","patternSubtype":"navigation"},"patternExtension":"mustache","patternName":"Pagination","patternPartial":"molecules-pagination","patternState":"","patternEngineName":"mustache","extraOutput":{}}
+  </script>
+</div><!--end .sg-pattern-->
+<div id="molecules-pagination-variants" class="sg-pattern">
+  <div class="sg-pattern-head">
+    <h3 class="sg-pattern-title">
+      <a href="../../patterns/03-molecules-00-navigation-13-pagination-variants&#x2F;03-molecules-00-navigation-13-pagination-variants.html" class="patternLink" data-patternpartial="molecules-pagination-variants" title="Link to Pattern">
+          Pagination Variants
+      </a>
+    </h3>
+    <div class="sg-pattern-breadcrumb"></div>
+    <a href="#" data-patternpartial="molecules-pagination-variants" title="View Pattern Info" id="sg-pattern-extra-toggle-molecules-pagination-variants" class="sg-pattern-extra-toggle"><span>&#9660;</span></a>
+  </div>
+  <div class="sg-pattern-extra" id="sg-pattern-extra-molecules-pagination-variants">
+    
+  </div>
+  <div class="sg-pattern-example">
+    <h3>Disabled and active states</h3>
+<p>Links are customizable for different circumstances. Use <code>.disabled</code> for unclickable links and <code>.active</code> to indicate the current page.</p>
+<nav>
+    <ul class="pagination">
+    	<li class="disabled"><a href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>
+        <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+        <li><a href="#" aria-label="Next"><span aria-hidden="true">&raquo;</span></a></li>
+ 	</ul>
+</nav>
+
+<p>You can optionally swap out active or disabled anchors for <code>&lt;span&gt;</code>, or omit the anchor in the case of the previous/next arrows, to remove click functionality while retaining intended styles.</p>
+<h3>Sizing</h3>
+<p>Fancy larger or smaller pagination? Add <code>.pagination-lg</code> or <code>.pagination-sm</code> for additional sizes.</p>
+<nav>
+    <ul class="pagination pagination-lg">
+        <li><a href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>
+        <li><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+        <li><a href="#" aria-label="Next"><span aria-hidden="true">&raquo;</span></a></li>
+    </ul>
+</nav>
+<nav>
+    <ul class="pagination">
+        <li><a href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>
+        <li><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+        <li><a href="#" aria-label="Next"><span aria-hidden="true">&raquo;</span></a></li>
+    </ul>
+</nav>
+<nav>
+    <ul class="pagination pagination-sm">
+        <li><a href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>
+        <li><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+        <li><a href="#" aria-label="Next"><span aria-hidden="true">&raquo;</span></a></li>
+    </ul>
+</nav>
+
+  </div>
+  <script type="text/json" id="sg-pattern-data-molecules-pagination-variants" class="sg-pattern-data">
+    {"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":false,"patternDesc":"","patternBreadcrumb":{"patternType":"molecules","patternSubtype":"navigation"},"patternExtension":"mustache","patternName":"Pagination Variants","patternPartial":"molecules-pagination-variants","patternState":"","patternEngineName":"mustache","extraOutput":{}}
+  </script>
+</div><!--end .sg-pattern-->
+<div id="molecules-pager" class="sg-pattern">
+  <div class="sg-pattern-head">
+    <h3 class="sg-pattern-title">
+      <a href="../../patterns/03-molecules-00-navigation-14-pager&#x2F;03-molecules-00-navigation-14-pager.html" class="patternLink" data-patternpartial="molecules-pager" title="Link to Pattern">
+          Pager
+      </a>
+    </h3>
+    <div class="sg-pattern-breadcrumb"></div>
+    <a href="#" data-patternpartial="molecules-pager" title="View Pattern Info" id="sg-pattern-extra-toggle-molecules-pager" class="sg-pattern-extra-toggle"><span>&#9660;</span></a>
+  </div>
+  <div class="sg-pattern-extra" id="sg-pattern-extra-molecules-pager">
+    
+  </div>
+  <div class="sg-pattern-example">
+    <nav>
+	<ul class="pager">
+		<li ><a href="#">Previous</a></li>
+		<li ><a href="#">Next</a></li>
+  	</ul>
+</nav>
+
+
+  </div>
+  <script type="text/json" id="sg-pattern-data-molecules-pager" class="sg-pattern-data">
+    {"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":false,"patternDesc":"","patternBreadcrumb":{"patternType":"molecules","patternSubtype":"navigation"},"patternExtension":"mustache","patternName":"Pager","patternPartial":"molecules-pager","patternState":"","patternEngineName":"mustache","extraOutput":{}}
+  </script>
+</div><!--end .sg-pattern-->
+<div id="molecules-pager-variants" class="sg-pattern">
+  <div class="sg-pattern-head">
+    <h3 class="sg-pattern-title">
+      <a href="../../patterns/03-molecules-00-navigation-15-pager-variants&#x2F;03-molecules-00-navigation-15-pager-variants.html" class="patternLink" data-patternpartial="molecules-pager-variants" title="Link to Pattern">
+          Pager Variants
+      </a>
+    </h3>
+    <div class="sg-pattern-breadcrumb"></div>
+    <a href="#" data-patternpartial="molecules-pager-variants" title="View Pattern Info" id="sg-pattern-extra-toggle-molecules-pager-variants" class="sg-pattern-extra-toggle"><span>&#9660;</span></a>
+  </div>
+  <div class="sg-pattern-extra" id="sg-pattern-extra-molecules-pager-variants">
+    
+  </div>
+  <div class="sg-pattern-example">
+    <h3>Aligned links</h3>
+<nav>
+    <ul class="pager">
+    	<li class="previous"><a href="#"><span aria-hidden="true">&larr;</span> Older</a></li>
+        <li class="next"><a href="#">Newer <span aria-hidden="true">&rarr;</span></a></li>
+  	</ul>
+</nav>
+<h3>Disabled state</h3>
+<nav>
+    <ul class="pager">
+        <li class="previous disabled"><a href="#"><span aria-hidden="true">&larr;</span> Older</a></li>
+        <li class="next"><a href="#">Newer <span aria-hidden="true">&rarr;</span></a></li>
+    </ul>
+</nav>
+
+
+  </div>
+  <script type="text/json" id="sg-pattern-data-molecules-pager-variants" class="sg-pattern-data">
+    {"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":false,"patternDesc":"","patternBreadcrumb":{"patternType":"molecules","patternSubtype":"navigation"},"patternExtension":"mustache","patternName":"Pager Variants","patternPartial":"molecules-pager-variants","patternState":"","patternEngineName":"mustache","extraOutput":{}}
+  </script>
+</div><!--end .sg-pattern-->
+<div id="molecules-navbar-nav" class="sg-pattern">
+  <div class="sg-pattern-head">
+    <h3 class="sg-pattern-title">
+      <a href="../../patterns/03-molecules-00-navigation-16-navbar-nav&#x2F;03-molecules-00-navigation-16-navbar-nav.html" class="patternLink" data-patternpartial="molecules-navbar-nav" title="Link to Pattern">
+          Navbar Nav
+      </a>
+    </h3>
+    <div class="sg-pattern-breadcrumb"></div>
+    <a href="#" data-patternpartial="molecules-navbar-nav" title="View Pattern Info" id="sg-pattern-extra-toggle-molecules-navbar-nav" class="sg-pattern-extra-toggle"><span>&#9660;</span></a>
+  </div>
+  <div class="sg-pattern-extra" id="sg-pattern-extra-molecules-navbar-nav">
+    
+  </div>
+  <div class="sg-pattern-example">
+    <ul class="nav navbar-nav" style="float:none;">
+    <li>
+        <a href="#">Link <span class="sr-only">(current)</span></a>
+    </li>
+</ul>
+
+
+  </div>
+  <script type="text/json" id="sg-pattern-data-molecules-navbar-nav" class="sg-pattern-data">
+    {"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":false,"patternDesc":"","patternBreadcrumb":{"patternType":"molecules","patternSubtype":"navigation"},"patternExtension":"mustache","patternName":"Navbar Nav","patternPartial":"molecules-navbar-nav","patternState":"","patternEngineName":"mustache","extraOutput":{}}
+  </script>
+</div><!--end .sg-pattern-->
+<div id="molecules-navbar-form" class="sg-pattern">
+  <div class="sg-pattern-head">
+    <h3 class="sg-pattern-title">
+      <a href="../../patterns/03-molecules-00-navigation-17-navbar-form&#x2F;03-molecules-00-navigation-17-navbar-form.html" class="patternLink" data-patternpartial="molecules-navbar-form" title="Link to Pattern">
+          Navbar Form
+      </a>
+    </h3>
+    <div class="sg-pattern-breadcrumb"></div>
+    <a href="#" data-patternpartial="molecules-navbar-form" title="View Pattern Info" id="sg-pattern-extra-toggle-molecules-navbar-form" class="sg-pattern-extra-toggle"><span>&#9660;</span></a>
+  </div>
+  <div class="sg-pattern-extra" id="sg-pattern-extra-molecules-navbar-form">
+    
+  </div>
+  <div class="sg-pattern-example">
+    <form class="navbar-form navbar-left visible-sm visible-md visible-lg" role="search"  style="float: none !important;">
+    <div class="form-group">
+        <div class="input-group">
+            <div class="input-group-btn">
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                    <span id="searchTypeBtnText">Invoice</span>
+                    <i class="fas fa-caret-down"></i>
+                </button>
+                <ul id="searchTypeOptions" class="dropdown-menu pull-left">
+                  <li>Invoice</li>
+                  <li>PO</li>
+                  <li>Ticket</li>
+                </ul>
+            </div>
+            <input type="text" class="form-control" placeholder="Search">
+            <span class="input-group-btn">
+                <button type="button" class="btn btn-default "  >
+            <i class="fas fa-search"></i>
+
+</button>
+
+            </span>
+        </div>
+    </div>
+</form>
+
+<ul class="navbar-left list-inline list-unstyled pull-left visible-xs">
+    <li class="dropdown">
+        <a href="#nogo" class="btn " data-html="true" data-toggle="popover" data-placement="bottom" data-popover-content="#a1" >
+            <i class="fas fa-fw fa-search"></i>
+        </a>
+    </li>
+</ul>
+
+<!-- Content for in popup -->
+<div class="hidden" id="a1">
+    <div class="popover-heading">
+        Search
+    </div>
+
+    <div class="popover-body">
+        <form>
+            <div class='input-group'>
+                <div class='input-group-btn'>
+                    <button type='button' class='btn btn-default dropdown-toggle' data-toggle='dropdown'><span id='searchTypeBtnText2'>Invoice</span> <i class='fas fa-caret-down'></i></button>
+                    <ul id='searchTypeOptions2' class='dropdown-menu pull-left'>
+                        <li onclick="$('#searchTypeBtnText2').text('Invoice'); ">Invoice</li>
+                        <li onclick="$('#searchTypeBtnText2').text('PO'); ">PO</li>
+                        <li onclick="$('#searchTypeBtnText2').text('Ticket'); ">Ticket</li>
+                    </ul>
+                </div>
+                <input type='text' class='form-control' style="min-width: 125px;"placeholder='Search'><span class='input-group-btn'><button type="button" class="btn btn-default "  >
+            <i class="fas fa-search"></i>
+
+</button>
+</span>
+            </div>
+        </form>
+    </div>
+</div>
+<style>
+    .popover-body { width: 320px !important;}
+</style>
+<script>
+    $(document).ready(function(){
+        $('#searchTypeOptions li').click(function(){
+            $('#searchTypeBtnText').text($(this).text());
+        });
+    });
+
+
+    $(function(){
+        $("[data-toggle=popover]").popover({
+            html : true,
+            content: function() {
+              var content = $(this).attr("data-popover-content");
+              return $(content).children(".popover-body").html();
+            },
+            title: function() {
+              var title = $(this).attr("data-popover-content");
+              return $(title).children(".popover-heading").html();
+            }
+        });
+    });
+</script>
+
+  </div>
+  <script type="text/json" id="sg-pattern-data-molecules-navbar-form" class="sg-pattern-data">
+    {"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"atoms-btn","lineagePath":"../../patterns/02-atoms-04-buttons-_00-btn/02-atoms-04-buttons-_00-btn.html"}],"lineage":[{"lineagePattern":"atoms-btn","lineagePath":"../../patterns/02-atoms-04-buttons-_00-btn/02-atoms-04-buttons-_00-btn.html"}],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternType":"molecules","patternSubtype":"navigation"},"patternExtension":"mustache","patternName":"Navbar Form","patternPartial":"molecules-navbar-form","patternState":"","patternEngineName":"mustache","extraOutput":{}}
+  </script>
+</div><!--end .sg-pattern-->
+<div id="molecules-navbar-left" class="sg-pattern">
+  <div class="sg-pattern-head">
+    <h3 class="sg-pattern-title">
+      <a href="../../patterns/03-molecules-00-navigation-18-navbar-left&#x2F;03-molecules-00-navigation-18-navbar-left.html" class="patternLink" data-patternpartial="molecules-navbar-left" title="Link to Pattern">
+          Navbar Left
+      </a>
+    </h3>
+    <div class="sg-pattern-breadcrumb"></div>
+    <a href="#" data-patternpartial="molecules-navbar-left" title="View Pattern Info" id="sg-pattern-extra-toggle-molecules-navbar-left" class="sg-pattern-extra-toggle"><span>&#9660;</span></a>
+  </div>
+  <div class="sg-pattern-extra" id="sg-pattern-extra-molecules-navbar-left">
+    
+  </div>
+  <div class="sg-pattern-example">
+    <div class="navbar-header" style="float:none;">
+    <button type="button" data-toggle="collapse" data-target=".navbar-collapse" class="btn btn-default btn-sm navbar-btn pull-left">
+        Menu
+    </button>
+    <div class="navbar-brand hidden-xs hidden-sm">
+        <a class=" logo-navbar"></a>
+    </div>
+</div>
+
+  </div>
+  <script type="text/json" id="sg-pattern-data-molecules-navbar-left" class="sg-pattern-data">
+    {"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":false,"patternDesc":"","patternBreadcrumb":{"patternType":"molecules","patternSubtype":"navigation"},"patternExtension":"mustache","patternName":"Navbar Left","patternPartial":"molecules-navbar-left","patternState":"","patternEngineName":"mustache","extraOutput":{}}
+  </script>
+</div><!--end .sg-pattern-->
+<div id="molecules-navbar-right" class="sg-pattern">
+  <div class="sg-pattern-head">
+    <h3 class="sg-pattern-title">
+      <a href="../../patterns/03-molecules-00-navigation-19-navbar-right&#x2F;03-molecules-00-navigation-19-navbar-right.html" class="patternLink" data-patternpartial="molecules-navbar-right" title="Link to Pattern">
+          Navbar Right
+      </a>
+    </h3>
+    <div class="sg-pattern-breadcrumb"></div>
+    <a href="#" data-patternpartial="molecules-navbar-right" title="View Pattern Info" id="sg-pattern-extra-toggle-molecules-navbar-right" class="sg-pattern-extra-toggle"><span>&#9660;</span></a>
+  </div>
+  <div class="sg-pattern-extra" id="sg-pattern-extra-molecules-navbar-right">
+    
+  </div>
+  <div class="sg-pattern-example">
+    
+<ul class="nav navbar-nav" style="float:none;">
+    <li class="hidden visible-xs hidden-sm dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fas fa-search fa-fw"></i></a>
+        <ul class="dropdown-menu" style="padding: 15px;min-width: 250px;">
+            <li>
+                <div class="row">
+                    <div class="col-md-12">
+                        <form>
+                            <div class="input-group input-group-sm ">
+                                <span class="input-group-addon dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false">
+                                    <span class="caret"></span>
+                                </span>
+                                <ul class="dropdown-menu dropdown-menu-left">
+                                    <li onclick="setGlobalSearchPlaceholder($(this).first().text());"><a>Invoice #</a></li>
+                                    <li onclick="setGlobalSearchPlaceholder($(this).first().text());"><a href="#">Pricebook
+                                            #</a></li>
+                                    <li onclick="setGlobalSearchPlaceholder($(this).first().text());"><a href="#">Field
+                                            Ticket #</a></li>
+                                    <li onclick="setGlobalSearchPlaceholder($(this).first().text());"><a href="#">Purchase
+                                            Order #</a></li>
+                                </ul>
+
+                                <input class="form-control" id="globalSearch" placeholder="Invoice #">
+
+                                <span class="input-group-btn">
+                                    <button class="btn btn-default"><i class="fas fa-search fa-fw"></i></button>
+                                </span>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </li>
+    <li class="dropdown">
+        <a title="Message Centre" class="dropdown-toggle" data-toggle="dropdown" href="#">
+            <span class="badge badge-xs">49</span>
+            <i class="fas fa-envelope fa-fw"></i>
+            <span class="hidden-xs hide">Messages</span>
+        </a>
+        <ul class="dropdown-menu dropdown-menu-right">
+            <li>
+                <a title="Message Centre" href="#">
+                    <span class="fa-fw">
+                        <i class="fas fa-envelope"></i>
+                        Messages
+                    </span>
+                    <sup class="badge" style="background:#BE3A34">41</sup>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="fa-fw">
+                        <i class="fas fa-file-alt"></i>
+                        Completed Reports
+                    </span>
+                    <sup class="badge" style="background:#BE3A34">8</sup>
+                </a>
+            </li>
+        </ul>
+    </li>
+    <li class="dropdown">
+        <a title="Help Center" class="dropdown-toggle" data-toggle="dropdown" href="#">
+            <i class="fas fa-question-circle fa-fw"></i> <span class="hidden-xs hide">Help</span>
+        </a>
+        <ul class="dropdown-menu">
+            <li><a href="#"><i class="fas fa-life-ring fa-fw"></i> Contact Support</a></li>
+            <li><a href="#"><i class="fas fa-book fa-fw"></i> Resource Center</a></li>
+            <li><a href="#"><i class="fas fa-comment fa-fw"></i> Feedback</a></li>
+            <li><a href="#"><i class="fas fa-users fa-fw"></i> About</a></li>
+            <li><a href="#"><i class="fas fa-user-secret fa-fw"></i> Privacy</a></li>
+            <li><a href="#"><i class="fas fa-gavel fa-fw"></i> Terms</a></li>
+            <li><a href="#"><i class="fas fa-globe fa-fw"></i> Browsers</a></li>
+        </ul>
+    </li>
+    <li class="dropdown">
+        <a title="My Profile" class="dropdown-toggle" data-toggle="dropdown" href="#">
+            <i class="fas fa-user fa-fw"></i> <span class="hidden-xs hide">Profile</span>
+        </a>
+        <ul class="dropdown-menu dropdown-menu-right">
+            <li><a href="#"><i class="fas fa-user fa-fw"></i> Christopher Schwartzenberg</a></li>
+            <li><a href="#"><i class="fas fa-cog fa-fw"></i> Preferences</a></li>
+            <li><a href="#"><i class="fas fa-font fa-fw"></i> Font Size</a></li>
+        </ul>
+    </li>
+    <li><a title="Sign Out" href="#"><i class="fas fa-sign-out fa-fw"></i></a></li>
+</ul>
+
+  </div>
+  <script type="text/json" id="sg-pattern-data-molecules-navbar-right" class="sg-pattern-data">
+    {"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":false,"patternDesc":"","patternBreadcrumb":{"patternType":"molecules","patternSubtype":"navigation"},"patternExtension":"mustache","patternName":"Navbar Right","patternPartial":"molecules-navbar-right","patternState":"","patternEngineName":"mustache","extraOutput":{}}
+  </script>
+</div><!--end .sg-pattern-->
+<div id="viewall-molecules-blocks" class="sg-pattern-category">
+  <h2 class="sg-pattern-category-title"><a href="../../patterns/03-molecules-01-blocks&#x2F;index.html" class="patternLink" data-patternpartial="viewall-molecules-blocks">blocks</a></h2>
+
+  <div class="sg-pattern-category-body">
+    
+  </div><!--end sg-pattern-category-body-->
+  
+</div><!--end sg-pattern-category-->
+<div id="molecules-panels" class="sg-pattern">
+  <div class="sg-pattern-head">
+    <h3 class="sg-pattern-title">
+      <a href="../../patterns/03-molecules-01-blocks-00-panels&#x2F;03-molecules-01-blocks-00-panels.html" class="patternLink" data-patternpartial="molecules-panels" title="Link to Pattern">
+          Panels
+      </a>
+    </h3>
+    <div class="sg-pattern-breadcrumb"></div>
+    <a href="#" data-patternpartial="molecules-panels" title="View Pattern Info" id="sg-pattern-extra-toggle-molecules-panels" class="sg-pattern-extra-toggle"><span>&#9660;</span></a>
+  </div>
+  <div class="sg-pattern-extra" id="sg-pattern-extra-molecules-panels">
+    
+  </div>
+  <div class="sg-pattern-example">
+    <div class="panel panel-default">
+    <div class="panel-body">
+
+            Lorem ipsum dolor sit amet, consectetur adipiscing.
+    </div>
+</div>
+
+  </div>
+  <script type="text/json" id="sg-pattern-data-molecules-panels" class="sg-pattern-data">
+    {"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":false,"patternDesc":"","patternBreadcrumb":{"patternType":"molecules","patternSubtype":"blocks"},"patternExtension":"mustache","patternName":"Panels","patternPartial":"molecules-panels","patternState":"","patternEngineName":"mustache","extraOutput":{}}
+  </script>
+</div><!--end .sg-pattern-->
+<div id="molecules-panels-variants" class="sg-pattern">
+  <div class="sg-pattern-head">
+    <h3 class="sg-pattern-title">
+      <a href="../../patterns/03-molecules-01-blocks-01-panels-variants&#x2F;03-molecules-01-blocks-01-panels-variants.html" class="patternLink" data-patternpartial="molecules-panels-variants" title="Link to Pattern">
+          Panel Variants
+      </a>
+    </h3>
+    <div class="sg-pattern-breadcrumb"></div>
+    <a href="#" data-patternpartial="molecules-panels-variants" title="View Pattern Info" id="sg-pattern-extra-toggle-molecules-panels-variants" class="sg-pattern-extra-toggle"><span>&#9660;</span></a>
+  </div>
+  <div class="sg-pattern-extra" id="sg-pattern-extra-molecules-panels-variants">
+    
+  </div>
+  <div class="sg-pattern-example">
+    <div class="row">
+    <div class="col-md-3">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <div class="panel-title">
+                    Panel title
+                </div>
+            </div>
+            <div class="panel-body">
+                Panel with a panel-title class
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                Panel title
+            </div>
+            <div class="panel-body">
+                Panel heading without panel-title class
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="panel panel-default">
+            <div class="panel-body">
+                Panel with a footer and no heading
+            </div>
+            <div class="panel-footer">
+                Panel footer
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+  </div>
+  <script type="text/json" id="sg-pattern-data-molecules-panels-variants" class="sg-pattern-data">
+    {"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":false,"patternDesc":"","patternBreadcrumb":{"patternType":"molecules","patternSubtype":"blocks"},"patternExtension":"mustache","patternName":"Panel Variants","patternPartial":"molecules-panels-variants","patternState":"","patternEngineName":"mustache","extraOutput":{}}
+  </script>
+</div><!--end .sg-pattern-->
+<div id="molecules-contextual-panels" class="sg-pattern">
+  <div class="sg-pattern-head">
+    <h3 class="sg-pattern-title">
+      <a href="../../patterns/03-molecules-01-blocks-02-contextual-panels&#x2F;03-molecules-01-blocks-02-contextual-panels.html" class="patternLink" data-patternpartial="molecules-contextual-panels" title="Link to Pattern">
+          Contextual Panels
+      </a>
+    </h3>
+    <div class="sg-pattern-breadcrumb"></div>
+    <a href="#" data-patternpartial="molecules-contextual-panels" title="View Pattern Info" id="sg-pattern-extra-toggle-molecules-contextual-panels" class="sg-pattern-extra-toggle"><span>&#9660;</span></a>
+  </div>
+  <div class="sg-pattern-extra" id="sg-pattern-extra-molecules-contextual-panels">
+    
+  </div>
+  <div class="sg-pattern-example">
+    <div class="row">
+    <div class="col-md-3">
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <div class="panel-title">Panel Primary</div>
+            </div>
+            <div class="panel-body">
+                Panel content
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="panel panel-success">
+            <div class="panel-heading">
+                <div class="panel-title">Panel Success</div>
+            </div>
+            <div class="panel-body">
+                Panel content
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="panel panel-info">
+            <div class="panel-heading">
+                <div class="panel-title">Panel Info</div>
+            </div>
+            <div class="panel-body">
+                Panel content
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-3">
+        <div class="panel panel-warning">
+            <div class="panel-heading">
+                <div class="panel-title">Panel Warning</div>
+            </div>
+            <div class="panel-body">
+                Panel content
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="panel panel-danger">
+            <div class="panel-heading">
+                <div class="panel-title">Panel Danger</div>
+            </div>
+            <div class="panel-body">
+                Panel content
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+  </div>
+  <script type="text/json" id="sg-pattern-data-molecules-contextual-panels" class="sg-pattern-data">
+    {"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":false,"patternDesc":"","patternBreadcrumb":{"patternType":"molecules","patternSubtype":"blocks"},"patternExtension":"mustache","patternName":"Contextual Panels","patternPartial":"molecules-contextual-panels","patternState":"","patternEngineName":"mustache","extraOutput":{}}
+  </script>
+</div><!--end .sg-pattern-->
+<div id="molecules-wells" class="sg-pattern">
+  <div class="sg-pattern-head">
+    <h3 class="sg-pattern-title">
+      <a href="../../patterns/03-molecules-01-blocks-04-wells&#x2F;03-molecules-01-blocks-04-wells.html" class="patternLink" data-patternpartial="molecules-wells" title="Link to Pattern">
+          Wells
+      </a>
+    </h3>
+    <div class="sg-pattern-breadcrumb"></div>
+    <a href="#" data-patternpartial="molecules-wells" title="View Pattern Info" id="sg-pattern-extra-toggle-molecules-wells" class="sg-pattern-extra-toggle"><span>&#9660;</span></a>
+  </div>
+  <div class="sg-pattern-extra" id="sg-pattern-extra-molecules-wells">
+    
+  </div>
+  <div class="sg-pattern-example">
+    <div class="row">
+    <div class="col-md-3">
+        <div class="well ">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </div>
+    </div>
+</div>
+
+  </div>
+  <script type="text/json" id="sg-pattern-data-molecules-wells" class="sg-pattern-data">
+    {"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":false,"patternDesc":"","patternBreadcrumb":{"patternType":"molecules","patternSubtype":"blocks"},"patternExtension":"mustache","patternName":"Wells","patternPartial":"molecules-wells","patternState":"","patternEngineName":"mustache","extraOutput":{}}
+  </script>
+</div><!--end .sg-pattern-->
+<div id="molecules-wells-variants" class="sg-pattern">
+  <div class="sg-pattern-head">
+    <h3 class="sg-pattern-title">
+      <a href="../../patterns/03-molecules-01-blocks-05-wells-variants&#x2F;03-molecules-01-blocks-05-wells-variants.html" class="patternLink" data-patternpartial="molecules-wells-variants" title="Link to Pattern">
+          Well Variants
+      </a>
+    </h3>
+    <div class="sg-pattern-breadcrumb"></div>
+    <a href="#" data-patternpartial="molecules-wells-variants" title="View Pattern Info" id="sg-pattern-extra-toggle-molecules-wells-variants" class="sg-pattern-extra-toggle"><span>&#9660;</span></a>
+  </div>
+  <div class="sg-pattern-extra" id="sg-pattern-extra-molecules-wells-variants">
+    
+  </div>
+  <div class="sg-pattern-example">
+    <div class="row">
+    <div class="col-md-3">
+        <div class="well well-lg">
+            Look, I'm in a large well!
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="well well-sm">
+          Look, I'm in a small well!
+        </div>
+    </div>
+</div>
+
+  </div>
+  <script type="text/json" id="sg-pattern-data-molecules-wells-variants" class="sg-pattern-data">
+    {"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":false,"patternDesc":"","patternBreadcrumb":{"patternType":"molecules","patternSubtype":"blocks"},"patternExtension":"mustache","patternName":"Well Variants","patternPartial":"molecules-wells-variants","patternState":"","patternEngineName":"mustache","extraOutput":{}}
+  </script>
+</div><!--end .sg-pattern-->
+<div id="molecules-blockquotes" class="sg-pattern">
+  <div class="sg-pattern-head">
+    <h3 class="sg-pattern-title">
+      <a href="../../patterns/03-molecules-01-blocks-blockquotes&#x2F;03-molecules-01-blocks-blockquotes.html" class="patternLink" data-patternpartial="molecules-blockquotes" title="Link to Pattern">
+          Blockquotes
+      </a>
+    </h3>
+    <div class="sg-pattern-breadcrumb"></div>
+    <a href="#" data-patternpartial="molecules-blockquotes" title="View Pattern Info" id="sg-pattern-extra-toggle-molecules-blockquotes" class="sg-pattern-extra-toggle"><span>&#9660;</span></a>
+  </div>
+  <div class="sg-pattern-extra" id="sg-pattern-extra-molecules-blockquotes">
+    
+  </div>
+  <div class="sg-pattern-example">
+    
+<blockquote>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+</blockquote>
+  </div>
+  <script type="text/json" id="sg-pattern-data-molecules-blockquotes" class="sg-pattern-data">
+    {"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":false,"patternDesc":"","patternBreadcrumb":{"patternType":"molecules","patternSubtype":"blocks"},"patternExtension":"mustache","patternName":"Blockquotes","patternPartial":"molecules-blockquotes","patternState":"","patternEngineName":"mustache","extraOutput":{}}
+  </script>
+</div><!--end .sg-pattern-->
+<div id="viewall-molecules-form-elements" class="sg-pattern-category">
+  <h2 class="sg-pattern-category-title"><a href="../../patterns/03-molecules-02-form-elements&#x2F;index.html" class="patternLink" data-patternpartial="viewall-molecules-form-elements">form-elements</a></h2>
+
+  <div class="sg-pattern-category-body">
+    
+  </div><!--end sg-pattern-category-body-->
+  
+</div><!--end sg-pattern-category-->
+<div id="molecules-input-group" class="sg-pattern">
+  <div class="sg-pattern-head">
+    <h3 class="sg-pattern-title">
+      <a href="../../patterns/03-molecules-02-form-elements-00-input-group&#x2F;03-molecules-02-form-elements-00-input-group.html" class="patternLink" data-patternpartial="molecules-input-group" title="Link to Pattern">
+          Input Group
+      </a>
+    </h3>
+    <div class="sg-pattern-breadcrumb"></div>
+    <a href="#" data-patternpartial="molecules-input-group" title="View Pattern Info" id="sg-pattern-extra-toggle-molecules-input-group" class="sg-pattern-extra-toggle"><span>&#9660;</span></a>
+  </div>
+  <div class="sg-pattern-extra" id="sg-pattern-extra-molecules-input-group">
+    
+  </div>
+  <div class="sg-pattern-example">
+    <div class="input-group " id="input-group-molecule">
+    <span class="input-group-addon">Addon</span>
+    <input type="text" class="form-control"
+    
+    
+     placeholder="Placeholder Text" 
+    
+/>
+
+</div>
+
+
+
+
+  </div>
+  <script type="text/json" id="sg-pattern-data-molecules-input-group" class="sg-pattern-data">
+    {"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"atoms-input","lineagePath":"../../patterns/02-atoms-05-form-elements-00-input/02-atoms-05-form-elements-00-input.html"}],"lineage":[{"lineagePattern":"atoms-input","lineagePath":"../../patterns/02-atoms-05-form-elements-00-input/02-atoms-05-form-elements-00-input.html"}],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternType":"molecules","patternSubtype":"form-elements"},"patternExtension":"mustache","patternName":"Input Group","patternPartial":"molecules-input-group","patternState":"","patternEngineName":"mustache","extraOutput":{}}
+  </script>
+</div><!--end .sg-pattern-->
+<div id="molecules-input-group-checkbox" class="sg-pattern">
+  <div class="sg-pattern-head">
+    <h3 class="sg-pattern-title">
+      <a href="../../patterns/03-molecules-02-form-elements-02-input-group-checkbox&#x2F;03-molecules-02-form-elements-02-input-group-checkbox.html" class="patternLink" data-patternpartial="molecules-input-group-checkbox" title="Link to Pattern">
+          Input Group Checkbox
+      </a>
+    </h3>
+    <div class="sg-pattern-breadcrumb"></div>
+    <a href="#" data-patternpartial="molecules-input-group-checkbox" title="View Pattern Info" id="sg-pattern-extra-toggle-molecules-input-group-checkbox" class="sg-pattern-extra-toggle"><span>&#9660;</span></a>
+  </div>
+  <div class="sg-pattern-extra" id="sg-pattern-extra-molecules-input-group-checkbox">
+    
+  </div>
+  <div class="sg-pattern-example">
+    <div class="input-group">
+    <span class="input-group-addon">
+    	<input type="checkbox" aria-label="Aria label">
+    </span>
+    <input type="text" class="form-control"
+    
+    
+     placeholder="Placeholder Text" 
+    
+/>
+
+</div><!-- /input-group -->
+
+  </div>
+  <script type="text/json" id="sg-pattern-data-molecules-input-group-checkbox" class="sg-pattern-data">
+    {"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"atoms-input","lineagePath":"../../patterns/02-atoms-05-form-elements-00-input/02-atoms-05-form-elements-00-input.html"}],"lineage":[{"lineagePattern":"atoms-input","lineagePath":"../../patterns/02-atoms-05-form-elements-00-input/02-atoms-05-form-elements-00-input.html"}],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternType":"molecules","patternSubtype":"form-elements"},"patternExtension":"mustache","patternName":"Input Group Checkbox","patternPartial":"molecules-input-group-checkbox","patternState":"","patternEngineName":"mustache","extraOutput":{}}
+  </script>
+</div><!--end .sg-pattern-->
+<div id="molecules-input-group-radio" class="sg-pattern">
+  <div class="sg-pattern-head">
+    <h3 class="sg-pattern-title">
+      <a href="../../patterns/03-molecules-02-form-elements-03-input-group-radio&#x2F;03-molecules-02-form-elements-03-input-group-radio.html" class="patternLink" data-patternpartial="molecules-input-group-radio" title="Link to Pattern">
+          Input Group Checkbox
+      </a>
+    </h3>
+    <div class="sg-pattern-breadcrumb"></div>
+    <a href="#" data-patternpartial="molecules-input-group-radio" title="View Pattern Info" id="sg-pattern-extra-toggle-molecules-input-group-radio" class="sg-pattern-extra-toggle"><span>&#9660;</span></a>
+  </div>
+  <div class="sg-pattern-extra" id="sg-pattern-extra-molecules-input-group-radio">
+    
+  </div>
+  <div class="sg-pattern-example">
+    <div class="input-group">
+    <span class="input-group-addon">
+        <input type="radio" aria-label="Aria label">
+    </span>
+    <input type="text" class="form-control"
+    
+    
+     placeholder="Placeholder Text" 
+    
+/>
+
+</div><!-- /input-group -->
+
+
+
+ 
+
+  </div>
+  <script type="text/json" id="sg-pattern-data-molecules-input-group-radio" class="sg-pattern-data">
+    {"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"atoms-input","lineagePath":"../../patterns/02-atoms-05-form-elements-00-input/02-atoms-05-form-elements-00-input.html"}],"lineage":[{"lineagePattern":"atoms-input","lineagePath":"../../patterns/02-atoms-05-form-elements-00-input/02-atoms-05-form-elements-00-input.html"}],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternType":"molecules","patternSubtype":"form-elements"},"patternExtension":"mustache","patternName":"Input Group Checkbox","patternPartial":"molecules-input-group-radio","patternState":"","patternEngineName":"mustache","extraOutput":{}}
+  </script>
+</div><!--end .sg-pattern-->
+<div id="molecules-input-group-button" class="sg-pattern">
+  <div class="sg-pattern-head">
+    <h3 class="sg-pattern-title">
+      <a href="../../patterns/03-molecules-02-form-elements-04-input-group-button&#x2F;03-molecules-02-form-elements-04-input-group-button.html" class="patternLink" data-patternpartial="molecules-input-group-button" title="Link to Pattern">
+          Input Group Button
+      </a>
+    </h3>
+    <div class="sg-pattern-breadcrumb"></div>
+    <a href="#" data-patternpartial="molecules-input-group-button" title="View Pattern Info" id="sg-pattern-extra-toggle-molecules-input-group-button" class="sg-pattern-extra-toggle"><span>&#9660;</span></a>
+  </div>
+  <div class="sg-pattern-extra" id="sg-pattern-extra-molecules-input-group-button">
+    
+  </div>
+  <div class="sg-pattern-example">
+    <div class="input-group" >
+    <input type="text" class="form-control" >
+    <span class="input-group-btn">
+        <button type="button" class="btn btn-default" id="input-group-molecule-button" >
+            <i class="fas fa-search"></i>
+        </button>
+    </span>
+</div>
+
+  </div>
+  <script type="text/json" id="sg-pattern-data-molecules-input-group-button" class="sg-pattern-data">
+    {"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":false,"patternDesc":"","patternBreadcrumb":{"patternType":"molecules","patternSubtype":"form-elements"},"patternExtension":"mustache","patternName":"Input Group Button","patternPartial":"molecules-input-group-button","patternState":"","patternEngineName":"mustache","extraOutput":{}}
+  </script>
+</div><!--end .sg-pattern-->
+<div id="molecules-multi-field-input-group" class="sg-pattern">
+  <div class="sg-pattern-head">
+    <h3 class="sg-pattern-title">
+      <a href="../../patterns/03-molecules-02-form-elements-05-multi-field-input-group&#x2F;03-molecules-02-form-elements-05-multi-field-input-group.html" class="patternLink" data-patternpartial="molecules-multi-field-input-group" title="Link to Pattern">
+          Multi Field Input Group
+      </a>
+    </h3>
+    <div class="sg-pattern-breadcrumb"></div>
+    <a href="#" data-patternpartial="molecules-multi-field-input-group" title="View Pattern Info" id="sg-pattern-extra-toggle-molecules-multi-field-input-group" class="sg-pattern-extra-toggle"><span>&#9660;</span></a>
+  </div>
+  <div class="sg-pattern-extra" id="sg-pattern-extra-molecules-multi-field-input-group">
+    
+  </div>
+  <div class="sg-pattern-example">
+    <style>
+    /* negative margins to overlap the left hand borders on each of the inputs following the first - avoids double borders */
+    .input-group.multi-input { width: 100%; }
+    .input-group.multi-input input:nth-child(3n):not(:first-child) { margin-left: -1px; }
+    .input-group.multi-input input:nth-child(5n):not(:first-child) { margin-left: -3px; }
+</style>
+<div class="input-group multi-input">
+  <input type="text" class="form-control" value="Input 1"/>
+  <span class="input-group-btn" style="width:0px;"></span>
+  <input type="text" class="form-control" value="Input 2"/>
+  <span class="input-group-btn" style="width:0px;"></span>
+  <input type="text" class="form-control" value="Input 3"  />
+</div>
+
+  </div>
+  <script type="text/json" id="sg-pattern-data-molecules-multi-field-input-group" class="sg-pattern-data">
+    {"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":false,"patternDesc":"","patternBreadcrumb":{"patternType":"molecules","patternSubtype":"form-elements"},"patternExtension":"mustache","patternName":"Multi Field Input Group","patternPartial":"molecules-multi-field-input-group","patternState":"","patternEngineName":"mustache","extraOutput":{}}
+  </script>
+</div><!--end .sg-pattern-->
+<div id="molecules-button-group" class="sg-pattern">
+  <div class="sg-pattern-head">
+    <h3 class="sg-pattern-title">
+      <a href="../../patterns/03-molecules-02-form-elements-06-button-group&#x2F;03-molecules-02-form-elements-06-button-group.html" class="patternLink" data-patternpartial="molecules-button-group" title="Link to Pattern">
+          Button Group
+      </a>
+    </h3>
+    <div class="sg-pattern-breadcrumb"></div>
+    <a href="#" data-patternpartial="molecules-button-group" title="View Pattern Info" id="sg-pattern-extra-toggle-molecules-button-group" class="sg-pattern-extra-toggle"><span>&#9660;</span></a>
+  </div>
+  <div class="sg-pattern-extra" id="sg-pattern-extra-molecules-button-group">
+    
+  </div>
+  <div class="sg-pattern-example">
+    <div class="btn-group " role="group" aria-label="Aria label">
+        <button type="button" class="btn btn-default "  >
+
+            Left
+</button>
+
+        <button type="button" class="btn btn-default "  >
+
+            Middle
+</button>
+
+        <button type="button" class="btn btn-default "  >
+
+            Right
+</button>
+
+</div>
+
+  </div>
+  <script type="text/json" id="sg-pattern-data-molecules-button-group" class="sg-pattern-data">
+    {"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"atoms-btn","lineagePath":"../../patterns/02-atoms-04-buttons-_00-btn/02-atoms-04-buttons-_00-btn.html"}],"lineage":[{"lineagePattern":"atoms-btn","lineagePath":"../../patterns/02-atoms-04-buttons-_00-btn/02-atoms-04-buttons-_00-btn.html"}],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternType":"molecules","patternSubtype":"form-elements"},"patternExtension":"mustache","patternName":"Button Group","patternPartial":"molecules-button-group","patternState":"","patternEngineName":"mustache","extraOutput":{}}
+  </script>
+</div><!--end .sg-pattern-->
+<div id="molecules-toggle-button-group" class="sg-pattern">
+  <div class="sg-pattern-head">
+    <h3 class="sg-pattern-title">
+      <a href="../../patterns/03-molecules-02-form-elements-06-toggle-button-group&#x2F;03-molecules-02-form-elements-06-toggle-button-group.html" class="patternLink" data-patternpartial="molecules-toggle-button-group" title="Link to Pattern">
+          Toggle Button Group
+      </a>
+    </h3>
+    <div class="sg-pattern-breadcrumb"></div>
+    <a href="#" data-patternpartial="molecules-toggle-button-group" title="View Pattern Info" id="sg-pattern-extra-toggle-molecules-toggle-button-group" class="sg-pattern-extra-toggle"><span>&#9660;</span></a>
+  </div>
+  <div class="sg-pattern-extra" id="sg-pattern-extra-molecules-toggle-button-group">
+    
+  </div>
+  <div class="sg-pattern-example">
+    
+<div class="btn-group" data-toggle="buttons">
+  <label class="btn btn-default active">
+    <input type="radio" name="options" id="option1" autocomplete="off" checked=""> One
+  </label>
+  <label class="btn btn-default">
+    <input type="radio" name="options" id="option2" autocomplete="off"> Two
+  </label>
+  <label class="btn btn-default">
+    <input type="radio" name="options" id="option3" autocomplete="off"> Three
+  </label>
+</div>
+
+
+  </div>
+  <script type="text/json" id="sg-pattern-data-molecules-toggle-button-group" class="sg-pattern-data">
+    {"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":false,"patternDesc":"","patternBreadcrumb":{"patternType":"molecules","patternSubtype":"form-elements"},"patternExtension":"mustache","patternName":"Toggle Button Group","patternPartial":"molecules-toggle-button-group","patternState":"","patternEngineName":"mustache","extraOutput":{}}
+  </script>
+</div><!--end .sg-pattern-->
+<div id="molecules-dropdown" class="sg-pattern">
+  <div class="sg-pattern-head">
+    <h3 class="sg-pattern-title">
+      <a href="../../patterns/03-molecules-02-form-elements-07-dropdown&#x2F;03-molecules-02-form-elements-07-dropdown.html" class="patternLink" data-patternpartial="molecules-dropdown" title="Link to Pattern">
+          Dropdown
+      </a>
+    </h3>
+    <div class="sg-pattern-breadcrumb"></div>
+    <a href="#" data-patternpartial="molecules-dropdown" title="View Pattern Info" id="sg-pattern-extra-toggle-molecules-dropdown" class="sg-pattern-extra-toggle"><span>&#9660;</span></a>
+  </div>
+  <div class="sg-pattern-extra" id="sg-pattern-extra-molecules-dropdown">
+    
+  </div>
+  <div class="sg-pattern-example">
+    <div class="dropdown ">
+    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+        Dropdown
+        <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+        <li   ><a href="#">Action 1</a></li>
+        <li   ><a href="#">Action 2</a></li>
+        <li   ><a href="#">Action 3</a></li>
+        <li   ><a href="#">Action 4</a></li>
+    </ul>
+</div>
+
+  </div>
+  <script type="text/json" id="sg-pattern-data-molecules-dropdown" class="sg-pattern-data">
+    {"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":false,"patternDesc":"","patternBreadcrumb":{"patternType":"molecules","patternSubtype":"form-elements"},"patternExtension":"mustache","patternName":"Dropdown","patternPartial":"molecules-dropdown","patternState":"","patternEngineName":"mustache","extraOutput":{}}
+  </script>
+</div><!--end .sg-pattern-->
+<div id="molecules-multi-select" class="sg-pattern">
+  <div class="sg-pattern-head">
+    <h3 class="sg-pattern-title">
+      <a href="../../patterns/03-molecules-02-form-elements-08-multi-select&#x2F;03-molecules-02-form-elements-08-multi-select.html" class="patternLink" data-patternpartial="molecules-multi-select" title="Link to Pattern">
+          Multi Select
+      </a>
+    </h3>
+    <div class="sg-pattern-breadcrumb"></div>
+    <a href="#" data-patternpartial="molecules-multi-select" title="View Pattern Info" id="sg-pattern-extra-toggle-molecules-multi-select" class="sg-pattern-extra-toggle"><span>&#9660;</span></a>
+  </div>
+  <div class="sg-pattern-extra" id="sg-pattern-extra-molecules-multi-select">
+    
+  </div>
+  <div class="sg-pattern-example">
+    
+<div class="select-list btn-group">
+    <button type="button" class="title btn btn-default dropdown-toggle" data-toggle="dropdown" >
+        Select one or more options &nbsp; <span class="caret"></span>
+    </button>
+    <ul class="list-group dropdown-menu select-options" style="padding:0;">
+                        <li class="option list-group-item  text-nowrap">
+                            <label>
+                                <input type="checkbox" name="options"/> Option 1
+                            </label>
+                        </li>
+                        <li class="option list-group-item  text-nowrap">
+                            <label>
+                                <input type="checkbox" name="options"/> Option 2
+                            </label>
+                        </li>
+                        <li class="option list-group-item  text-nowrap">
+                            <label>
+                                <input type="checkbox" name="options"/> Option 3
+                            </label>
+                        </li>
+                        <li class="option list-group-item  text-nowrap">
+                            <label>
+                                <input type="checkbox" name="options"/> Option 4
+                            </label>
+                        </li>
+    </ul>
+</div>
+
+<script type="text/javascript">
+    (function($){
+        $.fn.multiselect = function() {
+
+            var selector = this;
+            var options = $.extend({
+                onChange: function() {}
+            }, arguments[0] || {});
+
+            activate();
+
+            /////////
+
+            function activate() {
+
+            //events
+            $(selector).find('.title').on('click', function(e) {
+                $(this).parent().find('.select-options').toggle();
+            });
+
+            $(selector).find('input[type="checkbox"]').change(function(e){
+                options.onChange.call(this);
+            });
+
+            }
+        };
+
+}(jQuery));
+
+$(document).ready(function() {
+  $('.select-list').multiselect({
+    onChange: updateTable
+  });
+});
+
+function updateTable() {
+  var checkboxValue = $(this).val();
+  var isChecked = $(this).is(':checked');
+}
+</script>
+
+  </div>
+  <script type="text/json" id="sg-pattern-data-molecules-multi-select" class="sg-pattern-data">
+    {"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":true,"patternLineagesR":[{"lineagePattern":"templates-dashboard-card-with-settings","lineagePath":"../../patterns/05-templates-01-dashboards-dashboard-card-with-settings/05-templates-01-dashboards-dashboard-card-with-settings.html"},{"lineagePattern":"pages-contract-workspace","lineagePath":"../../patterns/06-pages-contract-workspace/06-pages-contract-workspace.html"}],"lineageR":[{"lineagePattern":"templates-dashboard-card-with-settings","lineagePath":"../../patterns/05-templates-01-dashboards-dashboard-card-with-settings/05-templates-01-dashboards-dashboard-card-with-settings.html"},{"lineagePattern":"pages-contract-workspace","lineagePath":"../../patterns/06-pages-contract-workspace/06-pages-contract-workspace.html"}],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternType":"molecules","patternSubtype":"form-elements"},"patternExtension":"mustache","patternName":"Multi Select","patternPartial":"molecules-multi-select","patternState":"","patternEngineName":"mustache","extraOutput":{}}
+  </script>
+</div><!--end .sg-pattern-->
+<div id="molecules-button-dropdown" class="sg-pattern">
+  <div class="sg-pattern-head">
+    <h3 class="sg-pattern-title">
+      <a href="../../patterns/03-molecules-02-form-elements-09-button-dropdown&#x2F;03-molecules-02-form-elements-09-button-dropdown.html" class="patternLink" data-patternpartial="molecules-button-dropdown" title="Link to Pattern">
+          Button Dropdown
+      </a>
+    </h3>
+    <div class="sg-pattern-breadcrumb"></div>
+    <a href="#" data-patternpartial="molecules-button-dropdown" title="View Pattern Info" id="sg-pattern-extra-toggle-molecules-button-dropdown" class="sg-pattern-extra-toggle"><span>&#9660;</span></a>
+  </div>
+  <div class="sg-pattern-extra" id="sg-pattern-extra-molecules-button-dropdown">
+    
+  </div>
+  <div class="sg-pattern-example">
+    <div class="btn-group">
+    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Call To Action <span class="caret"></span></button>
+    <ul class="dropdown-menu">
+        <li   ><a href="#">Action 1</a></li>
+        <li   ><a href="#">Action 2</a></li>
+        <li   ><a href="#">Action 3</a></li>
+        <li   ><a href="#">Action 4</a></li>
+    </ul>
+</div>
+
+  </div>
+  <script type="text/json" id="sg-pattern-data-molecules-button-dropdown" class="sg-pattern-data">
+    {"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":false,"patternDesc":"","patternBreadcrumb":{"patternType":"molecules","patternSubtype":"form-elements"},"patternExtension":"mustache","patternName":"Button Dropdown","patternPartial":"molecules-button-dropdown","patternState":"","patternEngineName":"mustache","extraOutput":{}}
+  </script>
+</div><!--end .sg-pattern-->
+<div id="molecules-button-dropdown-split" class="sg-pattern">
+  <div class="sg-pattern-head">
+    <h3 class="sg-pattern-title">
+      <a href="../../patterns/03-molecules-02-form-elements-11-button-dropdown-split&#x2F;03-molecules-02-form-elements-11-button-dropdown-split.html" class="patternLink" data-patternpartial="molecules-button-dropdown-split" title="Link to Pattern">
+          Button Dropdown Split
+      </a>
+    </h3>
+    <div class="sg-pattern-breadcrumb"></div>
+    <a href="#" data-patternpartial="molecules-button-dropdown-split" title="View Pattern Info" id="sg-pattern-extra-toggle-molecules-button-dropdown-split" class="sg-pattern-extra-toggle"><span>&#9660;</span></a>
+  </div>
+  <div class="sg-pattern-extra" id="sg-pattern-extra-molecules-button-dropdown-split">
+    
+  </div>
+  <div class="sg-pattern-example">
+    <div class="btn-group">
+    <button type="button" class="btn btn-default "  >
+
+            Button
+</button>
+
+
+    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    	<span class="caret"></span>
+        <span class="sr-only">Call To Action</span>
+    </button>
+    <ul class="dropdown-menu">
+    	<li   ><a href="#">Action 1</a></li>
+    	<li   ><a href="#">Action 2</a></li>
+    	<li   ><a href="#">Action 3</a></li>
+    	<li   ><a href="#">Action 4</a></li>
+    </ul>
+</div><!-- /btn-group -->
+
+  </div>
+  <script type="text/json" id="sg-pattern-data-molecules-button-dropdown-split" class="sg-pattern-data">
+    {"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"atoms-button","lineagePath":"../../patterns/02-atoms-04-buttons-00-button/02-atoms-04-buttons-00-button.html"}],"lineage":[{"lineagePattern":"atoms-button","lineagePath":"../../patterns/02-atoms-04-buttons-00-button/02-atoms-04-buttons-00-button.html"}],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternType":"molecules","patternSubtype":"form-elements"},"patternExtension":"mustache","patternName":"Button Dropdown Split","patternPartial":"molecules-button-dropdown-split","patternState":"","patternEngineName":"mustache","extraOutput":{}}
+  </script>
+</div><!--end .sg-pattern-->
+<div id="molecules-button-dropup" class="sg-pattern">
+  <div class="sg-pattern-head">
+    <h3 class="sg-pattern-title">
+      <a href="../../patterns/03-molecules-02-form-elements-13-button-dropup&#x2F;03-molecules-02-form-elements-13-button-dropup.html" class="patternLink" data-patternpartial="molecules-button-dropup" title="Link to Pattern">
+          Button Dropup
+      </a>
+    </h3>
+    <div class="sg-pattern-breadcrumb"></div>
+    <a href="#" data-patternpartial="molecules-button-dropup" title="View Pattern Info" id="sg-pattern-extra-toggle-molecules-button-dropup" class="sg-pattern-extra-toggle"><span>&#9660;</span></a>
+  </div>
+  <div class="sg-pattern-extra" id="sg-pattern-extra-molecules-button-dropup">
+    
+  </div>
+  <div class="sg-pattern-example">
+    <div class="btn-group dropup">
+    <button type="button" class="btn btn-default "  >
+
+            Button
+</button>
+
+
+    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    	<span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu">
+        <li   ><a href="#">Action 1</a></li>
+        <li   ><a href="#">Action 2</a></li>
+        <li   ><a href="#">Action 3</a></li>
+        <li   ><a href="#">Action 4</a></li>
+  	</ul>
+</div><!-- /btn-group -->
+
+  </div>
+  <script type="text/json" id="sg-pattern-data-molecules-button-dropup" class="sg-pattern-data">
+    {"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"atoms-button","lineagePath":"../../patterns/02-atoms-04-buttons-00-button/02-atoms-04-buttons-00-button.html"}],"lineage":[{"lineagePattern":"atoms-button","lineagePath":"../../patterns/02-atoms-04-buttons-00-button/02-atoms-04-buttons-00-button.html"}],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternType":"molecules","patternSubtype":"form-elements"},"patternExtension":"mustache","patternName":"Button Dropup","patternPartial":"molecules-button-dropup","patternState":"","patternEngineName":"mustache","extraOutput":{}}
+  </script>
+</div><!--end .sg-pattern-->
+<div id="molecules-switch" class="sg-pattern">
+  <div class="sg-pattern-head">
+    <h3 class="sg-pattern-title">
+      <a href="../../patterns/03-molecules-02-form-elements-15-switch&#x2F;03-molecules-02-form-elements-15-switch.html" class="patternLink" data-patternpartial="molecules-switch" title="Link to Pattern">
+          Switch
+      </a>
+    </h3>
+    <div class="sg-pattern-breadcrumb"></div>
+    <a href="#" data-patternpartial="molecules-switch" title="View Pattern Info" id="sg-pattern-extra-toggle-molecules-switch" class="sg-pattern-extra-toggle"><span>&#9660;</span></a>
+  </div>
+  <div class="sg-pattern-extra" id="sg-pattern-extra-molecules-switch">
+    
+  </div>
+  <div class="sg-pattern-example">
+    <div class="form-group">
+    <input id="switch1" class="form-control hide" type="checkbox" switch/>
+    <label for="switch1" data-on-label="On" data-off-label="Off"></label>
+</div>
+
+  </div>
+  <script type="text/json" id="sg-pattern-data-molecules-switch" class="sg-pattern-data">
+    {"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":false,"patternDesc":"<p>A pattern for toggling the state of something on or off.</p>\n","patternBreadcrumb":{"patternType":"molecules","patternSubtype":"form-elements"},"patternExtension":"mustache","patternName":"Switch","patternPartial":"molecules-switch","patternState":"","patternEngineName":"mustache","extraOutput":{}}
+  </script>
+</div><!--end .sg-pattern-->
+<div id="molecules-definition-list-with-checkboxes" class="sg-pattern">
+  <div class="sg-pattern-head">
+    <h3 class="sg-pattern-title">
+      <a href="../../patterns/03-molecules-02-form-elements-16-definition-list-with-checkboxes&#x2F;03-molecules-02-form-elements-16-definition-list-with-checkboxes.html" class="patternLink" data-patternpartial="molecules-definition-list-with-checkboxes" title="Link to Pattern">
+          Definition List with Checkboxes
+      </a>
+    </h3>
+    <div class="sg-pattern-breadcrumb"></div>
+    <a href="#" data-patternpartial="molecules-definition-list-with-checkboxes" title="View Pattern Info" id="sg-pattern-extra-toggle-molecules-definition-list-with-checkboxes" class="sg-pattern-extra-toggle"><span>&#9660;</span></a>
+  </div>
+  <div class="sg-pattern-extra" id="sg-pattern-extra-molecules-definition-list-with-checkboxes">
+    
+  </div>
+  <div class="sg-pattern-example">
+    <dl class="dl-horizontal">
+  <dt> Item 1</dt>
+  <dd class="checkbox">
+    <label>
+      <input type="checkbox"> Item 1 description
+    </label>
+  </dd>
+  <dt> Item 2</dt>
+  <dd class="checkbox">
+    <label>
+      <input type="checkbox"> Item 2 description
+    </label>
+  </dd>
+  <dt> Item 3</dt>
+  <dd class="checkbox">
+    <label>
+      <input type="checkbox">  Item 2 with a really really really really really really really really really really really really really really long description
+    </label>
+  </dd>
+</dl>
+
+  </div>
+  <script type="text/json" id="sg-pattern-data-molecules-definition-list-with-checkboxes" class="sg-pattern-data">
+    {"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":false,"patternDesc":"<p>A pattern for displaying a list of items, each with it's own checkbox to indicate selected or not selected.</p>\n","patternBreadcrumb":{"patternType":"molecules","patternSubtype":"form-elements"},"patternExtension":"mustache","patternName":"Definition List with Checkboxes","patternPartial":"molecules-definition-list-with-checkboxes","patternState":"","patternEngineName":"mustache","extraOutput":{}}
+  </script>
+</div><!--end .sg-pattern-->
+<div id="molecules-checkbox-lg" class="sg-pattern">
+  <div class="sg-pattern-head">
+    <h3 class="sg-pattern-title">
+      <a href="../../patterns/03-molecules-02-form-elements-17-checkbox-lg&#x2F;03-molecules-02-form-elements-17-checkbox-lg.html" class="patternLink" data-patternpartial="molecules-checkbox-lg" title="Link to Pattern">
+          Checkbox Lg
+      </a>
+    </h3>
+    <div class="sg-pattern-breadcrumb"></div>
+    <a href="#" data-patternpartial="molecules-checkbox-lg" title="View Pattern Info" id="sg-pattern-extra-toggle-molecules-checkbox-lg" class="sg-pattern-extra-toggle"><span>&#9660;</span></a>
+  </div>
+  <div class="sg-pattern-extra" id="sg-pattern-extra-molecules-checkbox-lg">
+    
+  </div>
+  <div class="sg-pattern-example">
+    <div class="checkbox checkbox-lg">
+    <label class="text-nowrap">
+        <input type="checkbox" class="" id="" value="" >
+        <span class="checkboxRadioLg"><i class="fas fa-check"></i></span>
+        
+    </label>
+</div>
+
+  </div>
+  <script type="text/json" id="sg-pattern-data-molecules-checkbox-lg" class="sg-pattern-data">
+    {"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":false,"patternDesc":"","patternBreadcrumb":{"patternType":"molecules","patternSubtype":"form-elements"},"patternExtension":"mustache","patternName":"Checkbox Lg","patternPartial":"molecules-checkbox-lg","patternState":"","patternEngineName":"mustache","extraOutput":{}}
+  </script>
+</div><!--end .sg-pattern-->
+<div id="molecules-radio-lg" class="sg-pattern">
+  <div class="sg-pattern-head">
+    <h3 class="sg-pattern-title">
+      <a href="../../patterns/03-molecules-02-form-elements-18-radio-lg&#x2F;03-molecules-02-form-elements-18-radio-lg.html" class="patternLink" data-patternpartial="molecules-radio-lg" title="Link to Pattern">
+          Radio Lg
+      </a>
+    </h3>
+    <div class="sg-pattern-breadcrumb"></div>
+    <a href="#" data-patternpartial="molecules-radio-lg" title="View Pattern Info" id="sg-pattern-extra-toggle-molecules-radio-lg" class="sg-pattern-extra-toggle"><span>&#9660;</span></a>
+  </div>
+  <div class="sg-pattern-extra" id="sg-pattern-extra-molecules-radio-lg">
+    
+  </div>
+  <div class="sg-pattern-example">
+    <div class="radio radio-lg">
+    <label class="text-nowrap">
+        <input type="radio" class="" id="" value="" >
+        <span class="checkboxRadioLg"><i class="fas fa-circle"></i></span>
+        
+    </label>
+</div>
+
+  </div>
+  <script type="text/json" id="sg-pattern-data-molecules-radio-lg" class="sg-pattern-data">
+    {"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":false,"patternDesc":"","patternBreadcrumb":{"patternType":"molecules","patternSubtype":"form-elements"},"patternExtension":"mustache","patternName":"Radio Lg","patternPartial":"molecules-radio-lg","patternState":"","patternEngineName":"mustache","extraOutput":{}}
+  </script>
+</div><!--end .sg-pattern-->
+<div id="molecules-tokenfield" class="sg-pattern">
+  <div class="sg-pattern-head">
+    <h3 class="sg-pattern-title">
+      <a href="../../patterns/03-molecules-02-form-elements-20-tokenfield&#x2F;03-molecules-02-form-elements-20-tokenfield.html" class="patternLink" data-patternpartial="molecules-tokenfield" title="Link to Pattern">
+          Tokenfield
+      </a>
+    </h3>
+    <div class="sg-pattern-breadcrumb"></div>
+    <a href="#" data-patternpartial="molecules-tokenfield" title="View Pattern Info" id="sg-pattern-extra-toggle-molecules-tokenfield" class="sg-pattern-extra-toggle"><span>&#9660;</span></a>
+  </div>
+  <div class="sg-pattern-extra" id="sg-pattern-extra-molecules-tokenfield">
+    
+  </div>
+  <div class="sg-pattern-example">
+    <input class="text-input form-control" placeholder="Type to search employees by name..."/>
+
+<script>
+    var tokenfield  = new Tokenfield({
+        el: document.querySelector('.text-input'), // Attach Tokenfield to the input element with class "text-input"
+        remote: {
+            url: "../../styleguide/data/tokenfieldData.json"
+        },
+        itemData: 'name',
+        minChars: 1,
+        newItems: false,
+    });
+</script>
+
+  </div>
+  <script type="text/json" id="sg-pattern-data-molecules-tokenfield" class="sg-pattern-data">
+    {"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":false,"patternDesc":"","patternBreadcrumb":{"patternType":"molecules","patternSubtype":"form-elements"},"patternExtension":"mustache","patternName":"Tokenfield","patternPartial":"molecules-tokenfield","patternState":"","patternEngineName":"mustache","extraOutput":{}}
+  </script>
+</div><!--end .sg-pattern-->
+<div id="viewall-molecules-tables" class="sg-pattern-category">
+  <h2 class="sg-pattern-category-title"><a href="../../patterns/03-molecules-03-tables&#x2F;index.html" class="patternLink" data-patternpartial="viewall-molecules-tables">tables</a></h2>
+
+  <div class="sg-pattern-category-body">
+    
+  </div><!--end sg-pattern-category-body-->
+  
+</div><!--end sg-pattern-category-->
+<div id="molecules-simple-table" class="sg-pattern">
+  <div class="sg-pattern-head">
+    <h3 class="sg-pattern-title">
+      <a href="../../patterns/03-molecules-03-tables-00-simple-table&#x2F;03-molecules-03-tables-00-simple-table.html" class="patternLink" data-patternpartial="molecules-simple-table" title="Link to Pattern">
+          Simple Table
+      </a>
+    </h3>
+    <div class="sg-pattern-breadcrumb"></div>
+    <a href="#" data-patternpartial="molecules-simple-table" title="View Pattern Info" id="sg-pattern-extra-toggle-molecules-simple-table" class="sg-pattern-extra-toggle"><span>&#9660;</span></a>
+  </div>
+  <div class="sg-pattern-extra" id="sg-pattern-extra-molecules-simple-table">
+    
+  </div>
+  <div class="sg-pattern-example">
+    <div class="table-responsive">
+    <table class="table table-bordered text-nowrap">
+        <thead>
+            <tr>
+                <th>Column 1</th>
+                <th>Column 2</th>
+                <th>Column 3</th>
+                <th>Column 4</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Column 1</td>
+                <td>Column 2</th>
+                <td>Column 3</td>
+                <td>Column 4</th>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+  </div>
+  <script type="text/json" id="sg-pattern-data-molecules-simple-table" class="sg-pattern-data">
+    {"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":false,"patternDesc":"","patternBreadcrumb":{"patternType":"molecules","patternSubtype":"tables"},"patternExtension":"mustache","patternName":"Simple Table","patternPartial":"molecules-simple-table","patternState":"","patternEngineName":"mustache","extraOutput":{}}
+  </script>
+</div><!--end .sg-pattern-->
+<div id="molecules-multi-header-table" class="sg-pattern">
+  <div class="sg-pattern-head">
+    <h3 class="sg-pattern-title">
+      <a href="../../patterns/03-molecules-03-tables-01-multi-header-table&#x2F;03-molecules-03-tables-01-multi-header-table.html" class="patternLink" data-patternpartial="molecules-multi-header-table" title="Link to Pattern">
+          Multi-Header Table
+      </a>
+    </h3>
+    <div class="sg-pattern-breadcrumb"></div>
+    <a href="#" data-patternpartial="molecules-multi-header-table" title="View Pattern Info" id="sg-pattern-extra-toggle-molecules-multi-header-table" class="sg-pattern-extra-toggle"><span>&#9660;</span></a>
+  </div>
+  <div class="sg-pattern-extra" id="sg-pattern-extra-molecules-multi-header-table">
+    
+  </div>
+  <div class="sg-pattern-example">
+    
+<div class="table-responsive multi-row-header">
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th colspan=2>Column 1</th>
+                <th colspan=2>Column 2</th>
+                <th colspan=2>Column 3</th>
+                <th colspan=2>Column 4</th>
+            </tr>
+            <tr>
+                <th>Column 5</th>
+                <th>Column 6</th>
+                <th>Column 7</th>
+                <th>Column 8</th>
+                <th>Column 9</th>
+                <th>Column 10</th>
+                <th>Column 11</th>
+                <th>Column 12</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td colspan=2>row 1 cell 1</td>
+                <td colspan=2>row 1 cell 2</td>
+                <td colspan=2>row 1 cell 3</td>
+                <td colspan=2>row 1 cell 4</td>
+            </tr>
+            <tr>
+                <td>row 2 cell 1</td>
+                <td>row 2 cell 2</td>
+                <td>row 2 cell 3</td>
+                <td>row 2 cell 4</td>
+                <td>row 2 cell 5</td>
+                <td>row 2 cell 6</td>
+                <td>row 2 cell 7</td>
+                <td>row 2 cell 8</td>
+            </tr>
+        </tbody>
+        <tbody>
+            <tr>
+                <td colspan=2>row 3 cell 1</td>
+                <td colspan=2>row 3 cell 2</td>
+                <td colspan=2>row 3 cell 3</td>
+                <td colspan=2>row 3 cell 4</td>
+            </tr>
+            <tr>
+                <td>row 2 cell 1</td>
+                <td>row 2 cell 2</td>
+                <td>row 2 cell 3</td>
+                <td>row 2 cell 4</td>
+                <td>row 2 cell 5</td>
+                <td>row 2 cell 6</td>
+                <td>row 2 cell 7</td>
+                <td>row 2 cell 8</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+  </div>
+  <script type="text/json" id="sg-pattern-data-molecules-multi-header-table" class="sg-pattern-data">
+    {"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":false,"patternDesc":"","patternBreadcrumb":{"patternType":"molecules","patternSubtype":"tables"},"patternExtension":"mustache","patternName":"Multi-Header Table","patternPartial":"molecules-multi-header-table","patternState":"","patternEngineName":"mustache","extraOutput":{}}
+  </script>
+</div><!--end .sg-pattern-->
+<div id="molecules-expandable-table" class="sg-pattern">
+  <div class="sg-pattern-head">
+    <h3 class="sg-pattern-title">
+      <a href="../../patterns/03-molecules-03-tables-02-expandable-table&#x2F;03-molecules-03-tables-02-expandable-table.html" class="patternLink" data-patternpartial="molecules-expandable-table" title="Link to Pattern">
+          Expandable Table
+      </a>
+    </h3>
+    <div class="sg-pattern-breadcrumb"></div>
+    <a href="#" data-patternpartial="molecules-expandable-table" title="View Pattern Info" id="sg-pattern-extra-toggle-molecules-expandable-table" class="sg-pattern-extra-toggle"><span>&#9660;</span></a>
+  </div>
+  <div class="sg-pattern-extra" id="sg-pattern-extra-molecules-expandable-table">
+    
+  </div>
+  <div class="sg-pattern-example">
+    
+<div class="table-responsive multi-row-header">
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th width="15">&nbsp;</th>
+                <th colspan=2>Column 1</th>
+                <th colspan=2>Column 2</th>
+                <th colspan=2>Column 3</th>
+                <th colspan=2>Column 4</th>
+            </tr>
+            <tr>
+                 <th width="15">&nbsp;</th>
+                <th>Column 5</th>
+                <th>Column 6</th>
+                <th>Column 7</th>
+                <th>Column 8</th>
+                <th>Column 9</th>
+                <th>Column 10</th>
+                <th>Column 11</th>
+                <th>Column 12</th>
+            </tr>
+        </thead>
+        <tbody>
+              <tr data-toggle="collapse" data-target="#toggle1" class="accordion-toggle">
+                <td width="15">
+                    <a class="btn btn-default btn-xs fas fa-chevron-down" onmouseup="$(this).toggleClass('fa-chevron-down'); $(this).addClass('fa-chevron-up');"></a>
+                </td>
+                <td colspan=2>row 1 cell 1</td>
+                <td colspan=2>row 1 cell 2</td>
+                <td colspan=2>row 1 cell 3</td>
+                <td colspan=2>row 1 cell 4</td>
+            </tr>
+            <tr class="accordian-body collapse out" id="toggle1">
+                <td></td>
+                <td>row 2 cell 1</td>
+                <td>row 2 cell 2</td>
+                <td>row 2 cell 3</td>
+                <td>row 2 cell 4</td>
+                <td>row 2 cell 5</td>
+                <td>row 2 cell 6</td>
+                <td>row 2 cell 7</td>
+                <td>row 2 cell 8</td>
+            </tr>
+        </tbody>
+        <tbody>
+              <tr data-toggle="collapse" data-target="#toggle2" class="accordion-toggle">
+                <td width="15"><a class="btn btn-default btn-xs fas fa-chevron-down" onmouseup="$(this).toggleClass('fa-chevron-down'); $(this).addClass('fa-chevron-up');"></a></td>
+                <td colspan=2>row 3 cell 1</td>
+                <td colspan=2>row 3 cell 2</td>
+                <td colspan=2>row 3 cell 3</td>
+                <td colspan=2>row 3 cell 4</td>
+            </tr>
+              <tr  class="accordian-body collapse out" id="toggle2">
+                <td></td>
+                <td>row 2 cell 1</td>
+                <td>row 2 cell 2</td>
+                <td>row 2 cell 3</td>
+                <td>row 2 cell 4</td>
+                <td>row 2 cell 5</td>
+                <td>row 2 cell 6</td>
+                <td>row 2 cell 7</td>
+                <td>row 2 cell 8</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+  </div>
+  <script type="text/json" id="sg-pattern-data-molecules-expandable-table" class="sg-pattern-data">
+    {"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":false,"patternDesc":"","patternBreadcrumb":{"patternType":"molecules","patternSubtype":"tables"},"patternExtension":"mustache","patternName":"Expandable Table","patternPartial":"molecules-expandable-table","patternState":"","patternEngineName":"mustache","extraOutput":{}}
+  </script>
+</div><!--end .sg-pattern-->
+<div id="molecules-table-with-actions" class="sg-pattern">
+  <div class="sg-pattern-head">
+    <h3 class="sg-pattern-title">
+      <a href="../../patterns/03-molecules-03-tables-03-table-with-actions&#x2F;03-molecules-03-tables-03-table-with-actions.html" class="patternLink" data-patternpartial="molecules-table-with-actions" title="Link to Pattern">
+          Table with Actions
+      </a>
+    </h3>
+    <div class="sg-pattern-breadcrumb"></div>
+    <a href="#" data-patternpartial="molecules-table-with-actions" title="View Pattern Info" id="sg-pattern-extra-toggle-molecules-table-with-actions" class="sg-pattern-extra-toggle"><span>&#9660;</span></a>
+  </div>
+  <div class="sg-pattern-extra" id="sg-pattern-extra-molecules-table-with-actions">
+    
+  </div>
+  <div class="sg-pattern-example">
+    
+<div class="table-responsive">
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Column 1</th>
+                <th>Column 2</th>
+                <th>Column 3</th>
+                <th>Links</th>
+                <th width="20">Actions</th>
+            </tr>
+        </thead>
+        <thead>
+            <tr>
+                <td>Column 1</td>
+                <td>Column 2</th>
+                <td>Column 3</td>
+                <td><a href="#nogo"> Link </a></th>
+                <td>
+                    <div class="dropdown text-nowrap">
+                        <a class="dropdown-toggle" type="button" id="tableActionsDropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                            Actions
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="tableActionsDropdownMenu">
+                            <li><a href="#">Action 1</a></li>
+                            <li><a href="#">Action 2</a></li>
+                            <li><a href="#">Action 3</a></li>
+                            <li><a href="#">Action 4</a></li>
+                        </ul>
+                    </div>
+                </td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Column 1</td>
+                <td>Column 2</th>
+                <td>Column 3</td>
+                <td><a href="#nogo"> Link </a></th>
+                <td>
+                    <div class="dropdown text-nowrap">
+                        <a class="dropdown-toggle" type="button" id="tableActionsDropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                            Actions
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="tableActionsDropdownMenu">
+                            <li><a href="#">Action 1</a></li>
+                            <li><a href="#">Action 2</a></li>
+                            <li><a href="#">Action 3</a></li>
+                            <li><a href="#">Action 4</a></li>
+                        </ul>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+  </div>
+  <script type="text/json" id="sg-pattern-data-molecules-table-with-actions" class="sg-pattern-data">
+    {"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":false,"patternDesc":"","patternBreadcrumb":{"patternType":"molecules","patternSubtype":"tables"},"patternExtension":"mustache","patternName":"Table with Actions","patternPartial":"molecules-table-with-actions","patternState":"","patternEngineName":"mustache","extraOutput":{}}
+  </script>
+</div><!--end .sg-pattern-->
+<div id="viewall-molecules-messaging" class="sg-pattern-category">
+  <h2 class="sg-pattern-category-title"><a href="../../patterns/03-molecules-05-messaging&#x2F;index.html" class="patternLink" data-patternpartial="viewall-molecules-messaging">messaging</a></h2>
+
+  <div class="sg-pattern-category-body">
+    
+  </div><!--end sg-pattern-category-body-->
+  
+</div><!--end sg-pattern-category-->
+<div id="molecules-alerts" class="sg-pattern">
+  <div class="sg-pattern-head">
+    <h3 class="sg-pattern-title">
+      <a href="../../patterns/03-molecules-05-messaging-00-alerts&#x2F;03-molecules-05-messaging-00-alerts.html" class="patternLink" data-patternpartial="molecules-alerts" title="Link to Pattern">
+          Alerts
+      </a>
+    </h3>
+    <div class="sg-pattern-breadcrumb"></div>
+    <a href="#" data-patternpartial="molecules-alerts" title="View Pattern Info" id="sg-pattern-extra-toggle-molecules-alerts" class="sg-pattern-extra-toggle"><span>&#9660;</span></a>
+  </div>
+  <div class="sg-pattern-extra" id="sg-pattern-extra-molecules-alerts">
+    
+  </div>
+  <div class="sg-pattern-example">
+    <div class="alert alert-success" role="alert">
+    I am alerting you about something
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+</div>
+
+  </div>
+  <script type="text/json" id="sg-pattern-data-molecules-alerts" class="sg-pattern-data">
+    {"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":false,"patternDesc":"<p>&lt;p class=&quot;lead&quot;&gt;Provide contextual feedback messages for typical user actions with the handful of available and flexible alert messages.&lt;/p&gt;\n&lt;h2 id=&quot;alerts-examples&quot;&gt;Examples&lt;/h2&gt;\n&lt;p&gt;Wrap any text and an optional dismiss button in &lt;code&gt;.alert&lt;/code&gt; and one of the four contextual classes (e.g., &lt;code&gt;.alert-success&lt;/code&gt;) for basic alert messages.&lt;/p&gt;\n&lt;div class=&quot;bs-callout bs-callout-info&quot; id=&quot;callout-alerts-no-default&quot;&gt;\n&lt;h4&gt;No default class&lt;/h4&gt;\n&lt;p&gt;Alerts don't have default classes, only base and modifier classes. A default gray alert doesn't make too much sense, so you're required to specify a type via contextual class. Choose from success, info, warning, or danger.&lt;/p&gt;\n&lt;/div&gt;</p>\n","patternBreadcrumb":{"patternType":"molecules","patternSubtype":"messaging"},"patternExtension":"mustache","patternName":"Alerts","patternPartial":"molecules-alerts","patternState":"","patternEngineName":"mustache","extraOutput":{}}
+  </script>
+</div><!--end .sg-pattern-->
+<div id="molecules-alerts-small" class="sg-pattern">
+  <div class="sg-pattern-head">
+    <h3 class="sg-pattern-title">
+      <a href="../../patterns/03-molecules-05-messaging-01-alerts-small&#x2F;03-molecules-05-messaging-01-alerts-small.html" class="patternLink" data-patternpartial="molecules-alerts-small" title="Link to Pattern">
+          Alerts Small
+      </a>
+    </h3>
+    <div class="sg-pattern-breadcrumb"></div>
+    <a href="#" data-patternpartial="molecules-alerts-small" title="View Pattern Info" id="sg-pattern-extra-toggle-molecules-alerts-small" class="sg-pattern-extra-toggle"><span>&#9660;</span></a>
+  </div>
+  <div class="sg-pattern-extra" id="sg-pattern-extra-molecules-alerts-small">
+    
+  </div>
+  <div class="sg-pattern-example">
+    
+<div class="alert alert-info alert-sm" role="alert">
+  	<strong>Heads up!</strong> I am alerting you about something, but it's not super important so it's smaller.
+</div>
+
+
+  </div>
+  <script type="text/json" id="sg-pattern-data-molecules-alerts-small" class="sg-pattern-data">
+    {"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":false,"patternDesc":"","patternBreadcrumb":{"patternType":"molecules","patternSubtype":"messaging"},"patternExtension":"mustache","patternName":"Alerts Small","patternPartial":"molecules-alerts-small","patternState":"","patternEngineName":"mustache","extraOutput":{}}
+  </script>
+</div><!--end .sg-pattern-->
+<div id="molecules-alerts-with-icons" class="sg-pattern">
+  <div class="sg-pattern-head">
+    <h3 class="sg-pattern-title">
+      <a href="../../patterns/03-molecules-05-messaging-01-alerts-with-icons&#x2F;03-molecules-05-messaging-01-alerts-with-icons.html" class="patternLink" data-patternpartial="molecules-alerts-with-icons" title="Link to Pattern">
+          Alerts With Icons
+      </a>
+    </h3>
+    <div class="sg-pattern-breadcrumb"></div>
+    <a href="#" data-patternpartial="molecules-alerts-with-icons" title="View Pattern Info" id="sg-pattern-extra-toggle-molecules-alerts-with-icons" class="sg-pattern-extra-toggle"><span>&#9660;</span></a>
+  </div>
+  <div class="sg-pattern-extra" id="sg-pattern-extra-molecules-alerts-with-icons">
+    
+  </div>
+  <div class="sg-pattern-example">
+    <div class="row">
+    <div class="col-xs-6">
+        <div class="alert alert-info alert-with-icon " style="position:relative">
+            <button type="button" data-dismiss="alert" aria-hidden="true" class="close">×</button>
+            <i class="icon fas fa-info-circle fa-inverse fa-fw"></i>
+            <strong>FYI:</strong>
+            Something of interest happened.
+        </div>
+    </div>
+    <div class="col-xs-6">
+        <div class="alert alert-success alert-with-icon ">
+            <button type="button" data-dismiss="alert" aria-hidden="true" class="close">×</button>
+            <span class="icon">
+                <i class="fas fa-check-circle fa-fw"></i>
+            </span>
+            <strong>Success!</strong>
+            Your changes were saved successfully.
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-xs-6">
+        <div class="alert alert-warning alert-with-icon " style="position:relative">
+            <button type="button" data-dismiss="alert" aria-hidden="true" class="close">×</button>
+            <span class="icon">
+                <i class="fas fa-question-square fa-fw"></i>
+            </span>
+            <strong>Warning!</strong>
+             A condition exists that we&#39;d like to warn you about.
+        </div>
+    </div>
+    <div class="col-xs-6">
+        <div class="alert alert-danger alert-with-icon" style="position:relative">
+            <button type="button" data-dismiss="alert" aria-hidden="true" class="close">×</button>
+            <i class="icon fas fa-exclamation-triangle fa-fw"></i>
+            <strong>Error!</strong>
+             We&#39;ve encountered error that requires your attention.
+        </div>
+    </div>
+</div>
+
+  </div>
+  <script type="text/json" id="sg-pattern-data-molecules-alerts-with-icons" class="sg-pattern-data">
+    {"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":false,"patternDesc":"","patternBreadcrumb":{"patternType":"molecules","patternSubtype":"messaging"},"patternExtension":"mustache","patternName":"Alerts With Icons","patternPartial":"molecules-alerts-with-icons","patternState":"","patternEngineName":"mustache","extraOutput":{}}
+  </script>
+</div><!--end .sg-pattern-->
+<div id="molecules-modal" class="sg-pattern">
+  <div class="sg-pattern-head">
+    <h3 class="sg-pattern-title">
+      <a href="../../patterns/03-molecules-05-messaging-03-modal&#x2F;03-molecules-05-messaging-03-modal.html" class="patternLink" data-patternpartial="molecules-modal" title="Link to Pattern">
+          Modal Dialog
+      </a>
+    </h3>
+    <div class="sg-pattern-breadcrumb"></div>
+    <a href="#" data-patternpartial="molecules-modal" title="View Pattern Info" id="sg-pattern-extra-toggle-molecules-modal" class="sg-pattern-extra-toggle"><span>&#9660;</span></a>
+  </div>
+  <div class="sg-pattern-extra" id="sg-pattern-extra-molecules-modal">
+    
+  </div>
+  <div class="sg-pattern-example">
+    <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#sample-modal">
+  Launch Sample Modal
+</button>
+
+<div id="molecules-modal" class="modal fade in" style="display:block; position:static;">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <div class="lead modal-title">
+                        Default Modal
+                    </div>
+                </div>
+            <div class="modal-body">
+                Body
+            </div>
+                <div class="modal-footer">
+                    Footer
+                </div>
+        </div>
+    </div>
+</div>
+
+  </div>
+  <script type="text/json" id="sg-pattern-data-molecules-modal" class="sg-pattern-data">
+    {"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":false,"patternDesc":"","patternBreadcrumb":{"patternType":"molecules","patternSubtype":"messaging"},"patternExtension":"mustache","patternName":"Modal Dialog","patternPartial":"molecules-modal","patternState":"","patternEngineName":"mustache","extraOutput":{}}
+  </script>
+</div><!--end .sg-pattern-->
+<div id="molecules-modal-variants" class="sg-pattern">
+  <div class="sg-pattern-head">
+    <h3 class="sg-pattern-title">
+      <a href="../../patterns/03-molecules-05-messaging-04-modal-variants&#x2F;03-molecules-05-messaging-04-modal-variants.html" class="patternLink" data-patternpartial="molecules-modal-variants" title="Link to Pattern">
+          Modal Variants
+      </a>
+    </h3>
+    <div class="sg-pattern-breadcrumb"></div>
+    <a href="#" data-patternpartial="molecules-modal-variants" title="View Pattern Info" id="sg-pattern-extra-toggle-molecules-modal-variants" class="sg-pattern-extra-toggle"><span>&#9660;</span></a>
+  </div>
+  <div class="sg-pattern-extra" id="sg-pattern-extra-molecules-modal-variants">
+    
+  </div>
+  <div class="sg-pattern-example">
+    <div class="container-fluid">
+
+    <h3>Modal Sizing</h3>
+
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="modal fade in" style="display: block; position:static">
+                <div class="modal-dialog modal-sm">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                            <div class="lead modal-title">Small Modal</div>
+                        </div>
+                        <div class="modal-body">
+                            Body
+                        </div>
+                        <div class="modal-footer">
+                            Footer
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="modal fade in" style="display: block; position:static">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                            <div class="lead modal-title">Default Modal</div>
+                        </div>
+                        <div class="modal-body">
+                            Body
+                        </div>
+                        <div class="modal-footer">
+                            Footer
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="modal fade in" style="display: block; position:static">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                            <div class="lead modal-title">Large Modal</div>
+                        </div>
+                        <div class="modal-body">
+                            Body
+                        </div>
+                        <div class="modal-footer">
+                            Footer
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+  </div>
+  <script type="text/json" id="sg-pattern-data-molecules-modal-variants" class="sg-pattern-data">
+    {"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":false,"patternDesc":"","patternBreadcrumb":{"patternType":"molecules","patternSubtype":"messaging"},"patternExtension":"mustache","patternName":"Modal Variants","patternPartial":"molecules-modal-variants","patternState":"","patternEngineName":"mustache","extraOutput":{}}
+  </script>
+</div><!--end .sg-pattern-->
+<div id="molecules-popover" class="sg-pattern">
+  <div class="sg-pattern-head">
+    <h3 class="sg-pattern-title">
+      <a href="../../patterns/03-molecules-05-messaging-05-popover&#x2F;03-molecules-05-messaging-05-popover.html" class="patternLink" data-patternpartial="molecules-popover" title="Link to Pattern">
+          Popover
+      </a>
+    </h3>
+    <div class="sg-pattern-breadcrumb"></div>
+    <a href="#" data-patternpartial="molecules-popover" title="View Pattern Info" id="sg-pattern-extra-toggle-molecules-popover" class="sg-pattern-extra-toggle"><span>&#9660;</span></a>
+  </div>
+  <div class="sg-pattern-extra" id="sg-pattern-extra-molecules-popover">
+    
+  </div>
+  <div class="sg-pattern-example">
+    <button type="button" class="btn btn-link"
+    data-container="body"
+    data-html="true"
+    data-toggle="popover"
+    data-trigger="focus"
+    data-placement="right"
+    data-content="Popover:<ul><li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li><li> Phasellus suscipit nisi tellus, viverra ultrices eros ullamcorper sit amet.</li></ul> "
+    title="">
+        <i class="fas fa-info-circle text-info"></i>
+</button>
+
+
+  </div>
+  <script type="text/json" id="sg-pattern-data-molecules-popover" class="sg-pattern-data">
+    {"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":false,"patternDesc":"","patternBreadcrumb":{"patternType":"molecules","patternSubtype":"messaging"},"patternExtension":"mustache","patternName":"Popover","patternPartial":"molecules-popover","patternState":"","patternEngineName":"mustache","extraOutput":{}}
+  </script>
+</div><!--end .sg-pattern-->
+<div id="viewall-molecules-list-groups" class="sg-pattern-category">
+  <h2 class="sg-pattern-category-title"><a href="../../patterns/03-molecules-06-list-groups&#x2F;index.html" class="patternLink" data-patternpartial="viewall-molecules-list-groups">list-groups</a></h2>
+
+  <div class="sg-pattern-category-body">
+    
+  </div><!--end sg-pattern-category-body-->
+  
+</div><!--end sg-pattern-category-->
+<div id="molecules-list-group" class="sg-pattern">
+  <div class="sg-pattern-head">
+    <h3 class="sg-pattern-title">
+      <a href="../../patterns/03-molecules-06-list-groups-03-list-group&#x2F;03-molecules-06-list-groups-03-list-group.html" class="patternLink" data-patternpartial="molecules-list-group" title="Link to Pattern">
+          List Group
+      </a>
+    </h3>
+    <div class="sg-pattern-breadcrumb"></div>
+    <a href="#" data-patternpartial="molecules-list-group" title="View Pattern Info" id="sg-pattern-extra-toggle-molecules-list-group" class="sg-pattern-extra-toggle"><span>&#9660;</span></a>
+  </div>
+  <div class="sg-pattern-extra" id="sg-pattern-extra-molecules-list-group">
+    
+  </div>
+  <div class="sg-pattern-example">
+    <ul class="list-group list-group-item-success">
+  	<li class="list-group-item">Cras justo odio
+  		<span class="badge">23</span>
+
+
+  	</li>
+  	<li class="list-group-item">Dapibus ac facilisis in
+  		<span class="badge">23</span>
+
+
+  	</li>
+  	<li class="list-group-item">Morbi leo risus
+  		<span class="badge">23</span>
+
+
+  	</li>
+  	<li class="list-group-item">Porta ac consectetur ac
+  		<span class="badge">23</span>
+
+
+  	</li>
+  	<li class="list-group-item">Vestibulum at eros
+  		<span class="badge">23</span>
+
+
+  	</li>
+</ul>
+  </div>
+  <script type="text/json" id="sg-pattern-data-molecules-list-group" class="sg-pattern-data">
+    {"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"atoms-badges","lineagePath":"../../patterns/02-atoms-07-media-00-badges/02-atoms-07-media-00-badges.html"}],"lineage":[{"lineagePattern":"atoms-badges","lineagePath":"../../patterns/02-atoms-07-media-00-badges/02-atoms-07-media-00-badges.html"}],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternType":"molecules","patternSubtype":"list-groups"},"patternExtension":"mustache","patternName":"List Group","patternPartial":"molecules-list-group","patternState":"","patternEngineName":"mustache","extraOutput":{}}
+  </script>
+</div><!--end .sg-pattern-->
+<div id="molecules-list-group-variants" class="sg-pattern">
+  <div class="sg-pattern-head">
+    <h3 class="sg-pattern-title">
+      <a href="../../patterns/03-molecules-06-list-groups-04-list-group-variants&#x2F;03-molecules-06-list-groups-04-list-group-variants.html" class="patternLink" data-patternpartial="molecules-list-group-variants" title="Link to Pattern">
+          List Group Variants
+      </a>
+    </h3>
+    <div class="sg-pattern-breadcrumb"></div>
+    <a href="#" data-patternpartial="molecules-list-group-variants" title="View Pattern Info" id="sg-pattern-extra-toggle-molecules-list-group-variants" class="sg-pattern-extra-toggle"><span>&#9660;</span></a>
+  </div>
+  <div class="sg-pattern-extra" id="sg-pattern-extra-molecules-list-group-variants">
+    
+  </div>
+  <div class="sg-pattern-example">
+    <h2 id="list-group-badges">Badges</h2>
+<p>Add the badges component to any list group item and it will automatically be positioned on the right.</p>
+<ul class="list-group">
+    <li class="list-group-item">
+    	<span class="badge">14</span>
+        Cras justo odio
+    </li>
+    <li class="list-group-item">
+        <span class="badge">2</span>
+        Dapibus ac facilisis in
+    </li>
+    <li class="list-group-item">
+        <span class="badge">1</span>
+        Morbi leo risus
+    </li>
+</ul>
+
+<h2 id="list-group-linked">Linked items</h2>
+<p>Linkify list group items by using anchor tags instead of list items (that also means a parent <code>&lt;div&gt;</code> instead of an <code>&lt;ul&gt;</code>). No need for individual parents around each element.</p>
+<div class="list-group">
+    <a href="#" class="list-group-item active">
+        Cras justo odio
+    </a>
+    <a href="#" class="list-group-item">Dapibus ac facilisis in</a>
+    <a href="#" class="list-group-item">Morbi leo risus</a>
+    <a href="#" class="list-group-item">Porta ac consectetur ac</a>
+    <a href="#" class="list-group-item">Vestibulum at eros</a>
+</div>
+
+<h2 id="list-group-buttons">Button items</h2>
+<p>List group items may be buttons instead of list items (that also means a parent <code>&lt;div&gt;</code> instead of an <code>&lt;ul&gt;</code>). No need for individual parents around each element. <strong class="text-danger">Don't use the standard <code>.btn</code> classes here.</strong></p>
+<div class="list-group">
+    <button type="button" class="list-group-item">Cras justo odio</button>
+    <button type="button" class="list-group-item">Dapibus ac facilisis in</button>
+    <button type="button" class="list-group-item">Morbi leo risus</button>
+    <button type="button" class="list-group-item">Porta ac consectetur ac</button>
+    <button type="button" class="list-group-item">Vestibulum at eros</button>
+</div>
+
+<h2 id="list-group-disabled">Disabled items</h2>
+<p>Add <code>.disabled</code> to a <code>.list-group-item</code> to gray it out to appear disabled.</p>
+<div class="list-group">
+    <a href="#" class="list-group-item disabled">
+        Cras justo odio
+    </a>
+    <a href="#" class="list-group-item">Dapibus ac facilisis in</a>
+    <a href="#" class="list-group-item">Morbi leo risus</a>
+    <a href="#" class="list-group-item">Porta ac consectetur ac</a>
+    <a href="#" class="list-group-item">Vestibulum at eros</a>
+</div>
+
+<h2 id="list-group-contextual-classes">Contextual classes</h2>
+<p>Use contextual classes to style list items, default or linked. Also includes <code>.active</code> state.</p>
+<ul class="list-group">
+    <li class="list-group-item list-group-item-success">Dapibus ac facilisis in</li>
+    <li class="list-group-item list-group-item-info">Cras sit amet nibh libero</li>
+    <li class="list-group-item list-group-item-warning">Porta ac consectetur ac</li>
+    <li class="list-group-item list-group-item-danger">Vestibulum at eros</li>
+</ul>
+<div class="list-group">
+    <a href="#" class="list-group-item list-group-item-success">Dapibus ac facilisis in</a>
+    <a href="#" class="list-group-item list-group-item-info">Cras sit amet nibh libero</a>
+    <a href="#" class="list-group-item list-group-item-warning">Porta ac consectetur ac</a>
+    <a href="#" class="list-group-item list-group-item-danger">Vestibulum at eros</a>
+</div>
+
+<h2 id="list-group-custom-content">Custom content</h2>
+<p>Add nearly any HTML within, even for linked list groups like the one below.</p>
+<div class="list-group">
+    <a href="#" class="list-group-item active">
+    	<div class="h4 list-group-item-heading">List group item heading</div>
+        <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+    </a>
+    <a href="#" class="list-group-item">
+        <div class="h4 list-group-item-heading">List group item heading</div>
+        <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+    </a>
+    <a href="#" class="list-group-item">
+        <div class="h4 list-group-item-heading">List group item heading</div>
+        <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+    </a>
+</div>
+
+  </div>
+  <script type="text/json" id="sg-pattern-data-molecules-list-group-variants" class="sg-pattern-data">
+    {"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":false,"patternDesc":"","patternBreadcrumb":{"patternType":"molecules","patternSubtype":"list-groups"},"patternExtension":"mustache","patternName":"List Group Variants","patternPartial":"molecules-list-group-variants","patternState":"","patternEngineName":"mustache","extraOutput":{}}
+  </script>
+</div><!--end .sg-pattern-->
+<div id="molecules-selectable-list-group" class="sg-pattern">
+  <div class="sg-pattern-head">
+    <h3 class="sg-pattern-title">
+      <a href="../../patterns/03-molecules-06-list-groups-05-selectable-list-group&#x2F;03-molecules-06-list-groups-05-selectable-list-group.html" class="patternLink" data-patternpartial="molecules-selectable-list-group" title="Link to Pattern">
+          Selectable List Group
+      </a>
+    </h3>
+    <div class="sg-pattern-breadcrumb"></div>
+    <a href="#" data-patternpartial="molecules-selectable-list-group" title="View Pattern Info" id="sg-pattern-extra-toggle-molecules-selectable-list-group" class="sg-pattern-extra-toggle"><span>&#9660;</span></a>
+  </div>
+  <div class="sg-pattern-extra" id="sg-pattern-extra-molecules-selectable-list-group">
+    
+  </div>
+  <div class="sg-pattern-example">
+    <ul class="list-group checked-list-group sortable-items">
+    <li sequence="0" class="list-group-item" value="0">
+        <label><input type="checkbox"/> Viewer</label>
+    </li>
+    <li sequence="1" class="list-group-item" value="1">
+        <label><input type="checkbox"/> Editor</label>
+    </li>
+    <li sequence="2" class="sortable-list-group-item list-group-item" value="11">
+        <label><input type="checkbox"/> Reviewer</label>
+    </li>
+    <li sequence="3" class="sortable-list-group-item list-group-item" value="12">
+        <label><input type="checkbox"/> Approver</label>
+    </li>
+    <li sequence="4" class="sortable-list-group-item list-group-item" value="22">
+        <label><input type="checkbox"/> Remove from Project</label>
+    </li>
+</ul>
+
+  </div>
+  <script type="text/json" id="sg-pattern-data-molecules-selectable-list-group" class="sg-pattern-data">
+    {"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":false,"patternDesc":"","patternBreadcrumb":{"patternType":"molecules","patternSubtype":"list-groups"},"patternExtension":"mustache","patternName":"Selectable List Group","patternPartial":"molecules-selectable-list-group","patternState":"","patternEngineName":"mustache","extraOutput":{}}
+  </script>
+</div><!--end .sg-pattern-->
+<div id="viewall-molecules-media" class="sg-pattern-category">
+  <h2 class="sg-pattern-category-title"><a href="../../patterns/03-molecules-07-media&#x2F;index.html" class="patternLink" data-patternpartial="viewall-molecules-media">media</a></h2>
+
+  <div class="sg-pattern-category-body">
+    
+  </div><!--end sg-pattern-category-body-->
+  
+</div><!--end sg-pattern-category-->
+<div id="molecules-media" class="sg-pattern">
+  <div class="sg-pattern-head">
+    <h3 class="sg-pattern-title">
+      <a href="../../patterns/03-molecules-07-media-01-media&#x2F;03-molecules-07-media-01-media.html" class="patternLink" data-patternpartial="molecules-media" title="Link to Pattern">
+          Media Object
+      </a>
+    </h3>
+    <div class="sg-pattern-breadcrumb"></div>
+    <a href="#" data-patternpartial="molecules-media" title="View Pattern Info" id="sg-pattern-extra-toggle-molecules-media" class="sg-pattern-extra-toggle"><span>&#9660;</span></a>
+  </div>
+  <div class="sg-pattern-extra" id="sg-pattern-extra-molecules-media">
+    
+  </div>
+  <div class="sg-pattern-example">
+    <div class="media">
+    <div class="media-left ">
+        <a href="www.oildex.com">
+        	<img class="media-object" src="..&#x2F;..&#x2F;images&#x2F;bootstrapthumb64.jpg" alt="Bootstrap Thumbnail">
+        </a>
+    </div>
+    <div class="media-body">
+      	<p class="h4 media-heading">Heading</p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    </div>
+</div>
+
+  </div>
+  <script type="text/json" id="sg-pattern-data-molecules-media" class="sg-pattern-data">
+    {"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":true,"patternLineagesR":[{"lineagePattern":"organisms-media-object","lineagePath":"../../patterns/04-organisms-06-media-00-media-object/04-organisms-06-media-00-media-object.html"}],"lineageR":[{"lineagePattern":"organisms-media-object","lineagePath":"../../patterns/04-organisms-06-media-00-media-object/04-organisms-06-media-00-media-object.html"}],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternType":"molecules","patternSubtype":"media"},"patternExtension":"mustache","patternName":"Media Object","patternPartial":"molecules-media","patternState":"","patternEngineName":"mustache","extraOutput":{}}
+  </script>
+</div><!--end .sg-pattern-->
+<div id="molecules-media-variants" class="sg-pattern">
+  <div class="sg-pattern-head">
+    <h3 class="sg-pattern-title">
+      <a href="../../patterns/03-molecules-07-media-02-media-variants&#x2F;03-molecules-07-media-02-media-variants.html" class="patternLink" data-patternpartial="molecules-media-variants" title="Link to Pattern">
+          Media Variants
+      </a>
+    </h3>
+    <div class="sg-pattern-breadcrumb"></div>
+    <a href="#" data-patternpartial="molecules-media-variants" title="View Pattern Info" id="sg-pattern-extra-toggle-molecules-media-variants" class="sg-pattern-extra-toggle"><span>&#9660;</span></a>
+  </div>
+  <div class="sg-pattern-extra" id="sg-pattern-extra-molecules-media-variants">
+    
+  </div>
+  <div class="sg-pattern-example">
+    <div class="media">
+    <div class="media-left">
+        <a href="#">
+            <img class="media-object" src="..&#x2F;..&#x2F;images&#x2F;bootstrapthumb64.jpg" alt="Bootstrap Thumbnail">
+        </a>
+    </div>
+    <div class="media-body">
+        <div class="h4 media-heading">Heading</div>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        <div class="media">
+            <div class="media-left">
+                <a href="#">
+                    <img class="media-object" src="..&#x2F;..&#x2F;images&#x2F;bootstrapthumb64.jpg" alt="Bootstrap Thumbnail">
+    			</a>
+  			</div>
+  			<div class="media-body">
+  				<div class="h4 media-heading">Nested media heading</div>
+  				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+  			</div>
+        </div>
+    </div>
+</div>
+<div class="media">
+    <div class="media-body">
+        <div class="h4 media-heading">Heading</div>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    </div>
+    <div class="media-right">
+        <a href="#">
+        	<img class="media-object" src="..&#x2F;..&#x2F;images&#x2F;bootstrapthumb64.jpg" alt="Bootstrap Thumbnail">
+        </a>
+    </div>
+</div>
+<div class="media">
+    <div class="media-left">
+        <a href="#">
+        	<img class="media-object" src="..&#x2F;..&#x2F;images&#x2F;bootstrapthumb64.jpg" alt="Bootstrap Thumbnail">
+        </a>
+    </div>
+    <div class="media-body">
+        <div class="h4 media-heading">Heading</div>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    </div>
+    <div class="media-right">
+        <a href="#">
+        	<img class="media-object" src="..&#x2F;..&#x2F;images&#x2F;bootstrapthumb64.jpg" alt="Bootstrap Thumbnail">
+        </a>
+    </div>
+</div>
+
+<!-- Media Alignment -->
+<p>
+    <p>The classes <code>.pull-left</code> and <code>.pull-right</code> also exist and were previously used as part of the media component, but are deprecated for that use as of v3.3.0. They are approximately equivalent to <code>.media-left</code> and <code>.media-right</code>, except that <code>.media-right</code> should be placed after the <code>.media-body</code> in the html.</p>
+</p>
+
+<h2 id="media-alignment">Media alignment</h2>
+<p>The images or other media can be aligned top, middle, or bottom. The default is top aligned.</p>
+<div class="media">
+    <div class="media-left">
+    	<a href="#">
+            <img class="media-object" src="..&#x2F;..&#x2F;images&#x2F;bootstrapthumb64.jpg" alt="Bootstrap Thumbnail">
+    	</a>
+  	</div>
+  	<div class="media-body">
+    	<div class="h4 media-heading">Top aligned media</div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <p>Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+  	</div>
+</div>
+<div class="media">
+    <div class="media-left media-middle">
+    	<a href="#">
+            <img class="media-object" src="..&#x2F;..&#x2F;images&#x2F;bootstrapthumb64.jpg" alt="Bootstrap Thumbnail">
+    	</a>
+    </div>
+    <div class="media-body">
+    	<div class="h4 media-heading">Middle aligned media</div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  	</div>
+</div>
+<div class="media">
+    <div class="media-left media-bottom">
+    	<a href="#">
+            <img class="media-object" src="..&#x2F;..&#x2F;images&#x2F;bootstrapthumb64.jpg" alt="Bootstrap Thumbnail">
+    	</a>
+    </div>
+    <div class="media-body">
+    	<div class="h4 media-heading">Bottom aligned media</div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  	</div>
+</div>
+
+  </div>
+  <script type="text/json" id="sg-pattern-data-molecules-media-variants" class="sg-pattern-data">
+    {"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":false,"patternDesc":"","patternBreadcrumb":{"patternType":"molecules","patternSubtype":"media"},"patternExtension":"mustache","patternName":"Media Variants","patternPartial":"molecules-media-variants","patternState":"","patternEngineName":"mustache","extraOutput":{}}
+  </script>
+</div><!--end .sg-pattern-->
+  </div> <!--end #sg-patterns-->
+
+</div><!--end .sg-main-->
+    <div id="sample-modal" class="modal fade ">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                        <div class="lead modal-title">
+                            Default Modal
+                        </div>
+                    </div>
+                <div class="modal-body">
+                    Body
+                </div>
+                    <div class="modal-footer">
+                        Footer
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="sessionTimeOutDialog" class="modal fade" role="dialog" aria-labelledby="timedAlert" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <div class="lead modal-title">Are you still there?</div>
+                </div>
+                <div class="modal-body">
+                    <p class="h5">Your session is about to expire.</p>
+                    <p>
+                        For security reasons and for the protection of your corporate data, your session will expire
+                        <br />
+                        in <strong><span class="text-danger" id="timeOutCountdown"></span></strong> seconds.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal" aria-hidden="true">Extend My Session</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal" aria-hidden="true">Sign Out</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src='../../js/vendor/tota11y.min.js'></script>
+
+
+    <!-- local js files -->
+    <script type="text/javascript" src="../../js/05-paginated-list.js"></script>
+    <script type="text/javascript" src="../../js/auto-dismiss-dialog.js"></script>
+    <script type="text/javascript" src="../../js/time-out-dialog.js"></script>
+    <script type="text/javascript" src="../../js/contactForm.js"></script>
+    <script type="text/javascript" src="../../js/contract-workspace.js"></script>
+    <script type="text/javascript" src="../../js/01-sortable-double-list.js"></script>
+    <script type="text/javascript" src="../../js/02-comments-list.js"></script>
+    <script type="text/javascript" src="../../js/04-scrollable-list.js"></script>
+    <script type="text/javascript" src="../../js/user-profile.js"></script>
+    <script type="text/javascript" src="../../js/user-cards.js"></script>
+    <script type="text/javascript" src="../../js/01-simple-list-page.js"></script>
+    <script type="text/javascript" src="../../js/status-panel.js"></script>
+    <script type="text/javascript" src="../../js/stepped-breadcrumbs.js"></script>
+    <script type="text/javascript" src="../../js/dashboard-card-with-settings.js"></script>
+    <script type="text/javascript" src="../../js/nav-wizard.js"></script>
+    <script type="text/javascript" src="../../js/00-navbar.js"></script>
+    <script type="text/javascript" src="../../js/password-toggle.js"></script>
+    <script type="text/javascript" src="../../js/slide-in-panel.js"></script>
+    <script type="text/javascript" src="../../js/import-results-dialog.js"></script>
+    <script type="text/javascript" src="../../js/09-expandable-alerts.js"></script>
+    <script type="text/javascript" src="../../js/bar-chart.js"></script>
+    <script type="text/javascript" src="../../js/stacked-bar-chart.js"></script>
+    <script type="text/javascript" src="../../js/donut-chart.js"></script>
+    <script type="text/javascript" src="../../js/line-chart.js"></script>
+    <script type="text/javascript" src="../../js/expenditure-chart.js"></script>
+    <script type="text/javascript" src="../../js/service-account-dashboard.js"></script>
+    <script type="text/javascript" src="../../js/goods-receipt.js"></script>
+    <script type="text/javascript" src="../../js/world-map.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            // Initialize bootstrap tooltips and popovers
+            $('[data-toggle="tooltip"]').tooltip();
+            $('[data-toggle="popover"]').popover();
+
+            // Onclick handler for the notify me checkbox on dashboard card settings
+            $('#toggleNotificationsCheckbox').on('click', function(e) {
+                 $('#notifyIcon').toggleClass("hide");
+            });
+
+            // Datasets for Typeahead search fields
+            var afes = ['100 Location Prep', '110 Location Permit', '120 Survey', '130 Right of Way Permit', '140 Physical Location Prep',
+              '200 Drilling Rig and Tools', '210 Move In/Out', '220 Footage Bid', '230 Day Work Bid', '240 Fuel', '250 Water',
+              '260 Bits', '270 Completions', '300 Drilling Fluids', '320 Packer Fluids', '330 Completion Fluids', '400 Rental Equip.', '410 Well Control Equip.',
+              '420 Rotary Tools', '430 Mud Equip.', '440 Casing Tools', '450 Misc.'
+            ];
+
+            var requisitioners = ["Katherine Harrison","Linda Myers","Catherine Ferguson","Willie Fuller","Willie Martinez","Janice Robertson","Deborah Turner","Norma Brooks","Jesse Gordon","Bobby Reyes","Alice Willis","Jennifer Meyer","Joyce Lane","Dennis Rodriguez","Eric Hunter","Lillian Sims","Deborah Hayes","Helen Reyes","Roger Matthews","Irene Hansen","Kathryn Morris","Joseph Griffin","Jesse Mcdonald","Albert Martinez","Shirley Rogers","Ronald Hughes","Doris Franklin","Kathryn Burton","Joyce Hunt","Ralph Cook","Debra Reed","Scott Scott","Cynthia Stanley","Russell Alvarez","Sandra Price","Keith Burke","Ruth Harrison","Randy Patterson","Andrea Henry","Steve Elliott","Denise Daniels","Theresa Weaver","Benjamin Perez","Virginia Gordon","Karen Warren","Wanda Carroll","Eric Nguyen","Chris Hart","Jennifer Burns","Jose Fuller","Steve Harris","Martha Edwards","Jeremy Powell","Larry Stephens","Marie Reyes","Harry Garza","Amanda Cole","Jessica Oliver","Kenneth Mccoy","George Peters","Christine Scott","Alice Hamilton","Janice Bell","Anthony Hawkins","Harold Ferguson","Beverly Montgomery","Ann Armstrong","Marilyn Austin","Kathryn Chapman","Kathryn Lopez","Gregory Long","Sandra Rodriguez","Adam Lee","Janice Fernandez","Ralph Vasquez","Peter Holmes","Alan Romero","Frank Stephens","Mary Wallace","Julia Gardner","Benjamin Fernandez","Anna Wells","Carol Perez","Jessica Edwards","Julia Collins","Ruby Rivera","Terry Chavez","Peter Phillips","Louis Hunt","Lawrence Alexander","Lillian Medina","Carlos Howard","Kimberly Howard","Brenda Dunn","Kevin Owens","Aaron Carroll","Dorothy Baker","Walter Stephens","Ryan King","Henry Boyd","Marilyn Rivera","Tammy Mcdonald","Betty Sanders","Annie Howell","Gerald Austin","Justin Wright","Julie Kelley","Richard Greene","Jonathan Gilbert","Rose Weaver","Gary Peters","Mark Smith","Gregory Sanders","Shawn Armstrong","Catherine Morgan","Jason Fisher","Keith Rice","Wayne Howell","Stephen Mendoza","Michelle Williams","Billy Stephens","Barbara Porter","Dennis Ward","Ashley Kelly","Andrea Garrett","Gloria Simpson","Andrea Hunt","Antonio Pierce","Brian Anderson","Lois Russell","Kathy Henderson","Ernest Simmons","David Smith","Roger Frazier","Robin Cole","Samuel Martinez","Clarence Austin","Bobby Walker","Catherine Sullivan","Wanda Perkins","Mary Burns","Jesse Cunningham","Scott Burton","Jason Ortiz","Phyllis Reed","Lisa Arnold","Kathy Miller","Steve Lynch","Joan Hall","Carlos Thompson","Kenneth Rivera","Daniel Price","Cheryl Hayes","Aaron Green","Debra Reynolds","Cynthia Woods","Larry Jordan","Jesse Rodriguez","Betty Kelley","Bonnie Miller","Ronald Johnson","Dorothy Lee","Amy Chavez","Jack Nelson","Mary Castillo","Fred Berry","Jason Ryan","Martha Young","Frances Ellis","Ralph Butler","Donna Nichols","Paul Greene","Michael Morrison","Judy Rice","Jose Davis","Kelly Cunningham","Laura Williams","Tammy Carpenter","Harry Garcia","Louis Gutierrez","Jimmy Riley","Eric Kennedy","Stephen Franklin","Diana Banks","Joan Henry","William Day","Benjamin Kim","Ashley Johnson","Justin Scott","Chris Alexander","Catherine Lawrence","Melissa Reynolds","William Baker","Joe Perez","Donna Turner","Shawn Lawrence","Rachel Morrison","Keith Martinez","Terry Garrett","Karen Wells","Joan Hansen","Kathleen Gomez","Roy Ruiz","Steven Griffin","Ronald Hansen","William Robinson","Keith Ryan","Peter Cook","Sandra Payne","Louis Simpson","Shirley Wright","Henry Carroll","Kimberly Chavez","Craig Morrison","Melissa Kelly","Nicholas Franklin","Martha Cooper","Sharon Phillips","Patrick Snyder","Emily Elliott","Jose Mills","Heather Gibson","Eric Ray","Ashley Davis","Benjamin Cooper","Louise Wood","Terry Collins","Tammy Ellis","Ronald Harper","Randy Martin","Deborah Franklin","Joe Ford","Jeremy Alexander","Shirley Rice","Cheryl Richardson","Sandra Fuller","Harry Washington","Frank Peters","Ryan Brown","Patrick Romero","Marilyn Green","Jose Thompson","Robin Carroll","Earl Scott","Christina Bryant","Jerry Hudson","Tammy Murphy","Douglas Anderson","Beverly Carter","Jose Harper","Walter George","Martha Powell","Terry Frazier","David Wright","Howard Romero","Gary Stewart","Thomas Johnson","Michael Johnston","Bobby Jacobs","Christina Hayes","Roger Nichols","Heather Martin","Kelly Brown","Walter Bradley","Scott Wright","Annie Howard","Jack Green","Susan Sims","Diana Harvey","Johnny Ford","Diane Reid","Raymond Carr","Sandra Patterson","Patrick Perry","Debra Butler","Carolyn Jordan","Billy Stevens","Robin Greene","Dorothy Turner","Patricia Howard","Steven Harris","Pamela Wright","Rachel Phillips","Heather Dunn","Timothy Murray","Stephanie Rivera","Ruby Grant","Christopher Grant","Joshua Rose","Justin Garza","Joseph Burke","Phillip Stevens","Janet George","Clarence Bennett","Ronald Clark","Evelyn Perkins","Joshua Peters","Charles Nelson","Jacqueline Davis","Justin Rice","Harold Washington","Phyllis Lewis","Bonnie Frazier","Ronald Andrews","Ruby Sullivan","Larry Evans","Larry Lee","Mary Griffin","Lawrence Graham","Craig Palmer","Marie Perry","Laura Webb","Catherine Rivera","Fred Simmons","Judith Fowler","Sara Baker","Donald Little","Kimberly Burke","Susan Lee","Phillip Garza","Nicholas Chapman","Alice Dean","Wayne Wheeler","Rachel Gonzales","Bonnie Spencer","Melissa King","Phillip Long","Patricia Wallace","Paula Hunt","Theresa Bradley","Eugene Davis","Jerry Daniels","Anne James","Joan Smith","Maria Alexander","Kathleen Kim","Alan Porter","Jesse Davis","Jessica Perkins","Teresa Chavez","Martin Burns","Benjamin Murray","Joseph Hernandez","Melissa Johnson","Kenneth Pierce","Joe Dean","Julia Reid","Wanda Weaver","Roy Kelly","Victor Medina","Carl Jordan","Eric Butler","Alan Dixon","Lori Green","Patricia Bryant","Annie Graham","Ernest Torres","Jason Montgomery","Louis Hall","Anthony Nguyen","Julie George","Harry Coleman","Sara Green","Wayne Lopez","Scott Larson","Joan Reid","Annie Sanchez","Tina Perry","Patricia Ross","Harold Cook","Jennifer Murphy","Evelyn Jordan","Todd Lawrence","Walter Coleman","Douglas Stone","Patrick Ray","Victor Fox","Ernest Bell","Raymond Anderson","Jerry Roberts","Wanda Harper","Jason Grant","Sarah Knight","Marilyn Robertson","Mark Burns","Julia Woods","David Ortiz","Maria Garrett","Barbara Butler","Rebecca Robinson","Lori Carroll","Rose Reynolds","Russell Perez","Kelly Brown","Debra Olson","Donald Burns","Philip Simpson","Rose Williams","Amanda Lane","Dennis Lopez","Jennifer Daniels","Norma Nichols","Benjamin Cruz","Antonio Lynch","Emily Lewis","Ashley Walker","Rachel Ross","Barbara Hansen","Jose Smith","Walter Nelson","Rachel Gray","Mary Wilson","Walter Nichols","Bonnie Bell","Gerald Porter","Martha Mitchell","Patricia Lynch","Ann Carr","Jennifer Barnes","Jonathan Taylor","Willie Hanson","Annie Owens","Carol Dixon","Chris Reyes","Jennifer Dunn","Randy Romero","Keith Jackson","Bonnie Sims","Stephanie Flores","Jennifer Wood","Sarah Stone","Marie Evans","Jane Stephens","Julie Rogers","Peter Barnes","Billy Myers","Stephanie Lynch","Steven Weaver","Virginia Larson","Shawn Jordan","Roy Ellis","Louise Clark","Lillian Smith","Mildred Hansen","Helen Fisher","Kathryn Watson","Scott George","David Pierce","Roy Sullivan","Amanda Ford","Joshua Wood","Annie Howell","Shawn Lawson","Ronald Hunter","Joyce Ward","Janet Burke","Susan Vasquez","Paula Lawson","Kimberly Ruiz","Martin Morgan","Debra Jenkins","Gary Kim","Theresa Garza","Ernest Welch","Mildred Sanders","Roger Watson","Gerald Clark","Angela George","Anne Bowman","William Lewis","Theresa Elliott","Carolyn Frazier","Emily Washington","Raymond Hunter","Michelle Snyder","Henry Harris","Brian Graham","Diana Armstrong","Chris Ruiz","Teresa Mason","Jack Murphy","Harold Palmer","Joe Carroll","Samuel Peters","Steve Washington","Carlos Snyder","Carlos Williamson","Anne Thompson","Barbara Vasquez","Doris Schmidt","Janet Harvey","Phyllis Gibson","Linda Fisher","Sara Henderson","Susan Hughes","Janet Montgomery","Jennifer Duncan","Maria Jones","Brenda Kelley","Doris Fields","Christina Moore","Ruby Meyer","Gerald Dean","Sean Mccoy","David Bishop","Annie Murphy","Arthur Fuller","Aaron Nelson","Joyce Sims","Kathryn Cooper","Arthur Green","Jessica Wright","Angela Wagner","Nicole Lewis","Martha Duncan","Angela Hudson","Angela Freeman","Scott Martinez","Charles Palmer","Linda Ross","Gloria Romero","Rose Medina","Douglas Pierce","Antonio Wright","Joyce Davis","Nancy Scott","Juan Graham","Douglas Riley","Susan Kelly","Anna Knight","Peter Thompson","Phillip Crawford","Clarence Hanson","Edward Murphy","Evelyn Oliver","Jeffrey Little","Ashley Murray","Eugene Chavez","Sharon Cunningham","Lori Brown","Cynthia Harrison","Emily Reyes","Julia Morris","Lisa Wilson","Charles Cole","Terry Warren","Ronald Jackson","Andrew Greene","Nicholas Olson","Raymond Jackson","Jason Hall","Carol Lee","Lois Vasquez","Judy Carr","Richard Armstrong","Gary Ford","Joseph Rivera","Amanda Howard","Jeremy Gilbert","Wanda Matthews","Samuel Grant","Kathryn Lawrence","Charles Lawson","Todd Edwards","Stephanie Elliott","Julie Watkins","Doris Harvey","Janice Crawford","Philip Bryant","Carlos Berry","Virginia Sanchez","Shawn Elliott","Janice Andrews","Larry Cooper","Patricia Hughes","Patrick Jacobs","Catherine Turner","Katherine Dunn","Kenneth Peters","Heather Marshall","Richard Price","Diana Ramirez","Ralph Jacobs","Debra Wells","Michael Peters","Anna Griffin","Albert Matthews","Marie Henry","Kathryn Howard","Amanda Ellis","Mary Alexander","Martin Carroll","Marie Wilson","Michelle Johnson","Brandon Shaw","Betty Cook","Christopher Mason","Chris Hart","James Romero","David Johnston","Dennis Gonzalez","Jerry Harper","Diane Long","Joe Berry","Michelle Roberts","Jane Oliver","Andrea Jackson","Jeremy Burke","Mark Stevens","Kevin Diaz","Anthony Powell","Frank Palmer","Virginia Weaver","Albert Diaz","Christopher Gilbert","Julia Pierce","Patricia Fuller","Nicole Chavez","Heather Bradley","Patricia Hernandez","Scott Gray","Susan Young","Janet Henry","Brandon Jacobs","Bobby Little","Carlos Turner","Joshua Henry","Shawn Grant","Lisa Little","Lori Carter","Donald Simpson","Karen Marshall","Jesse Harris","Paul Moore","Rebecca Arnold","Bonnie West","Donna Taylor","Albert Ross","Paul Patterson","Stephen Nichols","Johnny Hamilton","Peter Ramos","Brandon Owens","Andrew Henderson","Jacqueline Alexander","Lori Gomez","Brenda Davis","Paul Crawford","Shirley Sims","Wayne Flores","Harold Lewis","Maria Nguyen","Eric Howell","Debra Ryan","Antonio Ward","Randy Dunn","Henry Chavez","Keith Marshall","Sara Allen","Diana Bell","Jesse Lee","Terry Gordon","Lawrence Owens","Johnny Myers","George Schmidt","Benjamin Greene","Billy Griffin","Amy Lawrence","Amanda Armstrong","Rachel Foster","William Jones","Joyce Reed","Aaron Richards","Arthur Mccoy","Kathryn Clark","Sarah Murphy","Kathryn Robinson","Phillip Wheeler","Joyce Hunter","Andrew Bailey","Jennifer Gilbert","Willie Reynolds","Ruth Carroll","Janet Ward","Billy Clark","Amy Bennett","Marie Fowler","Paula Smith","Gerald Vasquez","Marie Bowman","Jennifer Russell","Tina Welch","Eugene Price","Robert Bryant","Russell Jenkins","Jose Jones","Joyce George","Marilyn Pierce","Annie Russell","Anthony Carter","Catherine Lopez","Carol Garza","Roy Griffin","Irene Medina","Susan Ortiz","Jacqueline Morales","Jean Kelley","Earl Banks","Barbara Ryan","Justin Perez","Carolyn Dunn","Earl Bryant","Frances Black","Louis Gordon","Antonio Gonzales","Andrew Woods","Craig Brooks","Christine Mendoza","Douglas Day","Willie Sanchez","Douglas Bell","Raymond Bryant","Jose Cruz","Dennis Adams","Aaron Scott","Rebecca Nichols","Sara Montgomery","Dennis Thomas","Cynthia Fields","Jessica Jacobs","Todd Berry","Helen Bailey","Keith Cox","Aaron Olson","Paul Medina","Heather Stephens","Marilyn White","Donna Butler","Chris Morales","Donna Riley","Scott Flores","Carolyn Stevens","Victor Matthews","Janet Perry","Anthony Mills","Julie Barnes","Alan Ortiz","Kenneth Richards","Kelly Miller","Debra Snyder","Laura Fisher","Patricia Hanson","Julia Bailey","Ryan Lawson","Thomas Young","Anna Fox","Tina Cook","Justin Oliver","Gregory Burton","David Wheeler","Gerald Larson","Craig Burns","Wayne Miller","Justin Lee","Larry Henry","Carol Graham","Kathleen Martin","Donna Simmons","Annie Wood","Nicole Davis","Marilyn Harper","Rose Richards","Benjamin Moreno","Dennis Carr","Lori Garza","Doris Bishop","Mildred Vasquez","Jimmy Garza","Alan Diaz","Jerry Cox","Jeremy King","Bonnie Adams","Philip Willis","Mary Gray","Julie Harris","Jerry Jordan","Michael White","Brenda Davis","Barbara Ramirez","Bruce Watson","Rose Morales","Deborah Warren","Alice Pierce","Roy Carpenter","Albert Martinez","Maria Gonzales","Judith Welch","Wayne Ferguson","Joyce Evans","Doris Nelson","Roy Sanchez","Ronald Little","Samuel Martinez","Jean Robinson","Terry Dunn","Michelle Armstrong","Joe Powell","Laura Kelley","Johnny Dixon","Jeremy Weaver","Phyllis Griffin","Kelly Gutierrez","Catherine Burke","Paula Richardson","Tammy Miller","Laura Gilbert","William Harper","Martha Frazier","Kevin Dunn","Timothy Jacobs","Fred Carroll","Jose Hunter","Jessica Rice","Sean Diaz","Annie Daniels","Patrick Myers","Maria Lee","Teresa Burke","Willie Allen","Kathryn Harvey","Annie Harvey","Evelyn Harrison","William Peters","Katherine Hunter","Cynthia Frazier","Karen Brown","Kathy Watson","Philip Myers","Martha Mitchell","Rebecca Dunn","Barbara Taylor","Arthur Wood","Jane Perry","Daniel Reid","Ernest Washington","Fred Stephens","Donald Miller","Daniel Henry","Frances Richards","Andrea Hunter","Cynthia Flores","Alan Medina","Raymond Garrett","Susan Reyes","Lois Edwards","Matthew Walker","Katherine Simpson","Tina Sims","Brandon Harris","Roger Schmidt","Carl Griffin","Louis Wagner","Judith Fowler","Timothy Medina","Ruth Hill","Sarah Jones","Julie Murphy","Annie Mcdonald","Kathryn Alvarez","Lawrence Bennett","Walter Black","Raymond Harrison","Heather Anderson","Stephanie Mason","Albert Mendoza","Janet Lewis","Jacqueline Garza","Lisa Long","Eugene Matthews","Mary Thomas","David Edwards","Jean Larson","Jesse Webb","Jerry Watson","Jonathan Powell","Linda Gibson","Rachel Stevens","Howard Little","Daniel Carpenter","Jeremy Little","Justin Jacobs","Dorothy Adams","Lillian Gray","Judy Warren","Gloria Frazier","Kimberly Cunningham","Karen Kennedy","Christopher Rivera","David Payne","Juan Robinson","Louis Garrett","Cheryl Olson","Julia Marshall","Christopher Snyder","Harry Watkins","Kathryn Nichols","William Hanson","Angela Burton","Shawn Hamilton","Roger Stanley","Evelyn Pierce","Amy Hernandez","Andrea Knight","Louise Fisher","Randy Baker","Martin Patterson","Joseph Reid","Lillian Cook","Ruby Riley","John Hunt","Dennis Gomez","Shirley Weaver","Alice Bowman","Gary Cooper","Larry Bryant","Phyllis Brooks","Howard Medina","Mildred Price","Carl Frazier","Gloria Perkins","Robert Evans","Douglas Alexander","Phyllis Hansen","Patrick Lynch","Jane Franklin","Beverly Morgan","Henry Peterson","Johnny Stanley","Sarah Romero","Jimmy Ford","Janet Young","Dennis Bowman","Karen Patterson","Lillian Cooper","Joyce Henry","Lisa Fox","Katherine Webb","Wayne Kelly","Janice Patterson","Norma Spencer","Lois Bailey","Gary Morris","Russell Mendoza","Ruby Tucker","Gregory Ramirez","Catherine Morales","Beverly Harrison","Brenda Sullivan","Anne Jenkins","Carolyn Hayes","Katherine Woods","Tina Grant","Brian Watson","Deborah Cox","Emily Jenkins","Christina Alvarez","Peter Phillips","Cynthia Hudson","Amanda Mccoy","Laura Mccoy","Jonathan Hughes","Justin Boyd","Evelyn Black","Marie Alvarez","Sarah Burns","Gloria Carpenter","Frances Holmes","Clarence Vasquez","Ruth Reed","Diane Simmons","Norma Snyder","Elizabeth Russell","Jimmy Mccoy","Lillian Pierce","Rose Lawrence","Andrew Romero","Phillip Gray","Robert Clark","Brian Cox","Phillip Burke","Beverly Campbell","Marie Bradley","Eric Phillips","Alice Ross","Scott Fields","Donald Bennett","Carlos Martinez","Doris Hayes","Henry Chavez","Julie Greene"];
+
+            var beerData = {
+                "ales": [
+                    "Affligem Blonde", "Amsterdam Big Wheel", "Amsterdam Boneshaker IPA", "Amsterdam Downtown Brown", "Amsterdam Oranje Summer White",
+                    "Anchor Liberty Ale", "Beaus Lug Tread Lagered Ale", "Beerded Lady", "Belhaven Best Ale", "Big Rock Grasshopper Wheat",
+                    "Big Rock India Pale Ale", "Big Rock Traditional Ale", "Big Rock Warthog Ale", "Black Oak Nut Brown Ale", "Black Oak Pale Ale",
+                    "Boddingtons Pub Ale", "Boundary Ale", "Caffreys", "Camerons Auburn Ale", "Camerons Cream Ale", "Camerons Rye Pale Ale", "Ceres Strong Ale",
+                    "Cheval Blanc", "Crazy Canuck Pale Ale", "Creemore Springs Altbier", "Crosswind Pale Ale", "De Koninck", "Delirium Tremens",
+                    "Erdinger Dunkel Weissbier", "Erdinger Weissbier", "Export", "Flying Monkeys Amber Ale", "Flying Monkeys Antigravity",
+                    "Flying Monkeys Hoptical", "Flying Monkeys Netherworld", "Flying Monkeys Smashbomb", "Fruli", "Fullers Extra Spec Bitter",
+                    "Fullers London Pride", "Granville English Bay Pale", "Granville Robson Hefeweizen", "Griffon Pale Ale", "Griffon Red Ale",
+                    "Hacker-Pschorr Hefe Weisse", "Hacker-Pschorr Munchen Gold", "Hockley Dark Ale", "Hoegaarden", "Hops & Robbers IPA", "Houblon Chouffe",
+                    "James Ready Original Ale", "Kawartha Cream Ale", "Kawartha Nut Brown Ale", "Kawartha Premium Pale Ale", "Kawartha Raspberry Wheat",
+                    "Keiths", "Keiths Cascade Hop Ale", "Keiths Galaxy Hop Ale", "Keiths Hallertauer Hop Ale", "Keiths Hop Series Mixer",
+                    "Keiths Premium White", "Keiths Red", "Kilkenny Cream Ale", "Konig Ludwig Weissbier", "Kronenbourg 1664 Blanc", "La Chouffe",
+                    "La Messager Red Gluten Free", "Labatt 50 Ale", "Labatt Bass Pale Ale", "Lakeport Ale", "Leffe Blonde", "Leffe Brune",
+                    "Legendary Muskoka Oddity", "Liefmans Fruitesse", "Lions Winter Ale", "Maclays", "Mad Tom IPA", "Maisels Weisse Dunkel",
+                    "Maisels Weisse Original", "Maredsous Brune", "Matador 2.0 El Toro Bravo", "Mcauslan Apricot Wheat Ale", "Mcewans Scotch Ale",
+                    "Mill St Belgian Wit", "Mill St Coffee Porter", "Mill St Stock Ale", "Mill St Tankhouse Ale", "Molson Stock Ale", "Moosehead Pale Ale",
+                    "Mort Subite Kriek", "Muskoka Cream Ale", "Muskoka Detour IPA", "Muskoka Harvest Ale", "Muskoka Premium Dark Ale", "Newcastle Brown Ale",
+                    "Niagaras Best Blonde Prem", "Okanagan Spring Pale Ale", "Old Speckled Hen", "Ommegang Belgian Pale Ale", "Ommegang Hennepin", "PC IPA",
+                    "Palm Amber Ale", "Petrus Blonde", "Petrus Oud Bruin Aged Red", "Publican House Ale", "Red Cap", "Red Falcon Ale", "Rickards Dark",
+                    "Rickards Original White", "Rickards Red", "Rodenbach Grand Cru", "Schofferhofer Hefeweizen", "Shock Top Belgian White",
+                    "Shock Top Raspberry Wheat", "Shock Top Variety Pack", "Sleeman Cream Ale", "Sleeman Dark", "Sleeman India Pale Ale", "Smithwicks Ale",
+                    "Spark House Red Ale", "St. Ambroise India Pale Ale", "St. Ambroise Oatmeal Stout", "St. Ambroise Pale Ale", "Stereovision Kristall Wheat",
+                    "Stone Hammer Dark Ale", "Sunny & Share Citrus Saison", "Tetleys English Ale", "Thirsty Beaver Amber Ale", "True North Copper Altbier",
+                    "True North Cream Ale", "True North India Pale Ale", "True North Strong", "True North Wunder Weisse", "Twice As Mad Tom IPA",
+                    "Unibroue La Fin Du Monde", "Unibroue Maudite", "Unibroue Trois Pistoles", "Upper Canada Dark Ale", "Urthel Hop-It Tripel IPA",
+                    "Waterloo IPA", "Weihenstephan Kristalweiss", "Wellington Arkell Best Bitr", "Wellington County Dark Ale", "Wellington Special Pale", "Wells IPA"
+                ],
+                "lagers": [
+                    "AC-DC Premium Lager", "Alpine Lager", "Amstel Light", "Amsterdam (416) Local Lager", "Amsterdam Natural Blonde", "Anchor Steam Beer",
+                    "Barking Squirrel Lager", "Bavaria 8.6", "Bavaria 8.6 Red", "Bavaria Grapefruit Radler", "Bavaria Premium Beer", "Bavik Pils",
+                    "Baysville Rock Cut Lager", "Becks", "Belle Gueule", "Big Rock Brewmasters Selection", "Big Rock Light Lime", "Big Rock Saaz Republic Pilz",
+                    "Birra Castello", "Birra Moretti", "Bitburger", "Black Ice", "Black Label", "Blue", "Blue Light", "Bohemian", "Boris Beer",
+                    "Boris Bold Strong Beer", "Boxer Ice", "Boxer Lager", "Brava", "Brava 5.5", "Brava Light", "Brouczech Premium Lager", "Bud Light",
+                    "Bud Light Lime", "Bud Light Lime Labatt", "Bud Light Platinum", "Budweiser", "Budweiser Crown", "Budweiser Shot Labatt", "Busch Ice",
+                    "Busch Lager", "Busch Light", "Camerons Dark266", "Camerons Lager", "Canadian", "Canadian 67", "Canadian 67 Sublime", "Canadian Coldshots",
+                    "Carib Lager", "Carling Ice", "Carling Lager", "Carling Light", "Carlsberg", "Carlsberg Lite", "Cool Beer Lager", "Coors Banquet", "Coors Light",
+                    "Corona", "Corona Light", "Cracked Canoe", "Creemore Collection", "Creemore Kellerbier", "Creemore Lager", "Creemore Springs Combo Pack",
+                    "Creemore Trad Pilsner", "Creemore Urbock", "Crest Super", "Crystal", "Czechvar", "Dab Maibock", "Dab Original Lager", "Dead Frog Mixed Pack",
+                    "Desperados Tequila Beer", "Dos Equis Amber", "Dos Equis Lager", "Dunkel Weihenstephaner", "Faxe Amber Lager", "Faxe Extra Strong - 10",
+                    "Faxe Premium Lager - 5", "Faxe Red", "Faxe Strong", "Formosa Springs Draft", "Fosters Import", "Fuerstenberg Prem Pilsener", "Get2gether",
+                    "Granville Summer Mingler", "Grolsch Lager 450ml", "Grolsch Premium Lager", "Guinness Black Lager", "Hacker-Pschorr Kellerbier", "Harbin Beer",
+                    "Harp Lager", "Heineken", "Henninger Premium Lager", "Hockley Taster Pack", "Hofbraeu Muenchen Original", "Hogsback Vintage Lager",
+                    "Hollandia Pilsner", "Holsten Festbock", "Holsten Maibock", "Holsten Premium Bier", "Hopf Weisse", "Hops Bolts India Pale Lager",
+                    "James Ready 5.5", "James Ready Ice 6.0", "James Ready Lager", "James Ready Light", "Jever Pilsener", "Keiths Brewmaster", "Keiths Light",
+                    "Keystone Ice", "Keystone Lager", "Keystone Light", "King Brewery Dark Lager", "King Brewery Pilsner", "King Brewery Vienna Lager", "Kokanee",
+                    "Kozel", "Krombacher Dark", "Krombacher Pils", "Krombacher Weizen", "Kronenbourg 1664", "La Tabachera", "Labatt Extra Dry", "Labatt Genuine Lager",
+                    "Labatt Ice", "Lakeport Honey Lager", "Lakeport Ice", "Lakeport Light", "Lakeport Pilsener", "Lakeport Red", "Laker Extra Ice", "Laker Honey",
+                    "Laker Ice", "Laker Lager", "Laker Light", "Laker Red", "Laker Strong", "Lech Beer", "Lowenbrau", "Lucky Lager", "Maximum Ice", "Menabrea Blonda",
+                    "Michelob Ultra", "Mill St Original Organic", "Millennium Buzz Hemp Beer", "Miller Chill Domestic", "Miller Chill Import",
+                    "Miller Genuine Draft Clear", "Molson Canadian Wheat", "Molson Dry", "Molson M", "Molson XXX", "Mongozo Premium Pilsner", "Moosehead Lager",
+                    "Moosehead Light", "Moosehead Light Lime", "Moskato Life", "Moskato Life Rose", "Muskoka Craft Lager", "Muskoka Summer Weiss",
+                    "Muskoka Survival Pack", "Mythos Beer", "Negra Modelo", "Neustadt Lager", "Octane 7.0", "Okanagan Craft Pack", "Okanagan Springs 1516 Lager",
+                    "Okocim Pilsner", "Old Milwaukee", "Old Milwaukee", "Old Milwaukee Ice", "Old Milwaukee Light", "Old Style Pilsner", "Old Vienna",
+                    "PC Black Lager", "PC Cerveza", "PC Down Under Amber", "PC Dry", "PC Genuine Lager", "PC Honey Red", "PC Light", "PC Low Carb", "PC Plznr",
+                    "Pabst Blue Ribbon", "Pabst Blue Ribbon 5.9", "Pabst Blue Ribbon Light", "Paulaner Hefe-Weissbier", "Pedavena Birra Dolomiti",
+                    "Peroni Nastro Azzuro", "Pilsner Urquell", "Pistonhead Kustom Lager", "Poppers Party Pack", "Prison Break Pilsner", "Radeberger Pilsner",
+                    "Red Baron", "Red Baron Light", "Red Baron Lime", "Red Baron Platinum Light", "Red Bull", "Red Stripe", "Rickards Blonde", "Rickards Cardigan",
+                    "Rickards Fall Taster", "Rickards Lederhosen", "Rickards Oakhouse", "Rickards Shandy", "Rickards Summer Taster Pack", "Rickards Taster Pack",
+                    "Rickards Winter Taster Pack", "Rolling Rock Pale Lager", "Rosarda Rose", "Saint Andre", "Samuel Adams Boston Lager", "San Miguel Premium Lager",
+                    "Sapporo", "Schnitzerbrau Gluten Free Lager", "Schofferhofer Grapefruit Radlr", "Seagram Mixer Pack", "Shock Top Lemon Shandy", "Sleeman Clear 2.0",
+                    "Sleeman Honey Brown Lager", "Sleeman Light", "Sleeman Original Draught", "Sleeman Seasonal Selections", "Sleeman Selections",
+                    "Sleeman Silver Creek Lager", "Sol", "Spaten", "St Ambroise Premium Taster", "Staropramen", "Steam Whistle", "Steeler", "Stella Artois",
+                    "Stella Legere", "Stiegl Bier", "Stiegl Grapefruit Radler", "Stone Hammer Pilsner", "Stonewall Light", "Tecate", "Tennents Export Lager",
+                    "Thurn Taxis Lager", "Thurn Taxis Pilsener", "Thurn Taxis Wolfgang Dunkl", "Tiger Beer", "Trailhead Premium Lager", "True North Blonde Lager",
+                    "Tuborg Gold", "Tuborg Pilsner", "Tyskie", "Unibroue Blanche Dechambly", "Upper Canada Lager", "Warsteiner Premium Dunkel", "Warsteiner Premium Verum",
+                    "Waterloo Amber Lager", "Waterloo Dark", "Waterloo Grapefruit Radler", "Waterloo Kolsch Sampler", "Waterloo Pilsner", "Weihenstephan Vitus",
+                    "Weihenstephaner Hefeweiss", "Wernesgruner Pils", "Winter Mingler", "Wolfgangs German Style Beer", "Xingu Black Beer", "Yanjing Beer", "Zywiec Beer"
+                ]
+            };
+
+            var nhlData = [{ "team": "Devils", "city": "New Jersey" },{ "team": "Islanders", "city": "Brooklyn"  },{ "team": "Rangers", "city": "New York"  },{ "team": "Flyers", "city": "Philadelphia"  },{ "team": "Penguins", "city": "Pittsburgh" },{ "team": "Blackhawks", "city": "Chicago" },{ "team": "Blue Jackets", "city": "Columbus" },{ "team": "Red Wings", "city": "Detroit" },{ "team": "Predators", "city": "Nashville" },{ "team": "Blues", "city": "St. Louis " },{ "team": "Bruins", "city": "Boston" },{ "team": "Sabres", "city": "Buffalo" },{ "team": "Canadiens", "city": "Montreal" },{ "team": "Senators", "city": "Ottawa" },{ "team": "Maple Leafs", "city": "Toronto" },{ "team": "Flames", "city": "Calgary" },{ "team": "Avalanche", "city": "Colorado" },{ "team": "Oilers", "city": "Edmonton" },{ "team": "Wild", "city": "Minnesota" },{ "team": "Canucks", "city": "Vancouver" },{ "team": "Hurricanes", "city": "Carolina" },{ "team": "Panthers", "city": "Florida" },{ "team": "Lightning", "city": "Tampa Bay" },{ "team": "Capitals", "city": "Washington" },{ "team": "Jets", "city": "Winnipeg" },{ "team": "Ducks", "city": "Anaheim" },{ "team": "Stars", "city": "Dallas" },{ "team": "Kings", "city": "Los Angeles" },{ "team": "Coyotes", "city": "Phoenix" },{ "team": "Sharks", "city": "San Jose" }];
+            var nbaData = [{ "team": "Celtics", "city": "Boston" },{ "team": "Mavericks", "city": "Dallas" },{ "team": "Brooklyn Nets", "city": "Brooklyn" },{ "team": "Rockets", "city": "Houston" },{ "team": "Knicks", "city": "New York" },{ "team": "Grizzlies", "city": "Memphis" },{ "team": "76ers", "city": "Philadelphia" },{ "team": "Hornets", "city": "New Orleans" },{ "team": "Raptors", "city": "Toronto" },{ "team": "Spurs", "city": "San Antonio" },{ "team": "Bulls", "city": "Chicago" },{ "team": "Nuggets", "city": "Denver" },{ "team": "Cavaliers", "city": "Cleveland" },{ "team": "Timberwolves", "city": "Minnesota" },{ "team": "Pistons", "city": "Detroit" },{ "team": "Trail Blazers", "city": "Portland" },{ "team": "Pacers", "city": "Indiana" },{ "team": "Thunder", "city": "Oklahoma City" },{ "team": "Bucks", "city": "Milwaukee" },{ "team": "Jazz", "city": "Utah" },{ "team": "Hawks", "city": "Atlanta " },{ "team": "Warriors", "city": "Golden State" },{ "team": "Bobcats", "city": "Charlotte" },{ "team": "Clippers", "city": "Los Angeles" },{ "team": "Heat", "city": "Miami" },{ "team": "Lakers", "city": "Los Angeles" },{ "team": "Orlando Magic", "city": "Brooklyn" },{ "team": "Suns", "city": "Phoenix" },{ "team": "Wizards", "city": "Washington" },{ "team": "Kings", "city": "Sacramento" }];
+            // Substring matcher function for typeahead search fields
+            var substringMatcher = function(strs) {
+              return function findMatches(q, cb) {
+                var matches, substringRegex;
+
+                // an array that will be populated with substring matches
+                matches = [];
+
+                // regex used to determine if a string contains the substring `q`
+                substrRegex = new RegExp(q, 'i');
+
+                // iterate through the pool of strings and for any string that
+                // contains the substring `q`, add it to the `matches` array
+                $.each(strs, function(i, str) {
+                  if (substrRegex.test(str)) {
+                    matches.push(str);
+                  }
+                });
+
+                cb(matches);
+              };
+            };
+
+
+            // Bloodhound initializer for the multiple dataset typeahead search
+            var nbaTeams = new Bloodhound({
+              datumTokenizer: Bloodhound.tokenizers.obj.whitespace('team', 'city'),
+              queryTokenizer: Bloodhound.tokenizers.whitespace,
+              local: nbaData
+            });
+
+            var nhlTeams = new Bloodhound({
+              datumTokenizer: Bloodhound.tokenizers.obj.whitespace('team', 'city'),
+              queryTokenizer: Bloodhound.tokenizers.whitespace,
+              local: nhlData
+            });
+
+            $('#multiple-datasets .typeahead').typeahead({
+              highlight: true,
+              classNames: {
+                input: 'form-control',
+                hint: 'Typeahead-hint',
+                selectable: 'Typeahead-selectable'
+              }
+            },
+            {
+              name: 'nba-teams',
+              display: function(data) {
+                    return data.city +' ' +data.team;
+                },
+              source: nbaTeams,
+              templates: {
+                header: '<div class="tt-dataset-header text-primary">NBA Teams</div>',
+                suggestion: function(data) {
+                    return '<div>' + data.city +' ' +data.team +'</div>';
+                }
+              }
+            },
+            {
+              name: 'nhl-teams',
+              display: function(data) {
+                    return data.city +' ' +data.team;
+                },
+              source: nhlTeams,
+              templates: {
+                header: '<div class="tt-dataset-header text-primary">NHL Teams</div>',
+                suggestion: function(data) {
+                    return '<div>' + data.city +' ' +data.team +'</div>';
+                }
+              }
+            });
+
+            // Typeahead initializer for the AFE search
+            $('#afeTypeahead .typeahead').typeahead({
+              hint: true,
+              highlight: true,
+              minLength: 1
+            },
+            {
+              name: 'afes',
+              source: substringMatcher(afes),
+              footer: '<b><span class="fakeLink" id="fakeLink">Turn off autocomplete</span></b>'
+            });
+
+
+            // Typeahead initializer for the Requisitioner search
+            $('#requisitionerTypeahead .typeahead').typeahead({
+              hint: true,
+              highlight: true,
+              minLength: 1
+            },
+            {
+              name: 'requisitioners',
+              source: substringMatcher(requisitioners)
+            });
+
+            // Typeahead initializer for the typeahead with default suggestions
+            var nflTeams = new Bloodhound({
+              datumTokenizer: Bloodhound.tokenizers.obj.whitespace('team'),
+              queryTokenizer: Bloodhound.tokenizers.whitespace,
+              identify: function(obj) { return obj.team; },
+              prefetch: '../../styleguide/data/nflData.json'
+            });
+
+            // Typeahead initializer for the Requisitioner search
+            $('#typeahead-with-suggestions .typeahead').typeahead({
+              minLength: 0,
+              highlight: true
+            },
+            {
+              name: 'nfl-teams',
+              display: 'team',
+              source: nflTeamsWithDefaults
+            });
+
+            function nflTeamsWithDefaults(q, sync) {
+              if (q === '') {
+                sync(nflTeams.get('Philadelphia Eagles', 'Green Bay Packers', 'Chicago Bears'));
+              }
+
+              else {
+                nflTeams.search(q, sync);
+              }
+            }
+
+
+            // Typeahead initializer for the grouped results typeahead search
+            $('.js-typeahead .typeahead').typeahead({
+                input: ".js-typeahead",
+                minLength: 1,
+                maxItem: 5,
+                order: "asc",
+                hint: false,
+                group: {
+                    template: " beers!"
+                },
+                maxItemPerGroup: 5,
+                href: "#",
+                dropdownFilter: "all beers",
+                emptyTemplate: "<li data-search-group='footer'><a href='javascript:;' tabindex='-1'>No Results</a></li>",
+                source: {
+                    Ale: {
+                        data: beerData.ales
+                    },
+                    lager: {
+                        data: beerData.lagers
+                    }
+                },
+                callback: {
+                    onReady: function (node) {
+                        this.container.find('.' + this.options.selector.dropdownItem + '.group-ale a').trigger('click')
+                    }
+                },
+                debug: true
+            });
+
+        }
+     );
+
+    </script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-147981672-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-147981672-1');
+    </script>
+    <!--DO NOT REMOVE-->
+    <script type="text/json" id="sg-pattern-data-footer" class="sg-pattern-data">
+  {"patternPartial":"viewall-molecules-all"}
+</script>
+
+<script>
+  /*!
+   * scriptLoader - v0.1
+   *
+   * Copyright (c) 2014 Dave Olsen, http://dmolsen.com
+   * Licensed under the MIT license
+   *
+   */
+  
+  var scriptLoader = {
+    
+    run: function(js,cb,target) {
+      var s  = document.getElementById(target+'-'+cb);
+      for (var i = 0; i < js.length; i++) {
+        var src = (typeof js[i] != 'string') ? js[i].src : js[i];
+        var c   = document.createElement('script');
+        c.src   = '../../'+src+'?'+cb;
+        if (typeof js[i] != 'string') {
+          if (js[i].dep !== undefined) {
+            c.onload = function(dep,cb,target) {
+              return function() {
+                scriptLoader.run(dep,cb,target);
+              }
+            }(js[i].dep,cb,target);
+          }
+        }
+        s.parentNode.insertBefore(c,s);
+      }
+    }
+    
+  }
+</script>
+
+<script id="pl-js-polyfill-insert-1579126521816">
+  (function() {
+    if (self != top) {
+      var cb = '1579126521816';
+      var js = [];
+      if (typeof document !== 'undefined' && !('classList' in document.documentElement)) {
+        js.push('styleguide/bower_components/classList.min.js');
+      }
+      scriptLoader.run(js,cb,'pl-js-polyfill-insert');
+    }
+  })();
+</script>
+
+<script id="pl-js-insert-1579126521816">
+  (function() {
+    if (self != top) {
+      var cb = '1579126521816';
+      var js = [ { 'src': 'styleguide/bower_components/jwerty.min.js', 'dep': [ 'styleguide/js/patternlab-pattern.min.js' ] } ];
+      scriptLoader.run(js,cb,'pl-js-insert');
+    }
+  })();
+</script>
+
+
+    </body>
+</html>

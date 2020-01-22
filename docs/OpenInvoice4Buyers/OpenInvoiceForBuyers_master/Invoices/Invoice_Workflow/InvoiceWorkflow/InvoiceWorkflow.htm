@@ -1,0 +1,1011 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+ <title>InvoiceWorkflow</title>
+
+ <link rel="stylesheet" href="../../../../OpenInvoiceForBuyers_master.css" type="text/css" />
+
+
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style>
+ <meta name="generator" content="Adobe FrameMaker 2017" />
+<script type="text/javascript" src="../../../../template/scripts/rh.min.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/common.min.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/topic.min.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/constants.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/utils.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/mhutils.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/mhlang.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/mhver.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/settings.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/XmlJsReader.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/loadparentdata.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/loadscreen.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/loadprojdata.js"></script>
+<script type="text/javascript" src="../../../../template/scripts/mhtopic.js"></script>
+ <link rel="stylesheet" type="text/css" href="../../../../template/styles/topic.min.css">
+<script type="text/javascript" >
+gRootRelPath = "../../../..";
+gCommonRootRelPath = "../../../..";
+gTopicId = "1.8_3";
+</script>
+ <meta name="brsprev" value="OpenInvoiceForBuyers_master/Invoices/Invoice_Creation/InvoiceCreation/InvoiceCreation.htm">
+ <meta name="brsnext" value="OpenInvoiceForBuyers_master/Invoices/Invoice_Coding/InvoiceCoding/InvoiceCoding.htm">
+ <meta name="topic-breadcrumbs" content="Administrator & User Guide for Buyers" />
+</head>
+
+<body dir="ltr">
+<script type="text/javascript" src="../../../../ehlpdhtm.js"></script>
+
+ <div dir="ltr">
+  <p dir="ltr" class="FM_Chapter_Title">Invoice Workflow</p>
+
+  <p dir="ltr" class="FM_Body_Style"><span style="font-size  : 20.0pt; color   : #015db8; "></span>This section provides instructions on how to work with invoices as they move through the buyer and supplier workflow. </p>
+  <p dir="ltr" class="FM_Body_Style">The following topics are applicable to users who review and modify invoices:</p>
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><a href="#XREF_74580_Invoice_Workflow"><span class="FM_ADP_TG__Link">Invoice Workflow Actions</span></a></p>
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><a href="#XREF_84683_Commenting_on_an"><span class="FM_ADP_TG__Link">Commenting on an Invoice</span></a></p>
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><a href="#XREF_81899_Printing_an_Invoice"><span class="FM_ADP_TG__Link">Printing an Invoice</span></a></p>
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><a href="#XREF_50176_Sending_an_Invoice"><span class="FM_ADP_TG__Link">Sending an Invoice Message</span></a></p>
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><a href="#XREF_67482_Adding_an"><span class="FM_ADP_TG__Link">Managing Attachments</span></a></p>
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span><a href="#XREF_14535_Invoice_Contacts"><span class="FM_ADP_TG__Link">Invoice Contacts</span></a></p>
+  <p dir="ltr" class="FM_Heading_2">Buyer and Supplier Workflow</p>
+  <p dir="ltr" class="FM_Body_Style">Invoices are exchanged between buyers and suppliers following the process below:</p>
+  <p dir="ltr" class="FM_Number_List_1___Start"><span class="FM_Bullet4">1.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>The supplier creates and submits an invoice.</p>
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">2.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span><span class="FM_infomessage">The invoice is processed based on the buyer’s configuration.</span></p>
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">3.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>The buyer approves or disputes the invoice.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Based on the buyer’s configuration, the buyer may be required to code verify the invoice.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Based on the buyer’s configuration, the processing may be in the <span data-name="ADP_Software_Name" data-val="OpenInvoice Platform" data-showval="TRUE" data-format="ADP_Software_Name">OpenInvoice Platform</span>&#160;or the buyer’s ERP.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>If an invoice is disputed, the invoice is sent back to the supplier who can cancel it or modify and resubmit it.</p>
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">4.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Once the invoice is approved, it is at the end of workflow in <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span> and is ready to be paid.</p>
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>If both the buyer and supplier are configured to use the Payment module, payment processing may be done through <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>.</p>
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>If the buyer determines there is an issue with the invoice after the invoice is approved, the buyer is able to return the invoice to the workflow for issue resolution using the Unapprove feature.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Based on the buyer’s configuration, the coding on the invoice may be amended.</p>
+
+  <p dir="ltr" class="FM_Heading_2"><span style="font-size  : 12.0pt; color   : #000000; "></span>Performing Batch Invoice Workflow Actions </p>
+
+  <p dir="ltr" class="FM_Body_Style">Depending on your search criteria or the counter you select in the <span style="font-weight : bold; ">Invoices</span>&#160;portlet, some workflow actions may be performed in batch. If performing an action on a batch of invoices, consider that some invoices on the list page cannot be processed if you do not have the appropriate permissions or the invoice is not in the appropriate workflow status. These invoices are not differentiated on the list page and you will still be able to select them as part of the batch action. However, once you click the action button, an error message will appear stating that one or more of the invoices cannot be processed.</p>
+
+  <p dir="ltr" class="FM_Body_Style">Batch invoice workflow actions can be performed on the following list pages which are accessed from the <span style="font-weight : bold; ">Invoices</span>&#160;portlet:</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>Ready to Code</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>My Ready to Code</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>My Ready to Review</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>Ready to Approve</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>My Ready to Approve</p>
+
+  <p dir="ltr" class="FM_Body_Style">Batch invoice workflow actions can also be performed directly in the <span style="font-weight : bold; ">My Ready to Approve</span> portlet.</p>
+
+  <p dir="ltr" class="FM_Note___Start"><span class="FM_Bold">Note:<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>In order to batch approve an invoice you must be assigned the Invoice Batch Approve permission.</p>
+
+  <p dir="ltr" class="FM_Heading_2">Invoice Status</p>
+  <p dir="ltr" class="FM_Body_Style">The Invoice status is assigned based on where the invoice is within the workflow.<span style="font-size: small;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="font-size: small;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="font-size: small;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+
+<div width="100%" align="left">
+  <table border-spacing="0" dir="ltr" class="table147" border-collapse="collapse" style="max-width: 100% ;height: auto">
+   <tr class="tr136">
+   <th class="td214">
+   <p dir="ltr" class="FM_CellHeading">Status</p>
+</th>
+   <th class="td215">
+   <p dir="ltr" class="FM_CellHeading">Description</p>
+</th>
+</tr>
+   <tr class="tr100">
+   <td class="td87">
+   <p dir="ltr" class="FM_Table_Text">On-Hold</p>
+</td>
+   <td class="td216">
+   <p dir="ltr" class="FM_Table_Text">Invoice cannot move through workflow until an issue has been resolved. When viewing the invoice, the status field will display <span style="font-weight : bold; ">On-Hold: (Pending Supplier Setup)</span>&#160;for invoices posted from suppliers who are not completely configured or <span style="font-weight : bold; ">On-Hold: (Pending Duplicate Resolution)</span> for invoices that the system has flagged as duplicate.</p>
+</td>
+</tr>
+   <tr class="tr95">
+   <td class="td87">
+   <p dir="ltr" class="FM_Table_Text">Submitted</p>
+</td>
+   <td class="td216">
+   <p dir="ltr" class="FM_Table_Text">Invoice has been submitted by the supplier and is not yet approved. This includes invoices that have been worked on, but the entire workflow has not been completed. For example, in the Code then Approve workflow, invoices with a Submitted status have been code verified. In the Approve then Code workflow, invoices with a Submitted status have been financially approved.</p>
+</td>
+</tr>
+   <tr class="tr105">
+   <td class="td87">
+   <p dir="ltr" class="FM_Table_Text">Disputed</p>
+</td>
+   <td class="td216">
+   <p dir="ltr" class="FM_Table_Text">Invoice has been disputed by the buyer and is currently waiting for supplier action. The invoice cannot be deleted but must be either modified and resubmitted or cancelled.</p>
+</td>
+</tr>
+   <tr class="tr95">
+   <td class="td87">
+   <p dir="ltr" class="FM_Table_Text">Re-Submitted</p>
+</td>
+   <td class="td216">
+   <p dir="ltr" class="FM_Table_Text">Invoice has been disputed by the buyer, modified by the supplier and resubmitted. This includes invoices that have been worked on, but the entire workflow has not been completed. For example, in the Code then Approve workflow, invoices with a Re-Submitted status have been code verified. In the Approve then Code workflow, invoices with a Re-Submitted status have been financially approved.</p>
+</td>
+</tr>
+   <tr class="tr90">
+   <td class="td87">
+   <p dir="ltr" class="FM_Table_Text">Cancelled</p>
+</td>
+   <td class="td216">
+   <p dir="ltr" class="FM_Table_Text">Disputed invoice that is subsequently cancelled by the supplier or the system if your company has configured this option. Once cancelled, the invoice has reached end-of-life and cannot be modified.</p>
+</td>
+</tr>
+   <tr class="tr95">
+   <td class="td87">
+   <p dir="ltr" class="FM_Table_Text">Approved</p>
+</td>
+   <td class="td216">
+   <p dir="ltr" class="FM_Table_Text">Invoice has been reviewed and approved for payment; however, it can be modified through the amend or unapprove process. An invoice with Approved status may or may not have been paid; however, the invoice cannot be unapproved if it is paid. Invoices can be flagged as paid, and the action will show up in the Invoice Journal, but there is no separate status for a paid invoice.</p>
+</td>
+</tr>
+  </table>
+</div>
+  <p dir="ltr" class="FM_Body_Style"><span style="font-size: small;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+  <p dir="ltr" class="FM_Heading_1"><a name="XREF_74580_Invoice_Workflow"></a>Invoice Workflow Actions</p>
+
+  <div align="center"><img alt="InvoiceOverview_invoicestructureBuyer.png" id="image320" src="../../../../assets/InvoiceOverview_invoicestructureBuyer.png" style="max-width: 100% ;height: auto" />
+  </div>
+  <p dir="ltr" class="FM_Screenshot_Anchor">&nbsp;</p>
+  <p dir="ltr" class="FM_Heading_2_HowTo">How to Modify and Submit a Saved or Disputed Image OBO Invoice</p>
+
+  <p dir="ltr" class="FM_Permission___Start"><span class="FM_Bold">Permission:<span style="padding-left: 21pt;" class="FMAutoNumber_1"></span></span>Invoice Modify (IM)</p>
+
+  <p dir="ltr" class="FM_Permission___Next"><span class="FM_Bold"><span style="padding-left: 72pt;" class="FMAutoNumber_1"></span></span>Invoice Modify to delete attachments added by other users</p>
+
+  <p dir="ltr" class="FM_Prerequisite___Start"><span class="FM_Bold">Prerequisite:<span style="padding-left: 18pt;" class="FMAutoNumber_1"></span></span>The invoice is in Saved or Disputed status.</p>
+  <p dir="ltr" class="FM_Note___Start"><span class="FM_Bold">Note:<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Once created, an invoice can be immediately submitted without first saving it to the platform. </p>
+  <p dir="ltr" class="FM_Steps"><span class="FM_Bold">Steps:<span style="padding-left: 8pt;" class="FMAutoNumber_1"></span></span></p>
+
+  <p dir="ltr" class="FM_Number_List_1___Start"><span class="FM_Bullet4">1.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Select <span style="font-weight : bold; ">Create Invoice &gt; Dashboard</span>.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">2.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click either the <span style="font-weight : bold; ">Unsubmitted</span>&#160;or <span style="font-weight : bold; ">Disputed</span>&#160;counter in the <span style="font-weight : bold; ">Invoices </span>portlet.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">3.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click the <span style="font-weight : bold; ">Invoice #</span>.</p>
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">4.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Modify the invoice as needed.</p>
+  <p dir="ltr" class="FM_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 13pt;" class="FMAutoNumber_2"></span></span>If the invoice was code verified&#160;before the dispute you will not be able to modify the <span style="font-weight : bold; ">AFE</span>, <span style="font-weight : bold; ">Cost Center</span>, <span style="font-weight : bold; ">Location</span>, <span style="font-weight : bold; ">Field/Lease</span>, <span style="font-weight : bold; ">Asset Number</span>, <span style="font-weight : bold; ">Purchase Order Number</span>, or <span style="font-weight : bold; ">Work Order Number</span>.</p>
+  <p dir="ltr" class="FM_Note_Indent___Next"><span class="FM_Bold"><span style="padding-left: 54pt;" class="FMAutoNumber_1"></span></span>The buyer configures whether referenced purchase orders must be one of the purchase orders in <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span> or whether the supplier is allowed to reference external purchase orders.&#160;</p>
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">5.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Submit</span>.</p>
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">6.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>(<span style="font-style : italic; ">Optional</span>) Enter a <span style="font-weight : bold; ">Comment</span>.</p>
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">7.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Submit</span>.</p>
+  <p dir="ltr" class="FM_Heading_2_HowTo">How to <span style="font-weight : normal; font-size  : 10.0pt; color   : #000000; "></span>Delete a Saved Image OBO Invoice</p>
+
+  <p dir="ltr" class="FM_Permission___Start"><span class="FM_Bold">Permission:<span style="padding-left: 21pt;" class="FMAutoNumber_1"></span></span>Invoice Delete (IM)</p>
+
+  <p dir="ltr" class="FM_Prerequisite___Start"><span class="FM_Bold">Prerequisite:<span style="padding-left: 18pt;" class="FMAutoNumber_1"></span></span>The invoice is in Saved status.</p>
+  <p dir="ltr" class="FM_Steps"><span class="FM_Bold">Steps:<span style="padding-left: 8pt;" class="FMAutoNumber_1"></span></span></p>
+
+  <p dir="ltr" class="FM_Number_List_1___Start"><span class="FM_Bullet4">1.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Select <span style="font-weight : bold; ">Create Invoice &gt; Dashboard</span>.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">2.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click the <span style="font-weight : bold; ">Unsubmitted</span>&#160;counter in the <span style="font-weight : bold; ">Invoices</span> portlet.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">3.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click the <span style="font-weight : bold; ">Invoice Number</span>.</p>
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">4.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click the <span style="font-weight : bold; ">Delete</span> button.</p>
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">5.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">OK</span> to confirm.</p>
+  <p dir="ltr" class="FM_Heading_2_HowTo">How to Cancel a Disputed Image OBO Invoice</p>
+
+  <p dir="ltr" class="FM_Permission___Start"><span class="FM_Bold">Permission:<span style="padding-left: 21pt;" class="FMAutoNumber_1"></span></span>Invoice Modify (IM) if cancelled by the indexer</p>
+
+  <p dir="ltr" class="FM_Permission___Next"><span class="FM_Bold"><span style="padding-left: 72pt;" class="FMAutoNumber_1"></span></span>Invoice Modify (IM) or Invoice Admin if cancelled by a user in the dispute department</p>
+
+  <p dir="ltr" class="FM_Prerequisite___Start"><span class="FM_Bold">Prerequisite:<span style="padding-left: 18pt;" class="FMAutoNumber_1"></span></span>The invoice is in Disputed status&#160;or the invoice was disputed to an internal dispute resolution department. </p>
+
+  <p dir="ltr" class="FM_Note___Start"><span class="FM_Bold">Note:<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>An image indexer in a “Dispute Department” and Invoice administrator can cancel OBO invoices themselves. </p>
+
+  <p dir="ltr" class="FM_Steps"><span class="FM_Bold">Steps:<span style="padding-left: 8pt;" class="FMAutoNumber_1"></span></span></p>
+  <p dir="ltr" class="FM_Number_List_1___Start"><span class="FM_Bullet4">1.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Do one of the following:</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Select <span style="font-weight : bold; ">Create Invoice &gt; Dashboard</span>.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Click the <span style="font-weight : bold; ">Disputed</span>&#160;counter in the <span style="font-weight : bold; ">Invoices</span> portlet.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">2.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click the <span style="font-weight : bold; ">Invoice Number</span>.</p>
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">3.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click the <span style="font-weight : bold; ">Cancel</span> button.</p>
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">4.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">OK</span> to confirm.</p>
+
+  <p dir="ltr" class="FM_Heading_2_HowTo">How to Dispute an Invoice Not in the My Ready to Approve Portlet</p>
+
+  <p dir="ltr" class="FM_Permission___Start"><span class="FM_Bold">Permission:<span style="padding-left: 21pt;" class="FMAutoNumber_1"></span></span>Invoice Modify if the invoice is in the Code Verify portion of the workflow</p>
+
+  <p dir="ltr" class="FM_Permission___Next"><span class="FM_Bold"><span style="padding-left: 72pt;" class="FMAutoNumber_1"></span></span>Invoice Approve or Invoice Modify if the invoice is in the Financial Approval portion of the workflow.</p>
+
+  <p dir="ltr" class="FM_Permission___Next"><span class="FM_Bold"><span style="padding-left: 72pt;" class="FMAutoNumber_1"></span></span>Invoice Admin if the invoice is owned by another user and you are not the invoice owner’s delegate.</p>
+
+  <p dir="ltr" class="FM_Prerequisite___Start"><span class="FM_Bold">Prerequisite:<span style="padding-left: 18pt;" class="FMAutoNumber_1"></span></span>The invoice is in Submitted or Resubmitted status.</p>
+
+  <p dir="ltr" class="FM_Note___Start"><span class="FM_Bold">Note:<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Depending on your company’s workflow configuration, disputing will either return the invoice to the supplier or send the invoice to an internal dispute resolution department.</p>
+
+  <p dir="ltr" class="FM_Note___Next"><span class="FM_Bold"><span style="padding-left: 36pt;" class="FMAutoNumber_1"></span></span>An invoice submitted through the Image Post process can only be disputed if there is a internal dispute department configured for the invoice.</p>
+
+  <p dir="ltr" class="FM_Steps"><span class="FM_Bold">Steps:<span style="padding-left: 8pt;" class="FMAutoNumber_1"></span></span></p>
+
+  <p dir="ltr" class="FM_Number_List_1___Start"><span class="FM_Bullet4">1.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Do one of the following:</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Select <span style="font-weight : bold; ">Invoice &gt; Dashboard</span> and click one of the dashboard counters.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Perform a search by invoice number using the <span style="font-weight : bold; ">Global Search</span> field in the main navigation bar.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Perform a search with multiple criteria by going to <span style="font-weight : bold; ">Invoice</span>&#160;&gt; <span style="font-weight : bold; ">Invoice Search</span>.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">2.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Do one of the following:</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>To view and dispute a single invoice, click the invoice number.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>To dispute multiple invoices, select the checkboxes next to the invoices to dispute.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">3.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Dispute</span>. </p>
+
+  <p dir="ltr" class="FM_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 13pt;" class="FMAutoNumber_2"></span></span>If disputing a single invoice, the confirmation page will display all prior disputes for the invoice as well as a message stating whether the dispute will send the invoice to the supplier to an internal dispute resolution department.</p>
+
+  <p dir="ltr" class="FM_Note_Indent___Next"><span class="FM_Bold"><span style="padding-left: 54pt;" class="FMAutoNumber_1"></span></span>If disputing a batch of invoices, consider that some invoices on the list page cannot be disputed if you do not have the appropriate permissions. An error message will appear stating that one or more of the invoices cannot be processed.</p>
+
+  <p dir="ltr" class="FM_Note_Indent___Next"><span class="FM_Bold"><span style="padding-left: 54pt;" class="FMAutoNumber_1"></span></span>If the invoice is code verified before it is disputed, the supplier will not be able to modify the AFE, cost center, location, field/lease, asset number, purchase order number, or work order number before resubmitting the invoice.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">4.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Enter a comment<span style="font-weight : bold; ">&#160;</span>and, if dispute categorization has been enabled, enter a dispute category.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">5.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Submit</span>.</p>
+
+  <p dir="ltr" class="FM_Heading_2_HowTo">How to Dispute an Invoice in the My Ready to Approve Portlet</p>
+
+  <p dir="ltr" class="FM_Permission___Start"><span class="FM_Bold">Permission:<span style="padding-left: 21pt;" class="FMAutoNumber_1"></span></span>Invoice Modify if the invoice is in the Code Verify portion of the workflow</p>
+
+  <p dir="ltr" class="FM_Permission___Next"><span class="FM_Bold"><span style="padding-left: 72pt;" class="FMAutoNumber_1"></span></span>Invoice Approve or Invoice Modify if the invoice is in the Financial Approval portion of the workflow.</p>
+
+  <p dir="ltr" class="FM_Permission___Next"><span class="FM_Bold"><span style="padding-left: 72pt;" class="FMAutoNumber_1"></span></span>Invoice Admin if the invoice is owned by another user and you are not the invoice owner’s delegate.</p>
+
+  <p dir="ltr" class="FM_Prerequisite___Start"><span class="FM_Bold">Prerequisite:<span style="padding-left: 18pt;" class="FMAutoNumber_1"></span></span>The invoice is in Submitted or Resubmitted status.</p>
+
+  <p dir="ltr" class="FM_Note___Start"><span class="FM_Bold">Note:<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Depending on your company’s workflow configuration, disputing will either return the invoice to the supplier or send the invoice to an internal dispute resolution department.</p>
+
+  <p dir="ltr" class="FM_Note___Next"><span class="FM_Bold"><span style="padding-left: 36pt;" class="FMAutoNumber_1"></span></span>An invoice submitted through the Image Post process can only be disputed if there is a internal dispute department configured for the invoice.</p>
+
+  <p dir="ltr" class="FM_Steps"><span class="FM_Bold">Steps:<span style="padding-left: 8pt;" class="FMAutoNumber_1"></span></span></p>
+
+  <p dir="ltr" class="FM_Number_List_1___Start"><span class="FM_Bullet4">1.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Do one of the following:</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>To view and dispute a single invoice, click the invoice number.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>To dispute multiple invoices, select the checkboxes next to the invoices to dispute.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">2.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Dispute</span>. </p>
+
+  <p dir="ltr" class="FM_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 13pt;" class="FMAutoNumber_2"></span></span>If disputing a single invoice, the confirmation page will display all prior disputes for the invoice as well as a message stating whether the dispute will send the invoice to the supplier to an internal dispute resolution department.</p>
+
+  <p dir="ltr" class="FM_Note_Indent___Next"><span class="FM_Bold"><span style="padding-left: 54pt;" class="FMAutoNumber_1"></span></span>If disputing a batch of invoices, consider that some invoices on the list page cannot be disputed if you do not have the appropriate permissions. An error message will appear stating that one or more of the invoices cannot be processed.</p>
+
+  <p dir="ltr" class="FM_Note_Indent___Next"><span class="FM_Bold"><span style="padding-left: 54pt;" class="FMAutoNumber_1"></span></span>If the invoice is code verified before it is disputed, the supplier will not be able to modify the AFE, cost center, location, field/lease, asset number, purchase order number, or work order number before resubmitting the invoice.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">3.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Enter a comment<span style="font-weight : bold; ">&#160;</span>and, if dispute categorization has been enabled, enter a dispute category.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">4.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Submit</span>.</p>
+
+  <p dir="ltr" class="FM_Heading_2_HowTo">How to Forward an Invoice Not in the My Ready to Approve Portlet</p>
+
+  <p dir="ltr" class="FM_Permission___Start"><span class="FM_Bold">Permission:<span style="padding-left: 21pt;" class="FMAutoNumber_1"></span></span>Invoice View if you are the invoice owner or the invoice owner’s delegate.</p>
+
+  <p dir="ltr" class="FM_Permission___Next"><span class="FM_Bold"><span style="padding-left: 72pt;" class="FMAutoNumber_1"></span></span>Invoice Modify if the invoice is owned by a department and is in the Code Verify portion of the workflow</p>
+
+  <p dir="ltr" class="FM_Permission___Next"><span class="FM_Bold"><span style="padding-left: 72pt;" class="FMAutoNumber_1"></span></span>Invoice Approve or Invoice Modify if the invoice is owned by a department and is in the Financial Approval portion of the workflow.</p>
+
+  <p dir="ltr" class="FM_Permission___Next"><span class="FM_Bold"><span style="padding-left: 72pt;" class="FMAutoNumber_1"></span></span>Invoice Admin if the invoice is owned by another user and you are not the invoice owner’s delegate.</p>
+
+  <p dir="ltr" class="FM_Prerequisite___Start"><span class="FM_Bold">Prerequisite:<span style="padding-left: 18pt;" class="FMAutoNumber_1"></span></span>The invoice is in Submitted or Resubmitted status.</p>
+
+  <p dir="ltr" class="FM_Note___Start"><span class="FM_Bold">Note:<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>You cannot forward an invoice when working on behalf of a supplier in the <span style="font-weight : bold; ">Create Invoice</span> module.</p>
+
+  <p dir="ltr" class="FM_Steps"><span class="FM_Bold">Steps:<span style="padding-left: 8pt;" class="FMAutoNumber_1"></span></span></p>
+
+  <p dir="ltr" class="FM_Number_List_1___Start"><span class="FM_Bullet4">1.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Do one of the following:</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Select <span style="font-weight : bold; ">Invoice &gt; Dashboard</span> and click one of the dashboard counters.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Perform a search by invoice number using the Global Search field in the main navigation bar.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Perform a search with multiple criteria by going to <span style="font-weight : bold; ">Invoice</span>&#160;&gt; <span style="font-weight : bold; ">Invoice Search</span>.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">2.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Do one of the following:</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>To view and forward a single invoice, click the invoice number.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>To forward multiple invoices, select the checkboxes next to the invoices to forward.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">3.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Forward</span>.</p>
+
+  <div align="center"><img alt="InvoiceForwardPage.png" id="image321" src="../../../../assets/InvoiceForwardPage.png" style="max-width: 100% ;height: auto" />
+  </div>
+  <p dir="ltr" class="FM_Screenshot_Anchor">&nbsp;</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">4.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Do one of the following:</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Enter the recipient user’s first or last name into the <span style="font-weight : bold; ">User Search</span>&#160;field, click the lookup icon, select the recipient, then click <span style="font-weight : bold; ">Submit</span>.</p>
+
+  <p dir="ltr" class="FM_Note_Indent2___Start"><span class="FM_Bold"><span style="padding-left: 36pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 13pt;" class="FMAutoNumber_2"></span></span>To select a recipient from a complete list of users, type an asterisk (*) into the<span style="font-weight : bold; ">&#160;</span>field. If a name appears more than once in the list, select the name with the corresponding site and department where you want to forward the invoice.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Under <span style="font-weight : bold; ">Site and Department Search</span>, select the site, department, and user. To forward your invoice to a site and department only, do not select a user.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">5.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>If required, enter a comment.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">6.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Submit</span>.</p>
+
+  <p dir="ltr" class="FM_Heading_2_HowTo">How to Forward an Invoice in the My Ready to Approve Portlet</p>
+
+  <p dir="ltr" class="FM_Permission___Start"><span class="FM_Bold">Permission:<span style="padding-left: 21pt;" class="FMAutoNumber_1"></span></span>Invoice View if you are the invoice owner or the invoice owner’s delegate.</p>
+
+  <p dir="ltr" class="FM_Permission___Next"><span class="FM_Bold"><span style="padding-left: 72pt;" class="FMAutoNumber_1"></span></span>Invoice Modify if the invoice is owned by a department and is in the Code Verify portion of the workflow</p>
+
+  <p dir="ltr" class="FM_Permission___Next"><span class="FM_Bold"><span style="padding-left: 72pt;" class="FMAutoNumber_1"></span></span>Invoice Approve or Invoice Modify if the invoice is owned by a department and is in the Financial Approval portion of the workflow.</p>
+
+  <p dir="ltr" class="FM_Permission___Next"><span class="FM_Bold"><span style="padding-left: 72pt;" class="FMAutoNumber_1"></span></span>Invoice Admin if the invoice is owned by another user and you are not the invoice owner’s delegate.</p>
+
+  <p dir="ltr" class="FM_Prerequisite___Start"><span class="FM_Bold">Prerequisite:<span style="padding-left: 18pt;" class="FMAutoNumber_1"></span></span>The invoice is in Submitted or Resubmitted status.</p>
+
+  <p dir="ltr" class="FM_Note___Start"><span class="FM_Bold">Note:<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>You cannot forward an invoice when working on behalf of a supplier in the <span style="font-weight : bold; ">Create Invoice</span> module.</p>
+
+  <p dir="ltr" class="FM_Steps"><span class="FM_Bold">Steps:<span style="padding-left: 8pt;" class="FMAutoNumber_1"></span></span></p>
+
+  <p dir="ltr" class="FM_Number_List_1___Start"><span class="FM_Bullet4">1.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Do one of the following:</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>To view and forward a single invoice, click the invoice number.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>To forward multiple invoices, select the checkboxes next to the invoices to forward.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">2.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Forward</span>.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">3.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Do one of the following:</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Enter the recipient user’s first or last name into the <span style="font-weight : bold; ">User Search</span>&#160;field, click the lookup icon, select the recipient, then click <span style="font-weight : bold; ">Submit</span>.</p>
+
+  <p dir="ltr" class="FM_Note_Indent2___Start"><span class="FM_Bold"><span style="padding-left: 36pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 13pt;" class="FMAutoNumber_2"></span></span>To select a recipient from a complete list of users, type an asterisk (*) into the<span style="font-weight : bold; ">&#160;</span>field. If a name appears more than once in the list, select the name with the corresponding site and department where you want to forward the invoice.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Under <span style="font-weight : bold; ">Site and Department Search</span>, select the site, department, and user. To forward your invoice to a site and department only, do not select a user.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">4.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>If required, enter a comment.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">5.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Submit</span>.</p>
+
+  <p dir="ltr" class="FM_Heading_2_HowTo">How to Recall a Forwarded Invoice</p>
+
+  <p dir="ltr" class="FM_Permission___Start"><span class="FM_Bold">Permission:<span style="padding-left: 21pt;" class="FMAutoNumber_1"></span></span>Invoice View if you are the invoice owner or the invoice owner’s delegate.</p>
+
+  <p dir="ltr" class="FM_Steps"><span class="FM_Bold">Steps:<span style="padding-left: 8pt;" class="FMAutoNumber_1"></span></span></p>
+
+  <p dir="ltr" class="FM_Number_List_1___Start"><span class="FM_Bullet4">1.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Do one of the following:</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Select <span style="font-weight : bold; ">Invoice &gt; Dashboard</span> and click one of the dashboard counters.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Perform a search by invoice number using the Global Search field in the main navigation bar.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Perform a search with multiple criteria by going to <span style="font-weight : bold; ">Invoice</span>&#160;&gt; <span style="font-weight : bold; ">Invoice Search</span>.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">2.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click on the <span style="font-weight : bold; ">Invoice #</span>&#160;you want to recall. </p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">3.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click the <span style="font-weight : bold; ">Recall</span>&#160;button at the bottom of the page. &#160;</p>
+
+  <p dir="ltr" class="FM_Heading_2_HowTo">How to Code Verify an Invoice</p>
+
+  <p dir="ltr" class="FM_Permission___Start"><span class="FM_Bold">Permission:<span style="padding-left: 21pt;" class="FMAutoNumber_1"></span></span>Invoice Code </p>
+
+  <p dir="ltr" class="FM_Prerequisite___Start"><span class="FM_Bold">Prerequisite:<span style="padding-left: 18pt;" class="FMAutoNumber_1"></span></span>The invoice is in Submitted or Resubmitted status.</p>
+
+  <p dir="ltr" class="FM_Prerequisite___Next"><span class="FM_Bold"><span style="padding-left: 72pt;" class="FMAutoNumber_1"></span></span>A user with the Invoice Modify permission has fully coded the invoice.</p>
+
+  <p dir="ltr" class="FM_Prerequisite___Next"><span class="FM_Bold"><span style="padding-left: 72pt;" class="FMAutoNumber_1"></span></span>The invoice is in the Code Verify portion of the workflow.</p>
+
+  <p dir="ltr" class="FM_Steps"><span class="FM_Bold">Steps:<span style="padding-left: 8pt;" class="FMAutoNumber_1"></span></span></p>
+
+  <p dir="ltr" class="FM_Number_List_1___Start"><span class="FM_Bullet4">1.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Do one of the following:</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Select <span style="font-weight : bold; ">Invoice &gt; Dashboard</span>&#160;and click either the <span style="font-weight : bold; ">Ready to Code</span>&#160;or <span style="font-weight : bold; ">My Ready to Code</span> counter.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Perform a search by invoice number using the Global Search field in the main navigation bar.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Perform a search with multiple criteria by going to <span style="font-weight : bold; ">Invoice</span>&#160;&gt; <span style="font-weight : bold; ">Invoice Search</span>.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">2.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click the invoice number.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">3.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Review and, if necessary, modify the coding.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">4.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Do one of the following:</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Check Coding</span>&#160;to have <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span> validate the coding.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Code Verify</span>.</p>
+
+  <p dir="ltr" class="FM_Note_Indent2___Start"><span class="FM_Bold"><span style="padding-left: 36pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 13pt;" class="FMAutoNumber_2"></span></span>The supplier will not be able to modify the AFE, cost center, location, field/lease, asset number, PO number, or WO number before resubmitting if the invoice gets disputed at a future date.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Verify and Approve</span>&#160;</p>
+
+  <p dir="ltr" class="FM_Note_Indent2___Start"><span class="FM_Bold"><span style="padding-left: 36pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 13pt;" class="FMAutoNumber_2"></span></span>This option will only be available if you have the Invoice Approve permission, you have an authorization level, and your company uses the Code then Approve workflow.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">5.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>If there is a validation issue, modify the coding and go back to step 4.</p>
+
+<div width="100%" align="left">
+  <table border-spacing="0" dir="ltr" class="table217" border-collapse="collapse" style="max-width: 100% ;height: auto">
+   <tr class="tr218">
+   <td class="td219">
+   <p dir="ltr" class="FM_Body_Style">If using the Code then Approve workflow and you clicked <span style="font-weight : bold; ">Code Verify</span>, do one of the following:</p>
+
+   <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Approve Now</span> approve the invoice.</p>
+
+   <p dir="ltr" class="FM_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 13pt;" class="FMAutoNumber_2"></span></span>The Invoice Approve permission and an authorization level are required.</p>
+
+   <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Approve Later</span>&#160;to complete code verification and retain ownership so you can financially approve it later.</p>
+
+   <p dir="ltr" class="FM_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 13pt;" class="FMAutoNumber_2"></span></span>The Invoice Approve permission and an authorization level are required.</p>
+
+   <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>Forward the invoice for financial approval:</p>
+
+   <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Perform a <span style="font-weight : bold; ">User Search</span>&#160;or select a site, department, and optional user.</p>
+
+   <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Enter an optional comment.</p>
+
+   <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Submit</span>.</p>
+</td>
+   <td class="td220">
+   <p dir="ltr" class="FM_Table_Text">&nbsp;</p>
+</td>
+   <td class="td221">
+   <p dir="ltr" class="FM_Body_Style">If using the Code then Approve workflow and you clicked <span style="font-weight : bold; ">Verify and Approve</span>, do one of the following:</p>
+
+   <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">OK</span>&#160;to confirm your final financial approval and change the invoice status to Approved.</p>
+
+   <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>Forward the invoice for additional financial approval:</p>
+
+   <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Perform a <span style="font-weight : bold; ">User Search</span>&#160;or select a site, department, and optional user.</p>
+
+   <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Enter an optional comment.</p>
+
+   <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Submit</span>.</p>
+   <p dir="ltr" class="FM_Body_Style">If using the Approve then Code workflow, click <span style="font-weight : bold; ">OK</span>&#160;to complete the invoice workflow and change the invoice status to Approved.</p>
+</td>
+</tr>
+  </table>
+</div>
+  <p dir="ltr" class="FM_Heading_2_HowTo">How to Financially Approve an Invoice</p>
+
+  <p dir="ltr" class="FM_Permission___Start"><span class="FM_Bold">Permission:<span style="padding-left: 21pt;" class="FMAutoNumber_1"></span></span>Invoice Approve and an authorization level</p>
+
+  <p dir="ltr" class="FM_Permission___Next"><span class="FM_Bold"><span style="padding-left: 72pt;" class="FMAutoNumber_1"></span></span>Invoice Batch Approve to approve multiple invoices in a single action</p>
+
+  <p dir="ltr" class="FM_Prerequisite___Start"><span class="FM_Bold">Prerequisite:<span style="padding-left: 18pt;" class="FMAutoNumber_1"></span></span>The invoice is in Submitted or Resubmitted status.</p>
+
+  <p dir="ltr" class="FM_Prerequisite___Next"><span class="FM_Bold"><span style="padding-left: 72pt;" class="FMAutoNumber_1"></span></span>If using the GL Based Approvals method, a user with the Invoice Modify permission has fully coded the invoice.</p>
+
+  <p dir="ltr" class="FM_Prerequisite___Next"><span class="FM_Bold"><span style="padding-left: 72pt;" class="FMAutoNumber_1"></span></span>The invoice is in the financial approval portion of the workflow. </p>
+
+  <p dir="ltr" class="FM_Heading_3">Invoices Not in the My Ready to Approve Portlet</p>
+
+  <p dir="ltr" class="FM_Body_Style">Use these procedures to financially approve invoices that are not listed in the My Ready to Approve portlet. </p>
+
+  <p dir="ltr" class="FM_Heading_4">To financially approve invoices using the Code then Approve or Approve Only workflow:</p>
+
+  <p dir="ltr" class="FM_Steps"><span class="FM_Bold">Steps:<span style="padding-left: 8pt;" class="FMAutoNumber_1"></span></span></p>
+
+  <p dir="ltr" class="FM_Number_List_1___Start"><span class="FM_Bullet4">1.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Do one of the following:</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Go to <span style="font-weight : bold; ">Invoice &gt; Dashboard</span>&#160;and click either the <span style="font-weight : bold; ">Ready to Approve</span>&#160;or <span style="font-weight : bold; ">My Ready to Approve </span>counter. </p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Perform a search by invoice number using the Global Search field in the main navigation bar.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Perform a search with multiple criteria by going to <span style="font-weight : bold; ">Invoice &gt; Invoice Search</span>. </p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">2.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Do one of the following:</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>To view and approve a single invoice, click the invoice number. </p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>To approve multiple invoices, select the checkboxes next to the invoices to approve.</p>
+
+  <p dir="ltr" class="FM_Note_Indent2___Start"><span class="FM_Bold"><span style="padding-left: 36pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 13pt;" class="FMAutoNumber_2"></span></span>The ability to approve multiple invoices at once is controlled by a company preference. </p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">3.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Approve</span>. </p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">4.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Do one of the following:</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">OK</span>&#160;to confirm that you are performing a final financial approval and the invoice status will change to Approved. </p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Forward the invoice for additional financial approval:</p>
+
+  <p dir="ltr" class="FM_Bullet_List_3"><span class="FM_Bullet3">-<span style="padding-left: 15pt;" class="FMAutoNumber_1"></span></span>Perform a <span style="font-weight : bold; ">User Search</span>&#160;or select a site, department and optional user. </p>
+
+  <p dir="ltr" class="FM_Bullet_List_3"><span class="FM_Bullet3">-<span style="padding-left: 15pt;" class="FMAutoNumber_1"></span></span>(<span style="font-style : italic; ">Optional)</span>&#160;Enter a comment. </p>
+
+  <p dir="ltr" class="FM_Bullet_List_3"><span class="FM_Bullet3">-<span style="padding-left: 15pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Submit</span>. </p>
+
+  <p dir="ltr" class="FM_Heading_4">To financially approve invoices using the Approve then Code workflow:</p>
+
+  <p dir="ltr" class="FM_Steps"><span class="FM_Bold">Steps:<span style="padding-left: 8pt;" class="FMAutoNumber_1"></span></span></p>
+
+  <p dir="ltr" class="FM_Number_List_1___Start"><span class="FM_Bullet4">1.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Do one of the following:</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Go to <span style="font-weight : bold; ">Invoice &gt; Dashboard</span>&#160;and click either the <span style="font-weight : bold; ">Ready to Approve</span>&#160;or <span style="font-weight : bold; ">My Ready to Approve </span>counter. </p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Perform a search by invoice number using the Global Search field in the main navigation bar.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Perform a search with multiple criteria by going to <span style="font-weight : bold; ">Invoice &gt; Invoice Search</span>. </p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">2.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Do one of the following:</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>To view and approve a single invoice, click the invoice number. </p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>To approve multiple invoices, select the checkboxes next to the invoices to approve.</p>
+
+  <p dir="ltr" class="FM_Note_Indent2___Start"><span class="FM_Bold"><span style="padding-left: 36pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 13pt;" class="FMAutoNumber_2"></span></span>The ability to approve multiple invoices at once is controlled by a company preference. </p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">3.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Approve</span>. </p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">4.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Either forward the invoice for additional financial approval or forward the invoice for coding:</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Perform a <span style="font-weight : bold; ">User Search</span>&#160;or select a site, department, and optional user. </p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span><span style="font-style : italic; ">(Optional)</span> Enter a comment.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Submit</span>. </p>
+
+  <p dir="ltr" class="FM_Heading_3">Invoices in the My Ready to Approve Portlet</p>
+
+  <p dir="ltr" class="FM_Body_Style">Use these procedures to approve invoices in the My Ready to Approve portlet. </p>
+
+  <p dir="ltr" class="FM_Heading_4">To financially approve invoices using the Code then Approve or Approve Only workflow:</p>
+
+  <p dir="ltr" class="FM_Steps"><span class="FM_Bold">Steps:<span style="padding-left: 8pt;" class="FMAutoNumber_1"></span></span></p>
+
+  <p dir="ltr" class="FM_Number_List_1___Start"><span class="FM_Bullet4">1.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Do one of the following: </p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>To view and approve a single invoice, click the invoice number. </p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>To approve multiple invoices, select the checkboxes next to the invoices to approve.</p>
+
+  <p dir="ltr" class="FM_Note_Indent2___Start"><span class="FM_Bold"><span style="padding-left: 36pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 13pt;" class="FMAutoNumber_2"></span></span>The ability to approve multiple invoices at once is controlled by a company preference. </p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">2.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Approve</span>. </p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">3.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Do one of the following:</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">OK</span>&#160;to confirm that you are performing a final financial approval and the invoice status will change to Approved. </p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Forward the invoice for additional financial approval:</p>
+
+  <p dir="ltr" class="FM_Bullet_List_3"><span class="FM_Bullet3">-<span style="padding-left: 15pt;" class="FMAutoNumber_1"></span></span>Perform a <span style="font-weight : bold; ">User Search</span>&#160;or select a site, department and optional user. </p>
+
+  <p dir="ltr" class="FM_Bullet_List_3"><span class="FM_Bullet3">-<span style="padding-left: 15pt;" class="FMAutoNumber_1"></span></span>(<span style="font-style : italic; ">Optional)</span>&#160;Enter a comment. </p>
+
+  <p dir="ltr" class="FM_Bullet_List_3"><span class="FM_Bullet3">-<span style="padding-left: 15pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Submit</span>. </p>
+
+  <p dir="ltr" class="FM_Heading_4">To financially approve invoices using the Approve then Code workflow:</p>
+
+  <p dir="ltr" class="FM_Steps"><span class="FM_Bold">Steps:<span style="padding-left: 8pt;" class="FMAutoNumber_1"></span></span></p>
+
+  <p dir="ltr" class="FM_Number_List_1___Start"><span class="FM_Bullet4">1.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Do one of the following:</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>To view and approve a single invoice, click the invoice number. </p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>To approve multiple invoices, select the checkboxes next to the invoices to approve.</p>
+
+  <p dir="ltr" class="FM_Note_Indent2___Start"><span class="FM_Bold"><span style="padding-left: 36pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 13pt;" class="FMAutoNumber_2"></span></span>The ability to approve multiple invoices at once is controlled by a company preference. </p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">2.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Approve</span>. </p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">3.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Either forward the invoice for additional financial approval or forward the invoice for coding:</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Perform a <span style="font-weight : bold; ">User Search</span>&#160;or select a site, department, and optional user. </p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span><span style="font-style : italic; ">(Optional)</span> Enter a comment.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Submit</span>. </p>
+
+  <p dir="ltr" class="FM_Heading_2_HowTo">How to Modify the Coding on an Approved Invoice</p>
+
+  <p dir="ltr" class="FM_Permission___Start"><span class="FM_Bold">Permission:<span style="padding-left: 21pt;" class="FMAutoNumber_1"></span></span>Invoice Amend</p>
+
+  <p dir="ltr" class="FM_Prerequisite___Start"><span class="FM_Bold">Prerequisite:<span style="padding-left: 18pt;" class="FMAutoNumber_1"></span></span>The invoice is in Approved status.</p>
+
+  <p dir="ltr" class="FM_Note___Start"><span class="FM_Bold">Note:<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>The ability to amend an invoice is controlled by a company preference.</p>
+
+  <p dir="ltr" class="FM_Steps"><span class="FM_Bold">Steps:<span style="padding-left: 8pt;" class="FMAutoNumber_1"></span></span></p>
+
+  <p dir="ltr" class="FM_Number_List_1___Start"><span class="FM_Bullet4">1.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Do one of the following:</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Select <span style="font-weight : bold; ">Invoice &gt; Dashboard</span>&#160;and click the <span style="font-weight : bold; ">My Recent Approvals</span> counter.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Perform a search by invoice number using the Global Search field in the main navigation bar.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Perform a search with multiple criteria by going to <span style="font-weight : bold; ">Invoice</span>&#160;&gt; <span style="font-weight : bold; ">Invoice Search</span>.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">2.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click the invoice number.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">3.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Amend</span>.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">4.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">OK</span> to confirm.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">5.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click the <span style="font-weight : bold; ">Coding</span> tab.</p>
+
+  <p dir="ltr" class="FM_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 13pt;" class="FMAutoNumber_2"></span></span>To view original and amended coding on an invoice, click <span style="font-weight : bold; ">Coding History</span>&#160;above the <span style="font-weight : bold; ">Summary</span> tab.</p>
+
+  <p dir="ltr" class="FM_Note_Indent___Next"><span class="FM_Bold"><span style="padding-left: 54pt;" class="FMAutoNumber_1"></span></span>To view the invoice that was approved with the original coding, click <span style="font-weight : bold; ">Approved</span>&#160;in the Invoice Journal. A HISTORICAL<span style="font-family:'Times New Roman'; font-size:7.0pt">&nbsp;&nbsp;&nbsp;</span> watermark indicates you are viewing the original approved invoice.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">6.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Modify the coding.</p>
+
+  <p dir="ltr" class="FM_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 13pt;" class="FMAutoNumber_2"></span></span>To modify a reference to purchase orders that are in the OpenInvoice platform, the invoice must be returned to workflow using the Unapprove function.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">7.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Check Coding</span> to validate the coding.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">8.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Save</span>.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">9.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Enter a comment.</p>
+
+  <p dir="ltr" class="FM_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 13pt;" class="FMAutoNumber_2"></span></span>If you are amending an approved invoice that was previously exported, the <span style="font-weight : bold; ">Re-export Invoice </span>checkbox will appear. Select this checkbox to export the amended invoice. To export the invoice at a later time, do not select this checkbox. </p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">10.<span style="padding-left: 5pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Submit</span>.</p>
+
+  <p dir="ltr" class="FM_Heading_2_HowTo">How to Modify the Header of an Image Invoice</p>
+
+  <p dir="ltr" class="FM_Permission___Start"><span class="FM_Bold">Permission:<span style="padding-left: 21pt;" class="FMAutoNumber_1"></span></span>Invoice Modify (IM)</p>
+
+  <p dir="ltr" class="FM_Prerequisite___Start"><span class="FM_Bold">Prerequisite:<span style="padding-left: 18pt;" class="FMAutoNumber_1"></span></span>The invoice is in Submitted or Resubmitted status.</p>
+
+  <p dir="ltr" class="FM_Prerequisite___Next"><span class="FM_Bold"><span style="padding-left: 72pt;" class="FMAutoNumber_1"></span></span>The invoice submission type is Image OBO or Image Post.</p>
+
+  <p dir="ltr" class="FM_Note___Start"><span class="FM_Bold">Note:<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Image Scan invoices cannot be corrected. They must be disputed then sent back to the supplier for correction.</p>
+
+  <p dir="ltr" class="FM_Steps"><span class="FM_Bold">Steps:<span style="padding-left: 8pt;" class="FMAutoNumber_1"></span></span></p>
+
+  <p dir="ltr" class="FM_Number_List_1___Start"><span class="FM_Bullet4">1.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Do one of the following:</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Select <span style="font-weight : bold; ">Invoice &gt; Dashboard</span> and click one of the dashboard counters.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Perform a search by invoice number using the Global Search field in the main navigation bar.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Perform a search with multiple criteria by going to <span style="font-weight : bold; ">Invoice</span>&#160;&gt; <span style="font-weight : bold; ">Invoice Search</span>.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">2.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Correct</span>.</p>
+
+  <p dir="ltr" class="FM_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 13pt;" class="FMAutoNumber_2"></span></span>Any unsaved changes must be saved prior to clicking <span style="font-weight : bold; ">Correct</span>.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">3.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Make the necessary changes.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">4.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Submit</span>.</p>
+
+  <p dir="ltr" class="FM_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 13pt;" class="FMAutoNumber_2"></span></span>The Itemization Wizard may open if the invoice is itemized and the invoice amount has changed.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">5.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Enter an optional comment.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">6.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Submit Invoice</span>.</p>
+
+  <p dir="ltr" class="FM_Heading_3">Things to Consider when Correcting an Image Invoice</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>The <span style="font-weight : bold; ">Correct </span>function allows a user to change the header information on an Image Post or Image OBO invoice that has been submitted but not yet approved. This includes invoices that are on-hold pending supplier setup. You can change the invoice number, invoice date, service date, currency, invoice amount and description, and add or remove ticket numbers. If the company preference <span style="font-weight : bold; ">Enable Supplier Correction</span>&#160;is enabled, users can also modify the supplier and/or supplier site for an image invoice.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>The Invoice Journal will show the <span style="font-weight : bold; ">Corrected</span>&#160;action along with any comments you entered. If the supplier name or supplier site were modified, the new and previous values will be listed.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>If the <span style="font-weight : bold; ">Invoice Amount</span>&#160;field is changed, the remit amount will be automatically changed to match. If the invoice was itemized, it will have to be reitemized.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>To modify the buyer site and department, approver, or routing code on an Image OBO invoice, the invoice must be disputed.</p>
+
+  <p dir="ltr" class="FM_Heading_2_HowTo">How to Short Pay an Image Invoice</p>
+
+  <p dir="ltr" class="FM_Permission___Start"><span class="FM_Bold">Permission:<span style="padding-left: 21pt;" class="FMAutoNumber_1"></span></span>Invoice Short Pay</p>
+
+  <p dir="ltr" class="FM_Prerequisite___Start"><span class="FM_Bold">Prerequisite:<span style="padding-left: 18pt;" class="FMAutoNumber_1"></span></span>The invoice is in Submitted or Resubmitted status.</p>
+
+  <p dir="ltr" class="FM_Prerequisite___Next"><span class="FM_Bold"><span style="padding-left: 72pt;" class="FMAutoNumber_1"></span></span>The invoice submission type is Image OBO or Image Post.</p>
+
+  <p dir="ltr" class="FM_Steps"><span class="FM_Bold">Steps:<span style="padding-left: 8pt;" class="FMAutoNumber_1"></span></span></p>
+
+  <p dir="ltr" class="FM_Number_List_1___Start"><span class="FM_Bullet4">1.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Do one of the following:</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Select <span style="font-weight : bold; ">Invoice &gt; Dashboard</span> and click one of the dashboard counters.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Perform a search by invoice number using the Global Search field in the main navigation bar.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Perform a search with multiple criteria by going to <span style="font-weight : bold; ">Invoice</span>&#160;&gt; <span style="font-weight : bold; ">Invoice Search</span>.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">2.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Short Pay</span>.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">3.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Enter the new remit amount. </p>
+
+  <p dir="ltr" class="FM_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 13pt;" class="FMAutoNumber_2"></span></span>The value must be greater than 0.00 and less than or equal to the original amount of the invoice. </p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">4.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Enter a comment. </p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">5.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Submit</span>.</p>
+
+  <p dir="ltr" class="FM_Heading_3">Things to Consider when Short Paying an Image Invoice</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>The <span style="font-weight : bold; ">Short Pay</span>&#160;function allows buyers to reduce the remit amount on Image OBO or Image Post invoices. Image Scanned invoices submitted by the supplier cannot be short paid.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>Once the new remit amount is submitted, a short pay line and the reduced total appears on the <span style="font-weight : bold; ">Summary</span> tab.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>If the invoice is itemized after being short paid, the short pay line is not available in the Itemization Wizard. The Itemization Wizard always shows the original amount.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>The Short Pay amount can be adjusted again if necessary. The existing short pay line is updated and a new coding record is added reflecting the change in value. If the original invoice amount is entered in the Short Pay window, the short pay line and all coding records are deleted. There will be a <span style="font-weight : bold; ">Short Paid </span>entry in the Invoice Journal for every short pay action performed on the invoice.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>The short pay line must be coded. If the invoice is short paid after it has been coded, the original coding amounts are kept. The short pay line is negative; when coded, the short paid amount of the invoice will still equal the total allocations. For example, an invoice for $100 is coded: $40 to general ledger code 1000.100, $60 to 2000.200, then short paid to $90. The coding will be $40 to 1000.100, $60 to 2000.200 and ($10) to the Short Pay coding record which may be given its own code or used to offset one of the other coding records. The total allocation will be the short paid amount of $90 ($40 + $60 – $10). </p>
+
+  <p dir="ltr" class="FM_Bullet_List_1"><span class="FM_Bullet1">·<span style="padding-left: 14pt;" class="FMAutoNumber_1"></span></span>If the lines on the invoice are allocated to different codes and the short pay amount should be split between them to reduce the allocations proportionately, the short pay line must be split coded.</p>
+
+  <p dir="ltr" class="FM_Heading_2_HowTo">How to <a name="XREF_58700_How_to_Unapprove"></a>Unapprove an Invoice</p>
+
+  <p dir="ltr" class="FM_Body_Style">The user who wants to unapprove an invoice must be the owner of the invoice.</p>
+
+  <p dir="ltr" class="FM_Permission___Start"><span class="FM_Bold">Permission:<span style="padding-left: 21pt;" class="FMAutoNumber_1"></span></span>Invoice Unapprove</p>
+
+  <p dir="ltr" class="FM_Prerequisite___Start"><span class="FM_Bold">Prerequisite:<span style="padding-left: 18pt;" class="FMAutoNumber_1"></span></span>The invoice is in Approved status. </p>
+
+  <p dir="ltr" class="FM_Prerequisite___Next"><span class="FM_Bold"><span style="padding-left: 72pt;" class="FMAutoNumber_1"></span></span>The invoice has not yet been paid and is not scheduled to be paid.</p>
+
+  <p dir="ltr" class="FM_Prerequisite___Next"><span class="FM_Bold"><span style="padding-left: 72pt;" class="FMAutoNumber_1"></span></span>The invoice was approved within the previous 365 days.</p>
+
+  <p dir="ltr" class="FM_Prerequisite___Next"><span class="FM_Bold"><span style="padding-left: 72pt;" class="FMAutoNumber_1"></span></span>The invoice was not created using Transaction Upload.</p>
+
+  <p dir="ltr" class="FM_Steps"><span class="FM_Bold">Steps:<span style="padding-left: 8pt;" class="FMAutoNumber_1"></span></span></p>
+
+  <p dir="ltr" class="FM_Number_List_1___Start"><span class="FM_Bullet4">1.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Do one of the following:</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Perform a search by invoice number using the Global Search field in the main navigation bar.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Perform a search with multiple criteria by going to <span style="font-weight : bold; ">Invoice</span>&#160;&gt; <span style="font-weight : bold; ">Invoice Search</span>.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">2.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>At the bottom of the invoice view page, click <span style="font-weight : bold; ">Unapprove</span>.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">3.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Enter a comment.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">4.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Submit</span>.</p>
+
+  <p dir="ltr" class="FM_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 13pt;" class="FMAutoNumber_2"></span></span>The invoice will be returned into workflow with the status that the invoice possessed before being approved (i.e., Submitted or Resubmitted). </p>
+
+  <p dir="ltr" class="FM_Heading_2_HowTo">How to Remove an Invoice Submitted in Error from Workflow</p>
+
+  <p dir="ltr" class="FM_Body_Style">Invoices submitted in error by a supplier can be removed from workflow by either deleting the invoice or cancelling the invoice. The method used will depend on how the invoice was created and whether you want the invoice to be included in search and reporting results. Cancelled invoices remain available in the application and are included in search results. Deleted invoices are removed from the application and are no longer available.</p>
+
+  <p dir="ltr" class="FM_Body_Style">Invoices created and submitted by the supplier are removed from workflow by disputing the invoice to the supplier and having the supplier cancel the invoice.</p>
+
+  <p dir="ltr" class="FM_Body_Style">Invoices created and submitted by the buyer using the Image OBO process are removed from workflow by disputing the invoice to the indexer or an internal dispute resolution department and having the indexer or a member of the dispute resolution department cancel the invoice. Alternatively, a user with the Invoice Delete (IM) permission can delete the invoice.</p>
+
+  <p dir="ltr" class="FM_Body_Style">Invoices created and submitted by the buyer using the Image Post process are removed from workflow by having a user with the Invoice Delete (IM) permission delete the invoice.</p>
+  <p dir="ltr" class="FM_Heading_1"><a name="XREF_50176_Sending_an_Invoice"></a>Sending an Invoice Message</p>
+  <p dir="ltr" class="FM_Body_Style">This section describes how to send an invoice message. </p>
+  <p dir="ltr" class="FM_Heading_2_HowTo">How to Send an Invoice Message</p>
+  <p dir="ltr" class="FM_Permission___Start"><span class="FM_Bold">Permission:<span style="padding-left: 21pt;" class="FMAutoNumber_1"></span></span>Invoice View</p>
+  <p dir="ltr" class="FM_Prerequisite___Start"><span class="FM_Bold">Prerequisite:<span style="padding-left: 18pt;" class="FMAutoNumber_1"></span></span>The invoice has been submitted at least once.</p>
+  <p dir="ltr" class="FM_Steps"><span class="FM_Bold">Steps:<span style="padding-left: 8pt;" class="FMAutoNumber_1"></span></span></p>
+  <p dir="ltr" class="FM_Number_List_1___Start"><span class="FM_Bullet4">1.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Do one of the following:</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Select <span style="font-weight : bold; ">Invoice &gt; Dashboard</span> and click one of the dashboard counters.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Perform a search by <span style="font-weight : bold; ">Invoice Number </span>using the Global Search field in the main navigation bar.</p>
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Perform a search with multiple criteria by going to <span style="font-weight : bold; ">Invoice</span>&#160;&gt; <span style="font-weight : bold; ">Invoice Search</span>.</p>
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">2.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click the <span style="font-weight : bold; ">Invoice Number</span>.</p>
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">3.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click the <span style="font-weight : bold; ">Send Message</span> button.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">4.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span><span style="font-size  : 5.0pt; "></span>Select a recipient in the <span style="font-weight : bold; ">To</span> drop-down.</p>
+
+  <p dir="ltr" class="FM_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 13pt;" class="FMAutoNumber_2"></span></span>You can send the message to either the supplier who created the invoice or to another user in your company. </p>
+
+  <div align="center"><img alt="InvoiceWorkflow_sendmessageBuyer.png" id="image322" src="../../../../assets/InvoiceWorkflow_sendmessageBuyer.png" style="max-width: 100% ;height: auto" />
+  </div>
+  <p dir="ltr" class="FM_Screenshot_Anchor">&nbsp;</p>
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">5.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Select the <span style="font-weight : bold; ">Priority</span>.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">6.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Select whether you want the message to be <span style="font-weight : bold; ">Public or Private</span>.</p>
+
+  <p dir="ltr" class="FM_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 13pt;" class="FMAutoNumber_2"></span></span>Public messages are visible by all users who have access to the invoice, but only the recipient can reply to the message.</p>
+
+  <p dir="ltr" class="FM_Note_Indent___Next"><span class="FM_Bold"><span style="padding-left: 54pt;" class="FMAutoNumber_1"></span></span>Private messages are only visible to the sender and recipient.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">7.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Enter your message.</p>
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">8.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Submit</span>.</p>
+  <p dir="ltr" class="FM_Heading_1"><a name="XREF_84683_Commenting_on_an"></a>Commenting on an Invoice</p>
+  <p dir="ltr" class="FM_Body_Style">This section describes how to add comments to an invoice. </p>
+
+  <p dir="ltr" class="FM_Heading_2_HowTo">How to Add a Comment on an Invoice Not in the My Ready to Approve Portlet</p>
+
+  <p dir="ltr" class="FM_Permission___Start"><span class="FM_Bold">Permission:<span style="padding-left: 21pt;" class="FMAutoNumber_1"></span></span>Invoice View</p>
+
+  <p dir="ltr" class="FM_Steps"><span class="FM_Bold">Steps:<span style="padding-left: 8pt;" class="FMAutoNumber_1"></span></span></p>
+
+  <p dir="ltr" class="FM_Number_List_1___Start"><span class="FM_Bullet4">1.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Do one of the following:</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Select <span style="font-weight : bold; ">Invoice &gt; Dashboard</span>&#160;and click one of the dashboard counters. </p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Perform a search by invoice number using the Global Search field in the main navigation bar. </p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Perform a search with multiple criteria by going to <span style="font-weight : bold; ">Invoice &gt; Invoice Search</span>. </p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">2.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Do one of the following:</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>To view and comment on a single invoice, click the invoice number.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>To comment on multiple invoices, select the checkboxes next to the invoices.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">3.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Comment</span>.</p>
+
+  <div align="center"><img alt="InvoiceWorkflow_commentBuyer.png" id="image323" src="../../../../assets/InvoiceWorkflow_commentBuyer.png" style="max-width: 100% ;height: auto" />
+  </div>
+  <p dir="ltr" class="FM_Screenshot_Anchor">&nbsp;</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">4.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Enter the comments.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">5.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Submit</span>.</p>
+
+  <p dir="ltr" class="FM_Heading_2_HowTo">How to Add a Comment to Invoices in the My Ready to Approve Portlet</p>
+
+  <p dir="ltr" class="FM_Permission___Start"><span class="FM_Bold">Permission:<span style="padding-left: 21pt;" class="FMAutoNumber_1"></span></span>Invoice View</p>
+
+  <p dir="ltr" class="FM_Steps"><span class="FM_Bold">Steps:<span style="padding-left: 8pt;" class="FMAutoNumber_1"></span></span></p>
+
+  <p dir="ltr" class="FM_Number_List_1___Start"><span class="FM_Bullet4">1.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Do one of the following:</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>To view and comment on a single invoice, click the invoice number.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>To comment on multiple invoices, select the checkboxes next to the invoices.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">2.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Comment</span>.</p>
+
+  <div align="center"><img alt="InvoiceWorkflow_commentBuyer.png" id="image324" src="../../../../assets/InvoiceWorkflow_commentBuyer.png" style="max-width: 100% ;height: auto" />
+  </div>
+  <p dir="ltr" class="FM_Screenshot_Anchor">&nbsp;</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">3.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Enter the comments.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">4.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Submit</span>.</p>
+
+  <p dir="ltr" class="FM_Heading_1"><a name="XREF_81899_Printing_an_Invoice"></a>Printing an Invoice</p>
+  <p dir="ltr" class="FM_Body_Style">This section describes how to print an invoice from the OpenInvoice platform. </p>
+  <p dir="ltr" class="FM_Heading_2_HowTo">How to Print an Invoice</p>
+  <p dir="ltr" class="FM_Permission___Start"><span class="FM_Bold">Permission:<span style="padding-left: 21pt;" class="FMAutoNumber_1"></span></span>Invoice View</p>
+  <p dir="ltr" class="FM_Steps"><span class="FM_Bold">Steps:<span style="padding-left: 8pt;" class="FMAutoNumber_1"></span></span></p>
+  <p dir="ltr" class="FM_Number_List_1___Start"><span class="FM_Bullet4">1.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Do one of the following:</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Select <span style="font-weight : bold; ">Invoice &gt; Dashboard</span> and click one of the dashboard counters.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Perform a search by <span style="font-weight : bold; ">Invoice #</span>&#160;using the <span style="font-weight : bold; ">Global Search</span>&#160;field in the main navigation bar. </p>
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Perform a search with multiple criteria by going to <span style="font-weight : bold; ">Invoice</span>&#160;&gt; <span style="font-weight : bold; ">Invoice Search</span>.</p>
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">2.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click the <span style="font-weight : bold; ">Invoice #</span>.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">3.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Do one of the following:</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Click the <span style="font-weight : bold; ">Summary</span> tab to print the invoice header, line items, and Invoice Journal.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Click the <span style="font-weight : bold; ">Coding</span>&#160;tab to print the invoice header, line items, coding details, Invoice Journal, and allocation summary.</p>
+
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">4.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click the <span style="font-weight : bold; ">Print Preview</span> button.</p>
+  <p dir="ltr" class="FM_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 13pt;" class="FMAutoNumber_2"></span></span>All compliance and information alerts will display on the print preview. </p>
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">5.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Print the invoice displayed in the print preview window.</p>
+
+  <div align="center"><img alt="InvoiceWorkflow_printBuyer.jpg" id="image325" src="../../../../assets/InvoiceWorkflow_printBuyer.jpg" style="max-width: 100% ;height: auto" />
+  </div>
+  <p dir="ltr" class="FM_Screenshot_Anchor">&nbsp;</p>
+  <p dir="ltr" class="FM_Heading_1"><a name="XREF_67482_Adding_an"></a>Managing Attachments</p>
+  <p dir="ltr" class="FM_Body_Style">This section describes how to manage attachments to an invoice. </p>
+  <p dir="ltr" class="FM_Heading_2_HowTo">How to <a name="XREF_83680_How_to_Add_or"></a>Add an Attachment</p>
+  <p dir="ltr" class="FM_Permission___Start"><span class="FM_Bold">Permission:<span style="padding-left: 21pt;" class="FMAutoNumber_1"></span></span>Invoice Modify</p>
+  <p dir="ltr" class="FM_Note___Start"><span class="FM_Bold">Note:<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Attachments created in Microsoft Office must be saved using the 2007 or earlier format.</p>
+  <p dir="ltr" class="FM_Note___Next"><span class="FM_Bold"><span style="padding-left: 36pt;" class="FMAutoNumber_1"></span></span>Each attachment is no more than 9 MB. The total number of attachments uploaded to an invoice cannot exceed 80 MB. </p>
+  <p dir="ltr" class="FM_Note___Next"><span class="FM_Bold"><span style="padding-left: 36pt;" class="FMAutoNumber_1"></span></span>Attachment filenames cannot exceed 100 characters.</p>
+  <p dir="ltr" class="FM_Note___Next"><span class="FM_Bold"><span style="padding-left: 36pt;" class="FMAutoNumber_1"></span></span>You may only remove attachments that were added by users within your company. </p>
+  <p dir="ltr" class="FM_Steps"><span class="FM_Bold">Steps:<span style="padding-left: 8pt;" class="FMAutoNumber_1"></span></span></p>
+  <p dir="ltr" class="FM_Number_List_1___Start"><span class="FM_Bullet4">1.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Do one of the following:</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Select <span style="font-weight : bold; ">Invoice &gt; Dashboard</span> and click one of the dashboard counters.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Perform a search by <span style="font-weight : bold; ">Invoice Number</span> using the Global Search field in the main navigation bar.</p>
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Perform a search with multiple criteria by going to <span style="font-weight : bold; ">Invoice</span>&#160;&gt; <span style="font-weight : bold; ">Invoice Search</span>.</p>
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">2.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click the <span style="font-weight : bold; ">Invoice Number</span>.</p>
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">3.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Attach File</span>.</p>
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">4.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Browse</span>&#160;to locate the file on your computer and click <span style="font-weight : bold; ">Open</span>.</p>
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">5.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Enter the <span style="font-weight : bold; ">Attachment Description</span>.</p>
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">6.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Next</span>&#160;or <span style="font-weight : bold; ">Add Another</span>.</p>
+  <p dir="ltr" class="FM_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 13pt;" class="FMAutoNumber_2"></span></span>A supplier can add an attachment to an invoice that they, or someone at their company, submitted as long as that invoice has not been saved (action other than ) by the buyer, is not locked for editing, code verified, modified or exported. Invoices that have been saved or modified in any way must be disputed back to the supplier for an attachment to be added. </p>
+  <p dir="ltr" class="FM_Note_Indent___Next"><span class="FM_Bold"><span style="padding-left: 54pt;" class="FMAutoNumber_1"></span></span>Suppliers will receive a confirmation screen with a list of all attachments when submitting an invoice or a warning that no attachments have been included.</p>
+  <p dir="ltr" class="FM_Heading_2_HowTo">How to Remove an Attachment</p>
+  <p dir="ltr" class="FM_Permission___Start"><span class="FM_Bold">Permission:<span style="padding-left: 21pt;" class="FMAutoNumber_1"></span></span>Invoice Modify</p>
+  <p dir="ltr" class="FM_Note___Start"><span class="FM_Bold">Note:<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Attachments created in Microsoft Office must be saved using the 2007 or earlier format.</p>
+  <p dir="ltr" class="FM_Note___Next"><span class="FM_Bold"><span style="padding-left: 36pt;" class="FMAutoNumber_1"></span></span>Each attachment is no more than 9 MB. The total number of attachments uploaded to an invoice cannot exceed 80 MB. </p>
+  <p dir="ltr" class="FM_Note___Next"><span class="FM_Bold"><span style="padding-left: 36pt;" class="FMAutoNumber_1"></span></span>Attachment filenames cannot exceed 100 characters.</p>
+  <p dir="ltr" class="FM_Note___Next"><span class="FM_Bold"><span style="padding-left: 36pt;" class="FMAutoNumber_1"></span></span>You may only remove attachments that were added by users within your company. </p>
+  <p dir="ltr" class="FM_Steps"><span class="FM_Bold">Steps:<span style="padding-left: 8pt;" class="FMAutoNumber_1"></span></span></p>
+  <p dir="ltr" class="FM_Number_List_1___Start"><span class="FM_Bullet4">1.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Do one of the following:</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Select <span style="font-weight : bold; ">Invoice &gt; Dashboard</span> and click one of the dashboard counters.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Perform a search by <span style="font-weight : bold; ">Invoice Number</span> using the Global Search field in the main navigation bar.</p>
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Perform a search with multiple criteria by going to <span style="font-weight : bold; ">Invoice</span>&#160;&gt; <span style="font-weight : bold; ">Invoice Search</span>.</p>
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">2.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click the <span style="font-weight : bold; ">Invoice Number</span>.</p>
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">3.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click the <span style="font-weight : bold; ">Delete</span> icon next to the attachment.</p>
+  <div align="center"><img alt="InvoiceWorkflow_removefile.png" id="image326" src="../../../../assets/InvoiceWorkflow_removefile.png" style="max-width: 100% ;height: auto" />
+  </div>
+  <p dir="ltr" class="FM_Screenshot_Anchor">&nbsp;</p>
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">4.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">OK</span> to confirm.</p>
+  <p dir="ltr" class="FM_Note___Start"><span class="FM_Bold">Note:<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>A supplier can add an attachment to an invoice that they, or someone at their company, submitted as long as that invoice has not been saved (action other than ) by the buyer, is not locked for editing, code verified, modified or exported. Invoices that have been saved or modified in any way must be disputed back to the supplier for an attachment to be added. </p>
+  <p dir="ltr" class="FM_Note___Next"><span class="FM_Bold"><span style="padding-left: 36pt;" class="FMAutoNumber_1"></span></span>Suppliers will receive a confirmation screen with a list of all attachments when submitting an invoice or a warning that no attachments have been included.</p>
+  <p dir="ltr" class="FM_Heading_2_HowTo">How to View a Field Ticket Attachment From an Invoice</p>
+  <p dir="ltr" class="FM_Steps"><span class="FM_Bold">Steps:<span style="padding-left: 8pt;" class="FMAutoNumber_1"></span></span></p>
+  <p dir="ltr" class="FM_Number_List_1___Start"><span class="FM_Bullet4">1.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Do one of the following:</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Select <span style="font-weight : bold; ">Invoice &gt; Dashboard</span> and click one of the dashboard counters.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Perform a search by <span style="font-weight : bold; ">Invoice Number</span> using the Global Search field in the main navigation bar.</p>
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Perform a search with multiple criteria by going to <span style="font-weight : bold; ">Invoice</span>&#160;&gt; <span style="font-weight : bold; ">Invoice Search</span>.</p>
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">2.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click the <span style="font-weight : bold; ">Invoice Number</span>.</p>
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">3.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>In the Tickets section, click the link under <span style="font-weight : bold; ">Attachments</span>. </p>
+  <div align="center"><img alt="InvoiceWorkflow_ViewFT.jpg" id="image327" src="../../../../assets/InvoiceWorkflow_ViewFT.jpg" style="max-width: 100% ;height: auto" />
+  </div>
+  <p dir="ltr" class="FM_Screenshot_Anchor">&nbsp;</p>
+  <p dir="ltr" class="FM_Body_Indent">The attachment displays in a new window. </p>
+  <p dir="ltr" class="FM_Note_Indent2___Start"><span class="FM_Bold"><span style="padding-left: 36pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 13pt;" class="FMAutoNumber_2"></span></span>Depending on the format of the attachment, you may have to save the file to your machine and open the downloaded file to view the attachment. </p>
+  <p dir="ltr" class="FM_Heading_2">Additional Information</p>
+  <p dir="ltr" class="FM_Body_Style">Supported types include:</p>
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>image files (.gif, .jpeg, .tiff, .png)</p>
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>spreadsheets (.xls, .xlsx, .csv)</p>
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Word documents (.doc, .docx)</p>
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>drawing files (.dwg)</p>
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>text files (.txt, .tsv)</p>
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>PDF files</p>
+  <p dir="ltr" class="FM_Heading_1"><a name="XREF_14535_Invoice_Contacts"></a>Invoice Contacts</p>
+  <p dir="ltr" class="FM_Body_Style">This section describes how to manage invoice contacts. </p>
+  <p dir="ltr" class="FM_Heading_2_HowTo">How to Add Contacts</p>
+  <p dir="ltr" class="FM_Permission___Start"><span class="FM_Bold">Permission:<span style="padding-left: 21pt;" class="FMAutoNumber_1"></span></span>Invoice Modify</p>
+  <p dir="ltr" class="FM_Prerequisite___Start"><span class="FM_Bold">Prerequisite:<span style="padding-left: 18pt;" class="FMAutoNumber_1"></span></span>Your company currently owns the invoice.</p>
+
+  <p dir="ltr" class="FM_Prerequisite___Next"><span class="FM_Bold"><span style="padding-left: 72pt;" class="FMAutoNumber_1"></span></span>The invoice is in Submitted or Re-Submitted status.</p>
+
+  <p dir="ltr" class="FM_Steps"><span class="FM_Bold">Steps:<span style="padding-left: 8pt;" class="FMAutoNumber_1"></span></span></p>
+  <p dir="ltr" class="FM_Number_List_1___Start"><span class="FM_Bullet4">1.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Do one of the following:</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Select <span style="font-weight : bold; ">Invoice &gt; Dashboard</span> and click one of the dashboard counters.</p>
+
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Perform a search by <span style="font-weight : bold; ">Invoice Number</span> using the Global Search field in the main navigation bar.</p>
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Perform a search with multiple criteria by going to <span style="font-weight : bold; ">Invoice</span>&#160;&gt; <span style="font-weight : bold; ">Invoice Search</span>.</p>
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">2.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click the <span style="font-weight : bold; ">Invoice Number</span>.</p>
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">3.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Above the invoice tabs, click <span style="font-weight : bold; ">Contact </span>to display the contact list page.</p>
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">4.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Add Contact</span>.</p>
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">5.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Do one of the following:</p>
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Select <span style="font-weight : bold; ">Unregistered</span>&#160;if your contact is not from one of your <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span> trading partners.</p>
+  <div align="center"><img alt="InvoiceWorkflow_unregisteredcontact.png" id="image328" src="../../../../assets/InvoiceWorkflow_unregisteredcontact.png" style="max-width: 100% ;height: auto" />
+  </div>
+  <p dir="ltr" class="FM_Screenshot_Anchor">&nbsp;</p>
+  <p dir="ltr" class="FM_Bullet_List_2"><span class="FM_Bullet2">§<span style="padding-left: 13pt;" class="FMAutoNumber_1"></span></span>Select<span style="font-weight : bold; "> Registered Supplier</span>&#160;if your contact is from one of your <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span> trading partners.</p>
+  <div align="center"><img alt="InvoiceWorkflow_registeredcontact.png" id="image329" src="../../../../assets/InvoiceWorkflow_registeredcontact.png" style="max-width: 100% ;height: auto" />
+  </div>
+  <p dir="ltr" class="FM_Screenshot_Anchor">&nbsp;</p>
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">6.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Next</span>.</p>
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">7.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Enter or select your contact’s information.</p>
+  <p dir="ltr" class="FM_Note_Indent___Start"><span class="FM_Bold"><span style="padding-left: 18pt;" class="FMAutoNumber_1"></span>Note:<span style="padding-left: 13pt;" class="FMAutoNumber_2"></span></span>Contacts are visible to both buyer and supplier companies. <span style="font-weight : bold; ">Contact Type</span>, <span style="font-weight : bold; ">Contact Name</span>, and <span style="font-weight : bold; ">Phone Number</span>&#160;appear on the invoice. All contact details can be viewed from the contact list page. </p>
+  <p dir="ltr" class="FM_Number_List_1___Next"><span class="FM_Bullet4">8.<span style="padding-left: 10pt;" class="FMAutoNumber_1"></span></span>Click <span style="font-weight : bold; ">Submit</span>.</p>
+  <p dir="ltr" class="FM_Body_Style">&nbsp;</p>
+ </div>
+</body>
+
+</html>
+

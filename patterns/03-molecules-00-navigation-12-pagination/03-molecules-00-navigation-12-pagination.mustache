@@ -1,0 +1,15 @@
+<ul class="pagination {{paginationClass}}" style="margin-top: 0;">
+	<li>
+		<a href="{{url}}" aria-label="Previous">
+		<span aria-hidden="true">&laquo;</span>
+		</a>
+	</li>
+	{{# paginationList}}
+		<li><a href="{{url}}">{{text}}</a></li>
+	{{/ paginationList}}
+	<li>
+		<a href="{{url}}" aria-label="Next">
+			<span aria-hidden="true">&raquo;</span>
+		</a>
+	</li>
+</ul>

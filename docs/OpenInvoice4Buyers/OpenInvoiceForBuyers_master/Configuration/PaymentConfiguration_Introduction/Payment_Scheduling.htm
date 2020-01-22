@@ -1,0 +1,237 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+ <title>Payment Scheduling</title>
+
+ <link rel="stylesheet" href="../../../OpenInvoiceForBuyers_master.css" type="text/css" />
+
+
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style>
+ <meta name="generator" content="Adobe FrameMaker 2017" />
+<script type="text/javascript" src="../../../template/scripts/rh.min.js"></script>
+<script type="text/javascript" src="../../../template/scripts/common.min.js"></script>
+<script type="text/javascript" src="../../../template/scripts/topic.min.js"></script>
+<script type="text/javascript" src="../../../template/scripts/constants.js"></script>
+<script type="text/javascript" src="../../../template/scripts/utils.js"></script>
+<script type="text/javascript" src="../../../template/scripts/mhutils.js"></script>
+<script type="text/javascript" src="../../../template/scripts/mhlang.js"></script>
+<script type="text/javascript" src="../../../template/scripts/mhver.js"></script>
+<script type="text/javascript" src="../../../template/scripts/settings.js"></script>
+<script type="text/javascript" src="../../../template/scripts/XmlJsReader.js"></script>
+<script type="text/javascript" src="../../../template/scripts/loadparentdata.js"></script>
+<script type="text/javascript" src="../../../template/scripts/loadscreen.js"></script>
+<script type="text/javascript" src="../../../template/scripts/loadprojdata.js"></script>
+<script type="text/javascript" src="../../../template/scripts/mhtopic.js"></script>
+ <link rel="stylesheet" type="text/css" href="../../../template/styles/topic.min.css">
+<script type="text/javascript" >
+gRootRelPath = "../../..";
+gCommonRootRelPath = "../../..";
+gTopicId = "";
+</script>
+ <meta name="brsprev" value="OpenInvoiceForBuyers_master/Configuration/PaymentConfiguration_Introduction/Configuring_Payment_Terms.htm">
+ <meta name="brsnext" value="OpenInvoiceForBuyers_master/User_Management/UserMgmt/UserMgmt.htm">
+ <meta name="topic-breadcrumbs" content="Administrator & User Guide for Buyers > Payment Configuration" />
+</head>
+
+<body dir="ltr">
+<script type="text/javascript" src="../../../ehlpdhtm.js"></script>
+<div dir="ltr">
+  <p dir="ltr" class="FM_ADP_TG_Heading_1"><a name="TOC_Payment_Scheduling"></a>Payment Scheduling</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Screenshot_Anchor" style="font-size  : 11.0pt;">This section includes the payment scheduling terms used in the OpenInvoice platform.</p>
+
+<div width="100%" align="left">
+  <table border-spacing="0" dir="ltr" class="table61" border-collapse="collapse" style="max-width: 100% ;height: auto">
+   <tr class="tr62">
+   <th class="td63">
+   <p dir="ltr" class="FM_ADP_TG_CellHeading" style="font-size  : 12.0pt;"><span class="FM_ADPTG_Cell_Heading">Term</span></p>
+</th>
+   <th class="td64">
+   <p dir="ltr" class="FM_ADP_TG_CellHeading" style="font-size  : 12.0pt;"><span class="FM_ADPTG_Cell_Heading">Definition</span></p>
+</th>
+</tr>
+   <tr class="tr65">
+   <td class="td66">
+   <p dir="ltr" class="FM_ADP_TG_Body_Style">Banking Day</p>
+</td>
+   <td class="td67">
+   <p dir="ltr" class="FM_ADP_TG_Body_Style">Any weekday (Monday through Friday) that is not designated as a bank holiday.</p>
+</td>
+</tr>
+   <tr class="tr68">
+   <td class="td66">
+   <p dir="ltr" class="FM_ADP_TG_Body_Style">Early Pay (EP) Due Date</p>
+</td>
+   <td class="td67">
+   <p dir="ltr" class="FM_ADP_TG_Body_Style">The latest date on which funds can be transferred to the supplier so that the Early Pay discount can be applied. This is calculated as the Invoice Submission Date plus the Discount Days as defined in the Early Pay program.</p>
+</td>
+</tr>
+   <tr class="tr69">
+   <td class="td66">
+   <p dir="ltr" class="FM_ADP_TG_Body_Style">Impound Date Adjustment</p>
+</td>
+   <td class="td67">
+   <p dir="ltr" class="FM_ADP_TG_Body_Style">The number of banking days before the payment date when your company is required to transfer funds to <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>’s money movement partner. </p>
+</td>
+</tr>
+   <tr class="tr65">
+   <td class="td66">
+   <p dir="ltr" class="FM_ADP_TG_Body_Style">Payment Base Date</p>
+</td>
+   <td class="td67">
+   <p dir="ltr" class="FM_ADP_TG_Body_Style">Either the invoice submission date or the invoice date, depending on the invoice’s payment terms.</p>
+</td>
+</tr>
+   <tr class="tr69">
+   <td class="td66">
+   <p dir="ltr" class="FM_ADP_TG_Body_Style">Payment Date</p>
+</td>
+   <td class="td67">
+   <p dir="ltr" class="FM_ADP_TG_Body_Style">The date on which the funds are transferred from <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>’s money movement partner to the supplier. This date must be on a banking day.</p>
+</td>
+</tr>
+   <tr class="tr69">
+   <td class="td66">
+   <p dir="ltr" class="FM_ADP_TG_Body_Style">Payment Due Date</p>
+</td>
+   <td class="td67">
+   <p dir="ltr" class="FM_ADP_TG_Body_Style">The date on which the funds must be transferred to the supplier to avoid any penalties. This is the Payment Base Date plus the number of calendar days specified in the payment terms.</p>
+</td>
+</tr>
+   <tr class="tr69">
+   <td class="td66">
+   <p dir="ltr" class="FM_ADP_TG_Body_Style">Payment Export Date</p>
+</td>
+   <td class="td67">
+   <p dir="ltr" class="FM_ADP_TG_Body_Style">The date on which the payment details are sent to <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>’s money movement partner. This occurs one banking day before the Payment Financing Date.</p>
+</td>
+</tr>
+   <tr class="tr69">
+   <td class="td66">
+   <p dir="ltr" class="FM_ADP_TG_Body_Style">Payment Financing Date (Impound Date)</p>
+</td>
+   <td class="td67">
+   <p dir="ltr" class="FM_ADP_TG_Body_Style">The date on which <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>’s money movement partner draws funds from your company’s bank account. This date must be on a banking day.</p>
+</td>
+</tr>
+   <tr class="tr69">
+   <td class="td66">
+   <p dir="ltr" class="FM_ADP_TG_Body_Style">Preferred Financing Days</p>
+</td>
+   <td class="td67">
+   <p dir="ltr" class="FM_ADP_TG_Body_Style">Days of the week (Monday through Friday) on which funds are transferred from your company to <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>’s money movement partner.</p>
+</td>
+</tr>
+   <tr class="tr68">
+   <td class="td66">
+   <p dir="ltr" class="FM_ADP_TG_Body_Style">Preferred Payment Days</p>
+</td>
+   <td class="td67">
+   <p dir="ltr" class="FM_ADP_TG_Body_Style">Days of the week (Monday through Friday) on which funds are transferred from <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>’s money movement partner to the supplier. This is calculated as the Preferred Financing Days plus the Impound Date Adjustment.</p>
+</td>
+</tr>
+  </table>
+</div>
+  <p dir="ltr" class="FM_ADP_TG_Heading_2">Automatic Scheduling of Payments Without Early Pay</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Body_Style">If an Early Pay discount does not apply to the approved invoice, <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>&#160;will set the payment date to be as late as possible, while still satisfying the payment terms and <span style="font-weight : bold; ">Payment Due Date</span>. <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>&#160;will use your company’s default payment terms if supplier-specific payment terms have not been determined.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Body_Style"><span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span> calculates the payment date using the following process:</p>
+
+  <ol dir="ltr" start="1">
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Start">The <span style="font-weight : bold; ">Payment Due Date</span>&#160;is the last banking day on or before the <span style="font-weight : bold; ">Payment Base Date</span>&#160;plus the number of calendar days configured in the payment terms.</p>
+</li>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">The <span style="font-weight : bold; ">Payment Date</span>&#160;is the last <span style="font-weight : bold; ">Preferred Payment Day</span>&#160;that is a banking day, on or before the <span style="font-weight : bold; ">Payment Due Date</span>.</p>
+</li>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">The <span style="font-weight : bold; ">Payment Financing Date</span>&#160;(Impound Date) is the last <span style="font-weight : bold; ">Preferred Financing Day</span>&#160;that is a banking day, which is before the <span style="font-weight : bold; ">Payment Date </span>by at least the number banking days defined by the <span style="font-weight : bold; ">Impound Date Adjustment</span>.</p>
+</li>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">The <span style="font-weight : bold; ">Payment Export Date</span>&#160;is the banking day immediately before the <span style="font-weight : bold; ">Payment Financing Date</span>&#160;(Impound Date).</p>
+</li>
+  </ol>
+  <p dir="ltr" class="FM_ADP_TG_Body_Style">If same day financing is not enabled and the calculated <span style="font-weight : bold; ">Payment Export Date</span>&#160;is less than one day into the future, it is not possible to satisfy the payment terms based on the current configuration. <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>&#160;will recalculate the <span style="font-weight : bold; ">Payment Due Date</span> as:</p>
+
+  <ol dir="ltr" start="1">
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Start">The <span style="font-weight : bold; ">Payment Export Date</span> is the next banking day.</p>
+</li>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">The <span style="font-weight : bold; ">Payment Financing Date</span>&#160;(Impound Date) is one banking day after the <span style="font-weight : bold; ">Payment Export Date</span>.</p>
+</li>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">The <span style="font-weight : bold; ">Payment Due Date</span>&#160;is the <span style="font-weight : bold; ">Payment Financing Date</span>&#160;(Impound Date) plus the number of banking days defined by the impound date adjustment.</p>
+</li>
+  </ol>
+  <p dir="ltr" class="FM_ADP_TG_Note___Start"><span class="FM_Bold">Note:<span style="padding-left: 12pt;" class="FMAutoNumber_1"></span></span>Changes in payment terms, preferred financing days, impound adjustment, or banking holidays will not automatically reschedule previously scheduled payments. If necessary, the payments must be manually rescheduled by one of your company’s users with the Payment Modify permission.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Heading_2">Automatic Scheduling of Payments with Early Pay</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Body_Style">If an Early Pay discount applies to the approved invoice, <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>&#160;will set the payment date to as late as possible while still satisfying the Early Pay discount terms.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Body_Style"><span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span> calculates the payment date using the following process:</p>
+
+  <ol dir="ltr" start="1">
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Start">The <span style="font-weight : bold; ">Early Pay (EP) Due Date</span>&#160;is the last banking day on or before the <span style="font-weight : bold; ">Invoice Submit Date</span>&#160;plus the number of calendar days specified in the Early Pay terms.</p>
+</li>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">The <span style="font-weight : bold; ">Payment Date</span>&#160;is the last <span style="font-weight : bold; ">Preferred Payment Day</span>&#160;that is a banking day, on or before the <span style="font-weight : bold; ">Early Pay Due Date</span>.</p>
+</li>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">The <span style="font-weight : bold; ">Payment Financing Date </span>(Impound Date) is the last <span style="font-weight : bold; ">Preferred Financing Day</span>&#160;that is a banking day, which is before the <span style="font-weight : bold; ">Payment Date</span>&#160;by at least the number banking days defined by the <span style="font-weight : bold; ">Impound Date Adjustment</span>.</p>
+</li>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">The <span style="font-weight : bold; ">Payment Export Date</span>&#160;is the banking day immediately before the <span style="font-weight : bold; ">Payment Financing Date</span>&#160;(Impound Date).</p>
+</li>
+  </ol>
+  <p dir="ltr" class="FM_ADP_TG_Body_Style">If same day financing is not enabled and the calculated <span style="font-weight : bold; ">Payment Export Date</span>&#160;is less than one day into the future, it is not possible to satisfy the Early Pay terms based on the current configuration. <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>&#160;will recalculate the <span style="font-weight : bold; ">Payment Due Date</span>&#160;as if the invoice is not eligible for an Early Pay discount.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Note___Start"><span class="FM_Bold">Note:<span style="padding-left: 12pt;" class="FMAutoNumber_1"></span></span>A user from your company can manually reschedule the payment to a non-preferred payment date and take advantage of the Early Pay discount.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Note___Start"><span class="FM_Bold">Note:<span style="padding-left: 12pt;" class="FMAutoNumber_1"></span></span>Changes in payment terms, preferred financing days, impound adjustment, or banking holidays will not automatically reschedule previously scheduled payments. If necessary, the payments must be manually rescheduled by one of your company’s users with the Payment Modify permission.</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Heading_2">Rescheduling Payments</p>
+
+  <p dir="ltr" class="FM_ADP_TG_Body_Style">When rescheduling payments, <span data-name="ADP_Software_Name__Proper_Noun_only_" data-val="OpenInvoice" data-showval="TRUE" data-format="ADP_Software_Name__Proper_Noun_only_">OpenInvoice</span>&#160;calculates the <span style="font-weight : bold; ">Payment Export Date</span>&#160;using the following process:</p>
+
+  <ol dir="ltr" start="1">
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Start">The <span style="font-weight : bold; ">Payment Financing Date</span>&#160;(Impound Date) is the last banking day, on or before the result of subtracting the number of banking days defined by the <span style="font-weight : bold; ">Impound Date Adjustment</span>&#160;from the selected payment date.</p>
+</li>
+   <li style="list-style: decimal;">
+   <p dir="ltr" class="FM_ADP_TG_Number_List_1___Next">The <span style="font-weight : bold; ">Payment Export Date</span>&#160;is the banking day immediately before the <span style="font-weight : bold; ">Payment Financing Date</span>.</p>
+</li>
+  </ol>
+  <p dir="ltr" class="FM_ADP_TG_Body_Style">&nbsp;</p>
+  <p dir="ltr" class="FM_ADP_TG_Body_Style">&nbsp;</p>
+ </div>
+</body>
+</html>
