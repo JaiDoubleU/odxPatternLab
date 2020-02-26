@@ -16,17 +16,18 @@
         <link rel="stylesheet" href="../../css/vendor/bootstrap-select.min.css"/>
         <link rel="stylesheet" href="../../css/vendor/tokenfield-typeahead.min.css"/>
         <link rel="stylesheet" href="../../css/vendor/bootstrap-tokenfield.min.css">
-        <link rel="stylesheet" href="../../css/pattern-scaffolding.css?1579126521816" media="all" />
+        <link rel="stylesheet" href="../../css/pattern-scaffolding.css?1582751770773" media="all" />
         <link rel="stylesheet" href="../../css/vendor/typeaheadjs.css" media="all" />
         <link rel="stylesheet" href="../../css/vendor/dataTables.bootstrap.min.css" media="all" />
         <link rel="stylesheet" href="../../css/vendor/dragula.min.css" media="all" />
         <link rel="stylesheet" href="../../css/vendor/colReorder.bootstrap.min.css" media="all" />
         <link rel="stylesheet" href="../../css/vendor/fixedHeader.bootstrap.min.css" media="all" />
-        <link rel="stylesheet" href="../../css/vendor/typeaheadjs.css" />
-        <link rel="stylesheet" href="../../css/vendor/tokenfield.css" />
-        <link rel="stylesheet" href="../../css/vendor/jquery-ui.min.css" />
+        <link rel="stylesheet" href="../../css/vendor/split-pane.css"/>
+        <link rel="stylesheet" href="../../css/vendor/typeaheadjs.css"/>
+        <link rel="stylesheet" href="../../css/vendor/tokenfield.css"/>
+        <link rel="stylesheet" href="../../css/vendor/jquery-ui.min.css"/>
         <link rel="stylesheet" href="../../css/oildex-admin.css"/>
-        <link rel="stylesheet" href="../../css/theme/enverus/bootstrap.css" media="all" />
+        <link rel="stylesheet" href="../../css/theme/enverus/bootstrap.css" media="all"/>
 
 
         <!-- Load pattern specific CSS -->
@@ -92,6 +93,7 @@
         <script type="text/javascript" src="../../js/vendor/moment.min.js"></script>
         <script type="text/javascript" src="../../js/vendor/mustache.min.js"></script>
         <script type="text/javascript" src="../../js/vendor/bootstrap-multiselect.js"></script>
+        <script type="text/javascript" src="../../js/vendor/split-pane.js"></script>
         <script type="text/javascript" src="../../js/vendor/tokenfield.min.js"></script>
         <script type="text/javascript" src="../../js/oildex-admin.js"></script>
         <script type="text/javascript" src="../../js/oildex-patternlab-defaults.js"></script>
@@ -123,8 +125,8 @@
 
 <title id="title">Styleguide : Oildex Pattern Lab</title>
 
-<link rel="stylesheet" href="../../styleguide/css/styleguide.min.css?1579126521816" media="all">
-<link rel="stylesheet" href="../../styleguide/css/prism-typeahead.min.css?1579126521816" media="all" />
+<link rel="stylesheet" href="../../styleguide/css/styleguide.min.css?1582751770773" media="all">
+<link rel="stylesheet" href="../../styleguide/css/prism-typeahead.min.css?1582751770773" media="all" />
 
         <!-- End Pattern Lab -->
 
@@ -137,47 +139,34 @@
         <div class="alert-messages"></div>
 <div class="container-fluid">
     <form>
-
-
-        <div class="row">
-            <div class="col-sm-12">
-                <div class="panel panel-default attachment-panel">
-                   <div class="media">
-                        <div class="media-left media-middle well well-sm">
-                            <div class="media-object">PNG</div>
-                        </div>
-                        <div class="media-body media-middle well-sm">
-                            <div class="media-heading">Attachment1.png</div>
-                            <div class="small text-muted">395.5 KB</div>
-                        </div>
-
-                        <div class="media-right media-middle">
+        <div class="table-responsive">
+            <table class="table table-bordered table-striped hide-overflow">
+                <thead>
+                    <th>Name</th>
+                    <th width="20%">Size</th>
+                    <th width="50">Remove</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Attachment1.png</td>
+                        <td>395.5 KB</td>
+                        <td>
                             <a class="btn btn-block" href="#nogo">
-                                <i class="fas fas fa-trash-alt fa-fw"></i>
+                                <i class="fas fa-trash-alt fa-fw"></i>
                             </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-12">
-                <div class="panel panel-default attachment-panel">
-                   <div class="media">
-                        <div class="media-left media-middle well well-sm">
-                            <div class="media-object">PDF</div>
-                        </div>
-                        <div class="media-body media-middle well-sm">
-                            <div class="media-heading">Attachment2.pdf</div>
-                            <div class="small text-muted">892.4 KB</div>
-                        </div>
-
-                        <div class="media-right media-middle">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Attachment2.pdf</td>
+                        <td>892.4 KB</td>
+                        <td>
                             <a class="btn btn-block" href="#nogo">
-                                <i class="fas fas fa-trash-alt fa-fw"></i>
+                                <i class="fas fa-trash-alt fa-fw"></i>
                             </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     </form>
 </div>
@@ -522,7 +511,7 @@
     </script>
     <!--DO NOT REMOVE-->
     <script type="text/json" id="sg-pattern-data-footer" class="sg-pattern-data">
-  {"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":true,"patternLineagesR":[{"lineagePattern":"pages-field-ticket","lineagePath":"../../patterns/06-pages-field-ticket/06-pages-field-ticket.html"},{"lineagePattern":"pages-purchase-order","lineagePath":"../../patterns/06-pages-purchase-order/06-pages-purchase-order.html"},{"lineagePattern":"pages-rental","lineagePath":"../../patterns/06-pages-rental/06-pages-rental.html"}],"lineageR":[{"lineagePattern":"pages-field-ticket","lineagePath":"../../patterns/06-pages-field-ticket/06-pages-field-ticket.html"},{"lineagePattern":"pages-purchase-order","lineagePath":"../../patterns/06-pages-purchase-order/06-pages-purchase-order.html"},{"lineagePattern":"pages-rental","lineagePath":"../../patterns/06-pages-rental/06-pages-rental.html"}],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternType":"templates","patternSubtype":"lists"},"patternExtension":"mustache","patternName":"Attachments List","patternPartial":"templates-attachments-list","patternState":"","patternEngineName":"mustache","extraOutput":{}}
+  {"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":true,"patternLineagesR":[{"lineagePattern":"pages-anomaly-view","lineagePath":"../../patterns/06-pages-audit-analytics-anomaly-view/06-pages-audit-analytics-anomaly-view.html"},{"lineagePattern":"pages-case-view","lineagePath":"../../patterns/06-pages-audit-analytics-case-view/06-pages-audit-analytics-case-view.html"},{"lineagePattern":"pages-field-ticket","lineagePath":"../../patterns/06-pages-field-ticket/06-pages-field-ticket.html"},{"lineagePattern":"pages-purchase-order","lineagePath":"../../patterns/06-pages-purchase-order/06-pages-purchase-order.html"},{"lineagePattern":"pages-rental","lineagePath":"../../patterns/06-pages-rental/06-pages-rental.html"}],"lineageR":[{"lineagePattern":"pages-anomaly-view","lineagePath":"../../patterns/06-pages-audit-analytics-anomaly-view/06-pages-audit-analytics-anomaly-view.html"},{"lineagePattern":"pages-case-view","lineagePath":"../../patterns/06-pages-audit-analytics-case-view/06-pages-audit-analytics-case-view.html"},{"lineagePattern":"pages-field-ticket","lineagePath":"../../patterns/06-pages-field-ticket/06-pages-field-ticket.html"},{"lineagePattern":"pages-purchase-order","lineagePath":"../../patterns/06-pages-purchase-order/06-pages-purchase-order.html"},{"lineagePattern":"pages-rental","lineagePath":"../../patterns/06-pages-rental/06-pages-rental.html"}],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternType":"templates","patternSubtype":"lists"},"patternExtension":"mustache","patternName":"Attachments List","patternPartial":"templates-attachments-list","patternState":"","patternEngineName":"mustache","extraOutput":{}}
 </script>
 
 <script>
@@ -558,10 +547,10 @@
   }
 </script>
 
-<script id="pl-js-polyfill-insert-1579126521816">
+<script id="pl-js-polyfill-insert-1582751770773">
   (function() {
     if (self != top) {
-      var cb = '1579126521816';
+      var cb = '1582751770773';
       var js = [];
       if (typeof document !== 'undefined' && !('classList' in document.documentElement)) {
         js.push('styleguide/bower_components/classList.min.js');
@@ -571,10 +560,10 @@
   })();
 </script>
 
-<script id="pl-js-insert-1579126521816">
+<script id="pl-js-insert-1582751770773">
   (function() {
     if (self != top) {
-      var cb = '1579126521816';
+      var cb = '1582751770773';
       var js = [ { 'src': 'styleguide/bower_components/jwerty.min.js', 'dep': [ 'styleguide/js/patternlab-pattern.min.js' ] } ];
       scriptLoader.run(js,cb,'pl-js-insert');
     }

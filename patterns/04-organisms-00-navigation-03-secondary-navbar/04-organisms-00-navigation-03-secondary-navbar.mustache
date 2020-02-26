@@ -2,18 +2,45 @@
     <div class="container-fluid">
         <div class="row">
                 <div class="col-xs-4">
-                    {{#showBackButton}}
-                        <div class="btn-group  pull-left">
-                            <button class="btn btn-link text-nowrap dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                                <i class="fas fa-arrow-left fa-fw"></i> Back <span class="caret"></span>
-                            </button>
-                            <ul class="dropdown-menu">
-                                <li><a href="#">Supplier On-Ramping</a></li>
-                                <li><a href="#">Suppliers</a></li>
-                                <li><a href="#">Dashboard</a></li>
-                            </ul>
-                        </div>
-                    {{/showBackButton}}
+                    {{#customBackButtonLink}}
+                      {{#customOnClick}}
+                      <style>
+                          #backBtn::before {
+                              content: '\f060';
+                              font-family: "Font Awesome 5 Pro";
+                              color: #fff;
+                              display: inline;
+                              float: left;
+                              line-height: 2.4;
+                          }
+                      </style>
+                            <div class="btn-group  pull-left" id="backBtn">
+                                <input type="button" style="padding-left: 3px;" class="btn btn-link text-nowrap"
+                                    value="Back" onclick="window.parent.history.back()">
+                            </div>
+                        {{/customOnClick}}
+                        {{^customOnClick}}
+                            <div class="btn-group  pull-left">
+                                <a class="btn btn-link text-nowrap" href="{{customBackButtonLink}}">
+                                    <i class="fas fa-arrow-left fa-fw"></i> Back
+                                </a>
+                            </div>
+                        {{/customOnClick}}
+                    {{/customBackButtonLink}}
+                    {{^customBackButtonLink}}
+                        {{#showBackButton}}
+                            <div class="btn-group  pull-left">
+                                <button class="btn btn-link text-nowrap dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                    <i class="fas fa-arrow-left fa-fw"></i> Back <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Supplier On-Ramping</a></li>
+                                    <li><a href="#">Suppliers</a></li>
+                                    <li><a href="#">Dashboard</a></li>
+                                </ul>
+                            </div>
+                        {{/showBackButton}}
+                    {{/customBackButtonLink}}
                 </div>
                 <div class="col-xs-4 text-center hide-overflow">
                     <div class="form-control-static">

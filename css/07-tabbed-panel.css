@@ -1,21 +1,23 @@
-.panel.panel-tab .panel-body div.panel-wrapper{
+.panel.panel-tab .panel-body .nav-tabs,
+.panel.panel-tab .panel-body .tab-content {
     position: relative;
     right: 0;
     top: -57px;
+    padding-bottom: 0;
 }
 
 .panel.panel-tab .tab-pane {
     padding: 0;
 }
 
-.panel.panel-tab .nav-tabs > li.active > a {
-}
-
 .panel.panel-tab .nav-tabs>li>a {
     margin-right: 0;
 }
 
-.panel.panel-tab div.panel-wrapper div.tab-content {
+.panel.panel-tab div.tab-content {
     background-color: transparent;
     border: none;
+}
+.panel.panel-tab div.panel-body, {
+    padding: 0px;
 }

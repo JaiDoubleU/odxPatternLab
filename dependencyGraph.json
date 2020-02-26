@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "timestamp": 1579126526945,
+  "timestamp": 1582751772964,
   "graph": {
     "options": {
       "directed": true,
@@ -713,7 +713,9 @@
       {
         "v": "04-organisms/01-blocks/07-tabbed-panel.mustache",
         "value": {
-          "compileState": "clean"
+          "compileState": "clean",
+          "lineagePath": "../../patterns/06-pages-audit-analytics-case-view/06-pages-audit-analytics-case-view.html",
+          "lineagePattern": "pages-case-view"
         }
       },
       {
@@ -1080,8 +1082,8 @@
         "v": "05-templates/04-navs-and-toolbars/slide-in-panel.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/06-pages-service-account-dashboard/06-pages-service-account-dashboard.html",
-          "lineagePattern": "pages-service-account-dashboard"
+          "lineagePath": "../../patterns/06-pages-openInvoice-dashboard/06-pages-openInvoice-dashboard.html",
+          "lineagePattern": "pages-openInvoice-dashboard"
         }
       },
       {
@@ -1105,7 +1107,9 @@
       {
         "v": "05-templates/05-feedback-and-messaging/resizable-modal.mustache",
         "value": {
-          "compileState": "clean"
+          "compileState": "clean",
+          "lineagePath": "../../patterns/06-pages-audit-analytics-case-list/06-pages-audit-analytics-case-list.html",
+          "lineagePattern": "pages-case-list"
         }
       },
       {
@@ -1177,17 +1181,13 @@
       {
         "v": "05-templates/09-charting/donut-chart.mustache",
         "value": {
-          "compileState": "clean",
-          "lineagePath": "../../patterns/06-pages-service-account-dashboard/06-pages-service-account-dashboard.html",
-          "lineagePattern": "pages-service-account-dashboard"
+          "compileState": "clean"
         }
       },
       {
         "v": "05-templates/09-charting/gauge-chart.mustache",
         "value": {
-          "compileState": "clean",
-          "lineagePath": "../../patterns/06-pages-service-account-dashboard/06-pages-service-account-dashboard.html",
-          "lineagePattern": "pages-service-account-dashboard"
+          "compileState": "clean"
         }
       },
       {
@@ -1199,13 +1199,55 @@
       {
         "v": "05-templates/09-charting/stacked-bar-chart.mustache",
         "value": {
-          "compileState": "clean",
-          "lineagePath": "../../patterns/06-pages-service-account-dashboard/06-pages-service-account-dashboard.html",
-          "lineagePattern": "pages-service-account-dashboard"
+          "compileState": "clean"
         }
       },
       {
         "v": "05-templates/09-charting/world-map.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "06-pages/audit-analytics/_case-view-actions-button.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/06-pages-audit-analytics-case-view/06-pages-audit-analytics-case-view.html",
+          "lineagePattern": "pages-case-view"
+        }
+      },
+      {
+        "v": "06-pages/audit-analytics/anomalies-list.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "06-pages/audit-analytics/anomaly-view.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "06-pages/audit-analytics/audit-analytics-dashboard.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "06-pages/audit-analytics/case-list.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "06-pages/audit-analytics/case-view.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "06-pages/audit-analytics/documentViewer.mustache",
         "value": {
           "compileState": "clean"
         }
@@ -1296,12 +1338,6 @@
       },
       {
         "v": "06-pages/rental.mustache",
-        "value": {
-          "compileState": "clean"
-        }
-      },
-      {
-        "v": "06-pages/service-account-dashboard.mustache",
         "value": {
           "compileState": "clean"
         }
@@ -1562,6 +1598,141 @@
       {
         "v": "05-templates/03-forms/panel-form.mustache",
         "w": "02-atoms/05-form-elements/00-input.mustache",
+        "value": {}
+      },
+      {
+        "v": "06-pages/audit-analytics/anomalies-list.mustache",
+        "w": "04-organisms/00-navigation/00-navbar.mustache",
+        "value": {}
+      },
+      {
+        "v": "06-pages/audit-analytics/anomalies-list.mustache",
+        "w": "04-organisms/00-navigation/03-secondary-navbar.mustache",
+        "value": {}
+      },
+      {
+        "v": "06-pages/audit-analytics/anomalies-list.mustache",
+        "w": "05-templates/00-blocks/document-header.mustache",
+        "value": {}
+      },
+      {
+        "v": "06-pages/audit-analytics/anomalies-list.mustache",
+        "w": "05-templates/05-feedback-and-messaging/resizable-modal.mustache",
+        "value": {}
+      },
+      {
+        "v": "06-pages/audit-analytics/anomalies-list.mustache",
+        "w": "05-templates/03-forms/bulk-update.mustache",
+        "value": {}
+      },
+      {
+        "v": "06-pages/audit-analytics/anomaly-view.mustache",
+        "w": "04-organisms/00-navigation/00-navbar.mustache",
+        "value": {}
+      },
+      {
+        "v": "06-pages/audit-analytics/anomaly-view.mustache",
+        "w": "04-organisms/00-navigation/03-secondary-navbar.mustache",
+        "value": {}
+      },
+      {
+        "v": "06-pages/audit-analytics/anomaly-view.mustache",
+        "w": "04-organisms/01-blocks/07-tabbed-panel.mustache",
+        "value": {}
+      },
+      {
+        "v": "06-pages/audit-analytics/anomaly-view.mustache",
+        "w": "05-templates/07-lists/01-attachments-list.mustache",
+        "value": {}
+      },
+      {
+        "v": "06-pages/audit-analytics/anomaly-view.mustache",
+        "w": "05-templates/07-lists/02-comments-list.mustache",
+        "value": {}
+      },
+      {
+        "v": "06-pages/audit-analytics/anomaly-view.mustache",
+        "w": "06-pages/audit-analytics/_case-view-actions-button.mustache",
+        "value": {}
+      },
+      {
+        "v": "06-pages/audit-analytics/audit-analytics-dashboard.mustache",
+        "w": "04-organisms/00-navigation/00-navbar.mustache",
+        "value": {}
+      },
+      {
+        "v": "06-pages/audit-analytics/audit-analytics-dashboard.mustache",
+        "w": "04-organisms/00-navigation/03-secondary-navbar.mustache",
+        "value": {}
+      },
+      {
+        "v": "06-pages/audit-analytics/audit-analytics-dashboard.mustache",
+        "w": "02-atoms/02-text/07-page-header.mustache",
+        "value": {}
+      },
+      {
+        "v": "06-pages/audit-analytics/case-list.mustache",
+        "w": "04-organisms/00-navigation/00-navbar.mustache",
+        "value": {}
+      },
+      {
+        "v": "06-pages/audit-analytics/case-list.mustache",
+        "w": "04-organisms/00-navigation/03-secondary-navbar.mustache",
+        "value": {}
+      },
+      {
+        "v": "06-pages/audit-analytics/case-list.mustache",
+        "w": "05-templates/00-blocks/document-header.mustache",
+        "value": {}
+      },
+      {
+        "v": "06-pages/audit-analytics/case-list.mustache",
+        "w": "05-templates/05-feedback-and-messaging/resizable-modal.mustache",
+        "value": {}
+      },
+      {
+        "v": "06-pages/audit-analytics/case-list.mustache",
+        "w": "05-templates/03-forms/bulk-update.mustache",
+        "value": {}
+      },
+      {
+        "v": "06-pages/audit-analytics/case-view.mustache",
+        "w": "04-organisms/00-navigation/00-navbar.mustache",
+        "value": {}
+      },
+      {
+        "v": "06-pages/audit-analytics/case-view.mustache",
+        "w": "04-organisms/00-navigation/03-secondary-navbar.mustache",
+        "value": {}
+      },
+      {
+        "v": "06-pages/audit-analytics/case-view.mustache",
+        "w": "04-organisms/01-blocks/07-tabbed-panel.mustache",
+        "value": {}
+      },
+      {
+        "v": "06-pages/audit-analytics/case-view.mustache",
+        "w": "05-templates/07-lists/01-attachments-list.mustache",
+        "value": {}
+      },
+      {
+        "v": "06-pages/audit-analytics/case-view.mustache",
+        "w": "05-templates/07-lists/02-comments-list.mustache",
+        "value": {}
+      },
+      {
+        "v": "06-pages/audit-analytics/case-view.mustache",
+        "w": "06-pages/audit-analytics/_case-view-actions-button.mustache",
+        "value": {}
+      },
+      {
+        "v": "06-pages/audit-analytics/documentViewer.mustache",
+        "w": "04-organisms/00-navigation/00-navbar.mustache",
+        "value": {}
+      },
+      {
+        "v": "06-pages/audit-analytics/documentViewer.mustache",
+        "w": "04-organisms/00-navigation/03-secondary-navbar.mustache",
         "value": {}
       },
       {
@@ -1827,36 +1998,6 @@
       {
         "v": "06-pages/rental.mustache",
         "w": "04-organisms/00-navigation/05-centered-navbar.mustache",
-        "value": {}
-      },
-      {
-        "v": "06-pages/service-account-dashboard.mustache",
-        "w": "04-organisms/00-navigation/00-navbar.mustache",
-        "value": {}
-      },
-      {
-        "v": "06-pages/service-account-dashboard.mustache",
-        "w": "04-organisms/00-navigation/03-secondary-navbar.mustache",
-        "value": {}
-      },
-      {
-        "v": "06-pages/service-account-dashboard.mustache",
-        "w": "05-templates/04-navs-and-toolbars/slide-in-panel.mustache",
-        "value": {}
-      },
-      {
-        "v": "06-pages/service-account-dashboard.mustache",
-        "w": "05-templates/09-charting/gauge-chart.mustache",
-        "value": {}
-      },
-      {
-        "v": "06-pages/service-account-dashboard.mustache",
-        "w": "05-templates/09-charting/stacked-bar-chart.mustache",
-        "value": {}
-      },
-      {
-        "v": "06-pages/service-account-dashboard.mustache",
-        "w": "05-templates/09-charting/donut-chart.mustache",
         "value": {}
       },
       {

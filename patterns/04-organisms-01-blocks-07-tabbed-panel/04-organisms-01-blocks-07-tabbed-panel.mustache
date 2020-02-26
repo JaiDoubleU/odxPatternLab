@@ -1,35 +1,56 @@
-<div class="row">
-    <div class="col-xs-12 col-sm-6">
-        <div class="panel panel-default panel-tab">
-            <div class="panel-heading">
-                <div class="panel-title">&nbsp;</div>
-            </div>
-            <div class="panel-body">
-                <div class="panel-wrapper">
-                    <ul class="nav nav-tabs">
-                        <li class="active"><a href="#tab1" data-toggle="tab">Tab 1</a></li>
-                        <li><a href="#tab2" data-toggle="tab">Tab 2</a></li>
-                        <li><a href="#tab3" data-toggle="tab">Tab 3</a></li>
-                        <li><a href="#tab4" data-toggle="tab">Tab 4</a></li>
-                    </ul>
-                    <div class="tab-content">
-                        <div class="tab-pane active" id="tab1">
-                            {{loremIpsumParagraph1}}
-                        </div>
-                        <div class="tab-pane" id="tab2">
-                            {{loremIpsumParagraph2}}
-                        </div>
 
-                        <div class="tab-pane" id="tab3">
-                            {{loremIpsumParagraph3}}
+<div class="panel panel-default panel-tab">
+    <div class="panel-heading">
+        <div class="panel-title">&nbsp;</div>
+    </div>
+    <div class="panel-body">
+        {{#overrideDefaultTabs}}
+            <ul class="nav nav-tabs">
+            {{#customCaseTabs}}
+                <li class="{{class}}"><a href="#{{id}}" data-toggle="tab">{{text}}
+                        {{#count}} <sup class="label alert-info small">{{count}}</sup>{{/count}}</a></li>
+            {{/customCaseTabs}}
+            </ul>
+            <div class="tab-content">
+                {{#customCaseTabs}}
+                    <div class="tab-pane {{class}}" id="{{id}}">
+                        <div class="h5">{{text}}
+                            <div class="btn-group btn-group-sm pull-right">
+                                <button class="btn btn-sm btn-default">
+                                    Add {{text}}
+                                </button>
+                            </div>
+                            <div class="clearfix"></div>
                         </div>
-
-                        <div class="tab-pane" id="tab4">
-                            {{loremIpsumLong}}
-                        </div>
+                        {{loremIpsumLong}}
                     </div>
+                {{/customCaseTabs}}
+            </div>
+        {{/overrideDefaultTabs}}
+        {{^overrideDefaultTabs}}
+            <ul class="nav nav-tabs">
+                <li class="active"><a href="#tab1" data-toggle="tab">Tab 1</a></li>
+                <li><a href="#tab2" data-toggle="tab">Tab 2</a></li>
+                <li><a href="#tab3" data-toggle="tab">Tab 3</a></li>
+                <li><a href="#tab4" data-toggle="tab">Tab 4</a></li>
+            </ul>
+            <div class="tab-content">
+                <div class="tab-pane active" id="tab1">
+                    {{loremIpsumParagraph1}}
+                </div>
+                <div class="tab-pane" id="tab2">
+                    {{loremIpsumParagraph2}}
+                </div>
+
+                <div class="tab-pane" id="tab3">
+                    {{loremIpsumParagraph3}}
+                </div>
+
+                <div class="tab-pane" id="tab4">
+                    {{loremIpsumLong}}
                 </div>
             </div>
-        </div>
+        {{/overrideDefaultTabs}}
     </div>
 </div>
+

@@ -1,0 +1,1025 @@
+<link href="../../css/00-navbar-alternate.css" rel="alternate stylesheet" type="text/css" title="alternate">
+<nav  id="defaultNavbar" role="navigation" class="navbar navbar-default navbar-fixed-top">
+    <div id="message"></div>
+    <div class="container-fluid">
+        <div class="navbar-header navbar-left pull-left">
+            <button type="button" data-toggle="collapse" data-target=".navbar-collapse" class="btn btn-default btn-sm navbar-btn pull-left">
+                Menu
+            </button>
+            <div class="navbar-brand hidden-xs hidden-sm">
+                <a class="logo-navbar"></a>
+            </div>
+        </div>
+        <div class="navbar-header navbar-right pull-right">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="hidden visible-xs pull-left">
+                    <a class="label-success navbar-link">
+                        <i class="fas fa-sack-dollar fa-fw"></i>
+                        <div class="pull-right" style="width: 60px; white-space: normal;float:right;line-height: 1;font-size: 13px; text-align: center;">Get Paid Faster! </div>
+                    </a>
+                </li>
+                <li class="hidden visible-xs visible-sm dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fas fa-search fa-fw"></i></a>
+                    <ul class="dropdown-menu dropdown-menu-right" style="padding: 15px;min-width: 250px;">
+                        <li>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <form>
+                                        <div class="input-group input-group-sm ">
+                                            <span class="input-group-addon dropdown-toggle" data-toggle="dropdown"
+                                                aria-haspopup="true" aria-expanded="false">
+                                                <span class="caret"></span>
+                                            </span>
+                                            <ul class="dropdown-menu dropdown-menu-left">
+                                                <li onclick="setGlobalSearchPlaceholder($(this).first().text());"><a>Invoice #</a></li>
+                                                <li onclick="setGlobalSearchPlaceholder($(this).first().text());"><a href="#">Pricebook #</a></li>
+                                                <li onclick="setGlobalSearchPlaceholder($(this).first().text());"><a href="#">Field Ticket #</a></li>
+                                                <li onclick="setGlobalSearchPlaceholder($(this).first().text());"><a href="#">Purchase Order #</a></li>
+                                            </ul>
+
+                                            <input class="form-control" id="globalSearch" placeholder="Invoice #">
+
+                                            <span class="input-group-btn">
+                                                <button class="btn btn-default"><i class="fas fa-search fa-fw"></i></button>
+                                            </span>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a title="Message Centre" class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <span class="badge badge-xs">49</span>
+                        <i class="fas fa-bell fa-fw"></i>
+                        <!-- <span class="hidden-xs hide">Messages</span> -->
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-right">
+                        <li>
+                            <a title="Message Centre" href="#">
+                                <span class="fa-fw">
+                                    <i class="fas fa-envelope"></i>
+                                    Messages
+                                </span>
+                                <sup class="badge" style="background:#BE3A34">41</sup>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="fa-fw">
+                                    <i class="fas fa-file-alt"></i>
+                                    Completed Reports
+                                </span>
+                                <sup class="badge" style="background:#BE3A34">8</sup>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a title="Help Center" class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fas fa-question-circle fa-fw"></i> <span class="hidden-xs hide">Help</span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-right">
+                        <li><a href="#"><i class="fas fa-life-ring fa-fw"></i> Contact Support</a></li>
+                        <li><a href="#"><i class="fas fa-book fa-fw"></i> Resource Center</a></li>
+                        <li><a href="#"><i class="fas fa-comment fa-fw"></i> Feedback</a></li>
+                        <li><a href="#"><i class="fas fa-users fa-fw"></i> About</a></li>
+                        <li><a href="#"><i class="fas fa-user-secret fa-fw"></i> Privacy</a></li>
+                        <li><a href="#"><i class="fas fa-gavel fa-fw"></i> Terms</a></li>
+                        <li><a href="#"><i class="fas fa-globe fa-fw"></i> Browsers</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a title="My Profile" class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fas fa-user fa-fw"></i> <span class="hidden-xs hide">Profile</span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-right">
+                        <li><a href="#"><i class="fas fa-user fa-fw"></i> Christopher Schwartzenberg</a></li>
+                        <li><a href="#"><i class="fas fa-cog fa-fw"></i> Preferences</a></li>
+                        <li><a href="#"><i class="fas fa-font fa-fw"></i> Font Size</a></li>
+                    </ul>
+                </li>
+                <li><a title="Sign Out" href="#"><i class="fas fa-sign-out fa-fw"></i></a></li>
+            </ul>
+        </div>
+        <ul class="nav navbar-nav navbar-left">
+            <li class="pull-left">
+                <p class="navbar-text hide-overflow small hidden-sm hidden-xs" style="max-width: 225px;">Tetratrex
+                    Oilfield Services Incorporated Ltd.
+                </p>
+            </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right visible-sm visible-md visible-lg hidden-xs">
+            <li class="pull-left">
+                <a class="label-success navbar-link">
+                    <i class="fas fa-sack-dollar fa-fw"></i>
+                    <div class="pull-right" style="width: 60px; white-space: normal;float:right;line-height: 1;font-size: 13px; text-align: center;">Get Paid Faster! </div>
+                </a>
+            </li>
+            <li>
+                <form class="navbar-form navbar-right">
+                    <div class="form-group">
+                        <div class="input-group">
+                            <span class="input-group-addon dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">
+                                <span class="caret"></span>
+                            </span>
+                            <ul class="dropdown-menu dropdown-menu-left">
+                                <li onclick="setGlobalSearchPlaceholder($(this).first().text());"><a href="#">Invoice #</a></li>
+                                <li onclick="setGlobalSearchPlaceholder($(this).first().text());"><a href="#">Pricebook #</a></li>
+                                <li onclick="setGlobalSearchPlaceholder($(this).first().text());"><a href="#">Field Ticket #</a></li>
+                                <li onclick="setGlobalSearchPlaceholder($(this).first().text());"><a href="#">Purchase Order #</a></li>
+                            </ul>
+
+                            <input class="form-control" id="globalSearch" placeholder="Invoice #">
+
+                            <span class="input-group-btn">
+                                <button class="btn btn-default"><i class="fas fa-search fa-fw"></i></button>
+                            </span>
+                        </div>
+                    </div>
+                </form>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<nav id="secondaryNavbar" class="navbar-default animated navbar-fixed-top " style="z-index: 1030">
+    <div class="container-fluid">
+        <div class="row">
+                <div class="col-xs-4">
+                            <div class="btn-group  pull-left">
+                                <a class="btn btn-link text-nowrap" href="&#x2F;patterns&#x2F;06-pages-audit-analytics-case-list&#x2F;06-pages-audit-analytics-case-list.html">
+                                    <i class="fas fa-arrow-left fa-fw"></i> Back
+                                </a>
+                            </div>
+                </div>
+                <div class="col-xs-4 text-center hide-overflow">
+                    <div class="form-control-static">
+                        Case #0000243568
+                    </div>
+                </div>
+                <div class="col-xs-4 text-right text-nowrap">
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<script>
+    var openDocumentViewer = function () {
+        var viewerHref = document.querySelector('#documentViewerHref').value
+
+        console.error('document location is ' + viewerHref);
+        document.querySelector('.pl').parentNode.location = viewerHref;
+    };
+</script>
+<div class="container-fluid page-top-padding page-bottom-padding">
+    <input type="hidden" id="documentViewerHref" value='&#x2F;patterns&#x2F;06-pages-audit-analytics-documentViewer&#x2F;06-pages-audit-analytics-documentViewer.html'>
+
+    <div class="row">
+        <div class="col-sm-7">
+            <div class="panel panel-default">
+                <div class="panel-heading">Case Details</div>
+                <div class="panel-body">
+                    <div class="col-xs-6">
+                        <div class="form-group">
+                            <label class="control-label">Case Name</label>
+                            <input type='text' class="form-control" value="Case 0000243568" disabled>
+                        </div>
+                    </div>
+                    <div class="col-xs-6">
+                        <div class="form-group">
+                            <label class="control-label">Supplier Name</label>
+                            <input type='text' class="form-control" value="ACME Oilfield Supplies Ltd." disabled>
+                        </div>
+                    </div>
+                    <div class="col-xs-6">
+                        <div class="form-group">
+                            <label class="control-label">Status</label>
+                            <select class="form-control">
+                                <option>Investigating</option>
+                                <option>Closed</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-xs-6">
+                        <div class="form-group">
+                            <label class="control-label">Recovered Amount</label>
+                            <input type='text' class="form-control" value="">
+                        </div>
+                    </div>
+                    <div class="col-xs-6">
+                        <div class="form-group">
+                            <label class="control-label">Assigned To</label>
+                            <input type='text' class="form-control" value="Bill Anderson" disabled>
+                        </div>
+                    </div>
+                    <div class="col-xs-6">
+                        <div class="form-group">
+                            <label class="control-label">Date Opened</label>
+                            <div class="input-group">
+                                <input type='text' class="form-control" value="12-22-2019" disabled>
+                                <span class="input-group-btn">
+                                    <button class="btn btn-default">
+                                        <i class="far fa-calendar-alt"></i>
+                                    </button>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-6">
+                        <div class="form-group">
+                            <label class="control-label">Date Closed</label>
+                            <div class="input-group">
+                                <input type="text" class="form-control">
+                                <span class="input-group-btn">
+                                    <button class="btn btn-default">
+                                        <i class="far fa-calendar-alt"></i>
+                                    </button>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel panel-default hide">
+                <div class="panel-heading">
+                    <div class="panel-title">
+                        Notes
+                        <div class="btn-group btn-group-sm pull-right">
+                            <button class="btn btn-sm btn-default">
+                                Add a Note
+                            </button>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+                <div class="panel-body">
+                   <textarea class="form-control" rows="3" width="100%"></textarea>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-5">
+            
+<div class="panel panel-default panel-tab">
+    <div class="panel-heading">
+        <div class="panel-title">&nbsp;</div>
+    </div>
+    <div class="panel-body">
+            <ul class="nav nav-tabs">
+                <li class="active"><a href="#caseAttachments" data-toggle="tab">Attachments
+                         <sup class="label alert-info small">2</sup></a></li>
+                <li class=""><a href="#caseComments" data-toggle="tab">Comments
+                         <sup class="label alert-info small">4</sup></a></li>
+                <li class=""><a href="#caseNotes" data-toggle="tab">Notes
+                         <sup class="label alert-info small">1</sup></a></li>
+            </ul>
+            <div class="tab-content">
+                    <div class="tab-pane active" id="caseAttachments">
+                        <div class="h5">Attachments
+                            <div class="btn-group btn-group-sm pull-right">
+                                <button class="btn btn-sm btn-default">
+                                    Add Attachments
+                                </button>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et elit at quam finibus lobortis.
+                    </div>
+                    <div class="tab-pane " id="caseComments">
+                        <div class="h5">Comments
+                            <div class="btn-group btn-group-sm pull-right">
+                                <button class="btn btn-sm btn-default">
+                                    Add Comments
+                                </button>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et elit at quam finibus lobortis.
+                    </div>
+                    <div class="tab-pane " id="caseNotes">
+                        <div class="h5">Notes
+                            <div class="btn-group btn-group-sm pull-right">
+                                <button class="btn btn-sm btn-default">
+                                    Add Notes
+                                </button>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et elit at quam finibus lobortis.
+                    </div>
+            </div>
+    </div>
+</div>
+
+
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <div class="panel-title">Case Summary</div>
+                </div>
+                <div class="panel-body">
+                    <ul class="list-unstyled">
+                        <li class="text-primary">Driver: Alex English </li>
+                        <li class="small text-muted">Billed more than 24 hours on three occasions</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="panel panel-default hide">
+                <div class="panel-heading">
+                    Attachments
+                    <div class="btn-group btn-group-sm pull-right">
+                        <button class="btn btn-sm btn-default">
+                            Add an Attachment
+                        </button>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="panel-body">
+                    <div class="table-responsive">
+                        <div class="container-fluid">
+    <form>
+        <div class="table-responsive">
+            <table class="table table-bordered table-striped hide-overflow">
+                <thead>
+                    <th>Name</th>
+                    <th width="20%">Size</th>
+                    <th width="50">Remove</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Attachment1.png</td>
+                        <td>395.5 KB</td>
+                        <td>
+                            <a class="btn btn-block" href="#nogo">
+                                <i class="fas fa-trash-alt fa-fw"></i>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Attachment2.pdf</td>
+                        <td>892.4 KB</td>
+                        <td>
+                            <a class="btn btn-block" href="#nogo">
+                                <i class="fas fa-trash-alt fa-fw"></i>
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </form>
+</div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default hide">
+                <div class="panel-heading">
+                    <div class="panel-title">
+                        Comments
+                        <div class="btn-group btn-group-sm pull-right">
+                            <button class="btn btn-sm btn-default">
+                                Add a Comment
+                            </button>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+                <div class="panel-body">
+                    <div class="table-responsive">
+                        <div class="media">
+    <div class="media-left">
+        <i class="fas fa-comment fa-fw text-muted"></i>
+    </div>
+    <div class="media-body">
+      	<p class="media-heading"><strong>Stewart Troutman</strong> <small>12/21/2017 18:23</small></p>
+        <i>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et elit at quam finibus lobortis."</i>
+    </div>
+</div>
+
+<div class="media">
+    <div class="media-left ">
+        <i class="fas fa-comment fa-fw text-muted"></i>
+    </div>
+    <div class="media-body">
+      	<p class="media-heading"><strong>Ollie Springfield</strong> <small>12/21/2017 11:23</small></p>
+        <i>"Lorem ipsum dolor sit amet, consectetur adipiscing."</i>
+    </div>
+</div>
+
+<div class="media">
+    <div class="media-left ">
+        <i class="fas fa-comment fa-fw text-muted"></i>
+    </div>
+    <div class="media-body">
+      	<p class="media-heading"><strong>Tom Elkman </strong><small>12/12/2017 9:23</small></p>
+        <i>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et elit at quam finibus lobortis."</i>
+    </div>
+</div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <span class="panel-title">Anomalies </span>
+                    <div class="btn-group btn-group-sm pull-right">
+                        <button class="btn btn-sm btn-default">
+                            Download Ticket Report
+                        </button>
+                        <button class="btn btn-sm btn-default">
+                            Edit Anomalies
+                        </button>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="panel-body">
+                    <div class="table-responsive">
+                            <div class="table-responsive multi-row-header">
+                                <table class="table table-bordered text-nowrap">
+                                        <thead>
+                                            <tr>
+                                                <th width="15">&nbsp;</th>
+                                                <th>Id</th>
+                                                <th>Anomaly Type</th>
+                                                <th>Supplier</th>
+                                                <th>Severity</th>
+                                                <th>Detection Date</th>
+                                                <th>Status</th>
+                                                <th>Record Count</th>
+                                                <th>Ticket Value</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr data-toggle="collapse" data-target="#toggle0"
+                                                    class="accordion-toggle">
+
+                                                    <td width="15">
+                                                        <a class="btn btn-default btn-xs fas fa-chevron-down"
+                                                            onmouseup="$(this).toggleClass('fa-chevron-up fa-chevron-down');"></a>
+                                                    </td>
+                                                        <td>0</td>
+
+                                                        <td>24 Hour Billing by Driver</td>
+
+                                                        <td>Acme Oilfield Services Ltd.</td>
+
+                                                        <td>Severe</td>
+
+                                                        <td>02-18-2020</td>
+
+                                                        <td>New</td>
+
+                                                        <td>3</td>
+
+                                                        <td>$2,965.17</td>
+
+
+
+                                                </tr>
+
+                                                    <tr class="accordian-body collapse out" id="toggle0">
+                                                        <td colspan="9">
+                                                            <table class="table table-bordered table-striped">
+                                                                    <thead>
+                                                                        <tr>
+                                                                            <th width="15">&nbsp;</th>
+                                                                            <th>Ticket Number</th>
+                                                                            <th>Status</th>
+                                                                            <th>Product&#x2F;Service</th>
+                                                                            <th>Driver Name</th>
+                                                                            <th>Date</th>
+                                                                            <th>Hours Worked</th>
+                                                                            <th>Total Amount</th>
+                                                                            <th>Link</th>
+                                                                            <th width="15" class="text-center">Link</th>
+                                                                            <!-- <th>
+                                                                                Actions
+                                                                            </th> -->
+                                                                        </tr>
+
+                                                                    </thead>
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td width="15">&nbsp;</td>
+                                                                            <td>64836</td>
+                                                                            <td>Submitted</td>
+                                                                            <td>Water Hauling</td>
+                                                                            <td>Alex  English</td>
+                                                                            <td>02-18-2020</td>
+                                                                            <td>7</td>
+                                                                            <td>$2,176.86</td>
+                                                                            <td>link</td>
+                                                                            <td width="15">
+                                                                                <script>
+                                                                                    function openDocumentViewerWindow() {
+                                                                                        window.open("http://styleguide.transzap.com/?p=pages-documentViewer","_blank", "toolbar=yes,scrollbars=yes,resizable=yes,top=500,left=500,width=1200,height=600");
+                                                                                    }
+                                                                                </script>
+                                                                                <button class="btn btn-link" onclick="openDocumentViewerWindow()">
+                                                                                    <i class="far fa-external-link"></i>
+                                                                                    View Ticket
+                                                                                </button>
+
+                                                                            </td>
+                                                                            <!-- <td>
+                                                                                <div class="btn-group btn-group-sm"><button class="btn btn-default dropdown-toggle" data-toggle="dropdown"
+        aria-expanded="true">Actions<span class="caret"></span></button>
+    <ul class="dropdown-menu dropdown-menu-right">
+        <li><a href="#" data-toggle="modal" data-target="#resizableModal">Create Case</a></li>
+        <li><a href="#" data-toggle="modal" data-target="#resizableModal">Add to Case</a></li>
+        <li><a href="#" data-toggle="modal" data-target="#resizableModal">Release to Workflow</a></li>
+        <li><a href="#" data-toggle="modal" data-target="#resizableModal">Add a Comment</a></li>
+
+    </ul>
+</div>
+
+                                                                            </td> -->
+                                                                        </tr>
+                                                                    </tbody>
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td width="15">&nbsp;</td>
+                                                                            <td>34523</td>
+                                                                            <td>Submitted</td>
+                                                                            <td>Water Hauling</td>
+                                                                            <td>Alex  English</td>
+                                                                            <td>02-18-2020</td>
+                                                                            <td>7</td>
+                                                                            <td>$1,493.89</td>
+                                                                            <td>link</td>
+                                                                            <td width="15">
+                                                                                <script>
+                                                                                    function openDocumentViewerWindow() {
+                                                                                        window.open("http://styleguide.transzap.com/?p=pages-documentViewer","_blank", "toolbar=yes,scrollbars=yes,resizable=yes,top=500,left=500,width=1200,height=600");
+                                                                                    }
+                                                                                </script>
+                                                                                <button class="btn btn-link" onclick="openDocumentViewerWindow()">
+                                                                                    <i class="far fa-external-link"></i>
+                                                                                    View Ticket
+                                                                                </button>
+
+                                                                            </td>
+                                                                            <!-- <td>
+                                                                                <div class="btn-group btn-group-sm"><button class="btn btn-default dropdown-toggle" data-toggle="dropdown"
+        aria-expanded="true">Actions<span class="caret"></span></button>
+    <ul class="dropdown-menu dropdown-menu-right">
+        <li><a href="#" data-toggle="modal" data-target="#resizableModal">Create Case</a></li>
+        <li><a href="#" data-toggle="modal" data-target="#resizableModal">Add to Case</a></li>
+        <li><a href="#" data-toggle="modal" data-target="#resizableModal">Release to Workflow</a></li>
+        <li><a href="#" data-toggle="modal" data-target="#resizableModal">Add a Comment</a></li>
+
+    </ul>
+</div>
+
+                                                                            </td> -->
+                                                                        </tr>
+                                                                    </tbody>
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td width="15">&nbsp;</td>
+                                                                            <td>31532</td>
+                                                                            <td>Submitted</td>
+                                                                            <td>Water Hauling</td>
+                                                                            <td>Alex  English</td>
+                                                                            <td>02-18-2020</td>
+                                                                            <td>7</td>
+                                                                            <td>$1,159.62</td>
+                                                                            <td>link</td>
+                                                                            <td width="15">
+                                                                                <script>
+                                                                                    function openDocumentViewerWindow() {
+                                                                                        window.open("http://styleguide.transzap.com/?p=pages-documentViewer","_blank", "toolbar=yes,scrollbars=yes,resizable=yes,top=500,left=500,width=1200,height=600");
+                                                                                    }
+                                                                                </script>
+                                                                                <button class="btn btn-link" onclick="openDocumentViewerWindow()">
+                                                                                    <i class="far fa-external-link"></i>
+                                                                                    View Ticket
+                                                                                </button>
+
+                                                                            </td>
+                                                                            <!-- <td>
+                                                                                <div class="btn-group btn-group-sm"><button class="btn btn-default dropdown-toggle" data-toggle="dropdown"
+        aria-expanded="true">Actions<span class="caret"></span></button>
+    <ul class="dropdown-menu dropdown-menu-right">
+        <li><a href="#" data-toggle="modal" data-target="#resizableModal">Create Case</a></li>
+        <li><a href="#" data-toggle="modal" data-target="#resizableModal">Add to Case</a></li>
+        <li><a href="#" data-toggle="modal" data-target="#resizableModal">Release to Workflow</a></li>
+        <li><a href="#" data-toggle="modal" data-target="#resizableModal">Add a Comment</a></li>
+
+    </ul>
+</div>
+
+                                                                            </td> -->
+                                                                        </tr>
+                                                                    </tbody>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                        </tbody>
+                                        <tbody>
+                                                <tr data-toggle="collapse" data-target="#toggle1"
+                                                    class="accordion-toggle">
+
+                                                    <td width="15">
+                                                        <a class="btn btn-default btn-xs fas fa-chevron-down"
+                                                            onmouseup="$(this).toggleClass('fa-chevron-up fa-chevron-down');"></a>
+                                                    </td>
+                                                        <td>1</td>
+
+                                                        <td>24 Hour Billing by Driver</td>
+
+                                                        <td>Acme Oilfield Services Ltd.</td>
+
+                                                        <td>Severe</td>
+
+                                                        <td>02-18-2020</td>
+
+                                                        <td>New</td>
+
+                                                        <td>3</td>
+
+                                                        <td>$3,877.70</td>
+
+
+
+                                                </tr>
+
+                                                    <tr class="accordian-body collapse out" id="toggle1">
+                                                        <td colspan="9">
+                                                            <table class="table table-bordered table-striped">
+                                                                    <thead>
+                                                                        <tr>
+                                                                            <th width="15">&nbsp;</th>
+                                                                            <th>Ticket Number</th>
+                                                                            <th>Status</th>
+                                                                            <th>Product&#x2F;Service</th>
+                                                                            <th>Driver Name</th>
+                                                                            <th>Date</th>
+                                                                            <th>Hours Worked</th>
+                                                                            <th>Total Amount</th>
+                                                                            <th>Link</th>
+                                                                            <th width="15" class="text-center">Link</th>
+                                                                            <!-- <th>
+                                                                                Actions
+                                                                            </th> -->
+                                                                        </tr>
+
+                                                                    </thead>
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td width="15">&nbsp;</td>
+                                                                            <td>84555</td>
+                                                                            <td>Submitted</td>
+                                                                            <td>Water Hauling</td>
+                                                                            <td>Alex  English</td>
+                                                                            <td>02-18-2020</td>
+                                                                            <td>6</td>
+                                                                            <td>$1,803.63</td>
+                                                                            <td>link</td>
+                                                                            <td width="15">
+                                                                                <script>
+                                                                                    function openDocumentViewerWindow() {
+                                                                                        window.open("http://styleguide.transzap.com/?p=pages-documentViewer","_blank", "toolbar=yes,scrollbars=yes,resizable=yes,top=500,left=500,width=1200,height=600");
+                                                                                    }
+                                                                                </script>
+                                                                                <button class="btn btn-link" onclick="openDocumentViewerWindow()">
+                                                                                    <i class="far fa-external-link"></i>
+                                                                                    View Ticket
+                                                                                </button>
+
+                                                                            </td>
+                                                                            <!-- <td>
+                                                                                <div class="btn-group btn-group-sm"><button class="btn btn-default dropdown-toggle" data-toggle="dropdown"
+        aria-expanded="true">Actions<span class="caret"></span></button>
+    <ul class="dropdown-menu dropdown-menu-right">
+        <li><a href="#" data-toggle="modal" data-target="#resizableModal">Create Case</a></li>
+        <li><a href="#" data-toggle="modal" data-target="#resizableModal">Add to Case</a></li>
+        <li><a href="#" data-toggle="modal" data-target="#resizableModal">Release to Workflow</a></li>
+        <li><a href="#" data-toggle="modal" data-target="#resizableModal">Add a Comment</a></li>
+
+    </ul>
+</div>
+
+                                                                            </td> -->
+                                                                        </tr>
+                                                                    </tbody>
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td width="15">&nbsp;</td>
+                                                                            <td>94369</td>
+                                                                            <td>Submitted</td>
+                                                                            <td>Water Hauling</td>
+                                                                            <td>Alex  English</td>
+                                                                            <td>02-18-2020</td>
+                                                                            <td>6</td>
+                                                                            <td>$2,921.44</td>
+                                                                            <td>link</td>
+                                                                            <td width="15">
+                                                                                <script>
+                                                                                    function openDocumentViewerWindow() {
+                                                                                        window.open("http://styleguide.transzap.com/?p=pages-documentViewer","_blank", "toolbar=yes,scrollbars=yes,resizable=yes,top=500,left=500,width=1200,height=600");
+                                                                                    }
+                                                                                </script>
+                                                                                <button class="btn btn-link" onclick="openDocumentViewerWindow()">
+                                                                                    <i class="far fa-external-link"></i>
+                                                                                    View Ticket
+                                                                                </button>
+
+                                                                            </td>
+                                                                            <!-- <td>
+                                                                                <div class="btn-group btn-group-sm"><button class="btn btn-default dropdown-toggle" data-toggle="dropdown"
+        aria-expanded="true">Actions<span class="caret"></span></button>
+    <ul class="dropdown-menu dropdown-menu-right">
+        <li><a href="#" data-toggle="modal" data-target="#resizableModal">Create Case</a></li>
+        <li><a href="#" data-toggle="modal" data-target="#resizableModal">Add to Case</a></li>
+        <li><a href="#" data-toggle="modal" data-target="#resizableModal">Release to Workflow</a></li>
+        <li><a href="#" data-toggle="modal" data-target="#resizableModal">Add a Comment</a></li>
+
+    </ul>
+</div>
+
+                                                                            </td> -->
+                                                                        </tr>
+                                                                    </tbody>
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td width="15">&nbsp;</td>
+                                                                            <td>65177</td>
+                                                                            <td>Submitted</td>
+                                                                            <td>Water Hauling</td>
+                                                                            <td>Alex  English</td>
+                                                                            <td>02-18-2020</td>
+                                                                            <td>6</td>
+                                                                            <td>$3,486.55</td>
+                                                                            <td>link</td>
+                                                                            <td width="15">
+                                                                                <script>
+                                                                                    function openDocumentViewerWindow() {
+                                                                                        window.open("http://styleguide.transzap.com/?p=pages-documentViewer","_blank", "toolbar=yes,scrollbars=yes,resizable=yes,top=500,left=500,width=1200,height=600");
+                                                                                    }
+                                                                                </script>
+                                                                                <button class="btn btn-link" onclick="openDocumentViewerWindow()">
+                                                                                    <i class="far fa-external-link"></i>
+                                                                                    View Ticket
+                                                                                </button>
+
+                                                                            </td>
+                                                                            <!-- <td>
+                                                                                <div class="btn-group btn-group-sm"><button class="btn btn-default dropdown-toggle" data-toggle="dropdown"
+        aria-expanded="true">Actions<span class="caret"></span></button>
+    <ul class="dropdown-menu dropdown-menu-right">
+        <li><a href="#" data-toggle="modal" data-target="#resizableModal">Create Case</a></li>
+        <li><a href="#" data-toggle="modal" data-target="#resizableModal">Add to Case</a></li>
+        <li><a href="#" data-toggle="modal" data-target="#resizableModal">Release to Workflow</a></li>
+        <li><a href="#" data-toggle="modal" data-target="#resizableModal">Add a Comment</a></li>
+
+    </ul>
+</div>
+
+                                                                            </td> -->
+                                                                        </tr>
+                                                                    </tbody>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                        </tbody>
+                                        <tbody>
+                                                <tr data-toggle="collapse" data-target="#toggle2"
+                                                    class="accordion-toggle">
+
+                                                    <td width="15">
+                                                        <a class="btn btn-default btn-xs fas fa-chevron-down"
+                                                            onmouseup="$(this).toggleClass('fa-chevron-up fa-chevron-down');"></a>
+                                                    </td>
+                                                        <td>2</td>
+
+                                                        <td>24 Hour Billing by Driver</td>
+
+                                                        <td>Acme Oilfield Services Ltd.</td>
+
+                                                        <td>Severe</td>
+
+                                                        <td>02-18-2020</td>
+
+                                                        <td>New</td>
+
+                                                        <td>3</td>
+
+                                                        <td>$3,352.39</td>
+
+
+
+                                                </tr>
+
+                                                    <tr class="accordian-body collapse out" id="toggle2">
+                                                        <td colspan="9">
+                                                            <table class="table table-bordered table-striped">
+                                                                    <thead>
+                                                                        <tr>
+                                                                            <th width="15">&nbsp;</th>
+                                                                            <th>Ticket Number</th>
+                                                                            <th>Status</th>
+                                                                            <th>Product&#x2F;Service</th>
+                                                                            <th>Driver Name</th>
+                                                                            <th>Date</th>
+                                                                            <th>Hours Worked</th>
+                                                                            <th>Total Amount</th>
+                                                                            <th>Link</th>
+                                                                            <th width="15" class="text-center">Link</th>
+                                                                            <!-- <th>
+                                                                                Actions
+                                                                            </th> -->
+                                                                        </tr>
+
+                                                                    </thead>
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td width="15">&nbsp;</td>
+                                                                            <td>19321</td>
+                                                                            <td>Submitted</td>
+                                                                            <td>Water Hauling</td>
+                                                                            <td>Alex  English</td>
+                                                                            <td>02-18-2020</td>
+                                                                            <td>8</td>
+                                                                            <td>$1,676.14</td>
+                                                                            <td>link</td>
+                                                                            <td width="15">
+                                                                                <script>
+                                                                                    function openDocumentViewerWindow() {
+                                                                                        window.open("http://styleguide.transzap.com/?p=pages-documentViewer","_blank", "toolbar=yes,scrollbars=yes,resizable=yes,top=500,left=500,width=1200,height=600");
+                                                                                    }
+                                                                                </script>
+                                                                                <button class="btn btn-link" onclick="openDocumentViewerWindow()">
+                                                                                    <i class="far fa-external-link"></i>
+                                                                                    View Ticket
+                                                                                </button>
+
+                                                                            </td>
+                                                                            <!-- <td>
+                                                                                <div class="btn-group btn-group-sm"><button class="btn btn-default dropdown-toggle" data-toggle="dropdown"
+        aria-expanded="true">Actions<span class="caret"></span></button>
+    <ul class="dropdown-menu dropdown-menu-right">
+        <li><a href="#" data-toggle="modal" data-target="#resizableModal">Create Case</a></li>
+        <li><a href="#" data-toggle="modal" data-target="#resizableModal">Add to Case</a></li>
+        <li><a href="#" data-toggle="modal" data-target="#resizableModal">Release to Workflow</a></li>
+        <li><a href="#" data-toggle="modal" data-target="#resizableModal">Add a Comment</a></li>
+
+    </ul>
+</div>
+
+                                                                            </td> -->
+                                                                        </tr>
+                                                                    </tbody>
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td width="15">&nbsp;</td>
+                                                                            <td>55677</td>
+                                                                            <td>Submitted</td>
+                                                                            <td>Water Hauling</td>
+                                                                            <td>Alex  English</td>
+                                                                            <td>02-18-2020</td>
+                                                                            <td>6</td>
+                                                                            <td>$1,367.59</td>
+                                                                            <td>link</td>
+                                                                            <td width="15">
+                                                                                <script>
+                                                                                    function openDocumentViewerWindow() {
+                                                                                        window.open("http://styleguide.transzap.com/?p=pages-documentViewer","_blank", "toolbar=yes,scrollbars=yes,resizable=yes,top=500,left=500,width=1200,height=600");
+                                                                                    }
+                                                                                </script>
+                                                                                <button class="btn btn-link" onclick="openDocumentViewerWindow()">
+                                                                                    <i class="far fa-external-link"></i>
+                                                                                    View Ticket
+                                                                                </button>
+
+                                                                            </td>
+                                                                            <!-- <td>
+                                                                                <div class="btn-group btn-group-sm"><button class="btn btn-default dropdown-toggle" data-toggle="dropdown"
+        aria-expanded="true">Actions<span class="caret"></span></button>
+    <ul class="dropdown-menu dropdown-menu-right">
+        <li><a href="#" data-toggle="modal" data-target="#resizableModal">Create Case</a></li>
+        <li><a href="#" data-toggle="modal" data-target="#resizableModal">Add to Case</a></li>
+        <li><a href="#" data-toggle="modal" data-target="#resizableModal">Release to Workflow</a></li>
+        <li><a href="#" data-toggle="modal" data-target="#resizableModal">Add a Comment</a></li>
+
+    </ul>
+</div>
+
+                                                                            </td> -->
+                                                                        </tr>
+                                                                    </tbody>
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td width="15">&nbsp;</td>
+                                                                            <td>60787</td>
+                                                                            <td>Submitted</td>
+                                                                            <td>Water Hauling</td>
+                                                                            <td>Alex  English</td>
+                                                                            <td>02-18-2020</td>
+                                                                            <td>6</td>
+                                                                            <td>$3,756.36</td>
+                                                                            <td>link</td>
+                                                                            <td width="15">
+                                                                                <script>
+                                                                                    function openDocumentViewerWindow() {
+                                                                                        window.open("http://styleguide.transzap.com/?p=pages-documentViewer","_blank", "toolbar=yes,scrollbars=yes,resizable=yes,top=500,left=500,width=1200,height=600");
+                                                                                    }
+                                                                                </script>
+                                                                                <button class="btn btn-link" onclick="openDocumentViewerWindow()">
+                                                                                    <i class="far fa-external-link"></i>
+                                                                                    View Ticket
+                                                                                </button>
+
+                                                                            </td>
+                                                                            <!-- <td>
+                                                                                <div class="btn-group btn-group-sm"><button class="btn btn-default dropdown-toggle" data-toggle="dropdown"
+        aria-expanded="true">Actions<span class="caret"></span></button>
+    <ul class="dropdown-menu dropdown-menu-right">
+        <li><a href="#" data-toggle="modal" data-target="#resizableModal">Create Case</a></li>
+        <li><a href="#" data-toggle="modal" data-target="#resizableModal">Add to Case</a></li>
+        <li><a href="#" data-toggle="modal" data-target="#resizableModal">Release to Workflow</a></li>
+        <li><a href="#" data-toggle="modal" data-target="#resizableModal">Add a Comment</a></li>
+
+    </ul>
+</div>
+
+                                                                            </td> -->
+                                                                        </tr>
+                                                                    </tbody>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                        </tbody>
+                                </table>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<nav class="navbar navbar-inverse navbar-fixed-bottom" style="border-top: 1px solid #ccc;">
+    <div class="container-fluid">
+        <div class="btn-toolbar btn-toolbar-centered" role="toolbar">
+            <div id="currentPOToolbar" class="btn-group" role="group">
+                    <button class="btn btn-default">
+                        <div>
+                            <i class="far fa-fw fa-briefcase"></i>
+                        </div>
+                        <div>
+                            Close Case
+                        </div>
+                    </button>
+                    <button class="btn btn-default">
+                        <div>
+                            <i class="far fa-fw fa-share-square"></i>
+                        </div>
+                        <div>
+                            Release to Workflow
+                        </div>
+                    </button>
+            </div>
+            <div id="proposedPOToolbar" class="btn-group hide" role="group">
+                <button class="btn btn-default">
+                    <div>
+                        <i class="fas fa-thumbs-up text-success"></i>
+                    </div>
+                    <div>
+                        Accept
+                    </div>
+                </button>
+                <button class="btn btn-default">
+                    <div>
+                        <i class="fas fa-thumbs-down text-danger"></i>
+                    </div>
+                    <div>
+                        Reject
+                    </div>
+                </button>
+                <button class="btn btn-default">
+                    <div>
+                        <i class="fas fa-print"></i>
+                    </div>
+                    <div>
+                        Print
+                    </div>
+                </button>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<script>
+    $('body').addClass('page-bg');
+</script>

@@ -1,0 +1,309 @@
+{
+    "drivers": [{
+            "name": "Misty  Wade"
+        },
+        {
+            "name": "Ella  Wall"
+        },
+        {
+            "name": "Hines  Fry"
+        },
+        {
+            "name": "Whitney  Thompson"
+        },
+        {
+            "name": "Hebert  Simon"
+        }
+    ],
+    "suppliers": [{
+            "name": "Enquility & Associates"
+        },
+        {
+            "name": "Twiggery Inc."
+        },
+        {
+            "name": "Nspire Inc."
+        },
+        {
+            "name": "Kaggle Partnership Ltd."
+        },
+        {
+            "name": "Gallaxia Inc."
+        },
+        {
+            "name": "Conjurica Oilfield Services Inc."
+        }
+    ],
+    "data": [{
+            "id": 0,
+            "randomNum": 3,
+            "randomHours": 28,
+            "supplierName": "Acme Oilfield Supplies Ltd.",
+            "ticketNumber": 3185,
+            "severity": "3-Flag",
+            "location": "-34.21533,-39.98063",
+            "date": "12-23-2018",
+            "startDate": "12-23-2018 00:12",
+            "endDate": "12-24-2018 04:12",
+            "driverName": "Ella  Wall",
+            "hours": 40,
+            "tags": [
+                "nulla",
+                "cupidatat",
+                "nisi",
+                "aliquip",
+                "magna"
+            ],
+            "codingCombinations": [{
+                    "afeNumber": 50100,
+                    "ccNumber": 100,
+                    "coding": "3000.120.10"
+                },
+                {
+                    "afeNumber": 50100,
+                    "ccNumber": 100,
+                    "coding": "3200.100.10"
+                },
+                {
+                    "afeNumber": 32700,
+                    "ccNumber": 210,
+                    "coding": "3200.120.10"
+                },
+                {
+                    "afeNumber": 14400,
+                    "ccNumber": 310,
+                    "coding": "1200.270.10"
+                },
+                {
+                    "afeNumber": 12900,
+                    "ccNumber": 530,
+                    "coding": "1200.290.90"
+                }
+            ],
+            "cc": 310,
+            "afe": 14400,
+            "coding": "1200.270.10",
+            "requisitioner": "Callahan  Vincent",
+            "superintendent": "Collins  Alvarez",
+            "currency": "USD",
+            "ticket_owner": "Gilbert Clay",
+            "ticket_approver": "Leah Wong",
+            "status": "Submitted",
+            "attachments": 1,
+            "parts": [{
+                "partNumber": "WH0001",
+                "description": "Water Hauling",
+                "rate": "41.52",
+                "uom": "hours"
+            }],
+            "lineItems": [{
+                    "lineNumber": 0,
+                    "lineAlert": true,
+                    "partNumber": "WH0001",
+                    "description": "Water Hauling",
+                    "location": "-34.21533,-39.98063",
+                    "quantity": 40,
+                    "units": "hours",
+                    "rate": "41.52",
+                    "subtotal": 1660.8000000000002
+                },
+                {
+                    "lineNumber": 1,
+                    "lineAlert": false,
+                    "partNumber": "WH0001",
+                    "description": "Water Hauling",
+                    "location": "-34.21533,-39.98063",
+                    "quantity": 27,
+                    "units": "hours",
+                    "rate": "41.52",
+                    "subtotal": 1121.0400000000002
+                },
+                {
+                    "lineNumber": 2,
+                    "lineAlert": true,
+                    "partNumber": "WH0001",
+                    "description": "Water Hauling",
+                    "location": "-34.21533,-39.98063",
+                    "quantity": 25,
+                    "units": "hours",
+                    "rate": "41.52",
+                    "subtotal": 1038
+                }
+            ],
+            "amount": 3819.84
+        },
+        {
+            "id": 1,
+            "randomNum": 4,
+            "randomHours": 27,
+            "supplierName": "Acme Oilfield Supplies Ltd.",
+            "ticketNumber": 5474,
+            "severity": "3-Flag",
+            "location": "39.93089,-23.66303",
+            "date": "11-19-2018",
+            "startDate": "11-19-2018 00:11",
+            "endDate": "11-20-2018 03:11",
+            "driverName": "Ella  Wall",
+            "hours": 26,
+            "tags": [
+                "occaecat",
+                "elit",
+                "reprehenderit",
+                "eu",
+                "irure"
+            ],
+            "codingCombinations": [{
+                    "afeNumber": 50100,
+                    "ccNumber": 100,
+                    "coding": "3000.120.10"
+                },
+                {
+                    "afeNumber": 50100,
+                    "ccNumber": 100,
+                    "coding": "3200.100.10"
+                },
+                {
+                    "afeNumber": 32700,
+                    "ccNumber": 210,
+                    "coding": "3200.120.10"
+                },
+                {
+                    "afeNumber": 14400,
+                    "ccNumber": 310,
+                    "coding": "1200.270.10"
+                },
+                {
+                    "afeNumber": 12900,
+                    "ccNumber": 530,
+                    "coding": "1200.290.90"
+                }
+            ],
+            "cc": 530,
+            "afe": 12900,
+            "coding": "1200.290.90",
+            "requisitioner": "Nunez  Massey",
+            "superintendent": "Wilder  Wilkerson",
+            "currency": "USD",
+            "ticket_owner": "Jolene Rush",
+            "ticket_approver": "Janis Valdez",
+            "status": "Submitted",
+            "attachments": 2,
+            "parts": [{
+                "partNumber": "WH0001",
+                "description": "Water Hauling",
+                "rate": "41.52",
+                "uom": "hours"
+            }],
+            "lineItems": [{
+                    "lineNumber": 0,
+                    "lineAlert": true,
+                    "partNumber": "WH0001",
+                    "description": "Water Hauling",
+                    "location": "39.93089,-23.66303",
+                    "quantity": 26,
+                    "units": "hours",
+                    "rate": "41.52",
+                    "subtotal": 1079.52
+                },
+                {
+                    "lineNumber": 1,
+                    "lineAlert": false,
+                    "partNumber": "WH0001",
+                    "description": "Water Hauling",
+                    "location": "39.93089,-23.66303",
+                    "quantity": 31,
+                    "units": "hours",
+                    "rate": "41.52",
+                    "subtotal": 1287.1200000000001
+                },
+                {
+                    "lineNumber": 2,
+                    "lineAlert": false,
+                    "partNumber": "WH0001",
+                    "description": "Water Hauling",
+                    "location": "39.93089,-23.66303",
+                    "quantity": 40,
+                    "units": "hours",
+                    "rate": "41.52",
+                    "subtotal": 1660.8000000000002
+                }
+            ],
+            "amount": 4027.4400000000005
+        },
+        {
+            "id": 2,
+            "randomNum": 0,
+            "randomHours": 27,
+            "supplierName": "Acme Oilfield Supplies Ltd.",
+            "ticketNumber": 9474,
+            "severity": "3-Flag",
+            "location": "55.00433,-139.87658",
+            "date": "05-20-2019",
+            "startDate": "05-20-2019 00:05",
+            "endDate": "05-21-2019 03:05",
+            "driverName": "Ella  Wall",
+            "hours": 35,
+            "tags": [
+                "laboris",
+                "labore",
+                "deserunt",
+                "reprehenderit",
+                "officia"
+            ],
+            "codingCombinations": [{
+                    "afeNumber": 50100,
+                    "ccNumber": 100,
+                    "coding": "3000.120.10"
+                },
+                {
+                    "afeNumber": 50100,
+                    "ccNumber": 100,
+                    "coding": "3200.100.10"
+                },
+                {
+                    "afeNumber": 32700,
+                    "ccNumber": 210,
+                    "coding": "3200.120.10"
+                },
+                {
+                    "afeNumber": 14400,
+                    "ccNumber": 310,
+                    "coding": "1200.270.10"
+                },
+                {
+                    "afeNumber": 12900,
+                    "ccNumber": 530,
+                    "coding": "1200.290.90"
+                }
+            ],
+            "cc": 100,
+            "afe": 50100,
+            "coding": "3000.120.10",
+            "requisitioner": "Gay  Valenzuela",
+            "superintendent": "Serrano  Shaw",
+            "currency": "USD",
+            "ticket_owner": "Elliott Dickson",
+            "ticket_approver": "Sheila Newton",
+            "status": "Submitted",
+            "attachments": 1,
+            "parts": [{
+                "partNumber": "WH0001",
+                "description": "Water Hauling",
+                "rate": "41.52",
+                "uom": "hours"
+            }],
+            "lineItems": [{
+                "lineNumber": 0,
+                "lineAlert": false,
+                "partNumber": "WH0001",
+                "description": "Water Hauling",
+                "location": "55.00433,-139.87658",
+                "quantity": 27,
+                "units": "hours",
+                "rate": "41.52",
+                "subtotal": 1121.0400000000002
+            }],
+            "amount": 1121.0400000000002
+        }
+    ]
+}

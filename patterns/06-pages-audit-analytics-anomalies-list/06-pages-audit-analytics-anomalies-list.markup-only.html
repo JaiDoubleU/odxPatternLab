@@ -1,0 +1,738 @@
+<link href="../../css/00-navbar-alternate.css" rel="alternate stylesheet" type="text/css" title="alternate">
+<nav  id="defaultNavbar" role="navigation" class="navbar navbar-default navbar-fixed-top">
+    <div id="message"></div>
+    <div class="container-fluid">
+        <div class="navbar-header navbar-left pull-left">
+            <button type="button" data-toggle="collapse" data-target=".navbar-collapse" class="btn btn-default btn-sm navbar-btn pull-left">
+                Menu
+            </button>
+            <div class="navbar-brand hidden-xs hidden-sm">
+                <a class="logo-navbar"></a>
+            </div>
+        </div>
+        <div class="navbar-header navbar-right pull-right">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="hidden visible-xs pull-left">
+                    <a class="label-success navbar-link">
+                        <i class="fas fa-sack-dollar fa-fw"></i>
+                        <div class="pull-right" style="width: 60px; white-space: normal;float:right;line-height: 1;font-size: 13px; text-align: center;">Get Paid Faster! </div>
+                    </a>
+                </li>
+                <li class="hidden visible-xs visible-sm dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fas fa-search fa-fw"></i></a>
+                    <ul class="dropdown-menu dropdown-menu-right" style="padding: 15px;min-width: 250px;">
+                        <li>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <form>
+                                        <div class="input-group input-group-sm ">
+                                            <span class="input-group-addon dropdown-toggle" data-toggle="dropdown"
+                                                aria-haspopup="true" aria-expanded="false">
+                                                <span class="caret"></span>
+                                            </span>
+                                            <ul class="dropdown-menu dropdown-menu-left">
+                                                <li onclick="setGlobalSearchPlaceholder($(this).first().text());"><a>Invoice #</a></li>
+                                                <li onclick="setGlobalSearchPlaceholder($(this).first().text());"><a href="#">Pricebook #</a></li>
+                                                <li onclick="setGlobalSearchPlaceholder($(this).first().text());"><a href="#">Field Ticket #</a></li>
+                                                <li onclick="setGlobalSearchPlaceholder($(this).first().text());"><a href="#">Purchase Order #</a></li>
+                                            </ul>
+
+                                            <input class="form-control" id="globalSearch" placeholder="Invoice #">
+
+                                            <span class="input-group-btn">
+                                                <button class="btn btn-default"><i class="fas fa-search fa-fw"></i></button>
+                                            </span>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a title="Message Centre" class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <span class="badge badge-xs">49</span>
+                        <i class="fas fa-bell fa-fw"></i>
+                        <!-- <span class="hidden-xs hide">Messages</span> -->
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-right">
+                        <li>
+                            <a title="Message Centre" href="#">
+                                <span class="fa-fw">
+                                    <i class="fas fa-envelope"></i>
+                                    Messages
+                                </span>
+                                <sup class="badge" style="background:#BE3A34">41</sup>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="fa-fw">
+                                    <i class="fas fa-file-alt"></i>
+                                    Completed Reports
+                                </span>
+                                <sup class="badge" style="background:#BE3A34">8</sup>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a title="Help Center" class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fas fa-question-circle fa-fw"></i> <span class="hidden-xs hide">Help</span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-right">
+                        <li><a href="#"><i class="fas fa-life-ring fa-fw"></i> Contact Support</a></li>
+                        <li><a href="#"><i class="fas fa-book fa-fw"></i> Resource Center</a></li>
+                        <li><a href="#"><i class="fas fa-comment fa-fw"></i> Feedback</a></li>
+                        <li><a href="#"><i class="fas fa-users fa-fw"></i> About</a></li>
+                        <li><a href="#"><i class="fas fa-user-secret fa-fw"></i> Privacy</a></li>
+                        <li><a href="#"><i class="fas fa-gavel fa-fw"></i> Terms</a></li>
+                        <li><a href="#"><i class="fas fa-globe fa-fw"></i> Browsers</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a title="My Profile" class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fas fa-user fa-fw"></i> <span class="hidden-xs hide">Profile</span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-right">
+                        <li><a href="#"><i class="fas fa-user fa-fw"></i> Christopher Schwartzenberg</a></li>
+                        <li><a href="#"><i class="fas fa-cog fa-fw"></i> Preferences</a></li>
+                        <li><a href="#"><i class="fas fa-font fa-fw"></i> Font Size</a></li>
+                    </ul>
+                </li>
+                <li><a title="Sign Out" href="#"><i class="fas fa-sign-out fa-fw"></i></a></li>
+            </ul>
+        </div>
+        <ul class="nav navbar-nav navbar-left">
+            <li class="pull-left">
+                <p class="navbar-text hide-overflow small hidden-sm hidden-xs" style="max-width: 225px;">Tetratrex
+                    Oilfield Services Incorporated Ltd.
+                </p>
+            </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right visible-sm visible-md visible-lg hidden-xs">
+            <li class="pull-left">
+                <a class="label-success navbar-link">
+                    <i class="fas fa-sack-dollar fa-fw"></i>
+                    <div class="pull-right" style="width: 60px; white-space: normal;float:right;line-height: 1;font-size: 13px; text-align: center;">Get Paid Faster! </div>
+                </a>
+            </li>
+            <li>
+                <form class="navbar-form navbar-right">
+                    <div class="form-group">
+                        <div class="input-group">
+                            <span class="input-group-addon dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">
+                                <span class="caret"></span>
+                            </span>
+                            <ul class="dropdown-menu dropdown-menu-left">
+                                <li onclick="setGlobalSearchPlaceholder($(this).first().text());"><a href="#">Invoice #</a></li>
+                                <li onclick="setGlobalSearchPlaceholder($(this).first().text());"><a href="#">Pricebook #</a></li>
+                                <li onclick="setGlobalSearchPlaceholder($(this).first().text());"><a href="#">Field Ticket #</a></li>
+                                <li onclick="setGlobalSearchPlaceholder($(this).first().text());"><a href="#">Purchase Order #</a></li>
+                            </ul>
+
+                            <input class="form-control" id="globalSearch" placeholder="Invoice #">
+
+                            <span class="input-group-btn">
+                                <button class="btn btn-default"><i class="fas fa-search fa-fw"></i></button>
+                            </span>
+                        </div>
+                    </div>
+                </form>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<nav id="secondaryNavbar" class="navbar-default animated navbar-fixed-top " style="z-index: 1030">
+    <div class="container-fluid">
+        <div class="row">
+                <div class="col-xs-4">
+                            <div class="btn-group  pull-left">
+                                <a class="btn btn-link text-nowrap" href="&#x2F;patterns&#x2F;06-pages-audit-analytics-audit-analytics-dashboard&#x2F;06-pages-audit-analytics-audit-analytics-dashboard.html">
+                                    <i class="fas fa-arrow-left fa-fw"></i> Back
+                                </a>
+                            </div>
+                </div>
+                <div class="col-xs-4 text-center hide-overflow">
+                    <div class="form-control-static">
+                        Anomalies List
+                    </div>
+                </div>
+                <div class="col-xs-4 text-right text-nowrap">
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<input type="hidden" id="anomalyViewHref" value='&#x2F;patterns&#x2F;06-pages-audit-analytics-anomaly-view&#x2F;06-pages-audit-analytics-anomaly-view.html'>
+
+<style>
+    .selected {
+        background-color: #E3F2FD !important;
+    }
+
+    .fullscreen-toggle {
+        min-width: 5rem;
+        min-height: 2rem;
+        transition: all 0.3s linear;
+    }
+
+    .fullscreen-toggle.fullscreen {
+        z-index: 9999;
+        width: 99vw;
+        /* 99% viewport width */
+        margin: 0 auto;
+        position: fixed;
+        top: 0;
+        left: 0.5vw;
+        /* position 0.5% to the left */
+        transition: all 0.3s linear;
+        overflow-y: scroll;
+    }
+
+    table#anomaliesList.table-hover tbody tr:not([style^="background"]):hover td {
+        background: #d9edf7;
+    }
+</style>
+
+<script type="text/javascript" src="../../js/anomalies-list.js"></script>
+
+<div class="container-fluid  page-top-padding  page-bottom-padding">
+    <input type="hidden" id="documentViewerHref" value='&#x2F;patterns&#x2F;06-pages-audit-analytics-documentViewer&#x2F;06-pages-audit-analytics-documentViewer.html'>
+
+    <div class="panel panel-default">
+        <div id="superTicketHeader" class="panel-heading" style="border-bottom: 0px">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="row">
+    <div class="col-xs-6">
+        <ul class="list-unstyled">
+            <li class="hide-overflow no-margin text-primary"><span class="lead">Anomalies List</span>&nbsp; 
+            </li>
+  
+        </ul>
+    </div>
+
+    <div class="col-xs-6">
+        <ul class="list-unstyled text-right">
+  
+            <li class="hide-overflow"><strong>Number of Tickets: 99</strong></li>         </ul>
+    </div>
+</div>
+
+                </div>
+            </div>
+
+            <span id="tableFilteredFeedback" class="form-group bg-info text-info hide">
+                <i class="fas fa-info-circle"></i> The table below is filtered by the highlighted allocation in the
+                Allocation Summary .
+                <a id="clearSuperTicketFiltersBtn" class="btn btn-link" href="#">Clear Filters</a>
+            </span>
+        </div>
+        <div class="panel-heading">
+            <!-- <div class="form-group">
+                <button class="btn btn-default" id="showBulkUpdate">Bulk Update</button>
+            </div> -->
+            <table id="anomaliesList" class="display table table-striped table-hover table-bordered" width="100%">
+                <thead>
+                    <tr>
+                        <th width="36">&nbsp;</th>
+                        <th class="checkbox text-center">
+                            <label>
+                                <input id="selectAllSuperTicketTickets" type="checkbox"
+                                    onclick="$('.stCheckbox').prop('checked',$(this).prop('checked'));" />
+                            </label>
+                        </th>
+                        <th class="text-nowrap">Anomaly Id</th>
+                        <th class="text-nowrap">Anomaly Type</th>
+                        <th class="text-nowrap">Supplier Name</th>
+                        <th class="text-nowrap">Severity</th>
+                        <th class="text-nowrap text-center">Anomaly Date</th>
+                        <th class="text-nowrap text-center">Age</th>
+
+                        <th class="text-nowrap">Records</th>
+                        <th class="text-nowrap">Total Value</th>
+                        <th class="text-nowrap">Actions</th>
+                        <!-- <th class="text-nowrap">Requisitioner</th>
+                        <th class="text-nowrap">Superintendent</th>
+                        <th class="text-nowrap">Location</th>
+                        <th class="text-center text-nowrap">Status</th>
+                        <th class="text-center text-nowrap">Attachments</th>
+                        <th class="text-nowrap">Currency</th>
+                        <th class="text-center text-nowrap">Amount</th> -->
+                    </tr>
+                </thead>
+            </table>
+        </th>
+    </div>
+</div>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.3/themes/smoothness/jquery-ui.css" />
+
+<style>
+    #resizableModal .modal-content.ui-resizable {
+        flex-direction: column;
+        justify-content: space-between;
+        display: flex;  /*enables flex content for its children*/
+        box-sizing: border-box;
+    }
+    #resizableModal .modal-content.ui-resizable .modal-header {
+        align-self: flex-start;
+        width:100%;
+    }
+    #resizableModal .modal-content.ui-resizable .modal-footer {
+        max-height: 60px;
+        min-height:60px;
+        align-self: flex-end;
+        width:100%;
+    }
+    #resizableModal .modal-content.ui-resizable .modal-body {
+        align-self: stretch;
+        width:100%;
+        height:100%;
+    }
+</style>
+
+<!-- Button trigger modal -->
+
+<!-- Modal -->
+<div class="modal fade" id="resizableModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span>
+                </button>
+                    <h4 class="modal-title" id="myModalLabel"> Audit Anomalies Action Modal </h4>
+            </div>
+            <div class="modal-body">
+                     <i>
+                         <h5> All actions performed via this modal. </h5>
+                     </i>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Save</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/ui/1.11.3/jquery-ui.min.js"></script>
+<script>
+    $('#resizableModal .modal-content').resizable({
+        //alsoResize: ".modal-dialog",
+        minHeight: 300,
+        minWidth: 300
+    });
+    $('#resizableModal .modal-dialog').draggable();
+
+    $('#resizableModal ').on('show.bs.modal', function () {
+        $(this).find('.modal-header').css({
+            'cursor':'move'
+        });
+
+        $(this).find('.modal-body').css({
+            'max-height':'100%'
+        });
+    });
+</script>
+
+
+
+<div id="splitCodingModalanomaliesList" class="modal fade in" role="dialog" size="lg" index="0" animate="animate" tabindex="-1" >
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">x</button>
+                <div class="lead modal-title">Bulk Update</div>
+            </div>
+            <div class="modal-body">
+                <div class="tab-content" style="border: none;">
+                    <div class="tab-pane active" id="tab1">
+                        <div class="row">
+                            <div class="col-xs-6">
+                                <div class="form-group">
+                                    <label class="control-label">Apply a Tamplate</label><br />
+                                    <div class="btn-group">
+                                        <button class="btn btn-default dropdown-toggle" type="button" id="selectTemplate" data-toggle="dropdown"
+                                            aria-haspopup="true" aria-expanded="true">
+                                            No Template
+                                            <span class="caret"></span>
+                                        </button>
+                                        <ul class="dropdown-menu" aria-labelledby="selectTemplate">
+                                            <li
+                                                onclick="loadTemplate(1); $('#selectTemplate').html($(this).children().first().text() +' <span class=\'caret \'></span>' );">
+                                                <a href="#">No Template</a>
+                                            </li>
+                                                <li
+                                                    onclick="loadTemplate(1); $('#allocationsFld').removeClass('hide'); $('#selectTemplate').html($(this).children().first().text() +' <span class=\'caret \'></span>' );">
+                                                    <a href="#">Split Template 1</a>
+                                                </li>
+                                                <li
+                                                    onclick="loadTemplate(2); $('#allocationsFld').removeClass('hide'); $('#selectTemplate').html($(this).children().first().text() +' <span class=\'caret \'></span>' );">
+                                                    <a href="#">Split Template 2</a>
+                                                </li>
+                                                <li
+                                                    onclick="loadTemplate(3); $('#allocationsFld').removeClass('hide'); $('#selectTemplate').html($(this).children().first().text() +' <span class=\'caret \'></span>' );">
+                                                    <a href="#">Split Template 3</a>
+                                                </li>
+                                                <li
+                                                    onclick="loadTemplate(4); $('#allocationsFld').removeClass('hide'); $('#selectTemplate').html($(this).children().first().text() +' <span class=\'caret \'></span>' );">
+                                                    <a href="#">Split Template 4</a>
+                                                </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-6">
+                                <div class="form-group has-feedback">
+                                    <label class="control-label">Add A Field </label><br />
+                                    <div class="btn-group">
+                                        <a href="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
+                                            Please Select
+                                            <span class="caret"></span>
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li onclick="$('#poFld').toggleClass('hide');"><a href="#">Purchase Order</a></li>
+                                            <li onclick="$('#fieldApproverFld').toggleClass('hide');"><a href="#">Field Approver</a></li>
+                                            <li
+                                                onclick="$('#afeFld').toggleClass('hide'); if(!$('#allocationsFld').hasClass('hide')){$('#allocationsFld').addClass('hide');}">
+                                                <a href="#">AFE</a></li>
+                                            <li
+                                                onclick="$('#ccFld').toggleClass('hide'); if(!$('#allocationsFld').hasClass('hide')){$('#allocationsFld').addClass('hide');}">
+                                                <a href="#">Cost Center</a></li>
+                                            <li
+                                                onclick="$('#codingFld').toggleClass('hide'); if(!$('#allocationsFld').hasClass('hide')){$('#allocationsFld').addClass('hide');}">
+                                                <a href="#">Major/Minor/Subcode</a></li>
+                                            <li
+                                                onclick="$('#allocationsFld').toggleClass('hide');if(!$('#afeFld').hasClass('hide')){$('#afeFld').addClass('hide');} if(!$('#ccFld').hasClass('hide')){$('#ccFld').addClass('hide')} if(!$('#codingFld').hasClass('hide')){$('#codingFld').addClass('hide')};;">
+                                                <a href="#">Coding Allocation</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div id="poFld" class="col-xs-12 col-sm-6 hide">
+                                <div class="form-group has-feedback">
+                                    <label class="control-label">Purchase Order</label>
+                                    <div class="input-group">
+                                        <input type="text" class="form-control">
+                                        <span class="input-group-addon">
+                                            <input type="checkbox">&nbsp;Clear
+                                        </span>
+                                        <span class="input-group-addon" onclick="$('#poFld').toggleClass('hide');">
+                                            <i class="far fa-trash-alt fa-fw"></i>
+                                        </span>
+                                </div>
+                                </div>
+                            </div>
+                            <div id="fieldApproverFld" class="col-xs-12 col-sm-6 hide">
+                                <div class="form-group has-feedback">
+                                    <label class="control-label">Field Approver</label>
+                                    <div class="input-group"><input type="text" class="form-control"><span class="input-group-addon"><input
+                                                type="checkbox">&nbsp;Clear</span>
+                                             <span class="input-group-addon" onclick="$('#fieldApproverFld').toggleClass('hide');">
+                                                 <i class="far fa-trash-alt fa-fw"></i>
+                                             </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="afeFld" class="col-xs-12 col-sm-6 hide">
+                                <div class="form-group has-feedback">
+                                    <label class="control-label">AFE</label>
+                                    <div class="input-group"><input type="text" class="form-control"><span class="input-group-addon"><input
+                                                type="checkbox">&nbsp;Clear</span>
+                                        <span class="input-group-addon" onclick="$('#afeFld').toggleClass('hide');">
+                                            <i class="far fa-trash-alt fa-fw"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="ccFld" class="col-xs-12 col-sm-6 hide">
+                                <div class="form-group has-feedback">
+                                    <label class="control-label">Cost Center</label>
+                                    <div class="input-group"><input type="text" class="form-control"><span class="input-group-addon"><input
+                                                type="checkbox">&nbsp;Clear
+                                            </span>
+                                         <span class="input-group-addon" onclick="$('#ccFld').toggleClass('hide');">
+                                             <i class="far fa-trash-alt fa-fw"></i>
+                                         </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="codingFld" class="col-xs-12 col-sm-6 hide">
+                                <div class="form-group has-feedback">
+                                    <label class="control-label">Major/Minor/Sub</label>
+                                    <div class="input-group"><input type="text" class="form-control"><span class="input-group-addon"><input
+                                                type="checkbox">&nbsp;Clear</span>
+                                         <span class="input-group-addon" onclick="$('#codingFld').toggleClass('hide');">
+                                             <i class="far fa-trash-alt fa-fw"></i>
+                                         </span>
+                                    </div>
+                                </div>
+                            </div>
+                           <div id="allocationsFld" class="col-xs-12 hide">
+                               <div class="table-responsive">
+                                   <table class="table table-striped table-hover" width="100%">
+                                       <thead>
+                                           <tr>
+                                               <th>AFE</th>
+                                               <th>Cost Center</th>
+                                               <th>Major</td>
+                                               <th>Minor</th>
+                                               <th>Subcode</th>
+                                               <th width="14%">Percentage</th>
+                                               <th width="14%">Amount</th>
+                                               <th width="5%">Delete</th>
+                                           </tr>
+
+                                           <tr id="splitRow">
+                                               <td> <input type="text" class="form-control"></td>
+                                               <td> <input type="text" class="form-control"></td>
+                                               <td> <input type="text" class="form-control"></td>
+                                               <td> <input type="text" class="form-control"></td>
+                                               <td> <input type="text" class="form-control"></td>
+                                               <td> <input type="text" class="form-control"></td>
+                                               <td> <input type="text" class="form-control"></td>
+                                               <td class="text-center"> <button id="deleteRowBtn"
+                                                       onclick="$(this).parents('tr').remove();"
+                                                       class="btn btn-default btn-block"><i
+                                                           class="fas fa-trash-alt"></i></button> </td>
+                                           </tr>
+                                       </thead>
+                                   </table>
+                               </div>
+
+                               <div class="form-group" id="addASplitButton">
+                                   <button class="btn btn-default"
+                                       onclick="var splitRow = $('#splitRow').clone(); splitRow.addClass('clonedSplitRow'); splitRow.insertAfter($('#splitRow'));">
+                                       Add an Allocation</button>
+                               </div>
+                           </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="tab2">
+                        <div class="form-group">
+                            <label class="control-label">Template Name</label>
+                            <input type="text" class="form-control" value="My Template">
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label">Scope</label>
+                            <div class="radio">
+                                <label><input type="radio" name="optradio" checked>Private</label>
+                                &nbsp;
+                                <label><input type="radio" name="optradio">Public</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label">Site</label>
+                            <select class="form-control">
+                                <option>Please Select</option>
+                                    <option >Site 1</option>
+                                    <option >Site 2</option>
+                                    <option >Site 3</option>
+                                    <option >Site 4</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label">Department</label>
+                            <select class="form-control">
+                                <option>Please Select</option>
+                                     <option >Dept 1</option>
+                                     <option >Dept 2</option>
+                                     <option >Dept 3</option>
+                                     <option >Dept 4</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="tab3">
+                           <div id="templatesList">
+                               <div class="table-responsive">
+                                   <table class="table table-hover" width="100%">
+                                        <thead>
+                                            <tr >
+                                                <th>Use</th>
+                                                <th></th>
+                                                <th>Template</th>
+                                                <th>Allocation</th>
+                                                <th>Scope</th>
+                                                <th>Site</th>
+                                                <th>Department</th>
+                                                <th>Owner</th>
+                                                <th>Delete</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr class="pointerCursor">
+                                            <td onclick="loadTemplate(3);"><input type="radio" href="#tab1" data-toggle="tab" ></td>
+                                            <td onclick="loadTemplate(3);"></td>
+                                            <td onclick="loadTemplate(3);">Split Template 3</td>
+                                            <td onclick="loadTemplate(3);">Percent</td>
+                                            <td onclick="loadTemplate(3);" class="text-center">Private</td>
+                                            <td onclick="loadTemplate(3);"></td>
+                                            <td onclick="loadTemplate(3);"></td>
+                                            <td onclick="loadTemplate(3);">Smith, Tim A.</td>
+                                            <td class="text-center">
+                                                <i class="far fa-trash-alt fa-fw"></i>
+                                            </td>
+                                        </tr>
+                                        <tr class="pointerCursor" onclick="loadTemplate(4);">
+                                            <td onclick="loadTemplate(4);"><input type="radio" href="#tab1" data-toggle="tab" ></td>
+                                            <td onclick="loadTemplate(4);"></td>
+                                            <td onclick="loadTemplate(4);">Split Template 4</td>
+                                            <td onclick="loadTemplate(4);">Percent</td>
+                                            <td onclick="loadTemplate(4);" class="text-center">Public</td>
+                                            <td onclick="loadTemplate(4);">Western Region</td>
+                                            <td onclick="loadTemplate(4);">Accounts Payable</td>
+                                            <td onclick="loadTemplate(4);">Garnett, Andrew G.</td>
+                                            <td class="text-center">
+                                                <i class="far fa-trash-alt fa-fw"></i>
+                                            </td>
+                                        </td>
+                                   </table>
+                               </div>
+                           </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-default pull-left" data-dismiss="modal">Cancel</button>
+                <span id="templateActionsBtn"class="dropdown">
+                    <a href="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                        Template Actions <span class="caret"></span>
+                    </a>
+
+                    <ul class="dropdown-menu">
+                        <li href="#tab2" data-toggle="tab" onmouseup="$('this').removeClass('active');" onclick=" $('#applySplitBtn').toggleClass('hide'); $('#saveTemplate').toggleClass('hide'); $('#templateActionsBtn').toggleClass('hide'); ">
+                            <a >
+                                Save Template
+                            </a>
+                        </li>
+                        <li href="#tab2" data-toggle="tab" onmouseup="$('this').removeClass('active');" onclick="$('#applySplitBtn').toggleClass('hide'); $('#saveTemplate').toggleClass('hide'); $('#templateActionsBtn').toggleClass('hide'); ">
+                            <a onmouseup="$('this').parent().removeClass('active');">
+                                Save as new Template...
+                            </a>
+                        </li>
+                        <li href="#tab3" data-toggle="tab" onmouseup="$('this').removeClass('active');">
+                            <a>Manage Templates</a>
+                        </li>
+                        <li onmouseup="$('this').removeClass('active');">
+                            <a href="#">Export Template</a>
+                        </li>
+                        <li onmouseup="$('this').removeClass('active');">
+                            <a href="#">Delete Template</a>
+                        </li>
+                    </ul>
+                </span>
+                <!-- <button class="btn btn-success" id="saveAsTemplate" href="#tab2" data-toggle="tab"
+                    onclick="$('#applySplitBtn').toggleClass('hide'); $('#saveTemplate').toggleClass('hide'); $('#templateActionsBtn').toggleClass('hide'); ">Save As
+                </button> -->
+
+                <button class="btn btn-success hide" id="saveTemplate" href="#tab1" data-toggle="tab" onclick="$('#saveTemplate').toggleClass('hide'); $('#templateActionsBtn').toggleClass('hide'); ">Save </button>
+                <button id="applySplitBtn" class="btn btn-success" href="#tab1" data-toggle="tab">Update Tickets</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    function loadTemplate(templateNumber) {
+        var clonedRows = $('.clonedSplitRow');
+         for (let index = 0; index < clonedRows.length; index++) {
+            clonedRows[index].remove();
+         }
+
+
+        for (let index = 0; index < templateNumber; index++) {
+            var splitRow = $('#splitRow').clone();
+            splitRow.attr('id', 'splitRow' + index)
+            splitRow.addClass('clonedSplitRow');
+            var inputs = splitRow.find('input');
+            for (let n = 0; n < inputs.length; n++) {
+                var fakeVal = fakerator.internet.color();
+                inputs[n].value = fakeVal;
+                if(n == 5) {
+                    inputs[n].value = fakerator.random.number(45).toFixed(1);
+                }
+                if(n == 6) {
+                    inputs[n].value = fakerator.random.number(425).toFixed(2);
+                }
+            }
+            splitRow.insertAfter($('#splitRow'));
+        }
+
+        $('#deleteSplitTemplateBtn').toggleClass('hide');
+    }
+</script>
+
+
+<nav class="navbar navbar-inverse navbar-fixed-bottom" style="border-top: 1px solid #ccc;">
+    <div class="container-fluid">
+        <div class="btn-toolbar btn-toolbar-centered" role="toolbar" style="background-color: #f5f5f5; border: 1px solid #dedede;">
+            <div class="btn-group" role="group">
+                    <button class="btn btn-default" data-toggle="modal" data-target="#resizableModal">
+                        <div class="">
+                            <i class="far fa-fw fa-briefcase"></i>
+                        </div>
+                        <div class="">
+                            Create Case
+                        </div>
+                    </button>
+
+                    <button class="btn btn-default" data-toggle="modal" data-target="#resizableModal">
+                        <div class="">
+                            <i class="far fa-fw fa-briefcase-medical"></i>
+                        </div>
+                        <div class="">
+                            Add to Case
+                        </div>
+                    </button>
+
+                    <button class="btn btn-default" data-toggle="modal" data-target="#resizableModal">
+                        <div class="">
+                            <i class="far fa-fw fa-share-square"></i>
+                        </div>
+                        <div class="">
+                            Release to Workflow
+                        </div>
+                    </button>
+
+                    <button class="btn btn-default" data-toggle="modal" data-target="#resizableModal">
+                        <div class="">
+                            <i class="far fa-fw fa-comment-dots"></i>
+                        </div>
+                        <div class="">
+                            Comment
+                        </div>
+                    </button>
+
+            </div>
+        </div>
+    </div>
+</nav>
+
+<script>
+    $('#anomaliesList').ready(function () {
+        $('body').addClass('page-bg');
+        $('html').addClass('page-bg');
+
+        // onclick listener for the bulk update button
+        $("#showBulkUpdate").click(function () {
+            $("#splitCodingModalanomaliesList").modal();
+        });
+
+        var filterGlobal = function (searchValue) {
+            console.error('search string ' + searchValue);
+            $("#anomaliesList").DataTable().search(
+                this.searchValue
+            ).draw();
+        };
+
+        initAnomaliesDataTable();
+    });
+</script>

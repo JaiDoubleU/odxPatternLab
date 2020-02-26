@@ -24,3 +24,10 @@
     padding-top: 0 !important;
     padding-bottom: 5px !important;
 }
+
+.status-panel .panel-title {
+    font-size: 14px;
+}
+.status-panel .panel-title .text-muted {
+    color: #777;
+}

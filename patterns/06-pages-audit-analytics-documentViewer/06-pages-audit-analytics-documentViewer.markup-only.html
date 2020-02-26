@@ -1,0 +1,309 @@
+<link href="../../css/00-navbar-alternate.css" rel="alternate stylesheet" type="text/css" title="alternate">
+<nav  id="defaultNavbar" role="navigation" class="navbar navbar-default navbar-fixed-top">
+    <div id="message"></div>
+    <div class="container-fluid">
+        <div class="navbar-header navbar-left pull-left">
+            <button type="button" data-toggle="collapse" data-target=".navbar-collapse" class="btn btn-default btn-sm navbar-btn pull-left">
+                Menu
+            </button>
+            <div class="navbar-brand hidden-xs hidden-sm">
+                <a class="logo-navbar"></a>
+            </div>
+        </div>
+        <div class="navbar-header navbar-right pull-right">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="hidden visible-xs pull-left">
+                    <a class="label-success navbar-link">
+                        <i class="fas fa-sack-dollar fa-fw"></i>
+                        <div class="pull-right" style="width: 60px; white-space: normal;float:right;line-height: 1;font-size: 13px; text-align: center;">Get Paid Faster! </div>
+                    </a>
+                </li>
+                <li class="hidden visible-xs visible-sm dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fas fa-search fa-fw"></i></a>
+                    <ul class="dropdown-menu dropdown-menu-right" style="padding: 15px;min-width: 250px;">
+                        <li>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <form>
+                                        <div class="input-group input-group-sm ">
+                                            <span class="input-group-addon dropdown-toggle" data-toggle="dropdown"
+                                                aria-haspopup="true" aria-expanded="false">
+                                                <span class="caret"></span>
+                                            </span>
+                                            <ul class="dropdown-menu dropdown-menu-left">
+                                                <li onclick="setGlobalSearchPlaceholder($(this).first().text());"><a>Invoice #</a></li>
+                                                <li onclick="setGlobalSearchPlaceholder($(this).first().text());"><a href="#">Pricebook #</a></li>
+                                                <li onclick="setGlobalSearchPlaceholder($(this).first().text());"><a href="#">Field Ticket #</a></li>
+                                                <li onclick="setGlobalSearchPlaceholder($(this).first().text());"><a href="#">Purchase Order #</a></li>
+                                            </ul>
+
+                                            <input class="form-control" id="globalSearch" placeholder="Invoice #">
+
+                                            <span class="input-group-btn">
+                                                <button class="btn btn-default"><i class="fas fa-search fa-fw"></i></button>
+                                            </span>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a title="Message Centre" class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <span class="badge badge-xs">49</span>
+                        <i class="fas fa-bell fa-fw"></i>
+                        <!-- <span class="hidden-xs hide">Messages</span> -->
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-right">
+                        <li>
+                            <a title="Message Centre" href="#">
+                                <span class="fa-fw">
+                                    <i class="fas fa-envelope"></i>
+                                    Messages
+                                </span>
+                                <sup class="badge" style="background:#BE3A34">41</sup>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="fa-fw">
+                                    <i class="fas fa-file-alt"></i>
+                                    Completed Reports
+                                </span>
+                                <sup class="badge" style="background:#BE3A34">8</sup>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a title="Help Center" class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fas fa-question-circle fa-fw"></i> <span class="hidden-xs hide">Help</span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-right">
+                        <li><a href="#"><i class="fas fa-life-ring fa-fw"></i> Contact Support</a></li>
+                        <li><a href="#"><i class="fas fa-book fa-fw"></i> Resource Center</a></li>
+                        <li><a href="#"><i class="fas fa-comment fa-fw"></i> Feedback</a></li>
+                        <li><a href="#"><i class="fas fa-users fa-fw"></i> About</a></li>
+                        <li><a href="#"><i class="fas fa-user-secret fa-fw"></i> Privacy</a></li>
+                        <li><a href="#"><i class="fas fa-gavel fa-fw"></i> Terms</a></li>
+                        <li><a href="#"><i class="fas fa-globe fa-fw"></i> Browsers</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a title="My Profile" class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fas fa-user fa-fw"></i> <span class="hidden-xs hide">Profile</span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-right">
+                        <li><a href="#"><i class="fas fa-user fa-fw"></i> Christopher Schwartzenberg</a></li>
+                        <li><a href="#"><i class="fas fa-cog fa-fw"></i> Preferences</a></li>
+                        <li><a href="#"><i class="fas fa-font fa-fw"></i> Font Size</a></li>
+                    </ul>
+                </li>
+                <li><a title="Sign Out" href="#"><i class="fas fa-sign-out fa-fw"></i></a></li>
+            </ul>
+        </div>
+        <ul class="nav navbar-nav navbar-left">
+            <li class="pull-left">
+                <p class="navbar-text hide-overflow small hidden-sm hidden-xs" style="max-width: 225px;">Tetratrex
+                    Oilfield Services Incorporated Ltd.
+                </p>
+            </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right visible-sm visible-md visible-lg hidden-xs">
+            <li class="pull-left">
+                <a class="label-success navbar-link">
+                    <i class="fas fa-sack-dollar fa-fw"></i>
+                    <div class="pull-right" style="width: 60px; white-space: normal;float:right;line-height: 1;font-size: 13px; text-align: center;">Get Paid Faster! </div>
+                </a>
+            </li>
+            <li>
+                <form class="navbar-form navbar-right">
+                    <div class="form-group">
+                        <div class="input-group">
+                            <span class="input-group-addon dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">
+                                <span class="caret"></span>
+                            </span>
+                            <ul class="dropdown-menu dropdown-menu-left">
+                                <li onclick="setGlobalSearchPlaceholder($(this).first().text());"><a href="#">Invoice #</a></li>
+                                <li onclick="setGlobalSearchPlaceholder($(this).first().text());"><a href="#">Pricebook #</a></li>
+                                <li onclick="setGlobalSearchPlaceholder($(this).first().text());"><a href="#">Field Ticket #</a></li>
+                                <li onclick="setGlobalSearchPlaceholder($(this).first().text());"><a href="#">Purchase Order #</a></li>
+                            </ul>
+
+                            <input class="form-control" id="globalSearch" placeholder="Invoice #">
+
+                            <span class="input-group-btn">
+                                <button class="btn btn-default"><i class="fas fa-search fa-fw"></i></button>
+                            </span>
+                        </div>
+                    </div>
+                </form>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<nav id="secondaryNavbar" class="navbar-default animated navbar-fixed-top " style="z-index: 1030">
+    <div class="container-fluid">
+        <div class="row">
+                <div class="col-xs-4">
+                      <style>
+                          #backBtn::before {
+                              content: '\f060';
+                              font-family: "Font Awesome 5 Pro";
+                              color: #fff;
+                              display: inline;
+                              float: left;
+                              line-height: 2.4;
+                          }
+                      </style>
+                            <div class="btn-group  pull-left" id="backBtn">
+                                <input type="button" style="padding-left: 3px;" class="btn btn-link text-nowrap"
+                                    value="Back" onclick="window.parent.history.back()">
+                            </div>
+                </div>
+                <div class="col-xs-4 text-center hide-overflow">
+                    <div class="form-control-static">
+                        Document Viewer
+                    </div>
+                </div>
+                <div class="col-xs-4 text-right text-nowrap">
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+
+
+<style>
+    body > .container-fluid { padding-top: 100px; height: 100%;}
+
+    #document-viewer .iframe {
+        width: 100%;
+        height: 100%;
+        display: none;
+    }
+
+    .fa-ticket-alt {
+        -webkit-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+    }
+    .split-pane-component {
+        height: 100%;
+    }
+    .split-pane-divider {
+        background: #ededed;
+        border: 1px solid #ededed;
+        width:1.5em;
+    }
+    .split-pane-divider:after {
+        content: '\f7a5';
+        font-family:"Font Awesome 5 Pro";
+        font-size: 14px;
+        left: 0.4em;
+        position: relative;
+    }
+    .split-pane-divider i.fas {
+        color: #000;
+    }
+
+    #left-component {
+        width: 20em;
+    }
+    #my-divider {
+        left: 20em; /* Same as left component width */
+    }
+    #right-component {
+        left: 20em; /* Same as left component width */
+        margin-left: 5px; /* Same as divider width */
+    }
+</style>
+<script>
+    $(function() {
+        $('div.split-pane').splitPane();
+    });
+</script>
+
+<div class="container-fluid" id="document-viewer">
+    <div class="split-pane fixed-left">
+        <div class="split-pane-component" id="left-component">
+            <h4>Ticket Files</h4>
+            <div class="list-group" style="padding-right: 20px;">
+                <a class="list-group-item google-viewer pdf">
+                    <span><i class="fas fa-fw fa-ticket-alt"></i></span> Field Ticket
+                </a>
+                <a class="list-group-item office-viewer xlsx">
+                    <span><i class="fas fa-fw fa-file-excel"></i></span> Attachment 1.xlsx
+                </a>
+                <a class="list-group-item office-viewer docx">
+                    <span><i class="fas fa-fw fa-file-pdf"></i></span> Attachment 2.docx
+                </a>
+            </div>
+        </div>
+        <div class="split-pane-divider" id="my-divider"></div>
+        <div class="split-pane-component" id="right-component">
+            <iframe class="google-docs iframe pdf"
+                src="https://docs.google.com/viewer?url=https://s3-us-west-2.amazonaws.com/s.cdpn.io/317356/fieldTicketSample.pdf&embedded=true"
+                frameborder="0" scrolling="no" marginheight="0" marginwidth="0" role="document"
+                aria-label="PDF document" title="PDF document" >Click to view the
+                document</iframe>
+
+            <iframe class="office iframe xlsx"
+                src="https://view.officeapps.live.com/op/embed.aspx?src=https://file-examples.com/wp-content/uploads/2017/02/file_example_XLSX_50.xlsx"
+                frameborder="0" scrolling="no" marginheight="0" marginwidth="0" role="document"
+                aria-label="Doc document" title="Doc document"></iframe>
+
+            <iframe class="office iframe docx"
+                src="https://view.officeapps.live.com/op/embed.aspx?src=https://file-examples.com/wp-content/uploads/2017/02/file-sample_100kB.docx"
+                frameborder="0" scrolling="no" marginheight="0" marginwidth="0" role="document"
+                aria-label="Doc document" title="Doc document"></iframe>
+        </div>
+    </div>
+</div>
+<script>
+    $(document).ready(function(){
+        $('.google-docs.pdf').slideToggle();
+
+        $('.google-viewer.pdf').on('click', function(){
+            if($('.office.docx').css('display') !='none'){
+                $('.office.docx').slideToggle();
+            }
+
+            if($('.office.xlsx').css('display') != 'none'){
+                $('.office.xlsx').slideToggle();
+            }
+            if($('.google-docs.pdf').css('display') === 'none'){
+                $('.google-docs.pdf').slideToggle();
+            }
+        });
+
+        $('.office-viewer.docx').on('click', function(){
+            if($('.google-docs.pdf').css('display') !== 'none'){
+                $('.google-docs.pdf').slideToggle();
+            }
+            if($('.office.xlsx').css('display') !== 'none'){
+                $('.office.xlsx').slideToggle();
+            }
+
+            if($('.office.docx').css('display') === 'none'){
+                $('.office.docx').slideToggle();
+            }
+
+        });
+
+        $('.office-viewer.xlsx').on('click', function(){
+            if($('.google-docs.pdf').css('display') !== 'none'){
+                $('.google-docs.pdf').slideToggle();
+            }
+            if($('.office.docx').css('display') !== 'none'){
+                $('.office.docx').slideToggle();
+            }
+
+            if($('.office.xlsx').css('display') === 'none'){
+                $('.office.xlsx').slideToggle();
+            }
+        });
+    });
+</script>

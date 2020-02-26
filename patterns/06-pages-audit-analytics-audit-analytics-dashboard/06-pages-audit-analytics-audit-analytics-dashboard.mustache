@@ -1,0 +1,341 @@
+<style>
+    .line {
+        stroke: steelblue;
+        stroke-width: 0.5;
+        fill: none;
+    }
+
+    .axis .text {
+        font-size: 11px;
+    }
+
+    .tick .text {
+        color: #333;
+    }
+
+    .axis path {
+        stroke: steelblue;
+    }
+
+    .circle {
+        stroke: steelblue;
+        fill: cadetblue;
+    }
+</style>
+
+{{> organisms-navbar("extraClass":"navbar-fixed-top", "pageTitle": "Audit Analytics Dashboard")}}
+{{> organisms-secondary-navbar("showBackButton":false,"extraClass":"navbar-fixed-top", "pageTitle": "Audit Analytics Dashboard","hideNextPreviousButtons": true)}}
+
+<div class="container-fluid  page-top-padding">
+    <!-- <div class="row">
+        <div class="col-xs-12">
+            {{> atoms-page-header("heading": "Audit Analytics Dashboard", "subheading": "") }}
+        </div>
+    </div> -->
+    <div class="row">
+        <div class="col-xs-12 col-md-4">
+            <div class="panel status-panel">
+                <div class="panel-heading">
+                    <div class="panel-title text-muted">
+                        <div class="h5">
+                            My Anomalies
+                        </div>
+                        <p class="text-muted small">Anomalies Assigned to Me by Status</p>
+                    </div>
+                </div>
+                <div class="panel-body">
+                    <div class="row text-nowrap">
+                        <div class="col-sm-3 col-xs-6 text-center">
+                            <div class="small text-muted">New</div>
+                            <a href="{{link.pages-anomalies-list}}" class="btn btn-block text-center text-success">
+                                <div class="h3 ">1</div>
+                            </a>
+                        </div>
+                        <div class="col-sm-3 col-xs-6">
+                            <div class="small text-muted text-center">Pending</div>
+                            <a href="{{link.pages-anomalies-list}}" class="btn btn-block text-center">
+                                <div class="h3">1</div>
+                            </a>
+                        </div>
+                        <div class="col-sm-3 col-xs-6">
+                            <div class="small text-muted text-center">Assigned</div>
+                            <a href="{{link.pages-anomalies-list}}" class="btn btn-block text-center">
+                                <div class="h3">2</div>
+                            </a>
+                        </div>
+                        <div class="col-sm-3 col-xs-6">
+                            <div class="small text-muted text-center">Released <span class="text-success">*</span></div>
+                            <a href="{{link.pages-anomalies-list}}" class="btn btn-block text-center">
+                                <div class="h3">6</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-heading">
+                    <small class="text-muted"><span class="text-info">*</span> = Anomalies released in the last 90
+                        days</small>
+                </div>
+            </div>
+
+            <div class="panel status-panel">
+                <div class="panel-heading">
+                    <div class="panel-title text-muted">
+                        <div class="h5">
+                            My Cases
+                        </div>
+                        <p class="text-muted small">Cases Assigned to Me by Status</p>
+                    </div>
+                </div>
+                <div class="panel-body">
+                    <div class="row  text-nowrap">
+                        <div class="col-sm-3 col-xs-6">
+                            <div class="small text-muted text-center">New</div>
+                            <a href="{{link.pages-case-list}}" class="btn btn-block text-center">
+                                <div class="h3 text-success">1</div>
+                            </a>
+                        </div>
+                        <div class="col-sm-3 col-xs-6">
+                            <div class="small text-muted text-center">Pending</div>
+                            <a href="{{link.pages-case-list}}" class="btn btn-block text-center">
+                                <div class="h3">0</div>
+                            </a>
+                        </div>
+                        <div class="col-sm-3 col-xs-6">
+                            <div class="small text-muted text-center">Investigating</div>
+                            <a href="{{link.pages-case-list}}" class="btn btn-block text-center">
+                                <div class="h3">2</div>
+                            </a>
+                        </div>
+                        <div class="col-sm-3 col-xs-6">
+                            <div class="small text-muted text-center">Resolved <span
+                                    class="text-success">*</span></div>
+                            <a href="{{link.pages-case-list}}" class="btn btn-block text-center">
+                                <div class="h3">18</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-heading text-muted ">
+                    <small><span class="text-info">*</span> = Cases resolved in the last 90 days</small>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-xs-12 col-md-4">
+            <div class="panel status-panel">
+                <div class="panel-heading">
+                    <div class="panel-title text-muted text-left">
+                        <div class="h5">
+                            Anomalies
+                        </div>
+                        <p class="text-muted small">All Anomalies by Status</p>
+                    </div>
+                </div>
+                <div class="panel-body">
+                    <div class="row text-nowrap">
+                        <div class="col-sm-3 col-xs-6 text-center">
+                            <div class="small text-muted">New</div>
+                            <a href="{{link.pages-anomalies-list}}" class="btn btn-block text-center text-success">
+                                <div class="h3 ">3</div>
+                            </a>
+                        </div>
+                        <div class="col-sm-3 col-xs-6">
+                            <div class="small text-muted">Pending</div>
+                            <a href="{{link.pages-anomalies-list}}" class="btn btn-block text-center">
+                                <div class="h3">1</div>
+                            </a>
+                        </div>
+                        <div class="col-sm-3 col-xs-6">
+                            <div class="small text-muted">Assigned</div>
+                            <a href="{{link.pages-anomalies-list}}" class="btn btn-block text-center">
+                                <div class="h3">12</div>
+                            </a>
+                        </div>
+                        <div class="col-sm-3 col-xs-6">
+                            <div class="small text-muted">Released <span class="text-success">*</span></div>
+                            <a href="{{link.pages-anomalies-list}}" class="btn btn-block text-center">
+                                <div class="h3">19</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-heading">
+                    <small class="text-muted"><span class="text-info">*</span> = Anomalies released in the last 90
+                        days</small>
+                </div>
+            </div>
+
+            <div class="panel status-panel">
+                <div class="panel-heading">
+                    <div class="panel-title text-muted">
+                        <div class="h5">
+                            Cases
+                        </div>
+                        <p class="text-muted small">All Cases by Status</p>
+                    </div>
+                </div>
+                <div class="panel-body">
+                    <div class="row text-nowrap">
+                        <div class="col-sm-3 col-xs-6">
+                            <div class="small text-muted">New</div>
+                            <a href="{{link.pages-case-list}}" class="btn btn-block text-center">
+                                <div class="h3 text-success">12</div>
+                            </a>
+                        </div>
+                        <div class="col-sm-3 col-xs-6">
+                            <div class="small text-muted">Pending</div>
+                            <a href="{{link.pages-case-list}}" class="btn btn-block text-center">
+                                <div class="h3">3</div>
+                            </a>
+                        </div>
+                        <div class="col-sm-3 col-xs-6">
+                            <div class="small text-muted">Investigating</div>
+                            <a href="{{link.pages-case-list}}" class="btn btn-block text-center">
+                                <div class="h3">12</div>
+                            </a>
+                        </div>
+                        <div class="col-sm-3 col-xs-6">
+                            <div class="small text-muted">Resolved <span class="text-success">*</span></div>
+                            <a href="{{link.pages-case-list}}" class="btn btn-block text-center">
+                                <div class="h3">12</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-heading text-muted ">
+                    <small><span class="text-info">*</span> = Cases resolved in the last 90 days</small>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12 col-md-4">
+            <div class="panel status-panel">
+                <div class="panel-heading">
+                    <div class="panel-title text-muted">
+                        <div class="h5">
+                            Quarantined Spend
+                        </div>
+                        <p class="text-muted small">Trend of Spend Quarantined over the last 6 months </p>
+                    </div>
+                </div>
+                <div class="panel-body">
+                    <div id="quarantined-spend-chart"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    var generateQuarantinedSpendChart = function(containerId) {
+        var container = document.getElementById(containerId);
+        var containerWidth = container.offsetWidth;
+        var containerHeight = 150;
+
+        var data = [
+            {date: "2019-08", value: "4"},
+            {date: "2019-09", value: "5"},
+            {date: "2019-10", value: "7"},
+            {date: "2019-11", value: "9"},
+            {date: "2019-12", value: "6"},
+            {date: "2020-01", value: "5"},
+            {date: "2020-02", value: "7"}
+        ];
+
+        var width = containerWidth -40;
+        var height = containerHeight;
+        var margin = 40;
+
+        /* Format Data */
+        var parseDate = d3.timeParse("%Y-%m");
+        data.forEach(function(d) {
+            d.date = parseDate(d.date);
+            d.value = +d.value;
+        });
+
+
+        /* Scale */
+        var xScale = d3.scaleTime()
+        .domain(d3.extent(data, d => d.date))
+        .range([0, width-margin]);
+
+        var yScale = d3.scaleLinear()
+        .domain([0, d3.max(data, d => d.value)])
+        .range([height-margin, 0]);
+
+        // .call(d3.axisBottom(xScale)
+        // .tickFormat(d3.timeFormat("%b")))
+
+
+        /* Add SVG */
+        var svg = d3.select('#'+containerId).append("svg")
+        .attr("width", (width+margin)+"px")
+        .attr("height", (height+margin)+"px")
+        .append('g')
+        .attr("transform", `translate(${margin}, ${margin})`);
+
+
+        /* Add line into SVG */
+        var line = d3.line()
+        .x(d => xScale(d.date))
+        .y(d => yScale(d.value));
+
+        svg.append('path')
+        .attr('class', 'line')
+        .attr('d', line(data));
+
+
+        /* Add circles in the line */
+        svg.append("g")
+            .selectAll("circle")
+            .data(data).enter()
+            .append("g")
+            .attr("class", "circle")
+            .on("mouseover", function(d) {
+            d3.select(this)
+            .style("cursor", "pointer")
+            .style("fill", "red")
+            .append("text")
+            .attr("class", "text")
+            .text(d.value)
+            .attr("x", d => xScale(d.date) + 5)
+            .attr("y", d => yScale(d.value) - 5);
+            })
+            .on("mouseout", function(d) {
+            d3.select(this)
+            .style("cursor", "none")
+            .style("fill", "black")
+            .select("text").remove();
+            })
+            .append("circle")
+            .attr("cx", d => xScale(d.date))
+            .attr("cy", d => yScale(d.value))
+            .attr("r", 4);
+
+
+        /* Add Axis into SVG */
+        var xAxis = d3.axisBottom(xScale).tickFormat(d3.timeFormat("%b")).ticks(5);
+        var yAxis = d3.axisLeft(yScale).ticks(5);
+
+        svg.append("g")
+            .attr("class", "x axis")
+            .attr("transform", `translate(0, ${height-margin})`)
+            .call(xAxis);
+
+        svg.append("g")
+            .attr("class", "y axis")
+            .call(yAxis)
+            .append('text')
+            .attr("y", -25)
+            .attr("x", -10)
+            .attr("transform", "rotate(-90)")
+            .attr("fill", "#666")
+            .attr("class", "text")
+            .text("Percent of Spend");
+
+    }
+
+    document.addEventListener('DOMContentLoaded', function () {
+        $('body').addClass('page-bg');
+        generateQuarantinedSpendChart("quarantined-spend-chart");
+    }, false);
+</script>

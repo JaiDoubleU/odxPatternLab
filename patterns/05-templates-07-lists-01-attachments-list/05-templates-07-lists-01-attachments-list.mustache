@@ -9,47 +9,34 @@
                 </div>
             </div>
         {{/showAttachAFileButton}}
-
-
-        <div class="row">
-            <div class="col-sm-12">
-                <div class="panel panel-default attachment-panel">
-                   <div class="media">
-                        <div class="media-left media-middle well well-sm">
-                            <div class="media-object">PNG</div>
-                        </div>
-                        <div class="media-body media-middle well-sm">
-                            <div class="media-heading">Attachment1.png</div>
-                            <div class="small text-muted">395.5 KB</div>
-                        </div>
-
-                        <div class="media-right media-middle">
+        <div class="table-responsive">
+            <table class="table table-bordered table-striped hide-overflow">
+                <thead>
+                    <th>Name</th>
+                    <th width="20%">Size</th>
+                    <th width="50">Remove</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Attachment1.png</td>
+                        <td>395.5 KB</td>
+                        <td>
                             <a class="btn btn-block" href="#nogo">
-                                <i class="fas fas fa-trash-alt fa-fw"></i>
+                                <i class="fas fa-trash-alt fa-fw"></i>
                             </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-12">
-                <div class="panel panel-default attachment-panel">
-                   <div class="media">
-                        <div class="media-left media-middle well well-sm">
-                            <div class="media-object">PDF</div>
-                        </div>
-                        <div class="media-body media-middle well-sm">
-                            <div class="media-heading">Attachment2.pdf</div>
-                            <div class="small text-muted">892.4 KB</div>
-                        </div>
-
-                        <div class="media-right media-middle">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Attachment2.pdf</td>
+                        <td>892.4 KB</td>
+                        <td>
                             <a class="btn btn-block" href="#nogo">
-                                <i class="fas fas fa-trash-alt fa-fw"></i>
+                                <i class="fas fa-trash-alt fa-fw"></i>
                             </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     </form>
 </div>

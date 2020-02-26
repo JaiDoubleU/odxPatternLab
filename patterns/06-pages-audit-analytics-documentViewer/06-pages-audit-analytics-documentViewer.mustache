@@ -1,0 +1,133 @@
+{{> organisms-navbar("extraClass":"navbar-fixed-top")}}
+{{> organisms-secondary-navbar("extraClass":"navbar-fixed-top", "pageTitle": "Document Viewer","hideNextPreviousButtons": true,"customOnClick":true, "customBackButtonLink":"{{link.pages-case-list}}")}}
+
+<style>
+    body > .container-fluid { padding-top: 100px; height: 100%;}
+
+    #document-viewer .iframe {
+        width: 100%;
+        height: 100%;
+        display: none;
+    }
+
+    .fa-ticket-alt {
+        -webkit-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+    }
+    .split-pane-component {
+        height: 100%;
+    }
+    .split-pane-divider {
+        background: #ededed;
+        border: 1px solid #ededed;
+        width:1.5em;
+    }
+    .split-pane-divider:after {
+        content: '\f7a5';
+        font-family:"Font Awesome 5 Pro";
+        font-size: 14px;
+        left: 0.4em;
+        position: relative;
+    }
+    .split-pane-divider i.fas {
+        color: #000;
+    }
+
+    #left-component {
+        width: 20em;
+    }
+    #my-divider {
+        left: 20em; /* Same as left component width */
+    }
+    #right-component {
+        left: 20em; /* Same as left component width */
+        margin-left: 5px; /* Same as divider width */
+    }
+</style>
+<script>
+    $(function() {
+        $('div.split-pane').splitPane();
+    });
+</script>
+
+<div class="container-fluid" id="document-viewer">
+    <div class="split-pane fixed-left">
+        <div class="split-pane-component" id="left-component">
+            <h4>Ticket Files</h4>
+            <div class="list-group" style="padding-right: 20px;">
+                <a class="list-group-item google-viewer pdf">
+                    <span><i class="fas fa-fw fa-ticket-alt"></i></span> Field Ticket
+                </a>
+                <a class="list-group-item office-viewer xlsx">
+                    <span><i class="fas fa-fw fa-file-excel"></i></span> Attachment 1.xlsx
+                </a>
+                <a class="list-group-item office-viewer docx">
+                    <span><i class="fas fa-fw fa-file-pdf"></i></span> Attachment 2.docx
+                </a>
+            </div>
+        </div>
+        <div class="split-pane-divider" id="my-divider"></div>
+        <div class="split-pane-component" id="right-component">
+            <iframe class="google-docs iframe pdf"
+                src="https://docs.google.com/viewer?url=https://s3-us-west-2.amazonaws.com/s.cdpn.io/317356/fieldTicketSample.pdf&embedded=true"
+                frameborder="0" scrolling="no" marginheight="0" marginwidth="0" role="document"
+                aria-label="PDF document" title="PDF document" >Click to view the
+                document</iframe>
+
+            <iframe class="office iframe xlsx"
+                src="https://view.officeapps.live.com/op/embed.aspx?src=https://file-examples.com/wp-content/uploads/2017/02/file_example_XLSX_50.xlsx"
+                frameborder="0" scrolling="no" marginheight="0" marginwidth="0" role="document"
+                aria-label="Doc document" title="Doc document"></iframe>
+
+            <iframe class="office iframe docx"
+                src="https://view.officeapps.live.com/op/embed.aspx?src=https://file-examples.com/wp-content/uploads/2017/02/file-sample_100kB.docx"
+                frameborder="0" scrolling="no" marginheight="0" marginwidth="0" role="document"
+                aria-label="Doc document" title="Doc document"></iframe>
+        </div>
+    </div>
+</div>
+<script>
+    $(document).ready(function(){
+        $('.google-docs.pdf').slideToggle();
+
+        $('.google-viewer.pdf').on('click', function(){
+            if($('.office.docx').css('display') !='none'){
+                $('.office.docx').slideToggle();
+            }
+
+            if($('.office.xlsx').css('display') != 'none'){
+                $('.office.xlsx').slideToggle();
+            }
+            if($('.google-docs.pdf').css('display') === 'none'){
+                $('.google-docs.pdf').slideToggle();
+            }
+        });
+
+        $('.office-viewer.docx').on('click', function(){
+            if($('.google-docs.pdf').css('display') !== 'none'){
+                $('.google-docs.pdf').slideToggle();
+            }
+            if($('.office.xlsx').css('display') !== 'none'){
+                $('.office.xlsx').slideToggle();
+            }
+
+            if($('.office.docx').css('display') === 'none'){
+                $('.office.docx').slideToggle();
+            }
+
+        });
+
+        $('.office-viewer.xlsx').on('click', function(){
+            if($('.google-docs.pdf').css('display') !== 'none'){
+                $('.google-docs.pdf').slideToggle();
+            }
+            if($('.office.docx').css('display') !== 'none'){
+                $('.office.docx').slideToggle();
+            }
+
+            if($('.office.xlsx').css('display') === 'none'){
+                $('.office.xlsx').slideToggle();
+            }
+        });
+    });
+</script>
