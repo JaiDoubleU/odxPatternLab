@@ -52,16 +52,16 @@
             var i = parseInt(amount = Math.abs(Number(amount) || 0).toFixed(decimalCount)).toString();
             var j = (i.length > 3) ? i.length % 3 : 0;
 
-            return '$' +negativeSign + (j ? i.substr(0, j) + thousands : '') + i.substr(j).replace(/(\d{3})(?=\d)/g, "$1" + thousands) + (decimalCount ? decimal + Math.abs(amount - i).toFixed(decimalCount).slice(2) : "");
+            return '$' + negativeSign + (j ? i.substr(0, j) + thousands : '') + i.substr(j).replace(/(\d{3})(?=\d)/g, "$1" + thousands) + (decimalCount ? decimal + Math.abs(amount - i).toFixed(decimalCount).slice(2) : "");
         } catch (e) {
             // console.log(e)
         }
     };
 
-    var openAnomalyView = function (theHref) {
-         document.querySelector('.pl').parentNode.location = theHref;
+    var openAnomalyView = function(theHref) {
+        document.querySelector('.pl').parentNode.location = theHref;
     }
-    var initAnomaliesDataTable = function () {
+    var initAnomaliesDataTable = function() {
         anomaliesTable = $('#anomaliesList').DataTable({
             rowId: 'anomalyNumber',
             responsive: true,
@@ -75,78 +75,71 @@
                     "orderable": false,
                     data: 'id',
                     "width": 36,
-                    "render": function (data, type, row, meta) {
+                    "render": function(data, type, row, meta) {
                         return (
                             '<i id="' + data + '" class="far fa-plus-square fa-fw"></i>'
                         );
                     }
-                },
-                {
+                }, {
 
                     "class": "text-center text-nowrap",
                     "orderable": false,
                     // "width": 36,
-                    "render": function (data, type, row, meta) {
+                    "render": function(data, type, row, meta) {
                         return (
                             '<label><input class="stCheckbox" type="checkbox"></label>'
                         );
                     }
-                },{
+                }, {
                     "class": "text-nowrap",
                     data: 'anomalyNumber'
-                },
-                {
+                }, {
                     "class": "text-nowrap",
                     data: 'anomalyType'
                 }, {
                     "class": "text-nowrap",
                     data: 'supplierName'
-                },
-                {
+                }, {
                     "class": "text-nowrap",
                     data: 'severity'
-                },
-                {
+                }, {
                     "width": 50,
                     "class": "text-nowrap",
                     data: 'anomalyDate'
                 }, { //5
                     "class": "text-nowrap",
                     data: 'age'
-                },
-                { //5
+                }, { //5
                     "width": 35,
                     "class": "text-nowrap",
                     data: 'records'
-                },
-                { //6
-                      "class": "text-right text-nowrap",
-                      data: 'amount',
-                          "render": function (data, type, row, meta) {
-                              return (
-                                  formatMoney(data.toFixed(2))
-                              );
-                          }
-                },
-                { //9
+                }, { //6
+                    "class": "text-right text-nowrap",
+                    data: 'amount',
+                    "render": function(data, type, row, meta) {
+                        return (
+                            formatMoney(data.toFixed(2))
+                        );
+                    }
+                }, { //9
                     "width": 70,
                     "class": "text-nowrap",
                     data: 'actions',
-                     "render": function (data, type, row, meta) {
+                    "render": function(data, type, row, meta) {
                         var btnGroup = '<div class="btn-group btn-group-sm">';
-                        btnGroup +='<button class="btn btn-default dropdown-toggle" data-toggle="dropdown">';
+                        btnGroup += '<button class="btn btn-default dropdown-toggle" data-toggle="dropdown">';
                         btnGroup += 'Actions';
                         btnGroup += '<span class="caret"></span>';
                         btnGroup += '</button>';
                         btnGroup += '<ul class="dropdown-menu dropdown-menu-right">';
                         for (var index = 0; index < data.length; index++) {
                             var elem = data[index];
-                            btnGroup += '<li><a href="#"  data-toggle="modal" data-target="#resizableModal">' +elem +'</a></li>';
+                            btnGroup += '<li><a href="#"  data-toggle="modal" data-target="#resizableModal">' + elem + '</a></li>';
                         }
                         btnGroup += '</ul>';
                         btnGroup += '</div>';
-                         return btnGroup;
-                     }
+                        return btnGroup;
+                    }
                 }
                 // ,
                 // {
@@ -184,72 +177,72 @@
                 // }
             ],
             "lengthMenu": defaultDataTablesLengthMenu,
-            "ajax": "../../styleguide/data/anomaliesListPatternData.json",
+            "ajax": "../styleguide/data/anomaliesListPatternData.json",
             "sDom": defaultDataTablesSDom,
-            "createdRow": function (row, data, dataIndex) {
+            "createdRow": function(row, data, dataIndex) {
                 var tableCells = row.cells;
                 for (var index = 2; index < tableCells.length - 1; index++) {
                     var cell = tableCells[index];
                     var anomalyViewUrl = document.getElementById('anomalyViewHref').value;
                     cell.style.cursor = "pointer";
-                    cell.addEventListener("click", function () {
+                    cell.addEventListener("click", function() {
                         openAnomalyView(anomalyViewUrl)
                     });
                 }
 
-            //     //console.error('row is ' +data.id);
-            //     var nextKey = {};
-            //     var roundNumber = function (num, n) {
-            //         return parseFloat(Math.round(num * Math.pow(10, n)) / Math.pow(10, n)).toFixed(n);
-            //     };
+                //     //console.error('row is ' +data.id);
+                //     var nextKey = {};
+                //     var roundNumber = function (num, n) {
+                //         return parseFloat(Math.round(num * Math.pow(10, n)) / Math.pow(10, n)).toFixed(n);
+                //     };
 
-            //     // build the allocationSummary map
-            //     nextKey.afe = data.afe;
-            //     nextKey.cc = data.cc;
-            //     nextKey.coding = data.coding;
-            //     nextKey.toString = data.afe + ':' + data.cc + ':' + data.coding;
-            //     var nextAmount = parseFloat(data.amount);
-            //     if (allocationSummary.has(nextKey.toString)) {
-            //         // calculate the new amount and update the map
-            //         var amountInMap = parseFloat(allocationSummary.get(nextKey.toString));
-            //         var newTotal = amountInMap + nextAmount;
-            //         allocationSummary.set(nextKey.toString, roundNumber(nextAmount + amountInMap, 2));
-            //     } else {
-            //         // add the new key and amount to the map
-            //         allocationSummary.set(nextKey.toString, roundNumber(nextAmount, 2));
-            //     }
+                //     // build the allocationSummary map
+                //     nextKey.afe = data.afe;
+                //     nextKey.cc = data.cc;
+                //     nextKey.coding = data.coding;
+                //     nextKey.toString = data.afe + ':' + data.cc + ':' + data.coding;
+                //     var nextAmount = parseFloat(data.amount);
+                //     if (allocationSummary.has(nextKey.toString)) {
+                //         // calculate the new amount and update the map
+                //         var amountInMap = parseFloat(allocationSummary.get(nextKey.toString));
+                //         var newTotal = amountInMap + nextAmount;
+                //         allocationSummary.set(nextKey.toString, roundNumber(nextAmount + amountInMap, 2));
+                //     } else {
+                //         // add the new key and amount to the map
+                //         allocationSummary.set(nextKey.toString, roundNumber(nextAmount, 2));
+                //     }
 
-            //     // build the statusSummary map
-            //     var nextStatus = data.status;
-            //     if (statusSummary.has(nextStatus)) {
-            //         // increment count and update the map
-            //         var countInMap = statusSummary.get(nextStatus);
-            //         var newCount = countInMap + 1;
-            //         statusSummary.set(nextStatus, newCount);
-            //     } else {
-            //         // add the new key and amount to the map
-            //         statusSummary.set(nextStatus, 1);
-            //     }
+                //     // build the statusSummary map
+                //     var nextStatus = data.status;
+                //     if (statusSummary.has(nextStatus)) {
+                //         // increment count and update the map
+                //         var countInMap = statusSummary.get(nextStatus);
+                //         var newCount = countInMap + 1;
+                //         statusSummary.set(nextStatus, newCount);
+                //     } else {
+                //         // add the new key and amount to the map
+                //         statusSummary.set(nextStatus, 1);
+                //     }
 
-            //     // build the compliance summary map
-            //     var nextAlert = data.ticketAlert;
-            //     if (complianceSummary.has(nextAlert)) {
-            //         // increment count and update the map
-            //         var count = complianceSummary.get(nextAlert);
-            //         var updatedCount = count + 1;
-            //         complianceSummary.set(nextAlert, updatedCount);
-            //     } else {
-            //         // add the new key and amount to the map
-            //         complianceSummary.set(nextAlert, 1);
-            //     }
-            //     //console.error(complianceSummary);
+                //     // build the compliance summary map
+                //     var nextAlert = data.ticketAlert;
+                //     if (complianceSummary.has(nextAlert)) {
+                //         // increment count and update the map
+                //         var count = complianceSummary.get(nextAlert);
+                //         var updatedCount = count + 1;
+                //         complianceSummary.set(nextAlert, updatedCount);
+                //     } else {
+                //         // add the new key and amount to the map
+                //         complianceSummary.set(nextAlert, 1);
+                //     }
+                //     //console.error(complianceSummary);
 
                 // console.error('line items: ' + data.lineItems.length +', data index: ' +dataIndex);
-                $.each(data.tickets, function (i, ticketData) {
+                $.each(data.tickets, function(i, ticketData) {
                     updateTicketLineItemsMap(data.anomalyNumber, ticketData);
                 });
             },
-            "initComplete": function (settings, json) {
+            "initComplete": function(settings, json) {
                 // generateLineItemsSummaryTable();
 
                 // generateAllocationSummaryTable();
@@ -263,7 +256,7 @@
                 //     $('#' + activeAllocationSummaryRow).addClass('selected');
                 // }
             },
-            "footerCallback": function (row, data, start, end, display) {
+            "footerCallback": function(row, data, start, end, display) {
                 // var api = this.api();
 
                 // // converting to interger to find total
@@ -295,7 +288,7 @@
         });
 
 
-        $('#anomaliesList tbody').on('click', 'td.details-control', function () {
+        $('#anomaliesList tbody').on('click', 'td.details-control', function() {
             var tr = $(this).closest('tr');
             var selectedTicketNumber = (tr.attr("id") * 1);
             var selectedTicketDetails = $('#' + selectedTicketNumber + 'Details');
@@ -313,7 +306,7 @@
                 // create the detail row for the selected ticket
                 var mappedTickets = ticketLineItemsMap.get(selectedTicketNumber);
                 var nextLine = "<tr style='background-color: #eee;' id='" + selectedTicketNumber + "Details" + "'><td colspan='16'> <label>Tickets: </label>" + ticketsTableStart;
-                $.each(mappedTickets, function (i, ticketData) {
+                $.each(mappedTickets, function(i, ticketData) {
                     nextLine += "<tr>";
                     nextLine += "   <td>" + ticketData.ticketNumber + "</td>";
                     if (ticketData.lineAlert == true) {
@@ -340,15 +333,15 @@
         });
     };
 
-    clearSuperTicketFilters = function () {
+    clearSuperTicketFilters = function() {
         $('#anomaliesList').dataTable().search("").draw();
     };
-    var toggleShowMoreLessButons = function () {
-        $('#allocationSummaryShowMore').toggleClass('hide');
-        $('#allocationSummaryShowLess').toggleClass('hide');
-    }
-    // generates the allocation summary table based on the data in the ticket list
-    var generateAllocationSummaryTable = function () {
+    var toggleShowMoreLessButons = function() {
+            $('#allocationSummaryShowMore').toggleClass('hide');
+            $('#allocationSummaryShowLess').toggleClass('hide');
+        }
+        // generates the allocation summary table based on the data in the ticket list
+    var generateAllocationSummaryTable = function() {
         if ($('#allocationSummaryContent')) {
             $('#allocationSummaryContent').remove();
         }
@@ -395,15 +388,15 @@
             $("#superTicketAllocationSummary").append(footerRow);
         }
     };
-    $('#clearSuperTicketFiltersBtn').on('click', function () {
+    $('#clearSuperTicketFiltersBtn').on('click', function() {
         anomaliesTable.search('').draw();
-        setTimeout(function () {
+        setTimeout(function() {
             $('#tableFilteredFeedback').addClass('hide');
         }, 200);
     });
 
     // add an onclick to the allocation summary table to act as a filter
-    $('#superTicketAllocationSummary').on('click', 'tr', function () {
+    $('#superTicketAllocationSummary').on('click', 'tr', function() {
         var tr = $(this).closest('tr');
         activeAllocationSummaryRow = tr.attr('id');
         if (activeAllocationSummaryRow != 'footerRow') {
@@ -421,7 +414,7 @@
                 anomaliesTable.search(searchString).draw();
                 $('#tableFilteredFeedback').removeClass('hide');
             } else {
-                setTimeout(function () {
+                setTimeout(function() {
                     $('#' + activeAllocationSummaryRow).toggleClass('selected');
                 }, 200);
                 anomaliesTable.search("").draw();
@@ -431,7 +424,7 @@
     });
 
 
-    var generateComplianceSummaryTable = function () {
+    var generateComplianceSummaryTable = function() {
         if ($('#complianceSummaryContent')) {
             $('#complianceSummaryContent').remove();
         }
@@ -506,7 +499,7 @@
     };
 
     // generates the status summary table based on the data in the ticket list
-    var generateStatusSummaryTable = function () {
+    var generateStatusSummaryTable = function() {
         if ($('#statusSummaryContent')) {
             $('#statusSummaryContent').remove();
         }
@@ -520,7 +513,7 @@
         $("#statusSummary tbody").append(statusSummaryContent);
     };
 
-    var generateLineItemsSummaryTable = function () {
+    var generateLineItemsSummaryTable = function() {
         var count = 0;
         lineItemSummaryTableData = [];
 
@@ -533,21 +526,16 @@
         $('#lineItemSummaryTable').DataTable({
             data: calculatedData,
             columns: [{
-                    title: "Driver Name"
-                },
-                {
-                    title: "Description"
-                },
-                {
-                    title: "Total Quantity"
-                },
-                {
-                    title: "Units"
-                },
-                {
-                    title: "Rate"
-                }
-            ],
+                title: "Driver Name"
+            }, {
+                title: "Description"
+            }, {
+                title: "Total Quantity"
+            }, {
+                title: "Units"
+            }, {
+                title: "Rate"
+            }],
             "order": [
                 [1, 'asc']
             ],
@@ -556,7 +544,7 @@
         });
     };
 
-    $('#superTicketComplianceSummary').on('click', 'td', function () {
+    $('#superTicketComplianceSummary').on('click', 'td', function() {
         activeComplianceSummaryCell = $(this).attr('id');
 
         if (!$('#' + activeComplianceSummaryCell).hasClass('selected')) {
@@ -570,7 +558,7 @@
             // apply the filter on the ticket list
             anomaliesTable.search(alert).draw();
         } else {
-            setTimeout(function () {
+            setTimeout(function() {
                 $('#' + activeComplianceSummaryCell).toggleClass('selected');
             }, 300);
 
@@ -580,7 +568,7 @@
 
 
 
-    var updateTicketLineItemsMap = function (key, ticketData) {
+    var updateTicketLineItemsMap = function(key, ticketData) {
         var tickets;
         if (ticketLineItemsMap.has(key)) {
             // increment count and update the map
